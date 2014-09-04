@@ -9,8 +9,8 @@
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
-    <import index="1ok9" ref="r:a604a9bb-58f8-4cf0-a289-ef69bb1576bb(com.mbeddr.core.__spreferences.PlatformTemplates)" />
     <import index="aem4" ref="r:6c0b77b6-881f-476d-bc54-25e7cf0f8740(com.mbeddr.mpsutil.interpreter.test.typesystem)" />
+    <import index="1ok9" ref="r:a604a9bb-58f8-4cf0-a289-ef69bb1576bb(com.mbeddr.core.__spreferences.PlatformTemplates)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -121,6 +121,9 @@
     <language id="390de4af-0c8d-4716-8dec-3d05ca751b28" name="com.mbeddr.core.cinterpreter">
       <concept id="7019451652828660821" name="com.mbeddr.core.cinterpreter.structure.InlineInterpreterEvaluation" flags="ng" index="dyTT3">
         <child id="7019451652828794097" name="expression" index="dyprB" />
+      </concept>
+      <concept id="2763029999492920395" name="com.mbeddr.core.cinterpreter.structure.InlineInterpreterCondition" flags="ng" index="hRrlI">
+        <property id="2763029999492920401" name="expected" index="hRrlO" />
       </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
@@ -633,6 +636,9 @@
                     <property role="2hmy$m" value="1" />
                   </node>
                 </node>
+                <node concept="hRrlI" id="2pogikStJyZ" role="lGtFl">
+                  <property role="hRrlO" value="true" />
+                </node>
               </node>
             </node>
             <node concept="3XISUE" id="7F2vPZ434ZP" role="3XIRFZ" />
@@ -651,6 +657,7 @@
                     <property role="2hmy$m" value="8" />
                   </node>
                 </node>
+                <node concept="hRrlI" id="2pogikStT_I" role="lGtFl" />
               </node>
             </node>
           </node>
