@@ -115,9 +115,7 @@
       <concept id="8615074351687301435" name="com.mbeddr.mpsutil.interpreter.structure.ConceptEvaluator" flags="ng" index="qq9P1">
         <reference id="8615074351687302216" name="concept" index="qq9wM" />
       </concept>
-      <concept id="5293529713180742448" name="com.mbeddr.mpsutil.interpreter.structure.InterpretConstraintExpression" flags="ng" index="rqRoa">
-        <reference id="5293529713180742449" name="child" index="rqRob" />
-      </concept>
+      <concept id="5293529713180742448" name="com.mbeddr.mpsutil.interpreter.structure.InterpretConstraintExpression" flags="ng" index="rqRoa" />
       <concept id="5293529713194689095" name="com.mbeddr.mpsutil.interpreter.structure.ConceptTypeExpression" flags="ng" index="rxStX">
         <reference id="5293529713194689153" name="concept" index="rxSuV" />
       </concept>
@@ -141,6 +139,9 @@
         <reference id="6663324787724987489" name="target" index="1J7WVQ" />
       </concept>
       <concept id="6663324787725038318" name="com.mbeddr.mpsutil.interpreter.structure.InterpretAfterRelationship" flags="ng" index="1J7L1T" />
+      <concept id="8511326569641917307" name="com.mbeddr.mpsutil.interpreter.structure.AbstractConstraintRecursionExpression" flags="ng" index="3SLZkg">
+        <reference id="5293529713180742449" name="child" index="rqRob" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
@@ -658,10 +659,10 @@
       </node>
     </node>
     <node concept="1J7L1T" id="24ZS0JTHvwC" role="1J4apk">
-      <ref role="1J7WVQ" to="hga8:6CABoWpWVk0" resolve="CInterpreter" />
+      <ref role="1J7WVQ" to="hga8:2pogikS7txE" resolve="CInterpreter" />
     </node>
     <node concept="1J7L1T" id="24ZS0JTHvwD" role="1J4apk">
-      <ref role="1J7WVQ" to="hga8:6CABoWpWVhE" resolve="CExtInterpreter" />
+      <ref role="1J7WVQ" to="hga8:2pogikSbHyF" resolve="CExtInterpreter" />
     </node>
   </node>
 </model>
