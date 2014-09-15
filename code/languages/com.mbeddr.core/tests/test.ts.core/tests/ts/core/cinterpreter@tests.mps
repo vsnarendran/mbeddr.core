@@ -13,6 +13,11 @@
     <import index="1ok9" ref="r:a604a9bb-58f8-4cf0-a289-ef69bb1576bb(com.mbeddr.core.__spreferences.PlatformTemplates)" />
   </imports>
   <registry>
+    <language id="00000000-0000-0000-0000-000000000000" name="">
+      <concept id="0" name="" flags="ng" index="00000">
+        <property id="0" name="" index="00000" />
+      </concept>
+    </language>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A">
         <child id="8489045168660938517" name="errorRef" index="3lydEf" />
@@ -742,6 +747,41 @@
     </node>
     <node concept="2Q9Fgs" id="3R$6B6bNgP7" role="2Q9xDr">
       <node concept="2Q9FjX" id="3R$6B6bNgP8" role="2Q9FjI" />
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="3ftRujA_Dmb">
+    <property role="TrG5h" value="TestCStaticInterpreterTypes" />
+    <node concept="1qefOq" id="3ftRujA_Nsq" role="1SKRRt">
+      <node concept="N3F5e" id="3ftRujA_XyE" role="1qenE9">
+        <property role="TrG5h" value="Test2" />
+        <node concept="N3Fnx" id="3ftRujAA5NU" role="N3F5h">
+          <property role="TrG5h" value="f" />
+          <node concept="19Rifw" id="3ftRujAA5NV" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="3XIRFW" id="3ftRujAA5NW" role="3XIRFX">
+            <node concept="1_9egQ" id="3ftRujAA5Ov" role="3XIRFZ">
+              <node concept="2BOciq" id="3ftRujAASRf" role="1_9egR">
+                <node concept="3TlMh9" id="3ftRujAASRi" role="3TlMhJ">
+                  <property role="00000" value="false" />
+                  <property role="2hmy$m" value="1" />
+                </node>
+                <node concept="2BOciq" id="3ftRujAA9yj" role="3TlMhI">
+                  <node concept="3TlMh9" id="3ftRujAA9ym" role="3TlMhJ">
+                    <property role="00000" value="false" />
+                    <property role="2hmy$m" value="1" />
+                  </node>
+                  <node concept="3TlMh9" id="3ftRujAA5Ou" role="3TlMhI">
+                    <property role="00000" value="false" />
+                    <property role="2hmy$m" value="126" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
