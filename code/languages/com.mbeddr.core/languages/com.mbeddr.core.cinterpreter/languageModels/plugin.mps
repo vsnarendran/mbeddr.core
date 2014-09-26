@@ -196,6 +196,7 @@
         <child id="5293529713185083481" name="type" index="rajlz" />
       </concept>
       <concept id="8615074351687299818" name="com.mbeddr.mpsutil.interpreter.structure.Interpreter" flags="ng" index="qq9qg">
+        <property id="8426159527444241399" name="category" index="UYu25" />
         <child id="7019451652830298090" name="applicableLanguages" index="d$6nW" />
         <child id="8615074351687302154" name="typeMappings" index="qq9xK" />
         <child id="8615074351687302157" name="evaluators" index="qq9xR" />
@@ -337,6 +338,7 @@
   </registry>
   <node concept="3SNn0d" id="2pogikTOHGB">
     <property role="TrG5h" value="CPointerInterpreter" />
+    <property role="UYu25" value="CInterpreter" />
     <node concept="d$4Dx" id="2pogikTOHGE" role="d$6nW">
       <node concept="BaHAS" id="2pogikTOHGF" role="cpn$n">
         <property role="BaBD8" value="com.mbeddr.core.point" />
@@ -507,6 +509,7 @@
   </node>
   <node concept="3SNn0d" id="2pogikTOpWb">
     <property role="TrG5h" value="CModulesInterpreter" />
+    <property role="UYu25" value="CInterpreter" />
     <node concept="d$4Dx" id="2pogikTOpWl" role="d$6nW">
       <node concept="BaHAS" id="2pogikTOpWm" role="cpn$n">
         <property role="BaBD8" value="com.mbeddr.core.mod" />
@@ -621,6 +624,7 @@
   </node>
   <node concept="3SNn0d" id="2pogikS7txE">
     <property role="TrG5h" value="CInterpreter" />
+    <property role="UYu25" value="CInterpreter" />
     <node concept="d$4Dx" id="2pogikS7zdx" role="d$6nW">
       <node concept="BaHAS" id="2pogikS7zdy" role="cpn$n">
         <property role="BaBD8" value="com.mbeddr.core.base.st" />
@@ -2487,6 +2491,7 @@
   </node>
   <node concept="3SNn0d" id="2pogikSbnzd">
     <property role="TrG5h" value="CStatementInterpreter" />
+    <property role="UYu25" value="CInterpreter" />
     <node concept="d$4Dx" id="2pogikSbnQm" role="d$6nW">
       <node concept="BaHAS" id="2pogikSbnQn" role="cpn$n">
         <property role="BaBD8" value="com.mbeddr.core." />
@@ -2598,9 +2603,6 @@
       <node concept="3SNqBd" id="2pogikSbBfx" role="3SNqB7">
         <node concept="1Wc70l" id="2pogikSbsDs" role="3SNqB1">
           <node concept="2OqwBi" id="2pogikSbAe3" role="3uHU7w">
-            <node concept="3TrcHB" id="8_K8wrwu0r" role="2OqNvi">
-              <ref role="3TsBF5" to="mj1l:2zhwXA$N7QC" resolve="const" />
-            </node>
             <node concept="2OqwBi" id="2pogikSbtIS" role="2Oq$k0">
               <node concept="1PxgMI" id="2pogikSbtju" role="2Oq$k0">
                 <ref role="1PxNhF" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
@@ -2614,6 +2616,9 @@
               <node concept="3TrEf2" id="2pogikSb$Tx" role="2OqNvi">
                 <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
               </node>
+            </node>
+            <node concept="3TrcHB" id="8_K8wrwu0r" role="2OqNvi">
+              <ref role="3TsBF5" to="mj1l:2zhwXA$N7QC" resolve="const" />
             </node>
           </node>
           <node concept="2OqwBi" id="2pogikSbpxF" role="3uHU7B">
@@ -2649,6 +2654,7 @@
   </node>
   <node concept="3SNn0d" id="2pogikTP2xO">
     <property role="TrG5h" value="CUdtInterpreter" />
+    <property role="UYu25" value="CInterpreter" />
     <node concept="d$4Dx" id="2pogikTP2xR" role="d$6nW">
       <node concept="BaHAS" id="2pogikTP2xS" role="cpn$n">
         <property role="BaBD8" value="com.mbeddr.core.u" />
@@ -2790,6 +2796,7 @@
   </node>
   <node concept="3SNn0d" id="2pogikTOlZ1">
     <property role="TrG5h" value="CLegacyInterpreter" />
+    <property role="UYu25" value="CInterpreter" />
     <node concept="d$4Dx" id="2pogikTOlZ4" role="d$6nW">
       <node concept="BaHAS" id="2pogikTOlZ5" role="cpn$n">
         <property role="BaBD8" value="com.mbeddr.core.legacy.structure" />
@@ -2831,6 +2838,7 @@
   </node>
   <node concept="3SNn0d" id="2pogikSbFpc">
     <property role="TrG5h" value="CFunctionInterpreter" />
+    <property role="UYu25" value="CInterpreter" />
     <node concept="d$4Dx" id="2pogikSbFv8" role="d$6nW">
       <node concept="BaHAS" id="2pogikSbFv9" role="cpn$n">
         <property role="BaBD8" value="com.mbeddr.core.mod" />
@@ -2927,6 +2935,7 @@
   </node>
   <node concept="3SNn0d" id="2pogikSbHyF">
     <property role="TrG5h" value="CExtInterpreter" />
+    <property role="UYu25" value="CInterpreter" />
     <node concept="d$4Dx" id="2pogikSbHTF" role="d$6nW">
       <node concept="BaHAS" id="2pogikSbHTG" role="cpn$n">
         <property role="BaBD8" value="com.mbeddr.core.base.ut" />
