@@ -57,6 +57,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -356,6 +359,85 @@
   </node>
   <node concept="2XOHcx" id="1f0gqNzAccm">
     <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.analyses/" />
+  </node>
+  <node concept="1lH9Xt" id="11DbRLv_6FA">
+    <property role="TrG5h" value="DerivedFeaturesWithConstraints" />
+    <node concept="1LZb2c" id="11DbRLv_uRJ" role="1SL9yI">
+      <property role="TrG5h" value="testDerivedFeatures1" />
+      <node concept="3cqZAl" id="11DbRLv_uRK" role="3clF45" />
+      <node concept="3clFbS" id="11DbRLv_uRL" role="3clF47">
+        <node concept="3cpWs8" id="11DbRLv_uRM" role="3cqZAp">
+          <node concept="3cpWsn" id="11DbRLv_uRN" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="11DbRLv_uRO" role="1tU5fm" />
+            <node concept="BaHAS" id="11DbRLv_uRP" role="33vP2m">
+              <property role="BaBD8" value="test.analyses.var.testcode.cm" />
+              <property role="BaHAW" value="test.analyses.var.testcode.cm" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="11DbRLv_uRQ" role="3cqZAp">
+          <node concept="3cpWsn" id="11DbRLv_uRR" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="10P_77" id="11DbRLv_uRS" role="1tU5fm" />
+            <node concept="NRdvd" id="11DbRLv_uRT" role="33vP2m">
+              <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
+              <ref role="37wK5l" to="oe3g:tSjOfAjCHD" resolve="checkConfigurationModelConsistency" />
+              <node concept="37vLTw" id="11DbRLv_uRU" role="37wK5m">
+                <ref role="3cqZAo" node="11DbRLv_uRN" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="11DbRLv_uRV" role="37wK5m">
+                <property role="Xl_RC" value="DerivedFeaturesWithCrossConstraints_C1" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="11DbRLv_uRW" role="3cqZAp">
+          <node concept="3clFbT" id="11DbRLv_uRX" role="3vwVQn">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="11DbRLv_6FB" role="1SL9yI">
+      <property role="TrG5h" value="testDerivedFeatures2" />
+      <node concept="3cqZAl" id="11DbRLv_6FC" role="3clF45" />
+      <node concept="3clFbS" id="11DbRLv_6FD" role="3clF47">
+        <node concept="3cpWs8" id="11DbRLv_6FE" role="3cqZAp">
+          <node concept="3cpWsn" id="11DbRLv_6FF" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="11DbRLv_6FG" role="1tU5fm" />
+            <node concept="BaHAS" id="11DbRLv_6FH" role="33vP2m">
+              <property role="BaBD8" value="test.analyses.var.testcode.cm" />
+              <property role="BaHAW" value="test.analyses.var.testcode.cm" />
+              <property role="BaGAP" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="11DbRLv_6FI" role="3cqZAp">
+          <node concept="3cpWsn" id="11DbRLv_6FJ" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="10P_77" id="11DbRLv_6FK" role="1tU5fm" />
+            <node concept="NRdvd" id="11DbRLv_6FL" role="33vP2m">
+              <ref role="1Pybhc" to="oe3g:tSjOfAadF8" resolve="VariabilityTestingUtils" />
+              <ref role="37wK5l" to="oe3g:tSjOfAjCHD" resolve="checkConfigurationModelConsistency" />
+              <node concept="37vLTw" id="11DbRLv_6FM" role="37wK5m">
+                <ref role="3cqZAo" node="11DbRLv_6FF" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="11DbRLv_6FN" role="37wK5m">
+                <property role="Xl_RC" value="DerivedFeaturesWithCrossConstraints_C2" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="11DbRLv_6FO" role="3cqZAp">
+          <node concept="3clFbT" id="11DbRLv_t12" role="3vwVQn">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

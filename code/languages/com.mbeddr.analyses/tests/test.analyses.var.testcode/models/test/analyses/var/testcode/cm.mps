@@ -8,6 +8,9 @@
   <imports />
   <registry>
     <language id="e401b447-8019-4ccd-a72c-bfb0230f5782" name="com.mbeddr.cc.var.fm">
+      <concept id="4508614440797534978" name="com.mbeddr.cc.var.fm.structure.AbstractFeature" flags="ng" index="2vMJK">
+        <child id="8433257123783652307" name="crossConstraints" index="1fCc5Z" />
+      </concept>
       <concept id="8473958930087782177" name="com.mbeddr.cc.var.fm.structure.RootFeature" flags="ng" index="28I2Iu" />
       <concept id="2203816361987134490" name="com.mbeddr.cc.var.fm.structure.DerivedFeature" flags="ng" index="gY_dk">
         <child id="2203816361987258679" name="value" index="gT3TT" />
@@ -26,7 +29,7 @@
       <concept id="6825476687691297426" name="com.mbeddr.cc.var.fm.structure.Feature" flags="ng" index="Id4hK">
         <child id="6825476687691297427" name="constraint" index="Id4hL" />
         <child id="6825476687691297428" name="children" index="Id4hQ" />
-        <child id="8433257123783652307" name="crossConstraints" index="1fCc5Z" />
+        <child id="8433257123783652307" name="crossConstraints" index="1fCc60" />
       </concept>
       <concept id="6825476687691297434" name="com.mbeddr.cc.var.fm.structure.FeatureModel" flags="ng" index="Id4hS">
         <child id="2203816361987258682" name="derivedFeatures" index="gT3TO" />
@@ -42,6 +45,7 @@
         <reference id="8433257123783652292" name="feature" index="1fCc5C" />
       </concept>
       <concept id="8433257123783652291" name="com.mbeddr.cc.var.fm.structure.RequiresConstraint" flags="ng" index="1fCc5J" />
+      <concept id="8433257123783652305" name="com.mbeddr.cc.var.fm.structure.ConflictsConstraint" flags="ng" index="1fCc5X" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -169,13 +173,13 @@
           <node concept="Idvtz" id="68jd02E9zuL" role="Id4hL" />
           <node concept="Id4hK" id="68jd02E9zuM" role="Id4hQ">
             <property role="TrG5h" value="child11" />
-            <node concept="1fCc5J" id="68jd02EcGqr" role="1fCc5Z">
+            <node concept="1fCc5J" id="68jd02EcGqr" role="1fCc60">
               <ref role="1fCc5C" node="68jd02E9zuT" resolve="derived1" />
             </node>
           </node>
           <node concept="Id4hK" id="68jd02E9zuN" role="Id4hQ">
             <property role="TrG5h" value="child12" />
-            <node concept="1fCc5J" id="68jd02E9zuO" role="1fCc5Z">
+            <node concept="1fCc5J" id="68jd02E9zuO" role="1fCc60">
               <ref role="1fCc5C" node="68jd02EcGoU" resolve="derived2" />
             </node>
           </node>
@@ -249,6 +253,97 @@
           <node concept="Id4hG" id="68jd02EcGr1" role="Id4hH">
             <ref role="Id4hN" node="68jd02E9zuR" resolve="child21" />
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="Idr$i" id="11DbRLv$K83">
+    <property role="TrG5h" value="DerivedFeaturesWithConstraints" />
+    <node concept="Id4hS" id="11DbRLv$K2i" role="Idr$j">
+      <property role="TrG5h" value="DerivedFeaturesWithCrossConstraints" />
+      <node concept="28I2Iu" id="11DbRLv$K2j" role="Id4hT">
+        <node concept="Idvur" id="11DbRLv$K2k" role="Id4hL" />
+        <node concept="Id4hK" id="11DbRLv_5Df" role="Id4hQ">
+          <property role="TrG5h" value="c1" />
+        </node>
+        <node concept="Id4hK" id="11DbRLv_5Dj" role="Id4hQ">
+          <property role="TrG5h" value="c2" />
+        </node>
+        <node concept="Id4hK" id="11DbRLv_uAt" role="Id4hQ">
+          <property role="TrG5h" value="dummy" />
+          <node concept="Id4hK" id="11DbRLv$K4g" role="Id4hQ">
+            <property role="TrG5h" value="conflictFeature" />
+          </node>
+          <node concept="Idvup" id="11DbRLv_uAz" role="Id4hL" />
+          <node concept="Id4hK" id="11DbRLv$K50" role="Id4hQ">
+            <property role="TrG5h" value="requiresFeature" />
+          </node>
+        </node>
+      </node>
+      <node concept="gY_dk" id="11DbRLv$K2r" role="gT3TO">
+        <property role="TrG5h" value="ConflictingDerived" />
+        <node concept="2EHzL6" id="11DbRLv$K2s" role="gT3TT">
+          <node concept="2qVrgw" id="11DbRLv_6DY" role="3TlMhJ">
+            <ref role="2qVrgz" node="11DbRLv_5Dj" resolve="c2" />
+          </node>
+          <node concept="2qVrgw" id="11DbRLv_6DF" role="3TlMhI">
+            <ref role="2qVrgz" node="11DbRLv_5Df" resolve="c1" />
+          </node>
+        </node>
+        <node concept="1fCc5X" id="11DbRLv$K4e" role="1fCc5Z">
+          <ref role="1fCc5C" node="11DbRLv$K4g" resolve="conflictFeature" />
+        </node>
+      </node>
+      <node concept="gY_dk" id="11DbRLv$K2v" role="gT3TO">
+        <property role="TrG5h" value="RequiresDerived" />
+        <node concept="2EHzL6" id="11DbRLv$K2w" role="gT3TT">
+          <node concept="2qVrgw" id="11DbRLv_6E$" role="3TlMhJ">
+            <ref role="2qVrgz" node="11DbRLv_5Dj" resolve="c2" />
+          </node>
+          <node concept="2qVrgw" id="11DbRLv_6Eh" role="3TlMhI">
+            <ref role="2qVrgz" node="11DbRLv_5Df" resolve="c1" />
+          </node>
+        </node>
+        <node concept="1fCc5J" id="11DbRLv$K59" role="1fCc5Z">
+          <ref role="1fCc5C" node="11DbRLv$K50" resolve="requiresFeature" />
+        </node>
+      </node>
+    </node>
+    <node concept="Id4hE" id="11DbRLv_uBz" role="Idr$j">
+      <property role="TrG5h" value="DerivedFeaturesWithCrossConstraints_C1" />
+      <ref role="Id4hC" node="11DbRLv$K2i" resolve="DerivedFeaturesWithCrossConstraints" />
+      <node concept="Id4hG" id="11DbRLv_uB$" role="Id4hF">
+        <ref role="Id4hN" node="11DbRLv$K2j" resolve="DerivedFeaturesWithCrossConstraints_root" />
+        <node concept="Id4hG" id="11DbRLv_uB_" role="Id4hH">
+          <ref role="Id4hN" node="11DbRLv_5Df" resolve="c1" />
+        </node>
+        <node concept="Id4hG" id="11DbRLv_uBA" role="Id4hH">
+          <ref role="Id4hN" node="11DbRLv_5Dj" resolve="c2" />
+        </node>
+        <node concept="Id4hG" id="11DbRLv_uBC" role="Id4hH">
+          <ref role="Id4hN" node="11DbRLv_uAt" resolve="dummy" />
+          <node concept="Id4hG" id="11DbRLv_uD8" role="Id4hH">
+            <ref role="Id4hN" node="11DbRLv$K4g" resolve="conflictFeature" />
+          </node>
+          <node concept="Id4hG" id="11DbRLv_uEQ" role="Id4hH">
+            <ref role="Id4hN" node="11DbRLv$K50" resolve="requiresFeature" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Id4hE" id="11DbRLv$KEC" role="Idr$j">
+      <property role="TrG5h" value="DerivedFeaturesWithCrossConstraints_C2" />
+      <ref role="Id4hC" node="11DbRLv$K2i" resolve="DerivedFeaturesWithCrossConstraints" />
+      <node concept="Id4hG" id="11DbRLv$KFX" role="Id4hF">
+        <ref role="Id4hN" node="11DbRLv$K2j" resolve="DerivedFeaturesWithCrossConstraints_root" />
+        <node concept="Id4hG" id="11DbRLv_6ER" role="Id4hH">
+          <ref role="Id4hN" node="11DbRLv_5Df" resolve="c1" />
+        </node>
+        <node concept="Id4hG" id="11DbRLv_6EW" role="Id4hH">
+          <ref role="Id4hN" node="11DbRLv_5Dj" resolve="c2" />
+        </node>
+        <node concept="Id4hG" id="11DbRLv_uB5" role="Id4hH">
+          <ref role="Id4hN" node="11DbRLv_uAt" resolve="dummy" />
         </node>
       </node>
     </node>
