@@ -160,12 +160,6 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5USXI9Kzban" resolve="FeatureAttribute" />
     </node>
-    <node concept="1TJgyj" id="7k8WEKUE3fj" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="crossConstraints" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7k8WEKUE3f1" resolve="CrossConstraint" />
-    </node>
     <node concept="1TJgyj" id="7CssUDY_eT6" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="defaultValue" />
@@ -383,6 +377,12 @@
     <property role="TrG5h" value="AbstractFeature" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7k8WEKUE3fj" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="crossConstraints" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7k8WEKUE3f1" resolve="CrossConstraint" />
+    </node>
     <node concept="PrWs8" id="3UhOf8WVJG6" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>

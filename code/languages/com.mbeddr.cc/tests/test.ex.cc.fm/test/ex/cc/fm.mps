@@ -155,6 +155,9 @@
       </concept>
     </language>
     <language id="e401b447-8019-4ccd-a72c-bfb0230f5782" name="com.mbeddr.cc.var.fm">
+      <concept id="4508614440797534978" name="com.mbeddr.cc.var.fm.structure.AbstractFeature" flags="ng" index="2vMJK">
+        <child id="8433257123783652307" name="crossConstraints" index="1fCc5Z" />
+      </concept>
       <concept id="8473958930087782177" name="com.mbeddr.cc.var.fm.structure.RootFeature" flags="ng" index="28I2Iu" />
       <concept id="2203816361987134490" name="com.mbeddr.cc.var.fm.structure.DerivedFeature" flags="ng" index="gY_dk">
         <child id="2203816361987258679" name="value" index="gT3TT" />
@@ -191,6 +194,10 @@
       </concept>
       <concept id="6825476687691317627" name="com.mbeddr.cc.var.fm.structure.OptionalConstraint" flags="ng" index="Idvup" />
       <concept id="6825476687691317629" name="com.mbeddr.cc.var.fm.structure.OrConstraint" flags="ng" index="Idvuv" />
+      <concept id="8433257123783652289" name="com.mbeddr.cc.var.fm.structure.CrossConstraint" flags="ng" index="1fCc5H">
+        <reference id="8433257123783652292" name="feature" index="1fCc5C" />
+      </concept>
+      <concept id="8433257123783652305" name="com.mbeddr.cc.var.fm.structure.ConflictsConstraint" flags="ng" index="1fCc5X" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -268,6 +275,9 @@
         <node concept="Idvup" id="5kSKC2jhyp4" role="Id4hL" />
         <node concept="Id4hK" id="10GsATRGpEd" role="Id4hQ">
           <property role="TrG5h" value="logging" />
+          <node concept="1fCc5X" id="11DbRLv$oDP" role="1fCc5Z">
+            <ref role="1fCc5C" node="5kSKC2jhyp3" resolve="DeploymentConfiguration_root" />
+          </node>
         </node>
         <node concept="Id4hK" id="5JmNU9PAoEQ" role="Id4hQ">
           <property role="TrG5h" value="test" />
