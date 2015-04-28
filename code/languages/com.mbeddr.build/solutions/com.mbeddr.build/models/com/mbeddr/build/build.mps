@@ -2201,12 +2201,6 @@
             <ref role="1Busuk" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="5jIWg8a48qa" role="3bR37C">
-          <node concept="3bR9La" id="5jIWg8a48qb" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="5jIWg8a48qp" role="3bR37C">
           <node concept="1BurEX" id="5jIWg8a48qq" role="1SiIV1">
             <node concept="398BVA" id="5jIWg8a48qc" role="1BurEY">
@@ -2224,6 +2218,34 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="38okzjGyPE8" role="3bR37C">
+          <node concept="3bR9La" id="38okzjGyPE9" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:5GUwywcVavP" resolve="com.mbeddr.mpsutil.interpreter" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="38okzjGyPEa" role="3bR37C">
+          <node concept="3bR9La" id="38okzjGyPEb" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:2bBLuwR9$cn" resolve="com.mbeddr.mpsutil.interpreter.rt" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="38okzjGyPEc" role="3bR37C">
+          <node concept="3bR9La" id="38okzjGyPEd" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:1oM0ei222QR" resolve="com.mbeddr.mpsutil.spreferences.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="38okzjGyPEr" role="3bR37C">
+          <node concept="1Busua" id="38okzjGyPEs" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="38okzjGyPEt" role="3bR37C">
+          <node concept="1Busua" id="38okzjGyPEu" role="1SiIV1">
+            <ref role="1Busuk" to="al5i:2VC4eVYcuJ9" resolve="com.mbeddr.mpsutil.blutil" />
           </node>
         </node>
       </node>
@@ -2481,6 +2503,12 @@
           <node concept="3bR9La" id="1VzEExh4Hwz" role="1SiIV1">
             <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LeP" resolve="jetbrains.mps.analyzers.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="38okzjGyPFq" role="3bR37C">
+          <node concept="3bR9La" id="38okzjGyPFr" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="tZiUABOqlz" resolve="com.mbeddt.core.expressions.pluginSolution" />
           </node>
         </node>
       </node>
@@ -3259,6 +3287,29 @@
         <node concept="1SiIV0" id="5wABxA4sjUy" role="3bR37C">
           <node concept="1Busua" id="5wABxA4sjUz" role="1SiIV1">
             <ref role="1Busuk" to="al5i:2bBLuwR9LnB" resolve="com.mbeddr.mpsutil.interpreter.test" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="38okzjGyPIF" role="3bR37C">
+          <node concept="3bR9La" id="38okzjGyPIG" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:31bAEZ0srt5" resolve="org.apache.commons" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="38okzjGyPIH" role="3bR37C">
+          <node concept="3bR9La" id="38okzjGyPII" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="7uZw0yZ43Lj" resolve="com.mbeddr.core.legacy" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="38okzjGyPIJ" role="3bR37C">
+          <node concept="3bR9La" id="38okzjGyPIK" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:5GUwywcVavP" resolve="com.mbeddr.mpsutil.interpreter" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="38okzjGyPIL" role="3bR37C">
+          <node concept="1Busua" id="38okzjGyPIM" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
           </node>
         </node>
       </node>
