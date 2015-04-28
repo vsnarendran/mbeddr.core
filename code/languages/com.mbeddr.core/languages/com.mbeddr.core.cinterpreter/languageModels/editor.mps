@@ -7,7 +7,6 @@
   </languages>
   <imports>
     <import index="xi9i" ref="r:1a0a0fc6-4a62-41d0-9af4-610c85e7bcac(com.mbeddr.core.cinterpreter.structure)" />
-    <import index="e9u7" ref="r:12b70fb1-3152-466e-b80a-86270a0592b7(com.mbeddr.mpsutil.interpreter.test.editor)" implicit="true" />
     <import index="7cx9" ref="1c897ba5-9d43-4035-ac7f-0306495743ac/r:af793ab9-042b-414b-8d5e-765e4059f681(com.mbeddr.mpsutil.interpreter.test/com.mbeddr.mpsutil.interpreter.test.structure)" implicit="true" />
   </imports>
   <registry>
@@ -123,7 +122,7 @@
         </node>
         <node concept="3F0ifn" id="2pogikRxxYS" role="3EZMnx">
           <property role="3F0ifm" value="expected isEvaluable:" />
-          <ref role="1ERwB7" to="e9u7:5Yf_R4Bt0rV" resolve="deleteInterpreterEvaluation" />
+          <ref role="1ERwB7" node="5Yf_R4Bt0rV" resolve="deleteInterpreterEvaluation" />
           <node concept="VechU" id="2pogikRxxYT" role="3F10Kt">
             <property role="Vb096" value="DARK_GREEN" />
           </node>

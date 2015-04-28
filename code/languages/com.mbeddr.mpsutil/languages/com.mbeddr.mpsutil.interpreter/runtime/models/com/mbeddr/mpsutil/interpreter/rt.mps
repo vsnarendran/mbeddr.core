@@ -9279,7 +9279,22 @@
                   <ref role="3cqZAo" node="7xtsKqWiUSf" resolve="nodePointer" />
                 </node>
                 <node concept="liA8E" id="4LzvN0An4nw" role="2OqNvi">
-                  <ref role="37wK5l" to="cu2c:~SNodePointer.getNode():org.jetbrains.mps.openapi.model.SNode" resolve="getNode" />
+                  <ref role="37wK5l" to="cu2c:~SNodePointer.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
+                  <node concept="2OqwBi" id="35qc8ezXf$W" role="37wK5m">
+                    <node concept="2OqwBi" id="35qc8ezXeUg" role="2Oq$k0">
+                      <node concept="2JrnkZ" id="35qc8ezXeeb" role="2Oq$k0">
+                        <node concept="37vLTw" id="35qc8ezXdXc" role="2JrQYb">
+                          <ref role="3cqZAo" node="7xtsKqWiVE1" resolve="referenceNode" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="35qc8ezXfly" role="2OqNvi">
+                        <ref role="37wK5l" to="ec5l:~SNode.getModel():org.jetbrains.mps.openapi.model.SModel" resolve="getModel" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="35qc8ezXg38" role="2OqNvi">
+                      <ref role="37wK5l" to="ec5l:~SModel.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
