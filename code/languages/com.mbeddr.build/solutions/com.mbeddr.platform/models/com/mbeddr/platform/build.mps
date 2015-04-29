@@ -364,15 +364,15 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="VC7Rv4v977" role="3bR37C">
-          <node concept="1Busua" id="VC7Rv4v978" role="1SiIV1">
-            <ref role="1Busuk" to="ffeo:4LDuh$Ud1LG" resolve="jetbrains.mps.debugger.api.lang" />
-          </node>
-        </node>
         <node concept="1yeLz9" id="VC7Rv4v979" role="1TViLv">
           <property role="TrG5h" value="com.mbeddr.mpsutil.runconfiguration#1074143110309249536" />
           <property role="3LESm3" value="256cd7af-2a1c-46c0-b544-845d10b7eab5" />
           <property role="2GAjPV" value="false" />
+        </node>
+        <node concept="1SiIV0" id="40jlTEC5DN_" role="3bR37C">
+          <node concept="1Busua" id="40jlTEC5DNA" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
         </node>
       </node>
       <node concept="1E1JtD" id="776vT$mR9hk" role="2G$12L">

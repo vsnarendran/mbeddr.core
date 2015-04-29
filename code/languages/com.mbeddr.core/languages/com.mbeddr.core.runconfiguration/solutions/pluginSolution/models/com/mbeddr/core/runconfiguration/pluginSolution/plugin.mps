@@ -18,6 +18,7 @@
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
+    <use id="aa6a62c5-a61c-4ec5-94a7-61bc8b137d79" name="com.mbeddr.mpsutil.runconfiguration" version="-1" />
   </languages>
   <imports>
     <import index="x30c" ref="r:04a32be8-7074-4c9c-b2f8-77d4a01a19dc(com.mbeddr.core.debug.debugger)" />
@@ -734,21 +735,42 @@
         <node concept="1QHqEQ" id="5C6ntc7KUbL" role="3cqZAp">
           <node concept="1QHqEC" id="5C6ntc7KUbN" role="1QHqEI">
             <node concept="3clFbS" id="5C6ntc7KUbP" role="1bW5cS">
-              <node concept="3clFbF" id="6N7ktxtOg42" role="3cqZAp">
-                <node concept="2OqwBi" id="6N7ktxtOg43" role="3clFbG">
-                  <node concept="2OqwBi" id="6N7ktxtQzBH" role="2Oq$k0">
-                    <node concept="2OqwBi" id="6N7ktxtOg44" role="2Oq$k0">
-                      <node concept="2WthIp" id="6N7ktxtOg45" role="2Oq$k0" />
-                      <node concept="2BZ7hE" id="6N7ktxtOg46" role="2OqNvi">
+              <node concept="3cpWs8" id="6BW7PIh2GdC" role="3cqZAp">
+                <node concept="3cpWsn" id="6BW7PIh2GdD" role="3cpWs9">
+                  <property role="TrG5h" value="dbgr" />
+                  <node concept="3uibUv" id="6BW7PIh2GdB" role="1tU5fm">
+                    <ref role="3uigEE" to="x30c:6WfZQfTHrjQ" resolve="MbeddrDebugger" />
+                  </node>
+                  <node concept="2OqwBi" id="6BW7PIh2GdE" role="33vP2m">
+                    <node concept="2OqwBi" id="6BW7PIh2GdF" role="2Oq$k0">
+                      <node concept="2WthIp" id="6BW7PIh2GdG" role="2Oq$k0" />
+                      <node concept="2BZ7hE" id="6BW7PIh2GdH" role="2OqNvi">
                         <ref role="2WH_rO" node="1ptFCtLqsns" resolve="myDebugger" />
                       </node>
                     </node>
-                    <node concept="liA8E" id="6N7ktxtQ_04" role="2OqNvi">
+                    <node concept="liA8E" id="6BW7PIh2GdI" role="2OqNvi">
                       <ref role="37wK5l" to="vft3:~AtomicReference.get():java.lang.Object" resolve="get" />
                     </node>
                   </node>
-                  <node concept="liA8E" id="6N7ktxtRWXj" role="2OqNvi">
-                    <ref role="37wK5l" to="1l1h:3SnNvqCaJCl" resolve="dispose" />
+                </node>
+              </node>
+              <node concept="3clFbJ" id="6BW7PIh2HUB" role="3cqZAp">
+                <node concept="3clFbS" id="6BW7PIh2HUD" role="3clFbx">
+                  <node concept="3clFbF" id="6N7ktxtOg42" role="3cqZAp">
+                    <node concept="2OqwBi" id="6N7ktxtOg43" role="3clFbG">
+                      <node concept="37vLTw" id="6BW7PIh2GdJ" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6BW7PIh2GdD" resolve="dbgr" />
+                      </node>
+                      <node concept="liA8E" id="6N7ktxtRWXj" role="2OqNvi">
+                        <ref role="37wK5l" to="1l1h:3SnNvqCaJCl" resolve="dispose" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3y3z36" id="6BW7PIh2JU7" role="3clFbw">
+                  <node concept="10Nm6u" id="6BW7PIh2JWa" role="3uHU7w" />
+                  <node concept="37vLTw" id="6BW7PIh2Iuo" role="3uHU7B">
+                    <ref role="3cqZAo" node="6BW7PIh2GdD" resolve="dbgr" />
                   </node>
                 </node>
               </node>
