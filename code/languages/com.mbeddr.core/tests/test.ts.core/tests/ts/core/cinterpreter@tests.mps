@@ -13,11 +13,6 @@
     <import index="1ok9" ref="r:a604a9bb-58f8-4cf0-a289-ef69bb1576bb(com.mbeddr.core.__spreferences.PlatformTemplates)" />
   </imports>
   <registry>
-    <language id="00000000-0000-0000-0000-000000000000" name="">
-      <concept id="0" name="" flags="ng" index="00000">
-        <property id="0" name="" index="00000" />
-      </concept>
-    </language>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A">
         <child id="8489045168660938517" name="errorRef" index="3lydEf" />
@@ -764,16 +759,13 @@
             <node concept="1_9egQ" id="3ftRujAA5Ov" role="3XIRFZ">
               <node concept="2BOciq" id="3ftRujAASRf" role="1_9egR">
                 <node concept="3TlMh9" id="3ftRujAASRi" role="3TlMhJ">
-                  <property role="00000" value="false" />
                   <property role="2hmy$m" value="1" />
                 </node>
                 <node concept="2BOciq" id="3ftRujAA9yj" role="3TlMhI">
                   <node concept="3TlMh9" id="3ftRujAA9ym" role="3TlMhJ">
-                    <property role="00000" value="false" />
                     <property role="2hmy$m" value="1" />
                   </node>
                   <node concept="3TlMh9" id="3ftRujAA5Ou" role="3TlMhI">
-                    <property role="00000" value="false" />
                     <property role="2hmy$m" value="126" />
                   </node>
                 </node>
