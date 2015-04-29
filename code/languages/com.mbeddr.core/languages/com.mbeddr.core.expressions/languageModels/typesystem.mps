@@ -23,6 +23,7 @@
     <import index="epq1" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.math(JDK/java.math@java_stub)" />
     <import index="e8zp" ref="r:58a558d9-50ed-4b86-91cf-66ce18b52794(com.mbeddr.core.expressions.actions)" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
@@ -75,6 +76,9 @@
       </concept>
       <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
         <child id="1164991057263" name="throwable" index="YScLw" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -1151,6 +1155,23 @@
         <node concept="3clFbS" id="7c2$S3kF68x" role="2VODD2">
           <node concept="3clFbJ" id="6ngD7lvoNEC" role="3cqZAp">
             <node concept="3clFbS" id="6ngD7lvoNED" role="3clFbx">
+              <node concept="3clFbF" id="5iSM3v5Ug$J" role="3cqZAp">
+                <node concept="2OqwBi" id="5iSM3v5Ug$G" role="3clFbG">
+                  <node concept="10M0yZ" id="5iSM3v5Ug$H" role="2Oq$k0">
+                    <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                    <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+                  </node>
+                  <node concept="liA8E" id="5iSM3v5Ug$I" role="2OqNvi">
+                    <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                    <node concept="3cpWs3" id="5iSM3v5UlGs" role="37wK5m">
+                      <node concept="3cjoe7" id="5iSM3v5Um5Q" role="3uHU7w" />
+                      <node concept="Xl_RD" id="5iSM3v5UgXx" role="3uHU7B">
+                        <property role="Xl_RC" value="isStaticallyEvaluable: " />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3cpWs6" id="6ngD7lvoNFd" role="3cqZAp">
                 <node concept="2YIFZM" id="6ngD7lvoNFe" role="3cqZAk">
                   <ref role="37wK5l" to="ywuz:6ngD7lvosk8" resolve="staticType" />
@@ -1165,6 +1186,23 @@
               <node concept="3cjoe7" id="6ngD7lvoNEG" role="2Oq$k0" />
               <node concept="2qgKlT" id="6ngD7lvoNF7" role="2OqNvi">
                 <ref role="37wK5l" to="ywuz:3ilck8Kr3zN" resolve="isStaticallyEvaluatable" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="5iSM3v5UmYs" role="3cqZAp">
+            <node concept="2OqwBi" id="5iSM3v5UmYp" role="3clFbG">
+              <node concept="10M0yZ" id="5iSM3v5UmYq" role="2Oq$k0">
+                <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+                <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              </node>
+              <node concept="liA8E" id="5iSM3v5UmYr" role="2OqNvi">
+                <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <node concept="3cpWs3" id="5iSM3v5Utp1" role="37wK5m">
+                  <node concept="3cjoe7" id="5iSM3v5UtNP" role="3uHU7w" />
+                  <node concept="Xl_RD" id="5iSM3v5Uns1" role="3uHU7B">
+                    <property role="Xl_RC" value="NOT StaticallyEvaluable: " />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
