@@ -15,7 +15,6 @@
     <dependency reexport="false">2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)</dependency>
     <dependency reexport="false">47f075a6-558e-4640-a606-7ce0236c8023(com.mbeddr.mpsutil.interpreter)</dependency>
     <dependency reexport="false">735f86bc-17fb-4d1c-a664-82c2b8e8a34e(com.mbeddr.mpsutil.interpreter.rt)</dependency>
-    <dependency reexport="false">1c897ba5-9d43-4035-ac7f-0306495743ac(com.mbeddr.mpsutil.interpreter.test)</dependency>
     <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
   </dependencies>
   <usedLanguages>
