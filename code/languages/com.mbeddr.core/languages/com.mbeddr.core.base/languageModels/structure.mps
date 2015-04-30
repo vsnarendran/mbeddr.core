@@ -83,7 +83,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -1311,11 +1311,16 @@
   <node concept="PlHQZ" id="$bJ0jgPete">
     <property role="3GE5qa" value="valueDebugger" />
     <property role="TrG5h" value="IValueDebuggable" />
+    <node concept="1TJgyj" id="7piNMo9UlCu" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="valueDebugger" />
+      <ref role="20lvS9" node="$bJ0jgQ80g" resolve="ValueDebugger" />
+    </node>
   </node>
   <node concept="1TIwiD" id="$bJ0jgQ80g">
     <property role="3GE5qa" value="valueDebugger" />
     <property role="TrG5h" value="ValueDebugger" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="$bJ0jgQ80h" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -1327,12 +1332,6 @@
     <node concept="1TJgyi" id="2BbcAuIdyyA" role="1TKVEl">
       <property role="TrG5h" value="debugKeyString" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="M6xJ_" id="$bJ0jgQ80j" role="lGtFl">
-      <property role="Hh88m" value="debugger" />
-      <node concept="trNpa" id="$bJ0jgQ80k" role="EQaZv">
-        <ref role="trN6q" node="$bJ0jgPete" resolve="IValueDebuggable" />
-      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="7XSydqUPm9">
@@ -1703,7 +1702,7 @@
   <node concept="1TIwiD" id="1jw2PJJHS3i">
     <property role="3GE5qa" value="pathAndFile" />
     <property role="TrG5h" value="FileSystemFilePicker" />
-    <ref role="1TJDcQ" node="5lKnBeAtNw8" resolve="AbstractFilePicker" />
+    <ref role="1TJDcQ" node="5lKnBeAtNw8" resolve="AbstractPicker" />
   </node>
   <node concept="1TIwiD" id="5Wocj7wnolM">
     <property role="3GE5qa" value="pathAndFile" />

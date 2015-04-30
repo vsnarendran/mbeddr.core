@@ -361,10 +361,8 @@
                   <ref role="3Tt5mk" to="3vkx:34d3$NxXi7o" />
                 </node>
               </node>
-              <node concept="3CFZ6_" id="$bJ0jgVdgq" role="2OqNvi">
-                <node concept="3CFYIy" id="$bJ0jgVdgr" role="3CFYIz">
-                  <ref role="3CFYIx" to="vs0r:$bJ0jgQ80g" resolve="ValueDebugger" />
-                </node>
+              <node concept="3TrEf2" id="7piNMoaaEBc" role="2OqNvi">
+                <ref role="3Tt5mk" to="vs0r:7piNMo9UlCu" />
               </node>
             </node>
             <node concept="2qgKlT" id="$bJ0jgVdgs" role="2OqNvi">
