@@ -34,7 +34,7 @@
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" />
     <import index="hba4" ref="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" />
     <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(java.util@java_stub)" />
-    <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
+    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" implicit="true" />
   </imports>
@@ -979,16 +979,57 @@
       <node concept="3Tm1VV" id="3ilck8Kr3zO" role="1B3o_S" />
       <node concept="10P_77" id="3ilck8Kr3zR" role="3clF45" />
       <node concept="3clFbS" id="3ilck8Kr3zQ" role="3clF47">
+        <node concept="3cpWs8" id="61$ycjqCgZW" role="3cqZAp">
+          <node concept="3cpWsn" id="61$ycjqCgZX" role="3cpWs9">
+            <property role="TrG5h" value="evaluable" />
+            <node concept="10P_77" id="61$ycjqCgZS" role="1tU5fm" />
+            <node concept="2OqwBi" id="61$ycjqCgZY" role="33vP2m">
+              <node concept="2YIFZM" id="61$ycjqCgZZ" role="2Oq$k0">
+                <ref role="37wK5l" node="7xtsKqWmlNm" resolve="getInstance" />
+                <ref role="1Pybhc" node="7xtsKqWkMDE" resolve="StaticInterpreterHelper" />
+              </node>
+              <node concept="liA8E" id="61$ycjqCh00" role="2OqNvi">
+                <ref role="37wK5l" node="7xtsKqWmeAK" resolve="isEvaluable" />
+                <node concept="13iPFW" id="61$ycjqCh01" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="61$ycjqCtIA" role="3cqZAp">
+          <node concept="2OqwBi" id="61$ycjqCtIz" role="3clFbG">
+            <node concept="10M0yZ" id="61$ycjqCtI$" role="2Oq$k0">
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="61$ycjqCtI_" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="61$ycjqCvGg" role="37wK5m">
+                <node concept="37vLTw" id="61$ycjqCvUU" role="3uHU7w">
+                  <ref role="3cqZAo" node="61$ycjqCgZX" resolve="evaluable" />
+                </node>
+                <node concept="3cpWs3" id="61$ycjqCvjf" role="3uHU7B">
+                  <node concept="3cpWs3" id="61$ycjqCul2" role="3uHU7B">
+                    <node concept="Xl_RD" id="61$ycjqCtKL" role="3uHU7B">
+                      <property role="Xl_RC" value="isStaticallyEvaluatable: " />
+                    </node>
+                    <node concept="2OqwBi" id="61$ycjqCuyi" role="3uHU7w">
+                      <node concept="13iPFW" id="61$ycjqCulh" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="61$ycjqCv95" role="2OqNvi">
+                        <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="61$ycjqCvji" role="3uHU7w">
+                    <property role="Xl_RC" value=": " />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs6" id="7xtsKqWmloZ" role="3cqZAp">
-          <node concept="2OqwBi" id="7xtsKqWmnop" role="3cqZAk">
-            <node concept="2YIFZM" id="7xtsKqWmnn5" role="2Oq$k0">
-              <ref role="37wK5l" node="7xtsKqWmlNm" resolve="getInstance" />
-              <ref role="1Pybhc" node="7xtsKqWkMDE" resolve="StaticInterpreterHelper" />
-            </node>
-            <node concept="liA8E" id="7xtsKqWmnvn" role="2OqNvi">
-              <ref role="37wK5l" node="7xtsKqWmeAK" resolve="isEvaluable" />
-              <node concept="13iPFW" id="7xtsKqWmoEn" role="37wK5m" />
-            </node>
+          <node concept="37vLTw" id="61$ycjqCh02" role="3cqZAk">
+            <ref role="3cqZAo" node="61$ycjqCgZX" resolve="evaluable" />
           </node>
         </node>
       </node>

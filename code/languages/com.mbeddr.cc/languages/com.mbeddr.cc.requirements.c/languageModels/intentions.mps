@@ -13,7 +13,8 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="qdxw" ref="r:9295c19c-56f9-4395-bf08-9ffc2ff588e1(com.mbeddr.core.interpreterdebugger.rt.runtime)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -87,6 +88,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -241,6 +243,20 @@
       </node>
       <node concept="3Tm1VV" id="$bJ0jgVdfg" role="1B3o_S" />
       <node concept="3clFbS" id="$bJ0jgVdfh" role="3clF47">
+        <node concept="3clFbF" id="WQTSVtN2Mi" role="3cqZAp">
+          <node concept="2OqwBi" id="WQTSVtN2Mf" role="3clFbG">
+            <node concept="10M0yZ" id="WQTSVtN2Mg" role="2Oq$k0">
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="WQTSVtN2Mh" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="WQTSVtN2O_" role="37wK5m">
+                <property role="Xl_RC" value="debug" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="$bJ0jgVdfi" role="3cqZAp">
           <node concept="3cpWsn" id="$bJ0jgVdfj" role="3cpWs9">
             <property role="TrG5h" value="calc" />
@@ -352,21 +368,16 @@
         </node>
         <node concept="3clFbF" id="$bJ0jgVdgk" role="3cqZAp">
           <node concept="2OqwBi" id="$bJ0jgVdgl" role="3clFbG">
-            <node concept="2OqwBi" id="$bJ0jgVdgm" role="2Oq$k0">
-              <node concept="2OqwBi" id="$bJ0jgVdgn" role="2Oq$k0">
-                <node concept="37vLTw" id="$bJ0jgVdgo" role="2Oq$k0">
-                  <ref role="3cqZAo" node="$bJ0jgVdg7" resolve="calc" />
-                </node>
-                <node concept="3TrEf2" id="$bJ0jgVdgp" role="2OqNvi">
-                  <ref role="3Tt5mk" to="3vkx:34d3$NxXi7o" />
-                </node>
+            <node concept="2OqwBi" id="$bJ0jgVdgn" role="2Oq$k0">
+              <node concept="37vLTw" id="$bJ0jgVdgo" role="2Oq$k0">
+                <ref role="3cqZAo" node="$bJ0jgVdg7" resolve="calc" />
               </node>
-              <node concept="3TrEf2" id="7piNMoaaEBc" role="2OqNvi">
-                <ref role="3Tt5mk" to="vs0r:7piNMo9UlCu" />
+              <node concept="3TrEf2" id="$bJ0jgVdgp" role="2OqNvi">
+                <ref role="3Tt5mk" to="3vkx:34d3$NxXi7o" />
               </node>
             </node>
             <node concept="2qgKlT" id="$bJ0jgVdgs" role="2OqNvi">
-              <ref role="37wK5l" to="hwgx:$bJ0jgQ87d" resolve="update" />
+              <ref role="37wK5l" to="hwgx:6KLCBzCTpEk" resolve="updateDebugger" />
               <node concept="1rXfSq" id="3zYUNYHVkbF" role="37wK5m">
                 <ref role="37wK5l" node="3zYUNYHV9rL" resolve="createValueSource" />
                 <node concept="37vLTw" id="3zYUNYHVkHB" role="37wK5m">
@@ -437,6 +448,30 @@
               <ref role="37wK5l" node="4NDzuYt3enn" resolve="createContextWithEnv" />
               <node concept="37vLTw" id="3zYUNYHVboy" role="37wK5m">
                 <ref role="3cqZAo" node="3zYUNYHVa1x" resolve="tc" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="WQTSVtN2Xp" role="3cqZAp">
+          <node concept="2OqwBi" id="WQTSVtN2Xm" role="3clFbG">
+            <node concept="10M0yZ" id="WQTSVtN2Xn" role="2Oq$k0">
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="WQTSVtN2Xo" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="WQTSVtN3ce" role="37wK5m">
+                <node concept="2OqwBi" id="WQTSVtN3k1" role="3uHU7w">
+                  <node concept="37vLTw" id="WQTSVtN3dY" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3zYUNYHVbow" resolve="context" />
+                  </node>
+                  <node concept="liA8E" id="WQTSVtN3He" role="2OqNvi">
+                    <ref role="37wK5l" to="2ahs:4N5UlZR9geF" resolve="getEnvironment" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="WQTSVtN30x" role="3uHU7B">
+                  <property role="Xl_RC" value="created env: " />
+                </node>
               </node>
             </node>
           </node>

@@ -72,6 +72,9 @@
         <property id="1238091709220" name="labelName" index="1413C4" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
+      <concept id="1227861515039" name="jetbrains.mps.lang.editor.structure.NavigatableReferenceStyleClassItem" flags="ln" index="3yfXC2">
+        <reference id="1227861587090" name="link" index="3ygfmf" />
+      </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -648,6 +651,9 @@
               </node>
             </node>
           </node>
+        </node>
+        <node concept="3yfXC2" id="2p7vY1Z4MSk" role="3F10Kt">
+          <ref role="3ygfmf" to="3673:7ueT7DHTBL8" />
         </node>
       </node>
       <node concept="3EZMnI" id="UYJLA$qcU4" role="3EZMnx">

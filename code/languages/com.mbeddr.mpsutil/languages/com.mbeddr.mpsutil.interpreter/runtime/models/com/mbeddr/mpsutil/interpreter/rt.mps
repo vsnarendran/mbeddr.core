@@ -3328,6 +3328,23 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="2p7vY1Z3vMK" role="3cqZAp">
+          <node concept="3cpWsn" id="2p7vY1Z3vML" role="3cpWs9">
+            <property role="TrG5h" value="targetIsNumber" />
+            <node concept="10P_77" id="2p7vY1Z3vME" role="1tU5fm" />
+            <node concept="2OqwBi" id="2p7vY1Z3vMM" role="33vP2m">
+              <node concept="3VsKOn" id="2p7vY1Z3vMN" role="2Oq$k0">
+                <ref role="3VsUkX" to="e2lb:~Number" resolve="Number" />
+              </node>
+              <node concept="liA8E" id="2p7vY1Z3vMO" role="2OqNvi">
+                <ref role="37wK5l" to="e2lb:~Class.isAssignableFrom(java.lang.Class):boolean" resolve="isAssignableFrom" />
+                <node concept="37vLTw" id="2p7vY1Z3vMP" role="37wK5m">
+                  <ref role="3cqZAo" node="M6L5HuRfeb" resolve="targetType" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="5Gh6GqH1HNc" role="3cqZAp">
           <node concept="3clFbS" id="5Gh6GqH1HNf" role="3clFbx">
             <node concept="3clFbF" id="5Gh6GqH20gR" role="3cqZAp">
@@ -3353,16 +3370,8 @@
             </node>
           </node>
           <node concept="1Wc70l" id="5Gh6GqH1K3U" role="3clFbw">
-            <node concept="2OqwBi" id="5Gh6GqH1TK8" role="3uHU7w">
-              <node concept="3VsKOn" id="5Gh6GqH1Tk_" role="2Oq$k0">
-                <ref role="3VsUkX" to="e2lb:~Number" resolve="Number" />
-              </node>
-              <node concept="liA8E" id="5Gh6GqH1UzQ" role="2OqNvi">
-                <ref role="37wK5l" to="e2lb:~Class.isAssignableFrom(java.lang.Class):boolean" resolve="isAssignableFrom" />
-                <node concept="37vLTw" id="5Gh6GqH1WBJ" role="37wK5m">
-                  <ref role="3cqZAo" node="M6L5HuRfeb" resolve="targetType" />
-                </node>
-              </node>
+            <node concept="37vLTw" id="2p7vY1Z3vMQ" role="3uHU7w">
+              <ref role="3cqZAo" node="2p7vY1Z3vML" resolve="targetIsNumber" />
             </node>
             <node concept="2ZW3vV" id="5Gh6GqH1IZy" role="3uHU7B">
               <node concept="3uibUv" id="5Gh6GqH1J$6" role="2ZW6by">
@@ -3558,6 +3567,26 @@
             </node>
             <node concept="37vLTw" id="5Gh6GqH265P" role="2ZW6bz">
               <ref role="3cqZAo" node="5Gh6GqH1YeU" resolve="mangledInput" />
+            </node>
+          </node>
+          <node concept="3eNFk2" id="2p7vY1Z3v3r" role="3eNLev">
+            <node concept="37vLTw" id="2p7vY1Z3wkD" role="3eO9$A">
+              <ref role="3cqZAo" node="2p7vY1Z3vML" resolve="targetIsNumber" />
+            </node>
+            <node concept="3clFbS" id="2p7vY1Z3v3t" role="3eOfB_">
+              <node concept="YS8fn" id="2p7vY1Z4af3" role="3cqZAp">
+                <node concept="2ShNRf" id="2p7vY1Z4ah3" role="YScLw">
+                  <node concept="1pGfFk" id="2p7vY1Z4dpc" role="2ShVmc">
+                    <ref role="37wK5l" node="2p7vY1Z47Ri" resolve="InvalidUpCastException" />
+                    <node concept="37vLTw" id="2p7vY1Z4dr1" role="37wK5m">
+                      <ref role="3cqZAo" node="M6L5HuRefT" resolve="input" />
+                    </node>
+                    <node concept="37vLTw" id="2p7vY1Z4dux" role="37wK5m">
+                      <ref role="3cqZAo" node="M6L5HuRfeb" resolve="targetType" />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -9582,6 +9611,58 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="2p7vY1Z47DK">
+    <property role="3GE5qa" value="exception" />
+    <property role="TrG5h" value="InvalidUpCastException" />
+    <node concept="3clFbW" id="2p7vY1Z47Ri" role="jymVt">
+      <node concept="3cqZAl" id="2p7vY1Z47Rk" role="3clF45" />
+      <node concept="3Tm1VV" id="2p7vY1Z47Rl" role="1B3o_S" />
+      <node concept="3clFbS" id="2p7vY1Z47Rm" role="3clF47">
+        <node concept="XkiVB" id="2p7vY1Z487E" role="3cqZAp">
+          <ref role="37wK5l" node="9nJ_zCA_70" resolve="InterpreterBaseException" />
+          <node concept="3cpWs3" id="2p7vY1Z49LG" role="37wK5m">
+            <node concept="37vLTw" id="2p7vY1Z49Yb" role="3uHU7w">
+              <ref role="3cqZAo" node="2p7vY1Z47Ru" resolve="input" />
+            </node>
+            <node concept="3cpWs3" id="2p7vY1Z49p$" role="3uHU7B">
+              <node concept="3cpWs3" id="2p7vY1Z48s9" role="3uHU7B">
+                <node concept="Xl_RD" id="2p7vY1Z48l3" role="3uHU7B">
+                  <property role="Xl_RC" value="Input should be " />
+                </node>
+                <node concept="2OqwBi" id="2p7vY1Z48zL" role="3uHU7w">
+                  <node concept="37vLTw" id="2p7vY1Z48sR" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2p7vY1Z47RC" resolve="targetType" />
+                  </node>
+                  <node concept="liA8E" id="2p7vY1Z49cc" role="2OqNvi">
+                    <ref role="37wK5l" to="e2lb:~Class.getName():java.lang.String" resolve="getName" />
+                  </node>
+                </node>
+              </node>
+              <node concept="Xl_RD" id="2p7vY1Z49pI" role="3uHU7w">
+                <property role="Xl_RC" value=", but is " />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="2p7vY1Z47Ru" role="3clF46">
+        <property role="TrG5h" value="input" />
+        <node concept="3uibUv" id="2p7vY1Z47Rt" role="1tU5fm">
+          <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2p7vY1Z47RC" role="3clF46">
+        <property role="TrG5h" value="targetType" />
+        <node concept="3uibUv" id="2p7vY1Z487g" role="1tU5fm">
+          <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="2p7vY1Z47DL" role="1B3o_S" />
+    <node concept="3uibUv" id="2p7vY1Z47E1" role="1zkMxy">
+      <ref role="3uigEE" node="9nJ_zCAzxL" resolve="InterpreterBaseException" />
     </node>
   </node>
 </model>
