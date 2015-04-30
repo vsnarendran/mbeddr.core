@@ -68,6 +68,9 @@
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
+      <concept id="1236262245656" name="jetbrains.mps.lang.editor.structure.MatchingLabelStyleClassItem" flags="ln" index="3mYdg7">
+        <property id="1238091709220" name="labelName" index="1413C4" />
+      </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
@@ -942,6 +945,37 @@
         <node concept="3F2HdR" id="7oujAIeP3i0" role="3EZMnx">
           <ref role="1NtTu8" to="3673:7ueT7DHTBKd" />
           <node concept="2EHx9g" id="7oujAIeP3i1" role="2czzBx" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7piNMo9JxHC">
+    <property role="3GE5qa" value="Evaluator.BaseLanguageExtensions" />
+    <ref role="1XX52x" to="3673:7F2vPZ5zDyG" resolve="EnvExpressionType" />
+    <node concept="3EZMnI" id="7piNMo9JxMH" role="2wV5jI">
+      <node concept="l2Vlx" id="7piNMo9JxMI" role="2iSdaV" />
+      <node concept="3F0ifn" id="7piNMo9JxMJ" role="3EZMnx">
+        <property role="3F0ifm" value="env expression type" />
+      </node>
+      <node concept="3F0ifn" id="7piNMo9JxMK" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="7piNMo9JxML" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3mYdg7" id="7piNMo9JxMM" role="3F10Kt">
+          <property role="1413C4" value="body-paren" />
+        </node>
+        <node concept="11LMrY" id="7piNMo9JxMN" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7piNMo9JxMO" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="7piNMo9JxMP" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3mYdg7" id="7piNMo9JxMQ" role="3F10Kt">
+          <property role="1413C4" value="body-paren" />
         </node>
       </node>
     </node>

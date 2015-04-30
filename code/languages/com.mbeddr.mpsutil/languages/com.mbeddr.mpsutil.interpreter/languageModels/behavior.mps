@@ -21,6 +21,7 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
     <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" />
+    <import index="tpeu" ref="r:00000000-0000-4000-0000-011c895902fa(jetbrains.mps.lang.smodel.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -2660,8 +2661,8 @@
                     <ref role="3Tt5mk" to="3673:65E6xpH3Qc1" />
                   </node>
                 </node>
-                <node concept="3TrcHB" id="65E6xpH7gCb" role="2OqNvi">
-                  <ref role="3TsBF5" to="tp25:v3WHCwUoyi" resolve="fqName" />
+                <node concept="2qgKlT" id="7piNMo9IZDW" role="2OqNvi">
+                  <ref role="37wK5l" to="tpeu:7K4mn_BeEzv" resolve="getFQName" />
                 </node>
               </node>
             </node>
