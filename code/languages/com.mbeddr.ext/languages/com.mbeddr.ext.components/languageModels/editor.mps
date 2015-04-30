@@ -4967,8 +4967,8 @@
                   </node>
                 </node>
                 <node concept="2xDkLB" id="3diMC1ch1ky" role="37wK5m" />
-                <node concept="3b6qkQ" id="3diMC1cjsvh" role="37wK5m">
-                  <property role="$nhwW" value="0.08f" />
+                <node concept="2$xPTn" id="6KLCBzAUbOl" role="37wK5m">
+                  <property role="2$xPTl" value="0.08f" />
                 </node>
               </node>
             </node>

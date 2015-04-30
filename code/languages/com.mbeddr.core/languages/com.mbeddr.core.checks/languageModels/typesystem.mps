@@ -115,6 +115,7 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
+      <concept id="1068581242867" name="jetbrains.mps.baseLanguage.structure.LongType" flags="in" index="3cpWsb" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
@@ -614,14 +615,14 @@
             <node concept="3cpWs8" id="5iSM3v51i86" role="3cqZAp">
               <node concept="3cpWsn" id="5iSM3v51i89" role="3cpWs9">
                 <property role="TrG5h" value="val" />
-                <node concept="10Oyi0" id="5iSM3v51i84" role="1tU5fm" />
+                <node concept="3cpWsb" id="6KLCBzAzM80" role="1tU5fm" />
                 <node concept="1eOMI4" id="5iSM3v51ig6" role="33vP2m">
                   <node concept="10QFUN" id="5iSM3v51ig7" role="1eOMHV">
                     <node concept="2GrUjf" id="5iSM3v51ig5" role="10QFUP">
                       <ref role="2Gs0qQ" node="2sRGoU6nheD" resolve="pv" />
                     </node>
-                    <node concept="3uibUv" id="5iSM3v51nDZ" role="10QFUM">
-                      <ref role="3uigEE" to="e2lb:~Integer" resolve="Integer" />
+                    <node concept="3uibUv" id="6KLCBzAzLTy" role="10QFUM">
+                      <ref role="3uigEE" to="e2lb:~Long" resolve="Long" />
                     </node>
                   </node>
                 </node>

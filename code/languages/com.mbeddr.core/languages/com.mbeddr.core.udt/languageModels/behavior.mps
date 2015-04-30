@@ -1068,8 +1068,8 @@
                       <node concept="2OqwBi" id="5zgShfbbg$O" role="3clFbG">
                         <node concept="1eOMI4" id="6kPQpqHxUD6" role="2Oq$k0">
                           <node concept="10QFUN" id="6kPQpqHxUD7" role="1eOMHV">
-                            <node concept="3uibUv" id="3ewEEwfh30M" role="10QFUM">
-                              <ref role="3uigEE" to="epq1:~BigInteger" resolve="BigInteger" />
+                            <node concept="3uibUv" id="6KLCBzAzVgr" role="10QFUM">
+                              <ref role="3uigEE" to="e2lb:~Long" resolve="Long" />
                             </node>
                             <node concept="37vLTw" id="6kPQpqHxUD5" role="10QFUP">
                               <ref role="3cqZAo" node="5zgShfbbdjo" resolve="a" />
@@ -1077,11 +1077,11 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="5zgShfbbj60" role="2OqNvi">
-                          <ref role="37wK5l" to="epq1:~BigInteger.compareTo(java.math.BigInteger):int" resolve="compareTo" />
+                          <ref role="37wK5l" to="e2lb:~Long.compareTo(java.lang.Long):int" resolve="compareTo" />
                           <node concept="1eOMI4" id="6kPQpqHxX79" role="37wK5m">
                             <node concept="10QFUN" id="6kPQpqHxX7a" role="1eOMHV">
-                              <node concept="3uibUv" id="3ewEEwfh3ns" role="10QFUM">
-                                <ref role="3uigEE" to="epq1:~BigInteger" resolve="BigInteger" />
+                              <node concept="3uibUv" id="6KLCBzAzVTu" role="10QFUM">
+                                <ref role="3uigEE" to="e2lb:~Long" resolve="Long" />
                               </node>
                               <node concept="37vLTw" id="6kPQpqHxX78" role="10QFUP">
                                 <ref role="3cqZAo" node="5zgShfbbdjq" resolve="b" />

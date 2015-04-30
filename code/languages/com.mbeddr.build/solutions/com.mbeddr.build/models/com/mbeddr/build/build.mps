@@ -4549,6 +4549,12 @@
             <ref role="3bR37D" to="90a9:6vUATgmxw8m" resolve="de.itemis.mps.editor.math.symbols" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6KLCBzCSFyS" role="3bR37C">
+          <node concept="3bR9La" id="6KLCBzCSFyT" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="2bBLuwR9Jux" resolve="com.mbeddr.core.cinterpreter" />
+          </node>
+        </node>
       </node>
       <node concept="3LEwk6" id="2Y27DzrKXcR" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -5008,6 +5014,12 @@
           <property role="3LESm3" value="4946b1ce-99f4-4894-90b6-e08eb8b6de40" />
           <property role="2GAjPV" value="false" />
         </node>
+        <node concept="1SiIV0" id="6KLCBzCSF$q" role="3bR37C">
+          <node concept="3bR9La" id="6KLCBzCSF$r" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="2bBLuwR9Jux" resolve="com.mbeddr.core.cinterpreter" />
+          </node>
+        </node>
       </node>
       <node concept="3LEwk6" id="7eF9rfAuv_T" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -5205,6 +5217,12 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6KLCBzCSF_e" role="3bR37C">
+          <node concept="3bR9La" id="6KLCBzCSF_f" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="2bBLuwR9Jux" resolve="com.mbeddr.core.cinterpreter" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7eF9rfAnuj$" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -5284,6 +5302,12 @@
           <node concept="3bR9La" id="7jyc2jFKo6I" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1CtrbKI23Wm" resolve="jetbrains.mps.lang.migration" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6KLCBzCSF_C" role="3bR37C">
+          <node concept="3bR9La" id="6KLCBzCSF_D" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="2bBLuwR9Jux" resolve="com.mbeddr.core.cinterpreter" />
           </node>
         </node>
       </node>
