@@ -1186,7 +1186,7 @@
   <node concept="2S6QgY" id="$bJ0jh_Ak9">
     <property role="3GE5qa" value="valueDebugger" />
     <property role="TrG5h" value="expandOne" />
-    <ref role="2ZfgGC" to="vs0r:$bJ0jgQ80g" resolve="ValueDebugger" />
+    <ref role="2ZfgGC" to="vs0r:$bJ0jgPete" resolve="IValueDebuggable" />
     <node concept="2S6ZIM" id="$bJ0jh_Aka" role="2ZfVej">
       <node concept="3clFbS" id="$bJ0jh_Akb" role="2VODD2">
         <node concept="3clFbF" id="$bJ0jh_Akc" role="3cqZAp">
@@ -1202,7 +1202,7 @@
           <node concept="2OqwBi" id="$bJ0jh_Akh" role="3clFbG">
             <node concept="2Sf5sV" id="$bJ0jh_Aki" role="2Oq$k0" />
             <node concept="2qgKlT" id="$bJ0jh_Akj" role="2OqNvi">
-              <ref role="37wK5l" to="hwgx:$bJ0jgQ845" resolve="expandOneLevel" />
+              <ref role="37wK5l" to="hwgx:$bJ0jgQ845" resolve="expandDebuggerOneLevel" />
             </node>
           </node>
         </node>
@@ -1210,12 +1210,20 @@
     </node>
     <node concept="2SaL7w" id="$bJ0jh_Akk" role="2ZfVeh">
       <node concept="3clFbS" id="$bJ0jh_Akl" role="2VODD2">
-        <node concept="3clFbF" id="$bJ0jh_Akm" role="3cqZAp">
-          <node concept="3fqX7Q" id="$bJ0jh_Akn" role="3clFbG">
-            <node concept="2OqwBi" id="$bJ0jh_Ako" role="3fr31v">
-              <node concept="2Sf5sV" id="$bJ0jh_Akp" role="2Oq$k0" />
-              <node concept="3TrcHB" id="$bJ0jh_Akq" role="2OqNvi">
-                <ref role="3TsBF5" to="vs0r:$bJ0jgQ80i" resolve="expanded" />
+        <node concept="3clFbF" id="6KLCBzCUziv" role="3cqZAp">
+          <node concept="1Wc70l" id="6KLCBzCUziw" role="3clFbG">
+            <node concept="3fqX7Q" id="6KLCBzCUzu6" role="3uHU7w">
+              <node concept="2OqwBi" id="6KLCBzCUzu7" role="3fr31v">
+                <node concept="2Sf5sV" id="6KLCBzCUzu8" role="2Oq$k0" />
+                <node concept="2qgKlT" id="6KLCBzCUzu9" role="2OqNvi">
+                  <ref role="37wK5l" to="hwgx:6KLCBzCTb8P" resolve="isDebuggerExpanded" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6KLCBzCUzi$" role="3uHU7B">
+              <node concept="2Sf5sV" id="6KLCBzCUzi_" role="2Oq$k0" />
+              <node concept="2qgKlT" id="6KLCBzCUziA" role="2OqNvi">
+                <ref role="37wK5l" to="hwgx:6KLCBzCUvse" resolve="hasDebugger" />
               </node>
             </node>
           </node>
@@ -1226,7 +1234,7 @@
   <node concept="2S6QgY" id="$bJ0jh_Akr">
     <property role="3GE5qa" value="valueDebugger" />
     <property role="TrG5h" value="expandAll" />
-    <ref role="2ZfgGC" to="vs0r:$bJ0jgQ80g" resolve="ValueDebugger" />
+    <ref role="2ZfgGC" to="vs0r:$bJ0jgPete" resolve="IValueDebuggable" />
     <node concept="2S6ZIM" id="$bJ0jh_Aks" role="2ZfVej">
       <node concept="3clFbS" id="$bJ0jh_Akt" role="2VODD2">
         <node concept="3clFbF" id="$bJ0jh_Aku" role="3cqZAp">
@@ -1242,7 +1250,19 @@
           <node concept="2OqwBi" id="$bJ0jh_Akz" role="3clFbG">
             <node concept="2Sf5sV" id="$bJ0jh_Ak$" role="2Oq$k0" />
             <node concept="2qgKlT" id="$bJ0jh_Ak_" role="2OqNvi">
-              <ref role="37wK5l" to="hwgx:$bJ0jgQ84O" resolve="expandAllLevels" />
+              <ref role="37wK5l" to="hwgx:$bJ0jgQ84O" resolve="expandDebuggerAllLevels" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="6KLCBzCUyfv" role="2ZfVeh">
+      <node concept="3clFbS" id="6KLCBzCUyfw" role="2VODD2">
+        <node concept="3clFbF" id="6KLCBzCUyou" role="3cqZAp">
+          <node concept="2OqwBi" id="6KLCBzCUyow" role="3clFbG">
+            <node concept="2Sf5sV" id="6KLCBzCUyox" role="2Oq$k0" />
+            <node concept="2qgKlT" id="6KLCBzCUyoy" role="2OqNvi">
+              <ref role="37wK5l" to="hwgx:6KLCBzCUvse" resolve="hasDebugger" />
             </node>
           </node>
         </node>
@@ -1252,7 +1272,7 @@
   <node concept="2S6QgY" id="$bJ0jh_AkA">
     <property role="3GE5qa" value="valueDebugger" />
     <property role="TrG5h" value="collapse" />
-    <ref role="2ZfgGC" to="vs0r:$bJ0jgQ80g" resolve="ValueDebugger" />
+    <ref role="2ZfgGC" to="vs0r:$bJ0jgPete" resolve="IValueDebuggable" />
     <node concept="2S6ZIM" id="$bJ0jh_AkB" role="2ZfVej">
       <node concept="3clFbS" id="$bJ0jh_AkC" role="2VODD2">
         <node concept="3clFbF" id="$bJ0jh_AkD" role="3cqZAp">
@@ -1268,7 +1288,7 @@
           <node concept="2OqwBi" id="$bJ0jh_AkI" role="3clFbG">
             <node concept="2Sf5sV" id="$bJ0jh_AkJ" role="2Oq$k0" />
             <node concept="2qgKlT" id="$bJ0jh_AkK" role="2OqNvi">
-              <ref role="37wK5l" to="hwgx:$bJ0jgQ83V" resolve="collapse" />
+              <ref role="37wK5l" to="hwgx:$bJ0jgQ83V" resolve="collapseDebugger" />
             </node>
           </node>
         </node>
@@ -1276,11 +1296,19 @@
     </node>
     <node concept="2SaL7w" id="$bJ0jh_AkL" role="2ZfVeh">
       <node concept="3clFbS" id="$bJ0jh_AkM" role="2VODD2">
-        <node concept="3clFbF" id="$bJ0jh_AkN" role="3cqZAp">
-          <node concept="2OqwBi" id="$bJ0jh_AkO" role="3clFbG">
-            <node concept="2Sf5sV" id="$bJ0jh_AkP" role="2Oq$k0" />
-            <node concept="3TrcHB" id="$bJ0jh_AkQ" role="2OqNvi">
-              <ref role="3TsBF5" to="vs0r:$bJ0jgQ80i" resolve="expanded" />
+        <node concept="3clFbF" id="6KLCBzCUuAj" role="3cqZAp">
+          <node concept="1Wc70l" id="6KLCBzCUxyJ" role="3clFbG">
+            <node concept="2OqwBi" id="6KLCBzCUxHi" role="3uHU7w">
+              <node concept="2Sf5sV" id="6KLCBzCUxD9" role="2Oq$k0" />
+              <node concept="2qgKlT" id="6KLCBzCUy2_" role="2OqNvi">
+                <ref role="37wK5l" to="hwgx:6KLCBzCTb8P" resolve="isDebuggerExpanded" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6KLCBzCUuE9" role="3uHU7B">
+              <node concept="2Sf5sV" id="6KLCBzCUuAe" role="2Oq$k0" />
+              <node concept="2qgKlT" id="6KLCBzCUxlK" role="2OqNvi">
+                <ref role="37wK5l" to="hwgx:6KLCBzCUvse" resolve="hasDebugger" />
+              </node>
             </node>
           </node>
         </node>

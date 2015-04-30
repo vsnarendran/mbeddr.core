@@ -135,6 +135,7 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
@@ -1311,28 +1312,16 @@
   <node concept="PlHQZ" id="$bJ0jgPete">
     <property role="3GE5qa" value="valueDebugger" />
     <property role="TrG5h" value="IValueDebuggable" />
-    <node concept="1TJgyj" id="7piNMo9UlCu" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="valueDebugger" />
-      <ref role="20lvS9" node="$bJ0jgQ80g" resolve="ValueDebugger" />
-    </node>
   </node>
   <node concept="1TIwiD" id="$bJ0jgQ80g">
     <property role="3GE5qa" value="valueDebugger" />
     <property role="TrG5h" value="ValueDebugger" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="$bJ0jgQ80h" role="1TKVEl">
-      <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyi" id="$bJ0jgQ80i" role="1TKVEl">
       <property role="TrG5h" value="expanded" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-    <node concept="1TJgyi" id="2BbcAuIdyyA" role="1TKVEl">
-      <property role="TrG5h" value="debugKeyString" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
+    <node concept="asaX9" id="6KLCBzCTtUq" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="7XSydqUPm9">
     <property role="TrG5h" value="ChunkDependencyConstraint" />

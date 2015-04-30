@@ -61,15 +61,10 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
-      <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
-      <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
-        <child id="5680397130376446158" name="type" index="1tU5fm" />
-      </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
-        <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
@@ -576,12 +571,6 @@
           </node>
         </node>
       </node>
-      <node concept="37vLTG" id="2BbcAuJ3tjt" role="3clF46">
-        <property role="TrG5h" value="valueDebugger" />
-        <node concept="3Tqbb2" id="2BbcAuJ3tju" role="1tU5fm">
-          <ref role="ehGHo" to="vs0r:$bJ0jgQ80g" resolve="ValueDebugger" />
-        </node>
-      </node>
       <node concept="10Oyi0" id="2BbcAuJ3tjv" role="3clF45" />
     </node>
     <node concept="13i0hz" id="2BbcAuJ4ECO" role="13h7CS">
@@ -596,12 +585,6 @@
             <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
             <ref role="3cqZAo" to="1t7x:~Color.CYAN" resolve="CYAN" />
           </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="2BbcAuJ4EDh" role="3clF46">
-        <property role="TrG5h" value="valueDebugger" />
-        <node concept="3Tqbb2" id="2BbcAuJ4EDi" role="1tU5fm">
-          <ref role="ehGHo" to="vs0r:$bJ0jgQ80g" resolve="ValueDebugger" />
         </node>
       </node>
       <node concept="3uibUv" id="2BbcAuJ4EDj" role="3clF45">
@@ -754,12 +737,6 @@
           </node>
         </node>
       </node>
-      <node concept="37vLTG" id="2BbcAuJ3uxz" role="3clF46">
-        <property role="TrG5h" value="valueDebugger" />
-        <node concept="3Tqbb2" id="2BbcAuJ3ux$" role="1tU5fm">
-          <ref role="ehGHo" to="vs0r:$bJ0jgQ80g" resolve="ValueDebugger" />
-        </node>
-      </node>
       <node concept="3uibUv" id="2BbcAuJ3ux_" role="3clF45">
         <ref role="3uigEE" to="1t7x:~Color" resolve="Color" />
       </node>
@@ -775,12 +752,6 @@
           <node concept="3cmrfG" id="2BbcAuJ4ECl" role="3cqZAk">
             <property role="3cmrfH" value="21" />
           </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="2BbcAuJ4Exf" role="3clF46">
-        <property role="TrG5h" value="valueDebugger" />
-        <node concept="3Tqbb2" id="2BbcAuJ4Exg" role="1tU5fm">
-          <ref role="ehGHo" to="vs0r:$bJ0jgQ80g" resolve="ValueDebugger" />
         </node>
       </node>
       <node concept="10Oyi0" id="2BbcAuJ4Exh" role="3clF45" />
