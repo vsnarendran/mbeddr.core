@@ -1371,18 +1371,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="7RTsFiJsJRb" role="3bR37C">
-          <node concept="3bR9La" id="7RTsFiJsJRc" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="7RTsFiJsecw" resolve="tutorial.__spreferences.PlatformTemplates" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1FYeOCugGvO" role="3bR37C">
-          <node concept="3bR9La" id="1FYeOCugGvP" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="p6ld:4gFRqcy1Vdg" resolve="com.mbeddr.analyses.cbmc.core" />
-          </node>
-        </node>
       </node>
       <node concept="1E1JtA" id="7RTsFiJsdu3" role="2G$12L">
         <property role="BnDLt" value="true" />
