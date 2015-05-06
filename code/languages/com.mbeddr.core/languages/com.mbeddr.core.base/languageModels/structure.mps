@@ -83,7 +83,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -1317,11 +1317,11 @@
     <property role="3GE5qa" value="valueDebugger" />
     <property role="TrG5h" value="ValueDebugger" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="6KLCBzCTtUq" role="lGtFl" />
     <node concept="1TJgyi" id="$bJ0jgQ80i" role="1TKVEl">
       <property role="TrG5h" value="expanded" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-    <node concept="asaX9" id="6KLCBzCTtUq" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="7XSydqUPm9">
     <property role="TrG5h" value="ChunkDependencyConstraint" />
