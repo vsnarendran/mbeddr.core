@@ -8844,9 +8844,14 @@
       <node concept="3Tm1VV" id="6KLCBzCT0$Q" role="1B3o_S" />
       <node concept="3clFbS" id="6KLCBzCT0$R" role="3clF47">
         <node concept="3clFbF" id="6KLCBzCT0P$" role="3cqZAp">
-          <node concept="3fqX7Q" id="6KLCBzCT0Py" role="3clFbG">
-            <node concept="BsUDl" id="6KLCBzCT0PU" role="3fr31v">
-              <ref role="37wK5l" node="$bJ0jgWtSA" resolve="doNotShowDebugger" />
+          <node concept="1Wc70l" id="1BADXk59tEo" role="3clFbG">
+            <node concept="BsUDl" id="1BADXk59zGv" role="3uHU7w">
+              <ref role="37wK5l" node="6KLCBzCTb8P" resolve="isDebuggerExpanded" />
+            </node>
+            <node concept="3fqX7Q" id="6KLCBzCT0Py" role="3uHU7B">
+              <node concept="BsUDl" id="6KLCBzCT0PU" role="3fr31v">
+                <ref role="37wK5l" node="$bJ0jgWtSA" resolve="doNotShowDebugger" />
+              </node>
             </node>
           </node>
         </node>
@@ -9075,6 +9080,17 @@
               <ref role="37wK5l" node="3$DH87aJJo_" resolve="updateDebuggerPresentation" />
               <node concept="37vLTw" id="3$DH87aJK52" role="37wK5m">
                 <ref role="3cqZAo" node="3$DH87aJHKJ" resolve="presentation" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="NqpzEWq_7X" role="3cqZAp">
+          <node concept="2OqwBi" id="NqpzEWqAHv" role="3clFbG">
+            <node concept="13iPFW" id="NqpzEWq_7V" role="2Oq$k0" />
+            <node concept="2qgKlT" id="NqpzEWqBkO" role="2OqNvi">
+              <ref role="37wK5l" node="6KLCBzCTbNC" resolve="setDebuggerExpanded" />
+              <node concept="3clFbT" id="NqpzEWqBlW" role="37wK5m">
+                <property role="3clFbU" value="true" />
               </node>
             </node>
           </node>
@@ -9511,6 +9527,23 @@
         <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
       </node>
       <node concept="3clFbS" id="1c0z7yfF6FS" role="3clF47">
+        <node concept="3clFbF" id="NqpzEWTKx$" role="3cqZAp">
+          <node concept="2OqwBi" id="NqpzEWTKxx" role="3clFbG">
+            <node concept="10M0yZ" id="NqpzEWTKxy" role="2Oq$k0">
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="NqpzEWTKxz" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="NqpzEWTKPh" role="37wK5m">
+                <node concept="13iPFW" id="NqpzEWTKPo" role="3uHU7w" />
+                <node concept="Xl_RD" id="NqpzEWTKzQ" role="3uHU7B">
+                  <property role="Xl_RC" value="getDebuggerValue on " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="4N5UlZS8qKd" role="3cqZAp">
           <node concept="3cpWsn" id="4N5UlZS8qKe" role="3cpWs9">
             <property role="TrG5h" value="valueSource" />
