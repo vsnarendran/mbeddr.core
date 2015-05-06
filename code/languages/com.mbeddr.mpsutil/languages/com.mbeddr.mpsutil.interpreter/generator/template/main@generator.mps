@@ -75,6 +75,9 @@
       <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
         <child id="1182160096073" name="cls" index="YeSDq" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
         <child id="1164991057263" name="throwable" index="YScLw" />
       </concept>
@@ -176,9 +179,12 @@
       </concept>
     </language>
     <language id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension">
+      <concept id="7036359038356050927" name="jetbrains.mps.lang.extension.structure.ExtensionFunction" flags="in" index="20X7yG" />
       <concept id="8029776554053043557" name="jetbrains.mps.lang.extension.structure.ExtensionObjectGetter" flags="in" index="lufDu" />
       <concept id="3729007189729192404" name="jetbrains.mps.lang.extension.structure.ExtensionDeclaration" flags="ng" index="vrV6s">
         <reference id="3729007189729192405" name="extensionPoint" index="vrV6t" />
+        <child id="7036359038356050926" name="activator" index="20X7yH" />
+        <child id="7036359038356050934" name="deactivator" index="20X7yP" />
         <child id="8029776554053057811" name="objectGetter" index="luc8C" />
       </concept>
     </language>
@@ -3335,6 +3341,36 @@
     </node>
     <node concept="n94m4" id="2VC4eVXUJvL" role="lGtFl">
       <ref role="n9lRv" to="3673:7ueT7DHTBbE" resolve="Interpreter" />
+    </node>
+    <node concept="20X7yG" id="6t6gMvcSd76" role="20X7yH">
+      <node concept="3clFbS" id="6t6gMvcSd77" role="2VODD2">
+        <node concept="3clFbF" id="6t6gMvcSdBG" role="3cqZAp">
+          <node concept="2OqwBi" id="6t6gMvcSdDe" role="3clFbG">
+            <node concept="2YIFZM" id="6t6gMvcSdCj" role="2Oq$k0">
+              <ref role="37wK5l" to="2ahs:6t6gMvcMFOM" resolve="getInstance" />
+              <ref role="1Pybhc" to="2ahs:6t6gMvcKSR1" resolve="CachedInterpreterFinder" />
+            </node>
+            <node concept="liA8E" id="6t6gMvcSdNU" role="2OqNvi">
+              <ref role="37wK5l" to="2ahs:6t6gMvcNmrw" resolve="flushCache" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="20X7yG" id="6t6gMvcSdQ3" role="20X7yP">
+      <node concept="3clFbS" id="6t6gMvcSdQ4" role="2VODD2">
+        <node concept="3clFbF" id="6t6gMvcSdOL" role="3cqZAp">
+          <node concept="2OqwBi" id="6t6gMvcSdOM" role="3clFbG">
+            <node concept="2YIFZM" id="6t6gMvcSdON" role="2Oq$k0">
+              <ref role="37wK5l" to="2ahs:6t6gMvcMFOM" resolve="getInstance" />
+              <ref role="1Pybhc" to="2ahs:6t6gMvcKSR1" resolve="CachedInterpreterFinder" />
+            </node>
+            <node concept="liA8E" id="6t6gMvcSdOO" role="2OqNvi">
+              <ref role="37wK5l" to="2ahs:6t6gMvcNmrw" resolve="flushCache" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="7oujAIfrjdu">
