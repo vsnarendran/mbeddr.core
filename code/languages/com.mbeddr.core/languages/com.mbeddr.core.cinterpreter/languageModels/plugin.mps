@@ -424,6 +424,12 @@
         <property role="BaGAP" value="" />
       </node>
     </node>
+    <node concept="d$4Dx" id="224RtdF8hhf" role="d$6nW">
+      <node concept="BaHAS" id="224RtdF8hhg" role="cpn$n">
+        <property role="BaHAW" value="com.mbeddr.core.modules.structure" />
+        <property role="BaGAP" value="" />
+      </node>
+    </node>
     <node concept="1J7L1T" id="2pogikTOpWc" role="1J4apk">
       <ref role="1J7WVQ" node="2pogikSbFpc" resolve="CFunctionInterpreter" />
     </node>
@@ -453,22 +459,21 @@
         </node>
       </node>
     </node>
+    <node concept="3SNpY9" id="224RtdF8in3" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="x27k:3ilck8KpYYm" resolve="GlobalConstantDeclaration" />
+      <node concept="3vetai" id="224RtdF8irz" role="3vQZUl">
+        <node concept="rqRoa" id="224RtdF8irL" role="3vdyny">
+          <ref role="rqRob" to="x27k:2VsHNE717Q8" />
+        </node>
+      </node>
+    </node>
     <node concept="3SNpY9" id="2pogikTO_ZI" role="qq9xR">
       <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="x27k:3ilck8KqBqr" resolve="GlobalConstantRef" />
       <node concept="3vetai" id="2pogikTOAOy" role="3vQZUl">
-        <node concept="qpA2v" id="2pogikTOBYY" role="3vdyny">
-          <node concept="2OqwBi" id="2pogikTODNn" role="3SLO0q">
-            <node concept="2OqwBi" id="2pogikTOC5n" role="2Oq$k0">
-              <node concept="oxGPV" id="2pogikTOBZs" role="2Oq$k0" />
-              <node concept="3TrEf2" id="2pogikTODaB" role="2OqNvi">
-                <ref role="3Tt5mk" to="x27k:2VsHNE72zUU" />
-              </node>
-            </node>
-            <node concept="3TrEf2" id="2pogikTOFgp" role="2OqNvi">
-              <ref role="3Tt5mk" to="x27k:2VsHNE717Q8" />
-            </node>
-          </node>
+        <node concept="rqRoa" id="224RtdF8is6" role="3vdyny">
+          <ref role="rqRob" to="x27k:2VsHNE72zUU" />
         </node>
       </node>
       <node concept="3SNqBc" id="2pogikTOA6Q" role="3SNqB7">
@@ -525,6 +530,24 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3SNpY9" id="224RtdF8hpm" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
+      <node concept="3vetai" id="224RtdF8htS" role="3vQZUl">
+        <node concept="rqRoa" id="224RtdF8hu6" role="3vdyny">
+          <ref role="rqRob" to="x27k:2pPw_DEjkM9" />
+        </node>
+      </node>
+    </node>
+    <node concept="3SNpY9" id="224RtdF7xvb" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="x27k:5IYyAOzCwFE" resolve="GlobalVarRef" />
+      <node concept="3vetai" id="224RtdF7xz_" role="3vQZUl">
+        <node concept="rqRoa" id="224RtdF8hwi" role="3vdyny">
+          <ref role="rqRob" to="x27k:5IYyAOzCwFF" />
         </node>
       </node>
     </node>
@@ -1311,6 +1334,23 @@
           </node>
           <node concept="rqRoa" id="2pogikSawgt" role="3uHU7B">
             <ref role="rqRob" to="mj1l:7FQByU3CrD0" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3SNpY9" id="3xh5v2Ykzts" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="mj1l:7FQByU3CrWE" resolve="EqualsExpression" />
+      <node concept="3vetai" id="3xh5v2Yk$Ej" role="3vQZUl">
+        <node concept="2OqwBi" id="3xh5v2Yk_EA" role="3vdyny">
+          <node concept="rqRoa" id="3xh5v2Yk_jY" role="2Oq$k0">
+            <ref role="rqRob" to="mj1l:7FQByU3CrD0" />
+          </node>
+          <node concept="liA8E" id="3xh5v2Yk_PB" role="2OqNvi">
+            <ref role="37wK5l" to="e2lb:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+            <node concept="rqRoa" id="3xh5v2Yk_Qm" role="37wK5m">
+              <ref role="rqRob" to="mj1l:7FQByU3CrD1" />
+            </node>
           </node>
         </node>
       </node>

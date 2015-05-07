@@ -17653,10 +17653,7 @@
                 <ref role="37wK5l" to="2ahs:6t6gMvcMFOM" resolve="getInstance" />
               </node>
               <node concept="liA8E" id="15Er3QytrWM" role="2OqNvi">
-                <ref role="37wK5l" to="2ahs:6t6gMvcMGiv" resolve="findVisibleInterpretersForCategoryInternal" />
-                <node concept="37vLTw" id="15Er3QytrWN" role="37wK5m">
-                  <ref role="3cqZAo" node="7xtsKqWlpFV" resolve="referenceNode" />
-                </node>
+                <ref role="37wK5l" to="2ahs:6t6gMvcMGiv" resolve="findInterpretersForCategory" />
                 <node concept="37vLTw" id="15Er3QytrWO" role="37wK5m">
                   <ref role="3cqZAo" node="7xtsKqWlq41" resolve="INTERPRETER_CATEGORY" />
                 </node>

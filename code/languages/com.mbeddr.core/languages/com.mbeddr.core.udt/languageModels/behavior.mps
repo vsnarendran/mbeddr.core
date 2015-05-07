@@ -118,6 +118,9 @@
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
+      <concept id="4269842503726207156" name="jetbrains.mps.baseLanguage.structure.LongLiteral" flags="nn" index="1adDum">
+        <property id="4269842503726207157" name="value" index="1adDun" />
+      </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123134" name="parameter" index="3clF46" />
@@ -134,7 +137,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -1643,9 +1646,8 @@
                     </node>
                     <node concept="liA8E" id="75NPjE_N05a" role="2OqNvi">
                       <ref role="37wK5l" to="e2lb:~Object.equals(java.lang.Object):boolean" resolve="equals" />
-                      <node concept="10M0yZ" id="75NPjE_Plws" role="37wK5m">
-                        <ref role="1PxDUh" to="epq1:~BigInteger" resolve="BigInteger" />
-                        <ref role="3cqZAo" to="epq1:~BigInteger.ZERO" resolve="ZERO" />
+                      <node concept="1adDum" id="3xh5v2Ymydv" role="37wK5m">
+                        <property role="1adDun" value="0L" />
                       </node>
                     </node>
                   </node>

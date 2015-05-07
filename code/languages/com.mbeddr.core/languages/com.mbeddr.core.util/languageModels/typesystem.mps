@@ -93,7 +93,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -2880,8 +2880,8 @@
         </node>
         <node concept="3fqX7Q" id="EoXO7XUxml" role="3clFbw">
           <node concept="2ZW3vV" id="EoXO7XUxWk" role="3fr31v">
-            <node concept="3uibUv" id="3ewEEwfh7VN" role="2ZW6by">
-              <ref role="3uigEE" to="epq1:~BigInteger" resolve="BigInteger" />
+            <node concept="3uibUv" id="224RtdEWijH" role="2ZW6by">
+              <ref role="3uigEE" to="e2lb:~Long" resolve="Long" />
             </node>
             <node concept="37vLTw" id="EoXO7XVMEU" role="2ZW6bz">
               <ref role="3cqZAo" node="EoXO7XVMEO" resolve="size" />
@@ -2911,19 +2911,14 @@
               <node concept="3cmrfG" id="4OlFaNL4VdT" role="3uHU7w">
                 <property role="3cmrfH" value="0" />
               </node>
-              <node concept="2OqwBi" id="4OlFaNL4VdU" role="3uHU7B">
-                <node concept="1eOMI4" id="4OlFaNL4VdV" role="2Oq$k0">
-                  <node concept="10QFUN" id="4OlFaNL4VdW" role="1eOMHV">
-                    <node concept="3uibUv" id="4OlFaNL4VdX" role="10QFUM">
-                      <ref role="3uigEE" to="e2lb:~Number" resolve="Number" />
-                    </node>
-                    <node concept="37vLTw" id="4OlFaNL4VdY" role="10QFUP">
-                      <ref role="3cqZAo" node="EoXO7XVMEO" resolve="size" />
-                    </node>
+              <node concept="1eOMI4" id="4OlFaNL4VdV" role="3uHU7B">
+                <node concept="10QFUN" id="4OlFaNL4VdW" role="1eOMHV">
+                  <node concept="3uibUv" id="3P7mE1oO8X7" role="10QFUM">
+                    <ref role="3uigEE" to="e2lb:~Long" resolve="Long" />
                   </node>
-                </node>
-                <node concept="liA8E" id="4OlFaNL4VdZ" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~Number.intValue():int" resolve="intValue" />
+                  <node concept="37vLTw" id="4OlFaNL4VdY" role="10QFUP">
+                    <ref role="3cqZAo" node="EoXO7XVMEO" resolve="size" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -4119,8 +4114,8 @@
         </node>
         <node concept="3fqX7Q" id="EoXO7XWtsG" role="3clFbw">
           <node concept="2ZW3vV" id="EoXO7XWtsL" role="3fr31v">
-            <node concept="3uibUv" id="3ewEEwfh8lg" role="2ZW6by">
-              <ref role="3uigEE" to="epq1:~BigInteger" resolve="BigInteger" />
+            <node concept="3uibUv" id="224RtdEUBIY" role="2ZW6by">
+              <ref role="3uigEE" to="e2lb:~Long" resolve="Long" />
             </node>
             <node concept="37vLTw" id="EoXO7XWtsN" role="2ZW6bz">
               <ref role="3cqZAo" node="EoXO7XWtsu" resolve="size" />
@@ -4150,19 +4145,14 @@
               <node concept="3cmrfG" id="4OlFaNL4Ve4" role="3uHU7w">
                 <property role="3cmrfH" value="0" />
               </node>
-              <node concept="2OqwBi" id="4OlFaNL4Ve5" role="3uHU7B">
-                <node concept="1eOMI4" id="4OlFaNL4Ve6" role="2Oq$k0">
-                  <node concept="10QFUN" id="4OlFaNL4Ve7" role="1eOMHV">
-                    <node concept="3uibUv" id="4OlFaNL4Ve8" role="10QFUM">
-                      <ref role="3uigEE" to="e2lb:~Number" resolve="Number" />
-                    </node>
-                    <node concept="37vLTw" id="4OlFaNL4Ve9" role="10QFUP">
-                      <ref role="3cqZAo" node="EoXO7XWtsu" resolve="size" />
-                    </node>
+              <node concept="1eOMI4" id="4OlFaNL4Ve6" role="3uHU7B">
+                <node concept="10QFUN" id="4OlFaNL4Ve7" role="1eOMHV">
+                  <node concept="3uibUv" id="3P7mE1oO8F6" role="10QFUM">
+                    <ref role="3uigEE" to="e2lb:~Long" resolve="Long" />
                   </node>
-                </node>
-                <node concept="liA8E" id="4OlFaNL4Vea" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~Number.intValue():int" resolve="intValue" />
+                  <node concept="37vLTw" id="4OlFaNL4Ve9" role="10QFUP">
+                    <ref role="3cqZAo" node="EoXO7XWtsu" resolve="size" />
+                  </node>
                 </node>
               </node>
             </node>

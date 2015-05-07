@@ -114,15 +114,6 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
-    <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
-      <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
-      <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ng" index="2WEnae">
-        <reference id="1205756909548" name="member" index="2WH_rO" />
-      </concept>
-      <concept id="1205769149993" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierMethodCallOperation" flags="nn" index="2XshWL">
-        <child id="1205770614681" name="actualArgument" index="2XxRq1" />
-      </concept>
-    </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
         <child id="8967919205527146150" name="expression" index="2BFjQA" />
@@ -216,30 +207,28 @@
       <property role="TrG5h" value="interpreterInstantiation" />
       <node concept="3cqZAl" id="4QsoB8VJJuB" role="3clF45" />
       <node concept="3clFbS" id="4QsoB8VJJuC" role="3clF47">
-        <node concept="3clFbF" id="4QsoB8VTWi6" role="3cqZAp">
-          <node concept="2OqwBi" id="4QsoB8VJJuI" role="3clFbG">
-            <node concept="2WthIp" id="4QsoB8VJJuJ" role="2Oq$k0" />
-            <node concept="2XshWL" id="4QsoB8VJJuK" role="2OqNvi">
-              <ref role="2WH_rO" node="4QsoB8VJJul" resolve="testPerformance" />
-              <node concept="3cmrfG" id="4QsoB8VJJuL" role="2XxRq1">
-                <property role="3cmrfH" value="100000" />
-              </node>
-              <node concept="1bVj0M" id="4QsoB8VJJuM" role="2XxRq1">
-                <node concept="3clFbS" id="4QsoB8VJJuN" role="1bW5cS">
-                  <node concept="3clFbF" id="4QsoB8VJJuO" role="3cqZAp">
-                    <node concept="2YIFZM" id="4TNdqI4as39" role="3clFbG">
-                      <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
-                      <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
-                      <node concept="3B5_sB" id="4TNdqI4as5l" role="37wK5m">
-                        <ref role="3B5MYn" to="hga8:2pogikS7txE" resolve="CInterpreter" />
-                      </node>
+        <node concept="3clFbF" id="224RtdEUpBt" role="3cqZAp">
+          <node concept="2YIFZM" id="224RtdEUpD7" role="3clFbG">
+            <ref role="37wK5l" to="3n1v:7OBQOW$8zKM" resolve="testPerformance" />
+            <ref role="1Pybhc" to="3n1v:7OBQOW$8uK1" resolve="PerformanceTestHelper" />
+            <node concept="3cmrfG" id="4QsoB8VJJuL" role="37wK5m">
+              <property role="3cmrfH" value="100000" />
+            </node>
+            <node concept="1bVj0M" id="4QsoB8VJJuM" role="37wK5m">
+              <node concept="3clFbS" id="4QsoB8VJJuN" role="1bW5cS">
+                <node concept="3clFbF" id="4QsoB8VJJuO" role="3cqZAp">
+                  <node concept="2YIFZM" id="4TNdqI4as39" role="3clFbG">
+                    <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
+                    <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
+                    <node concept="3B5_sB" id="4TNdqI4as5l" role="37wK5m">
+                      <ref role="3B5MYn" to="hga8:2pogikS7txE" resolve="CInterpreter" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="Xl_RD" id="4QsoB8VTXpk" role="2XxRq1">
-                <property role="Xl_RC" value="simpleInstantiation" />
-              </node>
+            </node>
+            <node concept="Xl_RD" id="4QsoB8VTXpk" role="37wK5m">
+              <property role="Xl_RC" value="simpleInstantiation" />
             </node>
           </node>
         </node>
@@ -249,49 +238,47 @@
       <property role="TrG5h" value="combinedInterpreterInstantiation" />
       <node concept="3cqZAl" id="4QsoB8VJJuT" role="3clF45" />
       <node concept="3clFbS" id="4QsoB8VJJuU" role="3clF47">
-        <node concept="3clFbF" id="4QsoB8VTPHb" role="3cqZAp">
-          <node concept="2OqwBi" id="4QsoB8VJJv0" role="3clFbG">
-            <node concept="2WthIp" id="4QsoB8VJJv1" role="2Oq$k0" />
-            <node concept="2XshWL" id="4QsoB8VJJv2" role="2OqNvi">
-              <ref role="2WH_rO" node="4QsoB8VJJul" resolve="testPerformance" />
-              <node concept="3cmrfG" id="4QsoB8VJJv3" role="2XxRq1">
-                <property role="3cmrfH" value="100000" />
-              </node>
-              <node concept="1bVj0M" id="4QsoB8VJJv4" role="2XxRq1">
-                <node concept="3clFbS" id="4QsoB8VJJv5" role="1bW5cS">
-                  <node concept="3clFbF" id="4QsoB8VJJv6" role="3cqZAp">
-                    <node concept="2ShNRf" id="4QsoB8VJJv7" role="3clFbG">
-                      <node concept="1pGfFk" id="4QsoB8VJJv8" role="2ShVmc">
-                        <ref role="37wK5l" to="2ahs:2yaxsm5jILI" resolve="CombinedInterpreter" />
-                        <node concept="2YIFZM" id="4TNdqI4aEjL" role="37wK5m">
-                          <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
-                          <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
-                          <node concept="3B5_sB" id="4TNdqI4aEjM" role="37wK5m">
-                            <ref role="3B5MYn" to="hga8:2pogikS7txE" resolve="CInterpreter" />
-                          </node>
+        <node concept="3clFbF" id="224RtdEUs76" role="3cqZAp">
+          <node concept="2YIFZM" id="224RtdEUs8T" role="3clFbG">
+            <ref role="37wK5l" to="3n1v:7OBQOW$8zKM" resolve="testPerformance" />
+            <ref role="1Pybhc" to="3n1v:7OBQOW$8uK1" resolve="PerformanceTestHelper" />
+            <node concept="3cmrfG" id="4QsoB8VJJv3" role="37wK5m">
+              <property role="3cmrfH" value="100000" />
+            </node>
+            <node concept="1bVj0M" id="4QsoB8VJJv4" role="37wK5m">
+              <node concept="3clFbS" id="4QsoB8VJJv5" role="1bW5cS">
+                <node concept="3clFbF" id="4QsoB8VJJv6" role="3cqZAp">
+                  <node concept="2ShNRf" id="4QsoB8VJJv7" role="3clFbG">
+                    <node concept="1pGfFk" id="4QsoB8VJJv8" role="2ShVmc">
+                      <ref role="37wK5l" to="2ahs:2yaxsm5jILI" resolve="CombinedInterpreter" />
+                      <node concept="2YIFZM" id="4TNdqI4aEjL" role="37wK5m">
+                        <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
+                        <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
+                        <node concept="3B5_sB" id="4TNdqI4aEjM" role="37wK5m">
+                          <ref role="3B5MYn" to="hga8:2pogikS7txE" resolve="CInterpreter" />
                         </node>
-                        <node concept="2YIFZM" id="4TNdqI4aEo3" role="37wK5m">
-                          <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
-                          <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
-                          <node concept="3B5_sB" id="4TNdqI4aEo4" role="37wK5m">
-                            <ref role="3B5MYn" to="hga8:2pogikSbHyF" resolve="CExtInterpreter" />
-                          </node>
+                      </node>
+                      <node concept="2YIFZM" id="4TNdqI4aEo3" role="37wK5m">
+                        <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
+                        <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
+                        <node concept="3B5_sB" id="4TNdqI4aEo4" role="37wK5m">
+                          <ref role="3B5MYn" to="hga8:2pogikSbHyF" resolve="CExtInterpreter" />
                         </node>
-                        <node concept="2YIFZM" id="4TNdqI4aH0r" role="37wK5m">
-                          <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
-                          <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
-                          <node concept="3B5_sB" id="4TNdqI4aH0s" role="37wK5m">
-                            <ref role="3B5MYn" to="hga8:2pogikSbnzd" resolve="CStatementInterpreter" />
-                          </node>
+                      </node>
+                      <node concept="2YIFZM" id="4TNdqI4aH0r" role="37wK5m">
+                        <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
+                        <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
+                        <node concept="3B5_sB" id="4TNdqI4aH0s" role="37wK5m">
+                          <ref role="3B5MYn" to="hga8:2pogikSbnzd" resolve="CStatementInterpreter" />
                         </node>
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="Xl_RD" id="4QsoB8VTQYx" role="2XxRq1">
-                <property role="Xl_RC" value="combinedInstantiation" />
-              </node>
+            </node>
+            <node concept="Xl_RD" id="4QsoB8VTQYx" role="37wK5m">
+              <property role="Xl_RC" value="combinedInstantiation" />
             </node>
           </node>
         </node>
