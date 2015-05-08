@@ -3796,6 +3796,35 @@
           </node>
         </node>
         <node concept="3clFbH" id="GsqojYtV44" role="3cqZAp" />
+        <node concept="34ab3g" id="38CwkaaoZd7" role="3cqZAp">
+          <property role="35gtTG" value="trace" />
+          <node concept="3cpWs3" id="38CwkaaoZO7" role="34bqiv">
+            <node concept="2OqwBi" id="38Cwkaap0m6" role="3uHU7w">
+              <node concept="2JrnkZ" id="38Cwkaap0iy" role="2Oq$k0">
+                <node concept="37vLTw" id="38CwkaaoZXh" role="2JrQYb">
+                  <ref role="3cqZAo" node="4_QpjDho2In" resolve="matchingChild" />
+                </node>
+              </node>
+              <node concept="liA8E" id="38Cwkaap0zv" role="2OqNvi">
+                <ref role="37wK5l" to="ec5l:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+              </node>
+            </node>
+            <node concept="3cpWs3" id="38Cwkaap0LP" role="3uHU7B">
+              <node concept="Xl_RD" id="38Cwkaap0Mb" role="3uHU7w">
+                <property role="Xl_RC" value="::" />
+              </node>
+              <node concept="3cpWs3" id="38Cwkaap0Gk" role="3uHU7B">
+                <node concept="Xl_RD" id="38CwkaaoZd9" role="3uHU7B">
+                  <property role="Xl_RC" value="matchingChild: " />
+                </node>
+                <node concept="37vLTw" id="38Cwkaap0Hj" role="3uHU7w">
+                  <ref role="3cqZAo" node="4_QpjDho2In" resolve="matchingChild" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="38CwkaaoP_B" role="3cqZAp" />
         <node concept="3cpWs8" id="5EXX68Xhtjs" role="3cqZAp">
           <node concept="3cpWsn" id="5EXX68Xhtjt" role="3cpWs9">
             <property role="TrG5h" value="matchingChildType" />
@@ -3875,6 +3904,46 @@
                       <ref role="3cqZAo" node="4_QpjDho2In" resolve="matchingChild" />
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="38CwkaapCTG" role="3cqZAp">
+              <node concept="3clFbS" id="38CwkaapCTI" role="3clFbx">
+                <node concept="3clFbF" id="38CwkaapCYX" role="3cqZAp">
+                  <node concept="2OqwBi" id="38CwkaapDid" role="3clFbG">
+                    <node concept="2OqwBi" id="38CwkaapD1W" role="2Oq$k0">
+                      <node concept="1eOMI4" id="38CwkaapD0c" role="2Oq$k0">
+                        <node concept="10QFUN" id="38CwkaapD0d" role="1eOMHV">
+                          <node concept="37vLTw" id="38CwkaapD0b" role="10QFUP">
+                            <ref role="3cqZAo" node="6ENu_m7svnv" resolve="context" />
+                          </node>
+                          <node concept="3uibUv" id="38CwkaapD1f" role="10QFUM">
+                            <ref role="3uigEE" node="5EXX68Xge2t" resolve="ITypeCachingContext" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="38CwkaapDgF" role="2OqNvi">
+                        <ref role="37wK5l" node="5EXX68Xgi40" resolve="getNodeTypeCache" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="38CwkaapDrz" role="2OqNvi">
+                      <ref role="37wK5l" node="5EXX68XgLtd" resolve="set" />
+                      <node concept="37vLTw" id="38CwkaapDtz" role="37wK5m">
+                        <ref role="3cqZAo" node="4_QpjDho2In" resolve="matchingChild" />
+                      </node>
+                      <node concept="37vLTw" id="38CwkaapDwB" role="37wK5m">
+                        <ref role="3cqZAo" node="5EXX68Xhtjt" resolve="matchingChildType" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2ZW3vV" id="38CwkaapCX3" role="3clFbw">
+                <node concept="3uibUv" id="38CwkaapCYk" role="2ZW6by">
+                  <ref role="3uigEE" node="5EXX68Xge2t" resolve="ITypeCachingContext" />
+                </node>
+                <node concept="37vLTw" id="38CwkaapCV5" role="2ZW6bz">
+                  <ref role="3cqZAo" node="6ENu_m7svnv" resolve="context" />
                 </node>
               </node>
             </node>
