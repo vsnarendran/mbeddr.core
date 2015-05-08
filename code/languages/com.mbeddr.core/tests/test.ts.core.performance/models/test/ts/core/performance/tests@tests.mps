@@ -562,7 +562,7 @@
             <ref role="37wK5l" to="3n1v:7OBQOW$8zKM" resolve="testPerformance" />
             <ref role="1Pybhc" to="3n1v:7OBQOW$8uK1" resolve="PerformanceTestHelper" />
             <node concept="3cmrfG" id="7OBQOW$9SmD" role="37wK5m">
-              <property role="3cmrfH" value="100000" />
+              <property role="3cmrfH" value="10000" />
             </node>
             <node concept="1bVj0M" id="7OBQOW$9SvY" role="37wK5m">
               <node concept="3clFbS" id="7OBQOW$9Sw0" role="1bW5cS">
@@ -594,7 +594,7 @@
             <ref role="37wK5l" to="3n1v:7OBQOW$8zKM" resolve="testPerformance" />
             <ref role="1Pybhc" to="3n1v:7OBQOW$8uK1" resolve="PerformanceTestHelper" />
             <node concept="3cmrfG" id="7OBQOW$a3JM" role="37wK5m">
-              <property role="3cmrfH" value="1000" />
+              <property role="3cmrfH" value="300" />
             </node>
             <node concept="1bVj0M" id="7OBQOW$a3JN" role="37wK5m">
               <node concept="3clFbS" id="7OBQOW$a3JO" role="1bW5cS">
@@ -626,7 +626,7 @@
             <ref role="37wK5l" to="3n1v:7OBQOW$8zKM" resolve="testPerformance" />
             <ref role="1Pybhc" to="3n1v:7OBQOW$8uK1" resolve="PerformanceTestHelper" />
             <node concept="3cmrfG" id="7OBQOW$adBu" role="37wK5m">
-              <property role="3cmrfH" value="10000" />
+              <property role="3cmrfH" value="1000" />
             </node>
             <node concept="1bVj0M" id="7OBQOW$adBv" role="37wK5m">
               <node concept="3clFbS" id="7OBQOW$adBw" role="1bW5cS">
@@ -658,7 +658,7 @@
             <ref role="37wK5l" to="3n1v:7OBQOW$8zKM" resolve="testPerformance" />
             <ref role="1Pybhc" to="3n1v:7OBQOW$8uK1" resolve="PerformanceTestHelper" />
             <node concept="3cmrfG" id="7OBQOW$alMa" role="37wK5m">
-              <property role="3cmrfH" value="100" />
+              <property role="3cmrfH" value="1000" />
             </node>
             <node concept="1bVj0M" id="7OBQOW$alMb" role="37wK5m">
               <node concept="3clFbS" id="7OBQOW$alMc" role="1bW5cS">
