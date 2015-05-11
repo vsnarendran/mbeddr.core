@@ -10,6 +10,7 @@
     <import index="hga8" ref="r:ce31edff-fe3a-46fd-b60b-2e8d9dc7243f(com.mbeddr.core.cinterpreter.plugin)" />
     <import index="cetu" ref="r:fc1ad1dc-45eb-4f99-8b2c-fbe60e6e91b1(com.mbeddr.ext.math.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
+    <import index="rcia" ref="r:bae7addc-e10d-4f29-a8ac-0448d3c5daaf(com.mbeddr.core.expressions.plugin)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -74,7 +75,7 @@
     <property role="TrG5h" value="CMathInterpreter" />
     <property role="UYu25" value="CInterpreter" />
     <node concept="1J7L1T" id="6KLCBzAUjHg" role="1J4apk">
-      <ref role="1J7WVQ" to="hga8:2pogikS7txE" resolve="CInterpreter" />
+      <ref role="1J7WVQ" to="rcia:3VM1o5wbfkp" resolve="CExpressionsInterpreter" />
     </node>
     <node concept="d$4Dx" id="6KLCBzAV36q" role="d$6nW">
       <node concept="BaHAS" id="6KLCBzAV36r" role="cpn$n">

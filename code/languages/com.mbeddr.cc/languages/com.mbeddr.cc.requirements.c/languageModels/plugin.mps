@@ -12,8 +12,10 @@
     <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="hga8" ref="r:ce31edff-fe3a-46fd-b60b-2e8d9dc7243f(com.mbeddr.core.cinterpreter.plugin)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
-    <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" implicit="true" />
+    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
+    <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
+    <import index="rcia" ref="r:bae7addc-e10d-4f29-a8ac-0448d3c5daaf(com.mbeddr.core.expressions.plugin)" />
+    <import index="jtst" ref="r:94684e53-e178-4b85-9402-d0df7f2c7994(com.mbeddr.core.util.plugin)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -226,10 +228,10 @@
       </node>
     </node>
     <node concept="1J7L1T" id="61$ycjqFeoW" role="1J4apk">
-      <ref role="1J7WVQ" to="hga8:2pogikS7txE" resolve="CInterpreter" />
+      <ref role="1J7WVQ" to="rcia:3VM1o5wbfkp" resolve="CExpressionsInterpreter" />
     </node>
     <node concept="1J7L1T" id="61$ycjqFep7" role="1J4apk">
-      <ref role="1J7WVQ" to="hga8:2pogikSbHyF" resolve="CExtInterpreter" />
+      <ref role="1J7WVQ" to="jtst:3VM1o5wb$BS" resolve="CExtInterpreter" />
     </node>
     <node concept="3SNpY9" id="61$ycjqFgKF" role="qq9xR">
       <property role="2TnfIJ" value="true" />

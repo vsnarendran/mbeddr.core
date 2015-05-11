@@ -9,7 +9,8 @@
   <imports>
     <import index="hga8" ref="r:ce31edff-fe3a-46fd-b60b-2e8d9dc7243f(com.mbeddr.core.cinterpreter.plugin)" />
     <import index="qlb5" ref="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" />
-    <import index="lx0c" ref="r:12c76b04-7fd6-45a2-9d94-f0756fc5ad8f(com.mbeddr.ext.units.behavior)" implicit="true" />
+    <import index="lx0c" ref="r:12c76b04-7fd6-45a2-9d94-f0756fc5ad8f(com.mbeddr.ext.units.behavior)" />
+    <import index="rcia" ref="r:bae7addc-e10d-4f29-a8ac-0448d3c5daaf(com.mbeddr.core.expressions.plugin)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -99,7 +100,7 @@
       </node>
     </node>
     <node concept="1J7L1T" id="6KLCBzAVcEq" role="1J4apk">
-      <ref role="1J7WVQ" to="hga8:2pogikS7txE" resolve="CInterpreter" />
+      <ref role="1J7WVQ" to="rcia:3VM1o5wbfkp" resolve="CExpressionsInterpreter" />
     </node>
     <node concept="3SNpY9" id="6KLCBzAVhFU" role="qq9xR">
       <property role="2TnfIJ" value="true" />
