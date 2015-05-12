@@ -14,6 +14,7 @@
   <import index="sv0f" modelUID="r:28cd7e84-4784-462c-804c-1dae92004ef9(com.mbeddr.mpsutil.multilingual.common.languageRegistry)" version="-1" />
   <import index="2oxe" modelUID="r:98f14745-cf68-416b-838b-49199f589585(test.ts.mpsutil.multilingual.common.otherModel@tests)" version="-1" />
   <import index="8o67" modelUID="r:aad0b82d-5e70-4b30-977b-7c105a4d4452(com.mbeddr.mpsutil.multilingual.common.typesystem)" version="-1" />
+  <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="40" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
@@ -874,6 +875,67 @@
             <node role="warningRef" roleId="tp5g.8489045168660938635" type="tp5g.WarningStatementReference" typeId="tp5g.4531408400486526326" id="4501452903635792015" nodeInfo="ng">
               <link role="declaration" roleId="tp5g.4531408400486526327" targetNodeId="8o67.4501452903634876941" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="9000125482641828031" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="LocaleSelection" />
+    <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="9000125482641828050" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="findLocaleExactMatch" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="9000125482641828051" nodeInfo="in" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="9000125482641828052" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertEquals" typeId="tpe3.1171978097730" id="9000125482641837605" nodeInfo="nn">
+          <node role="expected" roleId="tpe3.8427750732757990724" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="9000125482642203908" nodeInfo="nn">
+            <link role="classifier" roleId="tpee.1144433057691" targetNodeId="k7g3.~Locale" resolveInfo="Locale" />
+            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="k7g3.~Locale%dUS" resolveInfo="US" />
+          </node>
+          <node role="actual" roleId="tpe3.8427750732757990725" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="9000125482642242432" nodeInfo="nn">
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fw73.6737939145717631736" resolveInfo="findLocale" />
+            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fw73.2510545900187751408" resolveInfo="MultilingualCommonUtil" />
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9000125482642242463" nodeInfo="nn">
+              <property name="value" nameId="tpee.1070475926801" value="en" />
+            </node>
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9000125482642242586" nodeInfo="nn">
+              <property name="value" nameId="tpee.1070475926801" value="US" />
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertEquals" typeId="tpe3.1171978097730" id="9000125482642242806" nodeInfo="nn">
+          <node role="expected" roleId="tpe3.8427750732757990724" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="9000125482642242807" nodeInfo="nn">
+            <link role="classifier" roleId="tpee.1144433057691" targetNodeId="k7g3.~Locale" resolveInfo="Locale" />
+            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="k7g3.~Locale%dUK" resolveInfo="UK" />
+          </node>
+          <node role="actual" roleId="tpe3.8427750732757990725" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="9000125482642242808" nodeInfo="nn">
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fw73.6737939145717631736" resolveInfo="findLocale" />
+            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fw73.2510545900187751408" resolveInfo="MultilingualCommonUtil" />
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9000125482642242809" nodeInfo="nn">
+              <property name="value" nameId="tpee.1070475926801" value="en" />
+            </node>
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9000125482642242810" nodeInfo="nn">
+              <property name="value" nameId="tpee.1070475926801" value="GB" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="9000125482642244155" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="findLocaleOnlyCountry" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="9000125482642244156" nodeInfo="in" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="9000125482642244160" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpe3.AssertEquals" typeId="tpe3.1171978097730" id="9000125482642244284" nodeInfo="nn">
+          <node role="expected" roleId="tpe3.8427750732757990724" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="9000125482642244290" nodeInfo="nn">
+            <link role="classifier" roleId="tpee.1144433057691" targetNodeId="k7g3.~Locale" resolveInfo="Locale" />
+            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="k7g3.~Locale%dENGLISH" resolveInfo="ENGLISH" />
+          </node>
+          <node role="actual" roleId="tpe3.8427750732757990725" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="9000125482642244330" nodeInfo="nn">
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fw73.6737939145717631736" resolveInfo="findLocale" />
+            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fw73.2510545900187751408" resolveInfo="MultilingualCommonUtil" />
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9000125482642244361" nodeInfo="nn">
+              <property name="value" nameId="tpee.1070475926801" value="en" />
+            </node>
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="9000125482642244484" nodeInfo="nn" />
           </node>
         </node>
       </node>
