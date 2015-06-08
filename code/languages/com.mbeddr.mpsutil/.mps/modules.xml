@@ -24,6 +24,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.contextactions.sandboxlang/com.mbeddr.mpsutil.contextactions.sandboxlang.mpl" folder="contextActions" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.contextactions/com.mbeddr.mpsutil.contextactions.mpl" folder="contextActions" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.contextsidebar/com.mbeddr.mpsutil.contextsidebar.mpl" folder="contextsidebar" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.custommodelroot/com.mbeddr.mpsutil.custommodelroot.mpl" folder="customModelRoot" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.datepicker.sandbox/com.mbeddr.mpsutil.datepicker.sandbox.mpl" folder="datePicker" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.datepicker/com.mbeddr.mpsutil.datepicker.mpl" folder="datePicker" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.dependenciesdiagram/com.mbeddr.mpsutil.dependenciesdiagram.mpl" folder="dependenciesdiagram" />
@@ -78,6 +79,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.propertydefault/com.mbeddr.mpsutil.propertydefault.mpl" folder="propertydefault" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.rcp/com.mbeddr.mpsutil.rcp.mpl" folder="rcp" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.rcp/runtime/com.mbeddr.mpsutil.rcp.runtime.msd" folder="rcp" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.proxynode/com.mbeddr.mpsutil.proxynode.mpl" folder="proxyNode" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.refactoring.rt/rt.msd" folder="refactoring" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.refactoring/refactoring.mpl" folder="refactoring" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.review.annotation/com.mbeddr.mpsutil.review.annotation.mpl" folder="margincell_review" />
@@ -116,6 +118,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.contextactions.sandbox/com.mbeddr.mpsutil.contextactions.sandbox.msd" folder="contextActions" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.contextsidebar.runtime/com.mbeddr.mpsutil.contextsidebar.runtime.msd" folder="contextsidebar" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.contextsidebar.sandbox2/com.mbeddr.mpsutil.contextsidebar.sandbox2.msd" folder="contextsidebar" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.custommodelroot.runtime/com.mbeddr.mpsutil.custommodelroot.runtime.msd" folder="customModelRoot" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.datepicker.runtime/com.mbeddr.mpsutil.datepicker.runtime.msd" folder="datePicker" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.datepicker.sandbox.demo/com.mbeddr.mpsutil.datepicker.sandbox.demo.msd" folder="datePicker" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.dependenciesdiagram.sandbox/com.mbeddr.mpsutil.dependenciesdiagram.sandbox.msd" folder="dependenciesdiagram" />
@@ -164,6 +167,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.projectview.runtime/com.mbeddr.mpsutil.projectview.runtime.msd" folder="projectview" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.projectview.vcs/com.mbeddr.mpsutil.projectview.vcs.msd" folder="projectview" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.projectview.views/com.mbeddr.mpsutil.projectview.views.msd" folder="projectview" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.proxynode.modelroot/com.mbeddr.mpsutil.proxynode.modelroot.msd" folder="proxyNode" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.proxynode.runtime/com.mbeddr.mpsutil.proxynode.runtime.msd" folder="proxyNode" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.rcpconfig/com.mbeddr.mpsutil.rcpconfig.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.review.runtime/com.mbeddr.mpsutil.review.runtime.msd" folder="margincell_review" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.review.sandbox/com.mbeddr.mpsutil.review.sandbox.msd" folder="margincell_review" />
@@ -195,6 +200,8 @@
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.testScope/test.com.mbeddr.mpsutil.testScope.msd" folder="testScope" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.xml.fix.support/test.com.mbeddr.mpsutil.xml.fix.support.mpl" folder="xml.fix" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.xml.fix/test.com.mbeddr.mpsutil.xml.fix.msd" folder="xml.fix" />
+      <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.proxynode.test/com.mbeddr.mpsutil.proxynode.test.msd" folder="proxyNode" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.custommodelroot.ideaplugin/test.com.mbeddr.mpsutil.custommodelroot.ideaplugin.msd" folder="customModelRoot" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.javainterpreter/test.ts.javainterpreter.msd" folder="javainterpreter" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.match/match.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.mpsutil.multilingual.concept.sandbox/test.ts.mpsutil.multilingual.concept.sandbox.mpl" folder="multilingual" />
