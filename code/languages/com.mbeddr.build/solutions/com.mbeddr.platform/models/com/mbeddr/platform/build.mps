@@ -12997,6 +12997,12 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="HyC1NSpTdA" role="3bR37C">
+          <node concept="3bR9La" id="HyC1NSpTdB" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="22LTRH" id="7eF9rfAnzVt" role="1hWBAP">
@@ -13140,6 +13146,12 @@
         <node concept="3bR9La" id="1elSWnxpYvg" role="1SiIV1">
           <property role="3bR36h" value="false" />
           <ref role="3bR37D" node="1OL7Fmd6Nh2" resolve="com.mbeddr.mpsutil.custommodelroot.runtime" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="HyC1NSpF3D" role="3bR37C">
+        <node concept="3bR9La" id="HyC1NSpF3E" role="1SiIV1">
+          <property role="3bR36h" value="false" />
+          <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
         </node>
       </node>
     </node>

@@ -11,6 +11,7 @@
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
     <dependency reexport="false">f5b5d6cb-29cc-43f7-a69a-26cd1bd3ea31(com.mbeddr.mpsutil.custommodelroot.runtime)</dependency>
     <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
+    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>2b9817e1-f5df-47d1-b581-51ec8683bfe3(com.mbeddr.mpsutil.custommodelroot)</usedLanguage>
