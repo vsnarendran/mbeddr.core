@@ -20,7 +20,6 @@
         <dependency reexport="false">61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</dependency>
         <dependency reexport="false">6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</dependency>
         <dependency reexport="false">42270baf-e92c-4c32-b263-d617b3fce239(com.mbeddr.analyses.cbmc)</dependency>
-        <dependency reexport="false">d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
@@ -107,8 +106,8 @@
   </generators>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</dependency>
     <dependency reexport="false">42270baf-e92c-4c32-b263-d617b3fce239(com.mbeddr.analyses.cbmc)</dependency>
+    <dependency reexport="false">d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
