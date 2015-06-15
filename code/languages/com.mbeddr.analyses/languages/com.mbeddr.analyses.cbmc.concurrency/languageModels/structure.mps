@@ -86,18 +86,6 @@
       <ref role="PrY4T" to="q5q6:3V3CJZuMScE" resolve="IAssertLike" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3EEGwEpK7JI">
-    <property role="TrG5h" value="Thread_safe" />
-    <property role="R4oN_" value="Ensures that all the variables accessed are stack or thread-local" />
-    <property role="3GE5qa" value="annotations" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-    <node concept="M6xJ_" id="3EEGwEpK7JJ" role="lGtFl">
-      <property role="Hh88m" value="thread_safe" />
-      <node concept="trNpa" id="3EEGwEpM9_o" role="EQaZv">
-        <ref role="trN6q" to="x27k:5_l8w1EmTvt" resolve="FunctionSignature" />
-      </node>
-    </node>
-  </node>
   <node concept="1TIwiD" id="3EEGwEpLvIB">
     <property role="TrG5h" value="Datarace_free" />
     <property role="R4oN_" value="ensures that this thread has no dataraces with the functions passed as parameters" />

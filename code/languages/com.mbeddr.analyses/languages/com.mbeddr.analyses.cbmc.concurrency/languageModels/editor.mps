@@ -217,34 +217,6 @@
       <node concept="2SsqMj" id="3EEGwEpLwLG" role="3EZMnx" />
     </node>
   </node>
-  <node concept="24kQdi" id="3EEGwEpLwZe">
-    <property role="3GE5qa" value="annotations" />
-    <ref role="1XX52x" to="nok9:3EEGwEpK7JI" resolve="Thread_safe" />
-    <node concept="3EZMnI" id="3EEGwEpLwZf" role="2wV5jI">
-      <node concept="2iRkQZ" id="3EEGwEpLwZg" role="2iSdaV" />
-      <node concept="3F0ifn" id="3EEGwEpLwZh" role="3EZMnx">
-        <property role="3F0ifm" value="thread_safe" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dhDUJ" resolve="Metadata" />
-        <node concept="3vyZuw" id="3EEGwEpLwZi" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="VLuvy" id="3EEGwEpLwZj" role="3F10Kt">
-          <node concept="3ZlJ5R" id="3EEGwEpLwZk" role="VblUZ">
-            <node concept="3clFbS" id="3EEGwEpLwZl" role="2VODD2">
-              <node concept="3clFbF" id="3EEGwEpLwZm" role="3cqZAp">
-                <node concept="10M0yZ" id="3EEGwEpLwZn" role="3clFbG">
-                  <ref role="1PxDUh" to="r4b4:4tRpPVPUEa3" resolve="BasicColors" />
-                  <ref role="3cqZAo" to="r4b4:y826GHHfBE" resolve="METADATA" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2SsqMj" id="3EEGwEpLwZo" role="3EZMnx" />
-    </node>
-    <node concept="3F0ifn" id="7iLd4UQYTq$" role="6VMZX" />
-  </node>
   <node concept="24kQdi" id="6uBf9tHhPOz">
     <property role="3GE5qa" value="annotations" />
     <ref role="1XX52x" to="nok9:6uBf9tHhPD9" resolve="AtomicVar" />
