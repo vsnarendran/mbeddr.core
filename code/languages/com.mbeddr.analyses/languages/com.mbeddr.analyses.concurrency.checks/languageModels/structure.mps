@@ -31,7 +31,6 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
-        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -120,8 +119,8 @@
     <node concept="1TJgyj" id="1IZZlGocVRO" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="functions" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1IZZlGoboLX" resolve="FunctionSet" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" to="x27k:7qHzltJ0oT3" resolve="FunctionRefExpr" />
     </node>
     <node concept="1TJgyi" id="1IZZlGoboLi" role="1TKVEl">
       <property role="TrG5h" value="access_mode" />
@@ -166,23 +165,6 @@
       <node concept="trNpa" id="3EEGwEpM9_l" role="EQaZv">
         <ref role="trN6q" to="x27k:5_l8w1EmTvt" resolve="FunctionSignature" />
       </node>
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1IZZlGoboLX">
-    <property role="TrG5h" value="FunctionSet" />
-    <property role="34LRSv" value="funSet" />
-    <property role="R4oN_" value="set of functions (implemented as chained list of concepts)" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="4OmQvdrwDiO" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="next" />
-      <ref role="20lvS9" node="1IZZlGoboLX" resolve="FunctionSet" />
-    </node>
-    <node concept="1TJgyj" id="1IZZlGoboM$" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="function" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="x27k:5_l8w1EmTvx" resolve="Function" />
     </node>
   </node>
   <node concept="1TIwiD" id="3EEGwEpFmyT">
