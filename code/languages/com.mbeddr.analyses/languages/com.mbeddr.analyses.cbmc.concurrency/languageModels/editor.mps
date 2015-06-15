@@ -124,92 +124,6 @@
       <node concept="2iRfu4" id="3V3CJZuJM1R" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="70ux1CtJ6m0">
-    <property role="3GE5qa" value="passert" />
-    <ref role="1XX52x" to="nok9:70ux1CtIY3f" resolve="ParallelAssert" />
-    <node concept="3EZMnI" id="70ux1CtJ8ca" role="2wV5jI">
-      <node concept="3F0ifn" id="70ux1CtJ8ck" role="3EZMnx">
-        <property role="3F0ifm" value="thru {" />
-      </node>
-      <node concept="3F1sOY" id="70ux1CtJa2d" role="3EZMnx">
-        <ref role="1NtTu8" to="nok9:70ux1CtJ8d1" />
-      </node>
-      <node concept="3F0ifn" id="70ux1CtJa2q" role="3EZMnx">
-        <property role="3F0ifm" value="} passert (" />
-      </node>
-      <node concept="3F1sOY" id="70ux1CtJa2F" role="3EZMnx">
-        <ref role="1NtTu8" to="nok9:70ux1CtIYWB" />
-      </node>
-      <node concept="3F0ifn" id="70ux1CtJa30" role="3EZMnx">
-        <property role="3F0ifm" value=");" />
-      </node>
-      <node concept="2iRfu4" id="70ux1CtJ8cd" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="70ux1CtNesg">
-    <property role="3GE5qa" value="passert" />
-    <ref role="1XX52x" to="nok9:70ux1CtN9OX" resolve="LocalWrite" />
-    <node concept="3EZMnI" id="70ux1CtNesw" role="2wV5jI">
-      <node concept="3F0ifn" id="70ux1CtNesE" role="3EZMnx">
-        <property role="3F0ifm" value="LW(" />
-      </node>
-      <node concept="3F1sOY" id="70ux1CtNesQ" role="3EZMnx">
-        <ref role="1NtTu8" to="nok9:70ux1CtNesN" />
-      </node>
-      <node concept="3F0ifn" id="70ux1CtNet3" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-      </node>
-      <node concept="2iRfu4" id="70ux1CtNesz" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="1yz83W1yR7$">
-    <property role="3GE5qa" value="passert" />
-    <ref role="1XX52x" to="nok9:1yz83W1yOSy" resolve="LocalRead" />
-    <node concept="3EZMnI" id="1yz83W1yR7_" role="2wV5jI">
-      <node concept="3F0ifn" id="1yz83W1yR7A" role="3EZMnx">
-        <property role="3F0ifm" value="LR(" />
-      </node>
-      <node concept="3F1sOY" id="1yz83W1yR7B" role="3EZMnx">
-        <ref role="1NtTu8" to="nok9:1yz83W1yOS$" />
-      </node>
-      <node concept="3F0ifn" id="1yz83W1yR7C" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-      </node>
-      <node concept="2iRfu4" id="1yz83W1yR7D" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="1yz83W1ySza">
-    <property role="3GE5qa" value="passert" />
-    <ref role="1XX52x" to="nok9:1yz83W1yOT3" resolve="RemoteWrite" />
-    <node concept="3EZMnI" id="1yz83W1ySzb" role="2wV5jI">
-      <node concept="3F0ifn" id="1yz83W1ySzc" role="3EZMnx">
-        <property role="3F0ifm" value="RW(" />
-      </node>
-      <node concept="3F1sOY" id="1yz83W1ySzd" role="3EZMnx">
-        <ref role="1NtTu8" to="nok9:1yz83W1yOT5" />
-      </node>
-      <node concept="3F0ifn" id="1yz83W1ySze" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-      </node>
-      <node concept="2iRfu4" id="1yz83W1ySzf" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="1yz83W1ySzy">
-    <property role="3GE5qa" value="passert" />
-    <ref role="1XX52x" to="nok9:1yz83W1yOSO" resolve="RemoteRead" />
-    <node concept="3EZMnI" id="1yz83W1ySzz" role="2wV5jI">
-      <node concept="3F0ifn" id="1yz83W1ySz$" role="3EZMnx">
-        <property role="3F0ifm" value="RR(" />
-      </node>
-      <node concept="3F1sOY" id="1yz83W1ySz_" role="3EZMnx">
-        <ref role="1NtTu8" to="nok9:1yz83W1yOSQ" />
-      </node>
-      <node concept="3F0ifn" id="1yz83W1ySzA" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-      </node>
-      <node concept="2iRfu4" id="1yz83W1ySzB" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="3EEGwEpK7St">
     <property role="3GE5qa" value="annotations" />
     <ref role="1XX52x" to="nok9:3EEGwEpLvIB" resolve="Datarace_free" />
@@ -329,6 +243,7 @@
       </node>
       <node concept="2SsqMj" id="3EEGwEpLwZo" role="3EZMnx" />
     </node>
+    <node concept="3F0ifn" id="7iLd4UQYTq$" role="6VMZX" />
   </node>
   <node concept="24kQdi" id="6uBf9tHhPOz">
     <property role="3GE5qa" value="annotations" />
@@ -355,6 +270,9 @@
         </node>
       </node>
       <node concept="2SsqMj" id="6uBf9tHhPOH" role="3EZMnx" />
+    </node>
+    <node concept="3F0ifn" id="7iLd4UQYSCi" role="6VMZX">
+      <property role="3F0ifm" value="inform CBMC that this variable is always accessed automatically (generate __CPROVER_atomic wrapers)" />
     </node>
   </node>
   <node concept="24kQdi" id="6uBf9tHAmkC">
