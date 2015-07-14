@@ -63,6 +63,7 @@
     <usedLanguage>479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)</usedLanguage>
     <usedLanguage>5915bd3b-98c3-4c28-9a9a-7b755f43604b(unless)</usedLanguage>
     <usedLanguage>a63897d3-716e-4e79-86e4-a9f3f171cef4(phoenix)</usedLanguage>
+    <usedLanguage>78c05eb3-d66f-4688-b381-551f0adff5c7(phoenix.c)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>315c0ec2-38ff-4e9c-9d15-fd0848b5f062(com.mbeddr.analyses.components)</usedDevKit>
@@ -174,6 +175,7 @@
     <language id="3d0be1cf-4156-4c3c-ac37-fef83237d8e2" fqName="mbeddr.tutorial.vectors" version="0" />
     <language id="973c8be0-8526-4588-aca6-92bcbb701b50" fqName="mbeddr.tutotial.osconfig.memory" version="0" />
     <language id="a63897d3-716e-4e79-86e4-a9f3f171cef4" fqName="phoenix" version="0" />
+    <language id="78c05eb3-d66f-4688-b381-551f0adff5c7" fqName="phoenix.c" version="0" />
     <language id="5915bd3b-98c3-4c28-9a9a-7b755f43604b" fqName="unless" version="0" />
   </languageVersions>
 </solution>

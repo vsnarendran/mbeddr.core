@@ -286,8 +286,17 @@
   <node concept="24kQdi" id="3cZdPQdQEG9">
     <ref role="1XX52x" to="hxo4:3cZdPQdQEFJ" resolve="ProfileContainer" />
     <node concept="3EZMnI" id="3cZdPQdQEGb" role="2wV5jI">
-      <node concept="3F0ifn" id="3cZdPQdQX0E" role="3EZMnx">
-        <property role="3F0ifm" value="Microphone Profiles" />
+      <node concept="3EZMnI" id="3cZdPQdTPUd" role="3EZMnx">
+        <node concept="l2Vlx" id="3cZdPQdTPUe" role="2iSdaV" />
+        <node concept="3F0ifn" id="3cZdPQdQX0E" role="3EZMnx">
+          <property role="3F0ifm" value="Microphone Profiles" />
+        </node>
+        <node concept="3F0ifn" id="3cZdPQdTPUt" role="3EZMnx">
+          <property role="3F0ifm" value=":" />
+        </node>
+        <node concept="3F0A7n" id="3cZdPQdTPU_" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
       </node>
       <node concept="3EZMnI" id="3cZdPQdR4hu" role="3EZMnx">
         <node concept="l2Vlx" id="3cZdPQdR4hv" role="2iSdaV" />

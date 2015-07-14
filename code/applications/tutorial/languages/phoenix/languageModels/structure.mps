@@ -95,6 +95,9 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3cZdPQdQzET" resolve="Profile" />
     </node>
+    <node concept="PrWs8" id="3cZdPQdTPRA" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
 </model>
 

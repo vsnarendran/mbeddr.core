@@ -14,6 +14,7 @@
       <modulePath path="$PROJECT_DIR$/languages/memory/memory.mpl" folder="languages" />
       <modulePath path="$PROJECT_DIR$/languages/metadata/metadata.mpl" folder="languages" />
       <modulePath path="$PROJECT_DIR$/languages/osconfig/osconfig.mpl" folder="languages" />
+      <modulePath path="$PROJECT_DIR$/languages/phoenix.c/phoenix.c.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/phoenix/phoenix.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/spellcheck/spellcheck.mpl" folder="utils" />
       <modulePath path="$PROJECT_DIR$/languages/unless/unless.mpl" folder="" />
