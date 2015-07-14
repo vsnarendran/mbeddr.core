@@ -10,6 +10,7 @@
     <use id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded" version="-1" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="-1" />
     <use id="5915bd3b-98c3-4c28-9a9a-7b755f43604b" name="unless" version="-1" />
+    <use id="a63897d3-716e-4e79-86e4-a9f3f171cef4" name="phoenix" version="-1" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   </languages>
@@ -65,6 +66,21 @@
       </concept>
       <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
         <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="a63897d3-716e-4e79-86e4-a9f3f171cef4" name="phoenix">
+      <concept id="3692731094418471754" name="phoenix.structure.FreqSpec" flags="ng" index="2YTgKn">
+        <child id="3692731094418471988" name="count" index="2YTgHD" />
+        <child id="3692731094418471745" name="step" index="2YTgKs" />
+        <child id="3692731094418471736" name="baseFreq" index="2YTgL_" />
+      </concept>
+      <concept id="3692731094418471609" name="phoenix.structure.Profile" flags="ng" index="2YTgR$">
+        <property id="3692731094418639136" name="familyID" index="2YSZTX" />
+        <child id="3692731094418471770" name="freqSpecs" index="2YTgK7" />
+      </concept>
+      <concept id="3692731094418500335" name="phoenix.structure.ProfileContainer" flags="ng" index="2YTpQM">
+        <child id="3692731094418575979" name="familyFile" index="2YTekQ" />
+        <child id="3692731094418500336" name="profiles" index="2YTpQH" />
       </concept>
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
@@ -135,6 +151,12 @@
       <concept id="3857533489766146428" name="com.mbeddr.core.base.structure.ElementDocumentation" flags="ng" index="1z9TsT">
         <child id="4052432714772608243" name="text" index="1w35rA" />
       </concept>
+      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
+      </concept>
+      <concept id="6156524541423588207" name="com.mbeddr.core.base.structure.SolutionRelativeFilePicker" flags="ng" index="3NXOOs" />
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
@@ -1231,6 +1253,43 @@
           <property role="2c7vTL" value="false" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="2YTpQM" id="3cZdPQdQNlx">
+    <node concept="2YTgR$" id="3cZdPQdQNly" role="2YTpQH">
+      <property role="TrG5h" value="9000 A1-A4" />
+      <property role="2YSZTX" value="Family_9000LR" />
+      <node concept="2YTgKn" id="3cZdPQdQP2X" role="2YTgK7">
+        <node concept="3TlMh9" id="3cZdPQdQP9g" role="2YTgL_">
+          <property role="2hmy$m" value="470100" />
+        </node>
+        <node concept="3TlMh9" id="3cZdPQdQPmt" role="2YTgHD">
+          <property role="2hmy$m" value="100" />
+        </node>
+        <node concept="3TlMh9" id="3cZdPQdQPfI" role="2YTgKs">
+          <property role="2hmy$m" value="25" />
+        </node>
+      </node>
+    </node>
+    <node concept="2YTgR$" id="3cZdPQdQPtw" role="2YTpQH">
+      <property role="TrG5h" value="9000 A1-A2 CN" />
+      <property role="2YSZTX" value="Family_5200" />
+      <node concept="2YTgKn" id="3cZdPQdQPEM" role="2YTgK7">
+        <node concept="3TlMh9" id="3cZdPQdQPLa" role="2YTgL_">
+          <property role="2hmy$m" value="470100" />
+        </node>
+        <node concept="3TlMh9" id="3cZdPQdQPSh" role="2YTgHD">
+          <property role="2hmy$m" value="120" />
+        </node>
+        <node concept="3TlMh9" id="3cZdPQdQPRH" role="2YTgKs">
+          <property role="2hmy$m" value="2500" />
+        </node>
+      </node>
+    </node>
+    <node concept="3NXOOs" id="3cZdPQdRcp6" role="2YTekQ">
+      <property role="1RwFax" value="true" />
+      <property role="3kgbRO" value="false" />
+      <property role="3N1Lgt" value="wedemark/families.txt" />
     </node>
   </node>
 </model>
