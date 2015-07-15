@@ -178,7 +178,7 @@
     </language>
   </registry>
   <node concept="N3F5e" id="AO_S936VOp">
-    <property role="TrG5h" value="PlainCDemo" />
+    <property role="TrG5h" value="TestCases" />
     <node concept="2NXPZ9" id="3cZdPQdTGIN" role="N3F5h">
       <property role="TrG5h" value="empty_1436882450583_9" />
     </node>
@@ -275,7 +275,7 @@
     <node concept="2eOfOl" id="AO_S936VPn" role="2ePNbc">
       <property role="TrG5h" value="PlainCDemo" />
       <node concept="2v9HqM" id="3j3yk3gbQxX" role="2eOfOg">
-        <ref role="2v9HqP" node="AO_S936VOp" resolve="PlainCDemo" />
+        <ref role="2v9HqP" node="AO_S936VOp" resolve="TestCases" />
       </node>
       <node concept="2v9HqM" id="3cZdPQdUvRd" role="2eOfOg">
         <ref role="2v9HqP" node="3cZdPQdTGTV" resolve="Stammdaten" />
