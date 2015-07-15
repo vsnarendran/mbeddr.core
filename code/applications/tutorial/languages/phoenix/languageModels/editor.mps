@@ -188,7 +188,7 @@
       <node concept="3EZMnI" id="3cZdPQdQzIt" role="3EZMnx">
         <node concept="l2Vlx" id="3cZdPQdQzIu" role="2iSdaV" />
         <node concept="3F0ifn" id="3cZdPQdQzIq" role="3EZMnx">
-          <property role="3F0ifm" value="Profile" />
+          <property role="3F0ifm" value="profile" />
         </node>
         <node concept="3F0A7n" id="3cZdPQdQzIA" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />

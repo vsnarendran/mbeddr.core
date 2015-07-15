@@ -24,6 +24,10 @@
       <concept id="3692731094419296526" name="phoenix.c.structure.ProfileData" flags="ng" index="2YQupj">
         <reference id="3692731094419411341" name="profiles" index="2YPUrg" />
       </concept>
+      <concept id="3692731094419224222" name="phoenix.c.structure.ProfileType" flags="ng" index="2YQC73" />
+      <concept id="3692731094419230949" name="phoenix.c.structure.ProfileRef" flags="ng" index="2YQIuS">
+        <reference id="3692731094419230950" name="profile" index="2YQIuV" />
+      </concept>
       <concept id="3692731094418887546" name="phoenix.c.structure.BaseFreqExpr" flags="ng" index="2YRUgB" />
       <concept id="3692731094418887543" name="phoenix.c.structure.AbstractProfilePropertyRef" flags="ng" index="2YRUgE">
         <reference id="3692731094418887544" name="profile" index="2YRUg_" />
@@ -32,6 +36,9 @@
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
         <child id="7763322639126652758" name="baseType" index="2umbIo" />
+      </concept>
+      <concept id="4185783222026475238" name="com.mbeddr.core.statements.structure.LocalVariableDeclaration" flags="ng" index="3XIRlf">
+        <child id="4185783222026502647" name="init" index="3XIe9u" />
       </concept>
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
         <child id="4185783222026475862" name="statements" index="3XIRFZ" />
@@ -196,6 +203,26 @@
           </node>
           <node concept="2YRUgB" id="3cZdPQdTr9m" role="2N2GHg">
             <ref role="2YRUg_" node="3cZdPQdQPtw" resolve="9000 A1-A2 CN" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="c0Qz5" id="2Xfs3QEpKE2" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="testUserInput" />
+      <node concept="19Rifw" id="2Xfs3QEpKE3" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="3XIRFW" id="2Xfs3QEpKE4" role="c0Qz3">
+        <node concept="3XIRlf" id="2Xfs3QEpL8h" role="3XIRFZ">
+          <property role="TrG5h" value="userSelection" />
+          <node concept="2YQC73" id="2Xfs3QEpL8f" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="2YQIuS" id="2Xfs3QEpLca" role="3XIe9u">
+            <ref role="2YQIuV" node="3cZdPQdQPtw" resolve="9000 A1-A2 CN" />
           </node>
         </node>
       </node>
