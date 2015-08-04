@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="tp4f" ref="r:00000000-0000-4000-0000-011c89590373(jetbrains.mps.baseLanguage.classifiers.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -15,6 +16,9 @@
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+      </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
@@ -41,6 +45,12 @@
     <property role="TrG5h" value="Process" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5Kcl6zlFXE_" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="inputs" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5Kcl6zlFIFW" resolve="ProcessInputVariable" />
+    </node>
     <node concept="PrWs8" id="46fEo9Vcu6w" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -60,9 +70,14 @@
     </node>
     <node concept="1TJgyj" id="46fEo9VeL16" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="produces" />
+      <property role="20kJfa" value="output" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="tpee:fzcpWvJ" resolve="LocalVariableDeclaration" />
+      <ref role="20lvS9" node="5Kcl6zlHecR" resolve="StepOutputData" />
+    </node>
+    <node concept="1TJgyj" id="5Kcl6zlHCwu" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="validate" />
+      <ref role="20lvS9" node="46fEo9VgfoN" resolve="IsValidFunction" />
     </node>
   </node>
   <node concept="1TIwiD" id="46fEo9VcuqT">
@@ -74,11 +89,6 @@
       <property role="20kJfa" value="component" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="46fEo9VcHUb" resolve="CreateComponentFunction" />
-    </node>
-    <node concept="1TJgyj" id="46fEo9Vgfoz" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="validate" />
-      <ref role="20lvS9" node="46fEo9Vd$nE" resolve="IsApplicableFunction" />
     </node>
   </node>
   <node concept="1TIwiD" id="46fEo9VcuqZ">
@@ -94,6 +104,7 @@
   </node>
   <node concept="1TIwiD" id="46fEo9VcHUb">
     <property role="TrG5h" value="CreateComponentFunction" />
+    <property role="34LRSv" value="createComponent" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="46fEo9Vd$nE">
@@ -110,6 +121,31 @@
     <property role="TrG5h" value="FinishFunction" />
     <property role="34LRSv" value="finish" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="PlHQZ" id="5Kcl6zlFBkQ">
+    <property role="TrG5h" value="IProcessVariale" />
+    <node concept="PrWs8" id="5Kcl6zlFI9p" role="PrDN$">
+      <ref role="PrY4T" to="tp4f:hyWqYN0" resolve="IMember" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Kcl6zlFIFW">
+    <property role="TrG5h" value="ProcessInputVariable" />
+    <ref role="1TJDcQ" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
+    <node concept="PrWs8" id="5Kcl6zlFIGf" role="PzmwI">
+      <ref role="PrY4T" node="5Kcl6zlFBkQ" resolve="IProcessVariale" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Kcl6zlHecR">
+    <property role="TrG5h" value="StepOutputData" />
+    <ref role="1TJDcQ" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
+    <node concept="PrWs8" id="5Kcl6zlHedd" role="PzmwI">
+      <ref role="PrY4T" node="5Kcl6zlFBkQ" resolve="IProcessVariale" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Kcl6zlI5QD">
+    <property role="TrG5h" value="MainPanelArg" />
+    <property role="34LRSv" value="mainpanel" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
 </model>
 
