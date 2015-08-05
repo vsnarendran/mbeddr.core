@@ -23,10 +23,9 @@
       <concept id="4724180912012713611" name="com.mbeddr.mpsutil.process.structure.CreateComponentFunction" flags="ig" index="UJns9" />
       <concept id="4724180912012648918" name="com.mbeddr.mpsutil.process.structure.Step" flags="ng" index="UJ$xk">
         <child id="4724180912013250630" name="output" index="UHbB4" />
+        <child id="4724180912012936691" name="" index="UIuLL" />
       </concept>
-      <concept id="4724180912012650169" name="com.mbeddr.mpsutil.process.structure.SimpleStep" flags="ng" index="UJ$WV">
-        <child id="4724180912012936691" name="component" index="UIuLL" />
-      </concept>
+      <concept id="4724180912012650169" name="com.mbeddr.mpsutil.process.structure.SimpleStep" flags="ng" index="UJ$WV" />
       <concept id="4724180912012603068" name="com.mbeddr.mpsutil.process.structure.Process" flags="ng" index="UJCsY">
         <child id="6632769160448301733" name="inputs" index="29CSVd" />
         <child id="4724180912012650163" name="steps" index="UJ$WL" />
@@ -49,12 +48,12 @@
     </node>
     <node concept="UJ$WV" id="46fEo9VfLKA" role="UJ$WL">
       <property role="TrG5h" value="yo" />
-      <node concept="UJns9" id="46fEo9VfLKB" role="UIuLL">
-        <node concept="3clFbS" id="46fEo9VfLKC" role="2VODD2" />
-      </node>
       <node concept="29Ibtv" id="5Kcl6zlHq1F" role="UHbB4">
         <property role="TrG5h" value="a" />
         <node concept="3Tqbb2" id="5Kcl6zlHq27" role="1tU5fm" />
+      </node>
+      <node concept="UJns9" id="46fEo9VfLKB" role="UIuLL">
+        <node concept="3clFbS" id="46fEo9VfLKC" role="2VODD2" />
       </node>
     </node>
     <node concept="UJ$WV" id="46fEo9VgeEm" role="UJ$WL">

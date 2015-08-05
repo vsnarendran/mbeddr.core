@@ -35,14 +35,19 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
+        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
+      <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
         <property id="8606350594693632173" name="isTransient" index="eg7rD" />
         <property id="1240249534625" name="isVolatile" index="34CwA1" />
@@ -83,6 +88,9 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -163,6 +171,16 @@
         <ref role="3uigEE" to="dbrf:~JComponent" resolve="JComponent" />
       </node>
     </node>
+    <node concept="312cEg" id="43jzEnWdFYU" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="wizard" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tmbuc" id="43jzEnWdHcR" role="1B3o_S" />
+      <node concept="3uibUv" id="43jzEnWdFXf" role="1tU5fm">
+        <ref role="3uigEE" node="5Kcl6zlFo7R" resolve="BaseWizard" />
+      </node>
+    </node>
     <node concept="3clFbW" id="5Kcl6zlE5wg" role="jymVt">
       <node concept="3cqZAl" id="5Kcl6zlE5wi" role="3clF45" />
       <node concept="3Tm1VV" id="5Kcl6zlE5wj" role="1B3o_S" />
@@ -182,6 +200,25 @@
               <ref role="3cqZAo" node="5Kcl6zlE9N6" resolve="mID" />
             </node>
           </node>
+        </node>
+        <node concept="3clFbF" id="43jzEnWdG6S" role="3cqZAp">
+          <node concept="37vLTI" id="43jzEnWdH78" role="3clFbG">
+            <node concept="37vLTw" id="43jzEnWdHc3" role="37vLTx">
+              <ref role="3cqZAo" node="43jzEnWdFE3" resolve="wizard" />
+            </node>
+            <node concept="2OqwBi" id="43jzEnWdGb1" role="37vLTJ">
+              <node concept="Xjq3P" id="43jzEnWdG6Q" role="2Oq$k0" />
+              <node concept="2OwXpG" id="43jzEnWdGIM" role="2OqNvi">
+                <ref role="2Oxat5" node="43jzEnWdFYU" resolve="wizard" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="43jzEnWdFE3" role="3clF46">
+        <property role="TrG5h" value="wizard" />
+        <node concept="3uibUv" id="43jzEnWdFGS" role="1tU5fm">
+          <ref role="3uigEE" node="5Kcl6zlFo7R" resolve="BaseWizard" />
         </node>
       </node>
       <node concept="37vLTG" id="5Kcl6zlE6tb" role="3clF46">
@@ -232,6 +269,21 @@
       <node concept="3clFbS" id="5Kcl6zlEEfa" role="3clF47">
         <node concept="3cpWs6" id="5Kcl6zlEKKd" role="3cqZAp">
           <node concept="10Nm6u" id="5Kcl6zlEKKf" role="3cqZAk" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="43jzEnWb_sd" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="isComplete" />
+      <property role="DiZV1" value="false" />
+      <property role="IEkAT" value="false" />
+      <node concept="3Tm1VV" id="43jzEnWb_se" role="1B3o_S" />
+      <node concept="10P_77" id="43jzEnWb_sg" role="3clF45" />
+      <node concept="3clFbS" id="43jzEnWb_sh" role="3clF47">
+        <node concept="3clFbF" id="43jzEnWb_A0" role="3cqZAp">
+          <node concept="3clFbT" id="43jzEnWb__Z" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
         </node>
       </node>
     </node>
@@ -322,9 +374,7 @@
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="5Kcl6zlEOcb" role="3clF47" />
       <node concept="3Tmbuc" id="5Kcl6zlEKYt" role="1B3o_S" />
-      <node concept="3uibUv" id="5Kcl6zlEOjh" role="3clF45">
-        <ref role="3uigEE" to="dbrf:~JComponent" resolve="JComponent" />
-      </node>
+      <node concept="3cqZAl" id="43jzEnWh4Pr" role="3clF45" />
       <node concept="37vLTG" id="5Kcl6zlESeu" role="3clF46">
         <property role="TrG5h" value="mainpanel" />
         <node concept="3uibUv" id="5Kcl6zlESet" role="1tU5fm">

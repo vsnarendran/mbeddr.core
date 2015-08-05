@@ -16,6 +16,7 @@
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
         <child id="1169127546356" name="extends" index="PrDN$" />
@@ -27,6 +28,9 @@
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -65,6 +69,10 @@
     <property role="R5$K7" value="true" />
     <property role="TrG5h" value="Step" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="43jzEnWd$ex" role="1TKVEl">
+      <property role="TrG5h" value="titel" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="PrWs8" id="46fEo9Vd$o0" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -79,17 +87,23 @@
       <property role="20kJfa" value="validate" />
       <ref role="20lvS9" node="46fEo9VgfoN" resolve="IsValidFunction" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="46fEo9VcuqT">
-    <property role="TrG5h" value="SimpleStep" />
-    <property role="34LRSv" value="simple step" />
-    <ref role="1TJDcQ" node="46fEo9Vcu7m" resolve="Step" />
+    <node concept="1TJgyj" id="43jzEnWbMQw" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="commit" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="43jzEnWdIMC" resolve="CommitFunction" />
+    </node>
     <node concept="1TJgyj" id="46fEo9Vd$nN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="component" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="46fEo9VcHUb" resolve="CreateComponentFunction" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="46fEo9VcuqT">
+    <property role="TrG5h" value="SimpleStep" />
+    <property role="34LRSv" value="simple step" />
+    <ref role="1TJDcQ" node="46fEo9Vcu7m" resolve="Step" />
   </node>
   <node concept="1TIwiD" id="46fEo9VcuqZ">
     <property role="TrG5h" value="OptionalStep" />
@@ -146,6 +160,24 @@
     <property role="TrG5h" value="MainPanelArg" />
     <property role="34LRSv" value="mainpanel" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="43jzEnW96e0">
+    <property role="TrG5h" value="StepClassRoot" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="43jzEnW9hhQ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+    <node concept="1TJgyj" id="43jzEnW9hZ4" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="step" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="46fEo9Vcu7m" resolve="Step" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="43jzEnWdIMC">
+    <property role="TrG5h" value="CommitFunction" />
+    <property role="34LRSv" value="commit" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
 </model>
 
