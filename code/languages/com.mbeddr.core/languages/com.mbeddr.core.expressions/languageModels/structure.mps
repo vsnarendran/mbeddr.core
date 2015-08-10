@@ -1472,5 +1472,9 @@
       <ref role="PrY4T" to="vs0r:7RHXOmw3XK2" resolve="IRequiresHeaderImport" />
     </node>
   </node>
+  <node concept="PlHQZ" id="3JvBMXOT$XY">
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="ICanBeConst" />
+  </node>
 </model>
 

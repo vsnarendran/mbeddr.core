@@ -36,8 +36,8 @@
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" />
     <import index="hba4" ref="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" />
     <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(java.util@java_stub)" />
-    <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -189,7 +189,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -21397,6 +21397,27 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="7xtsKqWkMDF" role="1B3o_S" />
+  </node>
+  <node concept="13h7C7" id="3JvBMXOT_j1">
+    <property role="3GE5qa" value="types" />
+    <ref role="13h7C2" to="mj1l:3JvBMXOT$XY" resolve="ICanBeConst" />
+    <node concept="13i0hz" id="3JvBMXOT_j4" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="canBeConst" />
+      <node concept="37vLTG" id="3JvBMXOTChI" role="3clF46">
+        <property role="TrG5h" value="type" />
+        <node concept="3Tqbb2" id="3JvBMXOTChO" role="1tU5fm">
+          <ref role="ehGHo" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3JvBMXOT_j5" role="1B3o_S" />
+      <node concept="10P_77" id="3JvBMXOTChF" role="3clF45" />
+      <node concept="3clFbS" id="3JvBMXOT_j7" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="3JvBMXOT_j2" role="13h7CW">
+      <node concept="3clFbS" id="3JvBMXOT_j3" role="2VODD2" />
+    </node>
   </node>
 </model>
 
