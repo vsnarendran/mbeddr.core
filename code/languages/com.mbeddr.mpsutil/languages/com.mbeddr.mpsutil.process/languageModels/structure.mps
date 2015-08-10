@@ -36,6 +36,7 @@
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -73,14 +74,20 @@
       <property role="TrG5h" value="titel" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="PrWs8" id="46fEo9Vd$o0" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="PrWs8" id="70BL6LoD0FJ" role="PzmwI">
+      <ref role="PrY4T" to="tp4f:hyWqMFP" resolve="IClassifier" />
     </node>
     <node concept="1TJgyj" id="46fEo9VeL16" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="output" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5Kcl6zlHecR" resolve="StepOutputData" />
+    </node>
+    <node concept="1TJgyj" id="70BL6LoC8x_" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="privatData" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="70BL6LoC6fL" resolve="StepPrivateData" />
     </node>
     <node concept="1TJgyj" id="5Kcl6zlHCwu" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -178,6 +185,37 @@
     <property role="TrG5h" value="CommitFunction" />
     <property role="34LRSv" value="commit" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="70BL6LoC6fL">
+    <property role="TrG5h" value="StepPrivateData" />
+    <ref role="1TJDcQ" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
+    <node concept="PrWs8" id="70BL6LoC6gG" role="PzmwI">
+      <ref role="PrY4T" node="5Kcl6zlFBkQ" resolve="IProcessVariale" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="70BL6LoDTw9">
+    <property role="TrG5h" value="StepType" />
+    <property role="34LRSv" value="step&lt;&lt;{name}&gt;&gt;" />
+    <ref role="1TJDcQ" to="tp4f:hyWtXx5" resolve="BaseClassifierType" />
+    <node concept="1TJgyj" id="70BL6LoDTRZ" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="step" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="46fEo9Vcu7m" resolve="Step" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="70BL6LoGkMm">
+    <property role="TrG5h" value="StepMemberReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="70BL6LoGkMo" role="PzmwI">
+      <ref role="PrY4T" to="tp4f:hyWEnem" resolve="IMemberOperation" />
+    </node>
+    <node concept="1TJgyj" id="70BL6LoGl1u" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="processField" />
+      <ref role="20lvS9" node="5Kcl6zlFBkQ" resolve="IProcessVariale" />
+      <ref role="20ksaX" to="tp4f:hyWH_vG" />
+    </node>
   </node>
 </model>
 
