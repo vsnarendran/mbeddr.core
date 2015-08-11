@@ -154,6 +154,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -175,12 +178,14 @@
     </language>
   </registry>
   <node concept="13h7C7" id="46fEo9Vd$oc">
+    <property role="3GE5qa" value="step" />
     <ref role="13h7C2" to="hbjw:46fEo9VcuqT" resolve="SimpleStep" />
     <node concept="13hLZK" id="46fEo9Vd$od" role="13h7CW">
       <node concept="3clFbS" id="46fEo9Vd$oe" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="46fEo9VdQYI">
+    <property role="3GE5qa" value="step" />
     <ref role="13h7C2" to="hbjw:46fEo9VcHUb" resolve="CreateComponentFunction" />
     <node concept="13hLZK" id="46fEo9VdQYJ" role="13h7CW">
       <node concept="3clFbS" id="46fEo9VdQYK" role="2VODD2" />
@@ -231,6 +236,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="46fEo9Ve94t">
+    <property role="3GE5qa" value="step" />
     <ref role="13h7C2" to="hbjw:46fEo9Vd$nE" resolve="IsApplicableFunction" />
     <node concept="13hLZK" id="46fEo9Ve94u" role="13h7CW">
       <node concept="3clFbS" id="46fEo9Ve94v" role="2VODD2" />
@@ -253,6 +259,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="46fEo9VgfoO">
+    <property role="3GE5qa" value="step" />
     <ref role="13h7C2" to="hbjw:46fEo9VgfoN" resolve="IsValidFunction" />
     <node concept="13hLZK" id="46fEo9VgfoP" role="13h7CW">
       <node concept="3clFbS" id="46fEo9VgfoQ" role="2VODD2" />
@@ -273,6 +280,23 @@
       </node>
       <node concept="3Tqbb2" id="46fEo9VgfoY" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="1J_CuVjn59C" role="13h7CS">
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0is" value="false" />
+      <property role="TrG5h" value="showName" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:1653mnvAgry" resolve="showName" />
+      <node concept="3Tm1VV" id="1J_CuVjn59D" role="1B3o_S" />
+      <node concept="3clFbS" id="1J_CuVjn59I" role="3clF47">
+        <node concept="3clFbF" id="1J_CuVjn5c1" role="3cqZAp">
+          <node concept="3clFbT" id="1J_CuVjn5c0" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="1J_CuVjn59J" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="46fEo9VgfLv">
     <ref role="13h7C2" to="hbjw:46fEo9VgfLf" resolve="FinishFunction" />
@@ -281,6 +305,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="5Kcl6zlI5QE">
+    <property role="3GE5qa" value="step" />
     <ref role="13h7C2" to="hbjw:5Kcl6zlI5QD" resolve="MainPanelArg" />
     <node concept="13hLZK" id="5Kcl6zlI5QF" role="13h7CW">
       <node concept="3clFbS" id="5Kcl6zlI5QG" role="2VODD2" />
@@ -306,6 +331,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="43jzEnWa6qD">
+    <property role="3GE5qa" value="step" />
     <ref role="13h7C2" to="hbjw:46fEo9Vcu7m" resolve="Step" />
     <node concept="13i0hz" id="43jzEnWa6sq" role="13h7CS">
       <property role="TrG5h" value="genClassName" />
@@ -421,6 +447,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="70BL6LoC6gI">
+    <property role="3GE5qa" value="step" />
     <ref role="13h7C2" to="hbjw:70BL6LoC6fL" resolve="StepPrivateData" />
     <node concept="13hLZK" id="70BL6LoC6gJ" role="13h7CW">
       <node concept="3clFbS" id="70BL6LoC6gK" role="2VODD2" />
@@ -449,6 +476,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="70BL6LoDTUk">
+    <property role="3GE5qa" value="step" />
     <ref role="13h7C2" to="hbjw:70BL6LoDTw9" resolve="StepType" />
     <node concept="13hLZK" id="70BL6LoDTUl" role="13h7CW">
       <node concept="3clFbS" id="70BL6LoDTUm" role="2VODD2" />
@@ -488,6 +516,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="70BL6LoEgZ1">
+    <property role="3GE5qa" value="step" />
     <ref role="13h7C2" to="hbjw:5Kcl6zlHecR" resolve="StepOutputData" />
     <node concept="13hLZK" id="70BL6LoEgZ2" role="13h7CW">
       <node concept="3clFbS" id="70BL6LoEgZ3" role="2VODD2" />
@@ -573,6 +602,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="70BL6LoGl1y">
+    <property role="3GE5qa" value="step" />
     <ref role="13h7C2" to="hbjw:70BL6LoGkMm" resolve="StepMemberReference" />
     <node concept="13hLZK" id="70BL6LoGl1z" role="13h7CW">
       <node concept="3clFbS" id="70BL6LoGl1$" role="2VODD2" />
@@ -592,6 +622,71 @@
         </node>
       </node>
       <node concept="10P_77" id="70BL6LoGl1K" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="70BL6LoV$TT">
+    <ref role="13h7C2" to="hbjw:70BL6LoU5mn" resolve="RunWizardExpression" />
+    <node concept="13hLZK" id="70BL6LoV$TU" role="13h7CW">
+      <node concept="3clFbS" id="70BL6LoV$TV" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="70BL6LoV$TW" role="13h7CS">
+      <property role="TrG5h" value="isLegalAsStatement" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:i26MfYG" resolve="isLegalAsStatement" />
+      <node concept="3Tm1VV" id="70BL6LoV$TX" role="1B3o_S" />
+      <node concept="3clFbS" id="70BL6LoV$Ug" role="3clF47">
+        <node concept="3clFbF" id="70BL6LoV$VM" role="3cqZAp">
+          <node concept="3clFbT" id="70BL6LoV$VL" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="70BL6LoV$Uh" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="1J_CuVjhGJ8">
+    <ref role="13h7C2" to="hbjw:43jzEnWdIMC" resolve="CommitFunction" />
+    <node concept="13hLZK" id="1J_CuVjhGJ9" role="13h7CW">
+      <node concept="3clFbS" id="1J_CuVjhGJa" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="1J_CuVjhHky" role="13h7CS">
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0is" value="false" />
+      <property role="TrG5h" value="showName" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:1653mnvAgry" resolve="showName" />
+      <node concept="3Tm1VV" id="1J_CuVjhHkz" role="1B3o_S" />
+      <node concept="3clFbS" id="1J_CuVjhHkC" role="3clF47">
+        <node concept="3clFbF" id="1J_CuVjhHnC" role="3cqZAp">
+          <node concept="3clFbT" id="1J_CuVjhHnB" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="1J_CuVjhHkD" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="1J_CuVjmpQz">
+    <ref role="13h7C2" to="hbjw:1J_CuVjmpQe" resolve="validateExpression" />
+    <node concept="13hLZK" id="1J_CuVjmpQ$" role="13h7CW">
+      <node concept="3clFbS" id="1J_CuVjmpQ_" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="1J_CuVjmpQA" role="13h7CS">
+      <property role="TrG5h" value="isLegalAsStatement" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpek:i26MfYG" resolve="isLegalAsStatement" />
+      <node concept="3Tm1VV" id="1J_CuVjmpQB" role="1B3o_S" />
+      <node concept="3clFbS" id="1J_CuVjmpQU" role="3clF47">
+        <node concept="3clFbF" id="1J_CuVjmpSf" role="3cqZAp">
+          <node concept="3clFbT" id="1J_CuVjmpSe" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="1J_CuVjmpQV" role="3clF45" />
     </node>
   </node>
 </model>
