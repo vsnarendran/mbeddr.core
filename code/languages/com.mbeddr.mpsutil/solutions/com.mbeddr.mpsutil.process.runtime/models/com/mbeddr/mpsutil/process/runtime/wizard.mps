@@ -11,7 +11,6 @@
     <import index="1t7x" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
     <import index="ayyu" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.ui(MPS.IDEA/com.intellij.ui@java_stub)" />
     <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
-    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -44,14 +43,8 @@
       </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -174,6 +167,7 @@
         <child id="4611582986551314344" name="requestedType" index="UnYnz" />
       </concept>
       <concept id="1171391069720" name="jetbrains.mps.baseLanguage.collections.structure.GetIndexOfOperation" flags="nn" index="2WmjW8" />
+      <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
       <concept id="1175845471038" name="jetbrains.mps.baseLanguage.collections.structure.ReverseOperation" flags="nn" index="35Qw8J" />
       <concept id="5232196642625574978" name="jetbrains.mps.baseLanguage.collections.structure.HeadListOperation" flags="nn" index="1eb2ty">
         <child id="5232196642625574980" name="upToIndex" index="1eb2t$" />
@@ -212,6 +206,14 @@
         <ref role="3uigEE" node="5Kcl6zlFo7R" resolve="BaseWizard" />
       </node>
     </node>
+    <node concept="312cEg" id="rF8Sb8KuV_" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="foo" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm1VV" id="rF8Sb8KuF6" role="1B3o_S" />
+      <node concept="17QB3L" id="rF8Sb8KuTf" role="1tU5fm" />
+    </node>
     <node concept="3clFbW" id="5Kcl6zlE5wg" role="jymVt">
       <node concept="3cqZAl" id="5Kcl6zlE5wi" role="3clF45" />
       <node concept="3Tm1VV" id="5Kcl6zlE5wj" role="1B3o_S" />
@@ -249,20 +251,6 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="70BL6LoTjIm" role="3clF47">
-        <node concept="3clFbF" id="70BL6LoYFay" role="3cqZAp">
-          <node concept="2OqwBi" id="70BL6LoYFav" role="3clFbG">
-            <node concept="10M0yZ" id="70BL6LoYFaw" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="70BL6LoYFax" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.Object):void" resolve="println" />
-              <node concept="37vLTw" id="70BL6LoYFd0" role="37wK5m">
-                <ref role="3cqZAo" node="70BL6LoTkcD" resolve="wizard" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="70BL6LoTkj1" role="3cqZAp">
           <node concept="37vLTI" id="70BL6LoTltL" role="3clFbG">
             <node concept="37vLTw" id="70BL6LoTlz1" role="37vLTx">
@@ -613,6 +601,16 @@
         </node>
       </node>
     </node>
+    <node concept="3clFb_" id="rF8Sb8N0tl" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="updateUI" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="rF8Sb8N0to" role="3clF47" />
+      <node concept="3Tm1VV" id="rF8Sb8N0aC" role="1B3o_S" />
+      <node concept="3cqZAl" id="rF8Sb8N0r3" role="3clF45" />
+    </node>
     <node concept="3Tm1VV" id="5Kcl6zlCSj1" role="1B3o_S" />
     <node concept="3uibUv" id="5Kcl6zlE5fn" role="1zkMxy">
       <ref role="3uigEE" to="bktd:~AbstractWizardStepEx" resolve="AbstractWizardStepEx" />
@@ -804,6 +802,52 @@
         <node concept="17QB3L" id="70BL6LoOApc" role="1tU5fm" />
       </node>
     </node>
+    <node concept="3clFb_" id="rF8Sb8MWZp" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="updateStep" />
+      <property role="DiZV1" value="false" />
+      <property role="IEkAT" value="false" />
+      <node concept="3Tmbuc" id="rF8Sb8MWZq" role="1B3o_S" />
+      <node concept="3cqZAl" id="rF8Sb8MWZs" role="3clF45" />
+      <node concept="3clFbS" id="rF8Sb8MWZt" role="3clF47">
+        <node concept="3clFbF" id="rF8Sb8MWZw" role="3cqZAp">
+          <node concept="3nyPlj" id="rF8Sb8MWZv" role="3clFbG">
+            <ref role="37wK5l" to="bktd:~AbstractWizardEx.updateStep():void" resolve="updateStep" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="rF8Sb8MZku" role="3cqZAp">
+          <node concept="3cpWsn" id="rF8Sb8MZkv" role="3cpWs9">
+            <property role="TrG5h" value="currentStep" />
+            <node concept="3uibUv" id="rF8Sb8MZkn" role="1tU5fm">
+              <ref role="3uigEE" node="5Kcl6zlCSj0" resolve="BaseProcessStep" />
+            </node>
+            <node concept="2OqwBi" id="rF8Sb8MZkw" role="33vP2m">
+              <node concept="37vLTw" id="rF8Sb8MZkx" role="2Oq$k0">
+                <ref role="3cqZAo" node="5Kcl6zlFvau" resolve="mSteps" />
+              </node>
+              <node concept="34jXtK" id="rF8Sb8MZky" role="2OqNvi">
+                <node concept="1rXfSq" id="rF8Sb8MZkz" role="25WWJ7">
+                  <ref role="37wK5l" to="bktd:~AbstractWizard.getCurrentStep():int" resolve="getCurrentStep" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="rF8Sb8MY1l" role="3cqZAp">
+          <node concept="2OqwBi" id="rF8Sb8N1Ae" role="3clFbG">
+            <node concept="37vLTw" id="rF8Sb8MZk$" role="2Oq$k0">
+              <ref role="3cqZAo" node="rF8Sb8MZkv" resolve="currentStep" />
+            </node>
+            <node concept="liA8E" id="rF8Sb8N1Xj" role="2OqNvi">
+              <ref role="37wK5l" node="rF8Sb8N0tl" resolve="updateUI" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="rF8Sb8MWZu" role="2AJF6D">
+        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+      </node>
+    </node>
     <node concept="3clFb_" id="7JKJHZ3RAwW" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getNextStep" />
@@ -886,40 +930,6 @@
                   </node>
                 </node>
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="70BL6Lp0wx0" role="3cqZAp">
-          <node concept="3clFbS" id="70BL6Lp0wx1" role="3clFbx">
-            <node concept="3clFbF" id="70BL6Lp0jPr" role="3cqZAp">
-              <node concept="2OqwBi" id="70BL6Lp0jPo" role="3clFbG">
-                <node concept="10M0yZ" id="70BL6Lp0jPp" role="2Oq$k0">
-                  <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-                  <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-                </node>
-                <node concept="liA8E" id="70BL6Lp0jPq" role="2OqNvi">
-                  <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-                  <node concept="3cpWs3" id="70BL6Lp0kFq" role="37wK5m">
-                    <node concept="2OqwBi" id="70BL6Lp0kOk" role="3uHU7w">
-                      <node concept="37vLTw" id="70BL6Lp0kIE" role="2Oq$k0">
-                        <ref role="3cqZAo" node="70BL6Lp0hpc" resolve="val" />
-                      </node>
-                      <node concept="liA8E" id="70BL6Lp0l4l" role="2OqNvi">
-                        <ref role="37wK5l" to="bktd:~AbstractWizardStepEx.getTitle():java.lang.String" resolve="getTitle" />
-                      </node>
-                    </node>
-                    <node concept="Xl_RD" id="70BL6Lp0knJ" role="3uHU7B">
-                      <property role="Xl_RC" value="next step " />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3y3z36" id="70BL6Lp0xoT" role="3clFbw">
-            <node concept="10Nm6u" id="70BL6Lp0xuz" role="3uHU7w" />
-            <node concept="37vLTw" id="70BL6Lp0xh1" role="3uHU7B">
-              <ref role="3cqZAo" node="70BL6Lp0hpc" resolve="val" />
             </node>
           </node>
         </node>
@@ -1023,40 +1033,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="70BL6Lp0s7Z" role="3cqZAp">
-          <node concept="3clFbS" id="70BL6Lp0s80" role="3clFbx">
-            <node concept="3clFbF" id="70BL6Lp0nOJ" role="3cqZAp">
-              <node concept="2OqwBi" id="70BL6Lp0nOK" role="3clFbG">
-                <node concept="10M0yZ" id="70BL6Lp0nOL" role="2Oq$k0">
-                  <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-                  <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-                </node>
-                <node concept="liA8E" id="70BL6Lp0nOM" role="2OqNvi">
-                  <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-                  <node concept="3cpWs3" id="70BL6Lp0nON" role="37wK5m">
-                    <node concept="2OqwBi" id="70BL6Lp0nOO" role="3uHU7w">
-                      <node concept="37vLTw" id="70BL6Lp0nOP" role="2Oq$k0">
-                        <ref role="3cqZAo" node="70BL6Lp0le9" resolve="val" />
-                      </node>
-                      <node concept="liA8E" id="70BL6Lp0nOQ" role="2OqNvi">
-                        <ref role="37wK5l" to="bktd:~AbstractWizardStepEx.getTitle():java.lang.String" resolve="getTitle" />
-                      </node>
-                    </node>
-                    <node concept="Xl_RD" id="70BL6Lp0nOR" role="3uHU7B">
-                      <property role="Xl_RC" value="prev step " />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3y3z36" id="70BL6Lp0sXO" role="3clFbw">
-            <node concept="10Nm6u" id="70BL6Lp0t3u" role="3uHU7w" />
-            <node concept="37vLTw" id="70BL6Lp0sPW" role="3uHU7B">
-              <ref role="3cqZAo" node="70BL6Lp0le9" resolve="val" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="70BL6Lp0nj8" role="3cqZAp" />
         <node concept="3cpWs6" id="7JKJHZ3S0Xp" role="3cqZAp">
           <node concept="37vLTw" id="70BL6Lp0leq" role="3cqZAk">
@@ -1086,7 +1062,7 @@
           <node concept="2OqwBi" id="1J_CuVjovp_" role="3clFbG">
             <node concept="Xjq3P" id="1J_CuVjovk7" role="2Oq$k0" />
             <node concept="liA8E" id="1J_CuVjowae" role="2OqNvi">
-              <ref role="37wK5l" to="bktd:~AbstractWizardEx.updateStep():void" resolve="updateStep" />
+              <ref role="37wK5l" node="rF8Sb8MWZp" resolve="updateStep" />
             </node>
           </node>
         </node>

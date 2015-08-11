@@ -78,7 +78,17 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
@@ -346,7 +356,44 @@
     </node>
     <node concept="1YaCAy" id="1J_CuVjmpSw" role="1YuTPh">
       <property role="TrG5h" value="validateExpression" />
-      <ref role="1YaFvo" to="hbjw:1J_CuVjmpQe" resolve="validateExpression" />
+      <ref role="1YaFvo" to="hbjw:1J_CuVjmpQe" resolve="ValidateExpression" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="rF8Sb92jA_">
+    <property role="TrG5h" value="check_CreateComponentFunction" />
+    <property role="3GE5qa" value="step" />
+    <node concept="3clFbS" id="rF8Sb92jAA" role="18ibNy">
+      <node concept="2Gpval" id="rF8Sb92koR" role="3cqZAp">
+        <node concept="2GrKxI" id="rF8Sb92koS" role="2Gsz3X">
+          <property role="TrG5h" value="var" />
+        </node>
+        <node concept="3clFbS" id="rF8Sb92koT" role="2LFqv$">
+          <node concept="2MkqsV" id="rF8Sb92kwa" role="3cqZAp">
+            <node concept="Xl_RD" id="rF8Sb92kwm" role="2MkJ7o">
+              <property role="Xl_RC" value="Data from previous steps can't be used here. Please use updateUi part." />
+            </node>
+            <node concept="2GrUjf" id="rF8Sb92kzG" role="2OEOjV">
+              <ref role="2Gs0qQ" node="rF8Sb92koS" resolve="var" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="rF8Sb92jG8" role="2GsD0m">
+          <node concept="1YBJjd" id="rF8Sb92jCB" role="2Oq$k0">
+            <ref role="1YBMHb" node="rF8Sb92jAC" resolve="ccf" />
+          </node>
+          <node concept="2Rf3mk" id="rF8Sb92kjb" role="2OqNvi">
+            <node concept="1xMEDy" id="rF8Sb92kjd" role="1xVPHs">
+              <node concept="chp4Y" id="rF8Sb92kv5" role="ri$Ld">
+                <ref role="cht4Q" to="hbjw:70BL6LoLNWv" resolve="StepRefExpression" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="rF8Sb92jAC" role="1YuTPh">
+      <property role="TrG5h" value="ccf" />
+      <ref role="1YaFvo" to="hbjw:46fEo9VcHUb" resolve="CreateComponentFunction" />
     </node>
   </node>
 </model>

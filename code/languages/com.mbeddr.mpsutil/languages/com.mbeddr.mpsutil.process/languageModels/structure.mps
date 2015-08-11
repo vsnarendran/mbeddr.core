@@ -13,6 +13,7 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -66,6 +67,9 @@
     <node concept="PrWs8" id="46fEo9Vcu6w" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="rF8Sb8ZYBE" role="PzmwI">
+      <ref role="PrY4T" node="rF8Sb8ZYzM" resolve="IStepScopeProvider" />
+    </node>
     <node concept="1TJgyj" id="46fEo9VcuqN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="steps" />
@@ -75,7 +79,7 @@
     <node concept="1TJgyj" id="70BL6LoNo$j" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="commit" />
-      <ref role="20lvS9" node="43jzEnWdIMC" resolve="CommitFunction" />
+      <ref role="20lvS9" node="rF8Sb8SN91" resolve="CommitProcessFunction" />
     </node>
   </node>
   <node concept="1TIwiD" id="46fEo9Vcu7m">
@@ -118,6 +122,11 @@
       <property role="20kJfa" value="component" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="46fEo9VcHUb" resolve="CreateComponentFunction" />
+    </node>
+    <node concept="1TJgyj" id="rF8Sb8N21b" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="update" />
+      <ref role="20lvS9" node="rF8Sb8N1XP" resolve="UpdateUIFunction" />
     </node>
   </node>
   <node concept="1TIwiD" id="46fEo9VcuqT">
@@ -205,6 +214,7 @@
   <node concept="1TIwiD" id="43jzEnWdIMC">
     <property role="TrG5h" value="CommitFunction" />
     <property role="34LRSv" value="commit" />
+    <property role="3GE5qa" value="step" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="70BL6LoC6fL">
@@ -283,6 +293,79 @@
     <property role="TrG5h" value="ValidateExpression" />
     <property role="34LRSv" value="validate" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="rF8Sb8N1XP">
+    <property role="3GE5qa" value="step" />
+    <property role="TrG5h" value="UpdateUIFunction" />
+    <property role="34LRSv" value="updateUi" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="rF8Sb8Oz3G">
+    <property role="TrG5h" value="ProcessExtension" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="rF8Sb8Oz3K" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="extensions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="rF8Sb8Oz3J" resolve="Extension" />
+    </node>
+    <node concept="1TJgyj" id="rF8Sb8Oz3H" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="process" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="46fEo9VciUW" resolve="Process" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="rF8Sb8Oz3J">
+    <property role="TrG5h" value="Extension" />
+    <property role="34LRSv" value="Extension" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="rF8Sb8Oz4T" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="46fEo9Vcu7m" resolve="Step" />
+    </node>
+    <node concept="1TJgyj" id="rF8Sb8Oz3O" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="kind" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="rF8Sb8Oz3N" resolve="ExtensionKind" />
+    </node>
+    <node concept="1TJgyj" id="rF8Sb8Oz4W" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="content" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="46fEo9Vcu7m" resolve="Step" />
+    </node>
+    <node concept="PrWs8" id="rF8Sb905bL" role="PzmwI">
+      <ref role="PrY4T" node="rF8Sb8ZYzM" resolve="IStepScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="rF8Sb8Oz3N">
+    <property role="TrG5h" value="ExtensionKind" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="rF8Sb8Oz3Q">
+    <property role="TrG5h" value="BeforeExtensionKind" />
+    <property role="34LRSv" value="before" />
+    <ref role="1TJDcQ" node="rF8Sb8Oz3N" resolve="ExtensionKind" />
+  </node>
+  <node concept="1TIwiD" id="rF8Sb8Oz4J">
+    <property role="TrG5h" value="AfterExtensionKind" />
+    <property role="34LRSv" value="after" />
+    <ref role="1TJDcQ" node="rF8Sb8Oz3N" resolve="ExtensionKind" />
+  </node>
+  <node concept="1TIwiD" id="rF8Sb8SN91">
+    <property role="TrG5h" value="CommitProcessFunction" />
+    <property role="34LRSv" value="commit" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="PlHQZ" id="rF8Sb8ZYzM">
+    <property role="TrG5h" value="IStepScopeProvider" />
   </node>
 </model>
 
