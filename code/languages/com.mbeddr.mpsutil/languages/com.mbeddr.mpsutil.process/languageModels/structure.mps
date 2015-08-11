@@ -68,7 +68,7 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="rF8Sb8ZYBE" role="PzmwI">
-      <ref role="PrY4T" node="rF8Sb8ZYzM" resolve="IStepScopeProvider" />
+      <ref role="PrY4T" node="rF8Sb8ZYzM" resolve="IStepContextProvider" />
     </node>
     <node concept="1TJgyj" id="46fEo9VcuqN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -76,10 +76,17 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="46fEo9Vcu7m" resolve="Step" />
     </node>
-    <node concept="1TJgyj" id="70BL6LoNo$j" role="1TKVEi">
+    <node concept="1TJgyj" id="rF8Sb97oxO" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="commit" />
-      <ref role="20lvS9" node="rF8Sb8SN91" resolve="CommitProcessFunction" />
+      <property role="20kJfa" value="output" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1H" resolve="Type" />
+    </node>
+    <node concept="1TJgyj" id="rF8Sb98v0d" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="init" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
   <node concept="1TIwiD" id="46fEo9Vcu7m">
@@ -340,7 +347,7 @@
       <ref role="20lvS9" node="46fEo9Vcu7m" resolve="Step" />
     </node>
     <node concept="PrWs8" id="rF8Sb905bL" role="PzmwI">
-      <ref role="PrY4T" node="rF8Sb8ZYzM" resolve="IStepScopeProvider" />
+      <ref role="PrY4T" node="rF8Sb8ZYzM" resolve="IStepContextProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="rF8Sb8Oz3N">
@@ -359,13 +366,14 @@
     <property role="34LRSv" value="after" />
     <ref role="1TJDcQ" node="rF8Sb8Oz3N" resolve="ExtensionKind" />
   </node>
-  <node concept="1TIwiD" id="rF8Sb8SN91">
-    <property role="TrG5h" value="CommitProcessFunction" />
-    <property role="34LRSv" value="commit" />
-    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
-  </node>
   <node concept="PlHQZ" id="rF8Sb8ZYzM">
-    <property role="TrG5h" value="IStepScopeProvider" />
+    <property role="TrG5h" value="IStepContextProvider" />
+  </node>
+  <node concept="1TIwiD" id="rF8Sb98xUO">
+    <property role="3GE5qa" value="step" />
+    <property role="TrG5h" value="OutputExecuteFunctionParameter" />
+    <property role="34LRSv" value="output" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
 </model>
 

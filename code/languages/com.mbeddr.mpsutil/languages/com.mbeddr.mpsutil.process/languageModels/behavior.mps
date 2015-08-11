@@ -1052,29 +1052,6 @@
       <node concept="17QB3L" id="rF8Sb8PvGL" role="3clF45" />
     </node>
   </node>
-  <node concept="13h7C7" id="rF8Sb8SN92">
-    <ref role="13h7C2" to="hbjw:rF8Sb8SN91" resolve="CommitProcessFunction" />
-    <node concept="13hLZK" id="rF8Sb8SN93" role="13h7CW">
-      <node concept="3clFbS" id="rF8Sb8SN94" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="rF8Sb8SN95" role="13h7CS">
-      <property role="2Ki8OM" value="true" />
-      <property role="13i0is" value="false" />
-      <property role="TrG5h" value="showName" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="tpek:1653mnvAgry" resolve="showName" />
-      <node concept="3Tm1VV" id="rF8Sb8SN96" role="1B3o_S" />
-      <node concept="3clFbS" id="rF8Sb8SN9b" role="3clF47">
-        <node concept="3clFbF" id="rF8Sb8SNbv" role="3cqZAp">
-          <node concept="3clFbT" id="rF8Sb8SNbu" role="3clFbG">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="rF8Sb8SN9c" role="3clF45" />
-    </node>
-  </node>
   <node concept="13h7C7" id="rF8Sb8V2s_">
     <ref role="13h7C2" to="hbjw:46fEo9VciUW" resolve="Process" />
     <node concept="13hLZK" id="rF8Sb8V2sA" role="13h7CW">
@@ -1153,6 +1130,35 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="rF8Sb98vil" role="13h7CS">
+      <property role="TrG5h" value="requiresInit" />
+      <node concept="3Tm1VV" id="rF8Sb98vim" role="1B3o_S" />
+      <node concept="3clFbS" id="rF8Sb98vin" role="3clF47">
+        <node concept="3clFbF" id="rF8Sb98vvz" role="3cqZAp">
+          <node concept="3clFbT" id="rF8Sb98vvy" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="rF8Sb98vvu" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="rF8Sb98x6X" role="13h7CS">
+      <property role="TrG5h" value="getOutputType" />
+      <node concept="3Tm1VV" id="rF8Sb98x6Y" role="1B3o_S" />
+      <node concept="3clFbS" id="rF8Sb98x6Z" role="3clF47">
+        <node concept="3cpWs6" id="rF8Sb98xd6" role="3cqZAp">
+          <node concept="2OqwBi" id="rF8Sb98xfI" role="3cqZAk">
+            <node concept="13iPFW" id="rF8Sb98xdn" role="2Oq$k0" />
+            <node concept="3TrEf2" id="rF8Sb98x_k" role="2OqNvi">
+              <ref role="3Tt5mk" to="hbjw:rF8Sb97oxO" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="rF8Sb98xd2" role="3clF45">
+        <ref role="ehGHo" to="tpee:fz3vP1H" resolve="Type" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="rF8Sb8V4QS">
     <ref role="13h7C2" to="hbjw:5Kcl6zlFIFW" resolve="ProcessInputVariable" />
@@ -1184,7 +1190,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="rF8Sb8ZYzN">
-    <ref role="13h7C2" to="hbjw:rF8Sb8ZYzM" resolve="IStepScopeProvider" />
+    <ref role="13h7C2" to="hbjw:rF8Sb8ZYzM" resolve="IStepContextProvider" />
     <node concept="13i0hz" id="rF8Sb8ZYzQ" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
@@ -1201,6 +1207,16 @@
         <node concept="3Tqbb2" id="rF8Sb8ZY$3" role="A3Ik2">
           <ref role="ehGHo" to="hbjw:46fEo9Vcu7m" resolve="Step" />
         </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="rF8Sb98y7f" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getOutputType" />
+      <node concept="3Tm1VV" id="rF8Sb98y7g" role="1B3o_S" />
+      <node concept="3clFbS" id="rF8Sb98y7h" role="3clF47" />
+      <node concept="3Tqbb2" id="rF8Sb98y7D" role="3clF45">
+        <ref role="ehGHo" to="tpee:fz3vP1H" resolve="Type" />
       </node>
     </node>
     <node concept="13hLZK" id="rF8Sb8ZYzO" role="13h7CW">

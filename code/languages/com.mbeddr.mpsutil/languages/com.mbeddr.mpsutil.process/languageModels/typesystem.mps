@@ -9,6 +9,7 @@
     <import index="hbjw" ref="r:2ffefd76-4fe0-43c2-9fbd-203c67a47b34(com.mbeddr.mpsutil.process.structure)" implicit="true" />
     <import index="tp4h" ref="r:00000000-0000-4000-0000-011c8959036d(jetbrains.mps.baseLanguage.classifiers.behavior)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="cw0" ref="r:792d18f6-5d8a-43f6-aca9-5e07a8586147(com.mbeddr.mpsutil.process.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -86,6 +87,7 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -394,6 +396,44 @@
     <node concept="1YaCAy" id="rF8Sb92jAC" role="1YuTPh">
       <property role="TrG5h" value="ccf" />
       <ref role="1YaFvo" to="hbjw:46fEo9VcHUb" resolve="CreateComponentFunction" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="rF8Sb98xVT">
+    <property role="TrG5h" value="typeof_OutputExecuteFunctionParameter" />
+    <property role="3GE5qa" value="step" />
+    <node concept="3clFbS" id="rF8Sb98xVU" role="18ibNy">
+      <node concept="1Z5TYs" id="rF8Sb98y2l" role="3cqZAp">
+        <node concept="mw_s8" id="rF8Sb98y7J" role="1ZfhKB">
+          <node concept="2OqwBi" id="rF8Sb98yDE" role="mwGJk">
+            <node concept="2OqwBi" id="rF8Sb98yau" role="2Oq$k0">
+              <node concept="1YBJjd" id="rF8Sb98y7H" role="2Oq$k0">
+                <ref role="1YBMHb" node="rF8Sb98xVW" resolve="oefp" />
+              </node>
+              <node concept="2Xjw5R" id="rF8Sb98yBB" role="2OqNvi">
+                <node concept="1xMEDy" id="rF8Sb98yBD" role="1xVPHs">
+                  <node concept="chp4Y" id="rF8Sb98yCb" role="ri$Ld">
+                    <ref role="cht4Q" to="hbjw:rF8Sb8ZYzM" resolve="IStepContextProvider" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2qgKlT" id="rF8Sb98yMa" role="2OqNvi">
+              <ref role="37wK5l" to="cw0:rF8Sb98y7f" resolve="getOutputType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="rF8Sb98y2o" role="1ZfhK$">
+          <node concept="1Z2H0r" id="rF8Sb98xXG" role="mwGJk">
+            <node concept="1YBJjd" id="rF8Sb98xYz" role="1Z2MuG">
+              <ref role="1YBMHb" node="rF8Sb98xVW" resolve="oefp" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="rF8Sb98xVW" role="1YuTPh">
+      <property role="TrG5h" value="oefp" />
+      <ref role="1YaFvo" to="hbjw:rF8Sb98xUO" resolve="OutputExecuteFunctionParameter" />
     </node>
   </node>
 </model>
