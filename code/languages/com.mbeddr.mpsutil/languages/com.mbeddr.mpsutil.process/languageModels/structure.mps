@@ -135,6 +135,11 @@
       <property role="20kJfa" value="update" />
       <ref role="20lvS9" node="rF8Sb8N1XP" resolve="UpdateUIFunction" />
     </node>
+    <node concept="1TJgyj" id="rF8Sb99DUv" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="execute" />
+      <ref role="20lvS9" node="rF8Sb98Dz4" resolve="ExecuteFunction" />
+    </node>
   </node>
   <node concept="1TIwiD" id="46fEo9VcuqT">
     <property role="TrG5h" value="SimpleStep" />
@@ -374,6 +379,12 @@
     <property role="TrG5h" value="OutputExecuteFunctionParameter" />
     <property role="34LRSv" value="output" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="rF8Sb98Dz4">
+    <property role="3GE5qa" value="step" />
+    <property role="TrG5h" value="ExecuteFunction" />
+    <property role="34LRSv" value="execute" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
 </model>
 
