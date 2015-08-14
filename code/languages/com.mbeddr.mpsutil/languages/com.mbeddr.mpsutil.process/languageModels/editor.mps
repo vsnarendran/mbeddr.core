@@ -251,7 +251,7 @@
       </node>
       <node concept="3F1sOY" id="1J_CuVjiyK_" role="3EZMnx">
         <property role="39s7Ar" value="true" />
-        <property role="1$x2rV" value="no commit" />
+        <property role="1$x2rV" value="no onNext" />
         <ref role="1NtTu8" to="hbjw:43jzEnWbMQw" />
         <node concept="pVoyu" id="1J_CuVjiyLg" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -262,7 +262,7 @@
       </node>
       <node concept="3F1sOY" id="rF8Sb99DZw" role="3EZMnx">
         <property role="39s7Ar" value="true" />
-        <property role="1$x2rV" value="no execute" />
+        <property role="1$x2rV" value="no onFinish" />
         <ref role="1NtTu8" to="hbjw:rF8Sb99DUv" />
         <node concept="pVoyu" id="rF8Sb99E0h" role="3F10Kt">
           <property role="VOm3f" value="true" />

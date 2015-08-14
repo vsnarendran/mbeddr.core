@@ -119,7 +119,7 @@
         <child id="8081644025962072165" name="privatData" index="CxOK9" />
         <child id="4724180912013250630" name="output" index="UHbB4" />
         <child id="4724180912012936691" name="component" index="UIuLL" />
-        <child id="4671234082065034656" name="commit" index="2WZac5" />
+        <child id="4671234082065034656" name="onNext" index="2WZac5" />
         <child id="498531228376113227" name="update" index="3e9Kf9" />
       </concept>
       <concept id="4724180912012650169" name="com.mbeddr.mpsutil.process.structure.SimpleStep" flags="ng" index="UJ$WV" />
@@ -132,7 +132,7 @@
         <child id="4724180912012650163" name="steps" index="UJ$WL" />
         <child id="498531228381448308" name="output" index="3fXEJQ" />
       </concept>
-      <concept id="4671234082065542312" name="com.mbeddr.mpsutil.process.structure.CommitFunction" flags="ig" index="2WTm8d" />
+      <concept id="4671234082065542312" name="com.mbeddr.mpsutil.process.structure.OnNextFunction" flags="ig" index="2WTm8d" />
       <concept id="498531228376113013" name="com.mbeddr.mpsutil.process.structure.UpdateUIFunction" flags="ig" index="3e9NNR" />
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
@@ -193,6 +193,11 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="UJ$WV" id="2rKkvx61Cea" role="UJ$WL">
+      <node concept="UJns9" id="2rKkvx61Cee" role="UIuLL">
+        <node concept="3clFbS" id="2rKkvx61Cei" role="2VODD2" />
       </node>
     </node>
     <node concept="UJ$WV" id="46fEo9VgeEm" role="UJ$WL">

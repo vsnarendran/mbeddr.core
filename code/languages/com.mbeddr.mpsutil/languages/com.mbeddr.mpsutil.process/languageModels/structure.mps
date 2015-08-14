@@ -120,9 +120,9 @@
     </node>
     <node concept="1TJgyj" id="43jzEnWbMQw" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="commit" />
+      <property role="20kJfa" value="onNext" />
       <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="43jzEnWdIMC" resolve="CommitFunction" />
+      <ref role="20lvS9" node="43jzEnWdIMC" resolve="OnNextFunction" />
     </node>
     <node concept="1TJgyj" id="46fEo9Vd$nN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -137,8 +137,8 @@
     </node>
     <node concept="1TJgyj" id="rF8Sb99DUv" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="execute" />
-      <ref role="20lvS9" node="rF8Sb98Dz4" resolve="ExecuteFunction" />
+      <property role="20kJfa" value="finish" />
+      <ref role="20lvS9" node="rF8Sb98Dz4" resolve="OnFinshFunction" />
     </node>
   </node>
   <node concept="1TIwiD" id="46fEo9VcuqT">
@@ -224,8 +224,8 @@
     </node>
   </node>
   <node concept="1TIwiD" id="43jzEnWdIMC">
-    <property role="TrG5h" value="CommitFunction" />
-    <property role="34LRSv" value="commit" />
+    <property role="TrG5h" value="OnNextFunction" />
+    <property role="34LRSv" value="onNext" />
     <property role="3GE5qa" value="step" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
@@ -382,8 +382,8 @@
   </node>
   <node concept="1TIwiD" id="rF8Sb98Dz4">
     <property role="3GE5qa" value="step" />
-    <property role="TrG5h" value="ExecuteFunction" />
-    <property role="34LRSv" value="execute" />
+    <property role="TrG5h" value="OnFinshFunction" />
+    <property role="34LRSv" value="onFinish" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
 </model>
