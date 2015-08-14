@@ -1641,16 +1641,16 @@
             <ref role="3bR37D" node="5qO$P$Prhtk" resolve="Eclipse.Debugger" />
           </node>
         </node>
-        <node concept="1SiIV0" id="3JvBMXOQp4b" role="3bR37C">
-          <node concept="3bR9La" id="3JvBMXOQp4c" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="3JvBMXOQp4d" role="3bR37C">
           <node concept="3bR9La" id="3JvBMXOQp4e" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LfC" resolve="jetbrains.mps.traceInfo.cache" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4HBJ6v0dSIx" role="3bR37C">
+          <node concept="3bR9La" id="4HBJ6v0dSIy" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:2N1CSrzsvbI" resolve="com.mbeddr.mpsutil.nodeaccess" />
           </node>
         </node>
       </node>
