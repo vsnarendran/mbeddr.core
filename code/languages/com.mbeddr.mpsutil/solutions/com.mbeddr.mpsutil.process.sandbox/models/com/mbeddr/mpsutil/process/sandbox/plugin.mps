@@ -121,6 +121,7 @@
         <child id="4724180912012936691" name="component" index="UIuLL" />
         <child id="4671234082065034656" name="onNext" index="2WZac5" />
         <child id="498531228376113227" name="update" index="3e9Kf9" />
+        <child id="498531228382043807" name="finish" index="3fNrOt" />
       </concept>
       <concept id="4724180912012650169" name="com.mbeddr.mpsutil.process.structure.SimpleStep" flags="ng" index="UJ$WV" />
       <concept id="4724180912012650175" name="com.mbeddr.mpsutil.process.structure.OptionalStep" flags="ng" index="UJ$WX">
@@ -134,6 +135,7 @@
       </concept>
       <concept id="4671234082065542312" name="com.mbeddr.mpsutil.process.structure.OnNextFunction" flags="ig" index="2WTm8d" />
       <concept id="498531228376113013" name="com.mbeddr.mpsutil.process.structure.UpdateUIFunction" flags="ig" index="3e9NNR" />
+      <concept id="498531228381780164" name="com.mbeddr.mpsutil.process.structure.OnFinshFunction" flags="ig" index="3fMrH6" />
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
@@ -193,11 +195,6 @@
             </node>
           </node>
         </node>
-      </node>
-    </node>
-    <node concept="UJ$WV" id="2rKkvx61Cea" role="UJ$WL">
-      <node concept="UJns9" id="2rKkvx61Cee" role="UIuLL">
-        <node concept="3clFbS" id="2rKkvx61Cei" role="2VODD2" />
       </node>
     </node>
     <node concept="UJ$WV" id="46fEo9VgeEm" role="UJ$WL">
@@ -457,6 +454,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3fMrH6" id="1b4F2fo6wvQ" role="3fNrOt">
+        <node concept="3clFbS" id="1b4F2fo6wvR" role="2VODD2" />
       </node>
     </node>
     <node concept="UJ$WX" id="rF8Sb8FHvI" role="UJ$WL">

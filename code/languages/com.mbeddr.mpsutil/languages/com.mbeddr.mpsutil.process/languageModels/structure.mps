@@ -386,5 +386,11 @@
     <property role="34LRSv" value="onFinish" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
+  <node concept="1TIwiD" id="1b4F2fo6w$R">
+    <property role="3GE5qa" value="step" />
+    <property role="TrG5h" value="ProgressOutputFunctionParam" />
+    <property role="34LRSv" value="progress" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
 </model>
 

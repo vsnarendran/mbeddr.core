@@ -15,6 +15,12 @@
     <import index="ayyu" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.ui(MPS.IDEA/com.intellij.ui@java_stub)" />
     <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="fw3h" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.progress(MPS.IDEA/com.intellij.openapi.progress@java_stub)" />
+    <import index="50yb" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.progress.util(MPS.IDEA/com.intellij.openapi.progress.util@java_stub)" />
+    <import index="x609" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.progress(MPS.Platform/jetbrains.mps.progress@java_stub)" />
+    <import index="z8de" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.util(MPS.OpenAPI/org.jetbrains.mps.openapi.util@java_stub)" />
+    <import index="ff4b" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.progress(MPS.Core/jetbrains.mps.progress@java_stub)" implicit="true" />
+    <import index="810" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.openapi.ui(MPS.IDEA/com.intellij.openapi.ui@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
@@ -216,6 +222,7 @@
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1171391069720" name="jetbrains.mps.baseLanguage.collections.structure.GetIndexOfOperation" flags="nn" index="2WmjW8" />
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
+      <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1175845471038" name="jetbrains.mps.baseLanguage.collections.structure.ReverseOperation" flags="nn" index="35Qw8J" />
       <concept id="5232196642625574978" name="jetbrains.mps.baseLanguage.collections.structure.HeadListOperation" flags="nn" index="1eb2ty">
         <child id="5232196642625574980" name="upToIndex" index="1eb2t$" />
@@ -690,6 +697,12 @@
         <property role="TrG5h" value="output" />
         <node concept="16syzq" id="e7wQ4X_0GV" role="1tU5fm">
           <ref role="16sUi3" node="e7wQ4XzQvf" resolve="TOutput" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1b4F2fo87pH" role="3clF46">
+        <property role="TrG5h" value="progress" />
+        <node concept="3uibUv" id="1b4F2fo8RAQ" role="1tU5fm">
+          <ref role="3uigEE" to="z8de:~ProgressMonitor" resolve="ProgressMonitor" />
         </node>
       </node>
     </node>
@@ -1415,6 +1428,59 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="e7wQ4X$knt" role="3clF47">
+        <node concept="3cpWs8" id="1b4F2fo8aNO" role="3cqZAp">
+          <node concept="3cpWsn" id="1b4F2fo8aNP" role="3cpWs9">
+            <property role="TrG5h" value="pi" />
+            <node concept="3uibUv" id="1b4F2fo8aNQ" role="1tU5fm">
+              <ref role="3uigEE" to="fw3h:~ProgressIndicator" resolve="ProgressIndicator" />
+            </node>
+            <node concept="2ShNRf" id="1b4F2fo8ckd" role="33vP2m">
+              <node concept="1pGfFk" id="1b4F2fo8qW1" role="2ShVmc">
+                <ref role="37wK5l" to="50yb:~ProgressWindow.&lt;init&gt;(boolean,com.intellij.openapi.project.Project)" resolve="ProgressWindow" />
+                <node concept="3clFbT" id="1b4F2fo8rbl" role="37wK5m" />
+                <node concept="10Nm6u" id="1b4F2fo8rrf" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1b4F2fo8y86" role="3cqZAp">
+          <node concept="3cpWsn" id="1b4F2fo8y87" role="3cpWs9">
+            <property role="TrG5h" value="adapter" />
+            <node concept="3uibUv" id="1b4F2fo8y83" role="1tU5fm">
+              <ref role="3uigEE" to="x609:~ProgressMonitorAdapter" resolve="ProgressMonitorAdapter" />
+            </node>
+            <node concept="2ShNRf" id="1b4F2fo8y88" role="33vP2m">
+              <node concept="1pGfFk" id="1b4F2fo8y89" role="2ShVmc">
+                <ref role="37wK5l" to="x609:~ProgressMonitorAdapter.&lt;init&gt;(com.intellij.openapi.progress.ProgressIndicator)" resolve="ProgressMonitorAdapter" />
+                <node concept="37vLTw" id="1b4F2fo8y8a" role="37wK5m">
+                  <ref role="3cqZAo" node="1b4F2fo8aNP" resolve="pi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1b4F2fo8yF7" role="3cqZAp">
+          <node concept="2OqwBi" id="1b4F2fo8yPi" role="3clFbG">
+            <node concept="37vLTw" id="1b4F2fo8yF5" role="2Oq$k0">
+              <ref role="3cqZAo" node="1b4F2fo8y87" resolve="adapter" />
+            </node>
+            <node concept="liA8E" id="1b4F2fo8zBX" role="2OqNvi">
+              <ref role="37wK5l" to="ff4b:~ProgressMonitorBase.start(java.lang.String,int):void" resolve="start" />
+              <node concept="2OqwBi" id="1b4F2fo8zZe" role="37wK5m">
+                <node concept="Xjq3P" id="1b4F2fo8zSc" role="2Oq$k0" />
+                <node concept="liA8E" id="1b4F2fo8Eua" role="2OqNvi">
+                  <ref role="37wK5l" to="810:~DialogWrapper.getTitle():java.lang.String" resolve="getTitle" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="1b4F2fo8F32" role="37wK5m">
+                <node concept="37vLTw" id="1b4F2fo8EBE" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5Kcl6zlFvau" resolve="mSteps" />
+                </node>
+                <node concept="34oBXx" id="1b4F2fo8GQ7" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="2Gpval" id="e7wQ4X$HYo" role="3cqZAp">
           <node concept="2GrKxI" id="e7wQ4X$HYp" role="2Gsz3X">
             <property role="TrG5h" value="step" />
@@ -1431,6 +1497,17 @@
                     <node concept="Xjq3P" id="e7wQ4X$KKe" role="2Oq$k0" />
                     <node concept="2OwXpG" id="e7wQ4X$OKn" role="2OqNvi">
                       <ref role="2Oxat5" node="e7wQ4X$v$G" resolve="output_data" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="1b4F2fo8Hbv" role="37wK5m">
+                    <node concept="37vLTw" id="1b4F2fo8H5K" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1b4F2fo8y87" resolve="adapter" />
+                    </node>
+                    <node concept="liA8E" id="1b4F2fo8HCe" role="2OqNvi">
+                      <ref role="37wK5l" to="ff4b:~ProgressMonitorBase.subTask(int):org.jetbrains.mps.openapi.util.ProgressMonitor" resolve="subTask" />
+                      <node concept="3cmrfG" id="1b4F2fo8HIK" role="37wK5m">
+                        <property role="3cmrfH" value="0" />
+                      </node>
                     </node>
                   </node>
                 </node>
