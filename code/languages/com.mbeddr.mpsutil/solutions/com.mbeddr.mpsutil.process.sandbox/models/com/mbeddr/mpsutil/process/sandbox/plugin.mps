@@ -109,6 +109,12 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
+      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
+        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
+      </concept>
     </language>
     <language id="306d7456-29e2-4ea3-9c46-e7b830b08481" name="com.mbeddr.mpsutil.process">
       <concept id="6632769160448240380" name="com.mbeddr.mpsutil.process.structure.ProcessInputVariable" flags="ng" index="29CFUk" />
@@ -145,10 +151,16 @@
         <child id="498531228381448308" name="output" index="3fXEJQ" />
       </concept>
       <concept id="4671234082065542312" name="com.mbeddr.mpsutil.process.structure.OnNextFunction" flags="ig" index="2WTm8d" />
+      <concept id="7775334123754829588" name="com.mbeddr.mpsutil.process.structure.FinishAndGetResultOp" flags="ng" index="33xFS$" />
+      <concept id="7775334123752824657" name="com.mbeddr.mpsutil.process.structure.CreateWizardExpression" flags="ng" index="33Dhpx" />
       <concept id="7775334123752824719" name="com.mbeddr.mpsutil.process.structure.CreateWizardExpressionBase" flags="ng" index="33DhqZ">
         <reference id="7775334123752824741" name="process" index="33Dhql" />
         <child id="7775334123752824734" name="initVals" index="33DhqI" />
       </concept>
+      <concept id="7775334123752756248" name="com.mbeddr.mpsutil.process.structure.WizardType" flags="ig" index="33DxOC">
+        <reference id="7775334123752756259" name="wizard" index="33DxOj" />
+      </concept>
+      <concept id="7775334123753877828" name="com.mbeddr.mpsutil.process.structure.ShowOperation" flags="ng" index="33HjxO" />
       <concept id="498531228376113013" name="com.mbeddr.mpsutil.process.structure.UpdateUIFunction" flags="ig" index="3e9NNR" />
       <concept id="498531228381780164" name="com.mbeddr.mpsutil.process.structure.OnFinshFunction" flags="ig" index="3fMrH6" />
     </language>
@@ -170,12 +182,46 @@
     <property role="2uzpH1" value="This is the Wizard Test" />
     <node concept="tnohg" id="70BL6LoVzwV" role="tncku">
       <node concept="3clFbS" id="70BL6LoVzwW" role="2VODD2">
-        <node concept="3clFbF" id="70BL6LoV$Nq" role="3cqZAp">
-          <node concept="CNT7V" id="70BL6LoV$Np" role="3clFbG">
-            <ref role="33Dhql" node="46fEo9VfLK_" resolve="theProcess" />
-            <node concept="Xl_RD" id="6JByj2CjPy$" role="33DhqI">
-              <property role="Xl_RC" value="this is data from outsite" />
+        <node concept="3SKdUt" id="6JByj2CH9oT" role="3cqZAp">
+          <node concept="3SKWN0" id="6JByj2CH9oX" role="3SKWNk">
+            <node concept="3clFbF" id="70BL6LoV$Nq" role="3SKWNf">
+              <node concept="CNT7V" id="70BL6LoV$Np" role="3clFbG">
+                <ref role="33Dhql" node="46fEo9VfLK_" resolve="theProcess" />
+                <node concept="Xl_RD" id="6JByj2CjPy$" role="33DhqI">
+                  <property role="Xl_RC" value="this is data from outsite" />
+                </node>
+              </node>
             </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6JByj2CH9zE" role="3cqZAp">
+          <node concept="3cpWsn" id="6JByj2CH9zF" role="3cpWs9">
+            <property role="TrG5h" value="wiz" />
+            <node concept="33DxOC" id="6JByj2CH9zD" role="1tU5fm">
+              <ref role="33DxOj" node="46fEo9VfLK_" resolve="theProcess" />
+            </node>
+            <node concept="33Dhpx" id="6JByj2CH9zG" role="33vP2m">
+              <ref role="33Dhql" node="46fEo9VfLK_" resolve="theProcess" />
+              <node concept="Xl_RD" id="6JByj2CH9zH" role="33DhqI">
+                <property role="Xl_RC" value="This is my testdata" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6JByj2CH9vV" role="3cqZAp">
+          <node concept="2OqwBi" id="6JByj2CH9_5" role="3clFbG">
+            <node concept="37vLTw" id="6JByj2CH9zI" role="2Oq$k0">
+              <ref role="3cqZAo" node="6JByj2CH9zF" resolve="wiz" />
+            </node>
+            <node concept="33HjxO" id="6JByj2CH9Dt" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6JByj2CH9Ho" role="3cqZAp">
+          <node concept="2OqwBi" id="6JByj2CH9I7" role="3clFbG">
+            <node concept="37vLTw" id="6JByj2CH9Hm" role="2Oq$k0">
+              <ref role="3cqZAo" node="6JByj2CH9zF" resolve="wiz" />
+            </node>
+            <node concept="33xFS$" id="6JByj2CH9Mv" role="2OqNvi" />
           </node>
         </node>
       </node>
@@ -472,8 +518,8 @@
       </node>
       <node concept="3fMrH6" id="1b4F2fo6wvQ" role="3fNrOt">
         <node concept="3clFbS" id="1b4F2fo6wvR" role="2VODD2">
-          <node concept="SfApY" id="6JByj2CdUpl" role="3cqZAp">
-            <node concept="3clFbS" id="6JByj2CdUpq" role="SfCbr">
+          <node concept="SfApY" id="6JByj2Cycnm" role="3cqZAp">
+            <node concept="3clFbS" id="6JByj2Cycnr" role="SfCbr">
               <node concept="3clFbF" id="6JByj2Cus3Q" role="3cqZAp">
                 <node concept="2YIFZM" id="6JByj2Cus48" role="3clFbG">
                   <ref role="37wK5l" to="e2lb:~Thread.sleep(long):void" resolve="sleep" />
@@ -484,11 +530,11 @@
                 </node>
               </node>
             </node>
-            <node concept="TDmWw" id="6JByj2CdUps" role="TEbGg">
-              <node concept="3clFbS" id="6JByj2CdUpv" role="TDEfX" />
-              <node concept="3cpWsn" id="6JByj2CdUpw" role="TDEfY">
+            <node concept="TDmWw" id="6JByj2Cycnt" role="TEbGg">
+              <node concept="3clFbS" id="6JByj2Cycnw" role="TDEfX" />
+              <node concept="3cpWsn" id="6JByj2Cycnx" role="TDEfY">
                 <property role="TrG5h" value="e" />
-                <node concept="3uibUv" id="6JByj2CdUpr" role="1tU5fm">
+                <node concept="3uibUv" id="6JByj2Cycns" role="1tU5fm">
                   <ref role="3uigEE" to="e2lb:~InterruptedException" resolve="InterruptedException" />
                 </node>
               </node>
