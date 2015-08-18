@@ -51,14 +51,25 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
+        <child id="1164879758292" name="body" index="SfCbr" />
+        <child id="1164903496223" name="catchClause" index="TEbGg" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
+        <child id="1164903359218" name="catchBody" index="TDEfX" />
+        <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -77,6 +88,9 @@
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
@@ -102,10 +116,7 @@
       <concept id="6632769160448631607" name="com.mbeddr.mpsutil.process.structure.StepOutputData" flags="ng" index="29Ibtv" />
       <concept id="8081644025962062833" name="com.mbeddr.mpsutil.process.structure.StepPrivateData" flags="ng" index="CxUut" />
       <concept id="8081644025963170966" name="com.mbeddr.mpsutil.process.structure.StepMemberReference" flags="ng" index="C_CzU" />
-      <concept id="8081644025966777751" name="com.mbeddr.mpsutil.process.structure.RunWizardExpression" flags="ng" index="CNT7V">
-        <reference id="8081644025966777752" name="process" index="CNT7O" />
-        <child id="8081644025966781961" name="initVals" index="CNU9_" />
-      </concept>
+      <concept id="8081644025966777751" name="com.mbeddr.mpsutil.process.structure.ExecuteWizardAndGetResultExpression" flags="ng" index="CNT7V" />
       <concept id="8081644025964609311" name="com.mbeddr.mpsutil.process.structure.StepRefExpression" flags="ng" index="CSfHN">
         <reference id="8081644025964621849" name="step" index="CSbhP" />
       </concept>
@@ -121,7 +132,7 @@
         <child id="4724180912012936691" name="component" index="UIuLL" />
         <child id="4671234082065034656" name="onNext" index="2WZac5" />
         <child id="498531228376113227" name="update" index="3e9Kf9" />
-        <child id="498531228382043807" name="finish" index="3fNrOt" />
+        <child id="498531228382043807" name="onFinish" index="3fNrOt" />
       </concept>
       <concept id="4724180912012650169" name="com.mbeddr.mpsutil.process.structure.SimpleStep" flags="ng" index="UJ$WV" />
       <concept id="4724180912012650175" name="com.mbeddr.mpsutil.process.structure.OptionalStep" flags="ng" index="UJ$WX">
@@ -134,6 +145,10 @@
         <child id="498531228381448308" name="output" index="3fXEJQ" />
       </concept>
       <concept id="4671234082065542312" name="com.mbeddr.mpsutil.process.structure.OnNextFunction" flags="ig" index="2WTm8d" />
+      <concept id="7775334123752824719" name="com.mbeddr.mpsutil.process.structure.CreateWizardExpressionBase" flags="ng" index="33DhqZ">
+        <reference id="7775334123752824741" name="process" index="33Dhql" />
+        <child id="7775334123752824734" name="initVals" index="33DhqI" />
+      </concept>
       <concept id="498531228376113013" name="com.mbeddr.mpsutil.process.structure.UpdateUIFunction" flags="ig" index="3e9NNR" />
       <concept id="498531228381780164" name="com.mbeddr.mpsutil.process.structure.OnFinshFunction" flags="ig" index="3fMrH6" />
     </language>
@@ -157,9 +172,9 @@
       <node concept="3clFbS" id="70BL6LoVzwW" role="2VODD2">
         <node concept="3clFbF" id="70BL6LoV$Nq" role="3cqZAp">
           <node concept="CNT7V" id="70BL6LoV$Np" role="3clFbG">
-            <ref role="CNT7O" node="46fEo9VfLK_" resolve="theProcess" />
-            <node concept="Xl_RD" id="70BL6LoV$PD" role="CNU9_">
-              <property role="Xl_RC" value="The very first test data" />
+            <ref role="33Dhql" node="46fEo9VfLK_" resolve="theProcess" />
+            <node concept="Xl_RD" id="6JByj2CjPy$" role="33DhqI">
+              <property role="Xl_RC" value="this is data from outsite" />
             </node>
           </node>
         </node>
@@ -456,7 +471,30 @@
         </node>
       </node>
       <node concept="3fMrH6" id="1b4F2fo6wvQ" role="3fNrOt">
-        <node concept="3clFbS" id="1b4F2fo6wvR" role="2VODD2" />
+        <node concept="3clFbS" id="1b4F2fo6wvR" role="2VODD2">
+          <node concept="SfApY" id="6JByj2CdUpl" role="3cqZAp">
+            <node concept="3clFbS" id="6JByj2CdUpq" role="SfCbr">
+              <node concept="3clFbF" id="6JByj2Cus3Q" role="3cqZAp">
+                <node concept="2YIFZM" id="6JByj2Cus48" role="3clFbG">
+                  <ref role="37wK5l" to="e2lb:~Thread.sleep(long):void" resolve="sleep" />
+                  <ref role="1Pybhc" to="e2lb:~Thread" resolve="Thread" />
+                  <node concept="3cmrfG" id="6JByj2Cus4q" role="37wK5m">
+                    <property role="3cmrfH" value="2000" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="TDmWw" id="6JByj2CdUps" role="TEbGg">
+              <node concept="3clFbS" id="6JByj2CdUpv" role="TDEfX" />
+              <node concept="3cpWsn" id="6JByj2CdUpw" role="TDEfY">
+                <property role="TrG5h" value="e" />
+                <node concept="3uibUv" id="6JByj2CdUpr" role="1tU5fm">
+                  <ref role="3uigEE" to="e2lb:~InterruptedException" resolve="InterruptedException" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="UJ$WX" id="rF8Sb8FHvI" role="UJ$WL">

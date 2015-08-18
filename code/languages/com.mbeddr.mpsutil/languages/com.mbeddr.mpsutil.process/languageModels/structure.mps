@@ -13,6 +13,7 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -137,7 +138,7 @@
     </node>
     <node concept="1TJgyj" id="rF8Sb99DUv" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="finish" />
+      <property role="20kJfa" value="onFinish" />
       <ref role="20lvS9" node="rF8Sb98Dz4" resolve="OnFinshFunction" />
     </node>
   </node>
@@ -175,11 +176,6 @@
     <property role="TrG5h" value="IsValidFunction" />
     <property role="34LRSv" value="isValid" />
     <property role="3GE5qa" value="step" />
-    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
-  </node>
-  <node concept="1TIwiD" id="46fEo9VgfLf">
-    <property role="TrG5h" value="FinishFunction" />
-    <property role="34LRSv" value="finish" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="PlHQZ" id="5Kcl6zlFBkQ">
@@ -285,21 +281,9 @@
     </node>
   </node>
   <node concept="1TIwiD" id="70BL6LoU5mn">
-    <property role="TrG5h" value="RunWizardExpression" />
-    <property role="34LRSv" value="runWizard" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
-    <node concept="1TJgyj" id="70BL6LoU6o9" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="initVals" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="70BL6LoU5mo" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="process" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="46fEo9VciUW" resolve="Process" />
-    </node>
+    <property role="TrG5h" value="ExecuteWizardAndGetResultExpression" />
+    <property role="34LRSv" value="executeWizardWithResult" />
+    <ref role="1TJDcQ" node="6JByj2CgDYf" resolve="CreateWizardExpressionBase" />
   </node>
   <node concept="1TIwiD" id="1J_CuVjmpQe">
     <property role="TrG5h" value="ValidateExpression" />
@@ -378,6 +362,7 @@
     <property role="3GE5qa" value="step" />
     <property role="TrG5h" value="OutputExecuteFunctionParameter" />
     <property role="34LRSv" value="output" />
+    <property role="R4oN_" value="Output data of the step. It is handed to all steps in the order of declaration." />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="rF8Sb98Dz4">
@@ -388,9 +373,69 @@
   </node>
   <node concept="1TIwiD" id="1b4F2fo6w$R">
     <property role="3GE5qa" value="step" />
-    <property role="TrG5h" value="ProgressOutputFunctionParam" />
+    <property role="TrG5h" value="ProgressOutputFunctionParameter" />
     <property role="34LRSv" value="progress" />
+    <property role="R4oN_" value="progress monitor to report progress. If not used it will show intermediate progress and the name of the step." />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="6JByj2Cgpgo">
+    <property role="TrG5h" value="WizardType" />
+    <property role="34LRSv" value="wizard&lt;&gt;" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
+    <node concept="1TJgyj" id="6JByj2Cgpgz" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="wizard" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="46fEo9VciUW" resolve="Process" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6JByj2CgDXh">
+    <property role="TrG5h" value="CreateWizardExpression" />
+    <property role="34LRSv" value="createWizard" />
+    <ref role="1TJDcQ" node="6JByj2CgDYf" resolve="CreateWizardExpressionBase" />
+  </node>
+  <node concept="1TIwiD" id="6JByj2CgDYf">
+    <property role="TrG5h" value="CreateWizardExpressionBase" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="6JByj2CgDY_" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="process" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="46fEo9VciUW" resolve="Process" />
+    </node>
+    <node concept="1TJgyj" id="6JByj2CgDYu" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="initVals" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6JByj2CkF54">
+    <property role="TrG5h" value="ShowOperation" />
+    <property role="34LRSv" value="show" />
+    <ref role="1TJDcQ" node="6JByj2Cojtc" resolve="BaseWizardOp" />
+  </node>
+  <node concept="1TIwiD" id="6JByj2Cojsk">
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="FinishAndGetResultOp" />
+    <property role="34LRSv" value="finishAndGet" />
+    <ref role="1TJDcQ" node="6JByj2Cojtc" resolve="BaseWizardOp" />
+  </node>
+  <node concept="1TIwiD" id="6JByj2Cojtc">
+    <property role="TrG5h" value="BaseWizardOp" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpee:h_B$H5g" resolve="AbstractOperation" />
+  </node>
+  <node concept="1TIwiD" id="6JByj2Cqjoj">
+    <property role="TrG5h" value="GetResultOp" />
+    <property role="34LRSv" value="getResult" />
+    <ref role="1TJDcQ" node="6JByj2Cojtc" resolve="BaseWizardOp" />
+  </node>
+  <node concept="1TIwiD" id="6JByj2CqkMr">
+    <property role="TrG5h" value="FinishOp" />
+    <property role="34LRSv" value="finish" />
+    <ref role="1TJDcQ" node="6JByj2Cojtc" resolve="BaseWizardOp" />
   </node>
 </model>
 
