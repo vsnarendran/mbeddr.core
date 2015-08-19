@@ -540,6 +540,7 @@
     <node concept="2EX0iR" id="2t4Dw6aDsx$" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="IInputBuffer" />
+      <property role="1M_7uD" value="true" />
       <node concept="2EX0iL" id="2t4Dw6aDu1q" role="2EX0iN">
         <property role="TrG5h" value="readByte" />
         <node concept="26Vqp4" id="2t4Dw6aDu1r" role="2C2TGm">
@@ -568,6 +569,7 @@
     <node concept="2EX0iR" id="2t4Dw6aDu2Z" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="IOutputBuffer" />
+      <property role="1M_7uD" value="true" />
       <node concept="2EX0iL" id="2t4Dw6aDvMc" role="2EX0iN">
         <property role="TrG5h" value="writeByte" />
         <node concept="19Rifw" id="2t4Dw6aDvMd" role="2C2TGm">
