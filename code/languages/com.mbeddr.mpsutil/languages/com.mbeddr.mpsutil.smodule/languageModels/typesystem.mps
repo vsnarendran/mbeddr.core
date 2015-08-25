@@ -9,6 +9,7 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="vsqj" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" />
     <import index="gt8j" ref="r:d62dd985-922e-46d1-a30d-00dd9ec6278a(com.mbeddr.mpsutil.smodule.structure)" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -208,6 +209,33 @@
     <node concept="1YaCAy" id="3d01KqF9yLv" role="1YuTPh">
       <property role="TrG5h" value="addDevKitOperation" />
       <ref role="1YaFvo" to="gt8j:3d01KqF9s0Y" resolve="AddDevKitOperation" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3d01KqFjEL$">
+    <property role="TrG5h" value="typeof_AddModelOperation" />
+    <node concept="3clFbS" id="3d01KqFjEL_" role="18ibNy">
+      <node concept="1Z5TYs" id="3d01KqFjF3X" role="3cqZAp">
+        <node concept="mw_s8" id="3d01KqFjF4h" role="1ZfhKB">
+          <node concept="2ShNRf" id="3d01KqFjF4d" role="mwGJk">
+            <node concept="3zrR0B" id="3d01KqFjFba" role="2ShVmc">
+              <node concept="3Tqbb2" id="3d01KqFjFbc" role="3zrR0E">
+                <ref role="ehGHo" to="tp25:gCH_c3d" resolve="SModelType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3d01KqFjF40" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3d01KqFjEM$" role="mwGJk">
+            <node concept="1YBJjd" id="3d01KqFjEN0" role="1Z2MuG">
+              <ref role="1YBMHb" node="3d01KqFjELB" resolve="addModelOperation" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3d01KqFjELB" role="1YuTPh">
+      <property role="TrG5h" value="addModelOperation" />
+      <ref role="1YaFvo" to="gt8j:3d01KqFhiz2" resolve="AddModelOperation" />
     </node>
   </node>
 </model>
