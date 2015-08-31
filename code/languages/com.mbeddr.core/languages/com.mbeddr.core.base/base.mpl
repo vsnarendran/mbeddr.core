@@ -64,8 +64,6 @@
     <dependency reexport="false">019b622b-0aef-4dd3-86d0-4eef01f3f6bb(jetbrains.mps.ide)</dependency>
     <dependency reexport="false">c1c2a88a-323c-4605-a37d-9ab77a2ccbd2(com.mbeddr.mpsutil.suppresswarning)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
-    <dependency reexport="false">7b04a4a1-bd4e-43d6-ba27-ef910fae9339(com.mbeddr.mpsutil.nodes_tracing.pluginSolution)</dependency>
-    <dependency reexport="false">6ea97c27-74ad-4032-843d-7b4da446dfc9(com.mbeddr.mpsutil.nodes_tracing)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)</usedLanguage>
