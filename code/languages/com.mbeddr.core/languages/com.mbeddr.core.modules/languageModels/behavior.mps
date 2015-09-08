@@ -384,10 +384,6 @@
         <child id="1389340506572349280" name="nodeToBreak" index="1P2raO" />
       </concept>
       <concept id="1389340506579679305" name="com.mbeddr.core.debug.blext.structure.BreakInOuterFrame" flags="ng" index="1PYtmt" />
-      <concept id="1358930484548440228" name="com.mbeddr.core.debug.blext.structure.PropertiesFromTraceExpression" flags="ng" index="1RbBiR">
-        <property id="1358930484562631807" name="manyCardinality" index="1O5vxG" />
-        <reference id="1358930484561468874" name="concept" index="1OpVBp" />
-      </concept>
       <concept id="1358930484583447392" name="com.mbeddr.core.debug.blext.structure.ContributeFrameMappingStatement" flags="ng" index="1UO5XN">
         <child id="1358930484584663096" name="mappStackFrame" index="1ULqKF" />
       </concept>
@@ -13278,9 +13274,8 @@
             </node>
             <node concept="3zciI5" id="2h5hmpsyQ_Y" role="2OqNvi">
               <node concept="3zeigr" id="2h5hmpsyQ_Z" role="3zciI4">
-                <node concept="1RbBiR" id="3aXCSK8euaE" role="3zeigm">
-                  <property role="1O5vxG" value="false" />
-                  <ref role="1OpVBp" to="x27k:5_l8w1EmTvx" resolve="Function" />
+                <node concept="Xl_RD" id="3kVSrwTBnuC" role="3zeigm">
+                  <property role="Xl_RC" value="main" />
                 </node>
               </node>
               <node concept="1hMMIo" id="2h5hmpsyQA1" role="3zciI4">
