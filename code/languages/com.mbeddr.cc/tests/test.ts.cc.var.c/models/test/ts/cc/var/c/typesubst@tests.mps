@@ -18,6 +18,7 @@
   <imports />
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
+      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A" />
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
@@ -311,6 +312,9 @@
           </node>
           <node concept="PhEJO" id="4Ma$CkNHnsm" role="1cecVj">
             <property role="PhEJT" value="Hallo" />
+            <node concept="7CXmI" id="6JIc3Q8PHfe" role="lGtFl">
+              <node concept="1TM$A" id="6JIc3Q8PHff" role="7EUXB" />
+            </node>
           </node>
         </node>
         <node concept="2NXPZ9" id="4Ma$CkNHsKM" role="N3F5h">
