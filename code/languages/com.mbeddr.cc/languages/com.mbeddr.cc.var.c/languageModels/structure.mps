@@ -66,6 +66,9 @@
     <node concept="PrWs8" id="5aNdPeN1Y5J" role="PzmwI">
       <ref role="PrY4T" node="5aNdPeN1XXb" resolve="IVariantAware" />
     </node>
+    <node concept="PrWs8" id="6JIc3Q8OCRL" role="PzmwI">
+      <ref role="PrY4T" to="tpck:hOwnYed" resolve="IDeprecatable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5aNdPeN2JOx">
     <property role="TrG5h" value="VariantAwareExpression" />
