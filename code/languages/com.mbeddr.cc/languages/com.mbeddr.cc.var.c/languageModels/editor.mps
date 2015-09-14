@@ -12,7 +12,7 @@
     <import index="7rpm" ref="r:c7e1413b-fad0-49ac-824c-9b0d20143090(com.mbeddr.cc.var.annotations.editor)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt()" />
     <import index="rpdm" ref="r:91453863-abdf-432d-a851-57f349774287(com.mbeddr.cc.var.annotations.behavior)" />
-    <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" implicit="true" />
+    <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -22,6 +22,9 @@
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
+      </concept>
+      <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
+        <child id="1176795024817" name="cellProvider" index="3YsKMw" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
@@ -61,6 +64,9 @@
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1219226236603" name="jetbrains.mps.lang.editor.structure.DrawBracketsStyleClassItem" flags="ln" index="3vyZuw" />
+      <concept id="1075375595203" name="jetbrains.mps.lang.editor.structure.CellModel_Error" flags="sg" stub="8104358048506729356" index="1xolST">
+        <property id="1075375595204" name="text" index="1xolSY" />
+      </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -81,6 +87,7 @@
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR">
         <child id="1182233390675" name="filter" index="12AuX0" />
       </concept>
+      <concept id="1176749715029" name="jetbrains.mps.lang.editor.structure.QueryFunction_CellProvider" flags="in" index="3VJUX4" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -218,6 +225,20 @@
           <node concept="pVoyu" id="5aNdPeN3YNF" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
+          <node concept="gc7cB" id="4Ma$CkNO7RA" role="3EZMnx">
+            <node concept="3VJUX4" id="4Ma$CkNO7RC" role="3YsKMw">
+              <node concept="3clFbS" id="4Ma$CkNO7RE" role="2VODD2">
+                <node concept="3clFbF" id="4Ma$CkNO7Sq" role="3cqZAp">
+                  <node concept="2ShNRf" id="4Ma$CkNO7So" role="3clFbG">
+                    <node concept="1pGfFk" id="4Ma$CkNO9f2" role="2ShVmc">
+                      <ref role="37wK5l" to="r4b4:7gVrg_0tvF5" resolve="OpeningBracketCell" />
+                      <node concept="pncrf" id="4Ma$CkNO9fL" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3F2HdR" id="5aNdPeN3YNH" role="3EZMnx">
             <ref role="1NtTu8" to="vxuc:5aNdPeN1Y5K" />
             <node concept="2EHx9g" id="5aNdPeN3YNI" role="2czzBx" />
@@ -236,6 +257,20 @@
               </node>
             </node>
           </node>
+          <node concept="gc7cB" id="4Ma$CkNO9ip" role="3EZMnx">
+            <node concept="3VJUX4" id="4Ma$CkNO9ir" role="3YsKMw">
+              <node concept="3clFbS" id="4Ma$CkNO9it" role="2VODD2">
+                <node concept="3clFbF" id="4Ma$CkNO9kl" role="3cqZAp">
+                  <node concept="2ShNRf" id="4Ma$CkNO9kj" role="3clFbG">
+                    <node concept="1pGfFk" id="4Ma$CkNO9wN" role="2ShVmc">
+                      <ref role="37wK5l" to="r4b4:4QhMqW2TWb3" resolve="ClosingBracketCell" />
+                      <node concept="pncrf" id="4Ma$CkNO9xn" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="pkWqt" id="5aNdPeN3YNP" role="pqm2j">
           <node concept="3clFbS" id="5aNdPeN3YNQ" role="2VODD2">
@@ -250,12 +285,6 @@
               </node>
             </node>
           </node>
-        </node>
-        <node concept="3vyZuw" id="5aNdPeN41mq" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="VLuvy" id="5aNdPeN41ms" role="3F10Kt">
-          <property role="Vb096" value="gray" />
         </node>
       </node>
       <node concept="3EZMnI" id="5aNdPeN42Tw" role="3EZMnx">
@@ -344,10 +373,10 @@
               </node>
             </node>
           </node>
-          <node concept="3F0ifn" id="5aNdPeN2eGg" role="2czzBI">
-            <property role="3F0ifm" value="novar" />
-            <node concept="VechU" id="5aNdPeN2eGh" role="3F10Kt">
-              <property role="Vb096" value="red" />
+          <node concept="1xolST" id="4Ma$CkNO5wQ" role="2czzBI">
+            <property role="1xolSY" value="&lt;novar&gt;" />
+            <node concept="VPxyj" id="4Ma$CkNO7Gy" role="3F10Kt">
+              <property role="VOm3f" value="false" />
             </node>
           </node>
         </node>
