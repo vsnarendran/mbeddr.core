@@ -10,6 +10,8 @@
     <import index="qdv7" ref="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" />
     <import index="rpdm" ref="r:91453863-abdf-432d-a851-57f349774287(com.mbeddr.cc.var.annotations.behavior)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -37,6 +39,9 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
@@ -53,6 +58,7 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -71,6 +77,9 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
@@ -366,6 +375,36 @@
       </node>
       <node concept="10Oyi0" id="7DKnW4BPo6O" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="4Ma$CkNJvyk" role="13h7CS">
+      <property role="TrG5h" value="isDeprecated" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpcu:hOwoPtR" resolve="isDeprecated" />
+      <node concept="3Tm1VV" id="4Ma$CkNJvyl" role="1B3o_S" />
+      <node concept="3clFbS" id="4Ma$CkNJvym" role="3clF47">
+        <node concept="3clFbF" id="4Ma$CkNJvyn" role="3cqZAp">
+          <node concept="3clFbT" id="4Ma$CkNJvyo" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="4Ma$CkNJvyp" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="4Ma$CkNJvyq" role="13h7CS">
+      <property role="TrG5h" value="getMessage" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpcu:hP43_8K" resolve="getMessage" />
+      <node concept="3Tm1VV" id="4Ma$CkNJvyr" role="1B3o_S" />
+      <node concept="3clFbS" id="4Ma$CkNJvys" role="3clF47">
+        <node concept="3clFbF" id="4Ma$CkNJvyt" role="3cqZAp">
+          <node concept="Xl_RD" id="4Ma$CkNJvyu" role="3clFbG">
+            <property role="Xl_RC" value="use the generic Conditional Switch or Conditional Replacement instead" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4Ma$CkNJvyv" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="5aNdPeN2JPs">
     <ref role="13h7C2" to="vxuc:5aNdPeN2JOx" resolve="VariantAwareExpression" />
@@ -407,6 +446,36 @@
         </node>
       </node>
       <node concept="2I9FWS" id="5aNdPeN4lgY" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="4Ma$CkNJva6" role="13h7CS">
+      <property role="TrG5h" value="isDeprecated" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpcu:hOwoPtR" resolve="isDeprecated" />
+      <node concept="3Tm1VV" id="4Ma$CkNJva7" role="1B3o_S" />
+      <node concept="3clFbS" id="4Ma$CkNJvac" role="3clF47">
+        <node concept="3clFbF" id="4Ma$CkNJvgF" role="3cqZAp">
+          <node concept="3clFbT" id="4Ma$CkNJvgE" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="4Ma$CkNJvad" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="4Ma$CkNJvni" role="13h7CS">
+      <property role="TrG5h" value="getMessage" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpcu:hP43_8K" resolve="getMessage" />
+      <node concept="3Tm1VV" id="4Ma$CkNJvnj" role="1B3o_S" />
+      <node concept="3clFbS" id="4Ma$CkNJvno" role="3clF47">
+        <node concept="3clFbF" id="4Ma$CkNJvu3" role="3cqZAp">
+          <node concept="Xl_RD" id="4Ma$CkNJvu2" role="3clFbG">
+            <property role="Xl_RC" value="use the generic Conditional Switch or Conditional Replacement instead" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4Ma$CkNJvnp" role="3clF45" />
     </node>
   </node>
 </model>
