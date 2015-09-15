@@ -2752,6 +2752,12 @@
               <ref role="3bR37D" node="7uZw0yZ43K6" resolve="com.mbeddr.core.modules.gen" />
             </node>
           </node>
+          <node concept="1SiIV0" id="5BcYI6fmX5j" role="3bR37C">
+            <node concept="3bR9La" id="5BcYI6fmX5k" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="al5i:5BcYI6fmT6L" resolve="com.mbeddr.mpsutil.xmodelgen" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="7uQ0U6uDrAH" role="3bR37C">
           <node concept="1Busua" id="7uQ0U6uDrAI" role="1SiIV1">
