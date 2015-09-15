@@ -2,6 +2,9 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.commenting.devkit" folder="margincell_review" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.actionsfilter/com.mbeddr.mpsutil.actionsfilter.mpl" folder="actionsfilter" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.bldoc/com.mbeddr.mpsutil.bldoc.mpl" folder="blutil" />
@@ -74,6 +77,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.typsystem.trace/com.mbeddr.mpsutil.typsystem.trace.mpl" folder="typesystem.trace" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.uniquenames/com.mbeddr.mpsutil.uniquenames.mpl" folder="uniqueNames" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.xml.fix/com.mbeddr.mpsutil.xml.fix.mpl" folder="xml.fix" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.xmodelgen/com.mbeddr.mpsutil.xmodelgen.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/doc.com.mbeddr.mpsutil.multilingual.lang/doc.com.mbeddr.mpsutil.multilingual.lang.mpl" folder="multilingual" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.actionsfilter.runtime/com.mbeddr.mpsutil.actionsfilter.runtime.msd" folder="actionsfilter" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.breadcrumb.runtime/com.mbeddr.mpsutil.breadcrumb.runtime.msd" folder="breadcrumb" />
