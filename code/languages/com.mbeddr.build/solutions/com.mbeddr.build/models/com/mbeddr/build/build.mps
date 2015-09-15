@@ -3700,6 +3700,12 @@
               <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
             </node>
           </node>
+          <node concept="1SiIV0" id="3GGIySgfYu2" role="3bR37C">
+            <node concept="3bR9La" id="3GGIySgfYu3" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="al5i:5BcYI6fmT6L" resolve="com.mbeddr.mpsutil.xmodelgen" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="x1qBlxFjS" role="3bR37C">
           <node concept="3bR9La" id="x1qBlxFjT" role="1SiIV1">
