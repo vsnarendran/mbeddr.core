@@ -46,6 +46,9 @@
       </concept>
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
+      <concept id="6113173064526131575" name="com.mbeddr.core.pointers.structure.StringLiteral" flags="ng" index="PhEJO">
+        <property id="6113173064526131578" name="value" index="PhEJT" />
+      </concept>
       <concept id="6113173064528067332" name="com.mbeddr.core.pointers.structure.StringType" flags="ng" index="Pu267" />
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
     </language>
@@ -111,6 +114,7 @@
       <concept id="7892328519581704407" name="com.mbeddr.core.modules.structure.Argument" flags="ng" index="19RgSI" />
       <concept id="5950410542643524492" name="com.mbeddr.core.modules.structure.FunctionCall" flags="ng" index="3O_q_g">
         <reference id="5950410542643524493" name="function" index="3O_q_h" />
+        <child id="5950410542643524495" name="actuals" index="3O_q_j" />
       </concept>
       <concept id="6610873504380357354" name="com.mbeddr.core.modules.structure.GlobalVarRef" flags="ng" index="1S7827">
         <reference id="6610873504380357355" name="var" index="1S7826" />
@@ -252,6 +256,15 @@
             <ref role="3O_q_h" to="n7lz:5BcYI6fejDi" resolve="myFunction" />
           </node>
         </node>
+        <node concept="3XISUE" id="3_9H6ViaGi8" role="3XIRFZ" />
+        <node concept="1_9egQ" id="3_9H6ViaGnL" role="3XIRFZ">
+          <node concept="3O_q_g" id="3_9H6ViaGnJ" role="1_9egR">
+            <ref role="3O_q_h" to="n7lz:3_9H6ViaF4D" resolve="printf" />
+            <node concept="PhEJO" id="3_9H6ViaGr3" role="3O_q_j">
+              <property role="PhEJT" value="Hallo" />
+            </node>
+          </node>
+        </node>
         <node concept="2BFjQ_" id="5BcYI6fguu8" role="3XIRFZ">
           <node concept="3TlMh9" id="5BcYI6fguu9" role="2BFjQA">
             <property role="2hmy$m" value="0" />
@@ -283,6 +296,9 @@
     </node>
     <node concept="3GEVxB" id="5BcYI6fgutW" role="2OODSX">
       <ref role="3GEb4d" to="n7lz:5BcYI6fejC0" resolve="SimpleCConstructs" />
+    </node>
+    <node concept="3GEVxB" id="3_9H6ViaFZC" role="2OODSX">
+      <ref role="3GEb4d" to="n7lz:3_9H6ViaF3O" resolve="stdio" />
     </node>
   </node>
   <node concept="2v9HqL" id="5BcYI6fiHhi">
