@@ -325,6 +325,40 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="10ByWaTBj_s" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="contributeFrameMappings" />
+      <node concept="3Tm1VV" id="10ByWaTBj_t" role="1B3o_S" />
+      <node concept="3cqZAl" id="10ByWaTBj_u" role="3clF45" />
+      <node concept="3clFbS" id="10ByWaTBj_v" role="3clF47" />
+      <node concept="37vLTG" id="10ByWaTBj_w" role="3clF46">
+        <property role="TrG5h" value="cStackFrames" />
+        <node concept="_YKpA" id="10ByWaTBj_x" role="1tU5fm">
+          <node concept="3uibUv" id="10ByWaTBj_y" role="_ZDj9">
+            <ref role="3uigEE" to="x30c:6cg_iZhYFs_" resolve="IMWMappingStackFrame" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="10ByWaTBj_z" role="3clF46">
+        <property role="TrG5h" value="frameMappings" />
+        <node concept="_YKpA" id="10ByWaTBj_$" role="1tU5fm">
+          <node concept="3uibUv" id="10ByWaTBj__" role="_ZDj9">
+            <ref role="3uigEE" to="x30c:229N9i$8VVF" resolve="MFrameMappingImpl" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="10ByWaTBj_A" role="3clF46">
+        <property role="TrG5h" value="currentNode" />
+        <node concept="3Tqbb2" id="10ByWaTBj_B" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="10ByWaTBj_C" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="3uibUv" id="10ByWaTBj_D" role="1tU5fm">
+          <ref role="3uigEE" to="ec5l:~SModel" resolve="SModel" />
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="7FOyR3XrYQz" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />

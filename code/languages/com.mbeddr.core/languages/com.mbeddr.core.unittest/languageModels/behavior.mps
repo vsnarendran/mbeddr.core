@@ -24,8 +24,8 @@
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="n7pc" ref="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -882,8 +882,8 @@
             </node>
             <node concept="3zciI5" id="6w4ttwU2a4H" role="2OqNvi">
               <node concept="3zeigr" id="6w4ttwU2a5r" role="3zciI4">
-                <node concept="37vLTw" id="3aXCSK7OElA" role="3zeigm">
-                  <ref role="3cqZAo" node="3aXCSK7OEl$" resolve="string" />
+                <node concept="Xl_RD" id="4I4EzVFKpZE" role="3zeigm">
+                  <property role="Xl_RC" value="AModule_blockexpr_main_2" />
                 </node>
               </node>
             </node>
