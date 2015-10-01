@@ -10,6 +10,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="1aea" ref="r:4b7ce1fd-f467-4769-b407-6954cfbe3622(com.mbeddr.mpsutil.outline.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="b1fy" ref="r:c29b5221-e73b-4df6-ac17-defeef12bc27(com.mbeddr.mpsutil.tree.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -120,7 +121,7 @@
       <ref role="PrY4T" node="5PyBcyXvUbV" resolve="ILOCCountProvider" />
     </node>
     <node concept="PrWs8" id="5PyBcyXvU9v" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:9MiAwFsXp0" resolve="ITreeViewRoot" />
+      <ref role="PrY4T" to="b1fy:5PyBcyXwcdD" resolve="ITreeViewRoot" />
     </node>
     <node concept="PrWs8" id="5PyBcyXvU9w" role="PzmwI">
       <ref role="PrY4T" node="5PyBcyXvU9Q" resolve="IDetectCycle" />

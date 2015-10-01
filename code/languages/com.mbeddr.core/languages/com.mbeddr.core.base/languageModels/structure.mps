@@ -23,6 +23,7 @@
     <import index="v783" ref="r:8722a626-df20-42dc-8c8e-d8150854eabc(com.mbeddr.mpsutil.controlledName.structure)" implicit="true" />
     <import index="10jo" ref="r:6e32694b-6dd1-4530-b48f-4e3bf97b2744(com.mbeddr.mpsutil.jung.structure)" implicit="true" />
     <import index="hd7c" ref="r:eee314e7-0afd-4503-aeed-0fe86e65b414(com.mbeddr.mpsutil.search.structure)" implicit="true" />
+    <import index="b1fy" ref="r:c29b5221-e73b-4df6-ac17-defeef12bc27(com.mbeddr.mpsutil.tree.structure)" implicit="true" />
     <import index="2cjw" ref="r:33b1e266-cd80-4501-a34b-38ba09fae7d1(com.mbeddr.mpsutil.paragraph.structure)" implicit="true" />
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" implicit="true" />
     <import index="newt" ref="r:d05372e5-2bac-4388-98d2-ddc5978b1595(com.mbeddr.mpsutil.ideEnhancement.structure)" implicit="true" />
@@ -613,7 +614,7 @@
       <ref role="PrY4T" node="6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
     <node concept="PrWs8" id="7dSitqLXJAo" role="PzmwI">
-      <ref role="PrY4T" node="9MiAwFsXp0" resolve="ITreeViewRoot" />
+      <ref role="PrY4T" to="b1fy:5PyBcyXwcdD" resolve="ITreeViewRoot" />
     </node>
     <node concept="PrWs8" id="59HbAIP5roq" role="PzmwI">
       <ref role="PrY4T" node="59HbAIOYkEn" resolve="IDetectCycle" />
@@ -856,12 +857,18 @@
   <node concept="PlHQZ" id="7NyyyjNt9Bq">
     <property role="TrG5h" value="ITreeViewable" />
     <property role="3GE5qa" value="tree" />
+    <node concept="asaX9" id="5PyBcyXwcla" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.tree&quot;" />
+    </node>
   </node>
   <node concept="PlHQZ" id="9MiAwFsXp0">
     <property role="3GE5qa" value="tree" />
     <property role="TrG5h" value="ITreeViewRoot" />
     <node concept="PrWs8" id="9MiAwFsXuS" role="PrDN$">
       <ref role="PrY4T" node="7NyyyjNt9Bq" resolve="ITreeViewable" />
+    </node>
+    <node concept="asaX9" id="5PyBcyXwcjM" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.tree&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="7c_RIoB8H2I">
@@ -946,6 +953,9 @@
     <node concept="PrWs8" id="6SQk4GjJG$Z" role="PrDN$">
       <ref role="PrY4T" to="570t:3JrMqIyfmMY" resolve="IBreadcrumb" />
     </node>
+    <node concept="asaX9" id="5PyBcyXwcfE" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.tree&quot;" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6SQk4GjUJRB">
     <property role="3GE5qa" value="tree.hierarchicalstructure" />
@@ -956,12 +966,18 @@
     <node concept="PrWs8" id="6SQk4GjUJRD" role="PrDN$">
       <ref role="PrY4T" node="9MiAwFsXp0" resolve="ITreeViewRoot" />
     </node>
+    <node concept="asaX9" id="5PyBcyXwciq" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.tree&quot;" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6SQk4GjV1Md">
     <property role="3GE5qa" value="tree.hierarchicalstructure" />
     <property role="TrG5h" value="IHierarchicalStructureBase" />
     <node concept="PrWs8" id="6SQk4GjVdlt" role="PrDN$">
       <ref role="PrY4T" node="7NyyyjNt9Bq" resolve="ITreeViewable" />
+    </node>
+    <node concept="asaX9" id="5PyBcyXwch2" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.tree&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="4g52gaNPZ6t">

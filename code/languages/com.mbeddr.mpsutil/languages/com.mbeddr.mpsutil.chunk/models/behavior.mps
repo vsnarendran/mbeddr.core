@@ -9,6 +9,7 @@
     <import index="ln2k" ref="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.behavior)" />
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
+    <import index="hnxa" ref="r:e3f888f7-d1d6-458c-abf3-5d3ce7b9d119(com.mbeddr.mpsutil.tree.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -1415,7 +1416,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getTreeCategories" />
-      <ref role="13i0hy" to="hwgx:7NyyyjNtbmX" resolve="getTreeCategories" />
+      <ref role="13i0hy" to="hnxa:5PyBcyXwccq" resolve="getTreeCategories" />
       <node concept="3Tm1VV" id="5PyBcyXvU3U" role="1B3o_S" />
       <node concept="3clFbS" id="5PyBcyXvU3V" role="3clF47">
         <node concept="3clFbF" id="5PyBcyXvU3W" role="3cqZAp">
@@ -1440,7 +1441,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getTreeNode" />
-      <ref role="13i0hy" to="hwgx:7NyyyjNtbn2" resolve="getTreeNode" />
+      <ref role="13i0hy" to="hnxa:5PyBcyXwcee" resolve="getTreeNode" />
       <node concept="3Tm1VV" id="5PyBcyXvU45" role="1B3o_S" />
       <node concept="3clFbS" id="5PyBcyXvU46" role="3clF47">
         <node concept="3clFbJ" id="5PyBcyXvU47" role="3cqZAp">
@@ -1576,7 +1577,7 @@
                     <node concept="2OqwBi" id="5PyBcyXvU53" role="37wK5m">
                       <node concept="13iPFW" id="5PyBcyXvU54" role="2Oq$k0" />
                       <node concept="2qgKlT" id="5PyBcyXvU55" role="2OqNvi">
-                        <ref role="37wK5l" to="hwgx:7NyyyjNtbmX" resolve="getTreeCategories" />
+                        <ref role="37wK5l" to="hnxa:5PyBcyXwccq" resolve="getTreeCategories" />
                       </node>
                     </node>
                   </node>
@@ -1795,7 +1796,7 @@
                     <node concept="2OqwBi" id="5PyBcyXvU6_" role="37wK5m">
                       <node concept="13iPFW" id="5PyBcyXvU6A" role="2Oq$k0" />
                       <node concept="2qgKlT" id="5PyBcyXvU6B" role="2OqNvi">
-                        <ref role="37wK5l" to="hwgx:7NyyyjNtbmX" resolve="getTreeCategories" />
+                        <ref role="37wK5l" to="hnxa:5PyBcyXwccq" resolve="getTreeCategories" />
                       </node>
                     </node>
                   </node>

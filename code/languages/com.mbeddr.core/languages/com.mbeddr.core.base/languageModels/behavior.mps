@@ -65,8 +65,10 @@
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
     <import index="gm3l" ref="r:fcef1631-c04d-4b3d-9a40-2abe930a5a53(com.mbeddr.mpsutil.commentable.structure)" implicit="true" />
     <import index="sct6" ref="r:1b10995f-8da6-4ab0-8822-bce965238ddc(com.mbeddr.mpsutil.codereview.structure)" implicit="true" />
+    <import index="b1fy" ref="r:c29b5221-e73b-4df6-ac17-defeef12bc27(com.mbeddr.mpsutil.tree.structure)" implicit="true" />
     <import index="kfd7" ref="r:20dd928f-3ef1-49a8-a4e6-95f894a2f714(com.mbeddr.mpsutil.paragraph.behavior)" implicit="true" />
     <import index="qqlm" ref="r:a895bf24-7625-4094-ba2d-ec74bd2639ee(com.mbeddr.mpsutil.ideEnhancement.behavior)" implicit="true" />
+    <import index="hnxa" ref="r:e3f888f7-d1d6-458c-abf3-5d3ce7b9d119(com.mbeddr.mpsutil.tree.behavior)" implicit="true" />
     <import index="v783" ref="r:8722a626-df20-42dc-8c8e-d8150854eabc(com.mbeddr.mpsutil.controlledName.structure)" implicit="true" />
     <import index="h0lo" ref="r:9f92fb5e-9c32-4695-b090-eff683d75771(com.mbeddr.mpsutil.externalReference.behavior)" implicit="true" />
     <import index="ki2h" ref="r:108c1d36-553d-4cd6-bfd5-8b2bd0fe3bb2(com.mbeddr.mpsutil.externalReference.structure)" implicit="true" />
@@ -5162,7 +5164,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getTreeCategories" />
-      <ref role="13i0hy" node="7NyyyjNtbmX" resolve="getTreeCategories" />
+      <ref role="13i0hy" to="hnxa:5PyBcyXwccq" resolve="getTreeCategories" />
       <node concept="3Tm1VV" id="bhVSeElkbY" role="1B3o_S" />
       <node concept="3clFbS" id="bhVSeElkc2" role="3clF47">
         <node concept="3clFbF" id="bhVSeElvrF" role="3cqZAp">
@@ -5187,7 +5189,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getTreeNode" />
-      <ref role="13i0hy" node="7NyyyjNtbn2" resolve="getTreeNode" />
+      <ref role="13i0hy" to="hnxa:5PyBcyXwcee" resolve="getTreeNode" />
       <node concept="3Tm1VV" id="bhVSeElkc6" role="1B3o_S" />
       <node concept="3clFbS" id="bhVSeElkcb" role="3clF47">
         <node concept="3clFbJ" id="7dSitqLY5MP" role="3cqZAp">
@@ -5323,7 +5325,7 @@
                     <node concept="2OqwBi" id="5EE0R5HKLWX" role="37wK5m">
                       <node concept="13iPFW" id="5EE0R5HKLWY" role="2Oq$k0" />
                       <node concept="2qgKlT" id="5EE0R5HKLWZ" role="2OqNvi">
-                        <ref role="37wK5l" node="7NyyyjNtbmX" resolve="getTreeCategories" />
+                        <ref role="37wK5l" to="hnxa:5PyBcyXwccq" resolve="getTreeCategories" />
                       </node>
                     </node>
                   </node>
@@ -5542,7 +5544,7 @@
                     <node concept="2OqwBi" id="5EE0R5HKNb2" role="37wK5m">
                       <node concept="13iPFW" id="5EE0R5HKNb3" role="2Oq$k0" />
                       <node concept="2qgKlT" id="5EE0R5HKNb4" role="2OqNvi">
-                        <ref role="37wK5l" node="7NyyyjNtbmX" resolve="getTreeCategories" />
+                        <ref role="37wK5l" to="hnxa:5PyBcyXwccq" resolve="getTreeCategories" />
                       </node>
                     </node>
                   </node>
@@ -13717,7 +13719,7 @@
                               <ref role="3cqZAo" node="4WlWim9tXCM" resolve="it" />
                             </node>
                             <node concept="2qgKlT" id="4WlWim9tYKp" role="2OqNvi">
-                              <ref role="37wK5l" node="7NyyyjNtbn2" resolve="getTreeNode" />
+                              <ref role="37wK5l" to="hnxa:5PyBcyXwcee" resolve="getTreeNode" />
                               <node concept="37vLTw" id="4WlWim9tYKq" role="37wK5m">
                                 <ref role="3cqZAo" node="4WlWim9tYp_" resolve="cat" />
                               </node>
@@ -13751,7 +13753,7 @@
         <property role="TrG5h" value="itv" />
         <node concept="A3Dl8" id="4WlWim9tV_1" role="1tU5fm">
           <node concept="3Tqbb2" id="4WlWim9tVAE" role="A3Ik2">
-            <ref role="ehGHo" to="vs0r:7NyyyjNt9Bq" resolve="ITreeViewable" />
+            <ref role="ehGHo" to="b1fy:5PyBcyXwcdF" resolve="ITreeViewable" />
           </node>
         </node>
       </node>
@@ -13776,7 +13778,7 @@
                 <ref role="3cqZAo" node="bhVSeEzlBo" resolve="itv" />
               </node>
               <node concept="2qgKlT" id="bhVSeEzoPy" role="2OqNvi">
-                <ref role="37wK5l" node="7NyyyjNtbn2" resolve="getTreeNode" />
+                <ref role="37wK5l" to="hnxa:5PyBcyXwcee" resolve="getTreeNode" />
                 <node concept="37vLTw" id="bhVSeEzoSD" role="37wK5m">
                   <ref role="3cqZAo" node="bhVSeEzlBr" resolve="cat" />
                 </node>
@@ -13794,7 +13796,7 @@
       <node concept="37vLTG" id="bhVSeEzlBo" role="3clF46">
         <property role="TrG5h" value="itv" />
         <node concept="3Tqbb2" id="bhVSeEzlBq" role="1tU5fm">
-          <ref role="ehGHo" to="vs0r:7NyyyjNt9Bq" resolve="ITreeViewable" />
+          <ref role="ehGHo" to="b1fy:5PyBcyXwcdF" resolve="ITreeViewable" />
         </node>
       </node>
       <node concept="37vLTG" id="bhVSeEzlBr" role="3clF46">
@@ -17238,7 +17240,7 @@
               <ref role="3cqZAo" node="6SQk4GjUYcA" resolve="node" />
             </node>
             <node concept="2qgKlT" id="6SQk4GjVvSZ" role="2OqNvi">
-              <ref role="37wK5l" node="6SQk4GjV1MZ" resolve="getHierarchicalStructureName" />
+              <ref role="37wK5l" to="hnxa:5PyBcyXwceH" resolve="getHierarchicalStructureName" />
             </node>
           </node>
           <node concept="2OqwBi" id="6SQk4GjVw7I" role="37wK5m">
@@ -17246,7 +17248,7 @@
               <ref role="3cqZAo" node="6SQk4GjUYcA" resolve="node" />
             </node>
             <node concept="2qgKlT" id="6SQk4GjVwzq" role="2OqNvi">
-              <ref role="37wK5l" node="6SQk4GjV1Yp" resolve="getHierarchicalStructureIcon" />
+              <ref role="37wK5l" to="hnxa:5PyBcyXwceP" resolve="getHierarchicalStructureIcon" />
             </node>
           </node>
           <node concept="AH0OO" id="6SQk4GjV00T" role="37wK5m">
@@ -17265,7 +17267,7 @@
       <node concept="37vLTG" id="6SQk4GjUYcA" role="3clF46">
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="6SQk4GjUYc_" role="1tU5fm">
-          <ref role="ehGHo" to="vs0r:6SQk4GjV1Md" resolve="IHierarchicalStructureBase" />
+          <ref role="ehGHo" to="b1fy:5PyBcyXwce5" resolve="IHierarchicalStructureBase" />
         </node>
       </node>
     </node>
@@ -17295,7 +17297,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="6SQk4GjVbOi" role="2OqNvi">
-                  <ref role="37wK5l" node="6SQk4GjKG_$" resolve="collectHierarchicalChildren" />
+                  <ref role="37wK5l" to="hnxa:5PyBcyXwcf2" resolve="collectHierarchicalChildren" />
                 </node>
               </node>
               <node concept="3$u5V9" id="6SQk4GjVgXX" role="2OqNvi">
@@ -17309,7 +17311,7 @@
                               <ref role="3cqZAo" node="6SQk4GjVgY1" resolve="it" />
                             </node>
                             <node concept="2qgKlT" id="6SQk4GjViN_" role="2OqNvi">
-                              <ref role="37wK5l" node="7NyyyjNtbn2" resolve="getTreeNode" />
+                              <ref role="37wK5l" to="hnxa:5PyBcyXwcee" resolve="getTreeNode" />
                               <node concept="37vLTw" id="6SQk4GjViNA" role="37wK5m">
                                 <ref role="3cqZAo" node="6SQk4GjVeCq" resolve="DEFAULT_CATEGORY" />
                               </node>
@@ -17351,7 +17353,7 @@
                 </node>
               </node>
               <node concept="2qgKlT" id="6SQk4GjVlr8" role="2OqNvi">
-                <ref role="37wK5l" node="6SQk4GjKG_$" resolve="collectHierarchicalChildren" />
+                <ref role="37wK5l" to="hnxa:5PyBcyXwcf2" resolve="collectHierarchicalChildren" />
               </node>
             </node>
             <node concept="34oBXx" id="6SQk4GjVmiM" role="2OqNvi" />
@@ -17364,13 +17366,13 @@
       <property role="TrG5h" value="getProgramNode" />
       <property role="1EzhhJ" value="false" />
       <node concept="3Tqbb2" id="6SQk4GjVkFx" role="3clF45">
-        <ref role="ehGHo" to="vs0r:6SQk4GjV1Md" resolve="IHierarchicalStructureBase" />
+        <ref role="ehGHo" to="b1fy:5PyBcyXwce5" resolve="IHierarchicalStructureBase" />
       </node>
       <node concept="3Tm1VV" id="6SQk4GjVkFy" role="1B3o_S" />
       <node concept="3clFbS" id="6SQk4GjVkFA" role="3clF47">
         <node concept="3clFbF" id="6SQk4GjVkFD" role="3cqZAp">
           <node concept="1PxgMI" id="6SQk4GjVkTn" role="3clFbG">
-            <ref role="1PxNhF" to="vs0r:6SQk4GjV1Md" resolve="IHierarchicalStructureBase" />
+            <ref role="1PxNhF" to="b1fy:5PyBcyXwce5" resolve="IHierarchicalStructureBase" />
             <node concept="3nyPlj" id="6SQk4GjVkFC" role="1PxMeX">
               <ref role="37wK5l" node="7NyyyjNyzs8" resolve="getProgramNode" />
             </node>
