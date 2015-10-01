@@ -11,6 +11,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="2cjw" ref="r:33b1e266-cd80-4501-a34b-38ba09fae7d1(com.mbeddr.mpsutil.paragraph.structure)" implicit="true" />
+    <import index="hd7c" ref="r:eee314e7-0afd-4503-aeed-0fe86e65b414(com.mbeddr.mpsutil.search.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -219,7 +220,7 @@
       <ref role="PrY4T" to="2cjw:5PyBcyXwb9b" resolve="ITextBlockOwner" />
     </node>
     <node concept="PrWs8" id="5PyBcyXwafk" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:jpyKDg1onz" resolve="ISearchSupport" />
+      <ref role="PrY4T" to="hd7c:5PyBcyXwc9o" resolve="ISearchSupport" />
     </node>
     <node concept="PrWs8" id="5PyBcyXwafl" role="PzmwI">
       <ref role="PrY4T" node="5PyBcyXwadz" resolve="IIsDocumentationComment" />

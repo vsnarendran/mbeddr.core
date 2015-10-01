@@ -22,6 +22,7 @@
     <import index="ki2h" ref="r:108c1d36-553d-4cd6-bfd5-8b2bd0fe3bb2(com.mbeddr.mpsutil.externalReference.structure)" implicit="true" />
     <import index="v783" ref="r:8722a626-df20-42dc-8c8e-d8150854eabc(com.mbeddr.mpsutil.controlledName.structure)" implicit="true" />
     <import index="10jo" ref="r:6e32694b-6dd1-4530-b48f-4e3bf97b2744(com.mbeddr.mpsutil.jung.structure)" implicit="true" />
+    <import index="hd7c" ref="r:eee314e7-0afd-4503-aeed-0fe86e65b414(com.mbeddr.mpsutil.search.structure)" implicit="true" />
     <import index="2cjw" ref="r:33b1e266-cd80-4501-a34b-38ba09fae7d1(com.mbeddr.mpsutil.paragraph.structure)" implicit="true" />
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" implicit="true" />
     <import index="newt" ref="r:d05372e5-2bac-4388-98d2-ddc5978b1595(com.mbeddr.mpsutil.ideEnhancement.structure)" implicit="true" />
@@ -139,7 +140,7 @@
       <ref role="PrY4T" to="2cjw:5PyBcyXwb9b" resolve="ITextBlockOwner" />
     </node>
     <node concept="PrWs8" id="4ueXZrqtwBO" role="PzmwI">
-      <ref role="PrY4T" node="jpyKDg1onz" resolve="ISearchSupport" />
+      <ref role="PrY4T" to="hd7c:5PyBcyXwc9o" resolve="ISearchSupport" />
     </node>
     <node concept="PrWs8" id="6wvhQs7n6SX" role="PzmwI">
       <ref role="PrY4T" node="6yeRgC0uAED" resolve="IIsDocumentationComment" />
@@ -365,6 +366,9 @@
   <node concept="PlHQZ" id="jpyKDg1onz">
     <property role="TrG5h" value="ISearchSupport" />
     <property role="3GE5qa" value="search" />
+    <node concept="asaX9" id="5PyBcyXwc9p" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.search&quot;" />
+    </node>
   </node>
   <node concept="PlHQZ" id="3Y7ywckEJZi">
     <property role="TrG5h" value="IKeepAliveInGeneration" />

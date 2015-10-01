@@ -71,6 +71,7 @@
     <import index="h0lo" ref="r:9f92fb5e-9c32-4695-b090-eff683d75771(com.mbeddr.mpsutil.externalReference.behavior)" implicit="true" />
     <import index="ki2h" ref="r:108c1d36-553d-4cd6-bfd5-8b2bd0fe3bb2(com.mbeddr.mpsutil.externalReference.structure)" implicit="true" />
     <import index="30xn" ref="r:eadab8e9-5ad6-44ab-a83f-3acbfaf545f2(com.mbeddr.mpsutil.chunk.behavior)" implicit="true" />
+    <import index="n7ra" ref="r:73fc9921-b005-49d5-89bd-e3fa80f06108(com.mbeddr.mpsutil.search.behavior)" implicit="true" />
     <import index="tkh2" ref="r:9896d907-d609-4ff7-ab80-a9a763c74eb1(com.mbeddr.mpsutil.controlledName.behavior)" implicit="true" />
     <import index="2cjw" ref="r:33b1e266-cd80-4501-a34b-38ba09fae7d1(com.mbeddr.mpsutil.paragraph.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
@@ -871,7 +872,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="containsText" />
-      <ref role="13i0hy" node="jpyKDg1onB" resolve="containsText" />
+      <ref role="13i0hy" to="n7ra:5PyBcyXwc92" resolve="containsText" />
       <node concept="3Tm1VV" id="4ueXZrqtwBR" role="1B3o_S" />
       <node concept="3clFbS" id="4ueXZrqtwBS" role="3clF47">
         <node concept="3clFbF" id="4ueXZrqtwC7" role="3cqZAp">
@@ -899,7 +900,7 @@
     </node>
     <node concept="13i0hz" id="4ueXZrqtN0Z" role="13h7CS">
       <property role="TrG5h" value="getResultNode" />
-      <ref role="13i0hy" node="4ueXZrqtaGB" resolve="getResultNode" />
+      <ref role="13i0hy" to="n7ra:5PyBcyXwc98" resolve="getResultNode" />
       <node concept="3clFbS" id="4ueXZrqtN12" role="3clF47">
         <node concept="3clFbJ" id="4ueXZrqtN17" role="3cqZAp">
           <node concept="3clFbS" id="4ueXZrqtN18" role="3clFbx">
@@ -933,7 +934,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="resultName" />
-      <ref role="13i0hy" node="jpyKDg1pW5" resolve="resultName" />
+      <ref role="13i0hy" to="n7ra:5PyBcyXwc9e" resolve="resultName" />
       <node concept="3Tm1VV" id="4ueXZrqtwBZ" role="1B3o_S" />
       <node concept="3clFbS" id="4ueXZrqtwC0" role="3clF47">
         <node concept="3clFbJ" id="4ueXZrqtwDO" role="3cqZAp">
@@ -977,7 +978,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="resultQualifiedName" />
-      <ref role="13i0hy" node="jpyKDg2TXB" resolve="resultNamespace" />
+      <ref role="13i0hy" to="n7ra:5PyBcyXwc9i" resolve="resultNamespace" />
       <node concept="3Tm1VV" id="4ueXZrqtwC3" role="1B3o_S" />
       <node concept="3clFbS" id="4ueXZrqtwC4" role="3clF47">
         <node concept="3clFbJ" id="4ueXZrqtwHe" role="3cqZAp">
