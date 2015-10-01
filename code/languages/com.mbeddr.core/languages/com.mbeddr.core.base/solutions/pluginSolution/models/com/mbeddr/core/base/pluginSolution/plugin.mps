@@ -480,13 +480,8 @@
       <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
-      <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
-      </concept>
+      <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
-      <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
-        <reference id="3562215692195600259" name="link" index="13MTZf" />
-      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -1917,90 +1912,6 @@
         <property role="pLAjc" value="ctrl" />
         <property role="pLAjf" value="VK_F12" />
       </node>
-    </node>
-  </node>
-  <node concept="sE7Ow" id="3jNX2XuMqyL">
-    <property role="3GE5qa" value="assessment" />
-    <property role="TrG5h" value="UpdateAssessments" />
-    <property role="2uzpH1" value="Update Assessments" />
-    <node concept="1DS2jV" id="3jNX2XuMqyM" role="1NuT2Z">
-      <property role="TrG5h" value="model" />
-      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MODEL" resolve="MODEL" />
-      <node concept="1oajcY" id="3jNX2XuMqyN" role="1oa70y" />
-    </node>
-    <node concept="1DS2jV" id="3jNX2XuMqyO" role="1NuT2Z">
-      <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
-      <node concept="1oajcY" id="3jNX2XuMqyP" role="1oa70y" />
-    </node>
-    <node concept="tnohg" id="3jNX2XuMqyQ" role="tncku">
-      <node concept="3clFbS" id="3jNX2XuMqyR" role="2VODD2">
-        <node concept="3cpWs8" id="3jNX2XuMqPU" role="3cqZAp">
-          <node concept="3cpWsn" id="3jNX2XuMqPV" role="3cpWs9">
-            <property role="TrG5h" value="m" />
-            <node concept="H_c77" id="3jNX2XuMqQ1" role="1tU5fm" />
-            <node concept="2OqwBi" id="5zgShfc3UVT" role="33vP2m">
-              <node concept="2WthIp" id="5zgShfc3UVU" role="2Oq$k0" />
-              <node concept="1DTwFV" id="5zgShfc3UVV" role="2OqNvi">
-                <ref role="2WH_rO" node="3jNX2XuMqyM" resolve="model" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="3jNX2XuMqzf" role="3cqZAp">
-          <node concept="2OqwBi" id="3jNX2XuMqRd" role="3clFbG">
-            <node concept="2OqwBi" id="3jNX2XuMqQL" role="2Oq$k0">
-              <node concept="2OqwBi" id="3jNX2XuMqQm" role="2Oq$k0">
-                <node concept="3cpWsa" id="3jNX2XuMqQ0" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3jNX2XuMqPV" resolve="m" />
-                </node>
-                <node concept="2RRcyG" id="3jNX2XuMqQs" role="2OqNvi">
-                  <ref role="2RRcyH" to="vs0r:K292flwCEV" resolve="AssessmentContainer" />
-                </node>
-              </node>
-              <node concept="13MTOL" id="3jNX2XuMqQR" role="2OqNvi">
-                <ref role="13MTZf" to="vs0r:K292flwCEX" />
-              </node>
-            </node>
-            <node concept="2es0OD" id="3jNX2XuMqRj" role="2OqNvi">
-              <node concept="1bVj0M" id="3jNX2XuMqRk" role="23t8la">
-                <node concept="3clFbS" id="3jNX2XuMqRl" role="1bW5cS">
-                  <node concept="3clFbF" id="3jNX2XuMqRo" role="3cqZAp">
-                    <node concept="2OqwBi" id="3jNX2XuMqRI" role="3clFbG">
-                      <node concept="3cpWs2" id="3jNX2XuMqRp" role="2Oq$k0">
-                        <ref role="3cqZAo" node="3jNX2XuMqRm" resolve="it" />
-                      </node>
-                      <node concept="2qgKlT" id="3jNX2XuMqRO" role="2OqNvi">
-                        <ref role="37wK5l" to="hwgx:3jNX2XuLy_p" resolve="update" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="Rh6nW" id="3jNX2XuMqRm" role="1bW2Oz">
-                  <property role="TrG5h" value="it" />
-                  <node concept="2jxLKc" id="3jNX2XuMqRn" role="1tU5fm" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1QGGSu" id="3jNX2XuMqze" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/assessment.png" />
-    </node>
-  </node>
-  <node concept="tC5Ba" id="3jNX2XuMqRP">
-    <property role="3GE5qa" value="assessment" />
-    <property role="TrG5h" value="AssessmentGroup" />
-    <node concept="ftmFs" id="3jNX2XuMqRQ" role="ftER_">
-      <node concept="tCFHf" id="3jNX2XuMqRT" role="ftvYc">
-        <ref role="tCJdB" node="3jNX2XuMqyL" resolve="UpdateAssessments" />
-      </node>
-    </node>
-    <node concept="tT9cl" id="3jNX2XuMqRS" role="2f5YQi">
-      <ref role="tU$_T" node="goNQ8fiCdc" resolve="mbeddrPlatformModelGroup" />
-      <ref role="2f8Tey" node="goNQ8fiCdf" resolve="mbeddrPlatformModelExtensions" />
     </node>
   </node>
   <node concept="sE7Ow" id="3slbD0C6UdB">
