@@ -311,6 +311,9 @@
     <node concept="PrWs8" id="5$VhGzCH_36" role="PrDN$">
       <ref role="PrY4T" node="3m8H$lmFM60" resolve="IDocumentable" />
     </node>
+    <node concept="asaX9" id="5PyBcyXw9jG" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.configItem&quot;" />
+    </node>
   </node>
   <node concept="PlHQZ" id="3R$6B6bKw0D">
     <property role="TrG5h" value="IConfigurationContainer" />
@@ -320,6 +323,9 @@
       <property role="20kJfa" value="configurationItems" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3R$6B6bKw0C" resolve="IConfigurationItem" />
+    </node>
+    <node concept="asaX9" id="5PyBcyXw9if" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.configItem&quot;" />
     </node>
   </node>
   <node concept="PlHQZ" id="7uYRIghZpWq">
@@ -348,6 +354,9 @@
     <property role="TrG5h" value="IConfigurationItemWithProcessor" />
     <node concept="PrWs8" id="4qSf1u208SJ" role="PrDN$">
       <ref role="PrY4T" node="3R$6B6bKw0C" resolve="IConfigurationItem" />
+    </node>
+    <node concept="asaX9" id="5PyBcyXw9ms" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.configItem&quot;" />
     </node>
   </node>
   <node concept="312cEu" id="8$8RMQYKSY">
@@ -892,12 +901,18 @@
   <node concept="PlHQZ" id="1rXJcsmD0fG">
     <property role="3GE5qa" value="config" />
     <property role="TrG5h" value="IRequiresConfigItem" />
+    <node concept="asaX9" id="5PyBcyXw9nO" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.configItem&quot;" />
+    </node>
   </node>
   <node concept="PlHQZ" id="7P$_wJpwSfc">
     <property role="3GE5qa" value="config" />
     <property role="TrG5h" value="IConfigurationItemWithImport" />
     <node concept="PrWs8" id="7P$_wJpwSfd" role="PrDN$">
       <ref role="PrY4T" node="3R$6B6bKw0C" resolve="IConfigurationItem" />
+    </node>
+    <node concept="asaX9" id="5PyBcyXw9l4" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.configItem&quot;" />
     </node>
   </node>
   <node concept="PlHQZ" id="6brBMefRfNW">
