@@ -140,7 +140,6 @@
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
         <property id="1204991940915" name="caption" index="2f7twF" />
         <property id="1217005992861" name="isInvisibleWhenDisabled" index="1rdrE6" />
-        <property id="1213283637680" name="isPopup" index="1XlLyE" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -476,11 +475,6 @@
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
       <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
-    </language>
-    <language id="58e731a3-6aaa-444a-bf40-801b91c15878" name="com.mbeddr.mpsutil.lang.plugin.extensions">
-      <concept id="3826319847679748876" name="com.mbeddr.mpsutil.lang.plugin.extensions.structure.AddWithConstantArchor" flags="lg" index="30SVEG">
-        <property id="3826319847679982768" name="archor" index="30T2Og" />
-      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -7555,62 +7549,6 @@
       <ref role="3uigEE" to="dxuu:~JPanel" resolve="JPanel" />
     </node>
   </node>
-  <node concept="tC5Ba" id="53G_t0FcvfX">
-    <property role="TrG5h" value="mbeddrPlatformEditorPopupGroup" />
-    <node concept="ftmFs" id="53G_t0FcvgP" role="ftER_">
-      <node concept="2a7GMi" id="53G_t0FcvgS" role="ftvYc" />
-      <node concept="10WQ6h" id="53G_t0FcvgX" role="ftvYc">
-        <property role="TrG5h" value="mbeddrPlatformEditorPopupExtensions" />
-      </node>
-      <node concept="2a7GMi" id="39c7fuKwbnb" role="ftvYc" />
-      <node concept="10WQ6h" id="39c7fuKwbnA" role="ftvYc">
-        <property role="TrG5h" value="mbeddrPlatformEditorPopupAnalysisExtensions" />
-      </node>
-    </node>
-    <node concept="tT9cl" id="53G_t0Fcvh1" role="2f5YQi">
-      <ref role="tU$_T" to="ekwn:1xsN4xJX8VI" resolve="EditorPopup" />
-    </node>
-  </node>
-  <node concept="tC5Ba" id="goNQ8fiCdc">
-    <property role="TrG5h" value="mbeddrPlatformModelGroup" />
-    <node concept="ftmFs" id="goNQ8fiCdd" role="ftER_">
-      <node concept="2a7GMi" id="goNQ8fiCde" role="ftvYc" />
-      <node concept="10WQ6h" id="goNQ8fiCdf" role="ftvYc">
-        <property role="TrG5h" value="mbeddrPlatformModelExtensions" />
-      </node>
-    </node>
-    <node concept="tT9cl" id="goNQ8fiCdg" role="2f5YQi">
-      <ref role="tU$_T" to="tprs:hyf4Hgq" resolve="ModelActions" />
-      <ref role="2f8Tey" to="tprs:2blMBvV$tE0" resolve="showHelp" />
-    </node>
-  </node>
-  <node concept="tC5Ba" id="goNQ8fiE3l">
-    <property role="TrG5h" value="mbeddrPlatformSolutionGroup" />
-    <node concept="ftmFs" id="goNQ8fiE3m" role="ftER_">
-      <node concept="2a7GMi" id="goNQ8fiE3n" role="ftvYc" />
-      <node concept="10WQ6h" id="goNQ8fiE3o" role="ftvYc">
-        <property role="TrG5h" value="mbeddrPlatformSolutionExtensions" />
-      </node>
-    </node>
-    <node concept="tT9cl" id="goNQ8fiE3p" role="2f5YQi">
-      <ref role="tU$_T" to="tprs:hyf4Jd1" resolve="SolutionActions" />
-      <ref role="2f8Tey" to="tprs:1bRM4HyGOKI" resolve="contents" />
-    </node>
-  </node>
-  <node concept="tC5Ba" id="goNQ8fnbtb">
-    <property role="TrG5h" value="mbeddrPlatformProjectionModeGroup" />
-    <property role="1XlLyE" value="true" />
-    <property role="2f7twF" value="Projection" />
-    <node concept="30SVEG" id="3kpOq3PZX3V" role="2f5YQi">
-      <property role="30T2Og" value="ViewMenu" />
-      <ref role="tU$_T" to="tprs:hF$pMQx" resolve="IDEAMainMenu" />
-    </node>
-    <node concept="ftmFs" id="goNQ8fnbtc" role="ftER_">
-      <node concept="10WQ6h" id="goNQ8fnbte" role="ftvYc">
-        <property role="TrG5h" value="mbeddrPlatformProjectionModes" />
-      </node>
-    </node>
-  </node>
   <node concept="tC5Ba" id="goNQ8fxK7J">
     <property role="TrG5h" value="CodeMenuExtensions" />
     <node concept="ftmFs" id="goNQ8fxK8l" role="ftER_">
@@ -7625,20 +7563,6 @@
     </node>
     <node concept="tT9cl" id="goNQ8fxK8A" role="2f5YQi">
       <ref role="tU$_T" to="9oh:4vodOtydcQH" resolve="IDEACode" />
-    </node>
-  </node>
-  <node concept="tC5Ba" id="goNQ8fyUy3">
-    <property role="TrG5h" value="mbeddrPlatformWizards" />
-    <property role="1XlLyE" value="true" />
-    <property role="2f7twF" value="Wizards" />
-    <node concept="ftmFs" id="goNQ8fyUy4" role="ftER_">
-      <node concept="10WQ6h" id="goNQ8fyUy5" role="ftvYc">
-        <property role="TrG5h" value="mbeddrPlatformWizards" />
-      </node>
-    </node>
-    <node concept="tT9cl" id="goNQ8fyUy6" role="2f5YQi">
-      <ref role="tU$_T" node="goNQ8fxK7J" resolve="CodeMenuExtensions" />
-      <ref role="2f8Tey" node="goNQ8fyUxT" resolve="WizardStuff" />
     </node>
   </node>
   <node concept="312cEu" id="2nGuY2QKdBO">
