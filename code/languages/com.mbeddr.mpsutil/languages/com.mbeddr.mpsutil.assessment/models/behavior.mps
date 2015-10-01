@@ -17,6 +17,7 @@
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="v783" ref="r:8722a626-df20-42dc-8c8e-d8150854eabc(com.mbeddr.mpsutil.controlledName.structure)" implicit="true" />
     <import index="30xn" ref="r:eadab8e9-5ad6-44ab-a83f-3acbfaf545f2(com.mbeddr.mpsutil.chunk.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" implicit="true" />
@@ -2245,7 +2246,7 @@
           <node concept="3cpWsn" id="5PyBcyXvPLP" role="3cpWs9">
             <property role="TrG5h" value="cncs" />
             <node concept="2I9FWS" id="5PyBcyXvPLQ" role="1tU5fm">
-              <ref role="2I9WkF" to="vs0r:2GIWVTRH8Wo" resolve="IControlledNamedConcept" />
+              <ref role="2I9WkF" to="v783:5PyBcyXw9GG" resolve="IControlledNamedConcept" />
             </node>
             <node concept="2OqwBi" id="5PyBcyXvPLR" role="33vP2m">
               <node concept="2OqwBi" id="5PyBcyXvPLS" role="2Oq$k0">
@@ -2253,7 +2254,7 @@
                 <node concept="I4A8Y" id="5PyBcyXvPLU" role="2OqNvi" />
               </node>
               <node concept="1j9C0f" id="5PyBcyXvPLV" role="2OqNvi">
-                <ref role="1j9C0d" to="vs0r:2GIWVTRH8Wo" resolve="IControlledNamedConcept" />
+                <ref role="1j9C0d" to="v783:5PyBcyXw9GG" resolve="IControlledNamedConcept" />
               </node>
             </node>
           </node>
@@ -2318,7 +2319,7 @@
                   </node>
                   <node concept="3CFZ6_" id="5PyBcyXvPMm" role="2OqNvi">
                     <node concept="3CFTII" id="5PyBcyXvPMn" role="3CFYIz">
-                      <ref role="3CFTIH" to="vs0r:2GIWVTRHgNL" resolve="ControlledNameAttribute" />
+                      <ref role="3CFTIH" to="v783:5PyBcyXw9JW" resolve="ControlledNameAttribute" />
                       <node concept="29tlS8" id="5PyBcyXvPMo" role="3CFTIG">
                         <ref role="29tlSa" to="tpck:h0TrG11" resolve="name" />
                       </node>

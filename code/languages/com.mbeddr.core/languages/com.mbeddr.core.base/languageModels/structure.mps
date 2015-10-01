@@ -19,6 +19,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" implicit="true" />
     <import index="hba4" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.structure)" implicit="true" />
+    <import index="v783" ref="r:8722a626-df20-42dc-8c8e-d8150854eabc(com.mbeddr.mpsutil.controlledName.structure)" implicit="true" />
     <import index="10jo" ref="r:6e32694b-6dd1-4530-b48f-4e3bf97b2744(com.mbeddr.mpsutil.jung.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
@@ -333,11 +334,17 @@
     <node concept="PrWs8" id="7uYRIghZpWr" role="PrDN$">
       <ref role="PrY4T" to="9f2s:5PyBcyXvTSR" resolve="IIdentifierNamedConcept" />
     </node>
+    <node concept="asaX9" id="5PyBcyXw9U$" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.controlledName&quot;" />
+    </node>
   </node>
   <node concept="PlHQZ" id="7uYRIghZq9a">
     <property role="TrG5h" value="INameFirstCharUpperCase" />
     <node concept="PrWs8" id="7uYRIghZq9b" role="PrDN$">
       <ref role="PrY4T" to="9f2s:5PyBcyXvTSR" resolve="IIdentifierNamedConcept" />
+    </node>
+    <node concept="asaX9" id="5PyBcyXw9VW" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.controlledName&quot;" />
     </node>
   </node>
   <node concept="PlHQZ" id="7uYRIghZq9c">
@@ -345,9 +352,15 @@
     <node concept="PrWs8" id="7uYRIghZq9d" role="PrDN$">
       <ref role="PrY4T" to="9f2s:5PyBcyXvTSR" resolve="IIdentifierNamedConcept" />
     </node>
+    <node concept="asaX9" id="5PyBcyXw9Tc" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.controlledName&quot;" />
+    </node>
   </node>
   <node concept="PlHQZ" id="4qSf1u1TQeO">
     <property role="TrG5h" value="IContainerOfUniqueNames" />
+    <node concept="asaX9" id="5PyBcyXw9Xk" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.controlledName&quot;" />
+    </node>
   </node>
   <node concept="PlHQZ" id="4qSf1u208SI">
     <property role="3GE5qa" value="config" />
@@ -1283,6 +1296,9 @@
     <node concept="PrWs8" id="2GIWVTRHg35" role="PrDN$">
       <ref role="PrY4T" to="9f2s:5PyBcyXvTSR" resolve="IIdentifierNamedConcept" />
     </node>
+    <node concept="asaX9" id="5PyBcyXw9Qn" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.controlledName&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2GIWVTRHgNL">
     <property role="3GE5qa" value="controlledName" />
@@ -1305,6 +1321,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2GIWVTRHgZm" resolve="IControlledName" />
     </node>
+    <node concept="asaX9" id="5PyBcyXw9M5" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.controlledName&quot;" />
+    </node>
   </node>
   <node concept="PlHQZ" id="2GIWVTRHgZm">
     <property role="3GE5qa" value="controlledName" />
@@ -1312,10 +1331,16 @@
     <node concept="PrWs8" id="2GIWVTRHgZn" role="PrDN$">
       <ref role="PrY4T" to="9f2s:5PyBcyXvTSR" resolve="IIdentifierNamedConcept" />
     </node>
+    <node concept="asaX9" id="5PyBcyXw9NB" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.controlledName&quot;" />
+    </node>
   </node>
   <node concept="PlHQZ" id="2GIWVTRLmhU">
     <property role="3GE5qa" value="controlledName" />
     <property role="TrG5h" value="IControlledNameProvider" />
+    <node concept="asaX9" id="5PyBcyXw9OZ" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.controlledName&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7ii2FhSRITu">
     <property role="3GE5qa" value="controlledName" />
@@ -1334,7 +1359,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="cnc" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2GIWVTRH8Wo" resolve="IControlledNamedConcept" />
+      <ref role="20lvS9" to="v783:5PyBcyXw9GG" resolve="IControlledNamedConcept" />
     </node>
     <node concept="asaX9" id="5PyBcyXvTxm" role="lGtFl">
       <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.assessment&quot;" />
@@ -1347,6 +1372,9 @@
     <node concept="1TJgyi" id="2tP2JaaEo0u" role="1TKVEl">
       <property role="TrG5h" value="suffix" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="asaX9" id="5PyBcyXw9RJ" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.controlledName&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="5lKnBeAtNw8">

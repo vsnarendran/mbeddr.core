@@ -17,6 +17,7 @@
     <import index="dqn8" ref="r:6f177fc3-8a05-4826-8d08-fd8676623247(com.mbeddr.mpsutil.suppresswarning.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" implicit="true" />
+    <import index="v783" ref="r:8722a626-df20-42dc-8c8e-d8150854eabc(com.mbeddr.mpsutil.controlledName.structure)" implicit="true" />
     <import index="30xn" ref="r:eadab8e9-5ad6-44ab-a83f-3acbfaf545f2(com.mbeddr.mpsutil.chunk.behavior)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
@@ -533,7 +534,7 @@
             </node>
             <node concept="1mIQ4w" id="7uYRIghZpX6" role="2OqNvi">
               <node concept="chp4Y" id="7uYRIghZpX8" role="cj9EA">
-                <ref role="cht4Q" to="vs0r:7uYRIghZpWq" resolve="INameFirstCharLowerCase" />
+                <ref role="cht4Q" to="v783:5PyBcyXw9JS" resolve="INameFirstCharLowerCase" />
               </node>
             </node>
           </node>
@@ -601,7 +602,7 @@
             </node>
             <node concept="1mIQ4w" id="7uYRIghZq8M" role="2OqNvi">
               <node concept="chp4Y" id="7uYRIghZq9e" role="cj9EA">
-                <ref role="cht4Q" to="vs0r:7uYRIghZq9a" resolve="INameFirstCharUpperCase" />
+                <ref role="cht4Q" to="v783:5PyBcyXw9JU" resolve="INameFirstCharUpperCase" />
               </node>
             </node>
           </node>
@@ -669,7 +670,7 @@
             </node>
             <node concept="1mIQ4w" id="7uYRIghZq9i" role="2OqNvi">
               <node concept="chp4Y" id="7uYRIghZq9E" role="cj9EA">
-                <ref role="cht4Q" to="vs0r:7uYRIghZq9c" resolve="INameAllUpperCase" />
+                <ref role="cht4Q" to="v783:5PyBcyXw9zM" resolve="INameAllUpperCase" />
               </node>
             </node>
           </node>
