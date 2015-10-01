@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.core.base" uuid="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" version="72">
+<language namespace="com.mbeddr.core.base" uuid="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" version="82">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />
@@ -72,6 +72,7 @@
     <dependency reexport="false">3931c0ce-442c-4a4e-9e47-60d20030cf4a(com.mbeddr.mpsutil.nodelist)</dependency>
     <dependency reexport="false">a7b1b5c5-4d11-46ef-b36a-5335e107a4af(com.mbeddr.mpsutil.outline)</dependency>
     <dependency reexport="false">97a3ea5c-1731-443d-baf9-12fff7d3a08a(com.mbeddr.mpsutil.paragraph)</dependency>
+    <dependency reexport="false">22bab7cd-7ed6-44a7-8497-d6d79e8f4b15(com.mbeddr.mpsutil.pathAndFile)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>

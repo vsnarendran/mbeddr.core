@@ -8278,8 +8278,8 @@
       <node concept="l2Vlx" id="5lKnBeAuncQ" role="2iSdaV" />
       <node concept="3F0A7n" id="5lKnBeAus76" role="3EZMnx">
         <property role="1O74Pk" value="true" />
-        <ref role="1NtTu8" to="vs0r:5lKnBeAtODI" resolve="path" />
         <ref role="34QXea" node="50N_nP$el$O" resolve="openOrEdit" />
+        <ref role="1NtTu8" to="vs0r:5lKnBeAtODI" resolve="path" />
         <node concept="OXEIz" id="5lKnBeAvqDS" role="P5bDN">
           <node concept="PvTIS" id="5lKnBeAvqE0" role="OY2wv">
             <node concept="MLZmj" id="5lKnBeAvqE1" role="PvTIR">
