@@ -16,7 +16,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.buildutil/com.mbeddr.mpsutil.buildutil.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.chunk/com.mbeddr.mpsutil.chunk.mpl" folder="zz_splitCoreBase" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.codereview/com.mbeddr.mpsutil.codereview.mpl" folder="zz_splitCoreBase" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.commentable/com.mbeddr.mpsutil.commentable.mpl" folder="zz_splitCoreBase" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.commentable/com.mbeddr.mpsutil.commentable.mpl" folder="zz_splitCoreBase.commentable" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.compare/compare.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.conceptdiagram.sandbox/com.mbeddr.mpsutil.conceptdiagram.sandbox.mpl" folder="conceptdiagram" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.conceptdiagram/com.mbeddr.mpsutil.conceptdiagram.mpl" folder="conceptdiagram" />
@@ -100,6 +100,7 @@
       <modulePath path="$PROJECT_DIR$/languages/doc.com.mbeddr.mpsutil.multilingual.lang/doc.com.mbeddr.mpsutil.multilingual.lang.mpl" folder="multilingual" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.actionsfilter.runtime/com.mbeddr.mpsutil.actionsfilter.runtime.msd" folder="actionsfilter" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.breadcrumb.runtime/com.mbeddr.mpsutil.breadcrumb.runtime.msd" folder="breadcrumb" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.commentable.pluginSolution/com.mbeddr.mpsutil.commentable.pluginSolution.msd" folder="zz_splitCoreBase.commentable" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.common/com.mbeddr.mpsutil.common.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.comparator/comparator.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.contextactions.runtime/com.mbeddr.mpsutil.contextactions.runtime.msd" folder="contextActions" />
