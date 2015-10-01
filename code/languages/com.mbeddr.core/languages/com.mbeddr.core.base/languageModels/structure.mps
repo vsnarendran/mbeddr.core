@@ -15,11 +15,11 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="kwxp" ref="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="10jo" ref="r:6e32694b-6dd1-4530-b48f-4e3bf97b2744(com.mbeddr.mpsutil.jung.structure)" implicit="true" />
-    <import index="hba4" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="hba4" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.structure)" implicit="true" />
+    <import index="10jo" ref="r:6e32694b-6dd1-4530-b48f-4e3bf97b2744(com.mbeddr.mpsutil.jung.structure)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -142,7 +142,9 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
         <property id="6054523464626875854" name="value" index="tnX3d" />
       </concept>
@@ -979,6 +981,9 @@
     <node concept="PrWs8" id="6iaOvgbfH65" role="PzmwI">
       <ref role="PrY4T" node="3Y7ywckEJZi" resolve="IKeepAliveInGeneration" />
     </node>
+    <node concept="asaX9" id="5PyBcyXvTjX" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.assessment&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="K292flwCEW">
     <property role="3GE5qa" value="assessment" />
@@ -1034,12 +1039,18 @@
     <node concept="PrWs8" id="E67pIUGCcj" role="PzmwI">
       <ref role="PrY4T" node="3m8H$lmFM60" resolve="IDocumentable" />
     </node>
+    <node concept="asaX9" id="5PyBcyXvTgw" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.assessment&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="K292flwD4r">
     <property role="3GE5qa" value="assessment" />
     <property role="TrG5h" value="AssessmentQuery" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="5PyBcyXvTi_" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.assessment&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="K292flwDNu">
     <property role="3GE5qa" value="assessment" />
@@ -1073,12 +1084,18 @@
       <property role="TrG5h" value="lastFound" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="asaX9" id="5PyBcyXvTmM" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.assessment&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="K292flwHw9">
     <property role="3GE5qa" value="assessment" />
     <property role="TrG5h" value="AssessmentResult" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="5PyBcyXvTlq" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.assessment&quot;" />
+    </node>
   </node>
   <node concept="AxPO7" id="7hIyKqbGnzX">
     <property role="3GE5qa" value="assessment" />
@@ -1102,6 +1119,9 @@
     <property role="TrG5h" value="VisualizationQuery" />
     <property role="34LRSv" value="visualization" />
     <ref role="1TJDcQ" node="K292flwD4r" resolve="AssessmentQuery" />
+    <node concept="asaX9" id="5PyBcyXvTdF" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.assessment&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3jNX2XuLA_R">
     <property role="3GE5qa" value="assessment.vis" />
@@ -1116,12 +1136,18 @@
     <node concept="PrWs8" id="3jNX2XuLHBc" role="PzmwI">
       <ref role="PrY4T" to="kwxp:2N1CSrzPN_8" resolve="IVisualizable" />
     </node>
+    <node concept="asaX9" id="5PyBcyXvTf3" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.assessment&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="_gCXGjnZUS">
     <property role="3GE5qa" value="assessment" />
     <property role="TrG5h" value="AssessmentSummary" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="5PyBcyXvToC" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.assessment&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="_gCXGjoJQU">
     <property role="3GE5qa" value="assessment" />
@@ -1139,6 +1165,9 @@
     <node concept="1TJgyi" id="_gCXGjoJQZ" role="1TKVEl">
       <property role="TrG5h" value="newlyAdded" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="asaX9" id="5PyBcyXvTq0" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.assessment&quot;" />
     </node>
   </node>
   <node concept="PlHQZ" id="IviauXabd">
@@ -1244,6 +1273,9 @@
     <property role="TrG5h" value="ControlledNameAssQuery" />
     <property role="34LRSv" value="controlled names with own names" />
     <ref role="1TJDcQ" node="K292flwD4r" resolve="AssessmentQuery" />
+    <node concept="asaX9" id="5PyBcyXvTvY" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.assessment&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7ii2FhSRXRG">
     <property role="3GE5qa" value="controlledName" />
@@ -1254,6 +1286,9 @@
       <property role="20kJfa" value="cnc" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2GIWVTRH8Wo" resolve="IControlledNamedConcept" />
+    </node>
+    <node concept="asaX9" id="5PyBcyXvTxm" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.assessment&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="2tP2JaaEnNL">
@@ -1394,6 +1429,9 @@
     <property role="TrG5h" value="CheckHashAssessmentQuery" />
     <property role="34LRSv" value="check external references" />
     <ref role="1TJDcQ" node="K292flwD4r" resolve="AssessmentQuery" />
+    <node concept="asaX9" id="5PyBcyXvTt4" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.assessment&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="GKLijSw8su">
     <property role="3GE5qa" value="exref" />
@@ -1408,6 +1446,9 @@
       <property role="20kJfa" value="exref" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="GKLijS$AT1" resolve="IExtRef" />
+    </node>
+    <node concept="asaX9" id="5PyBcyXvTus" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.assessment&quot;" />
     </node>
   </node>
   <node concept="AxPO7" id="GKLijSwpYG">
@@ -1488,6 +1529,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
+    <node concept="asaX9" id="5PyBcyXvT$g" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.assessment&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4g52gaNQxok">
     <property role="3GE5qa" value="codereview" />
@@ -1499,6 +1543,9 @@
       <property role="20kJfa" value="scope" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7nkDZJXluO4" resolve="AssessmentScope" />
+    </node>
+    <node concept="asaX9" id="5PyBcyXvTyN" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.assessment&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="4g52gaNN$a$">
@@ -1600,18 +1647,27 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="asaX9" id="5PyBcyXvT6I" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.assessment&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7nkDZJXluRd">
     <property role="3GE5qa" value="assessment.scope" />
     <property role="TrG5h" value="CurrentModelScope" />
     <property role="34LRSv" value="current model" />
     <ref role="1TJDcQ" node="7nkDZJXluO4" resolve="AssessmentScope" />
+    <node concept="asaX9" id="5PyBcyXvT9z" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.assessment&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7nkDZJXlwca">
     <property role="3GE5qa" value="assessment.scope" />
     <property role="TrG5h" value="CurrentModelScopeAndImported" />
     <property role="34LRSv" value="current model and imported" />
     <ref role="1TJDcQ" node="7nkDZJXluO4" resolve="AssessmentScope" />
+    <node concept="asaX9" id="5PyBcyXvTaV" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.assessment&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7nkDZJXlCyb">
     <property role="3GE5qa" value="assessment.scope" />
@@ -1623,6 +1679,9 @@
       <property role="20kJfa" value="chunk" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6clJcrJYOUA" resolve="Chunk" />
+    </node>
+    <node concept="asaX9" id="5PyBcyXvT86" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.assessment&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="gjBy3TfZQv">
@@ -1680,6 +1739,9 @@
     <property role="TrG5h" value="ProjectScope" />
     <property role="34LRSv" value="project" />
     <ref role="1TJDcQ" node="7nkDZJXluO4" resolve="AssessmentScope" />
+    <node concept="asaX9" id="5PyBcyXvTcj" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.assessment&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4$VRXeHdyxr">
     <property role="3GE5qa" value="metrics" />
@@ -1690,6 +1752,9 @@
     <node concept="1TJgyi" id="4$VRXeGZSJ1" role="1TKVEl">
       <property role="TrG5h" value="data" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="asaX9" id="5PyBcyXvTrB" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.assessment&quot;" />
     </node>
   </node>
   <node concept="PlHQZ" id="6ucVliiGuzs">
