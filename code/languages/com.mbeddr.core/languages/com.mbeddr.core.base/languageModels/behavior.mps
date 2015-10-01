@@ -63,6 +63,7 @@
     <import index="hba4" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.structure)" />
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" implicit="true" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
+    <import index="gm3l" ref="r:fcef1631-c04d-4b3d-9a40-2abe930a5a53(com.mbeddr.mpsutil.commentable.structure)" implicit="true" />
     <import index="sct6" ref="r:1b10995f-8da6-4ab0-8822-bce965238ddc(com.mbeddr.mpsutil.codereview.structure)" implicit="true" />
     <import index="30xn" ref="r:eadab8e9-5ad6-44ab-a83f-3acbfaf545f2(com.mbeddr.mpsutil.chunk.behavior)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
@@ -10452,7 +10453,7 @@
               <node concept="2Xjw5R" id="3YJIrc15o3l" role="2OqNvi">
                 <node concept="1xMEDy" id="3YJIrc15o3n" role="1xVPHs">
                   <node concept="chp4Y" id="3YJIrc15o40" role="ri$Ld">
-                    <ref role="cht4Q" to="vs0r:65XyadYMMYF" resolve="ICommentedCode" />
+                    <ref role="cht4Q" to="gm3l:5PyBcyXw96n" resolve="ICommentedCode" />
                   </node>
                 </node>
               </node>

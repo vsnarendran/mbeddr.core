@@ -247,6 +247,9 @@
   <node concept="PlHQZ" id="65XyadYMMYC">
     <property role="TrG5h" value="ICommentable" />
     <property role="3GE5qa" value="commenting" />
+    <node concept="asaX9" id="5PyBcyXw96R" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.commentable&quot;" />
+    </node>
   </node>
   <node concept="PlHQZ" id="65XyadYMMYF">
     <property role="TrG5h" value="ICommentedCode" />
@@ -262,6 +265,9 @@
     </node>
     <node concept="PrWs8" id="57qKfjsit$N" role="PrDN$">
       <ref role="PrY4T" to="hba4:243ufko$AbV" resolve="IDeprecatedLangConcept" />
+    </node>
+    <node concept="asaX9" id="5PyBcyXw98f" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.commentable&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="3m8H$lmFM5W">
@@ -1851,6 +1857,9 @@
   <node concept="PlHQZ" id="3RtPbXOi5Ir">
     <property role="3GE5qa" value="commenting" />
     <property role="TrG5h" value="ITriggerCommenting" />
+    <node concept="asaX9" id="5PyBcyXw99G" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.commentable&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3RdDJSz0aZf">
     <property role="TrG5h" value="KeepAliveInGeneration" />

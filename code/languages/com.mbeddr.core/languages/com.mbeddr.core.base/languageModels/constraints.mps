@@ -13,6 +13,7 @@
     <import index="9zoj" ref="r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="gm3l" ref="r:fcef1631-c04d-4b3d-9a40-2abe930a5a53(com.mbeddr.mpsutil.commentable.structure)" implicit="true" />
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
@@ -289,7 +290,7 @@
               <node concept="EsrRn" id="65XyadYNwrz" role="2Oq$k0" />
               <node concept="1mIQ4w" id="65XyadYNwrC" role="2OqNvi">
                 <node concept="chp4Y" id="65XyadYNwrE" role="cj9EA">
-                  <ref role="cht4Q" to="vs0r:65XyadYMMYF" resolve="ICommentedCode" />
+                  <ref role="cht4Q" to="gm3l:5PyBcyXw96n" resolve="ICommentedCode" />
                 </node>
               </node>
             </node>
