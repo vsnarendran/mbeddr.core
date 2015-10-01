@@ -16,6 +16,7 @@
     <import index="kwxp" ref="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
     <import index="l0z4" ref="r:5555416b-550a-4beb-84ca-00869ce96636(com.mbeddr.mpsutil.assessment.structure)" implicit="true" />
+    <import index="sct6" ref="r:1b10995f-8da6-4ab0-8822-bce965238ddc(com.mbeddr.mpsutil.codereview.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="ki2h" ref="r:108c1d36-553d-4cd6-bfd5-8b2bd0fe3bb2(com.mbeddr.mpsutil.externalReference.structure)" implicit="true" />
     <import index="v783" ref="r:8722a626-df20-42dc-8c8e-d8150854eabc(com.mbeddr.mpsutil.controlledName.structure)" implicit="true" />
@@ -36,14 +37,6 @@
       </concept>
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
-      </concept>
-      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
-        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
-        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
-        <child id="1083172003582" name="member" index="M5hS2" />
-      </concept>
-      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
-        <property id="1083923523172" name="externalValue" index="1uS6qo" />
       </concept>
       <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
         <property id="7588428831955550663" name="role" index="Hh88m" />
@@ -985,7 +978,7 @@
     </node>
     <node concept="1TJgyi" id="fx1tsHglwA" role="1TKVEl">
       <property role="TrG5h" value="lastReviewState" />
-      <ref role="AX2Wp" node="1tDstbgKlCo" resolve="CodeState" />
+      <ref role="AX2Wp" to="sct6:1tDstbgKlCo" resolve="CodeState" />
     </node>
     <node concept="1TJgyi" id="4g52gaNPEri" role="1TKVEl">
       <property role="TrG5h" value="reviewIsCurrent" />
@@ -993,7 +986,7 @@
     </node>
     <node concept="1TJgyi" id="1tDstbgKluR" role="1TKVEl">
       <property role="TrG5h" value="codeState" />
-      <ref role="AX2Wp" node="1tDstbgKlCo" resolve="CodeState" />
+      <ref role="AX2Wp" to="sct6:1tDstbgKlCo" resolve="CodeState" />
     </node>
     <node concept="M6xJ_" id="4g52gaNN$a_" role="lGtFl">
       <property role="Hh88m" value="codereview" />
@@ -1030,6 +1023,9 @@
     <node concept="PrWs8" id="6Zp2pzGGqb$" role="PzmwI">
       <ref role="PrY4T" to="newt:5PyBcyXwaAe" resolve="IMbeddrIDERoot" />
     </node>
+    <node concept="asaX9" id="5PyBcyXwaO6" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.nodelist&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6Zp2pzGGYLx">
     <property role="3GE5qa" value="nodelist" />
@@ -1050,6 +1046,9 @@
     <node concept="PrWs8" id="6Zp2pzGGYPF" role="PzmwI">
       <ref role="PrY4T" to="9f2s:5PyBcyXvTSR" resolve="IIdentifierNamedConcept" />
     </node>
+    <node concept="asaX9" id="5PyBcyXwaM$" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.nodelist&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6Zp2pzGHhAE">
     <property role="3GE5qa" value="nodelist" />
@@ -1064,6 +1063,9 @@
     <node concept="1TJgyi" id="6Zp2pzGHhAK" role="1TKVEl">
       <property role="TrG5h" value="text" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="asaX9" id="5PyBcyXwaPz" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.nodelist&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="7nkDZJXluO4">
@@ -1136,21 +1138,6 @@
     </node>
     <node concept="asaX9" id="5PyBcyXw8Qq" role="lGtFl">
       <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.codereview&quot;" />
-    </node>
-  </node>
-  <node concept="AxPO7" id="1tDstbgKlCo">
-    <property role="3GE5qa" value="codereview" />
-    <property role="TrG5h" value="CodeState" />
-    <property role="3lZH7k" value="derive_from_presentation" />
-    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-    <node concept="M4N5e" id="1tDstbgKlCp" role="M5hS2">
-      <property role="1uS6qo" value="raw" />
-    </node>
-    <node concept="M4N5e" id="1tDstbgKlCq" role="M5hS2">
-      <property role="1uS6qo" value="ready" />
-    </node>
-    <node concept="M4N5e" id="1tDstbgKlCv" role="M5hS2">
-      <property role="1uS6qo" value="reviewed" />
     </node>
   </node>
   <node concept="1TIwiD" id="1JcbkuyFcOM">
