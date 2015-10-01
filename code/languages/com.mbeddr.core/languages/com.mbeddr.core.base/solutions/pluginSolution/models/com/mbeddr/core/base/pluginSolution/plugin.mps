@@ -542,10 +542,6 @@
         <reference id="3897771026684508452" name="hintCollection" index="33glcW" />
         <reference id="3897771026684508454" name="hint" index="33glcY" />
       </concept>
-      <concept id="7518061998923573137" name="com.mbeddr.mpsutil.refactoring.structure.RefactoringAction" flags="ng" index="1lpA8v">
-        <reference id="7518061998923573138" name="refactoring" index="1lpA8s" />
-        <child id="7518061998923573139" name="shortcut" index="1lpA8t" />
-      </concept>
     </language>
     <language id="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1" name="com.mbeddr.mpsutil.spreferences">
       <concept id="5615086488402953540" name="com.mbeddr.mpsutil.spreferences.structure.PreferencesRootExpression" flags="ng" index="9H$SH">
@@ -597,42 +593,6 @@
     </language>
   </registry>
   <node concept="2DaZZR" id="1ptFCtLqslV" />
-  <node concept="1lpA8v" id="6xlxoSXdgcY">
-    <property role="TrG5h" value="Add Documentation" />
-    <property role="3GE5qa" value="documentationStuff" />
-    <ref role="1lpA8s" to="fgky:3m8H$lmIhYg" resolve="addDocuemntation" />
-    <node concept="pLAjd" id="6xlxoSXdgd0" role="1lpA8t">
-      <property role="pLAjc" value="ctrl" />
-      <property role="pLAjf" value="VK_A" />
-    </node>
-  </node>
-  <node concept="1lpA8v" id="6xlxoSXdgd1">
-    <property role="TrG5h" value="Comment In" />
-    <property role="3GE5qa" value="documentationStuff" />
-    <ref role="1lpA8s" to="fgky:65XyadYNwBF" resolve="commentBackInCode" />
-    <node concept="pLAjd" id="6xlxoSXdgd2" role="1lpA8t">
-      <property role="pLAjf" value="VK_C" />
-      <property role="pLAjc" value="ctrl+alt" />
-    </node>
-  </node>
-  <node concept="1lpA8v" id="6xlxoSXdgd3">
-    <property role="TrG5h" value="Comment In" />
-    <property role="3GE5qa" value="documentationStuff" />
-    <ref role="1lpA8s" to="fgky:MGIVVaAnY" resolve="commentBackInCodeOnOriginal" />
-    <node concept="pLAjd" id="6xlxoSXdgd4" role="1lpA8t">
-      <property role="pLAjf" value="VK_C" />
-      <property role="pLAjc" value="ctrl+alt" />
-    </node>
-  </node>
-  <node concept="1lpA8v" id="6xlxoSXdgd7">
-    <property role="TrG5h" value="Comment Out" />
-    <property role="3GE5qa" value="documentationStuff" />
-    <ref role="1lpA8s" to="fgky:65XyadYMNlZ" resolve="commentedOutCode" />
-    <node concept="pLAjd" id="6xlxoSXdgd8" role="1lpA8t">
-      <property role="pLAjf" value="VK_C" />
-      <property role="pLAjc" value="ctrl+alt" />
-    </node>
-  </node>
   <node concept="312cEu" id="58syclRv9F3">
     <property role="TrG5h" value="MbeddrTodoFinder" />
     <property role="3GE5qa" value="todoAndLOC" />
