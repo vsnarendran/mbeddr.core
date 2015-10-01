@@ -4,18 +4,19 @@
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
   </languages>
   <imports>
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="mvyx" ref="r:bd8ad793-75bc-45ee-9eca-d0f67c7eb1d2(com.mbeddr.mpsutil.platform.pluginSolution.plugin)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" implicit="true" />
-    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" implicit="true" />
     <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" implicit="true" />
     <import index="unno" ref="r:61e3d524-8c49-4491-b5e3-f6d6e9364527(jetbrains.mps.util)" implicit="true" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" implicit="true" />
-    <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -257,14 +258,14 @@
     <property role="3GE5qa" value="terminal" />
     <property role="TrG5h" value="openTerminal" />
     <node concept="Zd509" id="6wvhQs7nVXu" role="Zd508">
-      <ref role="1bYAoF" to="d244:7uLL3Mf2Fyf" resolve="openTerminalForModelOutput" />
+      <ref role="1bYAoF" node="7uLL3Mf2Fyf" resolve="openTerminalForModelOutput" />
       <node concept="pLAjd" id="6wvhQs7nVXv" role="Zd501">
         <property role="pLAjc" value="ctrl+alt" />
         <property role="pLAjf" value="VK_T" />
       </node>
     </node>
     <node concept="Zd509" id="6wvhQs7nVXw" role="Zd508">
-      <ref role="1bYAoF" to="d244:7uLL3Mf2tAp" resolve="openTerminalForModule" />
+      <ref role="1bYAoF" node="7uLL3Mf2tAp" resolve="openTerminalForModule" />
       <node concept="pLAjd" id="6wvhQs7nVXx" role="Zd501">
         <property role="pLAjc" value="ctrl+alt" />
         <property role="pLAjf" value="VK_T" />
@@ -346,8 +347,8 @@
         </node>
         <node concept="3clFbF" id="7uLL3Mf2Q$b" role="3cqZAp">
           <node concept="2YIFZM" id="7uLL3Mf2Q$d" role="3clFbG">
-            <ref role="37wK5l" to="d244:7uLL3Mf2K4Z" resolve="openTerminalInPath" />
-            <ref role="1Pybhc" to="d244:7uLL3Mf2K4X" resolve="TerminalOpener" />
+            <ref role="1Pybhc" node="7uLL3Mf2K4X" resolve="TerminalOpener" />
+            <ref role="37wK5l" node="7uLL3Mf2K4Z" resolve="openTerminalInPath" />
             <node concept="2OqwBi" id="7uLL3Mf2Q$h" role="37wK5m">
               <node concept="2WthIp" id="7uLL3Mf2Q$i" role="2Oq$k0" />
               <node concept="1DTwFV" id="7uLL3Mf2Q$j" role="2OqNvi">
@@ -423,8 +424,8 @@
         </node>
         <node concept="3clFbF" id="7uLL3Mf2LS$" role="3cqZAp">
           <node concept="2YIFZM" id="7uLL3Mf2LSA" role="3clFbG">
-            <ref role="37wK5l" to="d244:7uLL3Mf2K4Z" resolve="openTerminalInPath" />
-            <ref role="1Pybhc" to="d244:7uLL3Mf2K4X" resolve="TerminalOpener" />
+            <ref role="1Pybhc" node="7uLL3Mf2K4X" resolve="TerminalOpener" />
+            <ref role="37wK5l" node="7uLL3Mf2K4Z" resolve="openTerminalInPath" />
             <node concept="2OqwBi" id="7uLL3Mf2LSB" role="37wK5m">
               <node concept="2WthIp" id="7uLL3Mf2LSC" role="2Oq$k0" />
               <node concept="1DTwFV" id="7uLL3Mf2LSD" role="2OqNvi">
@@ -457,12 +458,12 @@
     <property role="TrG5h" value="terminalForModel" />
     <node concept="ftmFs" id="7uLL3Mf2PnY" role="ftER_">
       <node concept="tCFHf" id="7uLL3Mf2Po3" role="ftvYc">
-        <ref role="tCJdB" to="d244:7uLL3Mf2Fyf" resolve="openTerminalForModelOutput" />
+        <ref role="tCJdB" node="7uLL3Mf2Fyf" resolve="openTerminalForModelOutput" />
       </node>
     </node>
     <node concept="tT9cl" id="7uLL3Mf2Po1" role="2f5YQi">
-      <ref role="tU$_T" to="d244:goNQ8fiCdc" resolve="mbeddrPlatformModelGroup" />
-      <ref role="2f8Tey" to="d244:goNQ8fiCdf" resolve="mbeddrPlatformModelExtensions" />
+      <ref role="tU$_T" to="mvyx:goNQ8fiCdc" resolve="mbeddrPlatformModelGroup" />
+      <ref role="2f8Tey" to="mvyx:goNQ8fiCdf" resolve="mbeddrPlatformModelExtensions" />
     </node>
   </node>
   <node concept="tC5Ba" id="7uLL3Mf2Aq0">
@@ -470,12 +471,12 @@
     <property role="TrG5h" value="terminalForModule" />
     <node concept="ftmFs" id="7uLL3Mf2Aq3" role="ftER_">
       <node concept="tCFHf" id="7uLL3Mf2Aq4" role="ftvYc">
-        <ref role="tCJdB" to="d244:7uLL3Mf2tAp" resolve="openTerminalForModule" />
+        <ref role="tCJdB" node="7uLL3Mf2tAp" resolve="openTerminalForModule" />
       </node>
     </node>
     <node concept="tT9cl" id="7uLL3Mf2Aq5" role="2f5YQi">
-      <ref role="tU$_T" to="d244:goNQ8fiE3l" resolve="mbeddrPlatformSolutionGroup" />
-      <ref role="2f8Tey" to="d244:goNQ8fiE3o" resolve="mbeddrPlatformSolutionExtensions" />
+      <ref role="tU$_T" to="mvyx:goNQ8fiE3l" resolve="mbeddrPlatformSolutionGroup" />
+      <ref role="2f8Tey" to="mvyx:goNQ8fiE3o" resolve="mbeddrPlatformSolutionExtensions" />
     </node>
   </node>
   <node concept="312cEu" id="7uLL3Mf2K4X">
@@ -957,7 +958,7 @@
                   <node concept="3cpWs8" id="4p1DAc3IqND" role="3cqZAp">
                     <node concept="3cpWsn" id="4p1DAc3IqNE" role="3cpWs9">
                       <property role="TrG5h" value="workingDir" />
-                      <node concept="3uibUv" id="4p1DAc3IqNF" role="1tU5fm">
+                      <node concept="3uibUv" id="6VIoj$vLvIU" role="1tU5fm">
                         <ref role="3uigEE" to="guwi:~File" resolve="File" />
                       </node>
                       <node concept="2ShNRf" id="4p1DAc3Ir_F" role="33vP2m">
@@ -1100,7 +1101,7 @@
       </node>
       <node concept="37vLTG" id="7uLL3Mf2K6U" role="3clF46">
         <property role="TrG5h" value="proj" />
-        <node concept="3uibUv" id="5zgShfc3St6" role="1tU5fm">
+        <node concept="3uibUv" id="6VIoj$vLwKV" role="1tU5fm">
           <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
         </node>
       </node>
