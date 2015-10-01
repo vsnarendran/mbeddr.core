@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.core.base" uuid="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" version="67">
+<language namespace="com.mbeddr.core.base" uuid="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" version="70">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />
@@ -70,6 +70,7 @@
     <dependency reexport="false">50703665-60da-41b5-ba25-be1e64ea9089(com.mbeddr.mpsutil.externalReference)</dependency>
     <dependency reexport="false">b124218e-4c2c-4976-9b26-6bb95b8a0325(com.mbeddr.mpsutil.ideEnhancement)</dependency>
     <dependency reexport="false">3931c0ce-442c-4a4e-9e47-60d20030cf4a(com.mbeddr.mpsutil.nodelist)</dependency>
+    <dependency reexport="false">a7b1b5c5-4d11-46ef-b36a-5335e107a4af(com.mbeddr.mpsutil.outline)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -137,6 +138,7 @@
     <extendedLanguage>21ac7f78-9b57-4548-86f2-e50a5e6f4b7a(com.mbeddr.mpsutil.documentable)</extendedLanguage>
     <extendedLanguage>50703665-60da-41b5-ba25-be1e64ea9089(com.mbeddr.mpsutil.externalReference)</extendedLanguage>
     <extendedLanguage>b124218e-4c2c-4976-9b26-6bb95b8a0325(com.mbeddr.mpsutil.ideEnhancement)</extendedLanguage>
+    <extendedLanguage>a7b1b5c5-4d11-46ef-b36a-5335e107a4af(com.mbeddr.mpsutil.outline)</extendedLanguage>
   </extendedLanguages>
 </language>
 

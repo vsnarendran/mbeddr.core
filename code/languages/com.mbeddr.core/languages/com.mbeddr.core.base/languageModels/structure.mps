@@ -16,6 +16,7 @@
     <import index="kwxp" ref="r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
     <import index="l0z4" ref="r:5555416b-550a-4beb-84ca-00869ce96636(com.mbeddr.mpsutil.assessment.structure)" implicit="true" />
+    <import index="1aea" ref="r:4b7ce1fd-f467-4769-b407-6954cfbe3622(com.mbeddr.mpsutil.outline.structure)" implicit="true" />
     <import index="sct6" ref="r:1b10995f-8da6-4ab0-8822-bce965238ddc(com.mbeddr.mpsutil.codereview.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="ki2h" ref="r:108c1d36-553d-4cd6-bfd5-8b2bd0fe3bb2(com.mbeddr.mpsutil.externalReference.structure)" implicit="true" />
@@ -241,7 +242,7 @@
       <ref role="PrY4T" to="tpck:2WmWrdnSpX3" resolve="ISuppressErrors" />
     </node>
     <node concept="PrWs8" id="7katCQkBK3h" role="PrDN$">
-      <ref role="PrY4T" node="1DVNPtFPUDE" resolve="IHideFromOutline" />
+      <ref role="PrY4T" to="1aea:5PyBcyXwaW_" resolve="IHideFromOutline" />
     </node>
     <node concept="PrWs8" id="2AZbPfMcw3J" role="PrDN$">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
@@ -282,14 +283,23 @@
   <node concept="PlHQZ" id="1DVNPtFPBay">
     <property role="TrG5h" value="IShowUpInOutline" />
     <property role="3GE5qa" value="outline" />
+    <node concept="asaX9" id="5PyBcyXwaZv" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.outline&quot;" />
+    </node>
   </node>
   <node concept="PlHQZ" id="1DVNPtFPJFZ">
     <property role="TrG5h" value="IOutlineRoot" />
     <property role="3GE5qa" value="outline" />
+    <node concept="asaX9" id="5PyBcyXwaY7" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.outline&quot;" />
+    </node>
   </node>
   <node concept="PlHQZ" id="1DVNPtFPUDE">
     <property role="TrG5h" value="IHideFromOutline" />
     <property role="3GE5qa" value="outline" />
+    <node concept="asaX9" id="5PyBcyXwaWJ" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.outline&quot;" />
+    </node>
   </node>
   <node concept="PlHQZ" id="36EXhjbTUWn">
     <property role="TrG5h" value="IGeneratesCodeForIDE" />

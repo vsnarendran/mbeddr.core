@@ -67,6 +67,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.multilingual.editor/com.mbeddr.mpsutil.multilingual.editor.mpl" folder="multilingual" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.nodelist/com.mbeddr.mpsutil.nodelist.mpl" folder="zz_splitCoreBase" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.nodes_tracing/com.mbeddr.mpsutil.nodes_tracing.mpl" folder="lantest" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.outline/com.mbeddr.mpsutil.outline.mpl" folder="zz_splitCoreBase" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.mpl" folder="plantuml" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.mpl" folder="preferenceform" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.process/com.mbeddr.mpsutil.process.mpl" folder="process" />
