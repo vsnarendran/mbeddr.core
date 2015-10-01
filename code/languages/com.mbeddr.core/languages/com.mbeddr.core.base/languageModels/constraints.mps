@@ -13,6 +13,7 @@
     <import index="9zoj" ref="r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
@@ -877,7 +878,7 @@
             <node concept="2OqwBi" id="7nkDZJXlDGP" role="3clFbG">
               <node concept="1Q6Npb" id="7nkDZJXlDDi" role="2Oq$k0" />
               <node concept="1j9C0f" id="7nkDZJXlDQA" role="2OqNvi">
-                <ref role="1j9C0d" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+                <ref role="1j9C0d" to="9f2s:5PyBcyXvU9q" resolve="Chunk" />
               </node>
             </node>
           </node>

@@ -24,6 +24,8 @@
     <import index="2gg1" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.errors(MPS.Core/)" />
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="30xn" ref="r:eadab8e9-5ad6-44ab-a83f-3acbfaf545f2(com.mbeddr.mpsutil.chunk.behavior)" implicit="true" />
+    <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" implicit="true" />
     <import index="p15z" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -427,7 +429,7 @@
                 <node concept="2Sf5sV" id="rK9hH142N1" role="2Oq$k0" />
                 <node concept="1mIQ4w" id="rK9hH142Ns" role="2OqNvi">
                   <node concept="chp4Y" id="rK9hH142Nu" role="cj9EA">
-                    <ref role="cht4Q" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
+                    <ref role="cht4Q" to="9f2s:5PyBcyXvUcD" resolve="IEmpty" />
                   </node>
                 </node>
               </node>
@@ -750,13 +752,13 @@
                   <node concept="2Xjw5R" id="DXZ7aOBvIi" role="2OqNvi">
                     <node concept="1xMEDy" id="DXZ7aOBvIk" role="1xVPHs">
                       <node concept="chp4Y" id="DXZ7aOBvWA" role="ri$Ld">
-                        <ref role="cht4Q" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+                        <ref role="cht4Q" to="9f2s:5PyBcyXvU9q" resolve="Chunk" />
                       </node>
                     </node>
                   </node>
                 </node>
                 <node concept="2qgKlT" id="DXZ7aOBxdJ" role="2OqNvi">
-                  <ref role="37wK5l" to="hwgx:6clJcrJYPM5" resolve="dependencies" />
+                  <ref role="37wK5l" to="30xn:5PyBcyXvU0Q" resolve="dependencies" />
                 </node>
               </node>
               <node concept="2HwmR7" id="DXZ7aOByTi" role="2OqNvi">
@@ -769,7 +771,7 @@
                             <ref role="3cqZAo" node="DXZ7aOByTm" resolve="it" />
                           </node>
                           <node concept="2qgKlT" id="DXZ7aOB$3u" role="2OqNvi">
-                            <ref role="37wK5l" to="hwgx:6clJcrJZN1z" resolve="chunk" />
+                            <ref role="37wK5l" to="30xn:5PyBcyXvUbY" resolve="chunk" />
                           </node>
                         </node>
                         <node concept="1mIQ4w" id="DXZ7aOB_lL" role="2OqNvi">
@@ -978,13 +980,13 @@
                   <node concept="2Xjw5R" id="DXZ7aOBB1K" role="2OqNvi">
                     <node concept="1xMEDy" id="DXZ7aOBB1L" role="1xVPHs">
                       <node concept="chp4Y" id="DXZ7aOBB1M" role="ri$Ld">
-                        <ref role="cht4Q" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+                        <ref role="cht4Q" to="9f2s:5PyBcyXvU9q" resolve="Chunk" />
                       </node>
                     </node>
                   </node>
                 </node>
                 <node concept="2qgKlT" id="DXZ7aOBB1N" role="2OqNvi">
-                  <ref role="37wK5l" to="hwgx:6clJcrJYPM5" resolve="dependencies" />
+                  <ref role="37wK5l" to="30xn:5PyBcyXvU0Q" resolve="dependencies" />
                 </node>
               </node>
               <node concept="2HwmR7" id="DXZ7aOBB1O" role="2OqNvi">
@@ -997,7 +999,7 @@
                             <ref role="3cqZAo" node="DXZ7aOBB1Y" resolve="it" />
                           </node>
                           <node concept="2qgKlT" id="DXZ7aOBB1V" role="2OqNvi">
-                            <ref role="37wK5l" to="hwgx:6clJcrJZN1z" resolve="chunk" />
+                            <ref role="37wK5l" to="30xn:5PyBcyXvUbY" resolve="chunk" />
                           </node>
                         </node>
                         <node concept="1mIQ4w" id="DXZ7aOBB1W" role="2OqNvi">

@@ -12,6 +12,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
+    <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -417,7 +418,7 @@
                   <node concept="3SM$VE" id="rK9hH149Jc" role="2Oq$k0" />
                   <node concept="1mIQ4w" id="rK9hH149JB" role="2OqNvi">
                     <node concept="chp4Y" id="rK9hH149JD" role="cj9EA">
-                      <ref role="cht4Q" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
+                      <ref role="cht4Q" to="9f2s:5PyBcyXvUcD" resolve="IEmpty" />
                     </node>
                   </node>
                 </node>

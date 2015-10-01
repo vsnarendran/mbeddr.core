@@ -9,6 +9,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="kwxp" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -106,7 +107,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="chunk" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+      <ref role="20lvS9" to="9f2s:5PyBcyXvU9q" resolve="Chunk" />
     </node>
   </node>
   <node concept="1TIwiD" id="5PyBcyXvP$w">
@@ -191,7 +192,7 @@
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="assessment" />
     <property role="MwhBj" value="${module}/icons/assessment.png" />
-    <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+    <ref role="1TJDcQ" to="9f2s:5PyBcyXvU9q" resolve="Chunk" />
     <node concept="1TJgyj" id="5PyBcyXvPNj" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="assessments" />
@@ -199,7 +200,7 @@
       <ref role="20lvS9" node="5PyBcyXvPRq" resolve="Assessment" />
     </node>
     <node concept="PrWs8" id="5PyBcyXvPNk" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
+      <ref role="PrY4T" to="9f2s:5PyBcyXvTSR" resolve="IIdentifierNamedConcept" />
     </node>
     <node concept="PrWs8" id="5PyBcyXvPNl" role="PzmwI">
       <ref role="PrY4T" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />
@@ -292,7 +293,7 @@
       <ref role="20lvS9" node="5PyBcyXvPI0" resolve="AssessmentSummary" />
     </node>
     <node concept="PrWs8" id="5PyBcyXvPR$" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
+      <ref role="PrY4T" to="9f2s:5PyBcyXvTSR" resolve="IIdentifierNamedConcept" />
     </node>
     <node concept="PrWs8" id="5PyBcyXvPR_" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />

@@ -52,6 +52,7 @@
     <import index="dqn8" ref="r:6f177fc3-8a05-4826-8d08-fd8676623247(com.mbeddr.mpsutil.suppresswarning.behavior)" />
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
+    <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
@@ -5226,7 +5227,7 @@
         <node concept="2JrnkZ" id="4MTwk$13QoV" role="37wK5m">
           <node concept="2OqwBi" id="4MTwk$13QoW" role="2JrQYb">
             <node concept="3TUQnm" id="4MTwk$13QoX" role="2Oq$k0">
-              <ref role="3TV0OU" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
+              <ref role="3TV0OU" to="9f2s:5PyBcyXvTSR" resolve="IIdentifierNamedConcept" />
             </node>
             <node concept="I4A8Y" id="4MTwk$13QoY" role="2OqNvi" />
           </node>
@@ -8356,8 +8357,8 @@
       </node>
       <node concept="3F0ifn" id="DubiFAY4$r" role="3EZMnx">
         <property role="3F0ifm" value="reexport" />
-        <ref role="1ERwB7" node="2A5UqXKxor1" resolve="deleteReexport" />
         <ref role="1k5W1q" node="2CEi94dgHKA" resolve="KW" />
+        <ref role="1ERwB7" node="2A5UqXKxor1" resolve="deleteReexport" />
         <node concept="pkWqt" id="DubiFB14PZ" role="pqm2j">
           <node concept="3clFbS" id="DubiFB14Q0" role="2VODD2">
             <node concept="3clFbF" id="DubiFB150E" role="3cqZAp">
