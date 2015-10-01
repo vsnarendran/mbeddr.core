@@ -21,6 +21,7 @@
     <import index="v783" ref="r:8722a626-df20-42dc-8c8e-d8150854eabc(com.mbeddr.mpsutil.controlledName.structure)" implicit="true" />
     <import index="10jo" ref="r:6e32694b-6dd1-4530-b48f-4e3bf97b2744(com.mbeddr.mpsutil.jung.structure)" implicit="true" />
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" implicit="true" />
+    <import index="newt" ref="r:d05372e5-2bac-4388-98d2-ddc5978b1595(com.mbeddr.mpsutil.ideEnhancement.structure)" implicit="true" />
     <import index="hba4" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.structure)" implicit="true" />
     <import index="9ajy" ref="r:4c477563-be1b-4908-a269-05b0aee62875(com.mbeddr.mpsutil.documentable.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
@@ -302,6 +303,9 @@
     <node concept="PrWs8" id="3Y7ywckEJZj" role="PrDN$">
       <ref role="PrY4T" node="3Y7ywckEJZi" resolve="IKeepAliveInGeneration" />
     </node>
+    <node concept="asaX9" id="5PyBcyXwaBU" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.ideEnhancement&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5aNdPeN2PoY">
     <property role="TrG5h" value="VisibilityControllingAttribute" />
@@ -354,6 +358,9 @@
   </node>
   <node concept="PlHQZ" id="3Y7ywckEJZi">
     <property role="TrG5h" value="IKeepAliveInGeneration" />
+    <node concept="asaX9" id="5PyBcyXwaDi" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.ideEnhancement&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="K292flwCEV">
     <property role="TrG5h" value="AssessmentContainer" />
@@ -371,10 +378,10 @@
       <ref role="PrY4T" to="9f2s:5PyBcyXvTSR" resolve="IIdentifierNamedConcept" />
     </node>
     <node concept="PrWs8" id="58M63C2eomB" role="PzmwI">
-      <ref role="PrY4T" node="IviauXabd" resolve="IMbeddrIDERoot" />
+      <ref role="PrY4T" to="newt:5PyBcyXwaAe" resolve="IMbeddrIDERoot" />
     </node>
     <node concept="PrWs8" id="6iaOvgbfH65" role="PzmwI">
-      <ref role="PrY4T" node="3Y7ywckEJZi" resolve="IKeepAliveInGeneration" />
+      <ref role="PrY4T" to="newt:5PyBcyXwaAg" resolve="IKeepAliveInGeneration" />
     </node>
     <node concept="asaX9" id="5PyBcyXvTjX" role="lGtFl">
       <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.assessment&quot;" />
@@ -552,6 +559,9 @@
     <property role="TrG5h" value="IMbeddrIDERoot" />
     <node concept="PrWs8" id="2A5UqXJQ4F9" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="asaX9" id="5PyBcyXwaAy" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.ideEnhancement&quot;" />
     </node>
   </node>
   <node concept="PlHQZ" id="70kXLV4LLzw">
@@ -1018,7 +1028,7 @@
       <ref role="PrY4T" to="9f2s:5PyBcyXvTSR" resolve="IIdentifierNamedConcept" />
     </node>
     <node concept="PrWs8" id="6Zp2pzGGqb$" role="PzmwI">
-      <ref role="PrY4T" node="IviauXabd" resolve="IMbeddrIDERoot" />
+      <ref role="PrY4T" to="newt:5PyBcyXwaAe" resolve="IMbeddrIDERoot" />
     </node>
   </node>
   <node concept="1TIwiD" id="6Zp2pzGGYLx">

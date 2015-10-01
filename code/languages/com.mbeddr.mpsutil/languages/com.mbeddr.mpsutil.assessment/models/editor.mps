@@ -21,6 +21,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="ki2h" ref="r:108c1d36-553d-4cd6-bfd5-8b2bd0fe3bb2(com.mbeddr.mpsutil.externalReference.structure)" implicit="true" />
+    <import index="oiph" ref="r:ba056d6d-17b2-431e-8be3-cdff041a6939(com.mbeddr.mpsutil.ideEnhancement.editor)" implicit="true" />
     <import index="h0lo" ref="r:9f92fb5e-9c32-4695-b090-eff683d75771(com.mbeddr.mpsutil.externalReference.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -1495,7 +1496,7 @@
     <node concept="3EZMnI" id="5PyBcyXvPOU" role="2wV5jI">
       <property role="S$Qs1" value="false" />
       <node concept="PMmxH" id="5PyBcyXvPOV" role="3EZMnx">
-        <ref role="PMmxG" to="r4b4:2A5UqXJPGTA" resolve="iconAndNameCell" />
+        <ref role="PMmxG" to="oiph:5PyBcyXwaAh" resolve="iconAndNameCell" />
       </node>
       <node concept="gc7cB" id="5PyBcyXvPOW" role="3EZMnx">
         <node concept="3VJUX4" id="5PyBcyXvPOX" role="3YsKMw">

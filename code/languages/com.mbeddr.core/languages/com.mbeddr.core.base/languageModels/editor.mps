@@ -55,6 +55,7 @@
     <import index="h0lo" ref="r:9f92fb5e-9c32-4695-b090-eff683d75771(com.mbeddr.mpsutil.externalReference.behavior)" implicit="true" />
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" implicit="true" />
     <import index="ki2h" ref="r:108c1d36-553d-4cd6-bfd5-8b2bd0fe3bb2(com.mbeddr.mpsutil.externalReference.structure)" implicit="true" />
+    <import index="oiph" ref="r:ba056d6d-17b2-431e-8be3-cdff041a6939(com.mbeddr.mpsutil.ideEnhancement.editor)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
@@ -3380,7 +3381,7 @@
     <node concept="3EZMnI" id="5_l8w1EmTdD" role="2wV5jI">
       <property role="S$Qs1" value="false" />
       <node concept="PMmxH" id="2A5UqXJRIPE" role="3EZMnx">
-        <ref role="PMmxG" node="2A5UqXJPGTA" resolve="iconAndNameCell" />
+        <ref role="PMmxG" to="oiph:5PyBcyXwaAh" resolve="iconAndNameCell" />
       </node>
       <node concept="gc7cB" id="3Dgh5aYj2Ho" role="3EZMnx">
         <node concept="3VJUX4" id="3Dgh5aYj2Hp" role="3YsKMw">
@@ -10767,7 +10768,7 @@
     <node concept="3EZMnI" id="6Zp2pzGH7XI" role="2wV5jI">
       <property role="S$Qs1" value="false" />
       <node concept="PMmxH" id="6Zp2pzGH7XJ" role="3EZMnx">
-        <ref role="PMmxG" node="2A5UqXJPGTA" resolve="iconAndNameCell" />
+        <ref role="PMmxG" to="oiph:5PyBcyXwaAh" resolve="iconAndNameCell" />
       </node>
       <node concept="gc7cB" id="6Zp2pzGH7XK" role="3EZMnx">
         <node concept="3VJUX4" id="6Zp2pzGH7XL" role="3YsKMw">

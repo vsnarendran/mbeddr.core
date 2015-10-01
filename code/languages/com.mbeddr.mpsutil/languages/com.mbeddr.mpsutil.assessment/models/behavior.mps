@@ -23,6 +23,7 @@
     <import index="h0lo" ref="r:9f92fb5e-9c32-4695-b090-eff683d75771(com.mbeddr.mpsutil.externalReference.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" implicit="true" />
+    <import index="qqlm" ref="r:a895bf24-7625-4094-ba2d-ec74bd2639ee(com.mbeddr.mpsutil.ideEnhancement.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -2956,7 +2957,7 @@
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getIDEDisplayString" />
       <property role="2Ki8OM" value="false" />
-      <ref role="13i0hy" to="hwgx:IviauXb0g" resolve="getIDEDisplayString" />
+      <ref role="13i0hy" to="qqlm:5PyBcyXwaA0" resolve="getIDEDisplayString" />
       <node concept="3Tm1VV" id="5PyBcyXvPSL" role="1B3o_S" />
       <node concept="3clFbS" id="5PyBcyXvPSM" role="3clF47">
         <node concept="3clFbF" id="5PyBcyXvPSN" role="3cqZAp">
@@ -2971,7 +2972,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getParentPopup" />
-      <ref role="13i0hy" to="hwgx:1uL8CIsKxiy" resolve="getParentPopup" />
+      <ref role="13i0hy" to="qqlm:5PyBcyXwaA8" resolve="getParentPopup" />
       <node concept="3Tm1VV" id="5PyBcyXvPSR" role="1B3o_S" />
       <node concept="3clFbS" id="5PyBcyXvPSS" role="3clF47">
         <node concept="3clFbF" id="5PyBcyXvPST" role="3cqZAp">
@@ -3001,7 +3002,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getSortOrder" />
-      <ref role="13i0hy" to="hwgx:1uL8CIs6rGR" resolve="getSortOrder" />
+      <ref role="13i0hy" to="qqlm:5PyBcyXwaA4" resolve="getSortOrder" />
       <node concept="3Tm1VV" id="5PyBcyXvPT3" role="1B3o_S" />
       <node concept="3clFbS" id="5PyBcyXvPT4" role="3clF47">
         <node concept="3clFbF" id="5PyBcyXvPT5" role="3cqZAp">
