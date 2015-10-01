@@ -24,6 +24,7 @@
     <import index="2gg1" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.errors(MPS.Core/)" />
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="sct6" ref="r:1b10995f-8da6-4ab0-8822-bce965238ddc(com.mbeddr.mpsutil.codereview.structure)" implicit="true" />
     <import index="30xn" ref="r:eadab8e9-5ad6-44ab-a83f-3acbfaf545f2(com.mbeddr.mpsutil.chunk.behavior)" implicit="true" />
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" implicit="true" />
     <import index="p15z" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.behavior)" implicit="true" />
@@ -1625,7 +1626,7 @@
               <node concept="2Rf3mk" id="rEiHtt6F7Y" role="2OqNvi">
                 <node concept="1xMEDy" id="rEiHtt6F7Z" role="1xVPHs">
                   <node concept="chp4Y" id="6Re_Us$5LkZ" role="ri$Ld">
-                    <ref role="cht4Q" to="vs0r:4g52gaNN$a$" resolve="CodeReviewData" />
+                    <ref role="cht4Q" to="sct6:5PyBcyXw8My" resolve="CodeReviewData" />
                   </node>
                 </node>
               </node>
@@ -1665,7 +1666,7 @@
               <node concept="2Rf3mk" id="rEiHtt6BKS" role="2OqNvi">
                 <node concept="1xMEDy" id="rEiHtt6BKU" role="1xVPHs">
                   <node concept="chp4Y" id="6Re_Us$5LAG" role="ri$Ld">
-                    <ref role="cht4Q" to="vs0r:4g52gaNN$a$" resolve="CodeReviewData" />
+                    <ref role="cht4Q" to="sct6:5PyBcyXw8My" resolve="CodeReviewData" />
                   </node>
                 </node>
               </node>
@@ -1717,7 +1718,7 @@
             <node concept="2Sf5sV" id="fx1tsH75TM" role="2Oq$k0" />
             <node concept="1mIQ4w" id="fx1tsH76lO" role="2OqNvi">
               <node concept="chp4Y" id="fx1tsH76y1" role="cj9EA">
-                <ref role="cht4Q" to="vs0r:4g52gaNN$a$" resolve="CodeReviewData" />
+                <ref role="cht4Q" to="sct6:5PyBcyXw8My" resolve="CodeReviewData" />
               </node>
             </node>
           </node>
@@ -1781,7 +1782,7 @@
               <node concept="zTJq_" id="fx1tsH7$vV" role="2Oq$k0" />
               <node concept="1mIQ4w" id="fx1tsH7$vW" role="2OqNvi">
                 <node concept="chp4Y" id="fx1tsH7$vX" role="cj9EA">
-                  <ref role="cht4Q" to="vs0r:4g52gaNN$a$" resolve="CodeReviewData" />
+                  <ref role="cht4Q" to="sct6:5PyBcyXw8My" resolve="CodeReviewData" />
                 </node>
               </node>
             </node>
@@ -1839,7 +1840,7 @@
               <node concept="zTJq_" id="fx1tsH7_g1" role="2Oq$k0" />
               <node concept="1mIQ4w" id="fx1tsH7_g2" role="2OqNvi">
                 <node concept="chp4Y" id="fx1tsH7_g3" role="cj9EA">
-                  <ref role="cht4Q" to="vs0r:4g52gaNN$a$" resolve="CodeReviewData" />
+                  <ref role="cht4Q" to="sct6:5PyBcyXw8My" resolve="CodeReviewData" />
                 </node>
               </node>
             </node>
@@ -1897,7 +1898,7 @@
               <node concept="zTJq_" id="fx1tsH7y3q" role="2Oq$k0" />
               <node concept="1mIQ4w" id="fx1tsH7yAa" role="2OqNvi">
                 <node concept="chp4Y" id="fx1tsH7yL$" role="cj9EA">
-                  <ref role="cht4Q" to="vs0r:4g52gaNN$a$" resolve="CodeReviewData" />
+                  <ref role="cht4Q" to="sct6:5PyBcyXw8My" resolve="CodeReviewData" />
                 </node>
               </node>
             </node>
@@ -1931,7 +1932,7 @@
               <node concept="2Rf3mk" id="5SHUFrIkAm2" role="2OqNvi">
                 <node concept="1xMEDy" id="5SHUFrIkAm4" role="1xVPHs">
                   <node concept="chp4Y" id="5SHUFrIkAoS" role="ri$Ld">
-                    <ref role="cht4Q" to="vs0r:4g52gaNN$a$" resolve="CodeReviewData" />
+                    <ref role="cht4Q" to="sct6:5PyBcyXw8My" resolve="CodeReviewData" />
                   </node>
                 </node>
               </node>
@@ -1971,7 +1972,7 @@
                 <node concept="2Rf3mk" id="5SHUFrIkrVY" role="2OqNvi">
                   <node concept="1xMEDy" id="5SHUFrIkrW0" role="1xVPHs">
                     <node concept="chp4Y" id="5SHUFrIks6Q" role="ri$Ld">
-                      <ref role="cht4Q" to="vs0r:4g52gaNN$a$" resolve="CodeReviewData" />
+                      <ref role="cht4Q" to="sct6:5PyBcyXw8My" resolve="CodeReviewData" />
                     </node>
                   </node>
                 </node>

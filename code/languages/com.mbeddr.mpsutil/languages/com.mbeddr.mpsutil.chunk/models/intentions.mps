@@ -9,6 +9,7 @@
   <imports>
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="sct6" ref="r:1b10995f-8da6-4ab0-8822-bce965238ddc(com.mbeddr.mpsutil.codereview.structure)" implicit="true" />
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" implicit="true" />
   </imports>
   <registry>
@@ -135,7 +136,7 @@
               <node concept="2Rf3mk" id="5PyBcyXvTSw" role="2OqNvi">
                 <node concept="1xMEDy" id="5PyBcyXvTSx" role="1xVPHs">
                   <node concept="chp4Y" id="5PyBcyXvTSy" role="ri$Ld">
-                    <ref role="cht4Q" to="vs0r:4g52gaNN$a$" resolve="CodeReviewData" />
+                    <ref role="cht4Q" to="sct6:5PyBcyXw8My" resolve="CodeReviewData" />
                   </node>
                 </node>
               </node>
@@ -175,7 +176,7 @@
               <node concept="2Rf3mk" id="5PyBcyXvTSN" role="2OqNvi">
                 <node concept="1xMEDy" id="5PyBcyXvTSO" role="1xVPHs">
                   <node concept="chp4Y" id="5PyBcyXvTSP" role="ri$Ld">
-                    <ref role="cht4Q" to="vs0r:4g52gaNN$a$" resolve="CodeReviewData" />
+                    <ref role="cht4Q" to="sct6:5PyBcyXw8My" resolve="CodeReviewData" />
                   </node>
                 </node>
               </node>
