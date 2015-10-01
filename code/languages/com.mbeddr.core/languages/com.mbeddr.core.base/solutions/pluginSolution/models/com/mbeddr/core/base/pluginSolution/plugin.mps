@@ -8736,19 +8736,6 @@
   <node concept="2uRRBC" id="6NFuWiCwLrg">
     <property role="TrG5h" value="DummyApplicationPlugin" />
   </node>
-  <node concept="33ghlw" id="3onExzPnGul">
-    <property role="3GE5qa" value="presentationMode" />
-    <property role="TrG5h" value="presentationMode" />
-    <node concept="33gmoH" id="3onExzPnGum" role="2hfSGL">
-      <property role="33g7Lv" value="Presentation Mode" />
-      <ref role="33glcW" to="r4b4:7xesQBpJWpf" resolve="presentationMode" />
-      <ref role="33glcY" to="r4b4:7xesQBpJXuT" resolve="presentationMode" />
-    </node>
-    <node concept="tT9cl" id="3onExzPnGun" role="2hfP89">
-      <ref role="tU$_T" node="goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
-      <ref role="2f8Tey" node="goNQ8fnbte" resolve="mbeddrPlatformProjectionModes" />
-    </node>
-  </node>
   <node concept="33ghlw" id="4ZN$fokgymG">
     <property role="3GE5qa" value="codereview" />
     <property role="TrG5h" value="codeReviewState" />

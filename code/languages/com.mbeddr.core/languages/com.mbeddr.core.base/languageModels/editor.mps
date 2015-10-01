@@ -52,6 +52,7 @@
     <import index="dqn8" ref="r:6f177fc3-8a05-4826-8d08-fd8676623247(com.mbeddr.mpsutil.suppresswarning.behavior)" />
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
+    <import index="2075" ref="r:dc9a3a53-45d1-4b60-90e6-66e27c5d5050(com.mbeddr.mpsutil.presentationMode.editor)" implicit="true" />
     <import index="h0lo" ref="r:9f92fb5e-9c32-4695-b090-eff683d75771(com.mbeddr.mpsutil.externalReference.behavior)" implicit="true" />
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" implicit="true" />
     <import index="ki2h" ref="r:108c1d36-553d-4cd6-bfd5-8b2bd0fe3bb2(com.mbeddr.mpsutil.externalReference.structure)" implicit="true" />
@@ -10046,14 +10047,6 @@
       <property role="3F0ifm" value="check external references" />
     </node>
   </node>
-  <node concept="2ABfQD" id="7xesQBpJWpf">
-    <property role="TrG5h" value="presentationMode" />
-    <node concept="2BsEeg" id="7xesQBpJXuT" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="presentationMode" />
-      <property role="2BUmq6" value="Presentation Mode" />
-    </node>
-  </node>
   <node concept="24kQdi" id="4E5hYf6q7em">
     <property role="3GE5qa" value="paragraphs" />
     <ref role="1XX52x" to="vs0r:7gVrg_0tw6m" resolve="TextBlock" />
@@ -10068,7 +10061,7 @@
       </node>
     </node>
     <node concept="2aJ2om" id="4E5hYf6qbTL" role="CpUAK">
-      <ref role="2$4xQ3" node="7xesQBpJXuT" resolve="presentationMode" />
+      <ref role="2$4xQ3" to="2075:7xesQBpJXuT" resolve="presentationMode" />
     </node>
   </node>
   <node concept="1h_SRR" id="$hL4249ROO">
