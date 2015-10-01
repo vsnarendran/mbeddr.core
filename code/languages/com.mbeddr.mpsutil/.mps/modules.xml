@@ -93,6 +93,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.tree/com.mbeddr.mpsutil.tree.mpl" folder="zz_splitCoreBase" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.typsystem.trace/com.mbeddr.mpsutil.typsystem.trace.mpl" folder="typesystem.trace" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.uniquenames/com.mbeddr.mpsutil.uniquenames.mpl" folder="uniqueNames" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.valueDebugger/com.mbeddr.mpsutil.valueDebugger.mpl" folder="zz_splitCoreBase" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.xml.fix/com.mbeddr.mpsutil.xml.fix.mpl" folder="xml.fix" />
       <modulePath path="$PROJECT_DIR$/languages/doc.com.mbeddr.mpsutil.multilingual.lang/doc.com.mbeddr.mpsutil.multilingual.lang.mpl" folder="multilingual" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.actionsfilter.runtime/com.mbeddr.mpsutil.actionsfilter.runtime.msd" folder="actionsfilter" />
