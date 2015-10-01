@@ -8,11 +8,11 @@
   </languages>
   <imports>
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" />
-    <import index="5c5e" ref="r:7a2f88d6-4108-4d29-b499-cc4de14ea970(com.mbeddr.core.base.constraints)" />
+    <import index="gm3l" ref="r:fcef1631-c04d-4b3d-9a40-2abe930a5a53(com.mbeddr.mpsutil.commentable.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="gm3l" ref="r:fcef1631-c04d-4b3d-9a40-2abe930a5a53(com.mbeddr.mpsutil.commentable.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="30xn" ref="r:eadab8e9-5ad6-44ab-a83f-3acbfaf545f2(com.mbeddr.mpsutil.chunk.behavior)" implicit="true" />
+    <import index="5c5e" ref="r:7a2f88d6-4108-4d29-b499-cc4de14ea970(com.mbeddr.core.base.constraints)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -160,7 +160,7 @@
             <node concept="2OqwBi" id="5PyBcyXvTVj" role="3clFbw">
               <node concept="EsrRn" id="5PyBcyXvTVk" role="2Oq$k0" />
               <node concept="1mIQ4w" id="5PyBcyXvTVl" role="2OqNvi">
-                <node concept="chp4Y" id="5PyBcyXvTVm" role="cj9EA">
+                <node concept="chp4Y" id="6VIoj$vKT7N" role="cj9EA">
                   <ref role="cht4Q" to="gm3l:5PyBcyXw96n" resolve="ICommentedCode" />
                 </node>
               </node>

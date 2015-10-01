@@ -37,6 +37,11 @@
     </generator>
   </generators>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">655ed89c-e6ca-4ae2-be90-5a8cefb543d2(com.mbeddr.mpsutil.tree)</dependency>
+    <dependency reexport="false">c2e56fa8-7054-46fe-8534-030242101153(com.mbeddr.mpsutil.commentable)</dependency>
+    <dependency reexport="false">198afc4b-23ce-450a-a943-05218c3f83ca(com.mbeddr.mpsutil.codereview)</dependency>
+  </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>
@@ -69,6 +74,7 @@
   <extendedLanguages>
     <extendedLanguage>ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</extendedLanguage>
     <extendedLanguage>d09a16fb-1d68-4a92-a5a4-20b4b2f86a62(com.mbeddr.mpsutil.jung)</extendedLanguage>
+    <extendedLanguage>a7b1b5c5-4d11-46ef-b36a-5335e107a4af(com.mbeddr.mpsutil.outline)</extendedLanguage>
   </extendedLanguages>
 </language>
 

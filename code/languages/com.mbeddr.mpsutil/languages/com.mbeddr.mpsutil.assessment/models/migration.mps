@@ -7,8 +7,8 @@
   </languages>
   <imports>
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="ul45" ref="r:08408afe-adba-43cf-b2b1-96ecf6380bb8(com.mbeddr.core.base.migration)" />
     <import index="slm6" ref="90746344-04fd-4286-97d5-b46ae6a81709/r:52a3d974-bd4f-4651-ba6e-a2de5e336d95(jetbrains.mps.lang.migration/jetbrains.mps.lang.migration.methods)" implicit="true" />
+    <import index="ul45" ref="r:08408afe-adba-43cf-b2b1-96ecf6380bb8(com.mbeddr.core.base.migration)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">

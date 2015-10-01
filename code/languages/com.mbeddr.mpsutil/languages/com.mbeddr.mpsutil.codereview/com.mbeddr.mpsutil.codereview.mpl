@@ -39,7 +39,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">5454dbfd-2075-4de0-b85e-fa645eb6957e(com.mbeddr.mpsutil.serializer.xml)</dependency>
-    <dependency reexport="false">d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</dependency>
+    <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>

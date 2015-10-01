@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" />
-    <import index="9ajy" ref="r:4c477563-be1b-4908-a269-05b0aee62875(com.mbeddr.mpsutil.documentable.structure)" implicit="true" />
+    <import index="9ajy" ref="r:4c477563-be1b-4908-a269-05b0aee62875(com.mbeddr.mpsutil.documentable.structure)" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -66,7 +66,7 @@
     <node concept="PrWs8" id="5PyBcyXw9hx" role="PrDN$">
       <ref role="PrY4T" to="9f2s:5PyBcyXvUbV" resolve="ILOCCountProvider" />
     </node>
-    <node concept="PrWs8" id="5PyBcyXw9hy" role="PrDN$">
+    <node concept="PrWs8" id="6VIoj$vKUrg" role="PrDN$">
       <ref role="PrY4T" to="9ajy:5PyBcyXwadS" resolve="IDocumentable" />
     </node>
   </node>

@@ -39,6 +39,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)</dependency>
+    <dependency reexport="false">af595aba-a1e2-473a-821e-18a5c48aaaac(com.mbeddr.mpsutil.chunk)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>

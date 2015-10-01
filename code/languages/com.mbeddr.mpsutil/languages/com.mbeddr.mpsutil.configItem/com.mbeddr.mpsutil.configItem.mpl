@@ -65,6 +65,7 @@
   </languageVersions>
   <extendedLanguages>
     <extendedLanguage>af595aba-a1e2-473a-821e-18a5c48aaaac(com.mbeddr.mpsutil.chunk)</extendedLanguage>
+    <extendedLanguage>21ac7f78-9b57-4548-86f2-e50a5e6f4b7a(com.mbeddr.mpsutil.documentable)</extendedLanguage>
   </extendedLanguages>
 </language>
 
