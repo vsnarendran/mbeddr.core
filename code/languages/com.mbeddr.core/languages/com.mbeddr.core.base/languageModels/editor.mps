@@ -760,13 +760,13 @@
         </node>
         <node concept="3F0ifn" id="5gTlpakxe0Y" role="3EZMnx">
           <property role="3F0ifm" value="//" />
-          <ref role="1ERwB7" node="3m8H$lmIlF8" resolve="deleteElementDocumentation" />
           <ref role="1k5W1q" node="2CEi94dprSJ" resolve="TextComment" />
+          <ref role="1ERwB7" node="3m8H$lmIlF8" resolve="deleteElementDocumentation" />
         </node>
         <node concept="3F1sOY" id="3wX8xlocqUq" role="3EZMnx">
-          <ref role="1NtTu8" to="vs0r:3wX8xlocnjN" />
           <ref role="1ERwB7" node="7zJMcSxj$uX" resolve="preventDeletion" />
           <ref role="1k5W1q" node="2CEi94dprSJ" resolve="TextComment" />
+          <ref role="1NtTu8" to="vs0r:3wX8xlocnjN" />
         </node>
         <node concept="2iRfu4" id="7sHl0myfC36" role="2iSdaV" />
       </node>

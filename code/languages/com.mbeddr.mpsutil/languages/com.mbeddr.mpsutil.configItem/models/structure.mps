@@ -8,6 +8,7 @@
   <imports>
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="9ajy" ref="r:4c477563-be1b-4908-a269-05b0aee62875(com.mbeddr.mpsutil.documentable.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -67,7 +68,7 @@
       <ref role="PrY4T" to="9f2s:5PyBcyXvUbV" resolve="ILOCCountProvider" />
     </node>
     <node concept="PrWs8" id="5PyBcyXw9hy" role="PrDN$">
-      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
+      <ref role="PrY4T" to="9ajy:5PyBcyXwadS" resolve="IDocumentable" />
     </node>
   </node>
   <node concept="PlHQZ" id="5PyBcyXw9hz">
