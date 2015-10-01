@@ -22,6 +22,7 @@
     <import index="ki2h" ref="r:108c1d36-553d-4cd6-bfd5-8b2bd0fe3bb2(com.mbeddr.mpsutil.externalReference.structure)" implicit="true" />
     <import index="v783" ref="r:8722a626-df20-42dc-8c8e-d8150854eabc(com.mbeddr.mpsutil.controlledName.structure)" implicit="true" />
     <import index="10jo" ref="r:6e32694b-6dd1-4530-b48f-4e3bf97b2744(com.mbeddr.mpsutil.jung.structure)" implicit="true" />
+    <import index="2cjw" ref="r:33b1e266-cd80-4501-a34b-38ba09fae7d1(com.mbeddr.mpsutil.paragraph.structure)" implicit="true" />
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" implicit="true" />
     <import index="newt" ref="r:d05372e5-2bac-4388-98d2-ddc5978b1595(com.mbeddr.mpsutil.ideEnhancement.structure)" implicit="true" />
     <import index="hba4" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.structure)" implicit="true" />
@@ -132,10 +133,10 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="text" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7gVrg_0tw6m" resolve="TextBlock" />
+      <ref role="20lvS9" to="2cjw:5PyBcyXwb5D" resolve="TextBlock" />
     </node>
     <node concept="PrWs8" id="7uLL3Mf3umh" role="PzmwI">
-      <ref role="PrY4T" node="7uLL3Mf3udZ" resolve="ITextBlockOwner" />
+      <ref role="PrY4T" to="2cjw:5PyBcyXwb9b" resolve="ITextBlockOwner" />
     </node>
     <node concept="PrWs8" id="4ueXZrqtwBO" role="PzmwI">
       <ref role="PrY4T" node="jpyKDg1onz" resolve="ISearchSupport" />
@@ -350,10 +351,16 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
     </node>
+    <node concept="asaX9" id="5PyBcyXwbby" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.paragraph&quot;" />
+    </node>
   </node>
   <node concept="PlHQZ" id="7uLL3Mf3udZ">
     <property role="3GE5qa" value="paragraphs" />
     <property role="TrG5h" value="ITextBlockOwner" />
+    <node concept="asaX9" id="5PyBcyXwbaa" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.mpsutil.paragraph&quot;" />
+    </node>
   </node>
   <node concept="PlHQZ" id="jpyKDg1onz">
     <property role="TrG5h" value="ISearchSupport" />
@@ -471,7 +478,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="comment" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7gVrg_0tw6m" resolve="TextBlock" />
+      <ref role="20lvS9" to="2cjw:5PyBcyXwb5D" resolve="TextBlock" />
     </node>
     <node concept="1TJgyi" id="7hIyKqbGn$1" role="1TKVEl">
       <property role="TrG5h" value="status" />

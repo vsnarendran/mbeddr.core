@@ -15,6 +15,8 @@
     <import index="9ajy" ref="r:4c477563-be1b-4908-a269-05b0aee62875(com.mbeddr.mpsutil.documentable.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="2cjw" ref="r:33b1e266-cd80-4501-a34b-38ba09fae7d1(com.mbeddr.mpsutil.paragraph.structure)" implicit="true" />
+    <import index="kfd7" ref="r:20dd928f-3ef1-49a8-a4e6-95f894a2f714(com.mbeddr.mpsutil.paragraph.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -205,7 +207,7 @@
                     </node>
                   </node>
                   <node concept="3TrEf2" id="5PyBcyXwadt" role="2OqNvi">
-                    <ref role="3Tt5mk" to="vs0r:7gVrg_0tw6n" />
+                    <ref role="3Tt5mk" to="2cjw:5PyBcyXwb5E" />
                   </node>
                 </node>
                 <node concept="2qgKlT" id="5PyBcyXwadu" role="2OqNvi">
@@ -236,7 +238,7 @@
             <node concept="2ShNRf" id="5PyBcyXwaft" role="37vLTx">
               <node concept="3zrR0B" id="5PyBcyXwafu" role="2ShVmc">
                 <node concept="3Tqbb2" id="5PyBcyXwafv" role="3zrR0E">
-                  <ref role="ehGHo" to="vs0r:7gVrg_0tw6m" resolve="TextBlock" />
+                  <ref role="ehGHo" to="2cjw:5PyBcyXwb5D" resolve="TextBlock" />
                 </node>
               </node>
             </node>
@@ -254,7 +256,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="isEmpty" />
-      <ref role="13i0hy" to="hwgx:7uLL3Mf3Bol" resolve="isEmpty" />
+      <ref role="13i0hy" to="kfd7:5PyBcyXwb8T" resolve="isEmpty" />
       <node concept="3Tm1VV" id="5PyBcyXwaf$" role="1B3o_S" />
       <node concept="3clFbS" id="5PyBcyXwaf_" role="3clF47">
         <node concept="3clFbF" id="5PyBcyXwafA" role="3cqZAp">
@@ -287,7 +289,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="5PyBcyXwafP" role="2OqNvi">
-              <ref role="37wK5l" to="hwgx:jpyKDg1A7A" resolve="containsText" />
+              <ref role="37wK5l" to="kfd7:5PyBcyXwb6_" resolve="containsText" />
               <node concept="3cpWs2" id="5PyBcyXwafQ" role="37wK5m">
                 <ref role="3cqZAo" node="5PyBcyXwafR" resolve="text" />
               </node>
@@ -439,7 +441,7 @@
     </node>
     <node concept="13i0hz" id="5PyBcyXwagY" role="13h7CS">
       <property role="TrG5h" value="getTextColor" />
-      <ref role="13i0hy" to="hwgx:BsHjoDQZaR" resolve="getTextColor" />
+      <ref role="13i0hy" to="kfd7:5PyBcyXwb8X" resolve="getTextColor" />
       <node concept="3clFbS" id="5PyBcyXwagZ" role="3clF47">
         <node concept="3cpWs6" id="5PyBcyXwah0" role="3cqZAp">
           <node concept="10M0yZ" id="5PyBcyXwah1" role="3cqZAk">
@@ -455,7 +457,7 @@
     </node>
     <node concept="13i0hz" id="5PyBcyXwah4" role="13h7CS">
       <property role="TrG5h" value="getBracketColor" />
-      <ref role="13i0hy" to="hwgx:BsHjoDRsTa" resolve="getBracketColor" />
+      <ref role="13i0hy" to="kfd7:5PyBcyXwb93" resolve="getBracketColor" />
       <node concept="3clFbS" id="5PyBcyXwah5" role="3clF47">
         <node concept="3cpWs6" id="5PyBcyXwah6" role="3cqZAp">
           <node concept="10M0yZ" id="5PyBcyXwah7" role="3cqZAk">

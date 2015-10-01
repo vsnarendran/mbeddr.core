@@ -9,6 +9,8 @@
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="2cjw" ref="r:33b1e266-cd80-4501-a34b-38ba09fae7d1(com.mbeddr.mpsutil.paragraph.structure)" implicit="true" />
+    <import index="kfd7" ref="r:20dd928f-3ef1-49a8-a4e6-95f894a2f714(com.mbeddr.mpsutil.paragraph.behavior)" implicit="true" />
     <import index="9ajy" ref="r:4c477563-be1b-4908-a269-05b0aee62875(com.mbeddr.mpsutil.documentable.structure)" implicit="true" />
   </imports>
   <registry>
@@ -128,7 +130,7 @@
                       </node>
                     </node>
                     <node concept="3TrEf2" id="5PyBcyXwaeV" role="2OqNvi">
-                      <ref role="3Tt5mk" to="vs0r:7gVrg_0tw6n" />
+                      <ref role="3Tt5mk" to="2cjw:5PyBcyXwb5E" />
                     </node>
                   </node>
                   <node concept="2qgKlT" id="5PyBcyXwaeW" role="2OqNvi">
@@ -171,7 +173,7 @@
             <node concept="2OqwBi" id="5PyBcyXwafc" role="3fr31v">
               <node concept="117lpO" id="5PyBcyXwafd" role="2Oq$k0" />
               <node concept="2qgKlT" id="5PyBcyXwafe" role="2OqNvi">
-                <ref role="37wK5l" to="hwgx:7uLL3Mf3Bol" resolve="isEmpty" />
+                <ref role="37wK5l" to="kfd7:5PyBcyXwb8T" resolve="isEmpty" />
               </node>
             </node>
           </node>
