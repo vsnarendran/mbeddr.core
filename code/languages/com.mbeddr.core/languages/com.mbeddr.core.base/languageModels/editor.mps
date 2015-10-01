@@ -52,7 +52,9 @@
     <import index="dqn8" ref="r:6f177fc3-8a05-4826-8d08-fd8676623247(com.mbeddr.mpsutil.suppresswarning.behavior)" />
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
+    <import index="h0lo" ref="r:9f92fb5e-9c32-4695-b090-eff683d75771(com.mbeddr.mpsutil.externalReference.behavior)" implicit="true" />
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" implicit="true" />
+    <import index="ki2h" ref="r:108c1d36-553d-4cd6-bfd5-8b2bd0fe3bb2(com.mbeddr.mpsutil.externalReference.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
@@ -9800,7 +9802,7 @@
                         <node concept="2OqwBi" id="GKLijSwgfN" role="33vP2m">
                           <node concept="pncrf" id="GKLijSwfmn" role="2Oq$k0" />
                           <node concept="3TrcHB" id="GKLijSwh$3" role="2OqNvi">
-                            <ref role="3TsBF5" to="vs0r:GKLijS$DFv" resolve="extID" />
+                            <ref role="3TsBF5" to="ki2h:5PyBcyXwayd" resolve="extID" />
                           </node>
                         </node>
                       </node>
@@ -9851,7 +9853,7 @@
                         </node>
                       </node>
                       <node concept="2qgKlT" id="1Jcbkuz04af" role="2OqNvi">
-                        <ref role="37wK5l" to="hwgx:1JcbkuyZZUz" resolve="getFullExternalResourceName" />
+                        <ref role="37wK5l" to="h0lo:5PyBcyXwavT" resolve="getFullExternalResourceName" />
                       </node>
                     </node>
                   </node>
@@ -9878,7 +9880,7 @@
                       </node>
                     </node>
                     <node concept="2qgKlT" id="GKLijT3XtD" role="2OqNvi">
-                      <ref role="37wK5l" to="hwgx:GKLijSNXOH" resolve="getStoredDescription" />
+                      <ref role="37wK5l" to="h0lo:5PyBcyXwawl" resolve="getStoredDescription" />
                     </node>
                   </node>
                 </node>
@@ -9928,7 +9930,7 @@
                         </node>
                       </node>
                       <node concept="3TrcHB" id="3Pz_UaK8xgr" role="2OqNvi">
-                        <ref role="3TsBF5" to="vs0r:GKLijTbrTL" resolve="lastUpdated" />
+                        <ref role="3TsBF5" to="ki2h:5PyBcyXwayf" resolve="lastUpdated" />
                       </node>
                     </node>
                   </node>
@@ -9987,7 +9989,7 @@
                       </node>
                     </node>
                     <node concept="2qgKlT" id="GKLijTfQKN" role="2OqNvi">
-                      <ref role="37wK5l" to="hwgx:GKLijSNXOH" resolve="getStoredDescription" />
+                      <ref role="37wK5l" to="h0lo:5PyBcyXwawl" resolve="getStoredDescription" />
                     </node>
                   </node>
                 </node>
@@ -10014,7 +10016,7 @@
                       </node>
                     </node>
                     <node concept="2qgKlT" id="GKLijSV7Av" role="2OqNvi">
-                      <ref role="37wK5l" to="hwgx:GKLijS$FKh" resolve="getExternalDescription" />
+                      <ref role="37wK5l" to="h0lo:5PyBcyXwawf" resolve="getExternalDescription" />
                       <node concept="2OqwBi" id="GKLijSV7RG" role="37wK5m">
                         <node concept="2OqwBi" id="GKLijTfS3u" role="2Oq$k0">
                           <node concept="pncrf" id="GKLijSV7MX" role="2Oq$k0" />
@@ -10023,7 +10025,7 @@
                           </node>
                         </node>
                         <node concept="3TrcHB" id="GKLijTfSTy" role="2OqNvi">
-                          <ref role="3TsBF5" to="vs0r:GKLijS$DFv" resolve="extID" />
+                          <ref role="3TsBF5" to="ki2h:5PyBcyXwayd" resolve="extID" />
                         </node>
                       </node>
                     </node>

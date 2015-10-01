@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.core.base" uuid="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" version="60">
+<language namespace="com.mbeddr.core.base" uuid="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" version="61">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />
@@ -67,6 +67,7 @@
     <dependency reexport="false">df52ef7a-67b7-41d2-a68e-88e9f3d52c61(com.mbeddr.mpsutil.configItem)</dependency>
     <dependency reexport="false">690ec915-02c8-4a7e-b65e-7b78b870dd62(com.mbeddr.mpsutil.controlledName)</dependency>
     <dependency reexport="false">21ac7f78-9b57-4548-86f2-e50a5e6f4b7a(com.mbeddr.mpsutil.documentable)</dependency>
+    <dependency reexport="false">50703665-60da-41b5-ba25-be1e64ea9089(com.mbeddr.mpsutil.externalReference)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -132,6 +133,7 @@
     <extendedLanguage>63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)</extendedLanguage>
     <extendedLanguage>af595aba-a1e2-473a-821e-18a5c48aaaac(com.mbeddr.mpsutil.chunk)</extendedLanguage>
     <extendedLanguage>21ac7f78-9b57-4548-86f2-e50a5e6f4b7a(com.mbeddr.mpsutil.documentable)</extendedLanguage>
+    <extendedLanguage>50703665-60da-41b5-ba25-be1e64ea9089(com.mbeddr.mpsutil.externalReference)</extendedLanguage>
   </extendedLanguages>
 </language>
 

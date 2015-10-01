@@ -17,8 +17,10 @@
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="ki2h" ref="r:108c1d36-553d-4cd6-bfd5-8b2bd0fe3bb2(com.mbeddr.mpsutil.externalReference.structure)" implicit="true" />
     <import index="v783" ref="r:8722a626-df20-42dc-8c8e-d8150854eabc(com.mbeddr.mpsutil.controlledName.structure)" implicit="true" />
     <import index="30xn" ref="r:eadab8e9-5ad6-44ab-a83f-3acbfaf545f2(com.mbeddr.mpsutil.chunk.behavior)" implicit="true" />
+    <import index="h0lo" ref="r:9f92fb5e-9c32-4695-b090-eff683d75771(com.mbeddr.mpsutil.externalReference.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" implicit="true" />
   </imports>
@@ -189,9 +191,7 @@
       <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
         <child id="1138662048170" name="value" index="tz02z" />
       </concept>
-      <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
-        <reference id="1138676095763" name="enumMember" index="uo_Cq" />
-      </concept>
+      <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO" />
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
@@ -2027,7 +2027,7 @@
           <node concept="3cpWsn" id="5PyBcyXvPKl" role="3cpWs9">
             <property role="TrG5h" value="aers" />
             <node concept="2I9FWS" id="5PyBcyXvPKm" role="1tU5fm">
-              <ref role="2I9WkF" to="vs0r:GKLijS$AT1" resolve="IExtRef" />
+              <ref role="2I9WkF" to="ki2h:5PyBcyXwayc" resolve="IExtRef" />
             </node>
             <node concept="2OqwBi" id="5PyBcyXvPKn" role="33vP2m">
               <node concept="2OqwBi" id="5PyBcyXvPKo" role="2Oq$k0">
@@ -2035,7 +2035,7 @@
                 <node concept="I4A8Y" id="5PyBcyXvPKq" role="2OqNvi" />
               </node>
               <node concept="1j9C0f" id="5PyBcyXvPKr" role="2OqNvi">
-                <ref role="1j9C0d" to="vs0r:GKLijS$AT1" resolve="IExtRef" />
+                <ref role="1j9C0d" to="ki2h:5PyBcyXwayc" resolve="IExtRef" />
               </node>
             </node>
           </node>
@@ -2091,9 +2091,7 @@
                       </node>
                     </node>
                     <node concept="tyxLq" id="5PyBcyXvPKN" role="2OqNvi">
-                      <node concept="uoxfO" id="5PyBcyXvPKO" role="tz02z">
-                        <ref role="uo_Cq" to="vs0r:GKLijSwpYH" />
-                      </node>
+                      <node concept="uoxfO" id="5PyBcyXvPKO" role="tz02z" />
                     </node>
                   </node>
                 </node>
@@ -2116,7 +2114,7 @@
                     <ref role="2Gs0qQ" node="5PyBcyXvPKt" resolve="aer" />
                   </node>
                   <node concept="2qgKlT" id="5PyBcyXvPKX" role="2OqNvi">
-                    <ref role="37wK5l" to="hwgx:GKLijS$FK9" resolve="isValidID" />
+                    <ref role="37wK5l" to="h0lo:5PyBcyXwaw1" resolve="isValidID" />
                   </node>
                 </node>
               </node>
@@ -2165,9 +2163,7 @@
                             </node>
                           </node>
                           <node concept="tyxLq" id="5PyBcyXvPLj" role="2OqNvi">
-                            <node concept="uoxfO" id="5PyBcyXvPLk" role="tz02z">
-                              <ref role="uo_Cq" to="vs0r:GKLijSwpYI" />
-                            </node>
+                            <node concept="uoxfO" id="5PyBcyXvPLk" role="tz02z" />
                           </node>
                         </node>
                       </node>
@@ -2190,7 +2186,7 @@
                           <ref role="2Gs0qQ" node="5PyBcyXvPKt" resolve="aer" />
                         </node>
                         <node concept="2qgKlT" id="5PyBcyXvPLt" role="2OqNvi">
-                          <ref role="37wK5l" to="hwgx:GKLijS$FKp" resolve="isStillCurrent" />
+                          <ref role="37wK5l" to="h0lo:5PyBcyXwawv" resolve="isStillCurrent" />
                         </node>
                       </node>
                     </node>

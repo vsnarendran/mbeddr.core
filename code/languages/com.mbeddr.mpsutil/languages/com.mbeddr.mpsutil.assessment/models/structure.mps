@@ -9,12 +9,21 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="kwxp" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="ki2h" ref="r:108c1d36-553d-4cd6-bfd5-8b2bd0fe3bb2(com.mbeddr.mpsutil.externalReference.structure)" implicit="true" />
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" implicit="true" />
     <import index="v783" ref="r:8722a626-df20-42dc-8c8e-d8150854eabc(com.mbeddr.mpsutil.controlledName.structure)" implicit="true" />
     <import index="9ajy" ref="r:4c477563-be1b-4908-a269-05b0aee62875(com.mbeddr.mpsutil.documentable.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
+        <child id="1083172003582" name="member" index="M5hS2" />
+      </concept>
+      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+        <property id="1083923523172" name="externalValue" index="1uS6qo" />
+        <property id="1083923523171" name="internalValue" index="1uS6qv" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
@@ -85,7 +94,7 @@
     </node>
     <node concept="1TJgyi" id="5PyBcyXvPx4" role="1TKVEl">
       <property role="TrG5h" value="status" />
-      <ref role="AX2Wp" to="vs0r:7hIyKqbGnzX" resolve="EntryStatus" />
+      <ref role="AX2Wp" node="7hIyKqbGnzX" resolve="EntryStatus" />
     </node>
     <node concept="1TJgyi" id="5PyBcyXvPx5" role="1TKVEl">
       <property role="TrG5h" value="markedOk" />
@@ -124,13 +133,12 @@
     <ref role="1TJDcQ" node="5PyBcyXvPLB" resolve="AssessmentResult" />
     <node concept="1TJgyi" id="5PyBcyXvP$y" role="1TKVEl">
       <property role="TrG5h" value="kind" />
-      <ref role="AX2Wp" to="vs0r:GKLijSwpYG" resolve="ResultKind" />
     </node>
     <node concept="1TJgyj" id="5PyBcyXvP$z" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="exref" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="vs0r:GKLijS$AT1" resolve="IExtRef" />
+      <ref role="20lvS9" to="ki2h:5PyBcyXwayc" resolve="IExtRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="5PyBcyXvP_B">
@@ -324,6 +332,23 @@
     <property role="TrG5h" value="AssessmentQuery" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="AxPO7" id="7hIyKqbGnzX">
+    <property role="3GE5qa" value="assessment" />
+    <property role="TrG5h" value="EntryStatus" />
+    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="M4N5e" id="7hIyKqbGnzY" role="M5hS2">
+      <property role="1uS6qv" value="0" />
+      <property role="1uS6qo" value="old" />
+    </node>
+    <node concept="M4N5e" id="7hIyKqbGnzZ" role="M5hS2">
+      <property role="1uS6qv" value="1" />
+      <property role="1uS6qo" value="newlyAdded" />
+    </node>
+    <node concept="M4N5e" id="7hIyKqbGn$0" role="M5hS2">
+      <property role="1uS6qv" value="2" />
+      <property role="1uS6qo" value="ok" />
+    </node>
   </node>
 </model>
 

@@ -14,6 +14,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="gm3l" ref="r:fcef1631-c04d-4b3d-9a40-2abe930a5a53(com.mbeddr.mpsutil.commentable.structure)" implicit="true" />
+    <import index="ki2h" ref="r:108c1d36-553d-4cd6-bfd5-8b2bd0fe3bb2(com.mbeddr.mpsutil.externalReference.structure)" implicit="true" />
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
@@ -934,7 +935,7 @@
               <node concept="2OqwBi" id="1JcbkuyW0ll" role="37vLTJ">
                 <node concept="EsrRn" id="1JcbkuyW0bp" role="2Oq$k0" />
                 <node concept="3TrcHB" id="1JcbkuyW14E" role="2OqNvi">
-                  <ref role="3TsBF5" to="vs0r:GKLijS$DFv" resolve="extID" />
+                  <ref role="3TsBF5" to="ki2h:5PyBcyXwayd" resolve="extID" />
                 </node>
               </node>
             </node>
@@ -953,7 +954,7 @@
               <node concept="2OqwBi" id="1JcbkuyR7vm" role="37vLTJ">
                 <node concept="EsrRn" id="1JcbkuyR7sU" role="2Oq$k0" />
                 <node concept="3TrcHB" id="1JcbkuyR7YY" role="2OqNvi">
-                  <ref role="3TsBF5" to="vs0r:GKLijTbrTL" resolve="lastUpdated" />
+                  <ref role="3TsBF5" to="ki2h:5PyBcyXwayf" resolve="lastUpdated" />
                 </node>
               </node>
             </node>
