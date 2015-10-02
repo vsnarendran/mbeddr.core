@@ -37,6 +37,9 @@
     </generator>
   </generators>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">371850a9-2c5b-4e1d-a811-70d97e847917(com.mbeddr.mpsutil.editor.utils)</dependency>
+  </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>
@@ -61,6 +64,8 @@
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
   </languageVersions>
-  <extendedLanguages />
+  <extendedLanguages>
+    <extendedLanguage>b124218e-4c2c-4976-9b26-6bb95b8a0325(com.mbeddr.mpsutil.ideEnhancement)</extendedLanguage>
+  </extendedLanguages>
 </language>
 

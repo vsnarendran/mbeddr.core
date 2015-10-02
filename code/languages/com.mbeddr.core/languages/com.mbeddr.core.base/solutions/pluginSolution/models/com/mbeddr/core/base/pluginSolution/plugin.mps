@@ -166,7 +166,6 @@
       <concept id="1562714432501166197" name="jetbrains.mps.lang.plugin.structure.KeymapChangesDeclaration" flags="ng" index="Zd50a">
         <child id="1562714432501166199" name="shortcutChange" index="Zd508" />
       </concept>
-      <concept id="1203680534665" name="jetbrains.mps.lang.plugin.structure.GroupAnchor" flags="ng" index="10WQ6h" />
       <concept id="1210179134063" name="jetbrains.mps.lang.plugin.structure.PreferencesComponentDeclaration" flags="ng" index="34j2dQ">
         <child id="1210179829398" name="persistenPropertyDeclaration" index="34lFYf" />
         <child id="1210684426855" name="preferencePage" index="3yq$HY" />
@@ -2300,22 +2299,6 @@
     <node concept="3Tm1VV" id="23GX$R0hoe" role="1B3o_S" />
     <node concept="3uibUv" id="23GX$R0hoQ" role="1zkMxy">
       <ref role="3uigEE" to="dxuu:~JPanel" resolve="JPanel" />
-    </node>
-  </node>
-  <node concept="tC5Ba" id="goNQ8fxK7J">
-    <property role="TrG5h" value="CodeMenuExtensions" />
-    <node concept="ftmFs" id="goNQ8fxK8l" role="ftER_">
-      <node concept="2a7GMi" id="goNQ8fyUxC" role="ftvYc" />
-      <node concept="10WQ6h" id="goNQ8fyUxT" role="ftvYc">
-        <property role="TrG5h" value="WizardStuff" />
-      </node>
-      <node concept="2a7GMi" id="goNQ8fxK8o" role="ftvYc" />
-      <node concept="10WQ6h" id="goNQ8fxK8w" role="ftvYc">
-        <property role="TrG5h" value="CodeMenuStuff" />
-      </node>
-    </node>
-    <node concept="tT9cl" id="goNQ8fxK8A" role="2f5YQi">
-      <ref role="tU$_T" to="9oh:4vodOtydcQH" resolve="IDEACode" />
     </node>
   </node>
   <node concept="312cEu" id="2nGuY2QKdBO">
