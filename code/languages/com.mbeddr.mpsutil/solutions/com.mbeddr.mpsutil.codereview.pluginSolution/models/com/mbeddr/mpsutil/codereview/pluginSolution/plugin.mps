@@ -5,16 +5,16 @@
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring" version="0" />
+    <use id="c3bfea76-7bba-4f0e-b5a2-ff4e7a8d7cf1" name="com.mbeddr.mpsutil.spreferences" version="0" />
   </languages>
   <imports>
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" />
     <import index="mvyx" ref="r:bd8ad793-75bc-45ee-9eca-d0f67c7eb1d2(com.mbeddr.mpsutil.platform.pluginSolution.plugin)" />
-    <import index="qjdu" ref="r:bc752cbf-8d9b-4442-8e26-e5c87b20b897(com.mbeddr.core.base.plugin)" implicit="true" />
+    <import index="sct6" ref="r:1b10995f-8da6-4ab0-8822-bce965238ddc(com.mbeddr.mpsutil.codereview.structure)" />
+    <import index="kvs4" ref="r:e1d8e0d7-66dc-4786-b31c-a842ee726af7(com.mbeddr.mpsutil.codereview.editor)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
-    <import index="kvs4" ref="r:e1d8e0d7-66dc-4786-b31c-a842ee726af7(com.mbeddr.mpsutil.codereview.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -39,6 +39,9 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -140,6 +143,12 @@
         <reference id="5615086488402976569" name="preferencePage" index="9Hxhg" />
         <child id="5615086488402986988" name="module" index="9HWM5" />
       </concept>
+      <concept id="5299504751977339944" name="com.mbeddr.mpsutil.spreferences.structure.Parameter_IsInit" flags="ng" index="U$gdm" />
+      <concept id="6044976435766352430" name="com.mbeddr.mpsutil.spreferences.structure.InitPageNode" flags="ig" index="U$sw$" />
+      <concept id="6547806146467473938" name="com.mbeddr.mpsutil.spreferences.structure.PreferencePageDescription" flags="ng" index="30z_3H">
+        <reference id="6547806146467491221" name="rootConcept" index="30zxtE" />
+        <child id="6044976435766357656" name="initFunction" index="U$vMi" />
+      </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -189,7 +198,7 @@
             <node concept="2OqwBi" id="6hoQ$huaRoR" role="3clFbG">
               <node concept="2OqwBi" id="3s$9DObUvKu" role="2Oq$k0">
                 <node concept="9H$SH" id="3s$9DObUvKv" role="2Oq$k0">
-                  <ref role="9Hxhg" to="qjdu:4lLcfuhScHr" resolve="Code Review Preferences" />
+                  <ref role="9Hxhg" node="4lLcfuhScHr" resolve="Code Review Preferences" />
                   <node concept="2OqwBi" id="3s$9DObUvKw" role="9HWM5">
                     <node concept="2OqwBi" id="3s$9DObUvKx" role="2Oq$k0">
                       <node concept="37vLTw" id="3s$9DObUvKy" role="2Oq$k0">
@@ -204,8 +213,8 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3Tsc0h" id="6hoQ$huavVt" role="2OqNvi">
-                  <ref role="3TtcxE" to="vs0r:gjBy3ThgKr" />
+                <node concept="3Tsc0h" id="6ruBZYmDrPh" role="2OqNvi">
+                  <ref role="3TtcxE" to="sct6:5PyBcyXw8GD" />
                 </node>
               </node>
               <node concept="2HwmR7" id="6hoQ$huaVMa" role="2OqNvi">
@@ -217,8 +226,8 @@
                           <node concept="37vLTw" id="6hoQ$huaVV8" role="2Oq$k0">
                             <ref role="3cqZAo" node="6hoQ$huaVMe" resolve="it" />
                           </node>
-                          <node concept="3TrEf2" id="5MRtgLPLDVv" role="2OqNvi">
-                            <ref role="3Tt5mk" to="vs0r:4uR15_er0pl" />
+                          <node concept="3TrEf2" id="6ruBZYmDwbJ" role="2OqNvi">
+                            <ref role="3Tt5mk" to="sct6:5PyBcyXw8Mn" />
                           </node>
                         </node>
                         <node concept="liA8E" id="6hoQ$huaZb_" role="2OqNvi">
@@ -279,6 +288,18 @@
     <node concept="tT9cl" id="4ZN$fokgymI" role="2hfP89">
       <ref role="tU$_T" to="mvyx:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
       <ref role="2f8Tey" to="mvyx:goNQ8fnbte" resolve="mbeddrPlatformProjectionModes" />
+    </node>
+  </node>
+  <node concept="30z_3H" id="4lLcfuhScHr">
+    <property role="TrG5h" value="Code Review Preferences" />
+    <ref role="30zxtE" to="sct6:5PyBcyXw8GC" resolve="CodeReviewConfig" />
+    <node concept="U$sw$" id="3s$9DObTnhP" role="U$vMi">
+      <node concept="3clFbS" id="3s$9DObTnhQ" role="2VODD2">
+        <node concept="3clFbJ" id="3s$9DObToDB" role="3cqZAp">
+          <node concept="3clFbS" id="3s$9DObToDC" role="3clFbx" />
+          <node concept="U$gdm" id="3s$9DObToDT" role="3clFbw" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

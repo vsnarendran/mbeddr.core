@@ -12,7 +12,6 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="9p45" ref="r:67b02670-4d7a-4a53-9329-ae1228635554(com.mbeddr.mpsutil.codereview.behavior)" implicit="true" />
     <import index="mvyx" ref="r:bd8ad793-75bc-45ee-9eca-d0f67c7eb1d2(com.mbeddr.mpsutil.platform.pluginSolution.plugin)" implicit="true" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -531,24 +530,6 @@
       <property role="2gpH_U" value="true" />
       <property role="TrG5h" value="showReviewState" />
       <property role="2BUmq6" value="Show Review State" />
-    </node>
-  </node>
-  <node concept="1h_SRR" id="rEiHtt6Lg1">
-    <property role="TrG5h" value="deleteReview" />
-    <property role="3GE5qa" value="codereview" />
-    <ref role="1h_SK9" to="vs0r:4g52gaNN$a$" resolve="CodeReviewData" />
-    <node concept="1hA7zw" id="rEiHtt6Lg2" role="1h_SK8">
-      <property role="1hAc7j" value="backspace_action_id" />
-      <node concept="1hAIg9" id="rEiHtt6Lg3" role="1hA7z_">
-        <node concept="3clFbS" id="rEiHtt6Lg4" role="2VODD2">
-          <node concept="3clFbF" id="rEiHtt6Lgf" role="3cqZAp">
-            <node concept="2OqwBi" id="rEiHtt6Li3" role="3clFbG">
-              <node concept="0IXxy" id="rEiHtt6Lge" role="2Oq$k0" />
-              <node concept="1PgB_6" id="rEiHtt6LDP" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
   </node>
   <node concept="V5hpn" id="rEiHtt5hg6">
