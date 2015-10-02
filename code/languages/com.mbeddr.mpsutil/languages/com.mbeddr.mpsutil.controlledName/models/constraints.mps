@@ -9,11 +9,10 @@
     <import index="v783" ref="r:8722a626-df20-42dc-8c8e-d8150854eabc(com.mbeddr.mpsutil.controlledName.structure)" />
     <import index="tkh2" ref="r:9896d907-d609-4ff7-ab80-a9a763c74eb1(com.mbeddr.mpsutil.controlledName.behavior)" />
     <import index="2obm" ref="r:36914d45-fd5c-434f-84d0-429a0b615f32(jetbrains.mps.typesystemEngine.util)" />
+    <import index="yerw" ref="r:d46c4d24-057b-4302-86ba-f37c58442016(com.mbeddr.mpsutil.platform.typesystem)" />
+    <import index="mvyx" ref="r:bd8ad793-75bc-45ee-9eca-d0f67c7eb1d2(com.mbeddr.mpsutil.platform.pluginSolution.plugin)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="9zoj" ref="r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)" implicit="true" />
-    <import index="mvyx" ref="r:bd8ad793-75bc-45ee-9eca-d0f67c7eb1d2(com.mbeddr.mpsutil.platform.pluginSolution.plugin)" implicit="true" />
-    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -154,8 +153,8 @@
         <node concept="3clFbS" id="5PyBcyXw9za" role="2VODD2">
           <node concept="3clFbF" id="5PyBcyXw9zb" role="3cqZAp">
             <node concept="2YIFZM" id="5PyBcyXw9zc" role="3clFbG">
-              <ref role="37wK5l" to="9zoj:6sCGfm8nBYk" resolve="simulateF5ForRoot" />
-              <ref role="1Pybhc" to="2obm:1V3wYmOJA0O" resolve="TypeSystemUtil" />
+              <ref role="37wK5l" to="yerw:6sCGfm8nBYk" resolve="simulateF5ForRoot" />
+              <ref role="1Pybhc" to="yerw:6sCGfm8n$Zj" resolve="TypesystemUtil" />
               <node concept="2OqwBi" id="5PyBcyXw9zd" role="37wK5m">
                 <node concept="3kakTB" id="5PyBcyXw9ze" role="2Oq$k0" />
                 <node concept="1mfA1w" id="5PyBcyXw9zf" role="2OqNvi" />
@@ -182,8 +181,8 @@
             <node concept="3clFbS" id="5PyBcyXw9zo" role="3clFbx">
               <node concept="3cpWs6" id="5PyBcyXw9zp" role="3cqZAp">
                 <node concept="2YIFZM" id="5PyBcyXw9zq" role="3cqZAk">
-                  <ref role="37wK5l" to="hwgx:4k0bDztZtBK" resolve="visibleControlledConstantNames" />
-                  <ref role="1Pybhc" to="hwgx:7ii2FhSOVm7" resolve="ControlledNameHelper" />
+                  <ref role="1Pybhc" to="tkh2:7ii2FhSOVm7" resolve="ControlledNameHelper" />
+                  <ref role="37wK5l" to="tkh2:4k0bDztZtBK" resolve="visibleControlledConstantNames" />
                   <node concept="21POm0" id="5PyBcyXw9zr" role="37wK5m" />
                 </node>
               </node>
@@ -200,8 +199,8 @@
               <node concept="3clFbS" id="5PyBcyXw9zw" role="3eOfB_">
                 <node concept="3cpWs6" id="5PyBcyXw9zx" role="3cqZAp">
                   <node concept="2YIFZM" id="5PyBcyXw9zy" role="3cqZAk">
-                    <ref role="37wK5l" to="hwgx:7ii2FhSOWDp" resolve="visibleControlledNonConstantNames" />
-                    <ref role="1Pybhc" to="hwgx:7ii2FhSOVm7" resolve="ControlledNameHelper" />
+                    <ref role="37wK5l" to="tkh2:7ii2FhSOWDp" resolve="visibleControlledNonConstantNames" />
+                    <ref role="1Pybhc" to="tkh2:7ii2FhSOVm7" resolve="ControlledNameHelper" />
                     <node concept="21POm0" id="5PyBcyXw9zz" role="37wK5m" />
                   </node>
                 </node>
@@ -219,8 +218,8 @@
               <node concept="3clFbS" id="5PyBcyXw9zC" role="9aQI4">
                 <node concept="3cpWs6" id="5PyBcyXw9zD" role="3cqZAp">
                   <node concept="2YIFZM" id="5PyBcyXw9zE" role="3cqZAk">
-                    <ref role="1Pybhc" to="hwgx:7ii2FhSOVm7" resolve="ControlledNameHelper" />
-                    <ref role="37wK5l" to="hwgx:4k0bDztYHm$" resolve="allVisibleControlledNames" />
+                    <ref role="1Pybhc" to="tkh2:7ii2FhSOVm7" resolve="ControlledNameHelper" />
+                    <ref role="37wK5l" to="tkh2:4k0bDztYHm$" resolve="allVisibleControlledNames" />
                     <node concept="21POm0" id="5PyBcyXw9zF" role="37wK5m" />
                   </node>
                 </node>
