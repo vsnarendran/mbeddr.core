@@ -39,6 +39,9 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</dependency>
+    <dependency reexport="false">ea31a56a-3b81-465a-a6d2-df77c1a4023e(com.mbeddr.mpsutil.platform.pluginSolution)</dependency>
+    <dependency reexport="false">371850a9-2c5b-4e1d-a811-70d97e847917(com.mbeddr.mpsutil.editor.utils)</dependency>
+    <dependency reexport="false">c2e56fa8-7054-46fe-8534-030242101153(com.mbeddr.mpsutil.commentable)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>

@@ -9,9 +9,9 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="2cjw" ref="r:33b1e266-cd80-4501-a34b-38ba09fae7d1(com.mbeddr.mpsutil.paragraph.structure)" />
     <import index="kfd7" ref="r:20dd928f-3ef1-49a8-a4e6-95f894a2f714(com.mbeddr.mpsutil.paragraph.behavior)" />
+    <import index="oq9k" ref="r:f4ae6487-fb1d-418f-8dd3-759f9604156f(com.mbeddr.mpsutil.editor.utils.runtime)" />
+    <import index="tw8z" ref="r:520fc3b2-18ba-4b74-93cf-32bc0bdb78f9(com.mbeddr.mpsutil.commentable.editor)" />
     <import index="2075" ref="r:dc9a3a53-45d1-4b60-90e6-66e27c5d5050(com.mbeddr.mpsutil.presentationMode.editor)" implicit="true" />
-    <import index="tw8z" ref="r:520fc3b2-18ba-4b74-93cf-32bc0bdb78f9(com.mbeddr.mpsutil.commentable.editor)" implicit="true" />
-    <import index="oq9k" ref="371850a9-2c5b-4e1d-a811-70d97e847917/r:f4ae6487-fb1d-418f-8dd3-759f9604156f(com.mbeddr.mpsutil.editor.utils/com.mbeddr.mpsutil.editor.utils.runtime)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
