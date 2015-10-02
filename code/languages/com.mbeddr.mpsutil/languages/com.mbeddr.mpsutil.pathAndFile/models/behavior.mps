@@ -13,7 +13,7 @@
     <import index="ki2h" ref="r:108c1d36-553d-4cd6-bfd5-8b2bd0fe3bb2(com.mbeddr.mpsutil.externalReference.structure)" />
     <import index="h0lo" ref="r:9f92fb5e-9c32-4695-b090-eff683d75771(com.mbeddr.mpsutil.externalReference.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
+    <import index="mvyx" ref="r:bd8ad793-75bc-45ee-9eca-d0f67c7eb1d2(com.mbeddr.mpsutil.platform.pluginSolution.plugin)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -448,8 +448,8 @@
       <node concept="3clFbS" id="5PyBcyXwbia" role="3clF47">
         <node concept="3clFbF" id="5PyBcyXwbib" role="3cqZAp">
           <node concept="2YIFZM" id="5PyBcyXwbic" role="3clFbG">
-            <ref role="1Pybhc" to="hwgx:4Wn4fzjJqEK" resolve="SolutionPathUtil" />
-            <ref role="37wK5l" to="hwgx:4Wn4fzjJqEM" resolve="getSolutionRootPathForNode" />
+            <ref role="37wK5l" to="mvyx:4Wn4fzjJqEM" resolve="getSolutionRootPathForNode" />
+            <ref role="1Pybhc" to="mvyx:4Wn4fzjJqEK" resolve="SolutionPathUtil" />
             <node concept="13iPFW" id="5PyBcyXwbid" role="37wK5m" />
           </node>
         </node>
@@ -899,8 +899,8 @@
       <node concept="3clFbS" id="5PyBcyXwbn8" role="3clF47">
         <node concept="3clFbF" id="5PyBcyXwbn9" role="3cqZAp">
           <node concept="2YIFZM" id="5PyBcyXwbna" role="3clFbG">
-            <ref role="37wK5l" to="hwgx:4Wn4fzjJqEM" resolve="getSolutionRootPathForNode" />
-            <ref role="1Pybhc" to="hwgx:4Wn4fzjJqEK" resolve="SolutionPathUtil" />
+            <ref role="1Pybhc" to="mvyx:4Wn4fzjJqEK" resolve="SolutionPathUtil" />
+            <ref role="37wK5l" to="mvyx:4Wn4fzjJqEM" resolve="getSolutionRootPathForNode" />
             <node concept="13iPFW" id="5PyBcyXwbnb" role="37wK5m" />
           </node>
         </node>
