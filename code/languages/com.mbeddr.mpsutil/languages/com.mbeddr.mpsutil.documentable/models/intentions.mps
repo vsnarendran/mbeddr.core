@@ -13,7 +13,7 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" />
     <import index="9ajy" ref="r:4c477563-be1b-4908-a269-05b0aee62875(com.mbeddr.mpsutil.documentable.structure)" />
-    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
+    <import index="mvyx" ref="r:bd8ad793-75bc-45ee-9eca-d0f67c7eb1d2(com.mbeddr.mpsutil.platform.pluginSolution.plugin)" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -172,8 +172,8 @@
         <node concept="3clFbF" id="5PyBcyXwai5" role="3cqZAp">
           <node concept="3cpWs3" id="5PyBcyXwai6" role="3clFbG">
             <node concept="2YIFZM" id="5PyBcyXwai7" role="3uHU7w">
-              <ref role="37wK5l" to="hwgx:48QUcYJUCkr" resolve="extractDisplayableName" />
-              <ref role="1Pybhc" to="hwgx:3Wi_6mkqAnn" resolve="NameExtractionHelper" />
+              <ref role="37wK5l" to="mvyx:48QUcYJUCkr" resolve="extractDisplayableName" />
+              <ref role="1Pybhc" to="mvyx:3Wi_6mkqAnn" resolve="NameExtractionHelper" />
               <node concept="2Sf5sV" id="5PyBcyXwai8" role="37wK5m" />
             </node>
             <node concept="3cpWs3" id="5PyBcyXwai9" role="3uHU7B">

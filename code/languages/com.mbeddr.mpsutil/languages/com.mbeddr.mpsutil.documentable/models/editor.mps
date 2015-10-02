@@ -6,11 +6,10 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="tw8z" ref="r:520fc3b2-18ba-4b74-93cf-32bc0bdb78f9(com.mbeddr.mpsutil.commentable.editor)" />
+    <import index="ahu1" ref="r:da13223d-4f96-4f83-b226-a04c537faa3b(com.mbeddr.mpsutil.paragraph.editor)" />
+    <import index="9ajy" ref="r:4c477563-be1b-4908-a269-05b0aee62875(com.mbeddr.mpsutil.documentable.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="ahu1" ref="r:da13223d-4f96-4f83-b226-a04c537faa3b(com.mbeddr.mpsutil.paragraph.editor)" implicit="true" />
-    <import index="tw8z" ref="r:520fc3b2-18ba-4b74-93cf-32bc0bdb78f9(com.mbeddr.mpsutil.commentable.editor)" implicit="true" />
-    <import index="9ajy" ref="r:4c477563-be1b-4908-a269-05b0aee62875(com.mbeddr.mpsutil.documentable.structure)" implicit="true" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -309,7 +308,7 @@
   <node concept="1h_SRR" id="3m8H$lmIlF8">
     <property role="3GE5qa" value="documentation" />
     <property role="TrG5h" value="deleteElementDocumentation" />
-    <ref role="1h_SK9" to="vs0r:3m8H$lmFM5W" resolve="ElementDocumentation" />
+    <ref role="1h_SK9" to="9ajy:5PyBcyXwafh" resolve="ElementDocumentation" />
     <node concept="1hA7zw" id="3m8H$lmIlF9" role="1h_SK8">
       <property role="1hAc7j" value="delete_action_id" />
       <node concept="1hAIg9" id="3m8H$lmIlFa" role="1hA7z_">
