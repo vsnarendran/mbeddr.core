@@ -12,8 +12,8 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="9zoj" ref="r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)" implicit="true" />
+    <import index="mvyx" ref="r:bd8ad793-75bc-45ee-9eca-d0f67c7eb1d2(com.mbeddr.mpsutil.platform.pluginSolution.plugin)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
-    <import index="5c5e" ref="r:7a2f88d6-4108-4d29-b499-cc4de14ea970(com.mbeddr.core.base.constraints)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -268,8 +268,8 @@
               <node concept="3cpWs6" id="5PyBcyXw9AI" role="3cqZAp">
                 <node concept="3fqX7Q" id="5PyBcyXw9AJ" role="3cqZAk">
                   <node concept="2YIFZM" id="5PyBcyXw9AK" role="3fr31v">
-                    <ref role="1Pybhc" to="5c5e:4WLtQa9hIve" resolve="CIdentifierHelper" />
-                    <ref role="37wK5l" to="5c5e:4WLtQa9hIAy" resolve="isCKeyword" />
+                    <ref role="1Pybhc" to="mvyx:4WLtQa9hIve" resolve="CIdentifierHelper" />
+                    <ref role="37wK5l" to="mvyx:4WLtQa9hIAy" resolve="isCKeyword" />
                     <node concept="1Wqviy" id="5PyBcyXw9AL" role="37wK5m" />
                   </node>
                 </node>
