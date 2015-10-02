@@ -16,7 +16,6 @@
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
     <import index="dqn8" ref="r:6f177fc3-8a05-4826-8d08-fd8676623247(com.mbeddr.mpsutil.suppresswarning.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="2cjw" ref="r:33b1e266-cd80-4501-a34b-38ba09fae7d1(com.mbeddr.mpsutil.paragraph.structure)" implicit="true" />
     <import index="30xn" ref="r:eadab8e9-5ad6-44ab-a83f-3acbfaf545f2(com.mbeddr.mpsutil.chunk.behavior)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
@@ -36,9 +35,6 @@
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
-      </concept>
-      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
-        <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -126,17 +122,6 @@
         <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
         <child id="1227096836496" name="messageTarget" index="2OEWyd" />
       </concept>
-      <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
-        <child id="1216383424566" name="executeBlock" index="Q6x$H" />
-        <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
-      </concept>
-      <concept id="1216383287005" name="jetbrains.mps.lang.typesystem.structure.QuickFixExecuteBlock" flags="in" index="Q5ZZ6" />
-      <concept id="1216383482742" name="jetbrains.mps.lang.typesystem.structure.QuickFixArgument" flags="ng" index="Q6JDH">
-        <child id="1216383511839" name="argumentType" index="Q6QK4" />
-      </concept>
-      <concept id="1216390348809" name="jetbrains.mps.lang.typesystem.structure.QuickFixArgumentReference" flags="nn" index="QwW4i">
-        <reference id="1216390348810" name="quickFixArgument" index="QwW4h" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
@@ -197,7 +182,6 @@
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
       <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
-      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <reference id="1140138128738" name="concept" index="1PxNhF" />
         <child id="1140138123956" name="leftExpression" index="1PxMeX" />
@@ -704,28 +688,6 @@
     <node concept="1YaCAy" id="7uLL3Mf3R44" role="1YuTPh">
       <property role="TrG5h" value="to" />
       <ref role="1YaFvo" to="vs0r:7uLL3Mf3udZ" resolve="ITextBlockOwner" />
-    </node>
-  </node>
-  <node concept="Q5z_Y" id="7uLL3Mf3R45">
-    <property role="3GE5qa" value="paragraphs" />
-    <property role="TrG5h" value="fixEmptyTextBlockOwner" />
-    <node concept="Q6JDH" id="7uLL3Mf3R46" role="Q6Id_">
-      <property role="TrG5h" value="to" />
-      <node concept="3Tqbb2" id="7uLL3Mf3R47" role="Q6QK4">
-        <ref role="ehGHo" to="2cjw:5PyBcyXwb9b" resolve="ITextBlockOwner" />
-      </node>
-    </node>
-    <node concept="Q5ZZ6" id="7uLL3Mf3R48" role="Q6x$H">
-      <node concept="3clFbS" id="7uLL3Mf3R49" role="2VODD2">
-        <node concept="3clFbF" id="7uLL3Mf3R4a" role="3cqZAp">
-          <node concept="2OqwBi" id="7uLL3Mf3R4b" role="3clFbG">
-            <node concept="QwW4i" id="7uLL3Mf3R4c" role="2Oq$k0">
-              <ref role="QwW4h" node="7uLL3Mf3R46" resolve="to" />
-            </node>
-            <node concept="1PgB_6" id="7uLL3Mf3R4d" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
     </node>
   </node>
   <node concept="18kY7G" id="3jNX2XuKSmL">

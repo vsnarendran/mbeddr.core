@@ -11,7 +11,7 @@
     <import index="kfd7" ref="r:20dd928f-3ef1-49a8-a4e6-95f894a2f714(com.mbeddr.mpsutil.paragraph.behavior)" />
     <import index="oq9k" ref="r:f4ae6487-fb1d-418f-8dd3-759f9604156f(com.mbeddr.mpsutil.editor.utils.runtime)" />
     <import index="tw8z" ref="r:520fc3b2-18ba-4b74-93cf-32bc0bdb78f9(com.mbeddr.mpsutil.commentable.editor)" />
-    <import index="2075" ref="r:dc9a3a53-45d1-4b60-90e6-66e27c5d5050(com.mbeddr.mpsutil.presentationMode.editor)" implicit="true" />
+    <import index="2075" ref="r:dc9a3a53-45d1-4b60-90e6-66e27c5d5050(com.mbeddr.mpsutil.presentationMode.editor)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -158,7 +158,7 @@
         </node>
       </node>
     </node>
-    <node concept="2aJ2om" id="5PyBcyXwb5C" role="CpUAK">
+    <node concept="2aJ2om" id="6ruBZYmRKNa" role="CpUAK">
       <ref role="2$4xQ3" to="2075:7xesQBpJXuT" resolve="presentationMode" />
     </node>
   </node>

@@ -8,7 +8,6 @@
   <imports>
     <import index="2cjw" ref="r:33b1e266-cd80-4501-a34b-38ba09fae7d1(com.mbeddr.mpsutil.paragraph.structure)" implicit="true" />
     <import index="kfd7" ref="r:20dd928f-3ef1-49a8-a4e6-95f894a2f714(com.mbeddr.mpsutil.paragraph.behavior)" implicit="true" />
-    <import index="9zoj" ref="r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -16,8 +15,14 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -37,6 +42,17 @@
       <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
         <child id="1227096802791" name="helginsIntention" index="2OEOjU" />
         <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
+      </concept>
+      <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
+        <child id="1216383424566" name="executeBlock" index="Q6x$H" />
+        <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
+      </concept>
+      <concept id="1216383287005" name="jetbrains.mps.lang.typesystem.structure.QuickFixExecuteBlock" flags="in" index="Q5ZZ6" />
+      <concept id="1216383482742" name="jetbrains.mps.lang.typesystem.structure.QuickFixArgument" flags="ng" index="Q6JDH">
+        <child id="1216383511839" name="argumentType" index="Q6QK4" />
+      </concept>
+      <concept id="1216390348809" name="jetbrains.mps.lang.typesystem.structure.QuickFixArgumentReference" flags="nn" index="QwW4i">
+        <reference id="1216390348810" name="quickFixArgument" index="QwW4h" />
       </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
@@ -63,6 +79,10 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
+        <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -96,9 +116,9 @@
             </node>
             <node concept="3Cnw8n" id="5PyBcyXwb5P" role="2OEOjU">
               <property role="ARO6o" value="true" />
-              <ref role="QpYPw" to="9zoj:7uLL3Mf3R45" resolve="fixEmptyTextBlockOwner" />
+              <ref role="QpYPw" node="7uLL3Mf3R45" resolve="fixEmptyTextBlockOwner" />
               <node concept="3CnSsL" id="5PyBcyXwb5Q" role="3Coj4f">
-                <ref role="QkamJ" to="9zoj:7uLL3Mf3R46" resolve="to" />
+                <ref role="QkamJ" node="7uLL3Mf3R46" resolve="to" />
                 <node concept="1YBJjd" id="5PyBcyXwb5R" role="3CoRuB">
                   <ref role="1YBMHb" node="5PyBcyXwb5S" resolve="to" />
                 </node>
@@ -111,6 +131,28 @@
     <node concept="1YaCAy" id="5PyBcyXwb5S" role="1YuTPh">
       <property role="TrG5h" value="to" />
       <ref role="1YaFvo" to="2cjw:5PyBcyXwb9b" resolve="ITextBlockOwner" />
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="7uLL3Mf3R45">
+    <property role="3GE5qa" value="paragraphs" />
+    <property role="TrG5h" value="fixEmptyTextBlockOwner" />
+    <node concept="Q6JDH" id="7uLL3Mf3R46" role="Q6Id_">
+      <property role="TrG5h" value="to" />
+      <node concept="3Tqbb2" id="7uLL3Mf3R47" role="Q6QK4">
+        <ref role="ehGHo" to="2cjw:5PyBcyXwb9b" resolve="ITextBlockOwner" />
+      </node>
+    </node>
+    <node concept="Q5ZZ6" id="7uLL3Mf3R48" role="Q6x$H">
+      <node concept="3clFbS" id="7uLL3Mf3R49" role="2VODD2">
+        <node concept="3clFbF" id="7uLL3Mf3R4a" role="3cqZAp">
+          <node concept="2OqwBi" id="7uLL3Mf3R4b" role="3clFbG">
+            <node concept="QwW4i" id="7uLL3Mf3R4c" role="2Oq$k0">
+              <ref role="QwW4h" node="7uLL3Mf3R46" resolve="to" />
+            </node>
+            <node concept="1PgB_6" id="7uLL3Mf3R4d" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
