@@ -9,8 +9,6 @@
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="vlw2" ref="r:bfa43af7-bdcc-4866-bcc7-291e576c1a1d(com.mbeddr.mpsutil.pathAndFile.structure)" />
     <import index="z7j3" ref="r:af40066b-cbf8-4329-b1c5-b93911c6e3a4(com.mbeddr.mpsutil.pathAndFile.behavior)" />
-    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -713,7 +711,7 @@
   <node concept="325Ffw" id="50N_nP$el$O">
     <property role="3GE5qa" value="pathAndFile" />
     <property role="TrG5h" value="openOrEdit" />
-    <ref role="1chiOs" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+    <ref role="1chiOs" to="vlw2:5PyBcyXwbkq" resolve="AbstractPicker" />
     <node concept="2PxR9H" id="50N_nP$el$P" role="2QnnpI">
       <property role="2PxWOX" value="Edit with System Editor" />
       <property role="3ArL7W" value="true" />
@@ -727,7 +725,7 @@
             <node concept="2OqwBi" id="2HwAvL$nG7w" role="3clFbG">
               <node concept="0GJ7k" id="2HwAvL$nG56" role="2Oq$k0" />
               <node concept="2qgKlT" id="2HwAvL$nG$N" role="2OqNvi">
-                <ref role="37wK5l" to="hwgx:2HwAvL$nzbX" resolve="editWithSystemEditor" />
+                <ref role="37wK5l" to="z7j3:5PyBcyXwbuj" resolve="editWithSystemEditor" />
               </node>
             </node>
           </node>
@@ -739,7 +737,7 @@
             <node concept="2OqwBi" id="6uhyUqXhd1X" role="3clFbG">
               <node concept="0GJ7k" id="6uhyUqXhcXO" role="2Oq$k0" />
               <node concept="2qgKlT" id="6uhyUqXhdnw" role="2OqNvi">
-                <ref role="37wK5l" to="hwgx:5lKnBeAufga" resolve="isValidFile" />
+                <ref role="37wK5l" to="z7j3:5PyBcyXwbpS" resolve="isValidFile" />
               </node>
             </node>
           </node>
@@ -759,7 +757,7 @@
             <node concept="2OqwBi" id="2HwAvL$nGIB" role="3clFbG">
               <node concept="0GJ7k" id="2HwAvL$nGHb" role="2Oq$k0" />
               <node concept="2qgKlT" id="2HwAvL$nGZ3" role="2OqNvi">
-                <ref role="37wK5l" to="hwgx:2HwAvL$nEXJ" resolve="openWithSystemEditor" />
+                <ref role="37wK5l" to="z7j3:5PyBcyXwbv0" resolve="openWithSystemEditor" />
               </node>
             </node>
           </node>
@@ -771,7 +769,7 @@
             <node concept="2OqwBi" id="6uhyUqXhdyL" role="3clFbG">
               <node concept="0GJ7k" id="6uhyUqXhdyM" role="2Oq$k0" />
               <node concept="2qgKlT" id="6uhyUqXhdyN" role="2OqNvi">
-                <ref role="37wK5l" to="hwgx:5lKnBeAufga" resolve="isValidFile" />
+                <ref role="37wK5l" to="z7j3:5PyBcyXwbpS" resolve="isValidFile" />
               </node>
             </node>
           </node>
@@ -791,7 +789,7 @@
             <node concept="2OqwBi" id="6uhyUqXhdCH" role="3clFbG">
               <node concept="0GJ7k" id="6uhyUqXhdCI" role="2Oq$k0" />
               <node concept="2qgKlT" id="6uhyUqXhqkI" role="2OqNvi">
-                <ref role="37wK5l" to="hwgx:6uhyUqXhg1F" resolve="openWithSystemFileExplorer" />
+                <ref role="37wK5l" to="z7j3:5PyBcyXwbvH" resolve="openWithSystemFileExplorer" />
               </node>
             </node>
           </node>
@@ -803,7 +801,7 @@
             <node concept="2OqwBi" id="6uhyUqXhdCN" role="3clFbG">
               <node concept="0GJ7k" id="6uhyUqXhdCO" role="2Oq$k0" />
               <node concept="2qgKlT" id="6uhyUqXheyp" role="2OqNvi">
-                <ref role="37wK5l" to="hwgx:5lKnBeAuiv7" resolve="isValidDirectory" />
+                <ref role="37wK5l" to="z7j3:5PyBcyXwbqd" resolve="isValidDirectory" />
               </node>
             </node>
           </node>
