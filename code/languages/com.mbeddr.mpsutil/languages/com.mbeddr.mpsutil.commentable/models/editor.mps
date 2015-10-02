@@ -6,15 +6,16 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="gm3l" ref="r:fcef1631-c04d-4b3d-9a40-2abe930a5a53(com.mbeddr.mpsutil.commentable.structure)" implicit="true" />
+    <import index="gm3l" ref="r:fcef1631-c04d-4b3d-9a40-2abe930a5a53(com.mbeddr.mpsutil.commentable.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" implicit="true" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
+      <concept id="2491174914159318432" name="jetbrains.mps.lang.editor.structure.DominatesRecord" flags="lg" index="2lhJJ2">
+        <child id="2491174914159330058" name="dominatesStyleClassList" index="2lhEPC" />
+      </concept>
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -27,9 +28,18 @@
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
+        <child id="1186403803051" name="query" index="VblUZ" />
+      </concept>
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
+        <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
-      <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
+      <concept id="3383245079137422349" name="jetbrains.mps.lang.editor.structure.StyleClassReference" flags="ng" index="14SbXO">
+        <reference id="3383245079137422350" name="styleClass" index="14SbXR" />
+      </concept>
+      <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt">
+        <child id="3383245079137422296" name="dominates" index="14Sbyx" />
+      </concept>
       <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
         <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
         <child id="1139535219969" name="item" index="1h_SK8" />
@@ -39,8 +49,14 @@
         <child id="1139535280620" name="executeFunction" index="1hA7z_" />
       </concept>
       <concept id="1139535439104" name="jetbrains.mps.lang.editor.structure.CellActionMap_ExecuteFunction" flags="in" index="1hAIg9" />
+      <concept id="1225456267680" name="jetbrains.mps.lang.editor.structure.RGBColor" flags="ng" index="1iSF2X">
+        <property id="1225456424731" name="value" index="1iTho6" />
+      </concept>
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
+      </concept>
+      <concept id="9122903797276194520" name="jetbrains.mps.lang.editor.structure.StyleClassReferenceList" flags="ng" index="1ybEpN">
+        <child id="9122903797276195161" name="element" index="1ybEBM" />
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -174,11 +190,11 @@
       <node concept="3F0ifn" id="5PyBcyXw965" role="3EZMnx">
         <property role="3F0ifm" value="//" />
         <ref role="1ERwB7" node="5PyBcyXw92t" resolve="removeComment" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dhncU" resolve="CodeComment" />
+        <ref role="1k5W1q" node="2CEi94dhncU" resolve="CodeComment" />
       </node>
       <node concept="3F1sOY" id="5PyBcyXw966" role="3EZMnx">
         <ref role="1NtTu8" to="gm3l:5PyBcyXw96o" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dhncU" resolve="CodeComment" />
+        <ref role="1k5W1q" node="2CEi94dhncU" resolve="CodeComment" />
       </node>
     </node>
   </node>
@@ -191,70 +207,63 @@
         <property role="Vb096" value="gray" />
       </node>
     </node>
+    <node concept="14StLt" id="2CEi94dhncU" role="V601i">
+      <property role="TrG5h" value="CodeComment" />
+      <node concept="Vb9p2" id="2CEi94dhpxt" role="3F10Kt">
+        <property role="Vbekb" value="ITALIC" />
+      </node>
+      <node concept="VechU" id="2CEi94dhpx_" role="3F10Kt">
+        <node concept="1iSF2X" id="2CEi94dhqFu" role="VblUZ">
+          <property role="1iTho6" value="808080" />
+        </node>
+      </node>
+      <node concept="2lhJJ2" id="2CEi94dhndO" role="14Sbyx" />
+    </node>
+    <node concept="14StLt" id="2CEi94dprSJ" role="V601i">
+      <property role="TrG5h" value="TextComment" />
+      <node concept="Vb9p2" id="2CEi94dprSK" role="3F10Kt">
+        <property role="Vbekb" value="ITALIC" />
+      </node>
+      <node concept="VechU" id="2CEi94dprSL" role="3F10Kt">
+        <node concept="1iSF2X" id="2CEi94dprSM" role="VblUZ">
+          <property role="1iTho6" value="808080" />
+        </node>
+      </node>
+      <node concept="2lhJJ2" id="2CEi94dprSN" role="14Sbyx" />
+    </node>
+    <node concept="14StLt" id="2CEi94dhrPl" role="V601i">
+      <property role="TrG5h" value="TextCommentTag" />
+      <node concept="Vb9p2" id="2CEi94dhrPm" role="3F10Kt">
+        <property role="Vbekb" value="BOLD" />
+      </node>
+      <node concept="VechU" id="2CEi94dhrPn" role="3F10Kt">
+        <node concept="1iSF2X" id="2CEi94dhrPo" role="VblUZ">
+          <property role="1iTho6" value="808080" />
+        </node>
+      </node>
+      <node concept="2lhJJ2" id="2CEi94dhrPp" role="14Sbyx">
+        <node concept="1ybEpN" id="2CEi94dhrQ_" role="2lhEPC">
+          <node concept="14SbXO" id="6ruBZYmDEw2" role="1ybEBM">
+            <ref role="14SbXR" node="2CEi94dprSJ" resolve="TextComment" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="PKFIW" id="65XyadYMSRq">
     <property role="TrG5h" value="commentedCodeDefault" />
     <property role="3GE5qa" value="commenting" />
-    <ref role="1XX52x" to="vs0r:65XyadYMMYF" resolve="ICommentedCode" />
+    <ref role="1XX52x" to="gm3l:5PyBcyXw96n" resolve="ICommentedCode" />
     <node concept="3EZMnI" id="65XyadYMSRs" role="2wV5jI">
       <node concept="l2Vlx" id="cwSfPzVQzF" role="2iSdaV" />
       <node concept="3F0ifn" id="65XyadYMSRv" role="3EZMnx">
         <property role="3F0ifm" value="//" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dhncU" resolve="CodeComment" />
-        <ref role="1ERwB7" to="r4b4:65XyadYNwGZ" resolve="removeComment" />
+        <ref role="1k5W1q" node="2CEi94dhncU" resolve="CodeComment" />
+        <ref role="1ERwB7" node="5PyBcyXw92t" resolve="removeComment" />
       </node>
       <node concept="3F1sOY" id="65XyadYMSRx" role="3EZMnx">
-        <ref role="1k5W1q" to="r4b4:2CEi94dhncU" resolve="CodeComment" />
-        <ref role="1NtTu8" to="vs0r:65XyadYMMYG" />
-      </node>
-    </node>
-  </node>
-  <node concept="1h_SRR" id="65XyadYNwGZ">
-    <property role="TrG5h" value="removeComment" />
-    <property role="3GE5qa" value="commenting" />
-    <ref role="1h_SK9" to="vs0r:65XyadYMMYF" resolve="ICommentedCode" />
-    <node concept="1hA7zw" id="65XyadYNwH0" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
-      <node concept="1hAIg9" id="65XyadYNwH1" role="1hA7z_">
-        <node concept="3clFbS" id="65XyadYNwH2" role="2VODD2">
-          <node concept="3cpWs8" id="6PYNGEt07m_" role="3cqZAp">
-            <node concept="3cpWsn" id="6PYNGEt07mA" role="3cpWs9">
-              <property role="TrG5h" value="commentedCode" />
-              <node concept="3Tqbb2" id="6PYNGEt07mz" role="1tU5fm">
-                <ref role="ehGHo" to="tpck:gw2VY9q" resolve="BaseConcept" />
-              </node>
-              <node concept="2OqwBi" id="6PYNGEt07mB" role="33vP2m">
-                <node concept="0IXxy" id="6PYNGEt07mC" role="2Oq$k0" />
-                <node concept="3TrEf2" id="6PYNGEt07mD" role="2OqNvi">
-                  <ref role="3Tt5mk" to="vs0r:65XyadYMMYG" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="65XyadYNwH3" role="3cqZAp">
-            <node concept="2OqwBi" id="65XyadYNwH5" role="3clFbG">
-              <node concept="0IXxy" id="65XyadYNwH4" role="2Oq$k0" />
-              <node concept="1P9Npp" id="65XyadYNwH9" role="2OqNvi">
-                <node concept="37vLTw" id="6PYNGEt07mE" role="1P9ThW">
-                  <ref role="3cqZAo" node="6PYNGEt07mA" resolve="commentedCode" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="6PYNGEt07rB" role="3cqZAp">
-            <node concept="2OqwBi" id="6PYNGEt07zc" role="3clFbG">
-              <node concept="37vLTw" id="6PYNGEt07rA" role="2Oq$k0">
-                <ref role="3cqZAo" node="6PYNGEt07mA" resolve="commentedCode" />
-              </node>
-              <node concept="1OKiuA" id="6PYNGEt08lm" role="2OqNvi">
-                <node concept="1Q80Hx" id="6PYNGEt08lX" role="lBI5i" />
-                <node concept="2B6iha" id="6PYNGEt08re" role="lGT1i">
-                  <property role="1lyBwo" value="firstEditable" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+        <ref role="1NtTu8" to="gm3l:5PyBcyXw96o" />
+        <ref role="1k5W1q" node="2CEi94dhncU" resolve="CodeComment" />
       </node>
     </node>
   </node>

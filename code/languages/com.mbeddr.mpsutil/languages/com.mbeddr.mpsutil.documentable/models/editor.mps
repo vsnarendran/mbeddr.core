@@ -8,7 +8,7 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="ahu1" ref="r:da13223d-4f96-4f83-b226-a04c537faa3b(com.mbeddr.mpsutil.paragraph.editor)" implicit="true" />
-    <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" implicit="true" />
+    <import index="tw8z" ref="r:520fc3b2-18ba-4b74-93cf-32bc0bdb78f9(com.mbeddr.mpsutil.commentable.editor)" implicit="true" />
     <import index="9ajy" ref="r:4c477563-be1b-4908-a269-05b0aee62875(com.mbeddr.mpsutil.documentable.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
@@ -206,12 +206,12 @@
         <node concept="3F0ifn" id="5PyBcyXwadX" role="3EZMnx">
           <property role="3F0ifm" value="//" />
           <ref role="1ERwB7" node="5PyBcyXwad$" resolve="deleteElementDocumentation" />
-          <ref role="1k5W1q" to="r4b4:2CEi94dprSJ" resolve="TextComment" />
+          <ref role="1k5W1q" to="tw8z:2CEi94dprSJ" resolve="TextComment" />
         </node>
         <node concept="3F1sOY" id="5PyBcyXwadY" role="3EZMnx">
           <ref role="1NtTu8" to="9ajy:5PyBcyXwafi" />
-          <ref role="1k5W1q" to="r4b4:2CEi94dprSJ" resolve="TextComment" />
           <ref role="1ERwB7" to="ahu1:7zJMcSxj$uX" resolve="preventDeletion" />
+          <ref role="1k5W1q" to="tw8z:2CEi94dprSJ" resolve="TextComment" />
         </node>
         <node concept="2iRfu4" id="5PyBcyXwadZ" role="2iSdaV" />
       </node>
