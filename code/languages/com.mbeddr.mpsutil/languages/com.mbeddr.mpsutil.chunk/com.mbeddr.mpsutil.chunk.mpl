@@ -42,7 +42,6 @@
     <dependency reexport="false">c2e56fa8-7054-46fe-8534-030242101153(com.mbeddr.mpsutil.commentable)</dependency>
     <dependency reexport="false">198afc4b-23ce-450a-a943-05218c3f83ca(com.mbeddr.mpsutil.codereview)</dependency>
     <dependency reexport="false">ea31a56a-3b81-465a-a6d2-df77c1a4023e(com.mbeddr.mpsutil.platform.pluginSolution)</dependency>
-    <dependency reexport="false">1338ba73-5059-479b-a929-de86597a62b8(com.mbeddr.mpsutil.jung.pluginSolution)</dependency>
     <dependency reexport="false">371850a9-2c5b-4e1d-a811-70d97e847917(com.mbeddr.mpsutil.editor.utils)</dependency>
     <dependency reexport="false">65ff80b5-800d-4d32-b722-a148de520562(com.mbeddr.mpsutil.platform)</dependency>
   </dependencies>

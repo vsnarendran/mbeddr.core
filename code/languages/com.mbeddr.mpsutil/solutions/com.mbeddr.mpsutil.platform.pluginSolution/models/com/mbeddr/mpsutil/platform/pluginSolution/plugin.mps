@@ -36,6 +36,7 @@
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="mk8z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.progress(MPS.Core/)" implicit="true" />
+    <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" implicit="true" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
@@ -44,25 +45,53 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="k3nr" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.ide.editor(MPS.Editor/)" implicit="true" />
     <import index="qqlm" ref="r:a895bf24-7625-4094-ba2d-ec74bd2639ee(com.mbeddr.mpsutil.ideEnhancement.behavior)" implicit="true" />
+    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.IconResource" flags="ng" index="1QGGSu" />
+      <concept id="8974276187400029898" name="jetbrains.mps.lang.resources.structure.Resource" flags="ng" index="1QGGTJ">
+        <property id="8974276187400029899" name="path" index="1QGGTI" />
+      </concept>
+    </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
       <concept id="1204908117386" name="jetbrains.mps.lang.plugin.structure.Separator" flags="ng" index="2a7GMi" />
       <concept id="1207145163717" name="jetbrains.mps.lang.plugin.structure.ElementListContents" flags="ng" index="ftmFs">
         <child id="1207145201301" name="reference" index="ftvYc" />
       </concept>
+      <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
+        <property id="1205250923097" name="caption" index="2uzpH1" />
+        <child id="1203083196627" name="updateBlock" index="tmbBb" />
+        <child id="1203083461638" name="executeFunction" index="tncku" />
+        <child id="1217413222820" name="parameter" index="1NuT2Z" />
+        <child id="8976425910813834639" name="icon" index="3Uehp1" />
+      </concept>
+      <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
         <property id="1204991940915" name="caption" index="2f7twF" />
         <property id="1213283637680" name="isPopup" index="1XlLyE" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
+      <concept id="1203088046679" name="jetbrains.mps.lang.plugin.structure.ActionInstance" flags="ng" index="tCFHf">
+        <reference id="1203088061055" name="action" index="tCJdB" />
+      </concept>
       <concept id="1203092361741" name="jetbrains.mps.lang.plugin.structure.ModificationStatement" flags="lg" index="tT9cl">
         <reference id="1204992316090" name="point" index="2f8Tey" />
         <reference id="1203092736097" name="modifiedGroup" index="tU$_T" />
       </concept>
+      <concept id="1205681243813" name="jetbrains.mps.lang.plugin.structure.IsApplicableBlock" flags="in" index="2ScWuX" />
       <concept id="1203680534665" name="jetbrains.mps.lang.plugin.structure.GroupAnchor" flags="ng" index="10WQ6h" />
+      <concept id="5538333046911348654" name="jetbrains.mps.lang.plugin.structure.RequiredCondition" flags="ng" index="1oajcY" />
+      <concept id="1217252042208" name="jetbrains.mps.lang.plugin.structure.ActionDataParameterDeclaration" flags="ng" index="1DS2jV">
+        <reference id="1217252646389" name="key" index="1DUlNI" />
+      </concept>
+      <concept id="1217252428768" name="jetbrains.mps.lang.plugin.structure.ActionDataParameterReferenceOperation" flags="nn" index="1DTwFV" />
+      <concept id="1217413147516" name="jetbrains.mps.lang.plugin.structure.ActionParameter" flags="ng" index="1NuADB">
+        <child id="5538333046911298738" name="condition" index="1oa70y" />
+      </concept>
     </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
@@ -123,6 +152,9 @@
       <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
         <child id="1164903359218" name="catchBody" index="TDEfX" />
         <child id="1164903359217" name="throwable" index="TDEfY" />
+      </concept>
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
       <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
@@ -319,6 +351,12 @@
         <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
     </language>
+    <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
+      <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
+      <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ng" index="2WEnae">
+        <reference id="1205756909548" name="member" index="2WH_rO" />
+      </concept>
+    </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
         <property id="1167228628751" name="hasException" index="34fQS0" />
@@ -363,6 +401,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -4755,6 +4794,139 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="tC5Ba" id="3slbD0C6VXu">
+    <property role="3GE5qa" value="buttonsInEditor" />
+    <property role="TrG5h" value="EditorButtonGroup" />
+    <node concept="ftmFs" id="3slbD0C6VXv" role="ftER_">
+      <node concept="tCFHf" id="3slbD0C6VXz" role="ftvYc">
+        <ref role="tCJdB" to="d244:3slbD0C6UdB" resolve="TurnButtonsInEditorOn" />
+      </node>
+      <node concept="tCFHf" id="3slbD0C7$AB" role="ftvYc">
+        <ref role="tCJdB" to="d244:3slbD0C7$An" resolve="TurnButtonsInEditorOff" />
+      </node>
+      <node concept="2a7GMi" id="goNQ8fvP_X" role="ftvYc" />
+    </node>
+    <node concept="tT9cl" id="3slbD0C6VXx" role="2f5YQi">
+      <ref role="tU$_T" to="d244:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
+      <ref role="2f8Tey" to="d244:goNQ8fnbte" resolve="mbeddrPlatformProjectionModes" />
+    </node>
+  </node>
+  <node concept="sE7Ow" id="3slbD0C7$An">
+    <property role="3GE5qa" value="buttonsInEditor" />
+    <property role="TrG5h" value="TurnButtonsInEditorOff" />
+    <property role="2uzpH1" value="Editor Helper Buttons" />
+    <node concept="1DS2jV" id="3slbD0C7$Ao" role="1NuT2Z">
+      <property role="TrG5h" value="project" />
+      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+      <node concept="1oajcY" id="3slbD0C7$Ap" role="1oa70y" />
+    </node>
+    <node concept="1DS2jV" id="3slbD0C7DL8" role="1NuT2Z">
+      <property role="TrG5h" value="ctx" />
+      <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
+      <node concept="1oajcY" id="3slbD0C7DL9" role="1oa70y" />
+    </node>
+    <node concept="tnohg" id="3slbD0C7$Aq" role="tncku">
+      <node concept="3clFbS" id="3slbD0C7$Ar" role="2VODD2">
+        <node concept="3clFbF" id="3slbD0C7$As" role="3cqZAp">
+          <node concept="2YIFZM" id="3slbD0C7$At" role="3clFbG">
+            <ref role="1Pybhc" to="hwgx:3slbD0C6STH" resolve="EditorButtonHelper" />
+            <ref role="37wK5l" to="hwgx:3slbD0C6STV" resolve="showButtons" />
+            <node concept="3clFbT" id="3slbD0C7$Au" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="33WQfIVwDe3" role="3cqZAp">
+          <node concept="2OqwBi" id="33WQfIVwNyX" role="3clFbG">
+            <node concept="2OqwBi" id="33WQfIVwERW" role="2Oq$k0">
+              <node concept="2OqwBi" id="33WQfIVwDjP" role="2Oq$k0">
+                <node concept="2WthIp" id="33WQfIVwDe4" role="2Oq$k0" />
+                <node concept="1DTwFV" id="3slbD0C7DLd" role="2OqNvi">
+                  <ref role="2WH_rO" node="3slbD0C7DL8" resolve="ctx" />
+                </node>
+              </node>
+              <node concept="liA8E" id="33WQfIVwLkr" role="2OqNvi">
+                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+              </node>
+            </node>
+            <node concept="liA8E" id="33WQfIVwTTR" role="2OqNvi">
+              <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1QGGSu" id="3slbD0C7$Av" role="3Uehp1">
+      <property role="1QGGTI" value="${solution_descriptor}/icons/check.png" />
+    </node>
+    <node concept="2ScWuX" id="3slbD0C7$Aw" role="tmbBb">
+      <node concept="3clFbS" id="3slbD0C7$Ax" role="2VODD2">
+        <node concept="3clFbF" id="3slbD0C7$Ay" role="3cqZAp">
+          <node concept="2YIFZM" id="3slbD0C7$A$" role="3clFbG">
+            <ref role="37wK5l" to="hwgx:3slbD0C6STN" resolve="showButtons" />
+            <ref role="1Pybhc" to="hwgx:3slbD0C6STH" resolve="EditorButtonHelper" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="sE7Ow" id="3slbD0C6UdB">
+    <property role="3GE5qa" value="buttonsInEditor" />
+    <property role="TrG5h" value="TurnButtonsInEditorOn" />
+    <property role="2uzpH1" value="Editor Helper Buttons" />
+    <node concept="1DS2jV" id="3slbD0C6UdE" role="1NuT2Z">
+      <property role="TrG5h" value="project" />
+      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+      <node concept="1oajcY" id="3slbD0C6UdF" role="1oa70y" />
+    </node>
+    <node concept="1DS2jV" id="3slbD0C7DLv" role="1NuT2Z">
+      <property role="TrG5h" value="ctx" />
+      <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
+      <node concept="1oajcY" id="3slbD0C7DLw" role="1oa70y" />
+    </node>
+    <node concept="tnohg" id="3slbD0C6UdG" role="tncku">
+      <node concept="3clFbS" id="3slbD0C6UdH" role="2VODD2">
+        <node concept="3clFbF" id="3slbD0C6UDH" role="3cqZAp">
+          <node concept="2YIFZM" id="3slbD0C7$Al" role="3clFbG">
+            <ref role="1Pybhc" to="hwgx:3slbD0C6STH" resolve="EditorButtonHelper" />
+            <ref role="37wK5l" to="hwgx:3slbD0C6STV" resolve="showButtons" />
+            <node concept="3clFbT" id="3slbD0C7$Am" role="37wK5m">
+              <property role="3clFbU" value="true" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3slbD0C7DLi" role="3cqZAp">
+          <node concept="2OqwBi" id="3slbD0C7DLj" role="3clFbG">
+            <node concept="2OqwBi" id="3slbD0C7DLk" role="2Oq$k0">
+              <node concept="2OqwBi" id="3slbD0C7DLl" role="2Oq$k0">
+                <node concept="2WthIp" id="3slbD0C7DLm" role="2Oq$k0" />
+                <node concept="1DTwFV" id="3slbD0C7DLn" role="2OqNvi">
+                  <ref role="2WH_rO" node="3slbD0C7DLv" resolve="ctx" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3slbD0C7DLo" role="2OqNvi">
+                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3slbD0C7DLp" role="2OqNvi">
+              <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3slbD0C7DLr" role="3cqZAp" />
+      </node>
+    </node>
+    <node concept="2ScWuX" id="3slbD0C7$Ad" role="tmbBb">
+      <node concept="3clFbS" id="3slbD0C7$Ae" role="2VODD2">
+        <node concept="3clFbF" id="3slbD0C7$Af" role="3cqZAp">
+          <node concept="3fqX7Q" id="3slbD0C7$Aj" role="3clFbG">
+            <node concept="2YIFZM" id="3slbD0C7$Ak" role="3fr31v">
+              <ref role="37wK5l" to="hwgx:3slbD0C6STN" resolve="showButtons" />
+              <ref role="1Pybhc" to="hwgx:3slbD0C6STH" resolve="EditorButtonHelper" />
             </node>
           </node>
         </node>
