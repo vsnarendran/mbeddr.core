@@ -11,7 +11,7 @@
     <import index="ux5t" ref="r:83b33b80-e4a9-447a-862b-287c72c79ce7(com.mbeddr.mpsutil.nodelist.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" implicit="true" />
+    <import index="oq9k" ref="371850a9-2c5b-4e1d-a811-70d97e847917/r:f4ae6487-fb1d-418f-8dd3-759f9604156f(com.mbeddr.mpsutil.editor.utils/com.mbeddr.mpsutil.editor.utils.runtime)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -182,7 +182,7 @@
             <node concept="3clFbF" id="5PyBcyXwaJs" role="3cqZAp">
               <node concept="2ShNRf" id="5PyBcyXwaJt" role="3clFbG">
                 <node concept="1pGfFk" id="5PyBcyXwaJu" role="2ShVmc">
-                  <ref role="37wK5l" to="r4b4:3Dgh5aYiKso" resolve="HorizLineCell" />
+                  <ref role="37wK5l" to="oq9k:3Dgh5aYiKso" resolve="HorizLineCell" />
                   <node concept="pncrf" id="5PyBcyXwaJv" role="37wK5m" />
                   <node concept="10M0yZ" id="5PyBcyXwaJw" role="37wK5m">
                     <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
@@ -273,7 +273,7 @@
             <node concept="3clFbF" id="5PyBcyXwaKk" role="3cqZAp">
               <node concept="2ShNRf" id="5PyBcyXwaKl" role="3clFbG">
                 <node concept="1pGfFk" id="5PyBcyXwaKm" role="2ShVmc">
-                  <ref role="37wK5l" to="r4b4:3Dgh5aYiKso" resolve="HorizLineCell" />
+                  <ref role="37wK5l" to="oq9k:3Dgh5aYiKso" resolve="HorizLineCell" />
                   <node concept="pncrf" id="5PyBcyXwaKn" role="37wK5m" />
                   <node concept="10M0yZ" id="5PyBcyXwaKo" role="37wK5m">
                     <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
@@ -341,7 +341,7 @@
               <node concept="3clFbF" id="5PyBcyXwaKL" role="3cqZAp">
                 <node concept="2ShNRf" id="5PyBcyXwaKM" role="3clFbG">
                   <node concept="1pGfFk" id="5PyBcyXwaKN" role="2ShVmc">
-                    <ref role="37wK5l" to="r4b4:DubiFB4e4X" resolve="IconCell" />
+                    <ref role="37wK5l" to="oq9k:DubiFB4e4X" resolve="IconCell" />
                     <node concept="2OqwBi" id="5PyBcyXwaKO" role="37wK5m">
                       <node concept="pncrf" id="5PyBcyXwaKP" role="2Oq$k0" />
                       <node concept="3TrEf2" id="5PyBcyXwaKQ" role="2OqNvi">

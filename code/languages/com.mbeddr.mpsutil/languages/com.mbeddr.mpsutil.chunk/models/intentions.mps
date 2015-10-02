@@ -8,8 +8,8 @@
   </languages>
   <imports>
     <import index="sct6" ref="r:1b10995f-8da6-4ab0-8822-bce965238ddc(com.mbeddr.mpsutil.codereview.structure)" />
+    <import index="9p45" ref="r:67b02670-4d7a-4a53-9329-ae1228635554(com.mbeddr.mpsutil.codereview.behavior)" implicit="true" />
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" implicit="true" />
-    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -145,8 +145,8 @@
                 <node concept="3clFbS" id="5PyBcyXvTS_" role="1bW5cS">
                   <node concept="3clFbF" id="5PyBcyXvTSA" role="3cqZAp">
                     <node concept="2YIFZM" id="5PyBcyXvTSB" role="3clFbG">
-                      <ref role="37wK5l" to="hwgx:1tDstbgCHog" resolve="reevaluateReviewData" />
-                      <ref role="1Pybhc" to="hwgx:1tDstbgCbvP" resolve="ReviewHelper" />
+                      <ref role="1Pybhc" to="9p45:1tDstbgCbvP" resolve="ReviewHelper" />
+                      <ref role="37wK5l" to="9p45:1tDstbgCHog" resolve="reevaluateReviewData" />
                       <node concept="2OqwBi" id="5PyBcyXvTSC" role="37wK5m">
                         <node concept="37vLTw" id="5PyBcyXvTSD" role="2Oq$k0">
                           <ref role="3cqZAo" node="5PyBcyXvTSF" resolve="it" />

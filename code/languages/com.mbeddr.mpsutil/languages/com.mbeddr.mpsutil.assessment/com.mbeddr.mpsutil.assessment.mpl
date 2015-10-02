@@ -40,11 +40,14 @@
   <dependencies>
     <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
     <dependency reexport="false">479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)</dependency>
-    <dependency reexport="false">b124218e-4c2c-4976-9b26-6bb95b8a0325(com.mbeddr.mpsutil.ideEnhancement)</dependency>
     <dependency reexport="false">50703665-60da-41b5-ba25-be1e64ea9089(com.mbeddr.mpsutil.externalReference)</dependency>
     <dependency reexport="false">690ec915-02c8-4a7e-b65e-7b78b870dd62(com.mbeddr.mpsutil.controlledName)</dependency>
     <dependency reexport="false">21ac7f78-9b57-4548-86f2-e50a5e6f4b7a(com.mbeddr.mpsutil.documentable)</dependency>
     <dependency reexport="false">97a3ea5c-1731-443d-baf9-12fff7d3a08a(com.mbeddr.mpsutil.paragraph)</dependency>
+    <dependency reexport="false">198afc4b-23ce-450a-a943-05218c3f83ca(com.mbeddr.mpsutil.codereview)</dependency>
+    <dependency reexport="false">371850a9-2c5b-4e1d-a811-70d97e847917(com.mbeddr.mpsutil.editor.utils)</dependency>
+    <dependency reexport="false">65ff80b5-800d-4d32-b722-a148de520562(com.mbeddr.mpsutil.platform)</dependency>
+    <dependency reexport="false">ea31a56a-3b81-465a-a6d2-df77c1a4023e(com.mbeddr.mpsutil.platform.pluginSolution)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -78,6 +81,7 @@
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
   </languageVersions>
   <extendedLanguages>
+    <extendedLanguage>b124218e-4c2c-4976-9b26-6bb95b8a0325(com.mbeddr.mpsutil.ideEnhancement)</extendedLanguage>
     <extendedLanguage>ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</extendedLanguage>
     <extendedLanguage>b4d28e19-7d2d-47e9-943e-3a41f97a0e52(com.mbeddr.mpsutil.plantuml.node)</extendedLanguage>
     <extendedLanguage>af595aba-a1e2-473a-821e-18a5c48aaaac(com.mbeddr.mpsutil.chunk)</extendedLanguage>

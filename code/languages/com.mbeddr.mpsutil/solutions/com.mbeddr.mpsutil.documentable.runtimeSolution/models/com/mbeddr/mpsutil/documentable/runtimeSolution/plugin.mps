@@ -4,9 +4,11 @@
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
+    <use id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring" version="0" />
   </languages>
   <imports>
-    <import index="fgky" ref="r:58da145a-b160-4754-a2e7-7dfa1451f846(com.mbeddr.core.base.refactorings)" implicit="true" />
+    <import index="thef" ref="r:6666292c-7dc4-4176-8e44-02f4d6ce31f9(com.mbeddr.mpsutil.commentable.refactorings)" />
+    <import index="bktn" ref="r:4cd61634-87bb-4413-a303-e44c890b7a40(com.mbeddr.mpsutil.documentable.refactorings)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -37,7 +39,7 @@
   <node concept="1lpA8v" id="6xlxoSXdgcY">
     <property role="TrG5h" value="Add Documentation" />
     <property role="3GE5qa" value="documentationStuff" />
-    <ref role="1lpA8s" to="fgky:3m8H$lmIhYg" resolve="addDocuemntation" />
+    <ref role="1lpA8s" to="bktn:5PyBcyXwahc" resolve="addDocuemntation" />
     <node concept="pLAjd" id="6xlxoSXdgd0" role="1lpA8t">
       <property role="pLAjc" value="ctrl" />
       <property role="pLAjf" value="VK_A" />
@@ -46,7 +48,7 @@
   <node concept="1lpA8v" id="6xlxoSXdgd1">
     <property role="TrG5h" value="Comment In" />
     <property role="3GE5qa" value="documentationStuff" />
-    <ref role="1lpA8s" to="fgky:65XyadYNwBF" resolve="commentBackInCode" />
+    <ref role="1lpA8s" to="thef:5PyBcyXw92M" resolve="commentBackInCode" />
     <node concept="pLAjd" id="6xlxoSXdgd2" role="1lpA8t">
       <property role="pLAjf" value="VK_C" />
       <property role="pLAjc" value="ctrl+alt" />
@@ -55,7 +57,7 @@
   <node concept="1lpA8v" id="6xlxoSXdgd3">
     <property role="TrG5h" value="Comment In" />
     <property role="3GE5qa" value="documentationStuff" />
-    <ref role="1lpA8s" to="fgky:MGIVVaAnY" resolve="commentBackInCodeOnOriginal" />
+    <ref role="1lpA8s" to="thef:5PyBcyXw923" resolve="commentBackInCodeOnOriginal" />
     <node concept="pLAjd" id="6xlxoSXdgd4" role="1lpA8t">
       <property role="pLAjf" value="VK_C" />
       <property role="pLAjc" value="ctrl+alt" />
@@ -64,7 +66,7 @@
   <node concept="1lpA8v" id="6xlxoSXdgd7">
     <property role="TrG5h" value="Comment Out" />
     <property role="3GE5qa" value="documentationStuff" />
-    <ref role="1lpA8s" to="fgky:65XyadYMNlZ" resolve="commentedOutCode" />
+    <ref role="1lpA8s" to="thef:5PyBcyXw90M" resolve="commentedOutCode" />
     <node concept="pLAjd" id="6xlxoSXdgd8" role="1lpA8t">
       <property role="pLAjf" value="VK_C" />
       <property role="pLAjc" value="ctrl+alt" />

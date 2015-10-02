@@ -15,7 +15,7 @@
     <import index="hd7c" ref="r:eee314e7-0afd-4503-aeed-0fe86e65b414(com.mbeddr.mpsutil.search.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="kfd7" ref="r:20dd928f-3ef1-49a8-a4e6-95f894a2f714(com.mbeddr.mpsutil.paragraph.behavior)" implicit="true" />
-    <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" implicit="true" />
+    <import index="oq9k" ref="371850a9-2c5b-4e1d-a811-70d97e847917/r:f4ae6487-fb1d-418f-8dd3-759f9604156f(com.mbeddr.mpsutil.editor.utils/com.mbeddr.mpsutil.editor.utils.runtime)" implicit="true" />
     <import index="n7ra" ref="r:73fc9921-b005-49d5-89bd-e3fa80f06108(com.mbeddr.mpsutil.search.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -445,8 +445,8 @@
       <node concept="3clFbS" id="5PyBcyXwagZ" role="3clF47">
         <node concept="3cpWs6" id="5PyBcyXwah0" role="3cqZAp">
           <node concept="10M0yZ" id="5PyBcyXwah1" role="3cqZAk">
-            <ref role="1PxDUh" to="r4b4:4tRpPVPUEa3" resolve="BasicColors" />
-            <ref role="3cqZAo" to="r4b4:2CEi94dud1E" resolve="COMMENT_GREY" />
+            <ref role="3cqZAo" to="oq9k:2CEi94dud1E" resolve="COMMENT_GREY" />
+            <ref role="1PxDUh" to="oq9k:4tRpPVPUEa3" resolve="BasicColors" />
           </node>
         </node>
       </node>
@@ -461,8 +461,8 @@
       <node concept="3clFbS" id="5PyBcyXwah5" role="3clF47">
         <node concept="3cpWs6" id="5PyBcyXwah6" role="3cqZAp">
           <node concept="10M0yZ" id="5PyBcyXwah7" role="3cqZAk">
-            <ref role="1PxDUh" to="r4b4:4tRpPVPUEa3" resolve="BasicColors" />
-            <ref role="3cqZAo" to="r4b4:2CEi94dud1E" resolve="COMMENT_GREY" />
+            <ref role="1PxDUh" to="oq9k:4tRpPVPUEa3" resolve="BasicColors" />
+            <ref role="3cqZAo" to="oq9k:2CEi94dud1E" resolve="COMMENT_GREY" />
           </node>
         </node>
       </node>

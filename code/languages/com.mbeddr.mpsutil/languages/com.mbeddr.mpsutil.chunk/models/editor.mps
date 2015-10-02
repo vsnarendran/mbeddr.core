@@ -9,6 +9,8 @@
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" implicit="true" />
+    <import index="oq9k" ref="371850a9-2c5b-4e1d-a811-70d97e847917/r:f4ae6487-fb1d-418f-8dd3-759f9604156f(com.mbeddr.mpsutil.editor.utils/com.mbeddr.mpsutil.editor.utils.runtime)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -138,7 +140,7 @@
               <node concept="3clFbF" id="5PyBcyXvTU_" role="3cqZAp">
                 <node concept="2ShNRf" id="5PyBcyXvTUA" role="3clFbG">
                   <node concept="1pGfFk" id="5PyBcyXvTUB" role="2ShVmc">
-                    <ref role="37wK5l" to="r4b4:DubiFB4e4X" resolve="IconCell" />
+                    <ref role="37wK5l" to="oq9k:DubiFB4e4X" resolve="IconCell" />
                     <node concept="2OqwBi" id="5PyBcyXvTUC" role="37wK5m">
                       <node concept="pncrf" id="5PyBcyXvTUD" role="2Oq$k0" />
                       <node concept="3TrEf2" id="5PyBcyXvTUE" role="2OqNvi">
@@ -240,6 +242,31 @@
       <property role="3F0ifm" value="" />
       <node concept="VPxyj" id="5PyBcyXvUcU" role="3F10Kt">
         <property role="VOm3f" value="true" />
+      </node>
+    </node>
+  </node>
+  <node concept="1h_SRR" id="2A5UqXKxor1">
+    <property role="3GE5qa" value="chunk" />
+    <property role="TrG5h" value="deleteReexport" />
+    <ref role="1h_SK9" to="vs0r:DubiFAXpld" resolve="DefaultGenericChunkDependency" />
+    <node concept="1hA7zw" id="2A5UqXKxor2" role="1h_SK8">
+      <property role="1hAc7j" value="delete_action_id" />
+      <node concept="1hAIg9" id="2A5UqXKxor3" role="1hA7z_">
+        <node concept="3clFbS" id="2A5UqXKxor4" role="2VODD2">
+          <node concept="3clFbF" id="2A5UqXKxorf" role="3cqZAp">
+            <node concept="37vLTI" id="2A5UqXKxqSY" role="3clFbG">
+              <node concept="3clFbT" id="2A5UqXKxqTU" role="37vLTx">
+                <property role="3clFbU" value="false" />
+              </node>
+              <node concept="2OqwBi" id="2A5UqXKxou4" role="37vLTJ">
+                <node concept="0IXxy" id="2A5UqXKxore" role="2Oq$k0" />
+                <node concept="3TrcHB" id="2A5UqXKxppQ" role="2OqNvi">
+                  <ref role="3TsBF5" to="vs0r:DubiFAXCMb" resolve="reexport" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

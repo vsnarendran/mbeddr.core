@@ -4,15 +4,17 @@
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
+    <use id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring" version="0" />
   </languages>
   <imports>
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" />
+    <import index="mvyx" ref="r:bd8ad793-75bc-45ee-9eca-d0f67c7eb1d2(com.mbeddr.mpsutil.platform.pluginSolution.plugin)" />
     <import index="qjdu" ref="r:bc752cbf-8d9b-4442-8e26-e5c87b20b897(com.mbeddr.core.base.plugin)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
-    <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
-    <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" implicit="true" />
+    <import index="kvs4" ref="r:e1d8e0d7-66dc-4786-b31c-a842ee726af7(com.mbeddr.mpsutil.codereview.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -176,8 +178,8 @@
               </node>
             </node>
             <node concept="1mIQ4w" id="KIDTtiTJgq" role="2OqNvi">
-              <node concept="chp4Y" id="KIDTtiTJh$" role="cj9EA">
-                <ref role="cht4Q" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
+              <node concept="chp4Y" id="6VIoj$w5Evg" role="cj9EA">
+                <ref role="cht4Q" to="9f2s:5PyBcyXvUcD" resolve="IEmpty" />
               </node>
             </node>
           </node>
@@ -255,7 +257,7 @@
       </node>
       <node concept="37vLTG" id="4lLcfuhSLXz" role="3clF46">
         <property role="TrG5h" value="node" />
-        <node concept="3uibUv" id="4lLcfuhSLXy" role="1tU5fm">
+        <node concept="3uibUv" id="6VIoj$w5Est" role="1tU5fm">
           <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
         </node>
       </node>
@@ -271,12 +273,12 @@
     <property role="TrG5h" value="codeReviewState" />
     <node concept="33gmoH" id="4ZN$fokgymH" role="2hfSGL">
       <property role="33g7Lv" value="Code Review State" />
-      <ref role="33glcW" to="r4b4:4ZN$fokcCTa" resolve="codereview" />
-      <ref role="33glcY" to="r4b4:4ZN$fokcCTb" resolve="showReviewState" />
+      <ref role="33glcY" to="kvs4:4ZN$fokcCTb" resolve="showReviewState" />
+      <ref role="33glcW" to="kvs4:4ZN$fokcCTa" resolve="codereview" />
     </node>
     <node concept="tT9cl" id="4ZN$fokgymI" role="2hfP89">
-      <ref role="tU$_T" to="d244:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
-      <ref role="2f8Tey" to="d244:goNQ8fnbte" resolve="mbeddrPlatformProjectionModes" />
+      <ref role="tU$_T" to="mvyx:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
+      <ref role="2f8Tey" to="mvyx:goNQ8fnbte" resolve="mbeddrPlatformProjectionModes" />
     </node>
   </node>
 </model>
