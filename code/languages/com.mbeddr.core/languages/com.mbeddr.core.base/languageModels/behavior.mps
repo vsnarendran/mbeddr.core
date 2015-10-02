@@ -51,7 +51,6 @@
     <import index="p15z" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:ac36bf27-36e9-407d-ba8e-953c68088e41(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.behavior)" />
     <import index="hnxa" ref="r:e3f888f7-d1d6-458c-abf3-5d3ce7b9d119(com.mbeddr.mpsutil.tree.behavior)" implicit="true" />
     <import index="v783" ref="r:8722a626-df20-42dc-8c8e-d8150854eabc(com.mbeddr.mpsutil.controlledName.structure)" implicit="true" />
-    <import index="3x05" ref="r:89e44f0b-7468-4f43-b2d7-ae3a507ecea7(com.mbeddr.mpsutil.valueDebugger.structure)" implicit="true" />
     <import index="h0lo" ref="r:9f92fb5e-9c32-4695-b090-eff683d75771(com.mbeddr.mpsutil.externalReference.behavior)" implicit="true" />
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" implicit="true" />
     <import index="gm3l" ref="r:fcef1631-c04d-4b3d-9a40-2abe930a5a53(com.mbeddr.mpsutil.commentable.structure)" implicit="true" />
@@ -269,9 +268,6 @@
       <concept id="1171903916106" name="jetbrains.mps.baseLanguage.structure.UpperBoundType" flags="in" index="3qUE_q">
         <child id="1171903916107" name="bound" index="3qUE_r" />
       </concept>
-      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
-        <property id="8355037393041754995" name="isNative" index="2aFKle" />
-      </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
@@ -300,7 +296,6 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
-      <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
       <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
         <child id="1163668914799" name="condition" index="3K4Cdx" />
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
@@ -470,13 +465,6 @@
       </concept>
     </language>
     <language id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common">
-      <concept id="568377005202317274" name="com.mbeddr.mpsutil.multilingual.common.structure.ResourceBundle" flags="ng" index="3MtHw5">
-        <child id="568377005202317276" name="keys" index="3MtHw3" />
-      </concept>
-      <concept id="568377005202317270" name="com.mbeddr.mpsutil.multilingual.common.structure.MessageKey" flags="ng" index="3MtHw9">
-        <property id="568377005202317272" name="default" index="3MtHw7" />
-        <property id="568377005202317271" name="technicalKey" index="3MtHw8" />
-      </concept>
       <concept id="2510545900188083931" name="com.mbeddr.mpsutil.multilingual.common.structure.IMessageKeyHolder" flags="ng" index="3ZOmrE">
         <reference id="2510545900188083932" name="key" index="3ZOmrH" />
       </concept>
@@ -8263,90 +8251,6 @@
       </node>
     </node>
   </node>
-  <node concept="3HP615" id="$bJ0jgS5Nf">
-    <property role="3GE5qa" value="valueDebugger" />
-    <property role="TrG5h" value="IValueSource" />
-    <node concept="3clFb_" id="$bJ0jgS5N_" role="jymVt">
-      <property role="1EzhhJ" value="true" />
-      <property role="TrG5h" value="getValue" />
-      <node concept="3uibUv" id="$bJ0jgS5O_" role="3clF45">
-        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-      </node>
-      <node concept="3Tm1VV" id="$bJ0jgS5NC" role="1B3o_S" />
-      <node concept="3clFbS" id="$bJ0jgS5ND" role="3clF47" />
-      <node concept="37vLTG" id="$bJ0jgS5NT" role="3clF46">
-        <property role="TrG5h" value="debuggable" />
-        <node concept="3Tqbb2" id="$bJ0jgS5NS" role="1tU5fm">
-          <ref role="ehGHo" to="3x05:5PyBcyXwcui" resolve="IValueDebuggable" />
-        </node>
-      </node>
-    </node>
-    <node concept="3clFb_" id="EWig$gxOYQ" role="jymVt">
-      <property role="1EzhhJ" value="true" />
-      <property role="TrG5h" value="hasKeys" />
-      <node concept="10P_77" id="EWig$gxRIf" role="3clF45" />
-      <node concept="3Tm1VV" id="EWig$gxOYT" role="1B3o_S" />
-      <node concept="3clFbS" id="EWig$gxOYU" role="3clF47" />
-      <node concept="37vLTG" id="EWig$gxRIK" role="3clF46">
-        <property role="TrG5h" value="debuggable" />
-        <node concept="3Tqbb2" id="EWig$gxRIJ" role="1tU5fm">
-          <ref role="ehGHo" to="3x05:5PyBcyXwcui" resolve="IValueDebuggable" />
-        </node>
-      </node>
-    </node>
-    <node concept="3clFb_" id="EWig$gxRSG" role="jymVt">
-      <property role="1EzhhJ" value="true" />
-      <property role="TrG5h" value="listAvailableKeys" />
-      <node concept="A3Dl8" id="EWig$j3As4" role="3clF45">
-        <node concept="3Tqbb2" id="EWig$j3As6" role="A3Ik2">
-          <ref role="ehGHo" to="3x05:5PyBcyXwcuN" resolve="DebugKey" />
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="EWig$gxRSJ" role="1B3o_S" />
-      <node concept="3clFbS" id="EWig$gxRSK" role="3clF47" />
-      <node concept="37vLTG" id="EWig$gxSfH" role="3clF46">
-        <property role="TrG5h" value="debuggable" />
-        <node concept="3Tqbb2" id="EWig$gxSfG" role="1tU5fm">
-          <ref role="ehGHo" to="3x05:5PyBcyXwcui" resolve="IValueDebuggable" />
-        </node>
-      </node>
-    </node>
-    <node concept="3clFb_" id="EWig$gxT3X" role="jymVt">
-      <property role="1EzhhJ" value="true" />
-      <property role="TrG5h" value="setKey" />
-      <node concept="3cqZAl" id="EWig$gxT3Z" role="3clF45" />
-      <node concept="3Tm1VV" id="EWig$gxT40" role="1B3o_S" />
-      <node concept="3clFbS" id="EWig$gxT41" role="3clF47" />
-      <node concept="37vLTG" id="EWig$gxTnY" role="3clF46">
-        <property role="TrG5h" value="debuggable" />
-        <node concept="3Tqbb2" id="EWig$gxTnX" role="1tU5fm">
-          <ref role="ehGHo" to="3x05:5PyBcyXwcui" resolve="IValueDebuggable" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="EWig$gxTt4" role="3clF46">
-        <property role="TrG5h" value="key" />
-        <node concept="3Tqbb2" id="EWig$h4xkp" role="1tU5fm">
-          <ref role="ehGHo" to="3x05:5PyBcyXwcuN" resolve="DebugKey" />
-        </node>
-      </node>
-    </node>
-    <node concept="3clFb_" id="2BbcAuIdB6L" role="jymVt">
-      <property role="1EzhhJ" value="true" />
-      <property role="TrG5h" value="getKey" />
-      <node concept="3Tqbb2" id="2BbcAuIdFxK" role="3clF45">
-        <ref role="ehGHo" to="3x05:5PyBcyXwcuN" resolve="DebugKey" />
-      </node>
-      <node concept="3Tm1VV" id="2BbcAuIdB6O" role="1B3o_S" />
-      <node concept="3clFbS" id="2BbcAuIdB6P" role="3clF47" />
-      <node concept="37vLTG" id="2BbcAuIdFzS" role="3clF46">
-        <property role="TrG5h" value="debuggable" />
-        <node concept="3Tqbb2" id="2BbcAuIdFzR" role="1tU5fm">
-          <ref role="ehGHo" to="3x05:5PyBcyXwcui" resolve="IValueDebuggable" />
-        </node>
-      </node>
-    </node>
-    <node concept="3Tm1VV" id="$bJ0jgS5Ng" role="1B3o_S" />
-  </node>
   <node concept="13h7C7" id="$bJ0jgWs$G">
     <property role="3GE5qa" value="valueDebugger" />
     <ref role="13h7C2" to="vs0r:$bJ0jgPete" resolve="IValueDebuggable" />
@@ -13219,126 +13123,6 @@
     </node>
     <node concept="13hLZK" id="1jw2PJJHS3k" role="13h7CW">
       <node concept="3clFbS" id="1jw2PJJHS3l" role="2VODD2" />
-    </node>
-  </node>
-  <node concept="3HP615" id="3$DH87aGaAz">
-    <property role="3GE5qa" value="valueDebugger" />
-    <property role="TrG5h" value="IValueSourcePresentation" />
-    <node concept="3clFb_" id="3$DH87aGkMP" role="jymVt">
-      <property role="1EzhhJ" value="true" />
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="shouldShowDebugger" />
-      <node concept="37vLTG" id="3$DH87aGkP5" role="3clF46">
-        <property role="TrG5h" value="debuggable" />
-        <node concept="3Tqbb2" id="3$DH87aGkP6" role="1tU5fm">
-          <ref role="ehGHo" to="3x05:5PyBcyXwcui" resolve="IValueDebuggable" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="3$DH87aGkMS" role="3clF47" />
-      <node concept="3Tm1VV" id="3$DH87aGkMT" role="1B3o_S" />
-      <node concept="10P_77" id="3$DH87aGkvh" role="3clF45" />
-    </node>
-    <node concept="3clFb_" id="3$DH87aG$ie" role="jymVt">
-      <property role="1EzhhJ" value="true" />
-      <property role="TrG5h" value="setShowDebugger" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="3$DH87aG$ih" role="3clF47" />
-      <node concept="3Tm1VV" id="3$DH87aG$d2" role="1B3o_S" />
-      <node concept="3cqZAl" id="3$DH87aG$he" role="3clF45" />
-      <node concept="37vLTG" id="3$DH87aG$mN" role="3clF46">
-        <property role="TrG5h" value="debuggable" />
-        <node concept="3Tqbb2" id="3$DH87aG$mM" role="1tU5fm">
-          <ref role="ehGHo" to="3x05:5PyBcyXwcui" resolve="IValueDebuggable" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="3$DH87aG_rB" role="3clF46">
-        <property role="TrG5h" value="show" />
-        <node concept="10P_77" id="3$DH87aG_rH" role="1tU5fm" />
-      </node>
-    </node>
-    <node concept="3clFb_" id="3$DH87aG_Wy" role="jymVt">
-      <property role="1EzhhJ" value="true" />
-      <property role="TrG5h" value="setShowDebuggerRecursive" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="3$DH87aG_W_" role="3clF47" />
-      <node concept="3Tm1VV" id="3$DH87aG_PV" role="1B3o_S" />
-      <node concept="3cqZAl" id="3$DH87aG_Vy" role="3clF45" />
-      <node concept="37vLTG" id="3$DH87aGA2y" role="3clF46">
-        <property role="TrG5h" value="rootNode" />
-        <node concept="3Tqbb2" id="3$DH87aGA2x" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="3$DH87aGA9x" role="3clF46">
-        <property role="TrG5h" value="show" />
-        <node concept="10P_77" id="3$DH87aGAek" role="1tU5fm" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="3$DH87aH1fh" role="jymVt" />
-    <node concept="3clFb_" id="3$DH87aGkNG" role="jymVt">
-      <property role="1EzhhJ" value="true" />
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="listDependentNodePointers" />
-      <node concept="37vLTG" id="3$DH87aGkPu" role="3clF46">
-        <property role="TrG5h" value="debuggable" />
-        <node concept="3Tqbb2" id="3$DH87aGkPv" role="1tU5fm">
-          <ref role="ehGHo" to="3x05:5PyBcyXwcui" resolve="IValueDebuggable" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="3$DH87aGkNJ" role="3clF47" />
-      <node concept="3Tm1VV" id="3$DH87aGkNK" role="1B3o_S" />
-      <node concept="A3Dl8" id="3$DH87aGkNk" role="3clF45">
-        <node concept="3uibUv" id="3$DH87aKwUd" role="A3Ik2">
-          <ref role="3uigEE" to="w1kc:~SNodePointer" resolve="SNodePointer" />
-        </node>
-      </node>
-    </node>
-    <node concept="3clFb_" id="3$DH87aGNdp" role="jymVt">
-      <property role="1EzhhJ" value="true" />
-      <property role="TrG5h" value="registerDependentNode" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="3$DH87aGNds" role="3clF47" />
-      <node concept="3Tm1VV" id="3$DH87aGMXe" role="1B3o_S" />
-      <node concept="3cqZAl" id="3$DH87aGNcp" role="3clF45" />
-      <node concept="37vLTG" id="3$DH87aGNsX" role="3clF46">
-        <property role="TrG5h" value="debuggable" />
-        <node concept="3Tqbb2" id="3$DH87aGNsW" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="3$DH87aGNDf" role="3clF46">
-        <property role="TrG5h" value="dependency" />
-        <node concept="3Tqbb2" id="3$DH87aGNPt" role="1tU5fm" />
-      </node>
-    </node>
-    <node concept="3clFb_" id="3$DH87aGXjx" role="jymVt">
-      <property role="1EzhhJ" value="true" />
-      <property role="TrG5h" value="clearDependentNodes" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="3$DH87aGXj$" role="3clF47" />
-      <node concept="3Tm1VV" id="3$DH87aGWNi" role="1B3o_S" />
-      <node concept="3cqZAl" id="3$DH87aGXix" role="3clF45" />
-      <node concept="37vLTG" id="3$DH87aGXFb" role="3clF46">
-        <property role="TrG5h" value="debuggable" />
-        <node concept="3Tqbb2" id="3$DH87aGXFa" role="1tU5fm">
-          <ref role="ehGHo" to="3x05:5PyBcyXwcui" resolve="IValueDebuggable" />
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="3$DH87aH2lL" role="jymVt" />
-    <node concept="3Tm1VV" id="3$DH87aGaA$" role="1B3o_S" />
-  </node>
-  <node concept="3MtHw5" id="7piNMoaduUh">
-    <property role="TrG5h" value="CoreBaseResourceBundle" />
-    <property role="3GE5qa" value="valueDebugger" />
-    <node concept="3MtHw9" id="7piNMoaduUi" role="3MtHw3">
-      <property role="3MtHw8" value=" " />
-      <property role="TrG5h" value="noValueSource" />
-      <property role="3MtHw7" value="(no value source)" />
     </node>
   </node>
   <node concept="13h7C7" id="7okx9D2SYRH">
