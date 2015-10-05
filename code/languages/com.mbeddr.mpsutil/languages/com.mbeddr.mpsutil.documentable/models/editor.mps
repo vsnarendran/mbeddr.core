@@ -305,46 +305,5 @@
       </node>
     </node>
   </node>
-  <node concept="1h_SRR" id="3m8H$lmIlF8">
-    <property role="3GE5qa" value="documentation" />
-    <property role="TrG5h" value="deleteElementDocumentation" />
-    <ref role="1h_SK9" to="9ajy:5PyBcyXwafh" resolve="ElementDocumentation" />
-    <node concept="1hA7zw" id="3m8H$lmIlF9" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
-      <node concept="1hAIg9" id="3m8H$lmIlFa" role="1hA7z_">
-        <node concept="3clFbS" id="3m8H$lmIlFb" role="2VODD2">
-          <node concept="3cpWs8" id="6PYNGEsYwS4" role="3cqZAp">
-            <node concept="3cpWsn" id="6PYNGEsYwS5" role="3cpWs9">
-              <property role="TrG5h" value="p" />
-              <node concept="3Tqbb2" id="6PYNGEsYwS3" role="1tU5fm" />
-              <node concept="2OqwBi" id="6PYNGEsYwS6" role="33vP2m">
-                <node concept="0IXxy" id="6PYNGEsYwS7" role="2Oq$k0" />
-                <node concept="1mfA1w" id="6PYNGEsYwS8" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="8$8RMQUMIr" role="3cqZAp">
-            <node concept="2OqwBi" id="8$8RMQUMIL" role="3clFbG">
-              <node concept="0IXxy" id="8$8RMQUMIs" role="2Oq$k0" />
-              <node concept="1PgB_6" id="8$8RMQUMIR" role="2OqNvi" />
-            </node>
-          </node>
-          <node concept="3clFbF" id="6PYNGEsYx0e" role="3cqZAp">
-            <node concept="2OqwBi" id="6PYNGEsYx6g" role="3clFbG">
-              <node concept="37vLTw" id="6PYNGEsYx0d" role="2Oq$k0">
-                <ref role="3cqZAo" node="6PYNGEsYwS5" resolve="p" />
-              </node>
-              <node concept="1OKiuA" id="6PYNGEsYxV_" role="2OqNvi">
-                <node concept="1Q80Hx" id="6PYNGEsYxW9" role="lBI5i" />
-                <node concept="2B6iha" id="6PYNGEsYy1g" role="lGT1i">
-                  <property role="1lyBwo" value="firstEditable" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
 </model>
 
