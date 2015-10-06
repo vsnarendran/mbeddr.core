@@ -7,6 +7,7 @@
     <use id="58e731a3-6aaa-444a-bf40-801b91c15878" name="com.mbeddr.mpsutil.lang.plugin.extensions" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
   </languages>
   <imports>
     <import index="ekwn" ref="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" />
@@ -33,21 +34,19 @@
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" />
     <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="9oh" ref="r:de82dfab-9448-49ba-813e-2b0579f7fb15(jetbrains.mps.ide.platform.actions)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="mk8z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.progress(MPS.Core/)" />
+    <import index="ap4t" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator(MPS.Core/)" />
+    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
+    <import index="k3nr" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.ide.editor(MPS.Editor/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
-    <import index="mk8z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.progress(MPS.Core/)" implicit="true" />
-    <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" implicit="true" />
-    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
-    <import index="ap4t" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator(MPS.Core/)" implicit="true" />
     <import index="30xn" ref="r:eadab8e9-5ad6-44ab-a83f-3acbfaf545f2(com.mbeddr.mpsutil.chunk.behavior)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="k3nr" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.ide.editor(MPS.Editor/)" implicit="true" />
     <import index="qqlm" ref="r:a895bf24-7625-4094-ba2d-ec74bd2639ee(com.mbeddr.mpsutil.ideEnhancement.behavior)" implicit="true" />
-    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -4804,17 +4803,17 @@
     <property role="3GE5qa" value="buttonsInEditor" />
     <property role="TrG5h" value="EditorButtonGroup" />
     <node concept="ftmFs" id="3slbD0C6VXv" role="ftER_">
-      <node concept="tCFHf" id="3slbD0C6VXz" role="ftvYc">
-        <ref role="tCJdB" to="d244:3slbD0C6UdB" resolve="TurnButtonsInEditorOn" />
+      <node concept="tCFHf" id="7_FtIZYFN09" role="ftvYc">
+        <ref role="tCJdB" node="3slbD0C6UdB" resolve="TurnButtonsInEditorOn" />
       </node>
       <node concept="tCFHf" id="3slbD0C7$AB" role="ftvYc">
-        <ref role="tCJdB" to="d244:3slbD0C7$An" resolve="TurnButtonsInEditorOff" />
+        <ref role="tCJdB" node="3slbD0C7$An" resolve="TurnButtonsInEditorOff" />
       </node>
       <node concept="2a7GMi" id="goNQ8fvP_X" role="ftvYc" />
     </node>
     <node concept="tT9cl" id="3slbD0C6VXx" role="2f5YQi">
-      <ref role="tU$_T" to="d244:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
-      <ref role="2f8Tey" to="d244:goNQ8fnbte" resolve="mbeddrPlatformProjectionModes" />
+      <ref role="tU$_T" node="goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
+      <ref role="2f8Tey" node="goNQ8fnbte" resolve="mbeddrPlatformProjectionModes" />
     </node>
   </node>
   <node concept="sE7Ow" id="3slbD0C7$An">
@@ -4835,8 +4834,8 @@
       <node concept="3clFbS" id="3slbD0C7$Ar" role="2VODD2">
         <node concept="3clFbF" id="3slbD0C7$As" role="3cqZAp">
           <node concept="2YIFZM" id="3slbD0C7$At" role="3clFbG">
-            <ref role="1Pybhc" to="hwgx:3slbD0C6STH" resolve="EditorButtonHelper" />
-            <ref role="37wK5l" to="hwgx:3slbD0C6STV" resolve="showButtons" />
+            <ref role="1Pybhc" node="3slbD0C6STH" resolve="EditorButtonHelper" />
+            <ref role="37wK5l" node="3slbD0C6STV" resolve="showButtons" />
             <node concept="3clFbT" id="3slbD0C7$Au" role="37wK5m" />
           </node>
         </node>
@@ -4867,8 +4866,8 @@
       <node concept="3clFbS" id="3slbD0C7$Ax" role="2VODD2">
         <node concept="3clFbF" id="3slbD0C7$Ay" role="3cqZAp">
           <node concept="2YIFZM" id="3slbD0C7$A$" role="3clFbG">
-            <ref role="37wK5l" to="hwgx:3slbD0C6STN" resolve="showButtons" />
-            <ref role="1Pybhc" to="hwgx:3slbD0C6STH" resolve="EditorButtonHelper" />
+            <ref role="1Pybhc" node="3slbD0C6STH" resolve="EditorButtonHelper" />
+            <ref role="37wK5l" node="3slbD0C6STN" resolve="showButtons" />
           </node>
         </node>
       </node>
@@ -4892,8 +4891,8 @@
       <node concept="3clFbS" id="3slbD0C6UdH" role="2VODD2">
         <node concept="3clFbF" id="3slbD0C6UDH" role="3cqZAp">
           <node concept="2YIFZM" id="3slbD0C7$Al" role="3clFbG">
-            <ref role="1Pybhc" to="hwgx:3slbD0C6STH" resolve="EditorButtonHelper" />
-            <ref role="37wK5l" to="hwgx:3slbD0C6STV" resolve="showButtons" />
+            <ref role="1Pybhc" node="3slbD0C6STH" resolve="EditorButtonHelper" />
+            <ref role="37wK5l" node="3slbD0C6STV" resolve="showButtons" />
             <node concept="3clFbT" id="3slbD0C7$Am" role="37wK5m">
               <property role="3clFbU" value="true" />
             </node>
@@ -4925,8 +4924,8 @@
         <node concept="3clFbF" id="3slbD0C7$Af" role="3cqZAp">
           <node concept="3fqX7Q" id="3slbD0C7$Aj" role="3clFbG">
             <node concept="2YIFZM" id="3slbD0C7$Ak" role="3fr31v">
-              <ref role="37wK5l" to="hwgx:3slbD0C6STN" resolve="showButtons" />
-              <ref role="1Pybhc" to="hwgx:3slbD0C6STH" resolve="EditorButtonHelper" />
+              <ref role="1Pybhc" node="3slbD0C6STH" resolve="EditorButtonHelper" />
+              <ref role="37wK5l" node="3slbD0C6STN" resolve="showButtons" />
             </node>
           </node>
         </node>

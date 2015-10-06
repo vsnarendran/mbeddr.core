@@ -8,8 +8,8 @@
   <imports>
     <import index="newt" ref="r:d05372e5-2bac-4388-98d2-ddc5978b1595(com.mbeddr.mpsutil.ideEnhancement.structure)" />
     <import index="oq9k" ref="r:f4ae6487-fb1d-418f-8dd3-759f9604156f(com.mbeddr.mpsutil.editor.utils.runtime)" />
+    <import index="mvyx" ref="r:bd8ad793-75bc-45ee-9eca-d0f67c7eb1d2(com.mbeddr.mpsutil.platform.pluginSolution.plugin)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -146,8 +146,8 @@
           <node concept="3clFbS" id="5v_KyvNSsug" role="2VODD2">
             <node concept="3clFbF" id="5v_KyvNStPq" role="3cqZAp">
               <node concept="10M0yZ" id="5v_KyvNStPp" role="3clFbG">
-                <ref role="1PxDUh" to="r4b4:4tRpPVPUEa3" resolve="BasicColors" />
-                <ref role="3cqZAo" to="r4b4:2CEi94emCnI" resolve="KEYWORD_BLUE" />
+                <ref role="1PxDUh" to="mvyx:4tRpPVPUEa3" resolve="BasicColors" />
+                <ref role="3cqZAo" to="mvyx:2CEi94emCnI" resolve="KEYWORD_BLUE" />
               </node>
             </node>
           </node>

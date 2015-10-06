@@ -11,10 +11,10 @@
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
-    <dependency reexport="false">b124218e-4c2c-4976-9b26-6bb95b8a0325(com.mbeddr.mpsutil.ideEnhancement)</dependency>
-    <dependency reexport="false">df47b896-cd0f-4874-ba11-2f16a7fe3dcc(com.mbeddr.mpsutil.ideEnhancement.pluginSolution)</dependency>
     <dependency reexport="false">af595aba-a1e2-473a-821e-18a5c48aaaac(com.mbeddr.mpsutil.chunk)</dependency>
     <dependency reexport="false">25092e07-e655-497c-92fb-558a8e3080ed(jetbrains.mps.ide.ui)</dependency>
+    <dependency reexport="false">b124218e-4c2c-4976-9b26-6bb95b8a0325(com.mbeddr.mpsutil.ideEnhancement)</dependency>
+    <dependency reexport="false">df47b896-cd0f-4874-ba11-2f16a7fe3dcc(com.mbeddr.mpsutil.ideEnhancement.pluginSolution)</dependency>
   </dependencies>
   <languageVersions>
     <language id="58e731a3-6aaa-444a-bf40-801b91c15878" fqName="com.mbeddr.mpsutil.lang.plugin.extensions" version="0" />
