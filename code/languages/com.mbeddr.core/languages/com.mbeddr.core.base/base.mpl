@@ -50,27 +50,9 @@
     <dependency reexport="false">c1c2a88a-323c-4605-a37d-9ab77a2ccbd2(com.mbeddr.mpsutil.suppresswarning)</dependency>
     <dependency reexport="false">63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)</dependency>
     <dependency reexport="false">34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)</dependency>
-    <dependency reexport="false">32ca7348-03fd-4dac-b152-717a93db2e05(com.mbeddr.mpsutil.assessment)</dependency>
-    <dependency reexport="false">af595aba-a1e2-473a-821e-18a5c48aaaac(com.mbeddr.mpsutil.chunk)</dependency>
-    <dependency reexport="false">198afc4b-23ce-450a-a943-05218c3f83ca(com.mbeddr.mpsutil.codereview)</dependency>
-    <dependency reexport="false">c2e56fa8-7054-46fe-8534-030242101153(com.mbeddr.mpsutil.commentable)</dependency>
-    <dependency reexport="false">df52ef7a-67b7-41d2-a68e-88e9f3d52c61(com.mbeddr.mpsutil.configItem)</dependency>
-    <dependency reexport="false">690ec915-02c8-4a7e-b65e-7b78b870dd62(com.mbeddr.mpsutil.controlledName)</dependency>
-    <dependency reexport="false">21ac7f78-9b57-4548-86f2-e50a5e6f4b7a(com.mbeddr.mpsutil.documentable)</dependency>
-    <dependency reexport="false">50703665-60da-41b5-ba25-be1e64ea9089(com.mbeddr.mpsutil.externalReference)</dependency>
-    <dependency reexport="false">b124218e-4c2c-4976-9b26-6bb95b8a0325(com.mbeddr.mpsutil.ideEnhancement)</dependency>
-    <dependency reexport="false">3931c0ce-442c-4a4e-9e47-60d20030cf4a(com.mbeddr.mpsutil.nodelist)</dependency>
-    <dependency reexport="false">a7b1b5c5-4d11-46ef-b36a-5335e107a4af(com.mbeddr.mpsutil.outline)</dependency>
-    <dependency reexport="false">97a3ea5c-1731-443d-baf9-12fff7d3a08a(com.mbeddr.mpsutil.paragraph)</dependency>
-    <dependency reexport="false">22bab7cd-7ed6-44a7-8497-d6d79e8f4b15(com.mbeddr.mpsutil.pathAndFile)</dependency>
-    <dependency reexport="false">bdfdcceb-ede9-45ad-96df-6dcb47499c07(com.mbeddr.mpsutil.search)</dependency>
-    <dependency reexport="false">655ed89c-e6ca-4ae2-be90-5a8cefb543d2(com.mbeddr.mpsutil.tree)</dependency>
-    <dependency reexport="false">180df86c-12ac-45e1-a386-834bee78322a(com.mbeddr.mpsutil.valueDebugger)</dependency>
     <dependency reexport="false">ea31a56a-3b81-465a-a6d2-df77c1a4023e(com.mbeddr.mpsutil.platform.pluginSolution)</dependency>
-    <dependency reexport="false">65ff80b5-800d-4d32-b722-a148de520562(com.mbeddr.mpsutil.platform)</dependency>
     <dependency reexport="false">371850a9-2c5b-4e1d-a811-70d97e847917(com.mbeddr.mpsutil.editor.utils)</dependency>
     <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
-    <dependency reexport="false">3b590acc-6626-4247-8925-82ef4d522d7f(com.mbeddr.mpsutil.presentationMode)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -80,9 +62,12 @@
     <language id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" fqName="com.mbeddr.mpsutil.editor.querylist" version="0" />
     <language id="b92f861d-0184-446d-b88b-6dcf0e070241" fqName="com.mbeddr.mpsutil.intentions" version="0" />
     <language id="d2a1d976-43a2-462f-ac3a-9b258ced839d" fqName="com.mbeddr.mpsutil.multilingual.baseLanguage" version="0" />
+    <language id="23f985f2-965f-4af1-aee8-a32677429514" fqName="com.mbeddr.mpsutil.multilingual.common" version="0" />
+    <language id="442d3b7d-fe4a-4293-a7c1-6744d440ecaa" fqName="com.mbeddr.mpsutil.richstring" version="0" />
     <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" fqName="de.itemis.mps.editor.bool" version="0" />
     <language id="a0ab8c10-c118-4755-ba27-3853435cf524" fqName="de.itemis.mps.tooltips" version="0" />
     <language id="b8bb702e-43ed-4090-a902-d180d3e5f292" fqName="de.slisson.mps.conditionalEditor" version="0" />
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" fqName="de.slisson.mps.richtext" version="0" />
     <language id="52733268-be24-4f5f-ab84-a73b7c0c03b0" fqName="de.slisson.mps.richtext.customcell" version="0" />
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="2" />
     <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />
