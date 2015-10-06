@@ -39,6 +39,7 @@
     <import index="mvyx" ref="r:bd8ad793-75bc-45ee-9eca-d0f67c7eb1d2(com.mbeddr.mpsutil.platform.pluginSolution.plugin)" />
     <import index="4szu" ref="r:f9f801cf-9d16-4d74-a6c8-022b6f9e3b5a(com.mbeddr.mpsutil.valueDebugger.behavior)" />
     <import index="9p45" ref="r:67b02670-4d7a-4a53-9329-ae1228635554(com.mbeddr.mpsutil.codereview.behavior)" />
+    <import index="l0z4" ref="r:5555416b-550a-4beb-84ca-00869ce96636(com.mbeddr.mpsutil.assessment.structure)" implicit="true" />
     <import index="v783" ref="r:8722a626-df20-42dc-8c8e-d8150854eabc(com.mbeddr.mpsutil.controlledName.structure)" implicit="true" />
     <import index="h0lo" ref="r:9f92fb5e-9c32-4695-b090-eff683d75771(com.mbeddr.mpsutil.externalReference.behavior)" implicit="true" />
     <import index="9f2s" ref="r:f991c044-3848-43dd-a148-e26cf1778961(com.mbeddr.mpsutil.chunk.structure)" implicit="true" />
@@ -357,7 +358,9 @@
       <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
         <child id="1138662048170" name="value" index="tz02z" />
       </concept>
-      <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO" />
+      <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
+        <reference id="1138676095763" name="enumMember" index="uo_Cq" />
+      </concept>
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -10420,7 +10423,9 @@
                       </node>
                     </node>
                     <node concept="tyxLq" id="GKLijSwYeI" role="2OqNvi">
-                      <node concept="uoxfO" id="GKLijSwYfq" role="tz02z" />
+                      <node concept="uoxfO" id="GKLijSwYfq" role="tz02z">
+                        <ref role="uo_Cq" to="l0z4:GKLijSwpYH" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -10492,7 +10497,9 @@
                             </node>
                           </node>
                           <node concept="tyxLq" id="GKLijSwYFU" role="2OqNvi">
-                            <node concept="uoxfO" id="GKLijSwYFV" role="tz02z" />
+                            <node concept="uoxfO" id="GKLijSwYFV" role="tz02z">
+                              <ref role="uo_Cq" to="l0z4:GKLijSwpYI" />
+                            </node>
                           </node>
                         </node>
                       </node>

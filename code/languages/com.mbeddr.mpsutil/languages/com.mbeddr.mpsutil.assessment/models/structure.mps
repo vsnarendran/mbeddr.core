@@ -134,7 +134,7 @@
     <ref role="1TJDcQ" node="5PyBcyXvPLB" resolve="AssessmentResult" />
     <node concept="1TJgyi" id="5PyBcyXvP$y" role="1TKVEl">
       <property role="TrG5h" value="kind" />
-      <ref role="AX2Wp" node="7hIyKqbGnzX" resolve="EntryStatus" />
+      <ref role="AX2Wp" node="GKLijSwpYG" resolve="ResultKind" />
     </node>
     <node concept="1TJgyj" id="5PyBcyXvP$z" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -350,6 +350,19 @@
     <node concept="M4N5e" id="7hIyKqbGn$0" role="M5hS2">
       <property role="1uS6qv" value="2" />
       <property role="1uS6qo" value="ok" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="GKLijSwpYG">
+    <property role="3GE5qa" value="exref" />
+    <property role="TrG5h" value="ResultKind" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="GKLijSwpYH" role="M5hS2">
+      <property role="1uS6qv" value="invalidID" />
+      <property role="1uS6qo" value="invalidID" />
+    </node>
+    <node concept="M4N5e" id="GKLijSwpYI" role="M5hS2">
+      <property role="1uS6qo" value="outdatedHash" />
+      <property role="1uS6qv" value="outdatedHash" />
     </node>
   </node>
 </model>
