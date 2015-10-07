@@ -19,8 +19,6 @@
       </usedDevKits>
       <languageVersions>
         <language id="af595aba-a1e2-473a-821e-18a5c48aaaac" fqName="com.mbeddr.mpsutil.chunk" version="13" />
-        <language id="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62" fqName="com.mbeddr.mpsutil.jung" version="0" />
-        <language id="a7b1b5c5-4d11-46ef-b36a-5335e107a4af" fqName="com.mbeddr.mpsutil.outline" version="3" />
         <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="2" />
         <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />
         <language id="fd392034-7849-419d-9071-12563d152375" fqName="jetbrains.mps.baseLanguage.closures" version="0" />
@@ -79,7 +77,6 @@
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
   </languageVersions>
   <extendedLanguages>
-    <extendedLanguage>ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</extendedLanguage>
     <extendedLanguage>d09a16fb-1d68-4a92-a5a4-20b4b2f86a62(com.mbeddr.mpsutil.jung)</extendedLanguage>
     <extendedLanguage>a7b1b5c5-4d11-46ef-b36a-5335e107a4af(com.mbeddr.mpsutil.outline)</extendedLanguage>
   </extendedLanguages>

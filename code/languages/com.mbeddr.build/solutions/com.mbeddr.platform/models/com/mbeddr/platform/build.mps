@@ -7904,11 +7904,6 @@
             <ref role="3bR37D" node="2mU72gDxe9F" resolve="com.mbeddr.mpsutil.jung.pluginSolution" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7_FtIZZ1zVn" role="3bR37C">
-          <node concept="1Busua" id="7_FtIZZ1zVo" role="1SiIV1">
-            <ref role="1Busuk" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="7_FtIZZ1zVp" role="3bR37C">
           <node concept="1Busua" id="7_FtIZZ1zVq" role="1SiIV1">
             <ref role="1Busuk" node="2mU72gDx9ye" resolve="com.mbeddr.mpsutil.jung" />
