@@ -140,7 +140,6 @@
         <reference id="5615086488402976569" name="preferencePage" index="9Hxhg" />
         <child id="5615086488402986988" name="module" index="9HWM5" />
       </concept>
-      <concept id="5299504751977339944" name="com.mbeddr.mpsutil.spreferences.structure.Parameter_IsInit" flags="ng" index="U$gdm" />
       <concept id="6044976435766352430" name="com.mbeddr.mpsutil.spreferences.structure.InitPageNode" flags="ig" index="U$sw$" />
       <concept id="6547806146467473938" name="com.mbeddr.mpsutil.spreferences.structure.PreferencePageDescription" flags="ng" index="30z_3H">
         <reference id="6547806146467491221" name="rootConcept" index="30zxtE" />
@@ -290,12 +289,7 @@
     <property role="TrG5h" value="Code Review Preferences" />
     <ref role="30zxtE" to="sct6:5PyBcyXw8GC" resolve="CodeReviewConfig" />
     <node concept="U$sw$" id="3s$9DObTnhP" role="U$vMi">
-      <node concept="3clFbS" id="3s$9DObTnhQ" role="2VODD2">
-        <node concept="3clFbJ" id="3s$9DObToDB" role="3cqZAp">
-          <node concept="3clFbS" id="3s$9DObToDC" role="3clFbx" />
-          <node concept="U$gdm" id="3s$9DObToDT" role="3clFbw" />
-        </node>
-      </node>
+      <node concept="3clFbS" id="3s$9DObTnhQ" role="2VODD2" />
     </node>
   </node>
 </model>
