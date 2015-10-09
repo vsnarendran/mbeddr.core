@@ -250,22 +250,5 @@
       </node>
     </node>
   </node>
-  <node concept="PKFIW" id="65XyadYMSRq">
-    <property role="TrG5h" value="commentedCodeDefault" />
-    <property role="3GE5qa" value="commenting" />
-    <ref role="1XX52x" to="gm3l:5PyBcyXw96n" resolve="ICommentedCode" />
-    <node concept="3EZMnI" id="65XyadYMSRs" role="2wV5jI">
-      <node concept="l2Vlx" id="cwSfPzVQzF" role="2iSdaV" />
-      <node concept="3F0ifn" id="65XyadYMSRv" role="3EZMnx">
-        <property role="3F0ifm" value="//" />
-        <ref role="1k5W1q" node="2CEi94dhncU" resolve="CodeComment" />
-        <ref role="1ERwB7" node="5PyBcyXw92t" resolve="removeComment" />
-      </node>
-      <node concept="3F1sOY" id="65XyadYMSRx" role="3EZMnx">
-        <ref role="1NtTu8" to="gm3l:5PyBcyXw96o" />
-        <ref role="1k5W1q" node="2CEi94dhncU" resolve="CodeComment" />
-      </node>
-    </node>
-  </node>
 </model>
 

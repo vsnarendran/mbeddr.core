@@ -19,6 +19,8 @@
       </usedDevKits>
       <languageVersions>
         <language id="af595aba-a1e2-473a-821e-18a5c48aaaac" fqName="com.mbeddr.mpsutil.chunk" version="13" />
+        <language id="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62" fqName="com.mbeddr.mpsutil.jung" version="0" />
+        <language id="a7b1b5c5-4d11-46ef-b36a-5335e107a4af" fqName="com.mbeddr.mpsutil.outline" version="3" />
         <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="2" />
         <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />
         <language id="fd392034-7849-419d-9071-12563d152375" fqName="jetbrains.mps.baseLanguage.closures" version="0" />
@@ -39,7 +41,7 @@
   </generators>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">655ed89c-e6ca-4ae2-be90-5a8cefb543d2(com.mbeddr.mpsutil.tree)</dependency>
+    <dependency reexport="true">655ed89c-e6ca-4ae2-be90-5a8cefb543d2(com.mbeddr.mpsutil.tree)</dependency>
     <dependency reexport="false">c2e56fa8-7054-46fe-8534-030242101153(com.mbeddr.mpsutil.commentable)</dependency>
     <dependency reexport="false">198afc4b-23ce-450a-a943-05218c3f83ca(com.mbeddr.mpsutil.codereview)</dependency>
     <dependency reexport="false">ea31a56a-3b81-465a-a6d2-df77c1a4023e(com.mbeddr.mpsutil.platform.pluginSolution)</dependency>
