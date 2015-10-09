@@ -53,7 +53,6 @@
     <dependency reexport="false">ea31a56a-3b81-465a-a6d2-df77c1a4023e(com.mbeddr.mpsutil.platform.pluginSolution)</dependency>
     <dependency reexport="false">371850a9-2c5b-4e1d-a811-70d97e847917(com.mbeddr.mpsutil.editor.utils)</dependency>
     <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
-    <dependency reexport="false">32ca7348-03fd-4dac-b152-717a93db2e05(com.mbeddr.mpsutil.assessment)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -103,6 +102,16 @@
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
   </languageVersions>
   <extendedLanguages>
+    <extendedLanguage>32ca7348-03fd-4dac-b152-717a93db2e05(com.mbeddr.mpsutil.assessment)</extendedLanguage>
+    <extendedLanguage>198afc4b-23ce-450a-a943-05218c3f83ca(com.mbeddr.mpsutil.codereview)</extendedLanguage>
+    <extendedLanguage>c2e56fa8-7054-46fe-8534-030242101153(com.mbeddr.mpsutil.commentable)</extendedLanguage>
+    <extendedLanguage>df52ef7a-67b7-41d2-a68e-88e9f3d52c61(com.mbeddr.mpsutil.configItem)</extendedLanguage>
+    <extendedLanguage>690ec915-02c8-4a7e-b65e-7b78b870dd62(com.mbeddr.mpsutil.controlledName)</extendedLanguage>
+    <extendedLanguage>3931c0ce-442c-4a4e-9e47-60d20030cf4a(com.mbeddr.mpsutil.nodelist)</extendedLanguage>
+    <extendedLanguage>22bab7cd-7ed6-44a7-8497-d6d79e8f4b15(com.mbeddr.mpsutil.pathAndFile)</extendedLanguage>
+    <extendedLanguage>180df86c-12ac-45e1-a386-834bee78322a(com.mbeddr.mpsutil.valueDebugger)</extendedLanguage>
+    <extendedLanguage>65ff80b5-800d-4d32-b722-a148de520562(com.mbeddr.mpsutil.platform)</extendedLanguage>
+    <extendedLanguage>3b590acc-6626-4247-8925-82ef4d522d7f(com.mbeddr.mpsutil.presentationMode)</extendedLanguage>
     <extendedLanguage>92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</extendedLanguage>
     <extendedLanguage>479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)</extendedLanguage>
     <extendedLanguage>ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</extendedLanguage>
