@@ -155,7 +155,7 @@
     <node concept="2_Ic$z" id="7OyG8hrcdvW" role="3989C9">
       <property role="2_Ic$$" value="true" />
       <property role="2_GNG2" value="2048" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
     </node>
     <node concept="398rNT" id="23LEVbRX3iL" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
@@ -599,7 +599,7 @@
     <property role="turDy" value="build-ts-tests.xml" />
     <node concept="2_Ic$z" id="2tUvrc9VMMN" role="3989C9">
       <property role="2_GNG2" value="3072" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
     </node>
     <node concept="1wNqPr" id="2B1T7v1mPAb" role="3989C9">

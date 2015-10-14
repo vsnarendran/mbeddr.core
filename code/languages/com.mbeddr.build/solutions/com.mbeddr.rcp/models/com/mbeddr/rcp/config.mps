@@ -158,7 +158,7 @@
     <property role="turDy" value="build-mbeddr-distrib.xml" />
     <node concept="2_Ic$z" id="16IL9jC9GlC" role="3989C9">
       <property role="2_Ic$B" value="true" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
       <node concept="3LWZYx" id="16IL9jC9GlD" role="2_Ic$A">
         <property role="3LWZYw" value="**/*.info" />
@@ -896,7 +896,7 @@
     <property role="turDy" value="build-mbeddr-branding.xml" />
     <node concept="2_Ic$z" id="16IL9jC9Gly" role="3989C9">
       <property role="2_Ic$B" value="true" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
       <node concept="3LWZYx" id="16IL9jC9Glz" role="2_Ic$A">
         <property role="3LWZYw" value="**/*.info" />
