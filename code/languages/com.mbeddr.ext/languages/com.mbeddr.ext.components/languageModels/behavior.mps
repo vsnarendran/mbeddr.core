@@ -2324,25 +2324,28 @@
         </node>
       </node>
     </node>
-    <node concept="13i0hz" id="34x64NySiu$" role="13h7CS">
-      <property role="TrG5h" value="genStructName" />
-      <node concept="3Tm1VV" id="34x64NySiu_" role="1B3o_S" />
-      <node concept="17QB3L" id="34x64NySiuC" role="3clF45" />
-      <node concept="3clFbS" id="34x64NySiuB" role="3clF47">
-        <node concept="3clFbF" id="34x64NySiuD" role="3cqZAp">
-          <node concept="3cpWs3" id="5Vf6bRbox_A" role="3clFbG">
-            <node concept="Xl_RD" id="5Vf6bRbox_D" role="3uHU7w">
-              <property role="Xl_RC" value="__cdata" />
+    <node concept="13i0hz" id="6u1nROfPMbr" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="genName" />
+      <ref role="13i0hy" node="7oCdOCV0AFR" resolve="genName" />
+      <node concept="3Tm1VV" id="6u1nROfPMbs" role="1B3o_S" />
+      <node concept="3clFbS" id="6u1nROfPMbv" role="3clF47">
+        <node concept="3cpWs6" id="6u1nROfPQnz" role="3cqZAp">
+          <node concept="3cpWs3" id="6u1nROfPR09" role="3cqZAk">
+            <node concept="Xl_RD" id="6u1nROfPR0c" role="3uHU7w">
+              <property role="Xl_RC" value="__ComponentData" />
             </node>
-            <node concept="2OqwBi" id="34x64NySiuJ" role="3uHU7B">
-              <node concept="13iPFW" id="34x64NySiuI" role="2Oq$k0" />
-              <node concept="3TrcHB" id="34x64NySiuN" role="2OqNvi">
+            <node concept="2OqwBi" id="6u1nROfPQxR" role="3uHU7B">
+              <node concept="13iPFW" id="6u1nROfPQnK" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6u1nROfPQVa" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
             </node>
           </node>
         </node>
       </node>
+      <node concept="17QB3L" id="6u1nROfPMbw" role="3clF45" />
     </node>
     <node concept="13i0hz" id="Rkqd51a25$" role="13h7CS">
       <property role="TrG5h" value="singletonInstanceDataName" />
@@ -9533,25 +9536,28 @@
   <node concept="13h7C7" id="5oFMniD9Orf">
     <property role="3GE5qa" value="intf" />
     <ref role="13h7C2" to="v7ag:3TmmsQkC_PR" resolve="Interface" />
-    <node concept="13i0hz" id="4WLtQa9fEO8" role="13h7CS">
-      <property role="TrG5h" value="genStructName" />
-      <node concept="3Tm1VV" id="4WLtQa9fEO9" role="1B3o_S" />
-      <node concept="17QB3L" id="4WLtQa9fEOc" role="3clF45" />
-      <node concept="3clFbS" id="4WLtQa9fEOb" role="3clF47">
-        <node concept="3clFbF" id="4WLtQa9fEOd" role="3cqZAp">
-          <node concept="3cpWs3" id="5Vf6bRblDux" role="3clFbG">
-            <node concept="Xl_RD" id="5Vf6bRblJ1K" role="3uHU7w">
-              <property role="Xl_RC" value="__idata" />
+    <node concept="13i0hz" id="7oCdOCV0Bhb" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="genName" />
+      <ref role="13i0hy" node="7oCdOCV0AFR" resolve="genName" />
+      <node concept="3Tm1VV" id="7oCdOCV0Bhc" role="1B3o_S" />
+      <node concept="3clFbS" id="7oCdOCV0Bhf" role="3clF47">
+        <node concept="3cpWs6" id="7oCdOCV0Byj" role="3cqZAp">
+          <node concept="3cpWs3" id="7oCdOCV0DKO" role="3cqZAk">
+            <node concept="Xl_RD" id="7oCdOCV0DKP" role="3uHU7w">
+              <property role="Xl_RC" value="__IntfData" />
             </node>
-            <node concept="2OqwBi" id="4WLtQa9fEOV" role="3uHU7B">
-              <node concept="13iPFW" id="4WLtQa9fEOA" role="2Oq$k0" />
-              <node concept="3TrcHB" id="4WLtQa9fEP0" role="2OqNvi">
+            <node concept="2OqwBi" id="7oCdOCV0DKQ" role="3uHU7B">
+              <node concept="13iPFW" id="7oCdOCV0DKR" role="2Oq$k0" />
+              <node concept="3TrcHB" id="7oCdOCV0DKS" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
             </node>
           </node>
         </node>
       </node>
+      <node concept="17QB3L" id="7oCdOCV0Bhg" role="3clF45" />
     </node>
     <node concept="13i0hz" id="3zugmcFDQCr" role="13h7CS">
       <property role="TrG5h" value="allReferencedModuleContents" />
@@ -17765,6 +17771,53 @@
       <node concept="_YKpA" id="4rAJNZmA5Ji" role="3clF45">
         <node concept="3bZ5Sz" id="4rAJNZmA5Jj" role="_ZDj9" />
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="7oCdOCV0AFO">
+    <ref role="13h7C2" to="v7ag:7oCdOCV0AFN" resolve="IGenNameProvider" />
+    <node concept="13i0hz" id="7oCdOCV0AFR" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="genName" />
+      <node concept="3Tm1VV" id="7oCdOCV0AFS" role="1B3o_S" />
+      <node concept="3clFbS" id="7oCdOCV0AFT" role="3clF47" />
+      <node concept="17QB3L" id="7oCdOCV0AVz" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="7oCdOCV0AFP" role="13h7CW">
+      <node concept="3clFbS" id="7oCdOCV0AFQ" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6u1nROfMdxx">
+    <property role="3GE5qa" value="config" />
+    <ref role="13h7C2" to="v7ag:1OLGDVfeZ1b" resolve="ComponentsGenStrategy" />
+    <node concept="13i0hz" id="6u1nROfMeaz" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <property role="TrG5h" value="wireStatically" />
+      <node concept="3Tm1VV" id="6u1nROfMea$" role="1B3o_S" />
+      <node concept="10P_77" id="6u1nROfMeaN" role="3clF45" />
+      <node concept="3clFbS" id="6u1nROfMeaA" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="6u1nROfMeaS" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <property role="TrG5h" value="generateContracts" />
+      <node concept="3Tm1VV" id="6u1nROfMeaT" role="1B3o_S" />
+      <node concept="10P_77" id="6u1nROfMebk" role="3clF45" />
+      <node concept="3clFbS" id="6u1nROfMeaV" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="6u1nROfMebp" role="13h7CS">
+      <property role="TrG5h" value="getInstanceConfiguration" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="6u1nROfMebq" role="1B3o_S" />
+      <node concept="3Tqbb2" id="6u1nROfMec1" role="3clF45">
+        <ref role="ehGHo" to="v7ag:3TmmsQkDdU0" resolve="InstanceConfiguration" />
+      </node>
+      <node concept="3clFbS" id="6u1nROfMebs" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="6u1nROfMdxy" role="13h7CW">
+      <node concept="3clFbS" id="6u1nROfMdxz" role="2VODD2" />
     </node>
   </node>
 </model>

@@ -14,6 +14,7 @@
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.statemachinesInComponents/statemachinesInComponents.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components.concurrency/com.mbeddr.ext.components.concurrency.mpl" folder="components" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components.embedded/com.mbeddr.ext.components.embedded.mpl" folder="components" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components.gen/com.mbeddr.ext.components.gen.mpl" folder="components" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components.gen_nomw/gen_nomw.mpl" folder="components" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components.mock/mock.mpl" folder="components" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.components.statemachine/sm_comp.mpl" folder="statemachine" />
@@ -31,8 +32,11 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.statemachines/pluginSolution/com.mbeddr.ext.statemachines.pluginSolution.msd" folder="statemachine" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.statemachines/statemachines.mpl" folder="statemachine" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.units/com.mbeddr.ext.units.mpl" folder="units" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.ext.components.runtime/com.mbeddr.ext.components.runtime.msd" folder="components" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.comp_mocking/comp_mocking.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components.concurrency/test.ex.ext.components.concurrency.msd" folder="tests.comp" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components.playground.msd" folder="tests.comp" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components.playground/test.ex.ext.components.playground.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components.sri/sri.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.components/components.msd" folder="tests.comp" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.compositecomponents/compositecomponents.msd" folder="tests.comp" />
