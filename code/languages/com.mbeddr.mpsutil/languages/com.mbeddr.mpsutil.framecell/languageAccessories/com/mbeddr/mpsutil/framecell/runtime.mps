@@ -55,6 +55,7 @@
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1070534436861" name="jetbrains.mps.baseLanguage.structure.FloatType" flags="in" index="10OMs4" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
@@ -106,6 +107,9 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -388,15 +392,20 @@
                   <node concept="2ShNRf" id="58xH_U7uWIo" role="37wK5m">
                     <node concept="1pGfFk" id="58xH_U7uXn2" role="2ShVmc">
                       <ref role="37wK5l" to="z60i:~BasicStroke.&lt;init&gt;(float)" resolve="BasicStroke" />
-                      <node concept="2OqwBi" id="7AjS6YEz2ak" role="37wK5m">
-                        <node concept="1rXfSq" id="7AjS6YEz1Ec" role="2Oq$k0">
-                          <ref role="37wK5l" to="g51k:~EditorCell_Basic.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
-                        </node>
-                        <node concept="liA8E" id="7AjS6YEz2uU" role="2OqNvi">
-                          <ref role="37wK5l" to="hox0:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute):java.lang.Object" resolve="get" />
-                          <node concept="1Z6Ecs" id="7AjS6YEz2xG" role="37wK5m">
-                            <ref role="1Z6EpT" to="epcs:7AjS6YEz03y" resolve="frame-width" />
+                      <node concept="1eOMI4" id="1yvsJ2kF_Lp" role="37wK5m">
+                        <node concept="10QFUN" id="1yvsJ2kF_Lq" role="1eOMHV">
+                          <node concept="2OqwBi" id="1yvsJ2kF_Ll" role="10QFUP">
+                            <node concept="1rXfSq" id="1yvsJ2kF_Lm" role="2Oq$k0">
+                              <ref role="37wK5l" to="g51k:~EditorCell_Basic.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+                            </node>
+                            <node concept="liA8E" id="1yvsJ2kF_Ln" role="2OqNvi">
+                              <ref role="37wK5l" to="hox0:~Style.get(jetbrains.mps.openapi.editor.style.StyleAttribute):java.lang.Object" resolve="get" />
+                              <node concept="1Z6Ecs" id="1yvsJ2kF_Lo" role="37wK5m">
+                                <ref role="1Z6EpT" to="epcs:7AjS6YEz03y" resolve="frame-width" />
+                              </node>
+                            </node>
                           </node>
+                          <node concept="10OMs4" id="1yvsJ2kF_Lj" role="10QFUM" />
                         </node>
                       </node>
                     </node>

@@ -206,7 +206,7 @@
   
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
-    <generate strictMode="true" parallelMode="true" parallelThreads="16" useInplaceTransform="true" hideWarnings="false" createStaticRefs="false" fork="true" targetJavaVersion="1.6">
+    <generate strictMode="true" parallelMode="true" parallelThreads="16" useInplaceTransform="true" hideWarnings="false" createStaticRefs="false" fork="true" targetJavaVersion="1.8">
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
@@ -326,7 +326,7 @@
   <target name="java.compile.de.itemis.mps.editor.diagram.demo.activity" depends="fetchDependencies">
     <mkdir dir="${diagram.home}/languages/de.itemis.mps.editor.diagram.demo.activity/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.itemis.mps.editor.diagram.demo.activity" />
-    <javac destdir="${build.tmp}/java/out/de.itemis.mps.editor.diagram.demo.activity" fork="false" includeantruntime="false" debug="true" source="1.6" target="1.6">
+    <javac destdir="${build.tmp}/java/out/de.itemis.mps.editor.diagram.demo.activity" fork="false" includeantruntime="false" debug="true" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${diagram.home}/languages/de.itemis.mps.editor.diagram.demo.activity/source_gen" />
@@ -383,7 +383,7 @@
   <target name="java.compile.de.itemis.mps.editor.diagram.demo.activity#5725606875425068161" depends="java.compile.de.itemis.mps.editor.diagram.demo.activity, fetchDependencies">
     <mkdir dir="${diagram.home}/languages/de.itemis.mps.editor.diagram.demo.activity/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.itemis.mps.editor.diagram.demo.activity#5725606875425068161" />
-    <javac destdir="${build.tmp}/java/out/de.itemis.mps.editor.diagram.demo.activity#5725606875425068161" fork="false" includeantruntime="false" debug="true" source="1.6" target="1.6">
+    <javac destdir="${build.tmp}/java/out/de.itemis.mps.editor.diagram.demo.activity#5725606875425068161" fork="false" includeantruntime="false" debug="true" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${diagram.home}/languages/de.itemis.mps.editor.diagram.demo.activity/generator/source_gen" />
@@ -428,7 +428,7 @@
   <target name="java.compile.test.de.itemis.mps.editor.diagram.lang" depends="fetchDependencies">
     <mkdir dir="${diagram.home}/languages/test.de.itemis.mps.editor.diagram.lang/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.de.itemis.mps.editor.diagram.lang" />
-    <javac destdir="${build.tmp}/java/out/test.de.itemis.mps.editor.diagram.lang" fork="false" includeantruntime="false" debug="true" source="1.6" target="1.6">
+    <javac destdir="${build.tmp}/java/out/test.de.itemis.mps.editor.diagram.lang" fork="false" includeantruntime="false" debug="true" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${diagram.home}/languages/test.de.itemis.mps.editor.diagram.lang/source_gen" />
@@ -492,7 +492,7 @@
   <target name="java.compile.test.de.itemis.mps.editor.diagram.lang#6137251545971652545" depends="java.compile.test.de.itemis.mps.editor.diagram.lang, fetchDependencies">
     <mkdir dir="${diagram.home}/languages/test.de.itemis.mps.editor.diagram.lang/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.de.itemis.mps.editor.diagram.lang#6137251545971652545" />
-    <javac destdir="${build.tmp}/java/out/test.de.itemis.mps.editor.diagram.lang#6137251545971652545" fork="false" includeantruntime="false" debug="true" source="1.6" target="1.6">
+    <javac destdir="${build.tmp}/java/out/test.de.itemis.mps.editor.diagram.lang#6137251545971652545" fork="false" includeantruntime="false" debug="true" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${diagram.home}/languages/test.de.itemis.mps.editor.diagram.lang/generator/source_gen" />
@@ -537,7 +537,7 @@
   <target name="java.compile.test.de.itemis.mps.editor.diagram.solution" depends="java.compile.de.itemis.mps.editor.diagram.demo.activity, java.compile.test.de.itemis.mps.editor.diagram.lang, fetchDependencies">
     <mkdir dir="${diagram.home}/solutions/test.de.itemis.mps.editor.diagram.solution/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.de.itemis.mps.editor.diagram.solution" />
-    <javac destdir="${build.tmp}/java/out/test.de.itemis.mps.editor.diagram.solution" fork="false" includeantruntime="false" debug="true" source="1.6" target="1.6">
+    <javac destdir="${build.tmp}/java/out/test.de.itemis.mps.editor.diagram.solution" fork="false" includeantruntime="false" debug="true" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${diagram.home}/solutions/test.de.itemis.mps.editor.diagram.solution/source_gen" />

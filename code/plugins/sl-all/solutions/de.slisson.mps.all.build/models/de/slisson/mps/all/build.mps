@@ -8,7 +8,6 @@
     <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="-1" />
     <use id="58f98fef-90ad-4b72-a390-fad66ec7005a" name="jetbrains.mps.core.properties" version="-1" />
     <use id="698a8d22-a104-47a0-ba8d-10e3ec237f13" name="jetbrains.mps.build.workflow" version="-1" />
-    <use id="50e7e80d-8a4c-4bc0-a3fa-73e686aa0749" name="de.slisson.mps.pluginrepo" version="-1" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -3730,7 +3729,7 @@
     </node>
     <node concept="2_Ic$z" id="5KXebfcSw7" role="3989C9">
       <property role="2_Ic$$" value="true" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
     </node>
     <node concept="1wNqPr" id="2B1T7v1mPNt" role="3989C9">
       <property role="1wNuhc" value="true" />
@@ -4119,7 +4118,7 @@
     <property role="turDy" value="build-tests.xml" />
     <node concept="2_Ic$z" id="6$6tsX_CF79" role="3989C9">
       <property role="2_Ic$$" value="true" />
-      <property role="TZNOO" value="1.6" />
+      <property role="TZNOO" value="1.8" />
     </node>
     <node concept="1wNqPr" id="6$6tsX_CF7a" role="3989C9">
       <property role="1wNuhc" value="true" />
