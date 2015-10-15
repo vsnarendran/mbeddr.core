@@ -113,6 +113,7 @@
         <child id="4491876417845643892" name="trigger" index="2EWDeT" />
         <child id="4491876417845689763" name="body" index="2EWMhI" />
       </concept>
+      <concept id="4491876417845628841" name="com.mbeddr.ext.components.structure.RequiredPort" flags="ng" index="2EWHp$" />
       <concept id="4491876417845628840" name="com.mbeddr.ext.components.structure.ProvidedPort" flags="ng" index="2EWHp_" />
       <concept id="4491876417845683828" name="com.mbeddr.ext.components.structure.OperationParameter" flags="ng" index="2EWNYT" />
       <concept id="4491876417845484930" name="com.mbeddr.ext.components.structure.Port" flags="ng" index="2EX0hf">
@@ -125,6 +126,14 @@
       <concept id="4491876417845474761" name="com.mbeddr.ext.components.structure.Component" flags="ng" index="2EX6K4">
         <child id="6041318036221669720" name="contents" index="2RW2fA" />
       </concept>
+      <concept id="8105003328815208362" name="com.mbeddr.ext.components.structure.PortRefExpr" flags="ng" index="2H6loZ">
+        <reference id="8105003328815208363" name="port" index="2H6loY" />
+      </concept>
+      <concept id="8105003328815071749" name="com.mbeddr.ext.components.structure.InterfaceOperationCallExpr" flags="ng" index="2H6Oeg">
+        <reference id="8105003328815071752" name="operation" index="2H6Oet" />
+        <child id="8105003328815091213" name="actuals" index="2H6KYo" />
+      </concept>
+      <concept id="466603768608442377" name="com.mbeddr.ext.components.structure.RequiredPortOpCallExpr" flags="ng" index="30IBQI" />
       <concept id="2103658896110121032" name="com.mbeddr.ext.components.structure.ComponentsConfigItem" flags="ng" index="3i2$bm">
         <child id="2103658896110238743" name="genStrategy" index="3i30U9" />
       </concept>
@@ -136,6 +145,9 @@
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
       <concept id="8463282783691618440" name="com.mbeddr.core.expressions.structure.Int32tType" flags="ng" index="26Vqph" />
+      <concept id="3005510381523579442" name="com.mbeddr.core.expressions.structure.UnaryExpression" flags="ng" index="2aKSnQ">
+        <child id="7254843406768839760" name="expression" index="1_9fRO" />
+      </concept>
       <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
         <property id="2212975673976043696" name="value" index="2hmy$m" />
       </concept>
@@ -218,7 +230,7 @@
     </node>
     <node concept="2EWCuY" id="7oCdOCUZeDC" role="N3F5h">
       <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="ConcreteLogger1" />
+      <property role="TrG5h" value="ConcreteLogger" />
       <node concept="2EWHp_" id="7oCdOCUZeSO" role="2RW2fA">
         <property role="TrG5h" value="logger" />
         <ref role="2EX0h9" node="7oCdOCUZeOt" resolve="Logger" />
@@ -252,6 +264,74 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="2NXPZ9" id="4G_AGJGTCjl" role="N3F5h">
+      <property role="TrG5h" value="empty_1444900613096_5" />
+    </node>
+    <node concept="2EWCuY" id="7oCdOCUZfa7" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="ConcreteServer" />
+      <node concept="2EWHp$" id="7oCdOCUZfcq" role="2RW2fA">
+        <property role="TrG5h" value="logger" />
+        <ref role="2EX0h9" node="7oCdOCUZeOt" resolve="Logger" />
+      </node>
+      <node concept="2EWHp_" id="7oCdOCUZfcB" role="2RW2fA">
+        <property role="TrG5h" value="server" />
+        <ref role="2EX0h9" node="7oCdOCUZf2w" resolve="Server" />
+      </node>
+      <node concept="3Khz0B" id="7oCdOCUZfdf" role="2RW2fA" />
+      <node concept="2EWDwb" id="7oCdOCUZfcF" role="2RW2fA">
+        <property role="TrG5h" value="server_connect" />
+        <node concept="3XIRFW" id="7oCdOCUZfcG" role="2EWMhI">
+          <node concept="1_9egQ" id="7oCdOCUZfdP" role="3XIRFZ">
+            <node concept="30IBQI" id="7oCdOCUZfdZ" role="1_9egR">
+              <ref role="2H6Oet" node="7oCdOCUZeSw" resolve="log" />
+              <node concept="2H6loZ" id="7oCdOCUZfdO" role="1_9fRO">
+                <ref role="2H6loY" node="7oCdOCUZfcq" resolve="logger" />
+              </node>
+              <node concept="PhEJO" id="7oCdOCUZfel" role="2H6KYo">
+                <property role="PhEJT" value="connect" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2EWDw0" id="7oCdOCUZfcI" role="2EWDeT">
+          <ref role="1ZwSu5" node="7oCdOCUZfcB" resolve="server" />
+          <ref role="1ZwxE2" node="7oCdOCUZf4I" resolve="connect" />
+        </node>
+        <node concept="19Rifw" id="7oCdOCUZfcJ" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="3Khz0B" id="7oCdOCUZfdt" role="2RW2fA" />
+      <node concept="2EWDwb" id="7oCdOCUZfcK" role="2RW2fA">
+        <property role="TrG5h" value="server_disconnect" />
+        <node concept="3XIRFW" id="7oCdOCUZfcL" role="2EWMhI">
+          <node concept="1_9egQ" id="7oCdOCUZflA" role="3XIRFZ">
+            <node concept="30IBQI" id="7oCdOCUZflK" role="1_9egR">
+              <ref role="2H6Oet" node="7oCdOCUZeSw" resolve="log" />
+              <node concept="2H6loZ" id="7oCdOCUZfl$" role="1_9fRO">
+                <ref role="2H6loY" node="7oCdOCUZfcq" resolve="logger" />
+              </node>
+              <node concept="PhEJO" id="7oCdOCUZfm2" role="2H6KYo">
+                <property role="PhEJT" value="disconnect" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2EWDw0" id="7oCdOCUZfcN" role="2EWDeT">
+          <ref role="1ZwSu5" node="7oCdOCUZfcB" resolve="server" />
+          <ref role="1ZwxE2" node="7oCdOCUZf5b" resolve="disconnect" />
+        </node>
+        <node concept="19Rifw" id="7oCdOCUZfcO" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="4G_AGJGTClM" role="N3F5h">
+      <property role="TrG5h" value="empty_1444900613352_6" />
     </node>
     <node concept="2NXPZ9" id="7oCdOCUZeQu" role="N3F5h">
       <property role="TrG5h" value="empty_1444820876301_4" />

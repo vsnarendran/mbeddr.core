@@ -62,7 +62,6 @@
       <concept id="2103658896110278831" name="com.mbeddr.ext.components.gen_nomw.structure.NoMwComponentsGenStrategy" flags="ng" index="3i3YCL">
         <property id="1553713790141527405" name="wireStatically" index="35zhco" />
         <property id="4768833643347725006" name="generateContracts" index="3Ewwow" />
-        <reference id="1553713790141527407" name="instanceConfig" index="35zhcq" />
       </concept>
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
@@ -110,21 +109,6 @@
       </concept>
     </language>
     <language id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components">
-      <concept id="7780999115923942144" name="com.mbeddr.ext.components.structure.AbstractInstanceConfiguration" flags="ng" index="5Js9S">
-        <child id="7780999115923944213" name="contents" index="5JtDH" />
-      </concept>
-      <concept id="4491876417845649024" name="com.mbeddr.ext.components.structure.InstanceConfiguration" flags="ng" index="2EWCtd" />
-      <concept id="4491876417845649017" name="com.mbeddr.ext.components.structure.InstancePortRef" flags="ng" index="2EWCuO">
-        <reference id="4491876417845649018" name="instance" index="2EWCuR" />
-        <reference id="3444913373458569211" name="port" index="XcPQd" />
-      </concept>
-      <concept id="4491876417845649016" name="com.mbeddr.ext.components.structure.AssemblyConnector" flags="ng" index="2EWCuP">
-        <child id="4491876417845649021" name="target" index="2EWCuK" />
-        <child id="4491876417845649020" name="source" index="2EWCuL" />
-      </concept>
-      <concept id="4491876417845649014" name="com.mbeddr.ext.components.structure.ComponentInstance" flags="ng" index="2EWCuV">
-        <reference id="4491876417845649015" name="component" index="2EWCuU" />
-      </concept>
       <concept id="4491876417845649011" name="com.mbeddr.ext.components.structure.AtomicComponent" flags="ng" index="2EWCuY" />
       <concept id="4491876417845641677" name="com.mbeddr.ext.components.structure.OperationTrigger" flags="ng" index="2EWDw0" />
       <concept id="4491876417845641670" name="com.mbeddr.ext.components.structure.Runnable" flags="ng" index="2EWDwb">
@@ -154,9 +138,6 @@
       <concept id="466603768608442377" name="com.mbeddr.ext.components.structure.RequiredPortOpCallExpr" flags="ng" index="30IBQI" />
       <concept id="2103658896110121032" name="com.mbeddr.ext.components.structure.ComponentsConfigItem" flags="ng" index="3i2$bm">
         <child id="2103658896110238743" name="genStrategy" index="3i30U9" />
-      </concept>
-      <concept id="591155063063570513" name="com.mbeddr.ext.components.structure.InitializeConfiguration" flags="ng" index="3t9XKO">
-        <reference id="591155063063570514" name="config" index="3t9XKR" />
       </concept>
       <concept id="8515777736166878876" name="com.mbeddr.ext.components.structure.EmptyComponentContent" flags="ng" index="3Khz0B" />
       <concept id="4514118643321588318" name="com.mbeddr.ext.components.structure.IOperationTriggerLike" flags="ng" index="1ZwTiz">
@@ -197,8 +178,7 @@
     <node concept="3i2$bm" id="7XQHhkHf$ss" role="2Q9xDr">
       <node concept="3i3YCL" id="7XQHhkHf$su" role="3i30U9">
         <property role="3Ewwow" value="true" />
-        <property role="35zhco" value="true" />
-        <ref role="35zhcq" node="7oCdOCUZfxe" resolve="ServerInstances" />
+        <property role="35zhco" value="false" />
       </node>
     </node>
     <node concept="2eOfOl" id="7XQHhkHda5D" role="2ePNbc">
@@ -221,9 +201,6 @@
       <property role="TrG5h" value="main" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="7XQHhkHda4K" role="3XIRFX">
-        <node concept="3t9XKO" id="7oCdOCUZfAn" role="3XIRFZ">
-          <ref role="3t9XKR" node="7oCdOCUZfxe" resolve="ServerInstances" />
-        </node>
         <node concept="2BFjQ_" id="7XQHhkHda4M" role="3XIRFZ">
           <node concept="3TlMh9" id="7oCdOCUZeyh" role="2BFjQA">
             <property role="2hmy$m" value="0" />
@@ -250,34 +227,6 @@
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
           </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2NXPZ9" id="7XQHhkHfxHs" role="N3F5h">
-      <property role="TrG5h" value="empty_1351850395549_1" />
-    </node>
-    <node concept="2EWCtd" id="7oCdOCUZfxe" role="N3F5h">
-      <property role="TrG5h" value="ServerInstances" />
-      <node concept="2EWCuV" id="7oCdOCUZfzW" role="5JtDH">
-        <property role="TrG5h" value="logger1" />
-        <ref role="2EWCuU" node="7oCdOCUZeDC" resolve="ConcreteLogger1" />
-      </node>
-      <node concept="2EWCuV" id="7oCdOCUZit4" role="5JtDH">
-        <property role="TrG5h" value="logger2" />
-        <ref role="2EWCuU" node="7oCdOCUZimI" resolve="ConcreteLogger2" />
-      </node>
-      <node concept="2EWCuV" id="7oCdOCUZf$c" role="5JtDH">
-        <property role="TrG5h" value="server1" />
-        <ref role="2EWCuU" node="7oCdOCUZfa7" resolve="ConcreteServer" />
-      </node>
-      <node concept="2EWCuP" id="7oCdOCUZf$o" role="5JtDH">
-        <node concept="2EWCuO" id="7oCdOCUZf$p" role="2EWCuL">
-          <ref role="2EWCuR" node="7oCdOCUZf$c" resolve="server1" />
-          <ref role="XcPQd" node="7oCdOCUZfcq" resolve="logger" />
-        </node>
-        <node concept="2EWCuO" id="7oCdOCUZf$r" role="2EWCuK">
-          <ref role="2EWCuR" node="7oCdOCUZfzW" resolve="logger1" />
-          <ref role="XcPQd" node="7oCdOCUZeSO" resolve="logger" />
         </node>
       </node>
     </node>
@@ -392,8 +341,8 @@
           </node>
         </node>
         <node concept="2EWDw0" id="7oCdOCUZfcI" role="2EWDeT">
-          <ref role="1ZwSu5" node="7oCdOCUZfcB" resolve="server" />
           <ref role="1ZwxE2" node="7oCdOCUZf4I" resolve="connect" />
+          <ref role="1ZwSu5" node="7oCdOCUZfcB" resolve="server" />
         </node>
         <node concept="19Rifw" id="7oCdOCUZfcJ" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -417,8 +366,8 @@
           </node>
         </node>
         <node concept="2EWDw0" id="7oCdOCUZfcN" role="2EWDeT">
-          <ref role="1ZwSu5" node="7oCdOCUZfcB" resolve="server" />
           <ref role="1ZwxE2" node="7oCdOCUZf5b" resolve="disconnect" />
+          <ref role="1ZwSu5" node="7oCdOCUZfcB" resolve="server" />
         </node>
         <node concept="19Rifw" id="7oCdOCUZfcO" role="2C2TGm">
           <property role="2caQfQ" value="false" />

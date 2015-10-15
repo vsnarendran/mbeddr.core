@@ -2327,8 +2327,7 @@
     <node concept="13i0hz" id="6u1nROfPMbr" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
-      <property role="TrG5h" value="genName" />
-      <ref role="13i0hy" node="7oCdOCV0AFR" resolve="genName" />
+      <property role="TrG5h" value="genStructName" />
       <node concept="3Tm1VV" id="6u1nROfPMbs" role="1B3o_S" />
       <node concept="3clFbS" id="6u1nROfPMbv" role="3clF47">
         <node concept="3cpWs6" id="6u1nROfPQnz" role="3cqZAp">
@@ -9536,17 +9535,15 @@
   <node concept="13h7C7" id="5oFMniD9Orf">
     <property role="3GE5qa" value="intf" />
     <ref role="13h7C2" to="v7ag:3TmmsQkC_PR" resolve="Interface" />
-    <node concept="13i0hz" id="7oCdOCV0Bhb" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="genName" />
-      <ref role="13i0hy" node="7oCdOCV0AFR" resolve="genName" />
-      <node concept="3Tm1VV" id="7oCdOCV0Bhc" role="1B3o_S" />
-      <node concept="3clFbS" id="7oCdOCV0Bhf" role="3clF47">
+    <node concept="13i0hz" id="4G_AGJGHb6E" role="13h7CS">
+      <property role="TrG5h" value="genStructName" />
+      <node concept="3Tm1VV" id="4G_AGJGHb6F" role="1B3o_S" />
+      <node concept="17QB3L" id="4G_AGJGHbeZ" role="3clF45" />
+      <node concept="3clFbS" id="4G_AGJGHb6H" role="3clF47">
         <node concept="3cpWs6" id="7oCdOCV0Byj" role="3cqZAp">
           <node concept="3cpWs3" id="7oCdOCV0DKO" role="3cqZAk">
             <node concept="Xl_RD" id="7oCdOCV0DKP" role="3uHU7w">
-              <property role="Xl_RC" value="__IntfData" />
+              <property role="Xl_RC" value="__InterfaceData" />
             </node>
             <node concept="2OqwBi" id="7oCdOCV0DKQ" role="3uHU7B">
               <node concept="13iPFW" id="7oCdOCV0DKR" role="2Oq$k0" />
@@ -9557,7 +9554,6 @@
           </node>
         </node>
       </node>
-      <node concept="17QB3L" id="7oCdOCV0Bhg" role="3clF45" />
     </node>
     <node concept="13i0hz" id="3zugmcFDQCr" role="13h7CS">
       <property role="TrG5h" value="allReferencedModuleContents" />
@@ -10203,7 +10199,7 @@
                 <node concept="K34Gv" id="2XtvyVv4Emo" role="1x$ftD">
                   <node concept="2OqwBi" id="2XtvyVv4Emp" role="1x$Ulu">
                     <node concept="13iPFW" id="2XtvyVv4Emq" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="2XtvyVv4Emr" role="2OqNvi">
+                    <node concept="2qgKlT" id="4G_AGJGFxm9" role="2OqNvi">
                       <ref role="37wK5l" node="34x64NyTVte" resolve="genMemberName" />
                     </node>
                   </node>
@@ -10283,7 +10279,7 @@
                 <node concept="K34Gv" id="2XtvyVv55Nw" role="1x$ftD">
                   <node concept="2OqwBi" id="2XtvyVv55Nx" role="1x$Ulu">
                     <node concept="13iPFW" id="2XtvyVv55Ny" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="2XtvyVv55Nz" role="2OqNvi">
+                    <node concept="2qgKlT" id="4G_AGJGFxKQ" role="2OqNvi">
                       <ref role="37wK5l" node="34x64NyTVte" resolve="genMemberName" />
                     </node>
                   </node>
@@ -13223,7 +13219,7 @@
                             <node concept="2GrUjf" id="4WY_RKGCcm4" role="2Oq$k0">
                               <ref role="2Gs0qQ" node="4WY_RKGCchd" resolve="field" />
                             </node>
-                            <node concept="2qgKlT" id="4WY_RKGCcmv" role="2OqNvi">
+                            <node concept="2qgKlT" id="4G_AGJGINeN" role="2OqNvi">
                               <ref role="37wK5l" node="34x64NyTVte" resolve="genMemberName" />
                             </node>
                           </node>
@@ -17771,20 +17767,6 @@
       <node concept="_YKpA" id="4rAJNZmA5Ji" role="3clF45">
         <node concept="3bZ5Sz" id="4rAJNZmA5Jj" role="_ZDj9" />
       </node>
-    </node>
-  </node>
-  <node concept="13h7C7" id="7oCdOCV0AFO">
-    <ref role="13h7C2" to="v7ag:7oCdOCV0AFN" resolve="IGenNameProvider" />
-    <node concept="13i0hz" id="7oCdOCV0AFR" role="13h7CS">
-      <property role="13i0iv" value="true" />
-      <property role="13i0it" value="true" />
-      <property role="TrG5h" value="genName" />
-      <node concept="3Tm1VV" id="7oCdOCV0AFS" role="1B3o_S" />
-      <node concept="3clFbS" id="7oCdOCV0AFT" role="3clF47" />
-      <node concept="17QB3L" id="7oCdOCV0AVz" role="3clF45" />
-    </node>
-    <node concept="13hLZK" id="7oCdOCV0AFP" role="13h7CW">
-      <node concept="3clFbS" id="7oCdOCV0AFQ" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="6u1nROfMdxx">
