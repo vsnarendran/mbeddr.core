@@ -140,7 +140,7 @@
     <property role="turDy" value="build-tests.xml" />
     <node concept="2_Ic$z" id="2tUvrc9VMMN" role="3989C9">
       <property role="2_GNG2" value="2048" />
-      <property role="TZNOO" value="1.8" />
+      <property role="TZNOO" value="1.6" />
       <property role="2_Ic$$" value="true" />
     </node>
     <node concept="1wNqPr" id="2B1T7v1mQ03" role="3989C9">

@@ -158,7 +158,7 @@
     <property role="2DA0ip" value="../../../../../build/jetbrains.mps.minmal" />
     <node concept="2_Ic$z" id="16IL9jC9Gl$" role="3989C9">
       <property role="2_Ic$B" value="true" />
-      <property role="TZNOO" value="1.8" />
+      <property role="TZNOO" value="1.6" />
       <property role="2_Ic$$" value="true" />
       <node concept="3LWZYx" id="16IL9jC9Gl_" role="2_Ic$A">
         <property role="3LWZYw" value="**/*.info" />

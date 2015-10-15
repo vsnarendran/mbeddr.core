@@ -283,7 +283,7 @@
       </node>
     </node>
     <node concept="2_Ic$z" id="1T8w0dkZS5o" role="3989C9">
-      <property role="TZNOO" value="1.8" />
+      <property role="TZNOO" value="1.6" />
     </node>
   </node>
 </model>
