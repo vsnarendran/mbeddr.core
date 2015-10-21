@@ -104,6 +104,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.httpserver/com.mbeddr.mpsutil.httpserver.msd" folder="httpSupport" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.httpsupport.rt/com.mbeddr.mpsutil.httpsupport.rt.msd" folder="httpSupport" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.intentions.runtime/com.mbeddr.mpsutil.intentions.runtime.msd" folder="intentions" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.interpreter.debugger/com.mbeddr.mpsutil.interpreter.debugger.msd" folder="interpreter" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.javainterpreter.richstring/com.mbeddr.mpsutil.javainterpreter.richstring.msd" folder="richstring" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.javainterpreter/com.mbeddr.mpsutil.javainterpreter.msd" folder="javainterpreter" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.lantest.pluginSolution/com.mbeddr.mpsutil.lantest.pluginSolution.msd" folder="lantest" />
