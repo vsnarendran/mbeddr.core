@@ -23,7 +23,7 @@
     <property role="TrG5h" value="Test" />
     <property role="aX7FQ" value="2" />
     <property role="aX7FK" value="12441" />
-    <property role="aXMjC" value="200" />
+    <property role="aXMjC" value="100" />
   </node>
 </model>
 

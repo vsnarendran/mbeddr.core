@@ -117,6 +117,9 @@
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
+        <property id="8355037393041754995" name="isNative" index="2aFKle" />
+      </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -807,6 +810,27 @@
           </node>
           <node concept="3Tm1VV" id="5AiVk6H_W6V" role="1B3o_S" />
           <node concept="10Pfzv" id="5AiVk6H_Wal" role="3clF45" />
+        </node>
+        <node concept="2tJIrI" id="2J5C9VqseJZ" role="jymVt" />
+        <node concept="3clFb_" id="2J5C9VqsePL" role="jymVt">
+          <property role="1EzhhJ" value="false" />
+          <property role="TrG5h" value="meth" />
+          <property role="od$2w" value="false" />
+          <property role="DiZV1" value="false" />
+          <property role="2aFKle" value="false" />
+          <node concept="3clFbS" id="2J5C9VqsePO" role="3clF47">
+            <node concept="3clFbF" id="2J5C9VqseS1" role="3cqZAp">
+              <node concept="3cpWs3" id="2J5C9VqseW7" role="3clFbG">
+                <node concept="3cmrfG" id="2J5C9VqseWk" role="3uHU7w">
+                  <property role="3cmrfH" value="1" />
+                </node>
+                <node concept="3cmrfG" id="2J5C9VqseS0" role="3uHU7B">
+                  <property role="3cmrfH" value="1" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cqZAl" id="2J5C9VqseNK" role="3clF45" />
         </node>
         <node concept="3Tm1VV" id="5AiVk6H_8EE" role="1B3o_S" />
         <node concept="7CXmI" id="5Gh6GqH4$bu" role="lGtFl">
