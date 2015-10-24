@@ -121,6 +121,10 @@
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
+      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
+        <child id="1070534934091" name="type" index="10QFUM" />
+        <child id="1070534934092" name="expression" index="10QFUP" />
+      </concept>
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
         <property id="8606350594693632173" name="isTransient" index="eg7rD" />
         <property id="1240249534625" name="isVolatile" index="34CwA1" />
@@ -178,6 +182,9 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -666,6 +673,31 @@
                 <node concept="37vLTw" id="7dsVgqxW09E" role="37wK5m">
                   <ref role="3cqZAo" node="7dsVgqxVYE1" resolve="interpreter" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1UlP$siOuRl" role="3cqZAp">
+          <node concept="2OqwBi" id="1UlP$siOvvH" role="3clFbG">
+            <node concept="1eOMI4" id="1UlP$siOv7s" role="2Oq$k0">
+              <node concept="10QFUN" id="1UlP$siOv7t" role="1eOMHV">
+                <node concept="2OqwBi" id="1UlP$siOv7p" role="10QFUP">
+                  <node concept="37vLTw" id="1UlP$siOv7q" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7dsVgqxW09B" resolve="context" />
+                  </node>
+                  <node concept="liA8E" id="1UlP$siOv7r" role="2OqNvi">
+                    <ref role="37wK5l" to="2ahs:2X4$XGmeuKp" resolve="getEnvironment" />
+                  </node>
+                </node>
+                <node concept="3uibUv" id="1UlP$siOvg5" role="10QFUM">
+                  <ref role="3uigEE" to="2ahs:7F2vPZ3KZdL" resolve="EnvironmentImpl" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="1UlP$siOxEj" role="2OqNvi">
+              <ref role="37wK5l" to="2ahs:1UlP$siNvXL" resolve="setBaseNode" />
+              <node concept="37vLTw" id="1UlP$siOxNS" role="37wK5m">
+                <ref role="3cqZAo" node="7dsVgqxVWZX" resolve="node" />
               </node>
             </node>
           </node>
