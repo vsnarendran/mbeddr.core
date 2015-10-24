@@ -30,7 +30,8 @@
     <import index="gyfg" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.base(MPS.Core/)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="fya2" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3.exception(org.apache.commons/)" />
-    <import index="1l1h" ref="r:c02662c0-67c5-4c3a-8d3a-cd7ffe189340(jetbrains.mps.debug.api)" implicit="true" />
+    <import index="1l1h" ref="r:c02662c0-67c5-4c3a-8d3a-cd7ffe189340(jetbrains.mps.debug.api)" />
+    <import index="rw00" ref="r:d910d08e-4a00-41f9-ac8b-b7c374586874(jetbrains.mps.debug.api.breakpoints)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -90,6 +91,9 @@
       </concept>
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
+      </concept>
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -242,7 +246,10 @@
       <concept id="946964771156870353" name="jetbrains.mps.execution.configurations.structure.StartProcessHandlerStatement" flags="nn" index="yIgYw">
         <child id="1594211126127621024" name="tool" index="2bO3kM" />
       </concept>
-      <concept id="7806358006983614956" name="jetbrains.mps.execution.configurations.structure.RunConfigurationExecutor" flags="ng" index="RBi3j" />
+      <concept id="7806358006983614956" name="jetbrains.mps.execution.configurations.structure.RunConfigurationExecutor" flags="ng" index="RBi3j">
+        <property id="6226796386650281949" name="canDebug" index="3c$X6f" />
+        <child id="6720907903633293832" name="debuggerConfiguration" index="1TqfgD" />
+      </concept>
       <concept id="7806358006983738927" name="jetbrains.mps.execution.configurations.structure.ConfigurationFromExecutorReference" flags="nn" index="RBKsg" />
       <concept id="3642991921658122718" name="jetbrains.mps.execution.configurations.structure.RunConfigurationCreator" flags="nn" index="30w_07">
         <reference id="3642991921658122719" name="configuration" index="30w_06" />
@@ -323,6 +330,11 @@
       <concept id="1104094430779068753" name="jetbrains.mps.debugger.api.lang.structure.DebuggerReference" flags="nn" index="3Qg5_p">
         <property id="1104094430779068757" name="debuggerName" index="3Qg5_t" />
       </concept>
+      <concept id="6720907903633266421" name="jetbrains.mps.debugger.api.lang.structure.DebuggerConfiguration" flags="ng" index="1Tq63k">
+        <child id="6720907903633266913" name="getSettings" index="1Tq6V0" />
+        <child id="6720907903633266912" name="debugger" index="1Tq6V1" />
+      </concept>
+      <concept id="6720907903633266914" name="jetbrains.mps.debugger.api.lang.structure.GetDebuggerSettings_Function" flags="in" index="1Tq6V3" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
@@ -386,6 +398,14 @@
                     <node concept="2ShNRf" id="_XKW4ADX9m" role="37wK5m">
                       <node concept="1pGfFk" id="_XKW4AE21V" role="2ShVmc">
                         <ref role="37wK5l" to="8en6:3bn5fYHybYy" resolve="InterpreterDebugger" />
+                        <node concept="2YIFZM" id="6N7ktxtOfPD" role="37wK5m">
+                          <ref role="37wK5l" to="1l1h:3SnNvqCaJeC" resolve="getInstance" />
+                          <ref role="1Pybhc" to="1l1h:3SnNvqCaJc8" resolve="Debuggers" />
+                        </node>
+                        <node concept="2YIFZM" id="6N7ktxtOfPE" role="37wK5m">
+                          <ref role="37wK5l" to="rw00:3SnNvqCaK4A" resolve="getInstance" />
+                          <ref role="1Pybhc" to="rw00:3SnNvqCaK4d" resolve="BreakpointProvidersManager" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -498,6 +518,7 @@
   <node concept="RBi3j" id="7dsVgqxV21E">
     <property role="35f5FB" value="true" />
     <property role="3gLNDv" value="myRunConfiguration" />
+    <property role="3c$X6f" value="true" />
     <ref role="yIonz" node="7dsVgqxVbbc" resolve="InterpreterDebugger run config" />
     <node concept="3CCWSg" id="7dsVgqxV21F" role="35uJNn">
       <node concept="3clFbS" id="7dsVgqxV21G" role="2VODD2">
@@ -685,6 +706,22 @@
           </node>
           <node concept="37vLTw" id="2J5C9Vqt8hr" role="2bO3kM">
             <ref role="3cqZAo" node="2J5C9Vqt5V0" resolve="console" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1Tq63k" id="5hRUA7tOEu" role="1TqfgD">
+      <node concept="3Qg5_p" id="5hRUA7tOM0" role="1Tq6V1">
+        <property role="3Qg5_t" value="InterpreterDebugger" />
+      </node>
+      <node concept="1Tq6V3" id="5hRUA7tOEw" role="1Tq6V0">
+        <node concept="3clFbS" id="5hRUA7tOEx" role="2VODD2">
+          <node concept="3clFbF" id="5hRUA7tT4T" role="3cqZAp">
+            <node concept="2ShNRf" id="5hRUA7tT4R" role="3clFbG">
+              <node concept="HV5vD" id="5hRUA7u9nI" role="2ShVmc">
+                <ref role="HV5vE" to="8en6:5hRUA7u7Ui" resolve="InterpreterDebuggerSettings" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
