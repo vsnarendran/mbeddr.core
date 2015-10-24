@@ -19,6 +19,7 @@
       </facets>
       <external-templates>
         <generator generatorUID="f780afd3-dca0-40c0-8c75-3fbf68382e62(jetbrains.mps.lang.access#8974276187400410207)" />
+        <generator generatorUID="985c8c6a-64b4-486d-a91e-7d4112742556(jetbrains.mps.baseLanguage#1129914002933)" />
       </external-templates>
       <dependencies>
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
@@ -66,6 +67,30 @@
             <external-mapping>
               <mapping-node modelUID="r:7119da0f-4b4d-46d9-adcc-2ac001a0ec2b(jetbrains.mps.lang.plugin.generator.baseLanguage.template.commands@generator)" nodeID="1225441503865" />
             </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="fb7be218-610c-4e16-af95-15257cfc0899(com.mbeddr.mpsutil.interpreter#8615074351687299716)" />
+            <external-mapping>
+              <mapping-node modelUID="r:bb4764cf-9b44-4239-950c-22ec267d6084(com.mbeddr.mpsutil.interpreter.generator.template.main@generator)" nodeID="954191822217134857" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <mapping-set>
+              <mapping-set-element>
+                <generator generatorUID="fb7be218-610c-4e16-af95-15257cfc0899(com.mbeddr.mpsutil.interpreter#8615074351687299716)" />
+                <external-mapping>
+                  <mapping-node modelUID="r:bb4764cf-9b44-4239-950c-22ec267d6084(com.mbeddr.mpsutil.interpreter.generator.template.main@generator)" nodeID="8615074351687299717" />
+                </external-mapping>
+              </mapping-set-element>
+              <mapping-set-element>
+                <generator generatorUID="985c8c6a-64b4-486d-a91e-7d4112742556(jetbrains.mps.baseLanguage#1129914002933)" />
+                <external-mapping>
+                  <mapping-node modelUID="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" nodeID="1201381967720" />
+                </external-mapping>
+              </mapping-set-element>
+            </mapping-set>
           </lesser-priority-mapping>
         </mapping-priority-rule>
       </mapping-priorities>

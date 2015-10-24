@@ -14,6 +14,17 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
+      <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
+        <property id="6054523464626875854" name="value" index="tnX3d" />
+      </concept>
+      <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
+        <reference id="6054523464627965081" name="concept" index="trN6q" />
+      </concept>
+      <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
+        <property id="7588428831955550663" name="role" index="Hh88m" />
+        <child id="7588428831947959310" name="attributed" index="EQaZv" />
+        <child id="7588428831955550186" name="multiple" index="HhnKV" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
@@ -500,6 +511,20 @@
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpee:fz3vP1H" resolve="Type" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="OXY6wyQ8zN">
+    <property role="1pbfSe" value="806781275" />
+    <property role="TrG5h" value="GenerationHelper" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="OXY6wyQ8zO" role="lGtFl">
+      <property role="Hh88m" value="generationHelper" />
+      <node concept="trNpa" id="OXY6wyQ8zX" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+      <node concept="tn0Fv" id="OXY6wyQ8zR" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
     </node>
   </node>
 </model>
