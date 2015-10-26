@@ -228,148 +228,185 @@
     <node concept="2NXPZ9" id="7XQHhkHfxHs" role="N3F5h">
       <property role="TrG5h" value="empty_1351850395549_1" />
     </node>
-    <node concept="2EWCuY" id="7oCdOCUZeDC" role="N3F5h">
+    <node concept="2EWCuY" id="44n0nMuZ7Yz" role="N3F5h">
       <property role="2OOxQR" value="true" />
-      <property role="TrG5h" value="ConcreteLogger" />
-      <node concept="2EWHp_" id="7oCdOCUZeSO" role="2RW2fA">
+      <property role="TrG5h" value="ConcreteLogger1" />
+      <node concept="2EWHp_" id="44n0nMuZ7Y$" role="2RW2fA">
         <property role="TrG5h" value="logger" />
-        <ref role="2EX0h9" node="7oCdOCUZeOt" resolve="Logger" />
+        <ref role="2EX0h9" node="44n0nMuZ7Z5" resolve="Logger" />
       </node>
-      <node concept="3Khz0B" id="7oCdOCUZeT8" role="2RW2fA" />
-      <node concept="2EWDwb" id="7oCdOCUZeSQ" role="2RW2fA">
+      <node concept="3Khz0B" id="44n0nMuZ7Y_" role="2RW2fA" />
+      <node concept="2EWDwb" id="44n0nMuZ7YA" role="2RW2fA">
         <property role="TrG5h" value="logger_log" />
-        <node concept="3XIRFW" id="7oCdOCUZeSR" role="2EWMhI">
-          <node concept="1_9egQ" id="7oCdOCUZogO" role="3XIRFZ">
-            <node concept="3O_q_g" id="7oCdOCUZogM" role="1_9egR">
+        <node concept="3XIRFW" id="44n0nMuZ7YB" role="2EWMhI">
+          <node concept="1_9egQ" id="44n0nMuZ7YC" role="3XIRFZ">
+            <node concept="3O_q_g" id="44n0nMuZ7YD" role="1_9egR">
               <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
-              <node concept="PhEJO" id="7oCdOCUZogW" role="3O_q_j">
+              <node concept="PhEJO" id="44n0nMuZ7YE" role="3O_q_j">
                 <property role="PhEJT" value="this is logger 1" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="2EWDw0" id="7oCdOCUZeST" role="2EWDeT">
-          <ref role="1ZwSu5" node="7oCdOCUZeSO" resolve="logger" />
-          <ref role="1ZwxE2" node="7oCdOCUZeSw" resolve="log" />
+        <node concept="2EWDw0" id="44n0nMuZ7YF" role="2EWDeT">
+          <ref role="1ZwxE2" node="44n0nMuZ7Z6" resolve="log" />
+          <ref role="1ZwSu5" node="44n0nMuZ7Y$" resolve="logger" />
         </node>
-        <node concept="19Rifw" id="7oCdOCUZfld" role="2C2TGm">
+        <node concept="19Rifw" id="44n0nMuZ7YG" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
-        <node concept="19RgSI" id="7oCdOCUZfle" role="1UOdpc">
+        <node concept="19RgSI" id="44n0nMuZ7YH" role="1UOdpc">
           <property role="TrG5h" value="text" />
-          <node concept="Pu267" id="7oCdOCUZflf" role="2C2TGm">
+          <node concept="Pu267" id="44n0nMuZ7YI" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="2NXPZ9" id="4G_AGJGTCjl" role="N3F5h">
-      <property role="TrG5h" value="empty_1444900613096_5" />
+    <node concept="2NXPZ9" id="7oCdOCUZiq4" role="N3F5h">
+      <property role="TrG5h" value="empty_1444821263124_12" />
     </node>
-    <node concept="2EWCuY" id="7oCdOCUZfa7" role="N3F5h">
+    <node concept="2EWCuY" id="7oCdOCUZimI" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="ConcreteLogger2" />
+      <node concept="2EWHp_" id="7oCdOCUZimJ" role="2RW2fA">
+        <property role="TrG5h" value="logger" />
+        <ref role="2EX0h9" node="44n0nMuZ7Z5" resolve="Logger" />
+      </node>
+      <node concept="3Khz0B" id="7oCdOCUZimK" role="2RW2fA" />
+      <node concept="2EWDwb" id="7oCdOCUZimL" role="2RW2fA">
+        <property role="TrG5h" value="logger_log" />
+        <node concept="3XIRFW" id="7oCdOCUZimM" role="2EWMhI">
+          <node concept="1_9egQ" id="7oCdOCUZokI" role="3XIRFZ">
+            <node concept="3O_q_g" id="7oCdOCUZokJ" role="1_9egR">
+              <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
+              <node concept="PhEJO" id="7oCdOCUZokK" role="3O_q_j">
+                <property role="PhEJT" value="this is logger 2" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2EWDw0" id="7oCdOCUZimO" role="2EWDeT">
+          <ref role="1ZwSu5" node="7oCdOCUZimJ" resolve="logger" />
+          <ref role="1ZwxE2" node="44n0nMuZ7Z6" resolve="log" />
+        </node>
+        <node concept="19Rifw" id="7oCdOCUZimP" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="19RgSI" id="7oCdOCUZimQ" role="1UOdpc">
+          <property role="TrG5h" value="text" />
+          <node concept="Pu267" id="7oCdOCUZimR" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="7oCdOCUZf5$" role="N3F5h">
+      <property role="TrG5h" value="empty_1444820951858_8" />
+    </node>
+    <node concept="2EWCuY" id="44n0nMuZ7YJ" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="ConcreteServer" />
-      <node concept="2EWHp$" id="7oCdOCUZfcq" role="2RW2fA">
+      <node concept="2EWHp$" id="44n0nMuZ7YK" role="2RW2fA">
         <property role="TrG5h" value="logger" />
-        <ref role="2EX0h9" node="7oCdOCUZeOt" resolve="Logger" />
+        <ref role="2EX0h9" node="44n0nMuZ7Z5" resolve="Logger" />
       </node>
-      <node concept="2EWHp_" id="7oCdOCUZfcB" role="2RW2fA">
+      <node concept="2EWHp_" id="44n0nMuZ7YL" role="2RW2fA">
         <property role="TrG5h" value="server" />
-        <ref role="2EX0h9" node="7oCdOCUZf2w" resolve="Server" />
+        <ref role="2EX0h9" node="44n0nMuZ7Zb" resolve="Server" />
       </node>
-      <node concept="3Khz0B" id="7oCdOCUZfdf" role="2RW2fA" />
-      <node concept="2EWDwb" id="7oCdOCUZfcF" role="2RW2fA">
+      <node concept="3Khz0B" id="44n0nMuZ7YM" role="2RW2fA" />
+      <node concept="2EWDwb" id="44n0nMuZ7YN" role="2RW2fA">
         <property role="TrG5h" value="server_connect" />
-        <node concept="3XIRFW" id="7oCdOCUZfcG" role="2EWMhI">
-          <node concept="1_9egQ" id="7oCdOCUZfdP" role="3XIRFZ">
-            <node concept="30IBQI" id="7oCdOCUZfdZ" role="1_9egR">
-              <ref role="2H6Oet" node="7oCdOCUZeSw" resolve="log" />
-              <node concept="2H6loZ" id="7oCdOCUZfdO" role="1_9fRO">
-                <ref role="2H6loY" node="7oCdOCUZfcq" resolve="logger" />
+        <node concept="3XIRFW" id="44n0nMuZ7YO" role="2EWMhI">
+          <node concept="1_9egQ" id="44n0nMuZ7YP" role="3XIRFZ">
+            <node concept="30IBQI" id="44n0nMuZ7YQ" role="1_9egR">
+              <ref role="2H6Oet" node="44n0nMuZ7Z6" resolve="log" />
+              <node concept="2H6loZ" id="44n0nMuZ7YR" role="1_9fRO">
+                <ref role="2H6loY" node="44n0nMuZ7YK" resolve="logger" />
               </node>
-              <node concept="PhEJO" id="7oCdOCUZfel" role="2H6KYo">
+              <node concept="PhEJO" id="44n0nMuZ7YS" role="2H6KYo">
                 <property role="PhEJT" value="connect" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="2EWDw0" id="7oCdOCUZfcI" role="2EWDeT">
-          <ref role="1ZwSu5" node="7oCdOCUZfcB" resolve="server" />
-          <ref role="1ZwxE2" node="7oCdOCUZf4I" resolve="connect" />
+        <node concept="2EWDw0" id="44n0nMuZ7YT" role="2EWDeT">
+          <ref role="1ZwSu5" node="44n0nMuZ7YL" resolve="server" />
+          <ref role="1ZwxE2" node="44n0nMuZ7Zc" resolve="connect" />
         </node>
-        <node concept="19Rifw" id="7oCdOCUZfcJ" role="2C2TGm">
+        <node concept="19Rifw" id="44n0nMuZ7YU" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
       </node>
-      <node concept="3Khz0B" id="7oCdOCUZfdt" role="2RW2fA" />
-      <node concept="2EWDwb" id="7oCdOCUZfcK" role="2RW2fA">
+      <node concept="3Khz0B" id="44n0nMuZ7YV" role="2RW2fA" />
+      <node concept="2EWDwb" id="44n0nMuZ7YW" role="2RW2fA">
         <property role="TrG5h" value="server_disconnect" />
-        <node concept="3XIRFW" id="7oCdOCUZfcL" role="2EWMhI">
-          <node concept="1_9egQ" id="7oCdOCUZflA" role="3XIRFZ">
-            <node concept="30IBQI" id="7oCdOCUZflK" role="1_9egR">
-              <ref role="2H6Oet" node="7oCdOCUZeSw" resolve="log" />
-              <node concept="2H6loZ" id="7oCdOCUZfl$" role="1_9fRO">
-                <ref role="2H6loY" node="7oCdOCUZfcq" resolve="logger" />
+        <node concept="3XIRFW" id="44n0nMuZ7YX" role="2EWMhI">
+          <node concept="1_9egQ" id="44n0nMuZ7YY" role="3XIRFZ">
+            <node concept="30IBQI" id="44n0nMuZ7YZ" role="1_9egR">
+              <ref role="2H6Oet" node="44n0nMuZ7Z6" resolve="log" />
+              <node concept="2H6loZ" id="44n0nMuZ7Z0" role="1_9fRO">
+                <ref role="2H6loY" node="44n0nMuZ7YK" resolve="logger" />
               </node>
-              <node concept="PhEJO" id="7oCdOCUZfm2" role="2H6KYo">
+              <node concept="PhEJO" id="44n0nMuZ7Z1" role="2H6KYo">
                 <property role="PhEJT" value="disconnect" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="2EWDw0" id="7oCdOCUZfcN" role="2EWDeT">
-          <ref role="1ZwSu5" node="7oCdOCUZfcB" resolve="server" />
-          <ref role="1ZwxE2" node="7oCdOCUZf5b" resolve="disconnect" />
+        <node concept="2EWDw0" id="44n0nMuZ7Z2" role="2EWDeT">
+          <ref role="1ZwSu5" node="44n0nMuZ7YL" resolve="server" />
+          <ref role="1ZwxE2" node="44n0nMuZ7Ze" resolve="disconnect" />
         </node>
-        <node concept="19Rifw" id="7oCdOCUZfcO" role="2C2TGm">
+        <node concept="19Rifw" id="44n0nMuZ7Z3" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
       </node>
     </node>
-    <node concept="2NXPZ9" id="4G_AGJGTClM" role="N3F5h">
-      <property role="TrG5h" value="empty_1444900613352_6" />
-    </node>
-    <node concept="2NXPZ9" id="7oCdOCUZeQu" role="N3F5h">
+    <node concept="2NXPZ9" id="44n0nMuZ7Z4" role="N3F5h">
       <property role="TrG5h" value="empty_1444820876301_4" />
     </node>
-    <node concept="2EX0iR" id="7oCdOCUZeOt" role="N3F5h">
+    <node concept="2EX0iR" id="44n0nMuZ7Z5" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="Logger" />
-      <node concept="2EX0iL" id="7oCdOCUZeSw" role="2EX0iN">
+      <node concept="2EX0iL" id="44n0nMuZ7Z6" role="2EX0iN">
         <property role="TrG5h" value="log" />
-        <node concept="19Rifw" id="7oCdOCUZeSv" role="2C2TGm">
+        <node concept="19Rifw" id="44n0nMuZ7Z7" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
-        <node concept="2EWNYT" id="7oCdOCUZffl" role="1UOdpc">
+        <node concept="2EWNYT" id="44n0nMuZ7Z8" role="1UOdpc">
           <property role="TrG5h" value="text" />
-          <node concept="Pu267" id="7oCdOCUZffk" role="2C2TGm">
+          <node concept="Pu267" id="44n0nMuZ7Z9" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="2NXPZ9" id="7oCdOCUZeTg" role="N3F5h">
+    <node concept="2NXPZ9" id="44n0nMuZ7Za" role="N3F5h">
       <property role="TrG5h" value="empty_1444820904164_5" />
     </node>
-    <node concept="2EX0iR" id="7oCdOCUZf2w" role="N3F5h">
+    <node concept="2EX0iR" id="44n0nMuZ7Zb" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="Server" />
-      <node concept="2EX0iL" id="7oCdOCUZf4I" role="2EX0iN">
+      <node concept="2EX0iL" id="44n0nMuZ7Zc" role="2EX0iN">
         <property role="TrG5h" value="connect" />
-        <node concept="19Rifw" id="7oCdOCUZf4H" role="2C2TGm">
+        <node concept="19Rifw" id="44n0nMuZ7Zd" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
       </node>
-      <node concept="2EX0iL" id="7oCdOCUZf5b" role="2EX0iN">
+      <node concept="2EX0iL" id="44n0nMuZ7Ze" role="2EX0iN">
         <property role="TrG5h" value="disconnect" />
-        <node concept="19Rifw" id="7oCdOCUZf59" role="2C2TGm">
+        <node concept="19Rifw" id="44n0nMuZ7Zf" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
