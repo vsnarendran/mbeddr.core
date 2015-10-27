@@ -107,6 +107,21 @@
       </concept>
     </language>
     <language id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components">
+      <concept id="7780999115923942144" name="com.mbeddr.ext.components.structure.AbstractInstanceConfiguration" flags="ng" index="5Js9S">
+        <child id="7780999115923944213" name="contents" index="5JtDH" />
+      </concept>
+      <concept id="4491876417845649024" name="com.mbeddr.ext.components.structure.InstanceConfiguration" flags="ng" index="2EWCtd" />
+      <concept id="4491876417845649017" name="com.mbeddr.ext.components.structure.InstancePortRef" flags="ng" index="2EWCuO">
+        <reference id="4491876417845649018" name="instance" index="2EWCuR" />
+        <reference id="3444913373458569211" name="port" index="XcPQd" />
+      </concept>
+      <concept id="4491876417845649016" name="com.mbeddr.ext.components.structure.AssemblyConnector" flags="ng" index="2EWCuP">
+        <child id="4491876417845649021" name="target" index="2EWCuK" />
+        <child id="4491876417845649020" name="source" index="2EWCuL" />
+      </concept>
+      <concept id="4491876417845649014" name="com.mbeddr.ext.components.structure.ComponentInstance" flags="ng" index="2EWCuV">
+        <reference id="4491876417845649015" name="component" index="2EWCuU" />
+      </concept>
       <concept id="4491876417845649011" name="com.mbeddr.ext.components.structure.AtomicComponent" flags="ng" index="2EWCuY" />
       <concept id="4491876417845641677" name="com.mbeddr.ext.components.structure.OperationTrigger" flags="ng" index="2EWDw0" />
       <concept id="4491876417845641670" name="com.mbeddr.ext.components.structure.Runnable" flags="ng" index="2EWDwb">
@@ -180,7 +195,7 @@
       <property role="TrG5h" value="ComponentTypes" />
       <property role="iO3LB" value="true" />
       <node concept="2v9HqM" id="7XQHhkHda5E" role="2eOfOg">
-        <ref role="2v9HqP" node="7XQHhkHda4I" resolve="Playground" />
+        <ref role="2v9HqP" node="7XQHhkHda4I" resolve="Playground2" />
       </node>
       <node concept="2v9HqM" id="7oCdOCUZonw" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
@@ -191,7 +206,7 @@
     </node>
   </node>
   <node concept="N3F5e" id="7XQHhkHda4I">
-    <property role="TrG5h" value="Playground" />
+    <property role="TrG5h" value="Playground2" />
     <node concept="N3Fnx" id="7XQHhkHda4J" role="N3F5h">
       <property role="TrG5h" value="main" />
       <property role="2OOxQR" value="true" />
@@ -222,6 +237,48 @@
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="5zz$R7NPaNr" role="N3F5h">
+      <property role="TrG5h" value="empty_1445877720256_1" />
+    </node>
+    <node concept="2EWCtd" id="44n0nMuZrqz" role="N3F5h">
+      <property role="TrG5h" value="instanceConfiguration" />
+      <node concept="2EWCuV" id="44n0nMuZru$" role="5JtDH">
+        <property role="TrG5h" value="cl1" />
+        <ref role="2EWCuU" node="44n0nMuZ7Yz" resolve="ConcreteLogger1" />
+      </node>
+      <node concept="2EWCuV" id="44n0nMuZruY" role="5JtDH">
+        <property role="TrG5h" value="cl2" />
+        <ref role="2EWCuU" node="7oCdOCUZimI" resolve="ConcreteLogger2" />
+      </node>
+      <node concept="2EWCuV" id="44n0nMuZrvs" role="5JtDH">
+        <property role="TrG5h" value="s1" />
+        <ref role="2EWCuU" node="44n0nMuZ7YJ" resolve="ConcreteServer" />
+      </node>
+      <node concept="2EWCuV" id="44n0nMuZrwh" role="5JtDH">
+        <property role="TrG5h" value="s2" />
+        <ref role="2EWCuU" node="44n0nMuZ7YJ" resolve="ConcreteServer" />
+      </node>
+      <node concept="2EWCuP" id="44n0nMuZrwE" role="5JtDH">
+        <node concept="2EWCuO" id="44n0nMuZrwF" role="2EWCuL">
+          <ref role="2EWCuR" node="44n0nMuZrwh" resolve="s2" />
+          <ref role="XcPQd" node="44n0nMuZ7YK" resolve="logger" />
+        </node>
+        <node concept="2EWCuO" id="44n0nMuZrwH" role="2EWCuK">
+          <ref role="2EWCuR" node="44n0nMuZruY" resolve="cl2" />
+          <ref role="XcPQd" node="7oCdOCUZimJ" resolve="logger" />
+        </node>
+      </node>
+      <node concept="2EWCuP" id="44n0nMuZrvF" role="5JtDH">
+        <node concept="2EWCuO" id="44n0nMuZrvG" role="2EWCuL">
+          <ref role="2EWCuR" node="44n0nMuZrvs" resolve="s1" />
+          <ref role="XcPQd" node="44n0nMuZ7YK" resolve="logger" />
+        </node>
+        <node concept="2EWCuO" id="44n0nMuZrvI" role="2EWCuK">
+          <ref role="2EWCuR" node="44n0nMuZruY" resolve="cl2" />
+          <ref role="XcPQd" node="7oCdOCUZimJ" resolve="logger" />
         </node>
       </node>
     </node>
