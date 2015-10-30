@@ -2037,6 +2037,9 @@
           <node concept="3F0A7n" id="71UKpntoo8m" role="2wV5jI">
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <node concept="2SqB2G" id="1usY_3gqz4w" role="2SqHTX">
+              <property role="TrG5h" value="operationName" />
+            </node>
           </node>
         </node>
       </node>

@@ -109,6 +109,13 @@
       </concept>
     </language>
     <language id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components">
+      <concept id="6616025724454668918" name="com.mbeddr.ext.components.structure.AdapterInstancePortRef" flags="ng" index="219P8x">
+        <reference id="6616025724454668919" name="instance" index="219P8w" />
+        <reference id="6616025724454668920" name="port" index="219P8J" />
+      </concept>
+      <concept id="5172178961828157634" name="com.mbeddr.ext.components.structure.PortAdapter" flags="ng" index="21gPQu">
+        <child id="6616025724454701213" name="portRef" index="21ad3a" />
+      </concept>
       <concept id="7780999115923942144" name="com.mbeddr.ext.components.structure.AbstractInstanceConfiguration" flags="ng" index="5Js9S">
         <child id="7780999115923944213" name="contents" index="5JtDH" />
       </concept>
@@ -150,9 +157,16 @@
         <reference id="8105003328815071752" name="operation" index="2H6Oet" />
         <child id="8105003328815091213" name="actuals" index="2H6KYo" />
       </concept>
+      <concept id="8105003328815039001" name="com.mbeddr.ext.components.structure.PortAdapterRefExpr" flags="ng" index="2H6Wec">
+        <reference id="8105003328815039002" name="portAdater" index="2H6Wef" />
+      </concept>
       <concept id="466603768608442377" name="com.mbeddr.ext.components.structure.RequiredPortOpCallExpr" flags="ng" index="30IBQI" />
+      <concept id="466603768608410221" name="com.mbeddr.ext.components.structure.PortAdapterOpCallExpr" flags="ng" index="30IJZa" />
       <concept id="2103658896110121032" name="com.mbeddr.ext.components.structure.ComponentsConfigItem" flags="ng" index="3i2$bm">
         <child id="2103658896110238743" name="genStrategy" index="3i30U9" />
+      </concept>
+      <concept id="591155063063570513" name="com.mbeddr.ext.components.structure.InitializeConfiguration" flags="ng" index="3t9XKO">
+        <reference id="591155063063570514" name="config" index="3t9XKR" />
       </concept>
       <concept id="8515777736166878876" name="com.mbeddr.ext.components.structure.EmptyComponentContent" flags="ng" index="3Khz0B" />
       <concept id="4514118643321588318" name="com.mbeddr.ext.components.structure.IOperationTriggerLike" flags="ng" index="1ZwTiz">
@@ -216,6 +230,17 @@
       <property role="TrG5h" value="main" />
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="7XQHhkHda4K" role="3XIRFX">
+        <node concept="3t9XKO" id="1usY_3gq9vD" role="3XIRFZ">
+          <ref role="3t9XKR" node="44n0nMuZrqz" resolve="ci" />
+        </node>
+        <node concept="1_9egQ" id="1usY_3gqiNm" role="3XIRFZ">
+          <node concept="30IJZa" id="1usY_3gr2Qx" role="1_9egR">
+            <ref role="2H6Oet" node="7oCdOCUZf4I" resolve="connect" />
+            <node concept="2H6Wec" id="1usY_3gqiNk" role="1_9fRO">
+              <ref role="2H6Wef" node="1usY_3gq9tN" resolve="s1a" />
+            </node>
+          </node>
+        </node>
         <node concept="2BFjQ_" id="7XQHhkHda4M" role="3XIRFZ">
           <node concept="3TlMh9" id="7oCdOCUZeyh" role="2BFjQA">
             <property role="2hmy$m" value="0" />
@@ -284,6 +309,13 @@
         <node concept="2EWCuO" id="44n0nMuZrvI" role="2EWCuK">
           <ref role="2EWCuR" node="44n0nMuZruY" resolve="cl2" />
           <ref role="XcPQd" node="7oCdOCUZimJ" resolve="logger" />
+        </node>
+      </node>
+      <node concept="21gPQu" id="1usY_3gq9tN" role="5JtDH">
+        <property role="TrG5h" value="s1a" />
+        <node concept="219P8x" id="1usY_3gq9tO" role="21ad3a">
+          <ref role="219P8w" node="44n0nMuZrvs" resolve="s1" />
+          <ref role="219P8J" node="7oCdOCUZfcB" resolve="server" />
         </node>
       </node>
     </node>
