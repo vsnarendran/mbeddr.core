@@ -9510,6 +9510,12 @@
             <ref role="1Busuk" node="2bBLuwR9LnB" resolve="com.mbeddr.mpsutil.interpreter.test" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3zAWwLKfJD7" role="3bR37C">
+          <node concept="3bR9La" id="3zAWwLKfJD8" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="5GUwywcVavP" resolve="com.mbeddr.mpsutil.interpreter" />
+          </node>
+        </node>
         <node concept="1yeLz9" id="15E$Thf_6lK" role="1TViLv">
           <property role="TrG5h" value="com.mbeddr.mpsutil.javainterpreter.test#6267356447275018447" />
           <property role="3LESm3" value="da16ac82-9662-4cb8-b6de-3c95e21b838e" />

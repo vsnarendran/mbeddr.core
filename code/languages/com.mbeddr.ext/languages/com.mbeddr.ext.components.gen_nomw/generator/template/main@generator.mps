@@ -11,8 +11,8 @@
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="896334f3-82ce-427b-bb47-ccd3131864a9" name="com.mbeddr.mpsutil.mappingLabels" version="-1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
@@ -105,7 +105,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -164,6 +164,9 @@
       <concept id="5667201763537739848" name="com.mbeddr.mpsutil.blutil.structure.LogExpr" flags="ng" index="sxT6M">
         <property id="5667201763537739900" name="label" index="sxT66" />
         <child id="5667201763537739902" name="expr" index="sxT64" />
+      </concept>
+      <concept id="5667201763537504944" name="com.mbeddr.mpsutil.blutil.structure.LogStatement" flags="ng" index="sINHa">
+        <property id="4987804909765039412" name="disabled" index="3ahEGn" />
       </concept>
       <concept id="4481811096720976618" name="com.mbeddr.mpsutil.blutil.structure.ConceptRef" flags="ng" index="1shVQo">
         <reference id="4481811096720976619" name="concept" index="1shVQp" />
@@ -3274,6 +3277,7 @@
                       <node concept="3clFbS" id="vMpGaXmqCV" role="2VODD2">
                         <node concept="sxT6M" id="5rtsVMmnOGL" role="3cqZAp">
                           <property role="sxT66" value="parent" />
+                          <property role="3ahEGn" value="true" />
                           <node concept="2OqwBi" id="5rtsVMmnPEb" role="sxT64">
                             <node concept="30H73N" id="5rtsVMmnPw9" role="2Oq$k0" />
                             <node concept="1mfA1w" id="5rtsVMmo6xC" role="2OqNvi" />
@@ -3281,6 +3285,7 @@
                         </node>
                         <node concept="sxT6M" id="5rtsVMmqpMr" role="3cqZAp">
                           <property role="sxT66" value="parentConcept" />
+                          <property role="3ahEGn" value="true" />
                           <node concept="2OqwBi" id="5rtsVMmqr9F" role="sxT64">
                             <node concept="2OqwBi" id="5rtsVMmqpMs" role="2Oq$k0">
                               <node concept="30H73N" id="5rtsVMmqpMt" role="2Oq$k0" />
@@ -18738,10 +18743,10 @@
                 <node concept="3clFbS" id="pTHqv6Lsaj" role="2VODD2">
                   <node concept="3clFbF" id="34x64NySiuO" role="3cqZAp">
                     <node concept="2OqwBi" id="34x64NySiuQ" role="3clFbG">
-                      <node concept="30H73N" id="34x64NySiuP" role="2Oq$k0" />
                       <node concept="2qgKlT" id="4G_AGJGOGvE" role="2OqNvi">
                         <ref role="37wK5l" to="eup9:6u1nROfPMbr" resolve="genStructName" />
                       </node>
+                      <node concept="30H73N" id="34x64NySiuP" role="2Oq$k0" />
                     </node>
                   </node>
                 </node>
@@ -21387,8 +21392,8 @@
                   </node>
                 </node>
                 <node concept="2YIFZM" id="4rpFIBbVZFW" role="33vP2m">
-                  <ref role="37wK5l" to="qh2w:4rpFIBbP$hM" resolve="getAllInstanctatedComponents" />
                   <ref role="1Pybhc" to="qh2w:2VzPqUCqcDf" resolve="GeneratorHelper" />
+                  <ref role="37wK5l" to="qh2w:4rpFIBbP$hM" resolve="getAllInstanctatedComponents" />
                   <node concept="1Q6Npb" id="4rpFIBbVZFX" role="37wK5m" />
                 </node>
               </node>
