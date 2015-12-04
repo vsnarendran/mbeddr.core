@@ -8,7 +8,9 @@
   </languages>
   <imports>
     <import index="iqxq" ref="r:5a244481-ee36-4984-a70c-5d4ba8e7e090(com.mbeddr.mpsutil.compare.pattern.structure)" />
+    <import index="gt8j" ref="r:d62dd985-922e-46d1-a30d-00dd9ec6278a(com.mbeddr.mpsutil.smodule.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
@@ -69,11 +71,31 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="inputLanguages" />
       <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="gt8j:3d01KqFgAKr" resolve="LanguageRef" />
     </node>
     <node concept="1TJgyj" id="W53A6SO_NS" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="outputLanguages" />
       <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="gt8j:3d01KqFgAKr" resolve="LanguageRef" />
+    </node>
+    <node concept="1TJgyj" id="6ADo$2yXPO_" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="singletonOutputs" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6ADo$2yXPOw" resolve="SingletonOutput" />
+    </node>
+    <node concept="1TJgyj" id="6ADo$2yXPOJ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="postProcessors" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6ADo$2yXPOG" resolve="PostProcessor" />
+    </node>
+    <node concept="1TJgyj" id="6ADo$2yXPOQ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="ignoredConcepts" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="tp25:gNgn60t" resolve="ConceptReference" />
     </node>
     <node concept="PrWs8" id="W53A6SO_Nf" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -98,6 +120,7 @@
     <property role="1pbfSe" value="942183626" />
     <property role="TrG5h" value="ModelApplicability" />
     <property role="3GE5qa" value="applicability" />
+    <property role="34LRSv" value="model" />
     <ref role="1TJDcQ" node="W53A6SO_Nh" resolve="AbstractApplicability" />
   </node>
   <node concept="1TIwiD" id="W53A6SO_Nr">
@@ -205,6 +228,12 @@
     <property role="3GE5qa" value="matcher" />
     <property role="TrG5h" value="ConditionMatcher" />
     <ref role="1TJDcQ" node="W53A6SO_NF" resolve="AbstractMatcher" />
+    <node concept="1TJgyj" id="6ADo$2yXKuI" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fK9aQHR" resolve="BlockStatement" />
+    </node>
   </node>
   <node concept="1TIwiD" id="W53A6SOEom">
     <property role="1pbfSe" value="942164873" />
@@ -237,7 +266,51 @@
   <node concept="1TIwiD" id="W53A6SOEoq">
     <property role="1pbfSe" value="942164869" />
     <property role="3GE5qa" value="internalExpressions" />
+    <property role="TrG5h" value="LogExpression" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="6ADo$2yXKuK">
+    <property role="1pbfSe" value="211839472" />
+    <property role="3GE5qa" value="matcher" />
+    <property role="TrG5h" value="PatternWithConditionMatcher" />
+    <ref role="1TJDcQ" node="W53A6SO_OI" resolve="PatternMatcher" />
+    <node concept="1TJgyj" id="6ADo$2yXKuL" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fK9aQHR" resolve="BlockStatement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6ADo$2yXPOw">
+    <property role="1pbfSe" value="211861344" />
+    <property role="TrG5h" value="SingletonOutput" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6ADo$2yXPOz" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="singletonConcept" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+    </node>
+    <node concept="PrWs8" id="6ADo$2yXPOx" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6ADo$2yXPOF">
+    <property role="1pbfSe" value="211861355" />
+    <property role="3GE5qa" value="internalExpressions" />
+    <property role="TrG5h" value="SingletonOutputExpression" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="6ADo$2yXPOG">
+    <property role="1pbfSe" value="211861356" />
+    <property role="TrG5h" value="PostProcessor" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6ADo$2yXPOH" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="implementation" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz12cDA" resolve="ClassConcept" />
+    </node>
   </node>
 </model>
 

@@ -50,6 +50,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">17566462-d837-4552-874c-64e45c10778a(com.mbeddr.mpsutil.compare.pattern)</dependency>
+    <dependency reexport="false">3eada220-3310-4fd3-b794-ff924add7d8a(com.mbeddr.mpsutil.smodule)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -83,6 +84,8 @@
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="17566462-d837-4552-874c-64e45c10778a(com.mbeddr.mpsutil.compare.pattern)" version="0" />
     <module reference="28480877-d5ae-4599-8af7-70d77f56075a(com.mbeddr.mpsutil.modelmapper)" version="0" />
+    <module reference="3eada220-3310-4fd3-b794-ff924add7d8a(com.mbeddr.mpsutil.smodule)" version="0" />
+    <module reference="d7931714-a11c-4108-aa0e-246d86070dad(com.mbeddr.mpsutil.smodule.runtime)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
     <module reference="ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)" version="0" />
     <module reference="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" version="0" />
