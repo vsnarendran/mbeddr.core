@@ -55,6 +55,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.margincell/com.mbeddr.mpsutil.margincell.mpl" folder="margincell_review" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.modellisteners.sandboxlang/com.mbeddr.mpsutil.modellisteners.sandboxlang.mpl" folder="modellisteners" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.modellisteners/com.mbeddr.mpsutil.modellisteners.mpl" folder="modellisteners" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.modelmapper/com.mbeddr.mpsutil.modelmapper.mpl" folder="modelMapper" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.multilingual.baseLanguage/com.mbeddr.mpsutil.multilingual.baseLanguage.mpl" folder="multilingual" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.multilingual.common/com.mbeddr.mpsutil.multilingual.common.mpl" folder="multilingual" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.multilingual.concept/com.mbeddr.mpsutil.multilingual.concept.mpl" folder="multilingual" />
