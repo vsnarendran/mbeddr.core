@@ -7606,12 +7606,6 @@
             <ref role="3bR37D" node="5dYb5krTMRa" resolve="com.mbeddr.mpsutil.compare.pattern.baselang" />
           </node>
         </node>
-        <node concept="1SiIV0" id="23HSX2zUScc" role="3bR37C">
-          <node concept="3bR9La" id="23HSX2zUScd" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="4oNjwzxq1FR" resolve="com.mbeddr.mpsutil.compare.pattern" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="23HSX2zUTzG" role="3bR37C">
           <node concept="3bR9La" id="23HSX2zUTzH" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -7632,6 +7626,22 @@
           <node concept="3bR9La" id="23HSX2zVU3C" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="4gGXGcLW61e" resolve="com.mbeddr.mpsutil.editor.utils" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="23HSX2$bEyd" role="3bR37C">
+          <node concept="3bR9La" id="23HSX2$bEye" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L9I" resolve="jetbrains.mps.lang.sharedConcepts" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="23HSX2$bEyf" role="3bR37C">
+          <node concept="1Busua" id="23HSX2$bEyg" role="1SiIV1">
+            <ref role="1Busuk" node="4oNjwzxq1FR" resolve="com.mbeddr.mpsutil.compare.pattern" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="23HSX2$bEyh" role="3bR37C">
+          <node concept="1Busua" id="23HSX2$bEyi" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6L9c" resolve="jetbrains.mps.lang.quotation" />
           </node>
         </node>
       </node>
