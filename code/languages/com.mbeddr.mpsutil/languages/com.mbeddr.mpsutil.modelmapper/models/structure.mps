@@ -9,9 +9,9 @@
   <imports>
     <import index="iqxq" ref="r:5a244481-ee36-4984-a70c-5d4ba8e7e090(com.mbeddr.mpsutil.compare.pattern.structure)" />
     <import index="gt8j" ref="r:d62dd985-922e-46d1-a30d-00dd9ec6278a(com.mbeddr.mpsutil.smodule.structure)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -23,9 +23,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
-        <child id="1169127546356" name="extends" index="PrDN$" />
-      </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -69,7 +67,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="mappers" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="W53A6SO_Nr" resolve="AbstractMapper" />
+      <ref role="20lvS9" node="1Zj_tykigz7" resolve="IMapperMember" />
     </node>
     <node concept="1TJgyj" id="W53A6SO_NO" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -107,6 +105,12 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6ADo$2z77SG" resolve="IgnoredConcept" />
     </node>
+    <node concept="1TJgyj" id="23HSX2zhZvd" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="typeMappings" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="23HSX2zhN0d" resolve="TypeMapping" />
+    </node>
     <node concept="PrWs8" id="W53A6SO_Nf" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -143,13 +147,13 @@
     <node concept="1TJgyj" id="W53A6SO_NG" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="matcher" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="W53A6SO_NF" resolve="AbstractMatcher" />
     </node>
     <node concept="1TJgyj" id="W53A6SOEo7" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="map" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="6ADo$2z8jbd" resolve="IMapImplementation" />
     </node>
     <node concept="1TJgyj" id="W53A6SOEoa" role="1TKVEi">
@@ -168,44 +172,16 @@
     <property role="3GE5qa" value="mapper" />
     <ref role="1TJDcQ" node="W53A6SO_Nr" resolve="AbstractMapper" />
     <node concept="PrWs8" id="W53A6SO_NA" role="PzmwI">
-      <ref role="PrY4T" node="W53A6SO_Nx" resolve="IMapperMember" />
+      <ref role="PrY4T" node="W53A6SO_Nx" resolve="IConcreteMapper" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="W53A6SO_Nv">
-    <property role="1pbfSe" value="942183616" />
-    <property role="3GE5qa" value="mapper" />
-    <property role="TrG5h" value="ExternalMapperRef" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="W53A6SO_ND" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="mapper" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="W53A6SO_NC" resolve="ExternalMapper" />
-    </node>
-    <node concept="PrWs8" id="W53A6SO_N$" role="PzmwI">
-      <ref role="PrY4T" node="W53A6SO_Nx" resolve="IMapperMember" />
+    <node concept="PrWs8" id="1Zj_tykigzR" role="PzmwI">
+      <ref role="PrY4T" node="1Zj_tykigz7" resolve="IMapperMember" />
     </node>
   </node>
   <node concept="PlHQZ" id="W53A6SO_Nx">
     <property role="1pbfSe" value="942183614" />
     <property role="3GE5qa" value="mapper" />
-    <property role="TrG5h" value="IMapperMember" />
-    <node concept="PrWs8" id="W53A6SO_Ny" role="PrDN$">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="W53A6SO_NC">
-    <property role="1pbfSe" value="942183607" />
-    <property role="3GE5qa" value="mapper" />
-    <property role="TrG5h" value="ExternalMapper" />
-    <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" node="W53A6SO_Nr" resolve="AbstractMapper" />
-    <node concept="PrWs8" id="6ADo$2z6Fxh" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="PrWs8" id="1lJTjvLCGwq" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
+    <property role="TrG5h" value="IConcreteMapper" />
   </node>
   <node concept="1TIwiD" id="W53A6SO_NF">
     <property role="1pbfSe" value="942183604" />
@@ -235,6 +211,7 @@
     <property role="1pbfSe" value="942183537" />
     <property role="3GE5qa" value="matcher" />
     <property role="TrG5h" value="PatternMatcher" />
+    <property role="34LRSv" value="pattern" />
     <ref role="1TJDcQ" node="W53A6SO_NF" resolve="AbstractMatcher" />
     <node concept="1TJgyj" id="W53A6SO_OM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -250,6 +227,7 @@
     <property role="1pbfSe" value="942183536" />
     <property role="3GE5qa" value="matcher" />
     <property role="TrG5h" value="ConditionMatcher" />
+    <property role="34LRSv" value="condition" />
     <ref role="1TJDcQ" node="W53A6SO_NF" resolve="AbstractMatcher" />
     <node concept="1TJgyj" id="6ADo$2yXKuI" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -296,6 +274,7 @@
     <property role="1pbfSe" value="211839472" />
     <property role="3GE5qa" value="matcher" />
     <property role="TrG5h" value="PatternWithConditionMatcher" />
+    <property role="34LRSv" value="pattern with condition" />
     <ref role="1TJDcQ" node="W53A6SO_OI" resolve="PatternMatcher" />
     <node concept="1TJgyj" id="6ADo$2yXKuL" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -327,7 +306,14 @@
     <property role="1pbfSe" value="211861355" />
     <property role="3GE5qa" value="internalExpressions" />
     <property role="TrG5h" value="SingletonOutputExpression" />
+    <property role="34LRSv" value="singletonOutput" />
     <ref role="1TJDcQ" node="1Zj_tykemXW" resolve="AbstractModelMapperExpression" />
+    <node concept="1TJgyj" id="1Zj_tyknT6c" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="singletonOutput" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6ADo$2yXPOw" resolve="SingletonOutput" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6ADo$2yXPOG">
     <property role="1pbfSe" value="211861356" />
@@ -368,9 +354,21 @@
   <node concept="1TIwiD" id="6ADo$2z6SO5">
     <property role="1pbfSe" value="214232901" />
     <property role="3GE5qa" value="internalExpressions" />
-    <property role="TrG5h" value="CombinedOutputsExpression" />
-    <property role="34LRSv" value="combinedOutputs" />
-    <ref role="1TJDcQ" node="1Zj_tykemXW" resolve="AbstractModelMapperExpression" />
+    <property role="TrG5h" value="CombinedOutputExpression" />
+    <property role="34LRSv" value="combinedOutput" />
+    <ref role="1TJDcQ" node="1Zj_tykemxd" resolve="AbstractMapAndResolveExpression" />
+    <node concept="1TJgyj" id="1Zj_tykC3bD" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="key" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="1Zj_tykC3bB" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="combinedOutput" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6ADo$2z6NYa" resolve="CombinedOutput" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6ADo$2z73hh">
     <property role="1pbfSe" value="214275729" />
@@ -522,14 +520,14 @@
   </node>
   <node concept="1TIwiD" id="1lJTjvLD53r">
     <property role="1pbfSe" value="118765074" />
-    <property role="3GE5qa" value="internalExpressions" />
+    <property role="3GE5qa" value="internalExpressions.mapAndResolve" />
     <property role="TrG5h" value="PatternMatchExpression" />
     <property role="34LRSv" value="patternMatch" />
     <ref role="1TJDcQ" node="1Zj_tykdErL" resolve="AbstractPatternExpression" />
   </node>
   <node concept="1TIwiD" id="1Zj_tykdErL">
     <property role="1pbfSe" value="1274397495" />
-    <property role="3GE5qa" value="internalExpressions" />
+    <property role="3GE5qa" value="internalExpressions.mapAndResolve" />
     <property role="TrG5h" value="AbstractPatternExpression" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
@@ -537,7 +535,7 @@
   </node>
   <node concept="1TIwiD" id="1Zj_tykemxd">
     <property role="1pbfSe" value="1274216923" />
-    <property role="3GE5qa" value="internalExpressions" />
+    <property role="3GE5qa" value="internalExpressions.mapAndResolve" />
     <property role="TrG5h" value="AbstractMapAndResolveExpression" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
@@ -550,6 +548,204 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="1Zj_tykeBGc">
+    <property role="1pbfSe" value="1274146588" />
+    <property role="3GE5qa" value="mapper.parameterized" />
+    <property role="TrG5h" value="ParameterizedMapper" />
+    <ref role="1TJDcQ" node="W53A6SO_Nr" resolve="AbstractMapper" />
+    <node concept="1TJgyj" id="1Zj_tykeBGp" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="formalParameters" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="1Zj_tykjHYQ" resolve="AbstractMapperFormalParameter" />
+    </node>
+    <node concept="PrWs8" id="1Zj_tyki$Mk" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="1Zj_tykigzG" role="PzmwI">
+      <ref role="PrY4T" node="1Zj_tykigz7" resolve="IMapperMember" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1Zj_tykeBGr">
+    <property role="1pbfSe" value="1274146573" />
+    <property role="TrG5h" value="MapperFormalParameter" />
+    <property role="3GE5qa" value="mapper.parameterized.formalParameter" />
+    <ref role="1TJDcQ" node="1Zj_tykjHYQ" resolve="AbstractMapperFormalParameter" />
+    <node concept="PrWs8" id="1Zj_tykeBGC" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1Zj_tykeBHZ">
+    <property role="1pbfSe" value="1274146473" />
+    <property role="3GE5qa" value="mapper.parameterized" />
+    <property role="TrG5h" value="ParameterizedMapperInstance" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1Zj_tykeBWP" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="actualParameters" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1Zj_tykeBJg" resolve="MapperActualParameter" />
+    </node>
+    <node concept="PrWs8" id="1Zj_tykigzC" role="PzmwI">
+      <ref role="PrY4T" node="1Zj_tykigz7" resolve="IMapperMember" />
+    </node>
+    <node concept="PrWs8" id="1Zj_tykeBI0" role="PzmwI">
+      <ref role="PrY4T" node="W53A6SO_Nx" resolve="IConcreteMapper" />
+    </node>
+    <node concept="1TJgyj" id="1Zj_tykeBI4" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="mapper" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1Zj_tykeBGc" resolve="ParameterizedMapper" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1Zj_tykeBJg">
+    <property role="1pbfSe" value="1274146392" />
+    <property role="3GE5qa" value="mapper.parameterized" />
+    <property role="TrG5h" value="MapperActualParameter" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1Zj_tykeBJj" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="formalParameter" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1Zj_tykjHYQ" resolve="AbstractMapperFormalParameter" />
+    </node>
+    <node concept="1TJgyj" id="1Zj_tykeBJh" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1Zj_tykfd$P">
+    <property role="1pbfSe" value="1273991411" />
+    <property role="3GE5qa" value="mapper" />
+    <property role="TrG5h" value="MapperGroup" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1Zj_tykfd_2" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="subMappers" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1Zj_tykigz7" resolve="IMapperMember" />
+    </node>
+    <node concept="PrWs8" id="1Zj_tyki$Md" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="1Zj_tykigzI" role="PzmwI">
+      <ref role="PrY4T" node="1Zj_tykigz7" resolve="IMapperMember" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1Zj_tykgYAv">
+    <property role="1pbfSe" value="1273528457" />
+    <property role="3GE5qa" value="internalExpressions.parameterizedMapper" />
+    <property role="TrG5h" value="AbstractParameterizedMapperExpression" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="1Zj_tykgZ2T">
+    <property role="1pbfSe" value="1273526639" />
+    <property role="3GE5qa" value="internalExpressions.parameterizedMapper" />
+    <property role="TrG5h" value="MapperParameterRefExpression" />
+    <ref role="1TJDcQ" node="1Zj_tykgYAv" resolve="AbstractParameterizedMapperExpression" />
+    <node concept="1TJgyj" id="1Zj_tykgZ33" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="formalParameter" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1Zj_tykjHYQ" resolve="AbstractMapperFormalParameter" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1Zj_tykigz7">
+    <property role="1pbfSe" value="1273192801" />
+    <property role="3GE5qa" value="mapper" />
+    <property role="TrG5h" value="IMapperMember" />
+  </node>
+  <node concept="1TIwiD" id="1Zj_tykjHYQ">
+    <property role="1pbfSe" value="1272810098" />
+    <property role="3GE5qa" value="mapper.parameterized.formalParameter" />
+    <property role="TrG5h" value="AbstractMapperFormalParameter" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1Zj_tykeBGE" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1H" resolve="Type" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1Zj_tykjHYT">
+    <property role="1pbfSe" value="1272810095" />
+    <property role="3GE5qa" value="mapper.parameterized.formalParameter" />
+    <property role="TrG5h" value="InputConceptFormalParameter" />
+    <property role="34LRSv" value="inputConcept" />
+    <ref role="1TJDcQ" node="1Zj_tykka11" resolve="AbstractMagicMapperFormalParameter" />
+  </node>
+  <node concept="1TIwiD" id="1Zj_tykjHZW">
+    <property role="1pbfSe" value="1272810028" />
+    <property role="3GE5qa" value="mapper.parameterized.formalParameter" />
+    <property role="TrG5h" value="OutputConceptFormalParameter" />
+    <property role="34LRSv" value="outputConcept" />
+    <ref role="1TJDcQ" node="1Zj_tykka11" resolve="AbstractMagicMapperFormalParameter" />
+  </node>
+  <node concept="1TIwiD" id="1Zj_tykka11">
+    <property role="1pbfSe" value="1272695271" />
+    <property role="3GE5qa" value="mapper.parameterized.formalParameter" />
+    <property role="TrG5h" value="AbstractMagicMapperFormalParameter" />
+    <ref role="1TJDcQ" node="1Zj_tykjHYQ" resolve="AbstractMapperFormalParameter" />
+  </node>
+  <node concept="1TIwiD" id="1Zj_tykkCPw">
+    <property role="1pbfSe" value="1272569032" />
+    <property role="3GE5qa" value="internalExpressions.resolve" />
+    <property role="TrG5h" value="AbstractResolveExpression" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="1Zj_tykkXa4">
+    <property role="1pbfSe" value="1272485796" />
+    <property role="3GE5qa" value="internalExpressions.resolve" />
+    <property role="TrG5h" value="OutputNodeExpression" />
+    <property role="34LRSv" value="outputNode" />
+    <ref role="1TJDcQ" node="1Zj_tykkCPw" resolve="AbstractResolveExpression" />
+  </node>
+  <node concept="1TIwiD" id="1Zj_tymfY74">
+    <property role="1pbfSe" value="1240238180" />
+    <property role="3GE5qa" value="internalExpressions.parameterizedMapper" />
+    <property role="TrG5h" value="InitializedOutputNodeExpression" />
+    <property role="34LRSv" value="initializedOutputNode" />
+    <ref role="1TJDcQ" node="1Zj_tykgYAv" resolve="AbstractParameterizedMapperExpression" />
+  </node>
+  <node concept="1TIwiD" id="23HSX2zhN0d">
+    <property role="1pbfSe" value="1003154467" />
+    <property role="TrG5h" value="TypeMapping" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="23HSX2zhN0I" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="inputConcept" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="23HSX2zhN0K" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="outputConcept" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="23HSX2zuYMR">
+    <property role="1pbfSe" value="999698297" />
+    <property role="3GE5qa" value="matcher" />
+    <property role="TrG5h" value="ConceptWithConditionMatcher" />
+    <property role="34LRSv" value="concept with condition" />
+    <ref role="1TJDcQ" node="W53A6SO_OH" resolve="ConceptMatcher" />
+    <node concept="1TJgyj" id="23HSX2zuYNj" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6ADo$2z7uhn" resolve="AbstractImplementation" />
+    </node>
   </node>
 </model>
 
