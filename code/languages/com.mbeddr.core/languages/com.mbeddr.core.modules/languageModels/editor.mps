@@ -341,10 +341,6 @@
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
       </concept>
-      <concept id="7617962380316326184" name="com.mbeddr.mpsutil.grammarcells.structure.IncludeParentSideTransformations" flags="ng" index="YGO_4">
-        <property id="7617962380316662743" name="forceLeft" index="YE2IV" />
-        <child id="7617962380316326278" name="wrapped" index="YGOBE" />
-      </concept>
       <concept id="6856661361479784881" name="com.mbeddr.mpsutil.grammarcells.structure.InlineActionMapItem_Param_node" flags="ng" index="130tyv" />
       <concept id="6856661361479784527" name="com.mbeddr.mpsutil.grammarcells.structure.InlineActionMapItem" flags="ng" index="130t_x">
         <property id="1139535298778" name="actionId" index="1hAc7k" />
@@ -1017,7 +1013,7 @@
       </node>
       <node concept="1j7BWu" id="5LCbJRRSJdg" role="3EZMnx">
         <node concept="1HlG4h" id="WlkN2oQGWz" role="1j7Clw">
-          <ref role="1ERwB7" node="L2WnbR8bP4" resolve="Argument_ActionMap" />
+          <ref role="1ERwB7" node="L2WnbR8bP4" resolve="IArgumentLike_ActionMap" />
           <node concept="1HfYo3" id="WlkN2oQGW_" role="1HlULh">
             <node concept="3TQlhw" id="WlkN2oQGWB" role="1Hhtcw">
               <node concept="3clFbS" id="WlkN2oQGWD" role="2VODD2">
@@ -1299,11 +1295,8 @@
           <property role="VOm3f" value="false" />
         </node>
       </node>
-      <node concept="YGO_4" id="7K_2cV$FThC" role="3EZMnx">
-        <property role="YE2IV" value="true" />
-        <node concept="3F1sOY" id="6Q7bJ$$mLHO" role="YGOBE">
-          <ref role="1NtTu8" to="mj1l:hEaDaGor64" />
-        </node>
+      <node concept="3F1sOY" id="6Q7bJ$$mLHO" role="3EZMnx">
+        <ref role="1NtTu8" to="mj1l:hEaDaGor64" />
       </node>
       <node concept="3F0A7n" id="6Q7bJ$$mLHP" role="3EZMnx">
         <property role="1cu_pB" value="2" />
@@ -2249,12 +2242,9 @@
           <ref role="PMmxG" to="j4gk:52l0VUuN8lr" resolve="IStoreInRegisterComponent" />
         </node>
         <node concept="l2Vlx" id="5IYyAOzCsdh" role="2iSdaV" />
-        <node concept="YGO_4" id="7bCENxTVB3q" role="3EZMnx">
-          <property role="YE2IV" value="true" />
-          <node concept="1kIj98" id="7bCENxTSAtU" role="YGOBE">
-            <node concept="3F1sOY" id="5IYyAOzCsdk" role="1kIj9b">
-              <ref role="1NtTu8" to="mj1l:hEaDaGor64" />
-            </node>
+        <node concept="1kIj98" id="7bCENxTSAtU" role="3EZMnx">
+          <node concept="3F1sOY" id="5IYyAOzCsdk" role="1kIj9b">
+            <ref role="1NtTu8" to="mj1l:hEaDaGor64" />
           </node>
         </node>
         <node concept="3F0A7n" id="5IYyAOzCsdm" role="3EZMnx">
@@ -4628,8 +4618,8 @@
   </node>
   <node concept="1h_SRR" id="L2WnbR8bP4">
     <property role="3GE5qa" value="functions" />
-    <property role="TrG5h" value="Argument_ActionMap" />
-    <ref role="1h_SK9" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
+    <property role="TrG5h" value="IArgumentLike_ActionMap" />
+    <ref role="1h_SK9" to="x27k:7kKaL9x4DZT" resolve="IArgumentLike" />
     <node concept="1hA7zw" id="L2WnbR8ccH" role="1h_SK8">
       <property role="1hAc7j" value="backspace_action_id" />
       <node concept="1hAIg9" id="L2WnbR8ccI" role="1hA7z_">

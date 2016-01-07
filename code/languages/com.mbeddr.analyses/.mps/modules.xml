@@ -9,6 +9,7 @@
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.core/com.mbeddr.analyses.core.devkit" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.fm/fm.devkit" folder="sat4j" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.analyses.statemachines/com.mbeddr.analyses.statemachines.devkit" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.acsl.assertions.gen/com.mbeddr.analyses.acsl.assertions.gen.mpl" folder="acsl" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.acsl.cbmc.gen/com.mbeddr.analyses.acsl.cbmc.gen.mpl" folder="acsl" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.acsl/com.mbeddr.analyses.acsl.mpl" folder="acsl" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.base.unittests/unittests.mpl" folder="base" />
@@ -38,6 +39,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.statemachines.pluginSolution/com.mbeddr.analyses.cbmc.statemachines.pluginSolution.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.statemachines.rt/com.mbeddr.analyses.cbmc.statemachines.rt.msd" folder="cbmc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cbmc.testsgen.rt/com.mbeddr.analyses.cbmc.testsgen.rt.msd" folder="cbmc" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.lantest.pluginSolution/com.mbeddr.analyses.lantest.pluginSolution.msd" folder="lantest" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j.fm.pluginSolution/com.mbeddr.analyses.sat4j.fm.pluginSolution.msd" folder="sat4j" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j.fm/com.mbeddr.analyses.sat4j.fm.msd" folder="sat4j" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j/com.mbeddr.analyses.sat4j.msd" folder="sat4j" />
