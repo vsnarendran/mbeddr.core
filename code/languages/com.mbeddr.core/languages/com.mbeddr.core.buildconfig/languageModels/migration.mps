@@ -66,6 +66,12 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl">
@@ -142,7 +148,7 @@
     </language>
   </registry>
   <node concept="3SyAh_" id="61MwuvYNUH2">
-    <property role="qMTe8" value="0" />
+    <property role="qMTe8" value="1" />
     <property role="TrG5h" value="CompilerAsChild" />
     <node concept="3Tm1VV" id="61MwuvYNUH3" role="1B3o_S" />
     <node concept="3tTeZs" id="61MwuvYNUH4" role="jymVt">
@@ -279,6 +285,64 @@
       </node>
     </node>
     <node concept="3tTeZs" id="61MwuvYNUHi" role="jymVt">
+      <property role="3tTeZt" value="&lt;no result checking&gt;" />
+      <ref role="3tTeZr" to="slm6:1JWcQ2VeXpD" resolve="check" />
+    </node>
+  </node>
+  <node concept="3SyAh_" id="5BMpRxKCkYE">
+    <property role="qMTe8" value="0" />
+    <property role="TrG5h" value="dummyMigration" />
+    <node concept="3Tm1VV" id="5BMpRxKCkYF" role="1B3o_S" />
+    <node concept="3tTeZs" id="5BMpRxKCkYG" role="jymVt">
+      <property role="3tTeZt" value="&lt;no execute after&gt;" />
+      <ref role="3tTeZr" to="slm6:7ay_HjIMt1a" resolve="execute after" />
+    </node>
+    <node concept="3tTeZs" id="5BMpRxKCkYH" role="jymVt">
+      <property role="3tTeZt" value="&lt;no required data&gt;" />
+      <ref role="3tTeZr" to="slm6:3A3gNhf1WPI" resolve="requires data" />
+    </node>
+    <node concept="3tTeZs" id="5BMpRxKCkYI" role="jymVt">
+      <property role="3tTeZt" value="&lt;no produced data&gt;" />
+      <ref role="3tTeZr" to="slm6:536fTXa4WHO" resolve="produces data" />
+    </node>
+    <node concept="2tJIrI" id="5BMpRxKCkYJ" role="jymVt" />
+    <node concept="3tTeZs" id="5BMpRxKCkYK" role="jymVt">
+      <property role="3tTeZt" value="&lt;migration is not rerunnable&gt;" />
+      <ref role="3tTeZr" to="slm6:1JWcQ2VeWIs" resolve="isRerunnable" />
+    </node>
+    <node concept="3tTeZs" id="5BMpRxKCkYL" role="jymVt">
+      <property role="3tTeZt" value="&lt;description&gt;" />
+      <ref role="3tTeZr" to="slm6:1_lSsE3RFpE" resolve="description" />
+    </node>
+    <node concept="q3mfD" id="5BMpRxKCkYM" role="jymVt">
+      <property role="TrG5h" value="execute" />
+      <ref role="2VtyIY" to="slm6:4ubqdNOF9cA" resolve="execute" />
+      <node concept="3Tm1VV" id="5BMpRxKCkYO" role="1B3o_S" />
+      <node concept="3clFbS" id="5BMpRxKCkYQ" role="3clF47">
+        <node concept="3SKdUt" id="5BMpRxKCl68" role="3cqZAp">
+          <node concept="3SKdUq" id="5BMpRxKCl69" role="3SKWNk">
+            <property role="3SKdUp" value="present because the language version was initialilly 1 and therefore all usage are with version" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="5BMpRxKCl9s" role="3cqZAp">
+          <node concept="3SKdUq" id="5BMpRxKCl9u" role="3SKWNk">
+            <property role="3SKdUp" value="this migration most likely will never trigger." />
+          </node>
+        </node>
+      </node>
+      <node concept="ffn8J" id="5BMpRxKCkYS" role="3clF46">
+        <property role="TrG5h" value="m" />
+        <ref role="ffrpq" to="slm6:7fCCGqboj9J" resolve="m" />
+        <node concept="3uibUv" id="5BMpRxKCkYR" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+        </node>
+      </node>
+      <node concept="q3mfm" id="5BMpRxKCkYT" role="3clF45">
+        <ref role="q3mfh" to="slm6:4F5w8gPXEEe" />
+        <ref role="1QQUv3" node="5BMpRxKCkYM" resolve="execute" />
+      </node>
+    </node>
+    <node concept="3tTeZs" id="5BMpRxKCkYU" role="jymVt">
       <property role="3tTeZt" value="&lt;no result checking&gt;" />
       <ref role="3tTeZr" to="slm6:1JWcQ2VeXpD" resolve="check" />
     </node>
