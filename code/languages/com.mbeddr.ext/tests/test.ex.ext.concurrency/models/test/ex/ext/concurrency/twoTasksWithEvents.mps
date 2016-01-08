@@ -41,6 +41,12 @@
       <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
         <property id="3431613015799084476" name="isTest" index="iO3LB" />
       </concept>
+      <concept id="6949760008398476020" name="com.mbeddr.core.buildconfig.structure.Compiler" flags="ng" index="2uJ1cj">
+        <property id="6949760008398476036" name="debugOptions" index="2uJ1bz" />
+        <property id="6949760008398476021" name="options" index="2uJ1ci" />
+        <property id="6949760008398476026" name="binary" index="2uJ1ct" />
+      </concept>
+      <concept id="6949760008398476867" name="com.mbeddr.core.buildconfig.structure.GCCCompiler" flags="ng" index="2uJ1u$" />
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
         <child id="5323740605968447026" name="target" index="2AWWZH" />
@@ -53,6 +59,7 @@
         <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
+        <child id="6949760008398476389" name="compiler" index="2uJ1m2" />
       </concept>
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
@@ -651,6 +658,11 @@
       <property role="3r8Kxs" value="make" />
       <property role="2AWWZI" value="-std=c99 -I/usr/include -pthread" />
       <property role="1FkSt$" value="-g " />
+      <node concept="2uJ1u$" id="5BMpRxKDPHU" role="2uJ1m2">
+        <property role="2uJ1ct" value="gcc" />
+        <property role="2uJ1bz" value="-g " />
+        <property role="2uJ1ci" value="-std=c99 -I/usr/include -pthread" />
+      </node>
     </node>
     <node concept="2eOfOl" id="4hMIGYxmNEG" role="2ePNbc">
       <property role="iO3LB" value="true" />
