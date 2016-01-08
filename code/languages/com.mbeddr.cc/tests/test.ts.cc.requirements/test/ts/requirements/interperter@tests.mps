@@ -172,6 +172,12 @@
       <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$" />
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
+      <concept id="6949760008398476020" name="com.mbeddr.core.buildconfig.structure.Compiler" flags="ng" index="2uJ1cj">
+        <property id="6949760008398476036" name="debugOptions" index="2uJ1bz" />
+        <property id="6949760008398476021" name="options" index="2uJ1ci" />
+        <property id="6949760008398476026" name="binary" index="2uJ1ct" />
+      </concept>
+      <concept id="6949760008398476867" name="com.mbeddr.core.buildconfig.structure.GCCCompiler" flags="ng" index="2uJ1u$" />
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5323740605968447026" name="target" index="2AWWZH" />
       </concept>
@@ -180,6 +186,7 @@
         <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
+        <child id="6949760008398476389" name="compiler" index="2uJ1m2" />
       </concept>
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
@@ -2472,6 +2479,11 @@
       <property role="1FkSt$" value="-g" />
       <property role="3r8Kxs" value="make" />
       <property role="3r8Kw1" value="gdb" />
+      <node concept="2uJ1u$" id="5BMpRxKDRbE" role="2uJ1m2">
+        <property role="2uJ1ct" value="gcc" />
+        <property role="2uJ1bz" value="-g" />
+        <property role="2uJ1ci" value="-std=c99" />
+      </node>
     </node>
     <node concept="2Q9Fgs" id="44jZT9pgTbH" role="2Q9xDr">
       <node concept="2Q9FjX" id="44jZT9pgTbI" role="2Q9FjI" />
