@@ -16,6 +16,7 @@
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -893,7 +894,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="3s1LyzG8Jy5" role="3EZMnx">
-        <property role="3F0ifm" value="compiler" />
+        <property role="3F0ifm" value="compiler:" />
         <node concept="lj46D" id="3s1LyzG8Jy6" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -901,59 +902,17 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3EZMnI" id="3s1LyzGERJE" role="3EZMnx">
-        <node concept="VPM3Z" id="3s1LyzGERJG" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="lj46D" id="3s1LyzGERKJ" role="3F10Kt">
+      <node concept="3F1sOY" id="61MwuvYNDoI" role="3EZMnx">
+        <ref role="1NtTu8" to="51wr:61MwuvYNDh_" />
+      </node>
+      <node concept="PMmxH" id="2obGnlQTQxr" role="3EZMnx">
+        <ref role="PMmxG" node="2obGnlQStXy" resolve="buildProcessors" />
+        <node concept="pVoyu" id="2obGnlQTQzm" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="pVoyu" id="3s1LyzGERKK" role="3F10Kt">
+        <node concept="lj46D" id="2obGnlQTQ$Z" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="3F0ifn" id="3s1LyzGERNG" role="3EZMnx">
-          <property role="3F0ifm" value="path to executable:" />
-          <node concept="lj46D" id="3s1LyzGERPc" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="3F0A7n" id="3s1LyzGEROL" role="3EZMnx">
-          <ref role="1NtTu8" to="51wr:4BxItZJ4BoK" resolve="compiler" />
-          <node concept="ljvvj" id="3s1LyzGERP5" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="3F0ifn" id="4BxItZJ4Bp9" role="3EZMnx">
-          <property role="3F0ifm" value="compiler options:" />
-          <node concept="lj46D" id="4BxItZJ4Bpa" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="3F0A7n" id="4BxItZJ4Bpb" role="3EZMnx">
-          <ref role="1NtTu8" to="51wr:4BxItZJ4BoL" resolve="compilerOptions" />
-          <node concept="ljvvj" id="4BxItZJ4Bpc" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="PMmxH" id="2nSRgleEQot" role="3EZMnx">
-          <ref role="PMmxG" node="2nSRgleEPDy" resolve="debugOptions" />
-          <node concept="lj46D" id="2nSRgleEQou" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="VPM3Z" id="6A4xWqfT4vn" role="3F10Kt">
-            <property role="VOm3f" value="false" />
-          </node>
-        </node>
-        <node concept="PMmxH" id="2obGnlQTQxr" role="3EZMnx">
-          <ref role="PMmxG" node="2obGnlQStXy" resolve="buildProcessors" />
-          <node concept="pVoyu" id="2obGnlQTQzm" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="lj46D" id="2obGnlQTQ$Z" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="l2Vlx" id="3s1LyzGERJJ" role="2iSdaV" />
       </node>
     </node>
   </node>
@@ -1288,6 +1247,64 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="61MwuvYNDhG">
+    <property role="3GE5qa" value="platform" />
+    <ref role="1XX52x" to="51wr:61MwuvYNDbO" resolve="Compiler" />
+    <node concept="3EZMnI" id="61MwuvYNDhU" role="2wV5jI">
+      <node concept="PMmxH" id="61MwuvYNDis" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3EZMnI" id="61MwuvYOGuZ" role="3EZMnx">
+        <node concept="VPM3Z" id="61MwuvYOGv1" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="l2Vlx" id="61MwuvYOGv4" role="2iSdaV" />
+        <node concept="pVoyu" id="61MwuvYOGvn" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="61MwuvYNDiH" role="3EZMnx">
+          <property role="3F0ifm" value="path to executable:" />
+          <node concept="pVoyu" id="61MwuvYNDiL" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="61MwuvYNDk2" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="61MwuvYNDj4" role="3EZMnx">
+          <ref role="1NtTu8" to="51wr:61MwuvYNDbU" resolve="binary" />
+        </node>
+        <node concept="3F0ifn" id="61MwuvYNDjs" role="3EZMnx">
+          <property role="3F0ifm" value="compiler options:" />
+          <node concept="pVoyu" id="61MwuvYNDjz" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="61MwuvYNDk5" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="61MwuvYNDjT" role="3EZMnx">
+          <ref role="1NtTu8" to="51wr:61MwuvYNDbP" resolve="options" />
+        </node>
+        <node concept="3F0ifn" id="61MwuvYNDl9" role="3EZMnx">
+          <property role="3F0ifm" value="debug options:" />
+          <node concept="lj46D" id="61MwuvYNDll" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="pVoyu" id="61MwuvYNDlo" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="61MwuvYNDlR" role="3EZMnx">
+          <ref role="1NtTu8" to="51wr:61MwuvYNDc4" resolve="debugOptions" />
+        </node>
+        <node concept="lj46D" id="61MwuvYOGwj" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="61MwuvYNDhX" role="2iSdaV" />
     </node>
   </node>
 </model>

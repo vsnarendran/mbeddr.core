@@ -1943,39 +1943,6 @@
           <node concept="17RlXB" id="3s1LyzGERo1" role="2OqNvi" />
         </node>
       </node>
-      <node concept="3clFbJ" id="3s1LyzGuz0i" role="3cqZAp">
-        <node concept="3clFbS" id="3s1LyzGuz0l" role="3clFbx">
-          <node concept="2MkqsV" id="3s1LyzGuC3P" role="3cqZAp">
-            <node concept="3Cnw8n" id="3s1LyzGvdje" role="2OEOjU">
-              <property role="ARO6o" value="true" />
-              <ref role="QpYPw" node="3s1LyzGuQD1" resolve="InitToolPathsInDesktopPlatform" />
-              <node concept="3CnSsL" id="3s1LyzGvdjf" role="3Coj4f">
-                <ref role="QkamJ" node="3s1LyzGuQZu" resolve="platform" />
-                <node concept="1YBJjd" id="3s1LyzGvdjg" role="3CoRuB">
-                  <ref role="1YBMHb" node="3s1LyzGuwaB" resolve="platform" />
-                </node>
-              </node>
-            </node>
-            <node concept="Xl_RD" id="3s1LyzGuC3Q" role="2MkJ7o">
-              <property role="Xl_RC" value="no path to compiler specified" />
-            </node>
-            <node concept="1YBJjd" id="3s1LyzGuC3R" role="2OEOjV">
-              <ref role="1YBMHb" node="3s1LyzGuwaB" resolve="platform" />
-            </node>
-          </node>
-        </node>
-        <node concept="2OqwBi" id="3s1LyzGu$xH" role="3clFbw">
-          <node concept="2OqwBi" id="3s1LyzGuz7n" role="2Oq$k0">
-            <node concept="1YBJjd" id="3s1LyzGuz31" role="2Oq$k0">
-              <ref role="1YBMHb" node="3s1LyzGuwaB" resolve="platform" />
-            </node>
-            <node concept="3TrcHB" id="3s1LyzGu$73" role="2OqNvi">
-              <ref role="3TsBF5" to="51wr:4BxItZJ4BoK" resolve="compiler" />
-            </node>
-          </node>
-          <node concept="17RlXB" id="3s1LyzGu_nE" role="2OqNvi" />
-        </node>
-      </node>
       <node concept="3clFbJ" id="3s1LyzGu_py" role="3cqZAp">
         <node concept="3clFbS" id="3s1LyzGu_p_" role="3clFbx">
           <node concept="2MkqsV" id="3s1LyzGuBwX" role="3cqZAp">
@@ -2054,36 +2021,6 @@
               </node>
             </node>
             <node concept="17RlXB" id="3s1LyzGEOsu" role="2OqNvi" />
-          </node>
-        </node>
-        <node concept="3clFbJ" id="3s1LyzGuU2e" role="3cqZAp">
-          <node concept="3clFbS" id="3s1LyzGuU2f" role="3clFbx">
-            <node concept="3clFbF" id="3s1LyzGuWe_" role="3cqZAp">
-              <node concept="37vLTI" id="3s1LyzGuWeA" role="3clFbG">
-                <node concept="Xl_RD" id="3s1LyzGuWeB" role="37vLTx">
-                  <property role="Xl_RC" value="gcc" />
-                </node>
-                <node concept="2OqwBi" id="3s1LyzGuWeC" role="37vLTJ">
-                  <node concept="QwW4i" id="3s1LyzGuWeD" role="2Oq$k0">
-                    <ref role="QwW4h" node="3s1LyzGuQZu" resolve="platform" />
-                  </node>
-                  <node concept="3TrcHB" id="3s1LyzGuXCi" role="2OqNvi">
-                    <ref role="3TsBF5" to="51wr:4BxItZJ4BoK" resolve="compiler" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="3s1LyzGB5xb" role="3clFbw">
-            <node concept="2OqwBi" id="3s1LyzGB5xc" role="2Oq$k0">
-              <node concept="QwW4i" id="3s1LyzGB7EK" role="2Oq$k0">
-                <ref role="QwW4h" node="3s1LyzGuQZu" resolve="platform" />
-              </node>
-              <node concept="3TrcHB" id="3s1LyzGB5xe" role="2OqNvi">
-                <ref role="3TsBF5" to="51wr:4BxItZJ4BoK" resolve="compiler" />
-              </node>
-            </node>
-            <node concept="17RlXB" id="3s1LyzGB5xf" role="2OqNvi" />
           </node>
         </node>
         <node concept="3clFbJ" id="3s1LyzGuU2o" role="3cqZAp">

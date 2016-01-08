@@ -13,6 +13,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
@@ -55,6 +58,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -260,6 +264,12 @@
     <property role="3GE5qa" value="platform" />
     <property role="1pbfSe" value="955527181" />
     <ref role="1TJDcQ" node="4BxItZJ4BoF" resolve="Platform" />
+    <node concept="1TJgyj" id="61MwuvYNDh_" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="compiler" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="61MwuvYNDbO" resolve="Compiler" />
+    </node>
     <node concept="PrWs8" id="77mJsGsFMiE" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
@@ -269,6 +279,7 @@
     <node concept="1TJgyi" id="4BxItZJ4BoK" role="1TKVEl">
       <property role="TrG5h" value="compiler" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="61MwuvYNDp4" role="lGtFl" />
     </node>
     <node concept="1TJgyi" id="3s1LyzG8GSD" role="1TKVEl">
       <property role="TrG5h" value="gdb" />
@@ -281,6 +292,7 @@
     <node concept="1TJgyi" id="4BxItZJ4BoL" role="1TKVEl">
       <property role="TrG5h" value="compilerOptions" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="61MwuvYNDp6" role="lGtFl" />
     </node>
   </node>
   <node concept="PlHQZ" id="2nSRgleEPDw">
@@ -290,6 +302,9 @@
     <node concept="1TJgyi" id="2nSRgleEPDx" role="1TKVEl">
       <property role="TrG5h" value="debugOptions" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="61MwuvYNDcq" role="lGtFl">
+        <property role="YLQ7P" value="do not use this property, override the behavior method!" />
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="otWcsA_eBq">
@@ -433,6 +448,33 @@
     <node concept="PrWs8" id="4zqPC3auYk5" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="61MwuvYNDbO">
+    <property role="1pbfSe" value="1598100699" />
+    <property role="3GE5qa" value="platform" />
+    <property role="TrG5h" value="Compiler" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="61MwuvYNDbP" role="1TKVEl">
+      <property role="TrG5h" value="options" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="61MwuvYNDbU" role="1TKVEl">
+      <property role="TrG5h" value="binary" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="61MwuvYNDc4" role="1TKVEl">
+      <property role="TrG5h" value="debugOptions" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="61MwuvYNDp3">
+    <property role="1pbfSe" value="1598101546" />
+    <property role="3GE5qa" value="platform" />
+    <property role="TrG5h" value="GCCCompiler" />
+    <property role="34LRSv" value="gcc" />
+    <ref role="1TJDcQ" node="61MwuvYNDbO" resolve="Compiler" />
   </node>
 </model>
 
