@@ -421,7 +421,9 @@
       <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG" />
+      <concept id="1145573345940" name="jetbrains.mps.lang.smodel.structure.Node_GetAllSiblingsOperation" flags="nn" index="2TvwIu" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1143511969223" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingOperation" flags="nn" index="YBYNd" />
       <concept id="1143512015885" name="jetbrains.mps.lang.smodel.structure.Node_GetNextSiblingOperation" flags="nn" index="YCak7" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
@@ -11414,52 +11416,6 @@
       <ref role="1YaFvo" to="x27k:5eg$WPOtR8F" resolve="GlobalConstantFunctionDeclaration" />
     </node>
   </node>
-  <node concept="18kY7G" id="6T3uXzTgalc">
-    <property role="TrG5h" value="check_FunctionSignatureForEllipsis" />
-    <property role="3GE5qa" value="functions" />
-    <node concept="3clFbS" id="6T3uXzTgald" role="18ibNy">
-      <node concept="3clFbJ" id="6T3uXzTgalX" role="3cqZAp">
-        <node concept="3clFbS" id="6T3uXzTgalY" role="3clFbx">
-          <node concept="2Mj0R9" id="6T3uXzTgalZ" role="3cqZAp">
-            <node concept="3eOSWO" id="6T3uXzTgam0" role="2MkoU_">
-              <node concept="3cmrfG" id="6T3uXzTgam1" role="3uHU7w">
-                <property role="3cmrfH" value="0" />
-              </node>
-              <node concept="2OqwBi" id="6T3uXzTgam2" role="3uHU7B">
-                <node concept="2OqwBi" id="6T3uXzTgam3" role="2Oq$k0">
-                  <node concept="1YBJjd" id="6T3uXzTgaxS" role="2Oq$k0">
-                    <ref role="1YBMHb" node="6T3uXzTgalf" resolve="functionSignature" />
-                  </node>
-                  <node concept="3Tsc0h" id="6T3uXzTgbkk" role="2OqNvi">
-                    <ref role="3TtcxE" to="x27k:4WTYg$PUiX5" />
-                  </node>
-                </node>
-                <node concept="34oBXx" id="6T3uXzTgam6" role="2OqNvi" />
-              </node>
-            </node>
-            <node concept="Xl_RD" id="6T3uXzTgam7" role="2MkJ7o">
-              <property role="Xl_RC" value="must have at least one argument if ellipsis are used" />
-            </node>
-            <node concept="1YBJjd" id="6T3uXzTgbxV" role="2OEOjV">
-              <ref role="1YBMHb" node="6T3uXzTgalf" resolve="functionSignature" />
-            </node>
-          </node>
-        </node>
-        <node concept="2OqwBi" id="6T3uXzTgam9" role="3clFbw">
-          <node concept="1YBJjd" id="6T3uXzTgaqR" role="2Oq$k0">
-            <ref role="1YBMHb" node="6T3uXzTgalf" resolve="functionSignature" />
-          </node>
-          <node concept="3TrcHB" id="6T3uXzTgamb" role="2OqNvi">
-            <ref role="3TsBF5" to="x27k:7RiewQ_kDL5" resolve="hasEllipsis" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="6T3uXzTgalf" role="1YuTPh">
-      <property role="TrG5h" value="functionSignature" />
-      <ref role="1YaFvo" to="x27k:5_l8w1EmTvt" resolve="FunctionSignature" />
-    </node>
-  </node>
   <node concept="18kY7G" id="6T3uXzTgOey">
     <property role="TrG5h" value="check_GlobalVariableDeclarationStorrageClass" />
     <property role="3GE5qa" value="global" />
@@ -11593,6 +11549,74 @@
     <node concept="1YaCAy" id="6T3uXzTilOJ" role="1YuTPh">
       <property role="TrG5h" value="noOp" />
       <ref role="1YaFvo" to="x27k:4AGl5dzxvNW" resolve="NoOp" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="79KkmSjj$$r">
+    <property role="TrG5h" value="check_VariadicArgument" />
+    <property role="3GE5qa" value="functions" />
+    <node concept="3clFbS" id="79KkmSjj$$s" role="18ibNy">
+      <node concept="2Mj0R9" id="79KkmSjj_uF" role="3cqZAp">
+        <node concept="2OqwBi" id="79KkmSjjAxn" role="2MkoU_">
+          <node concept="2OqwBi" id="79KkmSjj_AO" role="2Oq$k0">
+            <node concept="1YBJjd" id="79KkmSjj_uZ" role="2Oq$k0">
+              <ref role="1YBMHb" node="79KkmSjj$$u" resolve="variadicArgument" />
+            </node>
+            <node concept="YCak7" id="79KkmSjjAdf" role="2OqNvi" />
+          </node>
+          <node concept="3w_OXm" id="79KkmSjjA_H" role="2OqNvi" />
+        </node>
+        <node concept="Xl_RD" id="79KkmSjjA_U" role="2MkJ7o">
+          <property role="Xl_RC" value="can only be used in last position" />
+        </node>
+        <node concept="1YBJjd" id="79KkmSjjACt" role="2OEOjV">
+          <ref role="1YBMHb" node="79KkmSjj$$u" resolve="variadicArgument" />
+        </node>
+      </node>
+      <node concept="2Mj0R9" id="79KkmSjjADu" role="3cqZAp">
+        <node concept="2OqwBi" id="79KkmSjjHOF" role="2MkoU_">
+          <node concept="2OqwBi" id="79KkmSjjGAC" role="2Oq$k0">
+            <node concept="2OqwBi" id="79KkmSjjFt_" role="2Oq$k0">
+              <node concept="1YBJjd" id="79KkmSjjFlj" role="2Oq$k0">
+                <ref role="1YBMHb" node="79KkmSjj$$u" resolve="variadicArgument" />
+              </node>
+              <node concept="2TvwIu" id="79KkmSjjG4I" role="2OqNvi" />
+            </node>
+            <node concept="v3k3i" id="79KkmSjjHKV" role="2OqNvi">
+              <node concept="chp4Y" id="79KkmSjjHLG" role="v3oSu">
+                <ref role="cht4Q" to="x27k:UslQeyoPRa" resolve="VariadicArgument" />
+              </node>
+            </node>
+          </node>
+          <node concept="1v1jN8" id="79KkmSjjHZb" role="2OqNvi" />
+        </node>
+        <node concept="Xl_RD" id="79KkmSjjHZo" role="2MkJ7o">
+          <property role="Xl_RC" value="varArg can only be used once" />
+        </node>
+        <node concept="1YBJjd" id="79KkmSjjI2G" role="2OEOjV">
+          <ref role="1YBMHb" node="79KkmSjj$$u" resolve="variadicArgument" />
+        </node>
+      </node>
+      <node concept="2Mj0R9" id="7IAFmB7kX6V" role="3cqZAp">
+        <node concept="2OqwBi" id="7IAFmB7kYcj" role="2MkoU_">
+          <node concept="2OqwBi" id="7IAFmB7kXfr" role="2Oq$k0">
+            <node concept="1YBJjd" id="7IAFmB7kX7A" role="2Oq$k0">
+              <ref role="1YBMHb" node="79KkmSjj$$u" resolve="variadicArgument" />
+            </node>
+            <node concept="YBYNd" id="7IAFmB7kXSb" role="2OqNvi" />
+          </node>
+          <node concept="3x8VRR" id="7IAFmB7kYic" role="2OqNvi" />
+        </node>
+        <node concept="Xl_RD" id="7IAFmB7kYip" role="2MkJ7o">
+          <property role="Xl_RC" value="needs at least one argument before varArg" />
+        </node>
+        <node concept="1YBJjd" id="7IAFmB7kYq8" role="2OEOjV">
+          <ref role="1YBMHb" node="79KkmSjj$$u" resolve="variadicArgument" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="79KkmSjj$$u" role="1YuTPh">
+      <property role="TrG5h" value="variadicArgument" />
+      <ref role="1YaFvo" to="x27k:UslQeyoPRa" resolve="VariadicArgument" />
     </node>
   </node>
 </model>

@@ -104,6 +104,7 @@
       <concept id="3376775282622142916" name="com.mbeddr.core.modules.structure.AbstractDefineLike" flags="ng" index="2DRUVY">
         <child id="3376775282622233992" name="value" index="2DQcEM" />
       </concept>
+      <concept id="1052812498335653322" name="com.mbeddr.core.modules.structure.VariadicArgument" flags="ng" index="2GZKED" />
       <concept id="8105003328814797298" name="com.mbeddr.core.modules.structure.IFunctionLike" flags="ng" index="2H9T1B">
         <child id="5708867820623310661" name="arguments" index="1UOdpc" />
       </concept>
@@ -115,9 +116,6 @@
       <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
         <property id="1317894735999272944" name="exported" index="2OOxQR" />
         <property id="6708182213627106114" name="preventNameMangling" index="3mNxdG" />
-      </concept>
-      <concept id="6437088627575723997" name="com.mbeddr.core.modules.structure.FunctionSignature" flags="ng" index="N3Fnt">
-        <property id="9066372830132870213" name="hasEllipsis" index="3owap8" />
       </concept>
       <concept id="6437088627575724000" name="com.mbeddr.core.modules.structure.FunctionPrototype" flags="ng" index="N3Fnw" />
       <concept id="6437088627575724001" name="com.mbeddr.core.modules.structure.Function" flags="ng" index="N3Fnx">
@@ -168,6 +166,7 @@
         <property id="2532836982795394396" name="operation" index="3qmUMc" />
         <child id="7533755140555345895" name="expr" index="3D7$A5" />
       </concept>
+      <concept id="5598157691785092834" name="com.mbeddr.core.expressions.structure.VaList" flags="ng" index="3EM3ww" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
         <property id="2941277002445651368" name="const" index="2c7vTL" />
         <property id="2941277002448691247" name="volatile" index="2caQfQ" />
@@ -191,11 +190,17 @@
     </node>
     <node concept="N3Fnw" id="7RiewQ_kqY3" role="N3F5h">
       <property role="TrG5h" value="printf" />
-      <property role="3owap8" value="true" />
       <node concept="19Rifw" id="4WTYg$PQmNJ" role="2C2TGm" />
       <node concept="19RgSI" id="7RiewQ_kqY5" role="1UOdpc">
         <property role="TrG5h" value="format" />
         <node concept="Pu267" id="4WTYg$PM8D8" role="2C2TGm" />
+      </node>
+      <node concept="2GZKED" id="7IAFmB7pFeC" role="1UOdpc">
+        <property role="TrG5h" value="va_args" />
+        <node concept="3EM3ww" id="7IAFmB7pFeD" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
       </node>
     </node>
     <node concept="1S7NMz" id="3rcqPXuWDfL" role="N3F5h">

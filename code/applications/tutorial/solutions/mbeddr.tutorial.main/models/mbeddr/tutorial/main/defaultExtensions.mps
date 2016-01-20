@@ -472,6 +472,7 @@
       <concept id="3376775282622142916" name="com.mbeddr.core.modules.structure.AbstractDefineLike" flags="ng" index="2DRUVY">
         <child id="3376775282622233992" name="value" index="2DQcEM" />
       </concept>
+      <concept id="1052812498335653322" name="com.mbeddr.core.modules.structure.VariadicArgument" flags="ng" index="2GZKED" />
       <concept id="8105003328814797298" name="com.mbeddr.core.modules.structure.IFunctionLike" flags="ng" index="2H9T1B">
         <child id="5708867820623310661" name="arguments" index="1UOdpc" />
       </concept>
@@ -992,6 +993,7 @@
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
       <concept id="2799490600706093744" name="com.mbeddr.core.expressions.structure.ModuloExpression" flags="ng" index="1hY7HI" />
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
+      <concept id="5598157691785092834" name="com.mbeddr.core.expressions.structure.VaList" flags="ng" index="3EM3ww" />
       <concept id="3976803464656498416" name="com.mbeddr.core.expressions.structure.PostDecrementExpression" flags="ng" index="1FldXu" />
       <concept id="1054289341113450444" name="com.mbeddr.core.expressions.structure.HexNumberLiteral" flags="ng" index="3Hbq_t" />
       <concept id="743779816742251347" name="com.mbeddr.core.expressions.structure.ITypeDecorator" flags="ng" index="1Ml8iu">
@@ -8115,7 +8117,6 @@
     <property role="3GE5qa" value="external" />
     <node concept="N3Fnw" id="6GXPbpLixuR" role="N3F5h">
       <property role="TrG5h" value="printf" />
-      <property role="3owap8" value="true" />
       <node concept="19Rifw" id="6GXPbpLixuQ" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
@@ -8129,6 +8130,13 @@
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="true" />
           </node>
+        </node>
+      </node>
+      <node concept="2GZKED" id="7IAFmB7kuK2" role="1UOdpc">
+        <property role="TrG5h" value="va_args" />
+        <node concept="3EM3ww" id="7IAFmB7kuK3" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
         </node>
       </node>
     </node>

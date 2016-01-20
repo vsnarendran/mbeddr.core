@@ -3,13 +3,13 @@
   <persistence version="9" />
   <languages>
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
-    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
     <use id="ad5e9db1-9600-47c7-86ef-614165b281b8" name="com.mbeddr.core.legacy" version="-1" />
     <use id="efda956e-491e-4f00-ba14-36af2f213ecf" name="com.mbeddr.core.udt" version="-1" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
+    <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="1" />
   </languages>
   <imports>
     <import index="ml7g" ref="r:390a5909-c09f-4e14-a3b3-7c642512a1a5(com.mbeddr.core.sys)" />
@@ -98,6 +98,7 @@
       <concept id="3376775282622142916" name="com.mbeddr.core.modules.structure.AbstractDefineLike" flags="ng" index="2DRUVY">
         <child id="3376775282622233992" name="value" index="2DQcEM" />
       </concept>
+      <concept id="1052812498335653322" name="com.mbeddr.core.modules.structure.VariadicArgument" flags="ng" index="2GZKED" />
       <concept id="8105003328814797298" name="com.mbeddr.core.modules.structure.IFunctionLike" flags="ng" index="2H9T1B">
         <child id="5708867820623310661" name="arguments" index="1UOdpc" />
       </concept>
@@ -162,6 +163,7 @@
       <concept id="8863019357864392148" name="com.mbeddr.core.expressions.structure.SizeT" flags="ng" index="2O5j3L" />
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
       <concept id="4739982148980385695" name="com.mbeddr.core.expressions.structure.FloatType" flags="ng" index="3AreGT" />
+      <concept id="5598157691785092834" name="com.mbeddr.core.expressions.structure.VaList" flags="ng" index="3EM3ww" />
       <concept id="1054289341113450444" name="com.mbeddr.core.expressions.structure.HexNumberLiteral" flags="ng" index="3Hbq_t" />
       <concept id="6610873504380029780" name="com.mbeddr.core.expressions.structure.CastExpression" flags="ng" index="1S8S4T">
         <child id="6610873504380029790" name="targetType" index="1S8S4N" />
@@ -1331,7 +1333,6 @@
     <node concept="N3Fnw" id="137zkozycIW" role="N3F5h">
       <property role="TrG5h" value="fscanf" />
       <property role="2OOxQR" value="true" />
-      <property role="3owap8" value="true" />
       <node concept="19RgSI" id="137zkozycIX" role="1UOdpc">
         <property role="TrG5h" value="stream" />
         <node concept="3wxxNl" id="137zkozycIZ" role="2C2TGm">
@@ -1359,11 +1360,17 @@
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
+      <node concept="2GZKED" id="7IAFmB7pFfq" role="1UOdpc">
+        <property role="TrG5h" value="va_args" />
+        <node concept="3EM3ww" id="7IAFmB7pFfr" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
     </node>
     <node concept="N3Fnw" id="137zkozycJ5" role="N3F5h">
       <property role="TrG5h" value="scanf" />
       <property role="2OOxQR" value="true" />
-      <property role="3owap8" value="true" />
       <node concept="19RgSI" id="137zkozycJ6" role="1UOdpc">
         <property role="TrG5h" value="format" />
         <node concept="3wxxNl" id="137zkozycJ8" role="2C2TGm">
@@ -1379,11 +1386,17 @@
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
+      <node concept="2GZKED" id="7IAFmB7pFfs" role="1UOdpc">
+        <property role="TrG5h" value="va_args" />
+        <node concept="3EM3ww" id="7IAFmB7pFft" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
     </node>
     <node concept="N3Fnw" id="137zkozycJb" role="N3F5h">
       <property role="TrG5h" value="sscanf" />
       <property role="2OOxQR" value="true" />
-      <property role="3owap8" value="true" />
       <node concept="19RgSI" id="137zkozycJc" role="1UOdpc">
         <property role="TrG5h" value="s" />
         <node concept="3wxxNl" id="137zkozycJe" role="2C2TGm">
@@ -1409,6 +1422,13 @@
       <node concept="3TlMh2" id="137zkozycJa" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="2GZKED" id="7IAFmB7pFfu" role="1UOdpc">
+        <property role="TrG5h" value="va_args" />
+        <node concept="3EM3ww" id="7IAFmB7pFfv" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
       </node>
     </node>
     <node concept="N3Fnw" id="137zkozycJk" role="N3F5h">
@@ -1521,7 +1541,6 @@
     <node concept="N3Fnw" id="137zkozycJM" role="N3F5h">
       <property role="TrG5h" value="fprintf" />
       <property role="2OOxQR" value="true" />
-      <property role="3owap8" value="true" />
       <node concept="19RgSI" id="137zkozycJN" role="1UOdpc">
         <property role="TrG5h" value="stream" />
         <node concept="3wxxNl" id="137zkozycJP" role="2C2TGm">
@@ -1549,11 +1568,17 @@
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
+      <node concept="2GZKED" id="7IAFmB7pFfw" role="1UOdpc">
+        <property role="TrG5h" value="va_args" />
+        <node concept="3EM3ww" id="7IAFmB7pFfx" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
     </node>
     <node concept="N3Fnw" id="137zkozycJV" role="N3F5h">
       <property role="TrG5h" value="printf" />
       <property role="2OOxQR" value="true" />
-      <property role="3owap8" value="true" />
       <node concept="19RgSI" id="137zkozycJW" role="1UOdpc">
         <property role="TrG5h" value="format" />
         <node concept="3wxxNl" id="137zkozycJY" role="2C2TGm">
@@ -1569,11 +1594,17 @@
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
+      <node concept="2GZKED" id="7IAFmB7pFfy" role="1UOdpc">
+        <property role="TrG5h" value="va_args" />
+        <node concept="3EM3ww" id="7IAFmB7pFfz" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
     </node>
     <node concept="N3Fnw" id="137zkozycK1" role="N3F5h">
       <property role="TrG5h" value="snprintf" />
       <property role="2OOxQR" value="true" />
-      <property role="3owap8" value="true" />
       <node concept="19RgSI" id="137zkozycK2" role="1UOdpc">
         <property role="TrG5h" value="s" />
         <node concept="3wxxNl" id="137zkozycK4" role="2C2TGm">
@@ -1607,11 +1638,17 @@
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
       </node>
+      <node concept="2GZKED" id="7IAFmB7pFf$" role="1UOdpc">
+        <property role="TrG5h" value="va_args" />
+        <node concept="3EM3ww" id="7IAFmB7pFf_" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
     </node>
     <node concept="N3Fnw" id="137zkozycKc" role="N3F5h">
       <property role="TrG5h" value="sprintf" />
       <property role="2OOxQR" value="true" />
-      <property role="3owap8" value="true" />
       <node concept="19RgSI" id="137zkozycKd" role="1UOdpc">
         <property role="TrG5h" value="s" />
         <node concept="3wxxNl" id="137zkozycKf" role="2C2TGm">
@@ -1640,6 +1677,13 @@
       <node concept="3TlMh2" id="137zkozycKb" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="2GZKED" id="7IAFmB7pFfA" role="1UOdpc">
+        <property role="TrG5h" value="va_args" />
+        <node concept="3EM3ww" id="7IAFmB7pFfB" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
       </node>
     </node>
     <node concept="N3Fnw" id="137zkozycKl" role="N3F5h">
@@ -12518,7 +12562,6 @@
     <node concept="N3Fnw" id="3ZZNQxEoQ8_" role="N3F5h">
       <property role="TrG5h" value="open" />
       <property role="2OOxQR" value="false" />
-      <property role="3owap8" value="true" />
       <node concept="19RgSI" id="3ZZNQxEoQ8A" role="1UOdpc">
         <property role="TrG5h" value="name" />
         <node concept="3wxxNl" id="3ZZNQxEoQ8C" role="2C2TGm">
@@ -12541,6 +12584,13 @@
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
         <ref role="rcJHT" to="ml7g:41BTkV3WhAB" resolve="handle_t" />
+      </node>
+      <node concept="2GZKED" id="7IAFmB7pFfC" role="1UOdpc">
+        <property role="TrG5h" value="va_args" />
+        <node concept="3EM3ww" id="7IAFmB7pFfD" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
       </node>
     </node>
     <node concept="N3Fnw" id="3ZZNQxEoQ8H" role="N3F5h">
@@ -12574,7 +12624,6 @@
     <node concept="N3Fnw" id="3ZZNQxEoQ8P" role="N3F5h">
       <property role="TrG5h" value="fcntl" />
       <property role="2OOxQR" value="false" />
-      <property role="3owap8" value="true" />
       <node concept="19RgSI" id="3ZZNQxEoQ8Q" role="1UOdpc">
         <property role="TrG5h" value="f" />
         <node concept="rcJHQ" id="3ZZNQxEoQMZ" role="2C2TGm">
@@ -12593,6 +12642,13 @@
       <node concept="26Vqph" id="3ZZNQxEoQ8O" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="2GZKED" id="7IAFmB7pFfE" role="1UOdpc">
+        <property role="TrG5h" value="va_args" />
+        <node concept="3EM3ww" id="7IAFmB7pFfF" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
       </node>
     </node>
     <node concept="3GEVxB" id="3ZZNQxEoQsK" role="2OODSX">

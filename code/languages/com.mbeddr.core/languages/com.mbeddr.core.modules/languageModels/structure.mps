@@ -191,6 +191,9 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="ellipsisKind" />
       <ref role="20lvS9" node="L2WnbQO1DI" resolve="ArgumentKindContainer" />
+      <node concept="asaX9" id="79KkmSjkFOT" role="lGtFl">
+        <property role="YLQ7P" value="makes no sense" />
+      </node>
     </node>
     <node concept="PrWs8" id="5Oog2UbSUrA" role="PzmwI">
       <ref role="PrY4T" node="5Oog2UbPmsI" resolve="IExternable" />
@@ -201,6 +204,9 @@
     <node concept="1TJgyi" id="7RiewQ_kDL5" role="1TKVEl">
       <property role="TrG5h" value="hasEllipsis" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="79KkmSjkorY" role="lGtFl">
+        <property role="YLQ7P" value="use VaradicArgument instead" />
+      </node>
     </node>
     <node concept="1TJgyi" id="4VhroexNCwp" role="1TKVEl">
       <property role="TrG5h" value="inline" />

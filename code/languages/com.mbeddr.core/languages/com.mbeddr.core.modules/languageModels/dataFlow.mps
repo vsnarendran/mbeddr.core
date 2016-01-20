@@ -6597,46 +6597,6 @@
                 <ref role="3cqZAo" node="1fLWRCl$C0q" resolve="i" />
               </node>
             </node>
-            <node concept="3eNFk2" id="1fLWRCl_i4I" role="3eNLev">
-              <node concept="1Wc70l" id="1fLWRCl_ljA" role="3eO9$A">
-                <node concept="3y3z36" id="1fLWRCl_n5Q" role="3uHU7w">
-                  <node concept="10Nm6u" id="1fLWRCl_n61" role="3uHU7w" />
-                  <node concept="2OqwBi" id="1fLWRCl_lyL" role="3uHU7B">
-                    <node concept="37vLTw" id="1fLWRCl_lmd" role="2Oq$k0">
-                      <ref role="3cqZAo" node="1fLWRCl$_5N" resolve="functionSignature" />
-                    </node>
-                    <node concept="3TrEf2" id="1fLWRCl_mkM" role="2OqNvi">
-                      <ref role="3Tt5mk" to="x27k:1fLWRCluu9D" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="1fLWRCl_ikc" role="3uHU7B">
-                  <node concept="37vLTw" id="1fLWRCl_i9T" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1fLWRCl$_5N" resolve="functionSignature" />
-                  </node>
-                  <node concept="3TrcHB" id="1fLWRCl_jNm" role="2OqNvi">
-                    <ref role="3TsBF5" to="x27k:7RiewQ_kDL5" resolve="hasEllipsis" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbS" id="1fLWRCl_i4K" role="3eOfB_">
-                <node concept="3clFbF" id="1fLWRCl_npa" role="3cqZAp">
-                  <node concept="37vLTI" id="1fLWRCl_nqh" role="3clFbG">
-                    <node concept="2OqwBi" id="1fLWRCl_n_1" role="37vLTx">
-                      <node concept="37vLTw" id="1fLWRCl_nqA" role="2Oq$k0">
-                        <ref role="3cqZAo" node="1fLWRCl$_5N" resolve="functionSignature" />
-                      </node>
-                      <node concept="3TrEf2" id="1fLWRCl_p4d" role="2OqNvi">
-                        <ref role="3Tt5mk" to="x27k:1fLWRCluu9D" />
-                      </node>
-                    </node>
-                    <node concept="37vLTw" id="1fLWRCl_np9" role="37vLTJ">
-                      <ref role="3cqZAo" node="1fLWRCl_gYr" resolve="kind" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
           </node>
           <node concept="3clFbH" id="1fLWRCl_0YT" role="3cqZAp" />
           <node concept="3clFbJ" id="1fLWRCl_peD" role="3cqZAp">

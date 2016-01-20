@@ -586,5 +586,22 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="79KkmSjjsTE">
+    <ref role="1M2myG" to="g88q:6JVEnxIj9v0" resolve="CompositeComponentInstanceParam" />
+    <node concept="nKS2y" id="79KkmSjjsTF" role="1MLUbF">
+      <node concept="3clFbS" id="79KkmSjjsTG" role="2VODD2">
+        <node concept="3clFbF" id="79KkmSjjvDQ" role="3cqZAp">
+          <node concept="2OqwBi" id="79KkmSjjvG8" role="3clFbG">
+            <node concept="nLn13" id="79KkmSjjvDP" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="79KkmSjjvKk" role="2OqNvi">
+              <node concept="chp4Y" id="79KkmSjjvMq" role="cj9EA">
+                <ref role="cht4Q" to="g88q:6JVEnxIhC3j" resolve="CompositeComponentInstanceConfig" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

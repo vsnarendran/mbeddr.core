@@ -200,6 +200,7 @@
         <reference id="6021475212426147388" name="constant" index="BUAnL" />
         <child id="6021475212426185244" name="arguments" index="BULBh" />
       </concept>
+      <concept id="1052812498335653322" name="com.mbeddr.core.modules.structure.VariadicArgument" flags="ng" index="2GZKED" />
       <concept id="8105003328814797298" name="com.mbeddr.core.modules.structure.IFunctionLike" flags="ng" index="2H9T1B">
         <child id="5708867820623310661" name="arguments" index="1UOdpc" />
       </concept>
@@ -209,10 +210,6 @@
       <concept id="6437088627575722830" name="com.mbeddr.core.modules.structure.ImplementationModule" flags="ng" index="N3F5e" />
       <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
         <property id="1317894735999272944" name="exported" index="2OOxQR" />
-      </concept>
-      <concept id="6437088627575723997" name="com.mbeddr.core.modules.structure.FunctionSignature" flags="ng" index="N3Fnt">
-        <property id="9066372830132870213" name="hasEllipsis" index="3owap8" />
-        <child id="1437197461779767913" name="ellipsisKind" index="6y14j" />
       </concept>
       <concept id="6437088627575724001" name="com.mbeddr.core.modules.structure.Function" flags="ng" index="N3Fnx">
         <child id="4185783222026475860" name="body" index="3XIRFX" />
@@ -265,6 +262,7 @@
       </concept>
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
+      <concept id="5598157691785092834" name="com.mbeddr.core.expressions.structure.VaList" flags="ng" index="3EM3ww" />
       <concept id="8860443239512147445" name="com.mbeddr.core.expressions.structure.GreaterExpression" flags="ng" index="3Tl9Jr" />
       <concept id="8860443239512128058" name="com.mbeddr.core.expressions.structure.BooleanType" flags="ng" index="3TlMgk" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
@@ -1824,7 +1822,6 @@
         <node concept="N3Fnx" id="1fLWRCly1dV" role="N3F5h">
           <property role="TrG5h" value="f3" />
           <property role="2OOxQR" value="false" />
-          <property role="3owap8" value="true" />
           <node concept="3XIRFW" id="1fLWRCly1dX" role="3XIRFX">
             <node concept="1_9egQ" id="1fLWRCl$yma" role="3XIRFZ">
               <node concept="3pqW6w" id="1fLWRCl$ymG" role="1_9egR">
@@ -1857,8 +1854,12 @@
               <property role="3U$IFK" value="1" />
             </node>
           </node>
-          <node concept="3U$IGs" id="1fLWRCl$yhg" role="6y14j">
-            <property role="3U$IFK" value="1" />
+          <node concept="2GZKED" id="7IAFmB7pFf8" role="1UOdpc">
+            <property role="TrG5h" value="va_args" />
+            <node concept="3EM3ww" id="7IAFmB7pFf9" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
           </node>
         </node>
         <node concept="2NXPZ9" id="1fLWRCl$yhp" role="N3F5h">

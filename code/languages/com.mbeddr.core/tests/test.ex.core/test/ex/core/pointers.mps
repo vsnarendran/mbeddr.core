@@ -216,6 +216,7 @@
         <child id="3376775282622233992" name="value" index="2DQcEM" />
       </concept>
       <concept id="5308710777891716348" name="com.mbeddr.core.modules.structure.NoOp" flags="ng" index="EaqyJ" />
+      <concept id="1052812498335653322" name="com.mbeddr.core.modules.structure.VariadicArgument" flags="ng" index="2GZKED" />
       <concept id="8105003328814797298" name="com.mbeddr.core.modules.structure.IFunctionLike" flags="ng" index="2H9T1B">
         <child id="5708867820623310661" name="arguments" index="1UOdpc" />
       </concept>
@@ -328,6 +329,7 @@
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
       <concept id="7808382574383136199" name="com.mbeddr.core.expressions.structure.IntPtrT" flags="ng" index="3sa0Xj" />
       <concept id="7808382574383159206" name="com.mbeddr.core.expressions.structure.UIntPtrT" flags="ng" index="3saqkM" />
+      <concept id="5598157691785092834" name="com.mbeddr.core.expressions.structure.VaList" flags="ng" index="3EM3ww" />
       <concept id="3976803464656531170" name="com.mbeddr.core.expressions.structure.UnaryMinusExpression" flags="ng" index="1FllXc" />
       <concept id="6610873504380029780" name="com.mbeddr.core.expressions.structure.CastExpression" flags="ng" index="1S8S4T">
         <child id="6610873504380029790" name="targetType" index="1S8S4N" />
@@ -3477,7 +3479,6 @@
     </node>
     <node concept="N3Fnx" id="3pWy65PLW2C" role="N3F5h">
       <property role="TrG5h" value="sum" />
-      <property role="3owap8" value="true" />
       <node concept="3XIRFW" id="3pWy65PLW2D" role="3XIRFX">
         <node concept="3XIRlf" id="3pWy65PLW2K" role="3XIRFZ">
           <property role="TrG5h" value="valist" />
@@ -3562,6 +3563,13 @@
       <node concept="19RgSI" id="3pWy65PLW2G" role="1UOdpc">
         <property role="TrG5h" value="i" />
         <node concept="26Vqph" id="6FLcSer$f2m" role="2C2TGm" />
+      </node>
+      <node concept="2GZKED" id="7IAFmB7pFeA" role="1UOdpc">
+        <property role="TrG5h" value="va_args" />
+        <node concept="3EM3ww" id="7IAFmB7pFeB" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
       </node>
     </node>
     <node concept="2NXPZ9" id="3pWy65PLTRP" role="N3F5h">
