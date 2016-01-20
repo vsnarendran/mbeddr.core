@@ -198,7 +198,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -456,6 +456,7 @@
         <child id="1197687026896" name="keyType" index="3rHrn6" />
         <child id="1197687035757" name="valueType" index="3rHtpV" />
       </concept>
+      <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
@@ -6499,6 +6500,78 @@
               </node>
               <node concept="37vLTw" id="1fLWRCl_1Fb" role="3uHU7B">
                 <ref role="3cqZAo" node="1fLWRCl$C0q" resolve="i" />
+              </node>
+            </node>
+            <node concept="3eNFk2" id="1fLWRCl_i4I" role="3eNLev">
+              <node concept="1Wc70l" id="1fLWRCl_ljA" role="3eO9$A">
+                <node concept="3y3z36" id="1fLWRCl_n5Q" role="3uHU7w">
+                  <node concept="10Nm6u" id="1fLWRCl_n61" role="3uHU7w" />
+                  <node concept="2OqwBi" id="1vuDNHXDkP8" role="3uHU7B">
+                    <node concept="1PxgMI" id="1vuDNHXDjvD" role="2Oq$k0">
+                      <ref role="1PxNhF" to="x27k:UslQeyoPRa" resolve="VariadicArgument" />
+                      <node concept="2OqwBi" id="1vuDNHXDkAM" role="1PxMeX">
+                        <node concept="2OqwBi" id="1vuDNHXDkAN" role="2Oq$k0">
+                          <node concept="37vLTw" id="1vuDNHXDkAO" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1fLWRCl$_5N" resolve="functionSignature" />
+                          </node>
+                          <node concept="3Tsc0h" id="1vuDNHXDkAP" role="2OqNvi">
+                            <ref role="3TtcxE" to="x27k:4WTYg$PUiX5" />
+                          </node>
+                        </node>
+                        <node concept="1yVyf7" id="1vuDNHXDkAQ" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="1vuDNHXDlzu" role="2OqNvi">
+                      <ref role="3Tt5mk" to="x27k:L2WnbQO2tQ" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="1vuDNHXDjLW" role="3uHU7B">
+                  <node concept="2OqwBi" id="1vuDNHXDdvi" role="2Oq$k0">
+                    <node concept="2OqwBi" id="1fLWRCl_ikc" role="2Oq$k0">
+                      <node concept="37vLTw" id="1vuDNHXDaGl" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1fLWRCl$_5N" resolve="functionSignature" />
+                      </node>
+                      <node concept="3Tsc0h" id="1vuDNHXDc3e" role="2OqNvi">
+                        <ref role="3TtcxE" to="x27k:4WTYg$PUiX5" />
+                      </node>
+                    </node>
+                    <node concept="1yVyf7" id="1vuDNHXDhnW" role="2OqNvi" />
+                  </node>
+                  <node concept="1mIQ4w" id="1vuDNHXDkqS" role="2OqNvi">
+                    <node concept="chp4Y" id="1vuDNHXDkwI" role="cj9EA">
+                      <ref role="cht4Q" to="x27k:UslQeyoPRa" resolve="VariadicArgument" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="1fLWRCl_i4K" role="3eOfB_">
+                <node concept="3clFbF" id="1fLWRCl_npa" role="3cqZAp">
+                  <node concept="37vLTI" id="1fLWRCl_nqh" role="3clFbG">
+                    <node concept="37vLTw" id="1vuDNHXDlGm" role="37vLTJ">
+                      <ref role="3cqZAo" node="1fLWRCl_gYr" resolve="kind" />
+                    </node>
+                    <node concept="2OqwBi" id="1vuDNHXDlXZ" role="37vLTx">
+                      <node concept="1PxgMI" id="1vuDNHXDlY0" role="2Oq$k0">
+                        <ref role="1PxNhF" to="x27k:UslQeyoPRa" resolve="VariadicArgument" />
+                        <node concept="2OqwBi" id="1vuDNHXDlY1" role="1PxMeX">
+                          <node concept="2OqwBi" id="1vuDNHXDlY2" role="2Oq$k0">
+                            <node concept="37vLTw" id="1vuDNHXDlY3" role="2Oq$k0">
+                              <ref role="3cqZAo" node="1fLWRCl$_5N" resolve="functionSignature" />
+                            </node>
+                            <node concept="3Tsc0h" id="1vuDNHXDlY4" role="2OqNvi">
+                              <ref role="3TtcxE" to="x27k:4WTYg$PUiX5" />
+                            </node>
+                          </node>
+                          <node concept="1yVyf7" id="1vuDNHXDlY5" role="2OqNvi" />
+                        </node>
+                      </node>
+                      <node concept="3TrEf2" id="1vuDNHXDlY6" role="2OqNvi">
+                        <ref role="3Tt5mk" to="x27k:L2WnbQO2tQ" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
