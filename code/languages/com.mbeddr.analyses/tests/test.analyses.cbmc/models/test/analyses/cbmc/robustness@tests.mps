@@ -110,6 +110,9 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
+      <concept id="1160998861373" name="jetbrains.mps.baseLanguage.structure.AssertStatement" flags="nn" index="1gVbGN">
+        <child id="1160998896846" name="condition" index="1gVkn0" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -301,16 +304,21 @@
             </node>
           </node>
         </node>
-        <node concept="3vlDli" id="41thbhvmy7X" role="3cqZAp">
-          <node concept="Xl_RD" id="41thbhvmy7Y" role="3tpDZB">
-            <property role="Xl_RC" value="division by zero in 3 / x" />
-          </node>
-          <node concept="2OqwBi" id="41thbhvmy7Z" role="3tpDZA">
-            <node concept="37vLTw" id="41thbhvmyZG" role="2Oq$k0">
-              <ref role="3cqZAo" node="5Hr5oir6UpM" resolve="resDiv" />
+        <node concept="1gVbGN" id="2NphfZ26sfG" role="3cqZAp">
+          <node concept="2OqwBi" id="2NphfZ26ssa" role="1gVkn0">
+            <node concept="2OqwBi" id="2NphfZ26soI" role="2Oq$k0">
+              <node concept="37vLTw" id="2NphfZ26soJ" role="2Oq$k0">
+                <ref role="3cqZAo" node="5Hr5oir6UpM" resolve="resDiv" />
+              </node>
+              <node concept="liA8E" id="2NphfZ26soK" role="2OqNvi">
+                <ref role="37wK5l" to="eqhl:3FNuzGa2mmQ" resolve="getUserFriendlyMessage" />
+              </node>
             </node>
-            <node concept="liA8E" id="41thbhvmy81" role="2OqNvi">
-              <ref role="37wK5l" to="eqhl:3FNuzGa2mmQ" resolve="getUserFriendlyMessage" />
+            <node concept="liA8E" id="2NphfZ26sPu" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+              <node concept="Xl_RD" id="2NphfZ26sQ5" role="37wK5m">
+                <property role="Xl_RC" value="division by zero in" />
+              </node>
             </node>
           </node>
         </node>
@@ -472,14 +480,14 @@
         <node concept="3cpWs8" id="1iGXuG00jHx" role="3cqZAp">
           <node concept="3cpWsn" id="1iGXuG00jHy" role="3cpWs9">
             <property role="TrG5h" value="resOverflow1" />
-            <node concept="2YIFZM" id="32RREvGOGI6" role="33vP2m">
-              <ref role="37wK5l" to="fxhk:5E1$geGhDNC" resolve="findResultByMessage" />
+            <node concept="2YIFZM" id="57B2v3DA9Cd" role="33vP2m">
+              <ref role="37wK5l" to="fxhk:5kHkJcGJQBv" resolve="findResultByMessagePrefix" />
               <ref role="1Pybhc" to="fxhk:5E1$geGhDJg" resolve="TestingUtils" />
-              <node concept="37vLTw" id="32RREvGOGJB" role="37wK5m">
+              <node concept="37vLTw" id="57B2v3DA9Ce" role="37wK5m">
                 <ref role="3cqZAo" node="1iGXuFZV1By" resolve="results" />
               </node>
-              <node concept="Xl_RD" id="41thbhvmxRl" role="37wK5m">
-                <property role="Xl_RC" value="arithmetic overflow on signed type conversion in (signed short int)(3 / x)" />
+              <node concept="Xl_RD" id="57B2v3DA9Cf" role="37wK5m">
+                <property role="Xl_RC" value="arithmetic overflow on signed type conversion in" />
               </node>
             </node>
             <node concept="3uibUv" id="1iGXuG00jHz" role="1tU5fm">
