@@ -253,6 +253,7 @@
       <concept id="3830958861296781575" name="com.mbeddr.core.expressions.structure.NotExpression" flags="ng" index="19$8ne" />
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
+      <concept id="3976803464656531170" name="com.mbeddr.core.expressions.structure.UnaryMinusExpression" flags="ng" index="1FllXc" />
       <concept id="1054289341113496566" name="com.mbeddr.core.expressions.structure.BinaryNumberLiteral" flags="ng" index="3HbmlB" />
       <concept id="8860443239512147449" name="com.mbeddr.core.expressions.structure.LessExpression" flags="ng" index="3Tl9Jn" />
       <concept id="8860443239512147447" name="com.mbeddr.core.expressions.structure.GreaterEqualsExpression" flags="ng" index="3Tl9Jp" />
@@ -1372,8 +1373,10 @@
             </node>
           </node>
           <node concept="2BFjQ_" id="6uc_WDS49fI" role="3XIRFZ">
-            <node concept="3TlMh9" id="6uc_WDS49yz" role="2BFjQA">
-              <property role="2hmy$m" value="-1" />
+            <node concept="1FllXc" id="35JUnhoKBVn" role="2BFjQA">
+              <node concept="3TlMh9" id="35JUnhoKBVo" role="1_9fRO">
+                <property role="2hmy$m" value="1" />
+              </node>
             </node>
           </node>
         </node>

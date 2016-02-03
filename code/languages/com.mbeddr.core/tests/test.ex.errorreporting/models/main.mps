@@ -140,6 +140,9 @@
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
       <concept id="8463282783691618440" name="com.mbeddr.core.expressions.structure.Int32tType" flags="ng" index="26Vqph" />
       <concept id="8463282783691618426" name="com.mbeddr.core.expressions.structure.Int8tType" flags="ng" index="26Vqqz" />
+      <concept id="3005510381523579442" name="com.mbeddr.core.expressions.structure.UnaryExpression" flags="ng" index="2aKSnQ">
+        <child id="7254843406768839760" name="expression" index="1_9fRO" />
+      </concept>
       <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
         <property id="2212975673976043696" name="value" index="2hmy$m" />
       </concept>
@@ -149,6 +152,7 @@
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
+      <concept id="3976803464656531170" name="com.mbeddr.core.expressions.structure.UnaryMinusExpression" flags="ng" index="1FllXc" />
       <concept id="8860443239512147449" name="com.mbeddr.core.expressions.structure.LessExpression" flags="ng" index="3Tl9Jn" />
       <concept id="8860443239512129322" name="com.mbeddr.core.expressions.structure.EqualsExpression" flags="ng" index="3TlM44" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
@@ -224,8 +228,10 @@
         <node concept="1_9egQ" id="2lgwE2U3s4r" role="3XIRFZ">
           <node concept="3O_q_g" id="2lgwE2U3s4s" role="1_9egR">
             <ref role="3O_q_h" node="2lgwE2U3cEh" resolve="aFunction" />
-            <node concept="3TlMh9" id="2lgwE2U3s4t" role="3O_q_j">
-              <property role="2hmy$m" value="-10" />
+            <node concept="1FllXc" id="35JUnhoKBMZ" role="3O_q_j">
+              <node concept="3TlMh9" id="35JUnhoKBN0" role="1_9fRO">
+                <property role="2hmy$m" value="10" />
+              </node>
             </node>
           </node>
         </node>
