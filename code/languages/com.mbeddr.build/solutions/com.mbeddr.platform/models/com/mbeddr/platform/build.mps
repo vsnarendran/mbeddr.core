@@ -350,9 +350,6 @@
       <node concept="m$_yC" id="7uZw0yZ2_Jw" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
-      <node concept="m$_yC" id="2OnSXAPy44y" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
-      </node>
       <node concept="m$_yC" id="3AVJcIMrXho" role="m$_yJ">
         <ref role="m$_y1" to="90a9:1sO539bGQvt" resolve="de.slisson.mps.richtext" />
       </node>
@@ -9894,6 +9891,18 @@
             <node concept="3bR9La" id="5NpY9mnreEV" role="1SiIV1">
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" node="5NpY9mnqa74" resolve="com.mbeddr.doc.aspect" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="lp9ZKwUWDD" role="3bR37C">
+            <node concept="3bR9La" id="lp9ZKwUWDE" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="lp9ZKwUWDF" role="3bR37C">
+            <node concept="3bR9La" id="lp9ZKwUWDG" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg8" resolve="jetbrains.mps.runtime" />
             </node>
           </node>
         </node>
