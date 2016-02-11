@@ -4,7 +4,7 @@
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
     <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="2" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -242,20 +242,6 @@
       <concept id="5667201763537504944" name="com.mbeddr.mpsutil.blutil.structure.LogStatement" flags="ng" index="sINHa">
         <property id="4987804909765039412" name="disabled" index="3ahEGn" />
       </concept>
-      <concept id="734120071946422046" name="com.mbeddr.mpsutil.blutil.structure.ExpressionChildValue" flags="ng" index="3kUt_e">
-        <child id="734120071946422047" name="expr" index="3kUt_f" />
-      </concept>
-      <concept id="4481811096720976618" name="com.mbeddr.mpsutil.blutil.structure.ConceptRef" flags="ng" index="1shVQo">
-        <reference id="4481811096720976619" name="concept" index="1shVQp" />
-      </concept>
-      <concept id="4481811096720537459" name="com.mbeddr.mpsutil.blutil.structure.ChildStep" flags="ng" index="1sne01">
-        <reference id="4481811096720607067" name="childLink" index="1snh0D" />
-        <child id="6308171743671982944" name="value" index="ccFIB" />
-        <child id="4481811096720537463" name="children" index="1sne05" />
-      </concept>
-      <concept id="4481811096720536877" name="com.mbeddr.mpsutil.blutil.structure.BuilderExpression" flags="ng" index="1sne9v">
-        <child id="4481811096720536927" name="root" index="1sne8H" />
-      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -276,6 +262,9 @@
       <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+      <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
+        <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -6003,30 +5992,27 @@
       </node>
       <node concept="3clFbS" id="1blaTcuBMQH" role="3clF47">
         <node concept="3cpWs6" id="1blaTcuBMQO" role="3cqZAp">
-          <node concept="1sne9v" id="1blaTcuBMQQ" role="3cqZAk">
-            <node concept="1sne01" id="1blaTcuBMQR" role="1sne8H">
-              <ref role="1snh0D" to="tpck:4uZwTti3__2" />
-              <node concept="1shVQo" id="1blaTcuBMQT" role="ccFIB">
-                <ref role="1shVQp" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
-              </node>
-              <node concept="1sne01" id="1blaTcuBMQY" role="1sne05">
-                <ref role="1snh0D" to="c4fa:6iIoqg1yCmj" />
-                <node concept="1shVQo" id="1blaTcuBMR0" role="ccFIB">
-                  <ref role="1shVQp" to="mj1l:1exqRp9kgd" resolve="AssignmentExpr" />
-                </node>
-                <node concept="1sne01" id="1blaTcuBMR4" role="1sne05">
-                  <ref role="1snh0D" to="mj1l:7FQByU3CrD0" />
-                  <node concept="3kUt_e" id="1blaTcuBMR6" role="ccFIB">
-                    <node concept="3cpWs2" id="1blaTcuBMR8" role="3kUt_f">
-                      <ref role="3cqZAo" node="1blaTcuBMQJ" resolve="left" />
+          <node concept="2pJPEk" id="64D2NDgk06q" role="3cqZAk">
+            <node concept="2pJPED" id="64D2NDgk06r" role="2pJPEn">
+              <ref role="2pJxaS" to="c4fa:6iIoqg1yCmi" resolve="ExpressionStatement" />
+              <node concept="2pIpSj" id="64D2NDgk06s" role="2pJxcM">
+                <ref role="2pIpSl" to="c4fa:6iIoqg1yCmj" />
+                <node concept="2pJPED" id="64D2NDgk06t" role="2pJxcZ">
+                  <ref role="2pJxaS" to="mj1l:1exqRp9kgd" resolve="AssignmentExpr" />
+                  <node concept="2pIpSj" id="64D2NDgk06u" role="2pJxcM">
+                    <ref role="2pIpSl" to="mj1l:7FQByU3CrD0" />
+                    <node concept="36biLy" id="64D2NDgk06w" role="2pJxcZ">
+                      <node concept="3cpWs2" id="64D2NDgk06v" role="36biLW">
+                        <ref role="3cqZAo" node="1blaTcuBMQJ" resolve="left" />
+                      </node>
                     </node>
                   </node>
-                </node>
-                <node concept="1sne01" id="1blaTcuBMRb" role="1sne05">
-                  <ref role="1snh0D" to="mj1l:7FQByU3CrD1" />
-                  <node concept="3kUt_e" id="1blaTcuBMRd" role="ccFIB">
-                    <node concept="3cpWs2" id="1blaTcuBMRf" role="3kUt_f">
-                      <ref role="3cqZAo" node="1blaTcuBMQL" resolve="right" />
+                  <node concept="2pIpSj" id="64D2NDgk06x" role="2pJxcM">
+                    <ref role="2pIpSl" to="mj1l:7FQByU3CrD1" />
+                    <node concept="36biLy" id="64D2NDgk06z" role="2pJxcZ">
+                      <node concept="3cpWs2" id="64D2NDgk06y" role="36biLW">
+                        <ref role="3cqZAo" node="1blaTcuBMQL" resolve="right" />
+                      </node>
                     </node>
                   </node>
                 </node>

@@ -5,7 +5,7 @@
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="2" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -112,23 +112,6 @@
     <language id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions">
       <concept id="5846558918537398687" name="com.mbeddr.mpsutil.intentions.structure.IntentionGroupAnnotation" flags="ng" index="1SWQZ3">
         <property id="5846558918537400330" name="label" index="1SWRpm" />
-      </concept>
-    </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="4481811096721038000" name="com.mbeddr.mpsutil.blutil.structure.RefStep" flags="ng" index="1sh8R2">
-        <reference id="4481811096721038001" name="refLink" index="1sh8R3" />
-        <child id="4481811096721038002" name="target" index="1sh8R0" />
-      </concept>
-      <concept id="4481811096720976618" name="com.mbeddr.mpsutil.blutil.structure.ConceptRef" flags="ng" index="1shVQo">
-        <reference id="4481811096720976619" name="concept" index="1shVQp" />
-      </concept>
-      <concept id="4481811096720537459" name="com.mbeddr.mpsutil.blutil.structure.ChildStep" flags="ng" index="1sne01">
-        <reference id="4481811096720607067" name="childLink" index="1snh0D" />
-        <child id="6308171743671982944" name="value" index="ccFIB" />
-        <child id="4481811096720537463" name="children" index="1sne05" />
-      </concept>
-      <concept id="4481811096720536877" name="com.mbeddr.mpsutil.blutil.structure.BuilderExpression" flags="ng" index="1sne9v">
-        <child id="4481811096720536927" name="root" index="1sne8H" />
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -630,20 +613,19 @@
                       </node>
                     </node>
                     <node concept="TSZUe" id="7i$VjwrXw1N" role="2OqNvi">
-                      <node concept="1sne9v" id="7i$VjwrXxTe" role="25WWJ7">
-                        <node concept="1sne01" id="7i$VjwrXxTf" role="1sne8H">
-                          <ref role="1snh0D" to="tpck:4uZwTti3__2" />
-                          <node concept="1sh8R2" id="7i$VjwrX$d1" role="1sne05">
-                            <ref role="1sh8R3" to="51wr:6GqYvBOf2Xc" />
-                            <node concept="1PxgMI" id="7i$VjwrXAcB" role="1sh8R0">
-                              <ref role="1PxNhF" to="x27k:5_l8w1EmTcX" resolve="Module" />
-                              <node concept="37vLTw" id="7i$VjwrX$OW" role="1PxMeX">
-                                <ref role="3cqZAo" node="7i$VjwrIP0f" resolve="copy" />
+                      <node concept="2pJPEk" id="64D2NDgk06U" role="25WWJ7">
+                        <node concept="2pJPED" id="64D2NDgk06V" role="2pJPEn">
+                          <ref role="2pJxaS" to="51wr:6GqYvBOf2Xb" resolve="ModuleRef" />
+                          <node concept="2pIpSj" id="64D2NDgk06Y" role="2pJxcM">
+                            <ref role="2pIpSl" to="51wr:6GqYvBOf2Xc" />
+                            <node concept="36biLy" id="64D2NDgk06Z" role="2pJxcZ">
+                              <node concept="1PxgMI" id="64D2NDgk06W" role="36biLW">
+                                <ref role="1PxNhF" to="x27k:5_l8w1EmTcX" resolve="Module" />
+                                <node concept="37vLTw" id="64D2NDgk06X" role="1PxMeX">
+                                  <ref role="3cqZAo" node="7i$VjwrIP0f" resolve="copy" />
+                                </node>
                               </node>
                             </node>
-                          </node>
-                          <node concept="1shVQo" id="7i$VjwrXzqy" role="ccFIB">
-                            <ref role="1shVQp" to="51wr:6GqYvBOf2Xb" resolve="ModuleRef" />
                           </node>
                         </node>
                       </node>
