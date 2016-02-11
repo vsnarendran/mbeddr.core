@@ -25,6 +25,7 @@
     <import index="e8bb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.ids(MPS.Core/)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" />
+    <import index="dv3q" ref="r:6d2d0512-fa5e-4ffb-9532-fd482d0b0117(com.mbeddr.mpsutil.blutil.plugin)" />
     <import index="qff7" ref="63650c59-16c8-498a-99c8-005c7ee9515d/r:2ba2e307-a81d-4a21-9e0b-de3624e2fb83(jetbrains.mps.lang.access/jetbrains.mps.lang.access.structure)" implicit="true" />
     <import index="tp2c" ref="fd392034-7849-419d-9071-12563d152375/r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures/jetbrains.mps.baseLanguage.closures.structure)" implicit="true" />
     <import index="tpeu" ref="r:00000000-0000-4000-0000-011c895902fa(jetbrains.mps.lang.smodel.behavior)" implicit="true" />
@@ -3598,6 +3599,36 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="4BqsYrUrjjf">
+    <property role="3GE5qa" value="builder" />
+    <property role="TrG5h" value="convertToLightQuotation" />
+    <ref role="2ZfgGC" to="hba4:3SM_R9yrBkH" resolve="BuilderExpression" />
+    <node concept="2S6ZIM" id="4BqsYrUrjjg" role="2ZfVej">
+      <node concept="3clFbS" id="4BqsYrUrjjh" role="2VODD2">
+        <node concept="3clFbF" id="4BqsYrUrjxF" role="3cqZAp">
+          <node concept="Xl_RD" id="4BqsYrUrjxE" role="3clFbG">
+            <property role="Xl_RC" value="Convert to Light Quotation" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="4BqsYrUrjji" role="2ZfgGD">
+      <node concept="3clFbS" id="4BqsYrUrjjj" role="2VODD2">
+        <node concept="3clFbF" id="4BqsYrUrjF6" role="3cqZAp">
+          <node concept="2OqwBi" id="4BqsYrUrjGK" role="3clFbG">
+            <node concept="2Sf5sV" id="4BqsYrUrjF5" role="2Oq$k0" />
+            <node concept="1P9Npp" id="4BqsYrUrjP5" role="2OqNvi">
+              <node concept="2YIFZM" id="4BqsYrUrkA4" role="1P9ThW">
+                <ref role="37wK5l" to="dv3q:4BqsYrUrj0F" resolve="convertToLighQuotation" />
+                <ref role="1Pybhc" to="dv3q:4BqsYrUqKT1" resolve="BuilderHelper" />
+                <node concept="2Sf5sV" id="4BqsYrUrkAV" role="37wK5m" />
               </node>
             </node>
           </node>
