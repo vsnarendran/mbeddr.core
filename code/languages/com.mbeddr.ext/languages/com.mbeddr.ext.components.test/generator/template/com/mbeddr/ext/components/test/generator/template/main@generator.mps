@@ -6,7 +6,7 @@
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="896334f3-82ce-427b-bb47-ccd3131864a9" name="com.mbeddr.mpsutil.mappingLabels" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
@@ -87,23 +87,6 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-    </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="4481811096720976618" name="com.mbeddr.mpsutil.blutil.structure.ConceptRef" flags="ng" index="1shVQo">
-        <reference id="4481811096720976619" name="concept" index="1shVQp" />
-      </concept>
-      <concept id="4481811096720537459" name="com.mbeddr.mpsutil.blutil.structure.ChildStep" flags="ng" index="1sne01">
-        <reference id="4481811096720607067" name="childLink" index="1snh0D" />
-        <child id="6308171743671982944" name="value" index="ccFIB" />
-        <child id="4481811096720537463" name="children" index="1sne05" />
-      </concept>
-      <concept id="4481811096720536877" name="com.mbeddr.mpsutil.blutil.structure.BuilderExpression" flags="ng" index="1sne9v">
-        <child id="4481811096720536927" name="root" index="1sne8H" />
-      </concept>
-      <concept id="4481811096720581223" name="com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" flags="ng" index="1snrkl">
-        <reference id="4481811096720581232" name="property" index="1snrk2" />
-        <child id="4481811096720588312" name="value" index="1snq_E" />
-      </concept>
     </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
@@ -187,6 +170,24 @@
       </concept>
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
       <concept id="1217004708011" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetInputModel" flags="nn" index="1r8y6K" />
+    </language>
+    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
+        <reference id="5455284157994012188" name="link" index="2pIpSl" />
+      </concept>
+      <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
+        <reference id="5455284157993911078" name="property" index="2pJxcJ" />
+      </concept>
+      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
+        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+      </concept>
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+        <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="8105003328814797298" name="com.mbeddr.core.modules.structure.IFunctionLike" flags="ng" index="2H9T1B">
@@ -881,38 +882,35 @@
                         </node>
                       </node>
                       <node concept="2Ke9KJ" id="eSkzRgLzvb" role="2OqNvi">
-                        <node concept="1sne9v" id="eSkzRgLzvc" role="25WWJ7">
-                          <node concept="1sne01" id="eSkzRgLzvd" role="1sne8H">
-                            <ref role="1snh0D" to="tpck:4uZwTti3__2" />
-                            <node concept="1shVQo" id="eSkzRgLzve" role="ccFIB">
-                              <ref role="1shVQp" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
-                            </node>
-                            <node concept="1sne01" id="eSkzRgLzvf" role="1sne05">
-                              <ref role="1snh0D" to="mj1l:hEaDaGor64" />
-                              <node concept="1shVQo" id="eSkzRgLzvg" role="ccFIB">
-                                <ref role="1shVQp" to="yq40:fwMInzpHoK" resolve="PointerType" />
-                              </node>
-                              <node concept="1sne01" id="eSkzRgLzvh" role="1sne05">
-                                <ref role="1snh0D" to="c4fa:6IWRcVPT6tm" />
-                                <node concept="1shVQo" id="6uc_WDS0IDP" role="ccFIB">
-                                  <ref role="1shVQp" to="mj1l:7lNBHBNBzy8" resolve="Int32tType" />
+                        <node concept="2pJPEk" id="5hay2KG3N5d" role="25WWJ7">
+                          <node concept="2pJPED" id="5hay2KG3N5e" role="2pJPEn">
+                            <ref role="2pJxaS" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
+                            <node concept="2pIpSj" id="5hay2KG3N5f" role="2pJxcM">
+                              <ref role="2pIpSl" to="mj1l:hEaDaGor64" />
+                              <node concept="2pJPED" id="5hay2KG3N5g" role="2pJxcZ">
+                                <ref role="2pJxaS" to="yq40:fwMInzpHoK" resolve="PointerType" />
+                                <node concept="2pIpSj" id="5hay2KG3N5h" role="2pJxcM">
+                                  <ref role="2pIpSl" to="c4fa:6IWRcVPT6tm" />
+                                  <node concept="2pJPED" id="5hay2KG3N5i" role="2pJxcZ">
+                                    <ref role="2pJxaS" to="mj1l:7lNBHBNBzy8" resolve="Int32tType" />
+                                  </node>
                                 </node>
                               </node>
                             </node>
-                            <node concept="1snrkl" id="eSkzRgLzvj" role="1sne05">
-                              <ref role="1snrk2" to="tpck:h0TrG11" resolve="name" />
-                              <node concept="2OqwBi" id="5hYHEwYlGUd" role="1snq_E">
-                                <node concept="2OqwBi" id="5hYHEwYl_Ci" role="2Oq$k0">
-                                  <node concept="37vLTw" id="5hYHEwYlzxx" role="2Oq$k0">
+                            <node concept="2pJxcG" id="5hay2KG3N5p" role="2pJxcM">
+                              <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
+                              <node concept="2OqwBi" id="5hay2KG3N5j" role="2pJxcZ">
+                                <node concept="2OqwBi" id="5hay2KG3N5k" role="2Oq$k0">
+                                  <node concept="37vLTw" id="5hay2KG3N5l" role="2Oq$k0">
                                     <ref role="3cqZAo" node="eSkzRgLx3M" resolve="it" />
                                   </node>
-                                  <node concept="3CFZ6_" id="5hYHEwYlFg8" role="2OqNvi">
-                                    <node concept="3CFYIy" id="5hYHEwYlG3s" role="3CFYIz">
+                                  <node concept="3CFZ6_" id="5hay2KG3N5m" role="2OqNvi">
+                                    <node concept="3CFYIy" id="5hay2KG3N5n" role="3CFYIz">
                                       <ref role="3CFYIx" to="yz9a:78Ts1sksSoD" resolve="TestHelperFunctionAnnotation" />
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="2qgKlT" id="5hYHEwYlJuw" role="2OqNvi">
+                                <node concept="2qgKlT" id="5hay2KG3N5o" role="2OqNvi">
                                   <ref role="37wK5l" to="rmg4:5hYHEwYdCRV" resolve="pointerOnNumOfFailsVarName" />
                                 </node>
                               </node>
