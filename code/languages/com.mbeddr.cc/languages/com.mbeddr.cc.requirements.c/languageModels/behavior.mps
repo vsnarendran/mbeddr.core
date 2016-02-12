@@ -4,7 +4,7 @@
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="2" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -136,25 +136,23 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="4481811096720976618" name="com.mbeddr.mpsutil.blutil.structure.ConceptRef" flags="ng" index="1shVQo">
-        <reference id="4481811096720976619" name="concept" index="1shVQp" />
-      </concept>
-      <concept id="4481811096720537459" name="com.mbeddr.mpsutil.blutil.structure.ChildStep" flags="ng" index="1sne01">
-        <reference id="4481811096720607067" name="childLink" index="1snh0D" />
-        <child id="6308171743671982944" name="value" index="ccFIB" />
-        <child id="4481811096720537463" name="children" index="1sne05" />
-      </concept>
-      <concept id="4481811096720536877" name="com.mbeddr.mpsutil.blutil.structure.BuilderExpression" flags="ng" index="1sne9v">
-        <child id="4481811096720536927" name="root" index="1sne8H" />
-      </concept>
-      <concept id="4481811096720581223" name="com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" flags="ng" index="1snrkl">
-        <reference id="4481811096720581232" name="property" index="1snrk2" />
-        <child id="4481811096720588312" name="value" index="1snq_E" />
-      </concept>
-    </language>
     <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
       <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
+    </language>
+    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
+        <reference id="5455284157993911078" name="property" index="2pJxcJ" />
+      </concept>
+      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
+        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+      </concept>
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+        <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1960721196051541146" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRoleOperation" flags="nn" index="13GOg" />
@@ -531,17 +529,14 @@
               </node>
             </node>
             <node concept="TSZUe" id="2A5UqXKRDg7" role="2OqNvi">
-              <node concept="1sne9v" id="2A5UqXKREcO" role="25WWJ7">
-                <node concept="1sne01" id="2A5UqXKREcP" role="1sne8H">
-                  <ref role="1snh0D" to="tpck:4uZwTti3__2" />
-                  <node concept="1snrkl" id="2A5UqXKREED" role="1sne05">
-                    <ref role="1snrk2" to="tpck:h0TrG11" resolve="name" />
-                    <node concept="Xl_RD" id="2A5UqXKREO7" role="1snq_E">
+              <node concept="2pJPEk" id="5hay2KG40Nn" role="25WWJ7">
+                <node concept="2pJPED" id="5hay2KG40No" role="2pJPEn">
+                  <ref role="2pJxaS" to="3vkx:2A5UqXKPk04" resolve="PCountryDef" />
+                  <node concept="2pJxcG" id="5hay2KG40Nq" role="2pJxcM">
+                    <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
+                    <node concept="Xl_RD" id="5hay2KG40Np" role="2pJxcZ">
                       <property role="Xl_RC" value="Germany" />
                     </node>
-                  </node>
-                  <node concept="1shVQo" id="2A5UqXKREjf" role="ccFIB">
-                    <ref role="1shVQp" to="3vkx:2A5UqXKPk04" resolve="PCountryDef" />
                   </node>
                 </node>
               </node>
@@ -557,17 +552,14 @@
               </node>
             </node>
             <node concept="TSZUe" id="2A5UqXKREZ6" role="2OqNvi">
-              <node concept="1sne9v" id="2A5UqXKREZ7" role="25WWJ7">
-                <node concept="1sne01" id="2A5UqXKREZ8" role="1sne8H">
-                  <ref role="1snh0D" to="tpck:4uZwTti3__2" />
-                  <node concept="1snrkl" id="2A5UqXKREZ9" role="1sne05">
-                    <ref role="1snrk2" to="tpck:h0TrG11" resolve="name" />
-                    <node concept="Xl_RD" id="2A5UqXKREZa" role="1snq_E">
+              <node concept="2pJPEk" id="5hay2KG40Nr" role="25WWJ7">
+                <node concept="2pJPED" id="5hay2KG40Ns" role="2pJPEn">
+                  <ref role="2pJxaS" to="3vkx:2A5UqXKPp2b" resolve="PPriceGroup" />
+                  <node concept="2pJxcG" id="5hay2KG40Nu" role="2pJxcM">
+                    <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
+                    <node concept="Xl_RD" id="5hay2KG40Nt" role="2pJxcZ">
                       <property role="Xl_RC" value="PLATINUM" />
                     </node>
-                  </node>
-                  <node concept="1shVQo" id="2A5UqXKRGoQ" role="ccFIB">
-                    <ref role="1shVQp" to="3vkx:2A5UqXKPp2b" resolve="PPriceGroup" />
                   </node>
                 </node>
               </node>
