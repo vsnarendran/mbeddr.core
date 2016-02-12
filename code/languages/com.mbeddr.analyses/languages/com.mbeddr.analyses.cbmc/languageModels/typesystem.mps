@@ -7,7 +7,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="2" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
@@ -103,7 +103,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -147,23 +147,6 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="4481811096720976618" name="com.mbeddr.mpsutil.blutil.structure.ConceptRef" flags="ng" index="1shVQo">
-        <reference id="4481811096720976619" name="concept" index="1shVQp" />
-      </concept>
-      <concept id="4481811096720537459" name="com.mbeddr.mpsutil.blutil.structure.ChildStep" flags="ng" index="1sne01">
-        <reference id="4481811096720607067" name="childLink" index="1snh0D" />
-        <child id="6308171743671982944" name="value" index="ccFIB" />
-        <child id="4481811096720537463" name="children" index="1sne05" />
-      </concept>
-      <concept id="4481811096720536877" name="com.mbeddr.mpsutil.blutil.structure.BuilderExpression" flags="ng" index="1sne9v">
-        <child id="4481811096720536927" name="root" index="1sne8H" />
-      </concept>
-      <concept id="4481811096720581223" name="com.mbeddr.mpsutil.blutil.structure.SimplePropertyStep" flags="ng" index="1snrkl">
-        <reference id="4481811096720581232" name="property" index="1snrk2" />
-        <child id="4481811096720588312" name="value" index="1snq_E" />
-      </concept>
-    </language>
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
       <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
       <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
@@ -181,11 +164,21 @@
       <concept id="1196350785113" name="jetbrains.mps.lang.quotation.structure.Quotation" flags="nn" index="2c44tf">
         <child id="1196350785114" name="quotedNode" index="2c44tc" />
       </concept>
+      <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
+        <reference id="5455284157994012188" name="link" index="2pIpSl" />
+      </concept>
+      <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
+        <reference id="5455284157993911078" name="property" index="2pJxcJ" />
+      </concept>
+      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
+        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+      </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
       </concept>
       <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+        <child id="5455284157993911099" name="values" index="2pJxcM" />
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -1864,29 +1857,26 @@
             <node concept="3Tqbb2" id="3i$cQqpwdU7" role="1tU5fm">
               <ref role="ehGHo" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
             </node>
-            <node concept="1sne9v" id="3i$cQqpwdUb" role="33vP2m">
-              <node concept="1sne01" id="3i$cQqpwdUc" role="1sne8H">
-                <ref role="1snh0D" to="tpck:4uZwTti3__2" />
-                <node concept="1snrkl" id="3i$cQqpwdXp" role="1sne05">
-                  <ref role="1snrk2" to="tpck:h0TrG11" resolve="name" />
-                  <node concept="Xl_RD" id="3i$cQqpwdYB" role="1snq_E">
+            <node concept="2pJPEk" id="3AhkfbYPDNS" role="33vP2m">
+              <node concept="2pJPED" id="3AhkfbYPDNT" role="2pJPEn">
+                <ref role="2pJxaS" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                <node concept="2pJxcG" id="3AhkfbYPDNV" role="2pJxcM">
+                  <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
+                  <node concept="Xl_RD" id="3AhkfbYPDNU" role="2pJxcZ">
                     <property role="Xl_RC" value="BuildConfiguration" />
                   </node>
                 </node>
-                <node concept="1sne01" id="3i$cQqpwe3_" role="1sne05">
-                  <ref role="1snh0D" to="51wr:4o9sgv8R$fb" />
-                  <node concept="1snrkl" id="3i$cQqpwe7a" role="1sne05">
-                    <ref role="1snrk2" to="tpck:h0TrG11" resolve="name" />
-                    <node concept="Xl_RD" id="3i$cQqpwe8q" role="1snq_E">
-                      <property role="Xl_RC" value="tmp" />
+                <node concept="2pIpSj" id="3AhkfbYPDNW" role="2pJxcM">
+                  <ref role="2pIpSl" to="51wr:4o9sgv8R$fb" />
+                  <node concept="2pJPED" id="3AhkfbYPDNX" role="2pJxcZ">
+                    <ref role="2pJxaS" to="51wr:2kkumeGQcAy" resolve="StaticLibrary" />
+                    <node concept="2pJxcG" id="3AhkfbYPDNZ" role="2pJxcM">
+                      <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
+                      <node concept="Xl_RD" id="3AhkfbYPDNY" role="2pJxcZ">
+                        <property role="Xl_RC" value="tmp" />
+                      </node>
                     </node>
                   </node>
-                  <node concept="1shVQo" id="3i$cQqp_Du$" role="ccFIB">
-                    <ref role="1shVQp" to="51wr:2kkumeGQcAy" resolve="StaticLibrary" />
-                  </node>
-                </node>
-                <node concept="1shVQo" id="3i$cQqpwdUe" role="ccFIB">
-                  <ref role="1shVQp" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
                 </node>
               </node>
             </node>

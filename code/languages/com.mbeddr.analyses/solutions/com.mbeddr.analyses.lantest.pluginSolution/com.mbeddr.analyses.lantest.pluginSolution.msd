@@ -25,7 +25,7 @@
     <dependency reexport="false">564e97d6-8fb7-41f5-bfc1-c7ed376efd62(com.mbeddr.ext.statemachines)</dependency>
   </dependencies>
   <languageVersions>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" fqName="com.mbeddr.mpsutil.blutil" version="1" />
+    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" fqName="com.mbeddr.mpsutil.blutil" version="2" />
     <language id="17566462-d837-4552-874c-64e45c10778a" fqName="com.mbeddr.mpsutil.compare.pattern" version="0" />
     <language id="36590f48-d68b-4c16-bfba-c769260bbac0" fqName="com.mbeddr.mpsutil.compare.pattern.baselang" version="0" />
     <language id="ccdc24b1-37a8-44ac-8a87-b53bd9c96407" fqName="com.mbeddr.mpsutil.lantest.assertions" version="0" />
