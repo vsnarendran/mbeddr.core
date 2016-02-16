@@ -2,7 +2,7 @@
 <model ref="r:572f6bc0-c998-48d5-9fdb-9ca4597c66de(com.mbeddr.core.unittest.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -18,6 +18,7 @@
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="dqn8" ref="r:6f177fc3-8a05-4826-8d08-fd8676623247(com.mbeddr.mpsutil.suppresswarning.behavior)" />
+    <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -45,6 +46,9 @@
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -119,6 +123,9 @@
         <child id="1185805047793" name="body" index="nvhr_" />
         <child id="1185805056450" name="argument" index="nvjzm" />
         <child id="1205761991995" name="argumentRepresentator" index="2X0Ygz" />
+      </concept>
+      <concept id="1224760201579" name="jetbrains.mps.lang.typesystem.structure.InfoStatement" flags="nn" index="Dpp1Q">
+        <child id="1224760230762" name="infoText" index="Dpw9R" />
       </concept>
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
@@ -728,25 +735,6 @@
                   </node>
                 </node>
                 <node concept="3eNFk2" id="60Dkee77io7" role="3eNLev">
-                  <node concept="3clFbS" id="60Dkee77io8" role="3eOfB_">
-                    <node concept="1ZobV4" id="60Dkee77io9" role="3cqZAp">
-                      <property role="3wDh2S" value="true" />
-                      <node concept="mw_s8" id="60Dkee77ioa" role="1ZfhKB">
-                        <node concept="2ShNRf" id="60Dkee77iob" role="mwGJk">
-                          <node concept="3zrR0B" id="60Dkee77ioc" role="2ShVmc">
-                            <node concept="3Tqbb2" id="60Dkee77iod" role="3zrR0E">
-                              <ref role="ehGHo" to="mj1l:7VU$pJBZq4g" resolve="LongDoubleType" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="mw_s8" id="60Dkee77ioe" role="1ZfhK$">
-                        <node concept="2X3wrD" id="60Dkee77iof" role="mwGJk">
-                          <ref role="2X3Bk0" node="2wGmDEJR7Qp" resolve="actualtype" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
                   <node concept="1Wc70l" id="3w213dWBLZR" role="3eO9$A">
                     <node concept="3fqX7Q" id="60Dkee77irx" role="3uHU7B">
                       <node concept="2OqwBi" id="60Dkee77itv" role="3fr31v">
@@ -769,6 +757,25 @@
                           <node concept="chp4Y" id="3w213dWBM3p" role="cj9EA">
                             <ref role="cht4Q" to="clbe:5yYXyc4Z0CS" resolve="StructType" />
                           </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="60Dkee77io8" role="3eOfB_">
+                    <node concept="1ZobV4" id="60Dkee77io9" role="3cqZAp">
+                      <property role="3wDh2S" value="true" />
+                      <node concept="mw_s8" id="60Dkee77ioa" role="1ZfhKB">
+                        <node concept="2ShNRf" id="60Dkee77iob" role="mwGJk">
+                          <node concept="3zrR0B" id="60Dkee77ioc" role="2ShVmc">
+                            <node concept="3Tqbb2" id="60Dkee77iod" role="3zrR0E">
+                              <ref role="ehGHo" to="mj1l:7VU$pJBZq4g" resolve="LongDoubleType" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="mw_s8" id="60Dkee77ioe" role="1ZfhK$">
+                        <node concept="2X3wrD" id="60Dkee77iof" role="mwGJk">
+                          <ref role="2X3Bk0" node="2wGmDEJR7Qp" resolve="actualtype" />
                         </node>
                       </node>
                     </node>
@@ -1225,6 +1232,53 @@
     <node concept="1YaCAy" id="5xim$7tIFm5" role="1YuTPh">
       <property role="TrG5h" value="testCollection" />
       <ref role="1YaFvo" to="yz9a:6TAwvhVRBLA" resolve="TestCollection" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="77nuVWJ1PbK">
+    <property role="TrG5h" value="check_TCCI" />
+    <node concept="3clFbS" id="77nuVWJ1PbL" role="18ibNy">
+      <node concept="3clFbJ" id="77nuVWJ1PcX" role="3cqZAp">
+        <node concept="3clFbS" id="77nuVWJ1PcZ" role="3clFbx">
+          <node concept="Dpp1Q" id="77nuVWJ1PbW" role="3cqZAp">
+            <node concept="2OqwBi" id="77nuVWJ1PK2" role="2OEOjV">
+              <node concept="1YBJjd" id="77nuVWJ1PF8" role="2Oq$k0">
+                <ref role="1YBMHb" node="77nuVWJ1PbN" resolve="testCaseConfigItem" />
+              </node>
+              <node concept="3TrEf2" id="77nuVWJ1PRA" role="2OqNvi">
+                <ref role="3Tt5mk" to="yz9a:ILZbnBPQGC" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="77nuVWJ1Pce" role="Dpw9R">
+              <property role="Xl_RC" value="Testisolation will not be executed on windows" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="77nuVWJ1Pha" role="3clFbw">
+          <node concept="2OqwBi" id="77nuVWJ1Pxw" role="3uHU7w">
+            <node concept="2OqwBi" id="77nuVWJ1PkA" role="2Oq$k0">
+              <node concept="1YBJjd" id="77nuVWJ1Ph$" role="2Oq$k0">
+                <ref role="1YBMHb" node="77nuVWJ1PbN" resolve="testCaseConfigItem" />
+              </node>
+              <node concept="3TrEf2" id="77nuVWJ1Pqv" role="2OqNvi">
+                <ref role="3Tt5mk" to="yz9a:ILZbnBPQGC" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="77nuVWJ1PBA" role="2OqNvi">
+              <node concept="chp4Y" id="77nuVWJ1PDg" role="cj9EA">
+                <ref role="cht4Q" to="yz9a:ILZbnBPQGH" resolve="TestIsolationStrategy" />
+              </node>
+            </node>
+          </node>
+          <node concept="10M0yZ" id="77nuVWJ1Oy9" role="3uHU7B">
+            <ref role="3cqZAo" to="btm1:~SystemUtils.IS_OS_WINDOWS" resolve="IS_OS_WINDOWS" />
+            <ref role="1PxDUh" to="btm1:~SystemUtils" resolve="SystemUtils" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="77nuVWJ1PbN" role="1YuTPh">
+      <property role="TrG5h" value="testCaseConfigItem" />
+      <ref role="1YaFvo" to="yz9a:7tWSY$P9Odb" resolve="TestCaseConfigItem" />
     </node>
   </node>
 </model>
