@@ -296,7 +296,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="4AjdlHqkfch" role="2OqNvi">
-                                  <ref role="37wK5l" to="c17a:~SContainmentLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
+                                  <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
                                 </node>
                               </node>
                             </node>

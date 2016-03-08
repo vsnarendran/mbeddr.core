@@ -15142,9 +15142,6 @@
                                             <node concept="3cpWs8" id="mEdliwv450" role="3cqZAp">
                                               <node concept="3cpWsn" id="mEdliwv451" role="3cpWs9">
                                                 <property role="TrG5h" value="expressionRoot" />
-                                                <node concept="3Tqbb2" id="mEdliwv40O" role="1tU5fm">
-                                                  <ref role="ehGHo" to="tpck:gw2VY9q" resolve="BaseConcept" />
-                                                </node>
                                                 <node concept="2YIFZM" id="2AjT0YRHx4t" role="33vP2m">
                                                   <ref role="37wK5l" to="czm:420g0gW2m0h" resolve="findRootExpression" />
                                                   <ref role="1Pybhc" to="czm:RbLMy696h3" resolve="GrammarCellsUtil" />
@@ -15163,9 +15160,12 @@
                                                       </node>
                                                     </node>
                                                     <node concept="liA8E" id="mEdliwv5lM" role="2OqNvi">
-                                                      <ref role="37wK5l" to="c17a:~SContainmentLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
+                                                      <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
                                                     </node>
                                                   </node>
+                                                </node>
+                                                <node concept="3Tqbb2" id="mEdliwv40O" role="1tU5fm">
+                                                  <ref role="ehGHo" to="tpck:gw2VY9q" resolve="BaseConcept" />
                                                 </node>
                                               </node>
                                             </node>
@@ -16627,7 +16627,7 @@
                                         <ref role="3cqZAo" node="6B579NGr$GG" resolve="link" />
                                       </node>
                                       <node concept="liA8E" id="6B579NGr$GT" role="2OqNvi">
-                                        <ref role="37wK5l" to="c17a:~SContainmentLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
+                                        <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
                                       </node>
                                     </node>
                                     <node concept="3clFbC" id="6B579NGr$GU" role="3K4Cdx">
@@ -18120,7 +18120,7 @@
                         <ref role="3cqZAo" node="7hpKUiSPxJ" resolve="containmentLink" />
                       </node>
                       <node concept="liA8E" id="77A3HzrMc4x" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SContainmentLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
+                        <ref role="37wK5l" to="c17a:~SAbstractLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
                       </node>
                     </node>
                   </node>
