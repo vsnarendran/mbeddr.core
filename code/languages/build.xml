@@ -219,7 +219,7 @@
 	<target name="build-spawner">
 		<ant antfile="${com.mbeddr.spawner.build-file.name}" dir="${com.mbeddr.spawner.build-file.location}" target="${generate-code.task}" />
 		<ant antfile="${com.mbeddr.spawner.build-file.name}" dir="${com.mbeddr.spawner.build-file.location}" target="${build-plugin.task}" />
-  		<unzip src="${artifacts.root}/mbeddr/${spawner.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" />
+  		<unzip src="${artifacts.root}/spawner/${spawner.zip-file.name}" dest="${mps.home}/${plugins.folder.name}" />
 	</target>   
 
 	<target name="build-debugger-testing" >
