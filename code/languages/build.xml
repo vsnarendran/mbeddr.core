@@ -207,6 +207,7 @@
 			<zipfileset src="${artifacts.root}/com.mbeddr.platform/com.mbeddr.mpsutil.actionsfilter.zip">
 			</zipfileset>
 		</copy>
+		<antcall target="build-spawner" />
 	</target>  
 
 
@@ -234,7 +235,6 @@
 
 	<target name="build-platform-and-mbeddr" >
 		<antcall target="build-platform" />
-		<antcall target="build-spawner" />
 		<antcall target="build-mbeddr" />
 	</target>
 
