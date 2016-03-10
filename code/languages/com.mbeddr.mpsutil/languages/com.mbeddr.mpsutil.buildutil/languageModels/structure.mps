@@ -114,7 +114,7 @@
   <node concept="1TIwiD" id="2gGfLsWQL6y">
     <property role="1pbfSe" value="1627869369" />
     <property role="TrG5h" value="TransitivelyDependsOnBuildProjectOperation" />
-    <property role="34LRSv" value="transitivelyDependsOnBuildProject" />
+    <property role="34LRSv" value="transitivelyDependsOn" />
     <property role="3GE5qa" value="smodel" />
     <property role="R4oN_" value="return true, if the BuildProject transitively depends on another BuildProject 'buildProject'" />
     <ref role="1TJDcQ" to="tp25:g$eCIIG" resolve="SNodeOperation" />
@@ -142,7 +142,7 @@
   <node concept="1TIwiD" id="2gGfLsWS1ZN">
     <property role="1pbfSe" value="1628200714" />
     <property role="TrG5h" value="AddBuildProjectDependencyOperation" />
-    <property role="34LRSv" value="addBuildProjectDepenency" />
+    <property role="34LRSv" value="addDepenency" />
     <property role="3GE5qa" value="smodel" />
     <property role="R4oN_" value="add a BuildProject as dependency to the applied BuildProject" />
     <ref role="1TJDcQ" to="tp25:g$eCIIG" resolve="SNodeOperation" />
@@ -178,7 +178,7 @@
     <property role="1pbfSe" value="1551244476" />
     <property role="3GE5qa" value="smodel" />
     <property role="TrG5h" value="HasDependencyOnBuildProjectOperation" />
-    <property role="34LRSv" value="hasDependencyOnBuildProject" />
+    <property role="34LRSv" value="hasDependency" />
     <property role="R4oN_" value="return true, if the BuildProject holds a dependency on another BuildProject 'buildProject'" />
     <ref role="1TJDcQ" to="tp25:g$eCIIG" resolve="SNodeOperation" />
     <node concept="1TJgyj" id="6YaWssNZJ5Y" role="1TKVEi">
