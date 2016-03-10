@@ -530,7 +530,7 @@
         <node concept="1SiIV0" id="2coa6Xmppwv" role="3bR37C">
           <node concept="3bR9La" id="2coa6Xmppww" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="p6ld:5qO$P$Prhtk" resolve="Eclipse.Debugger" />
+            <ref role="3bR37D" to="p6ld:6YaWssNXVWy" resolve="Eclipse.Debugger" />
           </node>
         </node>
         <node concept="1SiIV0" id="2coa6Xmppwx" role="3bR37C">
@@ -1253,12 +1253,6 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2coa6XmppYs" role="3bR37C">
-          <node concept="3bR9La" id="2coa6XmppYt" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="p6ld:5qO$P$Prhtk" resolve="Eclipse.Debugger" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="2coa6XmppYu" role="3bR37C">
           <node concept="3bR9La" id="2coa6XmppYv" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -1307,6 +1301,12 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6BHziVI1FlA" role="3bR37C">
+          <node concept="3bR9La" id="6BHziVI1FlB" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="p6ld:6YaWssNXVWy" resolve="Eclipse.Debugger" />
           </node>
         </node>
       </node>
