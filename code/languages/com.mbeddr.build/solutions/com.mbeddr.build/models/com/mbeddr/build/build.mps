@@ -9908,7 +9908,7 @@
       <node concept="398BVA" id="6YaWssNY6ML" role="398pKh">
         <ref role="398BVh" node="4MR$$QmqomQ" resolve="artifacts.root" />
         <node concept="2Ry0Ak" id="6YaWssNY6MM" role="iGT6I">
-          <property role="2Ry0Am" value="com.mbeddr.platform" />
+          <property role="2Ry0Am" value="spawner" />
         </node>
       </node>
     </node>
