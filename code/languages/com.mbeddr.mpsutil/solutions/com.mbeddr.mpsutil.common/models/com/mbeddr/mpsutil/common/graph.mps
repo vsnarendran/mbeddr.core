@@ -3426,7 +3426,7 @@
           <node concept="1rXfSq" id="3FYfbA7easo" role="3cqZAk">
             <ref role="37wK5l" node="4D_91tBL_7M" resolve="computeTopologicalSorting" />
             <node concept="37vLTw" id="3FYfbA7eau7" role="37wK5m">
-              <ref role="3cqZAo" node="3FYfbA7e8QB" resolve="_graph" />
+              <ref role="3cqZAo" node="3FYfbA7e8QB" resolve="graph" />
             </node>
             <node concept="3clFbT" id="3FYfbA7eay1" role="37wK5m">
               <property role="3clFbU" value="false" />
@@ -3441,7 +3441,7 @@
         </node>
       </node>
       <node concept="37vLTG" id="3FYfbA7e8QB" role="3clF46">
-        <property role="TrG5h" value="_graph" />
+        <property role="TrG5h" value="graph" />
         <node concept="3uibUv" id="3FYfbA7e8QC" role="1tU5fm">
           <ref role="3uigEE" node="9NO9Tq8VKe" resolve="Graph" />
           <node concept="16syzq" id="3FYfbA7e8QD" role="11_B2D">
@@ -3461,7 +3461,7 @@
         <node concept="TUZQ0" id="3FYfbA7e8QK" role="TUOzN">
           <property role="TUZQ4" value="the input graph" />
           <node concept="zr_55" id="3FYfbA7e8QL" role="zr_5Q">
-            <ref role="zr_51" node="3FYfbA7e8QB" resolve="_graph" />
+            <ref role="zr_51" node="3FYfbA7e8QB" resolve="graph" />
           </node>
         </node>
         <node concept="TUZQ0" id="3FYfbA7e8QM" role="TUOzN">
@@ -3476,6 +3476,148 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3FYfbA7e4et" role="jymVt" />
+    <node concept="2YIFZL" id="3OZdNPFP8O$" role="jymVt">
+      <property role="TrG5h" value="computeWCC" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="37vLTG" id="3OZdNPFP924" role="3clF46">
+        <property role="TrG5h" value="_graph" />
+        <node concept="3uibUv" id="3OZdNPFP92g" role="1tU5fm">
+          <ref role="3uigEE" node="9NO9Tq8VKe" resolve="Graph" />
+          <node concept="16syzq" id="3OZdNPFP92V" role="11_B2D">
+            <ref role="16sUi3" node="3OZdNPFP91T" resolve="T" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbS" id="3OZdNPFP8OB" role="3clF47">
+        <node concept="3cpWs8" id="3OZdNPFP9cn" role="3cqZAp">
+          <node concept="3cpWsn" id="3OZdNPFP9co" role="3cpWs9">
+            <property role="TrG5h" value="graph" />
+            <node concept="3uibUv" id="3OZdNPFP9c7" role="1tU5fm">
+              <ref role="3uigEE" node="9NO9Tq8VKe" resolve="Graph" />
+              <node concept="16syzq" id="3OZdNPFP9ca" role="11_B2D">
+                <ref role="16sUi3" node="3OZdNPFP91T" resolve="T" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3OZdNPFP9cp" role="33vP2m">
+              <node concept="37vLTw" id="3OZdNPFP9cq" role="2Oq$k0">
+                <ref role="3cqZAo" node="3OZdNPFP924" resolve="_graph" />
+              </node>
+              <node concept="liA8E" id="3OZdNPFP9cr" role="2OqNvi">
+                <ref role="37wK5l" node="4D_91tBLK$j" resolve="copy" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="3OZdNPFP9rT" role="3cqZAp">
+          <node concept="2GrKxI" id="3OZdNPFP9rV" role="2Gsz3X">
+            <property role="TrG5h" value="source" />
+          </node>
+          <node concept="3clFbS" id="3OZdNPFP9rX" role="2LFqv$">
+            <node concept="2Gpval" id="3OZdNPFP9Ai" role="3cqZAp">
+              <node concept="2GrKxI" id="3OZdNPFP9Ak" role="2Gsz3X">
+                <property role="TrG5h" value="target" />
+              </node>
+              <node concept="3clFbS" id="3OZdNPFP9Am" role="2LFqv$">
+                <node concept="3clFbF" id="3OZdNPFP9H$" role="3cqZAp">
+                  <node concept="2OqwBi" id="3OZdNPFP9Im" role="3clFbG">
+                    <node concept="37vLTw" id="3OZdNPFP9Hy" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3OZdNPFP9co" resolve="graph" />
+                    </node>
+                    <node concept="liA8E" id="3OZdNPFP9Lt" role="2OqNvi">
+                      <ref role="37wK5l" node="9NO9Tq8VM$" resolve="addEdge" />
+                      <node concept="2GrUjf" id="3OZdNPFP9Mv" role="37wK5m">
+                        <ref role="2Gs0qQ" node="3OZdNPFP9Ak" resolve="target" />
+                      </node>
+                      <node concept="2GrUjf" id="3OZdNPFP9Ny" role="37wK5m">
+                        <ref role="2Gs0qQ" node="3OZdNPFP9rV" resolve="source" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="3OZdNPFP9Ch" role="2GsD0m">
+                <node concept="37vLTw" id="3OZdNPFP9B0" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3OZdNPFP9co" resolve="graph" />
+                </node>
+                <node concept="liA8E" id="3OZdNPFP9E5" role="2OqNvi">
+                  <ref role="37wK5l" node="9NO9Tq8VOy" resolve="getTargets" />
+                  <node concept="2GrUjf" id="3OZdNPFP9FR" role="37wK5m">
+                    <ref role="2Gs0qQ" node="3OZdNPFP9rV" resolve="source" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3OZdNPFP9uM" role="2GsD0m">
+            <node concept="37vLTw" id="3OZdNPFP9tx" role="2Oq$k0">
+              <ref role="3cqZAo" node="3OZdNPFP9co" resolve="graph" />
+            </node>
+            <node concept="liA8E" id="3OZdNPFP9wA" role="2OqNvi">
+              <ref role="37wK5l" node="9NO9Tq8VPO" resolve="getAllNodes" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="3OZdNPFP9R4" role="3cqZAp">
+          <node concept="1rXfSq" id="3OZdNPFP9W6" role="3cqZAk">
+            <ref role="37wK5l" node="4kDlJ5bgbgK" resolve="computeSCC" />
+            <node concept="37vLTw" id="3OZdNPFPa1k" role="37wK5m">
+              <ref role="3cqZAo" node="3OZdNPFP9co" resolve="graph" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3OZdNPFP8AZ" role="1B3o_S" />
+      <node concept="2hMVRd" id="3OZdNPFP8Ok" role="3clF45">
+        <node concept="2hMVRd" id="3OZdNPFP8Ou" role="2hN53Y">
+          <node concept="16syzq" id="3OZdNPFP921" role="2hN53Y">
+            <ref role="16sUi3" node="3OZdNPFP91T" resolve="T" />
+          </node>
+        </node>
+      </node>
+      <node concept="16euLQ" id="3OZdNPFP91T" role="16eVyc">
+        <property role="TrG5h" value="T" />
+      </node>
+      <node concept="P$JXv" id="3OZdNPFPHaI" role="lGtFl">
+        <node concept="TZ5HA" id="3OZdNPFPHaJ" role="TZ5H$">
+          <node concept="1dT_AC" id="3OZdNPFPHaK" role="1dT_Ay">
+            <property role="1dT_AB" value="Computes the weakly connected components of the given graph." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="3OZdNPFPHyb" role="TZ5H$">
+          <node concept="1dT_AC" id="3OZdNPFPHyc" role="1dT_Ay">
+            <property role="1dT_AB" value="Imagine a weakly connected component as an island in the graph, which " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="3OZdNPFPHyB" role="TZ5H$">
+          <node concept="1dT_AC" id="3OZdNPFPHyC" role="1dT_Ay">
+            <property role="1dT_AB" value="is entirely isolated from all other islands (they are not connected " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="3OZdNPFPHz1" role="TZ5H$">
+          <node concept="1dT_AC" id="3OZdNPFPHz2" role="1dT_Ay">
+            <property role="1dT_AB" value="in any direction with an edge)." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="3OZdNPFPHaL" role="TUOzN">
+          <property role="TUZQ4" value="the graph" />
+          <node concept="zr_55" id="3OZdNPFPHaN" role="zr_5Q">
+            <ref role="zr_51" node="3OZdNPFP924" resolve="_graph" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="3OZdNPFPHaO" role="TUOzN">
+          <property role="TUZQ4" value="the type parameter of the nodes in the graph" />
+          <node concept="zr_56" id="3OZdNPFPHaQ" role="zr_5Q">
+            <ref role="zr_51" node="3OZdNPFP91T" resolve="T" />
+          </node>
+        </node>
+        <node concept="x79VA" id="3OZdNPFPHaR" role="x79VK">
+          <property role="x79VB" value="the WCCs as sets of set of nodes" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3OZdNPFP8eD" role="jymVt" />
     <node concept="3Tm1VV" id="59VTJR_XXJc" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="59VTJR_ZT1i">
