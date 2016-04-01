@@ -254,6 +254,11 @@
       <ref role="1m$dNs" node="7jWvwQUJdtv" resolve="E2" />
       <node concept="1m$dGy" id="7jWvwQUJduN" role="1m$dGE" />
     </node>
+    <node concept="1m$dNz" id="7jWvwQURq4n" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQUJdtv" resolve="E2" />
+      <ref role="1m$dNs" node="7jWvwQUJdsz" resolve="A1" />
+      <node concept="1m$dGw" id="7jWvwQURq4F" role="1m$dGE" />
+    </node>
     <node concept="1m$dNA" id="7jWvwQUJdsz" role="1m$dN$">
       <property role="TrG5h" value="A1" />
     </node>
@@ -282,6 +287,237 @@
       <property role="TrG5h" value="D2" />
     </node>
     <node concept="1m$dNA" id="7jWvwQUJdtv" role="1m$dN$">
+      <property role="TrG5h" value="E2" />
+    </node>
+  </node>
+  <node concept="1m$dNF" id="7jWvwQUKu$3">
+    <property role="TrG5h" value="MbeddrTest" />
+    <node concept="1m$dNz" id="7jWvwQUKuAS" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQUKuAK" resolve="modules.gen.main" />
+      <ref role="1m$dNs" node="7jWvwQUKuAN" resolve="base.lowPrioStuff" />
+      <node concept="1m$dGw" id="7jWvwQUKuAY" role="1m$dGE" />
+    </node>
+    <node concept="1m$dNz" id="7jWvwQUKuB9" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQUKuAK" resolve="modules.gen.main" />
+      <ref role="1m$dNs" node="7jWvwQUKuB2" resolve="modules.main" />
+      <node concept="1m$dGy" id="7jWvwQUKuBj" role="1m$dGE" />
+    </node>
+    <node concept="1m$dNz" id="7jWvwQUKuBF" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQUKuBn" resolve="modules.gen.removeCommentedAndEmptyCode" />
+      <ref role="1m$dNs" node="7jWvwQUKuBw" resolve="modules.gen.copyInImportedModules" />
+      <node concept="1m$dGA" id="7jWvwQUKuBT" role="1m$dGE" />
+    </node>
+    <node concept="1m$dNz" id="7jWvwQUKCpj" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQUKCp6" resolve="modules.addReturnToClosure" />
+      <ref role="1m$dNs" node="7jWvwQUKuB2" resolve="modules.main" />
+      <node concept="1m$dGA" id="7jWvwQUKCp_" role="1m$dGE" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQUKuAK" role="1m$dN$">
+      <property role="TrG5h" value="modules.gen.main" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQUKuAN" role="1m$dN$">
+      <property role="TrG5h" value="base.lowPrioStuff" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQUKuB2" role="1m$dN$">
+      <property role="TrG5h" value="modules.main" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQUKuBn" role="1m$dN$">
+      <property role="TrG5h" value="modules.gen.removeCommentedAndEmptyCode" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQUKuBw" role="1m$dN$">
+      <property role="TrG5h" value="modules.gen.copyInImportedModules" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQUKCp6" role="1m$dN$">
+      <property role="TrG5h" value="modules.addReturnToClosure" />
+    </node>
+  </node>
+  <node concept="1m$dNF" id="7jWvwQUKHTX">
+    <property role="TrG5h" value="GrammarCellsTest" />
+    <node concept="1m$dNz" id="7jWvwQUKHU6" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQUKHTY" resolve="mc_actionsAspect" />
+      <ref role="1m$dNs" node="7jWvwQUKHU1" resolve="ACTL_main" />
+      <node concept="1m$dGw" id="7jWvwQUKHUc" role="1m$dGE" />
+    </node>
+    <node concept="1m$dNz" id="7jWvwQUKI3K" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQUKI3l" resolve="mc02_inlineComponents" />
+      <ref role="1m$dNs" node="7jWvwQUKHW8" resolve="mc03_preprocess_OptionCell" />
+      <node concept="1m$dGA" id="7jWvwQUKI4A" role="1m$dGE" />
+    </node>
+    <node concept="1m$dNz" id="7jWvwQUKI4E" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQUKI3l" resolve="mc02_inlineComponents" />
+      <ref role="1m$dNs" node="7jWvwQUKHWn" resolve="mc03_deleteActions" />
+      <node concept="1m$dGA" id="7jWvwQUKI5$" role="1m$dGE" />
+    </node>
+    <node concept="1m$dNz" id="7jWvwQUKHWV" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQUKHW8" resolve="mc03_preprocess_OptionCell" />
+      <ref role="1m$dNs" node="7jWvwQUKHUg" resolve="mc04_cells" />
+      <node concept="1m$dGA" id="7jWvwQUKHXl" role="1m$dGE" />
+    </node>
+    <node concept="1m$dNz" id="7jWvwQUKHXp" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQUKHWn" resolve="mc03_deleteActions" />
+      <ref role="1m$dNs" node="7jWvwQUKHUg" resolve="mc04_cells" />
+      <node concept="1m$dGA" id="7jWvwQUKHXR" role="1m$dGE" />
+    </node>
+    <node concept="1m$dNz" id="7jWvwQUKHXV" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQUKHUg" resolve="mc04_cells" />
+      <ref role="1m$dNs" node="7jWvwQUKHWC" resolve="mc05_actionsInEdtior" />
+      <node concept="1m$dGA" id="7jWvwQUKHYt" role="1m$dGE" />
+    </node>
+    <node concept="1m$dNz" id="7jWvwQUKHUS" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQUKHUg" resolve="mc04_cells" />
+      <ref role="1m$dNs" node="7jWvwQUKHUw" resolve="MAPPING_Sugar" />
+      <node concept="1m$dGA" id="7jWvwQUKHV2" role="1m$dGE" />
+    </node>
+    <node concept="1m$dNz" id="7jWvwQUKHV6" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQUKHUg" resolve="mc04_cells" />
+      <ref role="1m$dNs" node="7jWvwQUKHUF" resolve="MAPPING_main" />
+      <node concept="1m$dGA" id="7jWvwQUKHVk" role="1m$dGE" />
+    </node>
+    <node concept="1m$dNz" id="7jWvwQUKHYQ" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQUKHWC" resolve="mc05_actionsInEdtior" />
+      <ref role="1m$dNs" node="7jWvwQUKHYx" resolve="mc06_preprocess_inlineActions" />
+      <node concept="1m$dGA" id="7jWvwQUKHZs" role="1m$dGE" />
+    </node>
+    <node concept="1m$dNz" id="7jWvwQUKHZR" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQUKHYx" resolve="mc06_preprocess_inlineActions" />
+      <ref role="1m$dNs" node="7jWvwQUKHZw" resolve="mc07_inlineActions" />
+      <node concept="1m$dGA" id="7jWvwQUKI0x" role="1m$dGE" />
+    </node>
+    <node concept="1m$dNz" id="7jWvwQUKI0Y" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQUKHZw" resolve="mc07_inlineActions" />
+      <ref role="1m$dNs" node="7jWvwQUKHUn" resolve="mc08_fixRenderingCondition" />
+      <node concept="1m$dGA" id="7jWvwQUKI1G" role="1m$dGE" />
+    </node>
+    <node concept="1m$dNz" id="7jWvwQUKHVo" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQUKHUn" resolve="mc08_fixRenderingCondition" />
+      <ref role="1m$dNs" node="7jWvwQUKHUw" resolve="MAPPING_Sugar" />
+      <node concept="1m$dGA" id="7jWvwQUKHVE" role="1m$dGE" />
+    </node>
+    <node concept="1m$dNz" id="7jWvwQUKHVI" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQUKHUn" resolve="mc08_fixRenderingCondition" />
+      <ref role="1m$dNs" node="7jWvwQUKHUF" resolve="MAPPING_main" />
+      <node concept="1m$dGA" id="7jWvwQUKHW4" role="1m$dGE" />
+    </node>
+    <node concept="1m$dNz" id="7jWvwQUKI2v" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQUKI26" resolve="mc09_splittableCell" />
+      <ref role="1m$dNs" node="7jWvwQUKHUF" resolve="MAPPING_main" />
+      <node concept="1m$dGw" id="7jWvwQUKI3h" role="1m$dGE" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQUKHTY" role="1m$dN$">
+      <property role="TrG5h" value="mc_actionsAspect" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQUKI3l" role="1m$dN$">
+      <property role="TrG5h" value="mc02_inlineComponents" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQUKHW8" role="1m$dN$">
+      <property role="TrG5h" value="mc03_preprocess_OptionCell" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQUKHWn" role="1m$dN$">
+      <property role="TrG5h" value="mc03_deleteActions" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQUKHUg" role="1m$dN$">
+      <property role="TrG5h" value="mc04_cells" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQUKHWC" role="1m$dN$">
+      <property role="TrG5h" value="mc05_actionsInEdtior" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQUKHYx" role="1m$dN$">
+      <property role="TrG5h" value="mc06_preprocess_inlineActions" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQUKHZw" role="1m$dN$">
+      <property role="TrG5h" value="mc07_inlineActions" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQUKHUn" role="1m$dN$">
+      <property role="TrG5h" value="mc08_fixRenderingCondition" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQUKI26" role="1m$dN$">
+      <property role="TrG5h" value="mc09_splittableCell" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQUKHU1" role="1m$dN$">
+      <property role="TrG5h" value="ACTL_main" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQUKHUw" role="1m$dN$">
+      <property role="TrG5h" value="MAPPING_Sugar" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQUKHUF" role="1m$dN$">
+      <property role="TrG5h" value="MAPPING_main" />
+    </node>
+  </node>
+  <node concept="1m$dNF" id="7jWvwQURq1D">
+    <property role="TrG5h" value="LotsOfBeforeSame" />
+    <node concept="1m$dNz" id="7jWvwQURq2d" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQURq1E" resolve="A1" />
+      <ref role="1m$dNs" node="7jWvwQURq1G" resolve="B1" />
+      <node concept="1m$dGx" id="7jWvwQURq2q" role="1m$dGE" />
+    </node>
+    <node concept="1m$dNz" id="7jWvwQURq2k" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQURq1G" resolve="B1" />
+      <ref role="1m$dNs" node="7jWvwQURq1J" resolve="C1" />
+      <node concept="1m$dGx" id="7jWvwQURq2t" role="1m$dGE" />
+    </node>
+    <node concept="1m$dNz" id="7jWvwQURq2w" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQURq1J" resolve="C1" />
+      <ref role="1m$dNs" node="7jWvwQURq1N" resolve="D1" />
+      <node concept="1m$dGx" id="7jWvwQURq2C" role="1m$dGE" />
+    </node>
+    <node concept="1m$dNz" id="7jWvwQURq2F" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQURq1N" resolve="D1" />
+      <ref role="1m$dNs" node="7jWvwQURq1S" resolve="E1" />
+      <node concept="1m$dGx" id="7jWvwQURq2P" role="1m$dGE" />
+    </node>
+    <node concept="1m$dNz" id="7jWvwQURq2S" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQURq22" resolve="A2" />
+      <ref role="1m$dNs" node="7jWvwQURq21" resolve="B2" />
+      <node concept="1m$dGz" id="7jWvwQURq34" role="1m$dGE" />
+    </node>
+    <node concept="1m$dNz" id="7jWvwQURq37" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQURq21" resolve="B2" />
+      <ref role="1m$dNs" node="7jWvwQURq20" resolve="C2" />
+      <node concept="1m$dGz" id="7jWvwQURq3l" role="1m$dGE" />
+    </node>
+    <node concept="1m$dNz" id="7jWvwQURq3o" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQURq20" resolve="C2" />
+      <ref role="1m$dNs" node="7jWvwQURq1Z" resolve="D2" />
+      <node concept="1m$dGz" id="7jWvwQURq3C" role="1m$dGE" />
+    </node>
+    <node concept="1m$dNz" id="7jWvwQURq3F" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQURq1Z" resolve="D2" />
+      <ref role="1m$dNs" node="7jWvwQURq1Y" resolve="E2" />
+      <node concept="1m$dGz" id="7jWvwQURq3X" role="1m$dGE" />
+    </node>
+    <node concept="1m$dNz" id="7jWvwQURq40" role="1m$dJi">
+      <ref role="1m$dNy" node="7jWvwQURq1Y" resolve="E2" />
+      <ref role="1m$dNs" node="7jWvwQURq1E" resolve="A1" />
+      <node concept="1m$dGw" id="7jWvwQURq4k" role="1m$dGE" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQURq1E" role="1m$dN$">
+      <property role="TrG5h" value="A1" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQURq1G" role="1m$dN$">
+      <property role="TrG5h" value="B1" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQURq1J" role="1m$dN$">
+      <property role="TrG5h" value="C1" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQURq1N" role="1m$dN$">
+      <property role="TrG5h" value="D1" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQURq1S" role="1m$dN$">
+      <property role="TrG5h" value="E1" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQURq22" role="1m$dN$">
+      <property role="TrG5h" value="A2" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQURq21" role="1m$dN$">
+      <property role="TrG5h" value="B2" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQURq20" role="1m$dN$">
+      <property role="TrG5h" value="C2" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQURq1Z" role="1m$dN$">
+      <property role="TrG5h" value="D2" />
+    </node>
+    <node concept="1m$dNA" id="7jWvwQURq1Y" role="1m$dN$">
       <property role="TrG5h" value="E2" />
     </node>
   </node>
