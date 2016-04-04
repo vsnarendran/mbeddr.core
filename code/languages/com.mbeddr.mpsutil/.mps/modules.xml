@@ -42,6 +42,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.grammarcells.runtimelang/com.mbeddr.mpsutil.grammarcells.runtimelang.mpl" folder="grammarCells" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.grammarcells.sandboxlang/com.mbeddr.mpsutil.grammarcells.sandboxlang.mpl" folder="grammarCells" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.grammarcells/com.mbeddr.mpsutil.grammarcells.mpl" folder="grammarCells" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.graphLayout/com.mbeddr.mpsutil.graphLayout.mpl" folder="dependencyVisualizer" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.httpsupport/com.mbeddr.mpsutil.httpsupport.mpl" folder="httpSupport" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.hyperlink/com.mbeddr.mpsutil.hyperlink.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.iconchar/com.mbeddr.mpsutil.iconchar.mpl" folder="iconchar" />
@@ -114,6 +115,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.datepicker.sandbox.demo/com.mbeddr.mpsutil.datepicker.sandbox.demo.msd" folder="datePicker" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.dependenciesdiagram.sandbox/com.mbeddr.mpsutil.dependenciesdiagram.sandbox.msd" folder="dependenciesdiagram" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.dependencyVisualizer.runtime/com.mbeddr.mpsutil.dependencyVisualizer.runtime.msd" folder="dependencyVisualizer" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.diagramLayout.runtime/com.mbeddr.mpsutil.diagramLayout.runtime.msd" folder="dependencyVisualizer" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editingGuide.execution/com.mbeddr.mpsutil.editingGuide.execution.msd" folder="editingGuide" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editingGuide.plugin/com.mbeddr.mpsutil.editingGuide.plugin.msd" folder="editingGuide" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editingGuide.runtime/com.mbeddr.mpsutil.editingGuide.runtime.msd" folder="editingGuide" />
@@ -174,6 +176,7 @@
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.javainterpreter.test/com.mbeddr.mpsutil.javainterpreter.test.mpl" folder="javainterpreter" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.compare/test.com.mbeddr.mpsutil.compare.msd" folder="comparator" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.dependencyVisualizer/test.com.mbeddr.mpsutil.dependencyVisualizer.msd" folder="dependencyVisualizer" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.diagramLayout/test.com.mbeddr.mpsutil.diagramLayout.msd" folder="dependencyVisualizer" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.extensionclass/test.com.mbeddr.mpsutil.extensionclass.msd" folder="extensionclass" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.iconchar.test/test.com.mbeddr.mpsutil.iconchar.test.msd" folder="iconchar" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.iconchar/test.com.mbeddr.mpsutil.iconchar.mpl" folder="iconchar" />

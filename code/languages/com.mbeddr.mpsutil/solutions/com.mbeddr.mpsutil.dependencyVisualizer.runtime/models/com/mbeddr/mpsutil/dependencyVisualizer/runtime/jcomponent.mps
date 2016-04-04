@@ -84,6 +84,7 @@
         <property id="6468716278899125786" name="isTransient" index="2dld4O" />
       </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
+      <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -375,6 +376,9 @@
       <node concept="3cqZAl" id="3OZdNPFG1XU" role="3clF45" />
       <node concept="3Tm1VV" id="3OZdNPFG1XV" role="1B3o_S" />
       <node concept="3clFbS" id="3OZdNPFG1XW" role="3clF47">
+        <node concept="XkiVB" id="7jWvwQV0U7T" role="3cqZAp">
+          <ref role="37wK5l" to="dxuu:~JPanel.&lt;init&gt;()" resolve="JPanel" />
+        </node>
         <node concept="3clFbF" id="3OZdNPFGunc" role="3cqZAp">
           <node concept="2OqwBi" id="3OZdNPFGuY1" role="3clFbG">
             <node concept="2OqwBi" id="3OZdNPFLH$C" role="2Oq$k0">
