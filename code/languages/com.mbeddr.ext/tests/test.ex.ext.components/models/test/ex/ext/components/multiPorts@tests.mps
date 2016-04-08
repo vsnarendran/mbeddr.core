@@ -105,6 +105,7 @@
         <child id="6275792049641587288" name="expr" index="c0Tn6" />
       </concept>
       <concept id="7955188678846741606" name="com.mbeddr.core.unittest.structure.TestCollection" flags="ng" index="lIfQi">
+        <property id="8499024683960415454" name="entrypoint" index="3HjyOP" />
         <child id="7955188678846741609" name="tests" index="lIfQt" />
       </concept>
       <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
@@ -254,15 +255,15 @@
         <property role="3Ewwow" value="true" />
       </node>
     </node>
-    <node concept="12mU2y" id="5B69dDbeJF9" role="2Q9xDr">
-      <node concept="3GpDuo" id="5B69dDbeJFa" role="3GpDut" />
-    </node>
     <node concept="2eOfOl" id="2ZUGF54kkxD" role="2ePNbc">
       <property role="iO3LB" value="true" />
       <property role="TrG5h" value="MultiPort" />
       <node concept="2v9HqM" id="2ZUGF54kkxE" role="2eOfOg">
         <ref role="2v9HqP" node="2ZUGF54kkwF" resolve="MultiPort" />
       </node>
+    </node>
+    <node concept="12mU2y" id="5B69dDbeJF9" role="2Q9xDr">
+      <node concept="3GpDuo" id="5B69dDbeJFa" role="3GpDut" />
     </node>
   </node>
   <node concept="N3F5e" id="2ZUGF54kkwF">
@@ -693,6 +694,8 @@
     </node>
     <node concept="lIfQi" id="4Ru$s7zAIcA" role="N3F5h">
       <property role="TrG5h" value="main" />
+      <property role="2OOxQR" value="true" />
+      <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAIcB" role="lIfQt">
         <ref role="3cM6IK" node="2ZUGF54kkwS" resolve="testCase1" />
       </node>

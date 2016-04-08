@@ -90,6 +90,7 @@
         <child id="6275792049641587288" name="expr" index="c0Tn6" />
       </concept>
       <concept id="7955188678846741606" name="com.mbeddr.core.unittest.structure.TestCollection" flags="ng" index="lIfQi">
+        <property id="8499024683960415454" name="entrypoint" index="3HjyOP" />
         <child id="7955188678846741609" name="tests" index="lIfQt" />
       </concept>
       <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
@@ -235,15 +236,15 @@
       </node>
     </node>
     <node concept="0nYfV" id="6zoq5B7kj$f" role="2Q9xDr" />
-    <node concept="12mU2y" id="5B69dDbeJBp" role="2Q9xDr">
-      <node concept="3GpDuo" id="5B69dDbeJBq" role="3GpDut" />
-    </node>
     <node concept="2eOfOl" id="6zoq5B7kjv2" role="2ePNbc">
       <property role="iO3LB" value="true" />
       <property role="TrG5h" value="StaticWiringSMInComps" />
       <node concept="2v9HqM" id="6zoq5B7kjv3" role="2eOfOg">
         <ref role="2v9HqP" node="6zoq5B7kju4" resolve="StaticWiringSMInComps" />
       </node>
+    </node>
+    <node concept="12mU2y" id="5B69dDbeJBp" role="2Q9xDr">
+      <node concept="3GpDuo" id="5B69dDbeJBq" role="3GpDut" />
     </node>
   </node>
   <node concept="N3F5e" id="6zoq5B7kju4">
@@ -397,6 +398,8 @@
     </node>
     <node concept="lIfQi" id="4Ru$s7zAKRi" role="N3F5h">
       <property role="TrG5h" value="main" />
+      <property role="2OOxQR" value="true" />
+      <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAKRj" role="lIfQt">
         <ref role="3cM6IK" node="6zoq5B7kjuh" resolve="testCase1" />
       </node>

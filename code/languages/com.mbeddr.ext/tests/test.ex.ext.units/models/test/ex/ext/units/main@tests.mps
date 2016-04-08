@@ -10,7 +10,7 @@
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
     <use id="0d04a6cc-773e-4069-b9b0-11884b2ff1c8" name="com.mbeddr.ext.units" version="-1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="3" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
     <use id="06d68b77-b699-4918-83b8-857e63787800" name="com.mbeddr.core.unittest" version="-1" />
   </languages>
   <imports>
@@ -171,6 +171,7 @@
         <child id="6275792049641587288" name="expr" index="c0Tn6" />
       </concept>
       <concept id="7955188678846741606" name="com.mbeddr.core.unittest.structure.TestCollection" flags="ng" index="lIfQi">
+        <property id="8499024683960415454" name="entrypoint" index="3HjyOP" />
         <child id="7955188678846741609" name="tests" index="lIfQt" />
       </concept>
       <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.TestCaseConfigItem" flags="ng" index="12mU2y">
@@ -238,9 +239,6 @@
       <node concept="2Q9FjX" id="7j7F_4ow9iB" role="2Q9FjI" />
     </node>
     <node concept="2eh4Hv" id="4CUqBF4znbX" role="2Q9xDr" />
-    <node concept="12mU2y" id="5B69dDbeJIy" role="2Q9xDr">
-      <node concept="3GpDuo" id="5B69dDbeJIz" role="3GpDut" />
-    </node>
     <node concept="2eOfOl" id="7j7F_4ow9iC" role="2ePNbc">
       <property role="TrG5h" value="UnitsTests" />
       <property role="iO3LB" value="true" />
@@ -256,6 +254,9 @@
       <node concept="2v9HqM" id="7j7F_4ow9iG" role="2eOfOg">
         <ref role="2v9HqP" node="7j7F_4owjDf" resolve="MetaMethods" />
       </node>
+    </node>
+    <node concept="12mU2y" id="5B69dDbeJIy" role="2Q9xDr">
+      <node concept="3GpDuo" id="5B69dDbeJIz" role="3GpDut" />
     </node>
   </node>
   <node concept="N3F5e" id="7j7F_4owc9c">
@@ -1373,6 +1374,8 @@
     <property role="TrG5h" value="UnitsTests" />
     <node concept="lIfQi" id="4Ru$s7zAHU2" role="N3F5h">
       <property role="TrG5h" value="main" />
+      <property role="2OOxQR" value="true" />
+      <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAHU3" role="lIfQt">
         <ref role="3cM6IK" node="7j7F_4owgu3" resolve="expressionsTest" />
       </node>
