@@ -6,7 +6,10 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="hypd" ref="r:aa31e43e-9240-4f4d-b6db-5c1c9a86c59e(jetbrains.mps.lang.project.structure)" />
+    <import index="tpf8" ref="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -136,6 +139,28 @@
     <property role="34LRSv" value="&gt;" />
     <property role="3GE5qa" value="relationshipKind" />
     <ref role="1TJDcQ" node="3OZdNPFFYKk" resolve="AbstractRelationshipKind" />
+  </node>
+  <node concept="1TIwiD" id="1YJobrHZMK$">
+    <property role="1pbfSe" value="229543130" />
+    <property role="TrG5h" value="GeneratorElement" />
+    <ref role="1TJDcQ" node="3OZdNPFFYJr" resolve="Element" />
+    <node concept="1TJgyj" id="1YJobrI0rFR" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="generator" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tp25:nJmxU5cSyN" resolve="ModulePointer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1YJobrI0yeJ">
+    <property role="1pbfSe" value="229737573" />
+    <property role="TrG5h" value="MappingConfigElement" />
+    <ref role="1TJDcQ" node="3OZdNPFFYJr" resolve="Element" />
+    <node concept="1TJgyj" id="1YJobrI0yeN" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="mappingConfig" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpf8:fWbUwhP" resolve="MappingConfiguration" />
+    </node>
   </node>
 </model>
 

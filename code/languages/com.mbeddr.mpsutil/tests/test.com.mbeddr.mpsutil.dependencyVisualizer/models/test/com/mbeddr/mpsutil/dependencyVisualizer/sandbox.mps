@@ -4,7 +4,9 @@
   <languages>
     <use id="45ffe68b-81ce-44cc-954e-0537affc934b" name="com.mbeddr.mpsutil.dependencyVisualizer" version="0" />
   </languages>
-  <imports />
+  <imports>
+    <import index="rorr" ref="r:0e2d0780-27a1-4dda-a429-65b192261fcc(com.mbeddr.mpsutil.grammarcells.generator.template.main@generator)" />
+  </imports>
   <registry>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -26,6 +28,9 @@
       <concept id="4413306896785599446" name="com.mbeddr.mpsutil.dependencyVisualizer.structure.DependencyDiagram" flags="ng" index="1m$dNF">
         <child id="4413306896785599727" name="relationships" index="1m$dJi" />
         <child id="4413306896785599449" name="elements" index="1m$dN$" />
+      </concept>
+      <concept id="2283149874893562799" name="com.mbeddr.mpsutil.dependencyVisualizer.structure.MappingConfigElement" flags="ng" index="3LFkcp">
+        <reference id="2283149874893562803" name="mappingConfig" index="3LFkc5" />
       </concept>
     </language>
   </registry>
@@ -519,6 +524,39 @@
     </node>
     <node concept="1m$dNA" id="7jWvwQURq1Y" role="1m$dN$">
       <property role="TrG5h" value="E2" />
+    </node>
+  </node>
+  <node concept="1m$dNF" id="1YJobrI0qqi">
+    <property role="TrG5h" value="Generators" />
+    <node concept="3LFkcp" id="1YJobrI0IGt" role="1m$dN$">
+      <ref role="3LFkc5" to="rorr:6oKG1kMy3o4" resolve="mc_actionsAspect" />
+    </node>
+    <node concept="3LFkcp" id="1YJobrI0zu8" role="1m$dN$">
+      <ref role="3LFkc5" to="rorr:73X2hQ54SYI" resolve="mc02_inlineComponents" />
+    </node>
+    <node concept="3LFkcp" id="1YJobrI0IGv" role="1m$dN$">
+      <ref role="3LFkc5" to="rorr:4qdNcHzYxmh" resolve="mc03_preprocess_OptionCell" />
+    </node>
+    <node concept="3LFkcp" id="1YJobrI0IGx" role="1m$dN$">
+      <ref role="3LFkc5" to="rorr:6hg40VOMPfr" resolve="mc03_deleteActions" />
+    </node>
+    <node concept="3LFkcp" id="1YJobrI0IGs" role="1m$dN$">
+      <ref role="3LFkc5" to="rorr:1x69AmkdXZz" resolve="mc04_cells" />
+    </node>
+    <node concept="3LFkcp" id="1YJobrI0IGu" role="1m$dN$">
+      <ref role="3LFkc5" to="rorr:6oKG1kMyAVE" resolve="mc05_actionsInEditor" />
+    </node>
+    <node concept="3LFkcp" id="1YJobrI0IGw" role="1m$dN$">
+      <ref role="3LFkc5" to="rorr:6hg40VOLJrI" resolve="mc06_preprocess_inlineActions" />
+    </node>
+    <node concept="3LFkcp" id="1YJobrI0IGy" role="1m$dN$">
+      <ref role="3LFkc5" to="rorr:77A3HzrCsmh" resolve="mc07_inlineActions" />
+    </node>
+    <node concept="3LFkcp" id="1YJobrI0IGz" role="1m$dN$">
+      <ref role="3LFkc5" to="rorr:77A3HzrKGcK" resolve="mc08_fixRenderingCondition" />
+    </node>
+    <node concept="3LFkcp" id="1YJobrI0IG$" role="1m$dN$">
+      <ref role="3LFkc5" to="rorr:3pFNVizFeDW" resolve="mc09_splittableCell" />
     </node>
   </node>
 </model>
