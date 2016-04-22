@@ -2659,9 +2659,6 @@
       <node concept="m$_yC" id="4be$WTb1MZJ" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
-      <node concept="m$_yC" id="3FRjz$vnjn1" role="m$_yJ">
-        <ref role="m$_y1" node="2Xjt3l57iTJ" resolve="de.slisson.mps.hacks" />
-      </node>
       <node concept="m$_yC" id="7oiNWZV8BUc" role="m$_yJ">
         <ref role="m$_y1" node="4p3FRivDLPy" resolve="org.apache.commons" />
       </node>
@@ -2769,12 +2766,6 @@
           <node concept="3bR9La" id="tUmIYfjym8" role="1SiIV1">
             <property role="3bR36h" value="true" />
             <ref role="3bR37D" node="48DYfEtkinT" resolve="de.itemis.mps.editor.collapsible.runtime" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="tUmIYfjym9" role="3bR37C">
-          <node concept="3bR9La" id="tUmIYfjyma" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="64TsoMQT2qP" resolve="de.slisson.mps.hacks.editor" />
           </node>
         </node>
         <node concept="1SiIV0" id="3vzyAKEK89Z" role="3bR37C">

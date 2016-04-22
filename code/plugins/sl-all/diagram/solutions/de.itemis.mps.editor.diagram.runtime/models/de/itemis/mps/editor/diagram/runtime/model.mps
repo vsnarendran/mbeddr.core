@@ -40,7 +40,6 @@
     <import index="j1kf" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:de.cau.cs.kieler.kiml.options(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="e8no" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.containers(MPS.IDEA/)" />
     <import index="xnls" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.icons(MPS.Platform/)" />
-    <import index="kvq8" ref="r:2e938759-cfd0-47cd-9046-896d85204f59(de.slisson.mps.hacks.editor)" />
     <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
     <import index="r3rm" ref="r:7fc96130-6279-4a55-aeeb-422a6879539d(de.itemis.mps.editor.diagram.runtime.jgraph)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
@@ -23392,21 +23391,21 @@
           </node>
         </node>
         <node concept="3clFbH" id="5fq$Y9Wl3Ip" role="3cqZAp" />
-        <node concept="3clFbF" id="7oq1PhPcYc9" role="3cqZAp">
-          <node concept="2YIFZM" id="7oq1PhPcYip" role="3clFbG">
-            <ref role="37wK5l" to="kvq8:7oq1PhPcG78" resolve="noCaching" />
-            <ref role="1Pybhc" to="kvq8:7oq1PhPcFua" resolve="EditorCacheHacks" />
-            <node concept="2OqwBi" id="7oq1PhPcYyb" role="37wK5m">
-              <node concept="37vLTw" id="7oq1PhPcYpH" role="2Oq$k0">
+        <node concept="3clFbF" id="6Ku7D28ulYg" role="3cqZAp">
+          <node concept="2YIFZM" id="6Ku7D28umyn" role="3clFbG">
+            <ref role="37wK5l" to="2o4v:7oq1PhPcG78" resolve="noCaching" />
+            <ref role="1Pybhc" to="2o4v:1sJnak6wM3n" resolve="EditorUtil" />
+            <node concept="2OqwBi" id="6Ku7D28untk" role="37wK5m">
+              <node concept="37vLTw" id="6Ku7D28umW5" role="2Oq$k0">
                 <ref role="3cqZAo" node="641jOpdC0Ad" resolve="myEditorComponent" />
               </node>
-              <node concept="liA8E" id="7oq1PhPcYP8" role="2OqNvi">
+              <node concept="liA8E" id="6Ku7D28unxL" role="2OqNvi">
                 <ref role="37wK5l" to="cj4x:~EditorComponent.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
               </node>
             </node>
-            <node concept="1bVj0M" id="7oq1PhPcZ4n" role="37wK5m">
+            <node concept="1bVj0M" id="6Ku7D28unS$" role="37wK5m">
               <property role="3yWfEV" value="true" />
-              <node concept="3clFbS" id="7oq1PhPcZ4p" role="1bW5cS">
+              <node concept="3clFbS" id="6Ku7D28unSA" role="1bW5cS">
                 <node concept="3clFbF" id="Pf_Owigpms" role="3cqZAp">
                   <node concept="37vLTI" id="Pf_Owigpmu" role="3clFbG">
                     <node concept="37vLTw" id="Pf_OwigqjE" role="37vLTJ">
@@ -23439,6 +23438,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="6Ku7D28h8oC" role="3cqZAp" />
         <node concept="3clFbF" id="Pf_OwigwtE" role="3cqZAp">
           <node concept="37vLTI" id="Pf_OwigwtG" role="3clFbG">
             <node concept="1rXfSq" id="641jOpdC1hV" role="37vLTx">
