@@ -79,7 +79,6 @@
         <child id="1562714432501166206" name="keystroke" index="Zd501" />
       </concept>
       <concept id="1562714432501166197" name="jetbrains.mps.lang.plugin.structure.KeymapChangesDeclaration" flags="ng" index="Zd50a">
-        <property id="1562714432501166281" name="keymap" index="Zd52Q" />
         <child id="1562714432501166199" name="shortcutChange" index="Zd508" />
       </concept>
       <concept id="6193305307616715384" name="jetbrains.mps.lang.plugin.structure.ShortcutChange" flags="lg" index="1bYyw_">
@@ -667,7 +666,6 @@
   </node>
   <node concept="Zd50a" id="5K7KC_qu7y_">
     <property role="TrG5h" value="DiagramKeymap" />
-    <property role="Zd52Q" value="$default" />
     <node concept="Zd509" id="5K7KC_qu7$D" role="Zd508">
       <ref role="1bYAoF" node="5K7KC_qu7$R" resolve="RotateBoxClockwiseAction" />
       <node concept="pLAjd" id="5K7KC_qu7$E" role="Zd501">
@@ -1779,8 +1777,8 @@
       <node concept="3clFbS" id="7tfNqqCmxXo" role="2VODD2">
         <node concept="3clFbF" id="7tfNqqCmT_Q" role="3cqZAp">
           <node concept="2YIFZM" id="7tfNqqCmTAy" role="3clFbG">
-            <ref role="37wK5l" node="7tfNqqCmxkl" resolve="zoomOut" />
             <ref role="1Pybhc" node="5IQEFjDGWsk" resolve="DiagramIdeaActionsUtil" />
+            <ref role="37wK5l" node="7tfNqqCmxkl" resolve="zoomOut" />
             <node concept="2OqwBi" id="7tfNqqCmTB3" role="37wK5m">
               <node concept="2WthIp" id="7tfNqqCmTB6" role="2Oq$k0" />
               <node concept="1DTwFV" id="7tfNqqCmTB8" role="2OqNvi">
