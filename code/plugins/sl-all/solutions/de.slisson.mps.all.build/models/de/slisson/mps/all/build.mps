@@ -2668,9 +2668,6 @@
       <node concept="m$_yC" id="4opyGmdCDDq" role="m$_yJ">
         <ref role="m$_y1" node="6Y0V2RJk3uw" resolve="de.itemis.mps.selection" />
       </node>
-      <node concept="m$_yC" id="1x69Amk7MyO" role="m$_yJ">
-        <ref role="m$_y1" node="7klUZA6XM5S" resolve="de.slisson.mps.conditionalEditor" />
-      </node>
       <node concept="3_J27D" id="4be$WTb1MZK" role="m_cZH">
         <node concept="3Mxwew" id="4be$WTb1MZL" role="3MwsjC">
           <property role="3MwjfP" value="de.itemis.mps.editor.diagram" />
@@ -3115,16 +3112,16 @@
             <ref role="1Busuk" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="1bs45UrTjqO" role="3bR37C">
-          <node concept="3bR9La" id="1bs45UrTjqP" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="7klUZA6XM5K" resolve="de.slisson.mps.conditionalEditor.runtime" />
-          </node>
-        </node>
         <node concept="1yeLz9" id="56Tfdun3v$J" role="1TViLv">
           <property role="TrG5h" value="de.itemis.mps.editor.diagram.layout#4341402299005877448" />
           <property role="3LESm3" value="50fd4dec-4494-4a71-a0ca-d35c48af6670" />
           <property role="2GAjPV" value="false" />
+        </node>
+        <node concept="1SiIV0" id="6Ku7D28u6L0" role="3bR37C">
+          <node concept="3bR9La" id="6Ku7D28u6L1" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
         </node>
       </node>
       <node concept="3LEwk6" id="5kDpuTS3hez" role="2G$12L">
