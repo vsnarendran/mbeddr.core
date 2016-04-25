@@ -5,6 +5,7 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -26,6 +27,7 @@
     <import index="ddhc" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide(MPS.IDEA/)" />
     <import index="kcid" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cellLayout(MPS.Editor/)" />
     <import index="y49u" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.util(MPS.OpenAPI/)" />
+    <import index="72w0" ref="r:61b03960-04c3-48f0-a2c2-a612bc4477e2(de.itemis.mps.tooltips.runtime.plugin)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -241,6 +243,12 @@
       </concept>
       <concept id="8064396509828172209" name="jetbrains.mps.baseLanguage.structure.UnaryMinus" flags="nn" index="1ZRNhn" />
     </language>
+    <language id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension">
+      <concept id="6626851894249711936" name="jetbrains.mps.lang.extension.structure.ExtensionPointExpression" flags="nn" index="2O5UvJ">
+        <reference id="6626851894249712469" name="extensionPoint" index="2O5UnU" />
+      </concept>
+      <concept id="3175313036448560967" name="jetbrains.mps.lang.extension.structure.GetExtensionObjectsOperation" flags="nn" index="SfwO_" />
+    </language>
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
       <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
       <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
@@ -260,6 +268,14 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
+        <child id="1153944400369" name="variable" index="2Gsz3X" />
+        <child id="1153944424730" name="inputSequence" index="2GsD0m" />
+      </concept>
+      <concept id="1153944193378" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" flags="nr" index="2GrKxI" />
+      <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
+        <reference id="1153944258490" name="variable" index="2Gs0qQ" />
+      </concept>
       <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
         <child id="1197683466920" name="keyType" index="3rvQeY" />
         <child id="1197683475734" name="valueType" index="3rvSg0" />
@@ -1308,6 +1324,12 @@
     <node concept="3clFb_" id="6zKSYRPTLHX" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getTooltipAt" />
+      <node concept="37vLTG" id="3U3HBtqMh3W" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="3U3HBtqMhF$" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
       <node concept="37vLTG" id="6zKSYRPTLHY" role="3clF46">
         <property role="TrG5h" value="x" />
         <node concept="10Oyi0" id="6zKSYRPTLHZ" role="1tU5fm" />
@@ -3246,6 +3268,14 @@
                       </node>
                       <node concept="liA8E" id="6zKSYRPUgGj" role="2OqNvi">
                         <ref role="37wK5l" node="6zKSYRPTHQR" resolve="getTooltipAt" />
+                        <node concept="2OqwBi" id="3U3HBtqQRgf" role="37wK5m">
+                          <node concept="37vLTw" id="3U3HBtqQQAr" role="2Oq$k0">
+                            <ref role="3cqZAo" node="7XU1fOGmt3q" resolve="myEditorComponent" />
+                          </node>
+                          <node concept="liA8E" id="3U3HBtqQSRp" role="2OqNvi">
+                            <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext():jetbrains.mps.nodeEditor.EditorContext" resolve="getEditorContext" />
+                          </node>
+                        </node>
                         <node concept="37vLTw" id="6zKSYRPUgGk" role="37wK5m">
                           <ref role="3cqZAo" node="7XU1fOGney3" resolve="x" />
                         </node>
@@ -3335,6 +3365,66 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="3U3HBtqLF5_" role="3cqZAp" />
+        <node concept="2Gpval" id="3U3HBtqLIHd" role="3cqZAp">
+          <node concept="2GrKxI" id="3U3HBtqLIHf" role="2Gsz3X">
+            <property role="TrG5h" value="provider" />
+          </node>
+          <node concept="3clFbS" id="3U3HBtqLIHh" role="2LFqv$">
+            <node concept="3cpWs8" id="3U3HBtqLKgW" role="3cqZAp">
+              <node concept="3cpWsn" id="3U3HBtqLKgX" role="3cpWs9">
+                <property role="TrG5h" value="tooltip" />
+                <node concept="3uibUv" id="3U3HBtqLKgI" role="1tU5fm">
+                  <ref role="3uigEE" node="6zKSYRPT1To" resolve="ITooltip" />
+                </node>
+                <node concept="2OqwBi" id="3U3HBtqLKgY" role="33vP2m">
+                  <node concept="2GrUjf" id="3U3HBtqLKgZ" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="3U3HBtqLIHf" resolve="provider" />
+                  </node>
+                  <node concept="liA8E" id="3U3HBtqLKh0" role="2OqNvi">
+                    <ref role="37wK5l" node="6zKSYRPTHQR" resolve="getTooltipAt" />
+                    <node concept="2OqwBi" id="3U3HBtqQTp4" role="37wK5m">
+                      <node concept="37vLTw" id="3U3HBtqQTp5" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7XU1fOGmt3q" resolve="myEditorComponent" />
+                      </node>
+                      <node concept="liA8E" id="3U3HBtqQTp6" role="2OqNvi">
+                        <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext():jetbrains.mps.nodeEditor.EditorContext" resolve="getEditorContext" />
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="3U3HBtqLKh1" role="37wK5m">
+                      <ref role="3cqZAo" node="7XU1fOGney3" resolve="x" />
+                    </node>
+                    <node concept="37vLTw" id="3U3HBtqLKh2" role="37wK5m">
+                      <ref role="3cqZAo" node="7XU1fOGnf8y" resolve="y" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="3U3HBtqLKsJ" role="3cqZAp">
+              <node concept="3clFbS" id="3U3HBtqLKsL" role="3clFbx">
+                <node concept="3cpWs6" id="3U3HBtqLKVs" role="3cqZAp">
+                  <node concept="37vLTw" id="3U3HBtqLLzd" role="3cqZAk">
+                    <ref role="3cqZAo" node="3U3HBtqLKgX" resolve="tooltip" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3y3z36" id="3U3HBtqLKHd" role="3clFbw">
+                <node concept="10Nm6u" id="3U3HBtqLKMF" role="3uHU7w" />
+                <node concept="37vLTw" id="3U3HBtqLKBq" role="3uHU7B">
+                  <ref role="3cqZAo" node="3U3HBtqLKgX" resolve="tooltip" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3U3HBtqLJfK" role="2GsD0m">
+            <node concept="2O5UvJ" id="3U3HBtqLJfL" role="2Oq$k0">
+              <ref role="2O5UnU" to="72w0:3U3HBtqLDIO" resolve="TooltipProviderExtension" />
+            </node>
+            <node concept="SfwO_" id="3U3HBtqLJfM" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="3U3HBtqLFzy" role="3cqZAp" />
         <node concept="3cpWs6" id="7XU1fOGnlDQ" role="3cqZAp">
           <node concept="10Nm6u" id="7XU1fOGnmY2" role="3cqZAk" />
         </node>
@@ -3875,6 +3965,12 @@
     <node concept="3clFb_" id="6zKSYRPTHQR" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getTooltipAt" />
+      <node concept="37vLTG" id="3U3HBtqM9ys" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="3U3HBtqM9AC" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
       <node concept="37vLTG" id="6zKSYRPTIiU" role="3clF46">
         <property role="TrG5h" value="x" />
         <node concept="10Oyi0" id="6zKSYRPTIne" role="1tU5fm" />

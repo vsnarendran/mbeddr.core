@@ -28,6 +28,7 @@
       <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.styles.mpl" folder="layout.topdown" />
       <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.editor.celllayout.sandboxlang/de.itemis.mps.editor.celllayout.sandboxlang.mpl" folder="layout.topdown.sandbox" />
       <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.editor.celllayout/de.itemis.mps.editor.celllayout.mpl" folder="layout.topdown" />
+      <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.editor.diagram.tooltip/de.itemis.mps.editor.diagram.tooltip.mpl" folder="diagram" />
       <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.editor.dropdown.demolang/de.itemis.mps.editor.dropdown.demolang.mpl" folder="dropdown" />
       <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.editor.dropdown/de.itemis.mps.editor.dropdown.mpl" folder="dropdown" />
       <modulePath path="$PROJECT_DIR$/languages/de.itemis.mps.selection.intentions/de.itemis.mps.selection.intentions.mpl" folder="selection" />
@@ -73,6 +74,7 @@
       <modulePath path="$PROJECT_DIR$/mps-tables/languages/de.slisson.mps.tables/runtime/de.slisson.mps.tables.runtime.msd" folder="tables" />
       <modulePath path="$PROJECT_DIR$/mps-tables/languages/de.slisson.mps.tables/sandbox/de.slisson.mps.tables.sandbox.msd" folder="tables" />
       <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.editor.celllayout.sandbox/de.itemis.mps.editor.celllayout.sandbox.msd" folder="layout.topdown.sandbox" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.editor.diagram.tooltip.runtime/de.itemis.mps.editor.diagram.tooltip.runtime.msd" folder="diagram" />
       <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.editor.dropdown.runtime/de.itemis.mps.editor.dropdown.runtime.msd" folder="dropdown" />
       <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.editor.dropdown.sandbox/de.itemis.mps.editor.dropdown.sandbox.msd" folder="dropdown" />
       <modulePath path="$PROJECT_DIR$/solutions/de.itemis.mps.selection.runtime/de.itemis.mps.selection.runtime.msd" folder="selection" />

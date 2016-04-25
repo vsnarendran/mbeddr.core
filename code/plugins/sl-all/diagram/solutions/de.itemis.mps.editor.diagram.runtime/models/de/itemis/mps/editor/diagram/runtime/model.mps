@@ -12571,12 +12571,12 @@
     </node>
     <node concept="2tJIrI" id="1FlH1cK9i10" role="jymVt" />
     <node concept="312cEg" id="6PI4N6JwWm8" role="jymVt">
-      <property role="TrG5h" value="myTooltipCell" />
+      <property role="TrG5h" value="myTooltip" />
       <node concept="3Tm6S6" id="6PI4N6JwWm9" role="1B3o_S" />
       <node concept="3uibUv" id="7MH10IUGtWP" role="1tU5fm">
         <ref role="3uigEE" node="3FRjz$v9HRX" resolve="SerializableObjectHolder" />
-        <node concept="3uibUv" id="7MH10IUGu0l" role="11_B2D">
-          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        <node concept="3uibUv" id="3U3HBtqKjC5" role="11_B2D">
+          <ref role="3uigEE" node="3U3HBtqJyS4" resolve="ITooltip" />
         </node>
       </node>
       <node concept="2AHcQZ" id="6PI4N6JxjCp" role="2AJF6D">
@@ -13542,16 +13542,16 @@
       <ref role="3uigEE" node="2JYLxR6nEai" resolve="IConnectionEndpoint_Internal" />
     </node>
     <node concept="3clFb_" id="6PI4N6Jx3gE" role="jymVt">
-      <property role="TrG5h" value="getTooltipCell" />
-      <node concept="3uibUv" id="6PI4N6Jx3gF" role="3clF45">
-        <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+      <property role="TrG5h" value="getTooltip" />
+      <node concept="3uibUv" id="3U3HBtqKmTu" role="3clF45">
+        <ref role="3uigEE" node="3U3HBtqJyS4" resolve="ITooltip" />
       </node>
       <node concept="3Tm1VV" id="6PI4N6Jx3gG" role="1B3o_S" />
       <node concept="3clFbS" id="6PI4N6Jx3gH" role="3clF47">
         <node concept="3clFbF" id="6PI4N6Jx3gI" role="3cqZAp">
           <node concept="2EnYce" id="7MH10IUGu_o" role="3clFbG">
             <node concept="37vLTw" id="6PI4N6Jx3gD" role="2Oq$k0">
-              <ref role="3cqZAo" node="6PI4N6JwWm8" resolve="myTooltipCell" />
+              <ref role="3cqZAo" node="6PI4N6JwWm8" resolve="myTooltip" />
             </node>
             <node concept="liA8E" id="7MH10IUGuyg" role="2OqNvi">
               <ref role="37wK5l" node="3FRjz$v9I0d" resolve="get" />
@@ -13565,7 +13565,7 @@
     </node>
     <node concept="2tJIrI" id="6PI4N6JxaGr" role="jymVt" />
     <node concept="3clFb_" id="6PI4N6Jx3gK" role="jymVt">
-      <property role="TrG5h" value="setTooltipCell" />
+      <property role="TrG5h" value="setTooltip" />
       <node concept="3cqZAl" id="6PI4N6Jx3gL" role="3clF45" />
       <node concept="3Tm1VV" id="6PI4N6Jx3gM" role="1B3o_S" />
       <node concept="3clFbS" id="6PI4N6Jx3gN" role="3clF47">
@@ -13574,24 +13574,24 @@
             <node concept="2ShNRf" id="7MH10IUGuCM" role="37vLTx">
               <node concept="1pGfFk" id="7MH10IUGuCK" role="2ShVmc">
                 <ref role="37wK5l" node="3FRjz$v9HV5" resolve="SerializableObjectHolder" />
-                <node concept="3uibUv" id="7MH10IUGuCL" role="1pMfVU">
-                  <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+                <node concept="3uibUv" id="3U3HBtqKmtj" role="1pMfVU">
+                  <ref role="3uigEE" node="3U3HBtqJyS4" resolve="ITooltip" />
                 </node>
                 <node concept="37vLTw" id="7MH10IUGuEI" role="37wK5m">
-                  <ref role="3cqZAo" node="6PI4N6Jx3gR" resolve="tooltipCell" />
+                  <ref role="3cqZAo" node="6PI4N6Jx3gR" resolve="tooltip" />
                 </node>
               </node>
             </node>
             <node concept="37vLTw" id="6PI4N6Jx3gJ" role="37vLTJ">
-              <ref role="3cqZAo" node="6PI4N6JwWm8" resolve="myTooltipCell" />
+              <ref role="3cqZAo" node="6PI4N6JwWm8" resolve="myTooltip" />
             </node>
           </node>
         </node>
       </node>
       <node concept="37vLTG" id="6PI4N6Jx3gR" role="3clF46">
-        <property role="TrG5h" value="tooltipCell" />
-        <node concept="3uibUv" id="6PI4N6Jx3gS" role="1tU5fm">
-          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        <property role="TrG5h" value="tooltip" />
+        <node concept="3uibUv" id="3U3HBtqKmDc" role="1tU5fm">
+          <ref role="3uigEE" node="3U3HBtqJyS4" resolve="ITooltip" />
         </node>
         <node concept="2AHcQZ" id="6PI4N6Jxj$$" role="2AJF6D">
           <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
@@ -39591,6 +39591,67 @@
       <node concept="3clFbS" id="Xrn1RsEA2N" role="3clF47">
         <node concept="3clFbF" id="Xrn1RsEA2P" role="3cqZAp">
           <node concept="10Nm6u" id="Xrn1RsEA2O" role="3clFbG" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3HP615" id="3U3HBtqJyS4">
+    <property role="TrG5h" value="ITooltip" />
+    <node concept="3clFb_" id="3U3HBtqJA8V" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="getText" />
+      <node concept="17QB3L" id="3U3HBtqJAb8" role="3clF45" />
+      <node concept="3Tm1VV" id="3U3HBtqJA8Y" role="1B3o_S" />
+      <node concept="3clFbS" id="3U3HBtqJA8Z" role="3clF47" />
+      <node concept="2AHcQZ" id="3U3HBtqJAKi" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="3U3HBtqJyS5" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="3U3HBtqJ_Kg">
+    <property role="TrG5h" value="TextTooltip" />
+    <node concept="312cEg" id="3U3HBtqJ_XV" role="jymVt">
+      <property role="TrG5h" value="myText" />
+      <node concept="3Tm6S6" id="3U3HBtqJ_XW" role="1B3o_S" />
+      <node concept="17QB3L" id="3U3HBtqJA1L" role="1tU5fm" />
+    </node>
+    <node concept="2tJIrI" id="3U3HBtqJA2d" role="jymVt" />
+    <node concept="3Tm1VV" id="3U3HBtqJ_Kh" role="1B3o_S" />
+    <node concept="3uibUv" id="3U3HBtqJ_U3" role="EKbjA">
+      <ref role="3uigEE" node="3U3HBtqJyS4" resolve="ITooltip" />
+    </node>
+    <node concept="3clFbW" id="3U3HBtqJA2K" role="jymVt">
+      <node concept="3cqZAl" id="3U3HBtqJA2L" role="3clF45" />
+      <node concept="3Tm1VV" id="3U3HBtqJA2M" role="1B3o_S" />
+      <node concept="3clFbS" id="3U3HBtqJA2O" role="3clF47">
+        <node concept="3clFbF" id="3U3HBtqJA2S" role="3cqZAp">
+          <node concept="37vLTI" id="3U3HBtqJA2U" role="3clFbG">
+            <node concept="37vLTw" id="3U3HBtqJA2Y" role="37vLTJ">
+              <ref role="3cqZAo" node="3U3HBtqJ_XV" resolve="myText" />
+            </node>
+            <node concept="37vLTw" id="3U3HBtqJA2Z" role="37vLTx">
+              <ref role="3cqZAo" node="3U3HBtqJA2R" resolve="text" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3U3HBtqJA2R" role="3clF46">
+        <property role="TrG5h" value="text" />
+        <node concept="17QB3L" id="3U3HBtqJA2Q" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3U3HBtqJAdl" role="jymVt" />
+    <node concept="3clFb_" id="3U3HBtqJAbR" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getText" />
+      <node concept="17QB3L" id="3U3HBtqJAbS" role="3clF45" />
+      <node concept="3Tm1VV" id="3U3HBtqJAbT" role="1B3o_S" />
+      <node concept="3clFbS" id="3U3HBtqJAbV" role="3clF47">
+        <node concept="3clFbF" id="3U3HBtqJAIY" role="3cqZAp">
+          <node concept="37vLTw" id="3U3HBtqJAIX" role="3clFbG">
+            <ref role="3cqZAo" node="3U3HBtqJ_XV" resolve="myText" />
+          </node>
         </node>
       </node>
     </node>

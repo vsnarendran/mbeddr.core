@@ -1142,9 +1142,16 @@
     </node>
     <node concept="1TJgyj" id="6PI4N6JqPBN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="tooltip" />
+      <property role="20kJfa" value="tooltipCell" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="5FQFTBpPwwt" resolve="InlineEditorComponent" />
+      <node concept="asaX9" id="3U3HBtqJxul" role="lGtFl" />
+    </node>
+    <node concept="1TJgyj" id="3U3HBtqJxu6" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tooltip" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="3U3HBtqJxtm" resolve="ITooltip" />
     </node>
     <node concept="PrWs8" id="5FQFTBpX7MY" role="PzmwI">
       <ref role="PrY4T" node="5FQFTBpWGk2" resolve="IPort" />
@@ -1849,6 +1856,27 @@
     <property role="34LRSv" value="annotationNode" />
     <property role="1pbfSe" value="815730886" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="PlHQZ" id="3U3HBtqJxtm">
+    <property role="1pbfSe" value="1723740723" />
+    <property role="3GE5qa" value="port" />
+    <property role="TrG5h" value="ITooltip" />
+  </node>
+  <node concept="1TIwiD" id="3U3HBtqJxtn">
+    <property role="1pbfSe" value="1723740722" />
+    <property role="3GE5qa" value="port" />
+    <property role="TrG5h" value="TextTooltip" />
+    <property role="34LRSv" value="text" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3U3HBtqJQnC" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="text" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="3U3HBtqJxto" role="PzmwI">
+      <ref role="PrY4T" node="3U3HBtqJxtm" resolve="ITooltip" />
+    </node>
   </node>
 </model>
 

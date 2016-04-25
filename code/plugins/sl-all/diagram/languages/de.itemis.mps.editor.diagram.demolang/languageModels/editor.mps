@@ -8,6 +8,7 @@
     <use id="3bdedd09-792a-4e15-a4db-83970df3ee86" name="de.itemis.mps.editor.collapsible" version="0" />
     <use id="21063c66-85ba-4e98-839b-036445b17ae2" name="de.itemis.mps.editor.layout" version="0" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="7dcee738-441f-4b96-95f0-2ee712dc44a9" name="de.itemis.mps.editor.diagram.tooltip" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -212,6 +213,11 @@
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
     </language>
+    <language id="7dcee738-441f-4b96-95f0-2ee712dc44a9" name="de.itemis.mps.editor.diagram.tooltip">
+      <concept id="4504644676040398691" name="de.itemis.mps.editor.diagram.tooltip.structure.EditorCellTooltip" flags="ng" index="1$fq4k">
+        <child id="4504644676040398692" name="cell" index="1$fq4j" />
+      </concept>
+    </language>
     <language id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram">
       <concept id="6554619383005871291" name="de.itemis.mps.editor.diagram.structure.PortQuery" flags="ng" index="230Hcy">
         <child id="6554619383005871296" name="portFactory" index="230Hdp" />
@@ -222,7 +228,7 @@
         <child id="6554619383005758749" name="shape" index="2316E4" />
         <child id="6554619383005758751" name="positionY" index="2316E6" />
         <child id="6554619383005758750" name="positionX" index="2316E7" />
-        <child id="7885261101689690611" name="tooltip" index="321kF2" />
+        <child id="4504644676040398726" name="tooltip" index="1$fq7L" />
       </concept>
       <concept id="6554619383003875357" name="de.itemis.mps.editor.diagram.structure.InlineEditorComponent" flags="ig" index="238au4" />
       <concept id="8433227566817223068" name="de.itemis.mps.editor.diagram.structure.LayeredLayoutAlgorithm" flags="ng" index="39fpm" />
@@ -341,6 +347,9 @@
       <concept id="8637411062076624999" name="de.itemis.mps.editor.diagram.structure.Function_ConnectionTypes" flags="ig" index="1xLmZY" />
       <concept id="8637411062062623445" name="de.itemis.mps.editor.diagram.structure.Parameter_PaletteFolder_Concept" flags="ng" index="1yATlc" />
       <concept id="8637411062062430894" name="de.itemis.mps.editor.diagram.structure.Function_PaletteFolder" flags="ig" index="1yB8kR" />
+      <concept id="4504644676040398679" name="de.itemis.mps.editor.diagram.structure.TextTooltip" flags="ng" index="1$fq4w">
+        <child id="4504644676040484328" name="text" index="1$fdev" />
+      </concept>
       <concept id="2229224827675633914" name="de.itemis.mps.editor.diagram.structure.SNodeConnectionType_fromPort" flags="ng" index="1$Yqjh" />
       <concept id="2229224827675637816" name="de.itemis.mps.editor.diagram.structure.SNodeConnectionType_toPort" flags="ng" index="1$Yrgj" />
       <concept id="6987730699888898446" name="de.itemis.mps.editor.diagram.structure.LineStyle" flags="lg" index="3C0lA2">
@@ -704,18 +713,20 @@
           <node concept="3b6qkQ" id="1HYYbxG04d3" role="2316E6">
             <property role="$nhwW" value="0.3" />
           </node>
-          <node concept="238au4" id="33A4pGYQrJB" role="321kF2">
-            <node concept="3EZMnI" id="5gfY2gOvf7T" role="2wV5jI">
-              <node concept="2iRfu4" id="5gfY2gOvf7U" role="2iSdaV" />
-              <node concept="3F0ifn" id="33A4pGYQrOe" role="3EZMnx">
-                <property role="3F0ifm" value="inport" />
-              </node>
-              <node concept="1HlG4h" id="5gfY2gOvf9I" role="3EZMnx">
-                <node concept="1HfYo3" id="5gfY2gOvf9K" role="1HlULh">
-                  <node concept="3TQlhw" id="5gfY2gOvf9M" role="1Hhtcw">
-                    <node concept="3clFbS" id="5gfY2gOvf9O" role="2VODD2">
-                      <node concept="3clFbF" id="5gfY2gOvfbw" role="3cqZAp">
-                        <node concept="15kUEO" id="5gfY2gOvfbv" role="3clFbG" />
+          <node concept="1$fq4k" id="3U3HBtqQbRx" role="1$fq7L">
+            <node concept="238au4" id="3U3HBtqQbRy" role="1$fq4j">
+              <node concept="3EZMnI" id="3U3HBtqQbWH" role="2wV5jI">
+                <node concept="2iRfu4" id="3U3HBtqQbWI" role="2iSdaV" />
+                <node concept="3F0ifn" id="3U3HBtqQbWJ" role="3EZMnx">
+                  <property role="3F0ifm" value="inport" />
+                </node>
+                <node concept="1HlG4h" id="3U3HBtqQbWK" role="3EZMnx">
+                  <node concept="1HfYo3" id="3U3HBtqQbWL" role="1HlULh">
+                    <node concept="3TQlhw" id="3U3HBtqQbWM" role="1Hhtcw">
+                      <node concept="3clFbS" id="3U3HBtqQbWN" role="2VODD2">
+                        <node concept="3clFbF" id="3U3HBtqQbWO" role="3cqZAp">
+                          <node concept="15kUEO" id="3U3HBtqQbWP" role="3clFbG" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -757,6 +768,9 @@
           </node>
           <node concept="3b6qkQ" id="1HYYbxG04gU" role="2316E6">
             <property role="$nhwW" value="0.8" />
+          </node>
+          <node concept="1$fq4w" id="3U3HBtqRhPV" role="1$fq7L">
+            <node concept="15kUEO" id="3U3HBtqRhWG" role="1$fdev" />
           </node>
         </node>
       </node>
