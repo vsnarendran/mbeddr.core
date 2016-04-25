@@ -2662,6 +2662,9 @@
       <node concept="m$_yC" id="4X447PSDlG7" role="m$_yJ">
         <ref role="m$_y1" node="4p3FRivDLPy" resolve="org.apache.commons" />
       </node>
+      <node concept="m$_yC" id="4X447PSG3B5" role="m$_yJ">
+        <ref role="m$_y1" node="2Xjt3l57iTJ" resolve="de.slisson.mps.hacks" />
+      </node>
       <node concept="3_J27D" id="4X447PSDlG9" role="m_cZH">
         <node concept="3Mxwew" id="4X447PSDlGa" role="3MwsjC">
           <property role="3MwjfP" value="de.itemis.mps.editor.diagram.base" />
@@ -2855,12 +2858,6 @@
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4X447PSDVdz" role="3bR37C">
-          <node concept="3bR9La" id="4X447PSDVd$" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="48DYfEtkinT" resolve="de.itemis.mps.editor.collapsible.runtime" />
           </node>
         </node>
       </node>

@@ -11,12 +11,10 @@
     <import index="nkm5" ref="r:095345ad-6627-42ca-9d3f-fc1b2d9fbd61(de.itemis.mps.editor.diagram.runtime.model)" />
     <import index="j8b5" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:de.cau.cs.kieler.klay.tree(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="foc1" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:de.cau.cs.kieler.klay.tree.graph(de.itemis.mps.editor.diagram.runtime/)" />
-    <import index="sw7s" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:de.cau.cs.kieler.klay.force(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="z4un" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:de.cau.cs.kieler.core.alg(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="bhv4" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:de.cau.cs.kieler.core.kgraph(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="y0i8" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:de.cau.cs.kieler.kiml.klayoutdata(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="j1kf" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:de.cau.cs.kieler.kiml.options(de.itemis.mps.editor.diagram.runtime/)" />
-    <import index="9poe" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:de.cau.cs.kieler.kiml.klayoutdata.impl(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="qr9t" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:de.cau.cs.kieler.kiml.util(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="3bfh" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:de.cau.cs.kieler.klay.layered(de.itemis.mps.editor.diagram.runtime/)" />
@@ -26,20 +24,11 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="hu10" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:org.eclipse.emf.common.util(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
-    <import index="4io5" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.math3.geometry.euclidean.twod(org.apache.commons/)" />
     <import index="n86c" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:de.cau.cs.kieler.klay.layered.properties(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="98cf" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:de.cau.cs.kieler.klay.layered.p1cycles(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="8yph" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:de.cau.cs.kieler.klay.layered.p2layers(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="pn2y" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:de.cau.cs.kieler.klay.layered.p3order(de.itemis.mps.editor.diagram.runtime/)" />
-    <import index="22cg" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:de.cau.cs.kieler.klay.layered.p5edges(de.itemis.mps.editor.diagram.runtime/)" />
-    <import index="gmnx" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:de.cau.cs.kieler.klay.layered.graph(de.itemis.mps.editor.diagram.runtime/)" />
-    <import index="s336" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:de.cau.cs.kieler.klay.layered.graphimport(de.itemis.mps.editor.diagram.runtime/)" />
-    <import index="ju0a" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:de.cau.cs.kieler.klay.layered.intermediate(de.itemis.mps.editor.diagram.runtime/)" />
-    <import index="5jx8" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:de.cau.cs.kieler.klay.layered.p4nodes(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="wh7j" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:de.cau.cs.kieler.kiml.libavoid(de.itemis.mps.editor.diagram.runtime/)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
-    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="sylg" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:de.cau.cs.kieler.kiml.util.nodespacing(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="3o3z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:com.google.common.collect(MPS.Core/)" />
     <import index="nirl" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:de.cau.cs.kieler.kiml.util.adapters(de.itemis.mps.editor.diagram.runtime/)" />
