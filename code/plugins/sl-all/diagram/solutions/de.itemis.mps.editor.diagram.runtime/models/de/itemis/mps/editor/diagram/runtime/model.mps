@@ -35,7 +35,6 @@
     <import index="2o4v" ref="r:2a70cba0-4dc5-4697-986d-5cba44622d22(de.itemis.mps.editor.diagram.runtime)" />
     <import index="mpcv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.ref(JDK/)" />
     <import index="suqv" ref="r:9a28b49a-e98c-4186-a7e1-7e782b3f4fc3(de.itemis.mps.editor.diagram.layout.structure)" />
-    <import index="4io5" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.math3.geometry.euclidean.twod(org.apache.commons/)" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
     <import index="j1kf" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:de.cau.cs.kieler.kiml.options(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="e8no" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.containers(MPS.IDEA/)" />
@@ -2337,7 +2336,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="6IFcUQdzTh$" role="2OqNvi">
-                      <ref role="37wK5l" to="4io5:~Vector2D.distance(org.apache.commons.math3.geometry.Vector):double" resolve="distance" />
+                      <ref role="37wK5l" to="2o4v:~Vector2D.distance(org.apache.commons.math3.geometry.Vector):double" resolve="distance" />
                       <node concept="2OqwBi" id="6IFcUQdzTLI" role="37wK5m">
                         <node concept="37vLTw" id="6IFcUQdzTuC" role="2Oq$k0">
                           <ref role="3cqZAo" node="3cHJBdxQzF" resolve="myLastStartPoint" />
@@ -2405,7 +2404,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="6IFcUQdzXPE" role="2OqNvi">
-                      <ref role="37wK5l" to="4io5:~Vector2D.distance(org.apache.commons.math3.geometry.Vector):double" resolve="distance" />
+                      <ref role="37wK5l" to="2o4v:~Vector2D.distance(org.apache.commons.math3.geometry.Vector):double" resolve="distance" />
                       <node concept="2OqwBi" id="6IFcUQdzXPF" role="37wK5m">
                         <node concept="37vLTw" id="6IFcUQdzYFW" role="2Oq$k0">
                           <ref role="3cqZAo" node="3cHJBdxSlR" resolve="myLastEndPoint" />
@@ -3284,7 +3283,7 @@
                       <node concept="2OqwBi" id="7dJVkHcJ38Z" role="33vP2m">
                         <node concept="2ShNRf" id="4fHmSnabbhZ" role="2Oq$k0">
                           <node concept="1pGfFk" id="4fHmSnabbi0" role="2ShVmc">
-                            <ref role="37wK5l" to="4io5:~Vector2D.&lt;init&gt;(double,double)" resolve="Vector2D" />
+                            <ref role="37wK5l" to="2o4v:6NGGCRrFh26" resolve="Vector2" />
                             <node concept="3cpWsd" id="4fHmSnabbi1" role="37wK5m">
                               <node concept="2OqwBi" id="4fHmSnabbi2" role="3uHU7w">
                                 <node concept="37vLTw" id="4fHmSnabbi3" role="2Oq$k0">
@@ -3327,8 +3326,8 @@
                           <ref role="37wK5l" to="r3rm:7dJVkHcINIG" resolve="normalizeSafe" />
                         </node>
                       </node>
-                      <node concept="3uibUv" id="4fHmSnabbhY" role="1tU5fm">
-                        <ref role="3uigEE" to="4io5:~Vector2D" resolve="Vector2D" />
+                      <node concept="3uibUv" id="6NGGCRrK7CH" role="1tU5fm">
+                        <ref role="3uigEE" to="2o4v:6NGGCRrFczp" resolve="Vector2" />
                       </node>
                     </node>
                   </node>
@@ -3348,12 +3347,12 @@
                   <node concept="3cpWs8" id="4fHmSnabbim" role="3cqZAp">
                     <node concept="3cpWsn" id="4fHmSnabbin" role="3cpWs9">
                       <property role="TrG5h" value="pos" />
-                      <node concept="3uibUv" id="4fHmSnabbio" role="1tU5fm">
-                        <ref role="3uigEE" to="4io5:~Vector2D" resolve="Vector2D" />
+                      <node concept="3uibUv" id="6NGGCRrK7K0" role="1tU5fm">
+                        <ref role="3uigEE" to="2o4v:6NGGCRrFczp" resolve="Vector2" />
                       </node>
                       <node concept="2ShNRf" id="4fHmSnabbip" role="33vP2m">
                         <node concept="1pGfFk" id="4fHmSnabbiq" role="2ShVmc">
-                          <ref role="37wK5l" to="4io5:~Vector2D.&lt;init&gt;(double,double)" resolve="Vector2D" />
+                          <ref role="37wK5l" to="2o4v:6NGGCRrFh26" resolve="Vector2" />
                           <node concept="2OqwBi" id="4fHmSnabbir" role="37wK5m">
                             <node concept="37vLTw" id="4fHmSnabbis" role="2Oq$k0">
                               <ref role="3cqZAo" node="4fHmSnabbhI" resolve="pos1" />
@@ -3384,13 +3383,13 @@
                           <ref role="3cqZAo" node="4fHmSnabbin" resolve="pos" />
                         </node>
                         <node concept="liA8E" id="4fHmSnabbiA" role="2OqNvi">
-                          <ref role="37wK5l" to="4io5:~Vector2D.add(org.apache.commons.math3.geometry.Vector):org.apache.commons.math3.geometry.euclidean.twod.Vector2D" resolve="add" />
+                          <ref role="37wK5l" to="2o4v:~Vector2D.add(org.apache.commons.math3.geometry.Vector):org.apache.commons.math3.geometry.euclidean.twod.Vector2D" resolve="add" />
                           <node concept="2OqwBi" id="4fHmSnabbiB" role="37wK5m">
                             <node concept="37vLTw" id="4fHmSnabbiD" role="2Oq$k0">
                               <ref role="3cqZAo" node="4fHmSnabbhX" resolve="direction" />
                             </node>
                             <node concept="liA8E" id="4fHmSnabbiF" role="2OqNvi">
-                              <ref role="37wK5l" to="4io5:~Vector2D.scalarMultiply(double):org.apache.commons.math3.geometry.euclidean.twod.Vector2D" resolve="scalarMultiply" />
+                              <ref role="37wK5l" to="2o4v:~Vector2D.scalarMultiply(double):org.apache.commons.math3.geometry.euclidean.twod.Vector2D" resolve="scalarMultiply" />
                               <node concept="3cpWs3" id="4fHmSnabbiG" role="37wK5m">
                                 <node concept="3b6qkQ" id="4fHmSnabbiH" role="3uHU7w">
                                   <property role="$nhwW" value="6.0" />
@@ -3421,7 +3420,7 @@
                               <ref role="3cqZAo" node="4fHmSnabbin" resolve="pos" />
                             </node>
                             <node concept="liA8E" id="48DYfEsIHe7" role="2OqNvi">
-                              <ref role="37wK5l" to="4io5:~Vector2D.getX():double" resolve="getX" />
+                              <ref role="37wK5l" to="2o4v:6NGGCRrFJgf" resolve="getX" />
                             </node>
                           </node>
                           <node concept="2OqwBi" id="48DYfEsIHUi" role="37wK5m">
@@ -3429,7 +3428,7 @@
                               <ref role="3cqZAo" node="4fHmSnabbin" resolve="pos" />
                             </node>
                             <node concept="liA8E" id="48DYfEsIIxd" role="2OqNvi">
-                              <ref role="37wK5l" to="4io5:~Vector2D.getY():double" resolve="getY" />
+                              <ref role="37wK5l" to="2o4v:6NGGCRrFJWL" resolve="getY" />
                             </node>
                           </node>
                         </node>
@@ -3504,8 +3503,8 @@
                   <node concept="3cpWs8" id="4fHmSnabbk2" role="3cqZAp">
                     <node concept="3cpWsn" id="4fHmSnabbk3" role="3cpWs9">
                       <property role="TrG5h" value="direction" />
-                      <node concept="3uibUv" id="4fHmSnabbk4" role="1tU5fm">
-                        <ref role="3uigEE" to="4io5:~Vector2D" resolve="Vector2D" />
+                      <node concept="3uibUv" id="6NGGCRrKr6Q" role="1tU5fm">
+                        <ref role="3uigEE" to="2o4v:6NGGCRrFczp" resolve="Vector2" />
                       </node>
                       <node concept="2OqwBi" id="2f1F1gzq3Xn" role="33vP2m">
                         <node concept="AQDAd" id="7dJVkHcJ5H$" role="2OqNvi">
@@ -3513,7 +3512,7 @@
                         </node>
                         <node concept="2ShNRf" id="4fHmSnabbk5" role="2Oq$k0">
                           <node concept="1pGfFk" id="4fHmSnabbk6" role="2ShVmc">
-                            <ref role="37wK5l" to="4io5:~Vector2D.&lt;init&gt;(double,double)" resolve="Vector2D" />
+                            <ref role="37wK5l" to="2o4v:6NGGCRrFh26" resolve="Vector2" />
                             <node concept="3cpWsd" id="4fHmSnabbk7" role="37wK5m">
                               <node concept="2OqwBi" id="4fHmSnabbk8" role="3uHU7w">
                                 <node concept="37vLTw" id="4fHmSnabbk9" role="2Oq$k0">
@@ -3570,12 +3569,12 @@
                   <node concept="3cpWs8" id="4fHmSnabbkr" role="3cqZAp">
                     <node concept="3cpWsn" id="4fHmSnabbks" role="3cpWs9">
                       <property role="TrG5h" value="pos" />
-                      <node concept="3uibUv" id="4fHmSnabbkt" role="1tU5fm">
-                        <ref role="3uigEE" to="4io5:~Vector2D" resolve="Vector2D" />
+                      <node concept="3uibUv" id="6NGGCRrKqYP" role="1tU5fm">
+                        <ref role="3uigEE" to="2o4v:6NGGCRrFczp" resolve="Vector2" />
                       </node>
                       <node concept="2ShNRf" id="4fHmSnabbku" role="33vP2m">
                         <node concept="1pGfFk" id="4fHmSnabbkv" role="2ShVmc">
-                          <ref role="37wK5l" to="4io5:~Vector2D.&lt;init&gt;(double,double)" resolve="Vector2D" />
+                          <ref role="37wK5l" to="2o4v:6NGGCRrFh26" resolve="Vector2" />
                           <node concept="2OqwBi" id="4fHmSnabbkw" role="37wK5m">
                             <node concept="37vLTw" id="4fHmSnabbkx" role="2Oq$k0">
                               <ref role="3cqZAo" node="4fHmSnabbjG" resolve="pos1" />
@@ -3607,13 +3606,13 @@
                           <ref role="3cqZAo" node="4fHmSnabbks" resolve="pos" />
                         </node>
                         <node concept="liA8E" id="4fHmSnabbkG" role="2OqNvi">
-                          <ref role="37wK5l" to="4io5:~Vector2D.add(org.apache.commons.math3.geometry.Vector):org.apache.commons.math3.geometry.euclidean.twod.Vector2D" resolve="add" />
+                          <ref role="37wK5l" to="2o4v:~Vector2D.add(org.apache.commons.math3.geometry.Vector):org.apache.commons.math3.geometry.euclidean.twod.Vector2D" resolve="add" />
                           <node concept="2OqwBi" id="4fHmSnabbkH" role="37wK5m">
                             <node concept="37vLTw" id="4fHmSnabbkJ" role="2Oq$k0">
                               <ref role="3cqZAo" node="4fHmSnabbk3" resolve="direction" />
                             </node>
                             <node concept="liA8E" id="4fHmSnabbkL" role="2OqNvi">
-                              <ref role="37wK5l" to="4io5:~Vector2D.scalarMultiply(double):org.apache.commons.math3.geometry.euclidean.twod.Vector2D" resolve="scalarMultiply" />
+                              <ref role="37wK5l" to="2o4v:~Vector2D.scalarMultiply(double):org.apache.commons.math3.geometry.euclidean.twod.Vector2D" resolve="scalarMultiply" />
                               <node concept="3cpWs3" id="4fHmSnabbkM" role="37wK5m">
                                 <node concept="3b6qkQ" id="4fHmSnabbkN" role="3uHU7w">
                                   <property role="$nhwW" value="6.0" />
@@ -3644,7 +3643,7 @@
                               <ref role="3cqZAo" node="4fHmSnabbks" resolve="pos" />
                             </node>
                             <node concept="liA8E" id="48DYfEsIKNv" role="2OqNvi">
-                              <ref role="37wK5l" to="4io5:~Vector2D.getX():double" resolve="getX" />
+                              <ref role="37wK5l" to="2o4v:6NGGCRrFJgf" resolve="getX" />
                             </node>
                           </node>
                           <node concept="2OqwBi" id="48DYfEsIKNw" role="37wK5m">
@@ -3652,7 +3651,7 @@
                               <ref role="3cqZAo" node="4fHmSnabbks" resolve="pos" />
                             </node>
                             <node concept="liA8E" id="48DYfEsIKNy" role="2OqNvi">
-                              <ref role="37wK5l" to="4io5:~Vector2D.getY():double" resolve="getY" />
+                              <ref role="37wK5l" to="2o4v:6NGGCRrFJWL" resolve="getY" />
                             </node>
                           </node>
                         </node>
@@ -3693,12 +3692,12 @@
                   <node concept="3cpWs8" id="4fHmSnabbm4" role="3cqZAp">
                     <node concept="3cpWsn" id="4fHmSnabbm5" role="3cpWs9">
                       <property role="TrG5h" value="lastPoint" />
-                      <node concept="3uibUv" id="4fHmSnabbm6" role="1tU5fm">
-                        <ref role="3uigEE" to="4io5:~Vector2D" resolve="Vector2D" />
+                      <node concept="3uibUv" id="6NGGCRrKojj" role="1tU5fm">
+                        <ref role="3uigEE" to="2o4v:6NGGCRrFczp" resolve="Vector2" />
                       </node>
                       <node concept="2ShNRf" id="4fHmSnabbm7" role="33vP2m">
                         <node concept="1pGfFk" id="4fHmSnabbm8" role="2ShVmc">
-                          <ref role="37wK5l" to="4io5:~Vector2D.&lt;init&gt;(double,double)" resolve="Vector2D" />
+                          <ref role="37wK5l" to="2o4v:6NGGCRrFh26" resolve="Vector2" />
                           <node concept="2OqwBi" id="4fHmSnabbm9" role="37wK5m">
                             <node concept="1y4W85" id="7VHo7EBQFp2" role="2Oq$k0">
                               <node concept="3cmrfG" id="7VHo7EBQG4r" role="1y58nS">
@@ -3734,12 +3733,12 @@
                       <node concept="3cpWs8" id="4fHmSnabbmn" role="3cqZAp">
                         <node concept="3cpWsn" id="4fHmSnabbmo" role="3cpWs9">
                           <property role="TrG5h" value="point" />
-                          <node concept="3uibUv" id="4fHmSnabbmp" role="1tU5fm">
-                            <ref role="3uigEE" to="4io5:~Vector2D" resolve="Vector2D" />
+                          <node concept="3uibUv" id="6NGGCRrKqFd" role="1tU5fm">
+                            <ref role="3uigEE" to="2o4v:6NGGCRrFczp" resolve="Vector2" />
                           </node>
                           <node concept="2ShNRf" id="4fHmSnabbmq" role="33vP2m">
                             <node concept="1pGfFk" id="4fHmSnabbmr" role="2ShVmc">
-                              <ref role="37wK5l" to="4io5:~Vector2D.&lt;init&gt;(double,double)" resolve="Vector2D" />
+                              <ref role="37wK5l" to="2o4v:6NGGCRrFh26" resolve="Vector2" />
                               <node concept="2OqwBi" id="4fHmSnabbms" role="37wK5m">
                                 <node concept="1y4W85" id="7VHo7EBQNIq" role="2Oq$k0">
                                   <node concept="37vLTw" id="7VHo7EBQNW$" role="1y58nS">
@@ -3777,7 +3776,7 @@
                               <ref role="3cqZAo" node="4fHmSnabbm5" resolve="lastPoint" />
                             </node>
                             <node concept="liA8E" id="4fHmSnabbmG" role="2OqNvi">
-                              <ref role="37wK5l" to="4io5:~Vector2D.distance(org.apache.commons.math3.geometry.Vector):double" resolve="distance" />
+                              <ref role="37wK5l" to="2o4v:~Vector2D.distance(org.apache.commons.math3.geometry.Vector):double" resolve="distance" />
                               <node concept="37vLTw" id="4fHmSnabbmH" role="37wK5m">
                                 <ref role="3cqZAo" node="4fHmSnabbmo" resolve="point" />
                               </node>
@@ -3842,7 +3841,7 @@
                     <node concept="37vLTI" id="4fHmSnabbn5" role="3clFbG">
                       <node concept="2ShNRf" id="4fHmSnabbn6" role="37vLTx">
                         <node concept="1pGfFk" id="4fHmSnabbn7" role="2ShVmc">
-                          <ref role="37wK5l" to="4io5:~Vector2D.&lt;init&gt;(double,double)" resolve="Vector2D" />
+                          <ref role="37wK5l" to="2o4v:6NGGCRrFh26" resolve="Vector2" />
                           <node concept="2OqwBi" id="4fHmSnabbn8" role="37wK5m">
                             <node concept="1y4W85" id="7VHo7EBQQIs" role="2Oq$k0">
                               <node concept="3cmrfG" id="7VHo7EBQQOF" role="1y58nS">
@@ -3879,8 +3878,8 @@
                   <node concept="3cpWs8" id="4fHmSnabbnl" role="3cqZAp">
                     <node concept="3cpWsn" id="4fHmSnabbnm" role="3cpWs9">
                       <property role="TrG5h" value="defaultPos" />
-                      <node concept="3uibUv" id="4fHmSnabbnn" role="1tU5fm">
-                        <ref role="3uigEE" to="4io5:~Vector2D" resolve="Vector2D" />
+                      <node concept="3uibUv" id="6NGGCRrKgiX" role="1tU5fm">
+                        <ref role="3uigEE" to="2o4v:6NGGCRrFczp" resolve="Vector2" />
                       </node>
                       <node concept="37vLTw" id="4fHmSnabbno" role="33vP2m">
                         <ref role="3cqZAo" node="4fHmSnabbm5" resolve="lastPoint" />
@@ -3892,12 +3891,12 @@
                       <node concept="3cpWs8" id="4fHmSnabbnr" role="3cqZAp">
                         <node concept="3cpWsn" id="4fHmSnabbns" role="3cpWs9">
                           <property role="TrG5h" value="point" />
-                          <node concept="3uibUv" id="4fHmSnabbnt" role="1tU5fm">
-                            <ref role="3uigEE" to="4io5:~Vector2D" resolve="Vector2D" />
+                          <node concept="3uibUv" id="6NGGCRrKgpn" role="1tU5fm">
+                            <ref role="3uigEE" to="2o4v:6NGGCRrFczp" resolve="Vector2" />
                           </node>
                           <node concept="2ShNRf" id="4fHmSnabbnu" role="33vP2m">
                             <node concept="1pGfFk" id="4fHmSnabbnv" role="2ShVmc">
-                              <ref role="37wK5l" to="4io5:~Vector2D.&lt;init&gt;(double,double)" resolve="Vector2D" />
+                              <ref role="37wK5l" to="2o4v:6NGGCRrFh26" resolve="Vector2" />
                               <node concept="2OqwBi" id="4fHmSnabbnw" role="37wK5m">
                                 <node concept="1y4W85" id="7VHo7EBQYRa" role="2Oq$k0">
                                   <node concept="37vLTw" id="7VHo7EBQZC3" role="1y58nS">
@@ -3937,7 +3936,7 @@
                               <ref role="3cqZAo" node="4fHmSnabbm5" resolve="lastPoint" />
                             </node>
                             <node concept="liA8E" id="4fHmSnabbnL" role="2OqNvi">
-                              <ref role="37wK5l" to="4io5:~Vector2D.distance(org.apache.commons.math3.geometry.Vector):double" resolve="distance" />
+                              <ref role="37wK5l" to="2o4v:~Vector2D.distance(org.apache.commons.math3.geometry.Vector):double" resolve="distance" />
                               <node concept="37vLTw" id="4fHmSnabbnM" role="37wK5m">
                                 <ref role="3cqZAo" node="4fHmSnabbns" resolve="point" />
                               </node>
@@ -3985,7 +3984,7 @@
                                     <ref role="3cqZAo" node="4fHmSnabbm5" resolve="lastPoint" />
                                   </node>
                                   <node concept="liA8E" id="4fHmSnabbo6" role="2OqNvi">
-                                    <ref role="37wK5l" to="4io5:~Vector2D.add(org.apache.commons.math3.geometry.Vector):org.apache.commons.math3.geometry.euclidean.twod.Vector2D" resolve="add" />
+                                    <ref role="37wK5l" to="2o4v:~Vector2D.add(org.apache.commons.math3.geometry.Vector):org.apache.commons.math3.geometry.euclidean.twod.Vector2D" resolve="add" />
                                     <node concept="2OqwBi" id="4fHmSnabbo7" role="37wK5m">
                                       <node concept="2OqwBi" id="7dJVkHcJ1IU" role="2Oq$k0">
                                         <node concept="2OqwBi" id="4fHmSnabbo9" role="2Oq$k0">
@@ -3993,7 +3992,7 @@
                                             <ref role="3cqZAo" node="4fHmSnabbns" resolve="point" />
                                           </node>
                                           <node concept="liA8E" id="4fHmSnabbob" role="2OqNvi">
-                                            <ref role="37wK5l" to="4io5:~Vector2D.subtract(org.apache.commons.math3.geometry.Vector):org.apache.commons.math3.geometry.euclidean.twod.Vector2D" resolve="subtract" />
+                                            <ref role="37wK5l" to="2o4v:6NGGCRrFzcb" resolve="subtract" />
                                             <node concept="37vLTw" id="4fHmSnabboc" role="37wK5m">
                                               <ref role="3cqZAo" node="4fHmSnabbm5" resolve="lastPoint" />
                                             </node>
@@ -4004,7 +4003,7 @@
                                         </node>
                                       </node>
                                       <node concept="liA8E" id="4fHmSnabboe" role="2OqNvi">
-                                        <ref role="37wK5l" to="4io5:~Vector2D.scalarMultiply(double):org.apache.commons.math3.geometry.euclidean.twod.Vector2D" resolve="scalarMultiply" />
+                                        <ref role="37wK5l" to="2o4v:~Vector2D.scalarMultiply(double):org.apache.commons.math3.geometry.euclidean.twod.Vector2D" resolve="scalarMultiply" />
                                         <node concept="37vLTw" id="4fHmSnabbof" role="37wK5m">
                                           <ref role="3cqZAo" node="4fHmSnabbmZ" resolve="remainingLength" />
                                         </node>
@@ -4057,7 +4056,7 @@
                               <ref role="3cqZAo" node="4fHmSnabbnm" resolve="defaultPos" />
                             </node>
                             <node concept="liA8E" id="48DYfEsISnF" role="2OqNvi">
-                              <ref role="37wK5l" to="4io5:~Vector2D.getX():double" resolve="getX" />
+                              <ref role="37wK5l" to="2o4v:6NGGCRrFJgf" resolve="getX" />
                             </node>
                           </node>
                           <node concept="2OqwBi" id="48DYfEsISnG" role="37wK5m">
@@ -4065,7 +4064,7 @@
                               <ref role="3cqZAo" node="4fHmSnabbnm" resolve="defaultPos" />
                             </node>
                             <node concept="liA8E" id="48DYfEsISnI" role="2OqNvi">
-                              <ref role="37wK5l" to="4io5:~Vector2D.getY():double" resolve="getY" />
+                              <ref role="37wK5l" to="2o4v:6NGGCRrFJWL" resolve="getY" />
                             </node>
                           </node>
                         </node>
@@ -13895,15 +13894,15 @@
     <node concept="2tJIrI" id="2KWY$Un7fi6" role="jymVt" />
     <node concept="3clFb_" id="1SrfPdDfzOv" role="jymVt">
       <property role="TrG5h" value="toVector2D" />
-      <node concept="3uibUv" id="1SrfPdDfFbY" role="3clF45">
-        <ref role="3uigEE" to="4io5:~Vector2D" resolve="Vector2D" />
+      <node concept="3uibUv" id="6NGGCRrKwlu" role="3clF45">
+        <ref role="3uigEE" to="2o4v:6NGGCRrFczp" resolve="Vector2" />
       </node>
       <node concept="3Tm1VV" id="1SrfPdDfzOy" role="1B3o_S" />
       <node concept="3clFbS" id="1SrfPdDfzOz" role="3clF47">
         <node concept="3clFbF" id="1SrfPdDfG4c" role="3cqZAp">
           <node concept="2ShNRf" id="1SrfPdDfG4a" role="3clFbG">
             <node concept="1pGfFk" id="1SrfPdDfGQO" role="2ShVmc">
-              <ref role="37wK5l" to="4io5:~Vector2D.&lt;init&gt;(double,double)" resolve="Vector2D" />
+              <ref role="37wK5l" to="2o4v:6NGGCRrFh26" resolve="Vector2" />
               <node concept="37vLTw" id="1SrfPdDfGRP" role="37wK5m">
                 <ref role="3cqZAo" node="20KyIMr127N" resolve="myX" />
               </node>
@@ -31722,8 +31721,8 @@
     <node concept="ATzpf" id="7dJVkHcINIG" role="a7sos">
       <property role="TrG5h" value="normalizeSafe" />
       <node concept="3Tm1VV" id="7dJVkHcINIH" role="1B3o_S" />
-      <node concept="3uibUv" id="7dJVkHcINLN" role="3clF45">
-        <ref role="3uigEE" to="4io5:~Vector2D" resolve="Vector2D" />
+      <node concept="3uibUv" id="6NGGCRrKvM8" role="3clF45">
+        <ref role="3uigEE" to="2o4v:6NGGCRrFczp" resolve="Vector2" />
       </node>
       <node concept="3clFbS" id="7dJVkHcINIJ" role="3clF47">
         <node concept="3clFbJ" id="7dJVkHcIwOd" role="3cqZAp">
@@ -31732,7 +31731,7 @@
               <node concept="2OqwBi" id="7dJVkHcICyu" role="3cqZAk">
                 <node concept="2V_BSl" id="7dJVkHcIW_1" role="2Oq$k0" />
                 <node concept="liA8E" id="7dJVkHcIELx" role="2OqNvi">
-                  <ref role="37wK5l" to="4io5:~Vector2D.normalize():org.apache.commons.math3.geometry.euclidean.twod.Vector2D" resolve="normalize" />
+                  <ref role="37wK5l" to="2o4v:~Vector2D.normalize():org.apache.commons.math3.geometry.euclidean.twod.Vector2D" resolve="normalize" />
                 </node>
               </node>
             </node>
@@ -31744,7 +31743,7 @@
             <node concept="2OqwBi" id="7dJVkHcIwOn" role="3uHU7B">
               <node concept="2V_BSl" id="7dJVkHcIWy4" role="2Oq$k0" />
               <node concept="liA8E" id="7dJVkHcIwOp" role="2OqNvi">
-                <ref role="37wK5l" to="4io5:~Vector2D.getNorm():double" resolve="getNorm" />
+                <ref role="37wK5l" to="2o4v:~Vector2D.getNorm():double" resolve="getNorm" />
               </node>
             </node>
           </node>
@@ -31757,8 +31756,8 @@
           </node>
         </node>
       </node>
-      <node concept="3uibUv" id="7dJVkHcIQz9" role="aoRGl">
-        <ref role="3uigEE" to="4io5:~Vector2D" resolve="Vector2D" />
+      <node concept="3uibUv" id="6NGGCRrKvNG" role="aoRGl">
+        <ref role="3uigEE" to="2o4v:6NGGCRrFczp" resolve="Vector2" />
       </node>
     </node>
     <node concept="ATzpf" id="5elYBhUTfWz" role="a7sos">
