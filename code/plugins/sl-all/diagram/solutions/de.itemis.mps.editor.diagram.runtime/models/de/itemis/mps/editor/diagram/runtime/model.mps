@@ -15465,6 +15465,51 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="6NGGCRrAvjV" role="jymVt" />
+    <node concept="3clFb_" id="6NGGCRrA59I" role="jymVt">
+      <property role="TrG5h" value="getBoundsRaw" />
+      <node concept="37vLTG" id="6NGGCRrA59J" role="3clF46">
+        <property role="TrG5h" value="x" />
+        <node concept="10Oyi0" id="6NGGCRrA59K" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6NGGCRrA59L" role="3clF46">
+        <property role="TrG5h" value="y" />
+        <node concept="10Oyi0" id="6NGGCRrA59M" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6NGGCRrA59N" role="3clF46">
+        <property role="TrG5h" value="width" />
+        <node concept="10Oyi0" id="6NGGCRrA59O" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6NGGCRrA59P" role="3clF46">
+        <property role="TrG5h" value="height" />
+        <node concept="10Oyi0" id="6NGGCRrA59Q" role="1tU5fm" />
+      </node>
+      <node concept="3uibUv" id="6NGGCRrA72d" role="3clF45">
+        <ref role="3uigEE" node="190K99K1s2v" resolve="Bounds" />
+      </node>
+      <node concept="3Tm1VV" id="6NGGCRrA59S" role="1B3o_S" />
+      <node concept="3clFbS" id="6NGGCRrA59T" role="3clF47">
+        <node concept="3clFbF" id="6NGGCRrA82j" role="3cqZAp">
+          <node concept="2ShNRf" id="6NGGCRrA82f" role="3clFbG">
+            <node concept="1pGfFk" id="6NGGCRrAtmm" role="2ShVmc">
+              <ref role="37wK5l" node="190K99K1EuL" resolve="Bounds" />
+              <node concept="37vLTw" id="6NGGCRrAt_m" role="37wK5m">
+                <ref role="3cqZAo" to="g51k:~EditorCell_Basic.myX" resolve="myX" />
+              </node>
+              <node concept="37vLTw" id="6NGGCRrAtQM" role="37wK5m">
+                <ref role="3cqZAo" to="g51k:~EditorCell_Basic.myY" resolve="myY" />
+              </node>
+              <node concept="37vLTw" id="6NGGCRrAuqD" role="37wK5m">
+                <ref role="3cqZAo" to="g51k:~EditorCell_Basic.myWidth" resolve="myWidth" />
+              </node>
+              <node concept="37vLTw" id="6NGGCRrAv20" role="37wK5m">
+                <ref role="3cqZAo" to="g51k:~EditorCell_Basic.myHeight" resolve="myHeight" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="6t2q46_AGlp" role="jymVt" />
     <node concept="3clFb_" id="6sU2W7AS061" role="jymVt">
       <property role="TrG5h" value="getScale" />
