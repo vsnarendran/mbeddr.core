@@ -42,6 +42,7 @@ def platform_script = new File(scriptsBasePath + "/com.mbeddr.platform/" + "buil
 def mbeddr_script = new File(scriptsBasePath + "/com.mbeddr.build/" + "build.xml")
 def tutorial_languages_script = new File(scriptsBasePath + "/com.mbeddr.tutorial/" + "build-languages.xml")
 def tutorial_solutions_script = new File(scriptsBasePath + "/com.mbeddr.tutorial/" + "build-solutions.xml")
+def test_mbeddr_tutorial_script = new File(scriptsBasePath + "/com.mbeddr.tutorial/" + "build-tests.xml	")
 def tutorial_test_script = new File(scriptsBasePath + "/com.mbeddr.tutorial/" + "build-tests.xml")
 
 // path variables
@@ -56,11 +57,28 @@ def script_targets = ['clean', 'generate', 'assemble']
 def test_targets = ['clean', 'generate', 'assemble', 'check']
 def languages_targets = ['clean', 'generate', 'assemble']
 
-
+task retrieveMPS(type: Copy) {
+  from { 
+      configurations.mps.collect {
+       // into "myDependencies"
+        zipTree(it) 
+      } 
+  } 
+  into file("./MPS/" + mbeddrMpsDir+ "/") 
+        
+//  from configurations.mps
+//  into "myDependencies"
+//  eachFile {
+//    println '### MPS ###: ' + outputDir + ', ' + it.getFile()
+//    from zipTree(it.getFile())
+//  }
+//  into outputDir
+}
 tasks.create("build_all_scripts", Exec) {
   workingDir projectDir
   def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', all_scripts_script]
   commandLine('ant', *args, *languages_targets)
+  dependsOn retrieveMPS
 }
 tasks.create("copy_scripts", Copy) {
   from projectDir.absolutePath + "/build"
@@ -68,7 +86,7 @@ tasks.create("copy_scripts", Copy) {
   from projectDir.absolutePath + "/code/plugins"
   include "*/*.xml"
   into "scripts/"
-  dependsOn build_all_scripts
+  dependsOn retrieveMPS
 }
 tasks.create("build_sl_all", Exec) {
   workingDir projectDir
@@ -103,15 +121,13 @@ tasks.create("build_mbeddr", Exec) {
   workingDir projectDir
   def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', mbeddr_script]
   commandLine('ant', *args, *languages_targets)
-  dependsOn build_platform
+//  dependsOn build_platform
 }
-
 
 tasks.create("build_tutorial_languages", Exec) {
   workingDir projectDir
   def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', tutorial_languages_script]
   commandLine('ant', *args, *languages_targets)
-//  dependsOn build_mbeddr
 }
 tasks.create("build_tutorial_solutions", Exec) {
   workingDir projectDir
@@ -119,6 +135,20 @@ tasks.create("build_tutorial_solutions", Exec) {
   commandLine('ant', *args, *languages_targets)
   dependsOn build_tutorial_languages
 }
+
+task build_tutorial(dependsOn: build_tutorial_solutions) { }
+
+tasks.create("test_mbeddr_tutorial", Exec) {
+  workingDir projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', test_mbeddr_tutorial_script]
+  commandLine('ant', *args, *languages_targets)
+  dependsOn build_tutorial
+}
+
+
+
+
+
 tasks.create("test_tutorial", Exec) {
   workingDir projectDir
   def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', tutorial_test_script]
@@ -126,10 +156,6 @@ tasks.create("test_tutorial", Exec) {
   dependsOn build_tutorial_solutions
 }
 
-//task build_slAll(dependsOn: [load_slAllScript, 'slAll_'+GenerateCode_Task, 'slAll_java.compile.de.itemis.mps.tooltips', 'slAll_'+BuildPlugin_Task ]) { }
-//
-//task assemble_slAll(dependsOn: [load_slAllScript, 'slAll_compileJava' ]) { }
-//
 task doTestRetrieve(type: Copy) {
   from configurations.mps
   into "myDependencies"
@@ -138,6 +164,7 @@ task doTestRetrieve(type: Copy) {
     into file("./MPS")
   }
 }
+
 repositories {
   ivy {
     // change to point to your repo, e.g. http://my.org/repo
@@ -151,25 +178,6 @@ repositories {
 //		'allScripts_' + antTargetName
 //	}
 //}
-//
-//task compileTask {
-//    repositories {
-//        ivy {
-//            // change to point to your repo, e.g. http://my.org/repo
-//            url "$buildDir/repo"
-//        }
-//    }
-//
-//    configurations.compile.each { File file -> println file.name }
-//    ant.echo("compile123")
-//}
-//task build_allScripts(type: Zip
-//        //, dependsOn: ['load_allScripts', 'allScripts_'+GenerateCode_Task, 'allScripts_'+BuildPlugin_Task ]
-//        ) {
-//    from fileTree(dir: projectDir.absolutePath + "/build", include: '**/*.xml')
-//    from fileTree(dir: projectDir.absolutePath + "/code/plugins", include: '**/*.xml')
-//}
-
 
 dependencies {
   mps 'com.jetbrains:mps:3.3.4'
