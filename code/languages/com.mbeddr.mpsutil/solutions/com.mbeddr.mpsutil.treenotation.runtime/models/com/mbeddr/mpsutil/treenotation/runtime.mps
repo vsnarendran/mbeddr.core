@@ -564,8 +564,8 @@
             <node concept="_YKpA" id="3a$gLzvH7kg" role="1tU5fm">
               <node concept="3uibUv" id="3a$gLzvH7ki" role="_ZDj9">
                 <ref role="3uigEE" to="18ew:~Pair" resolve="Pair" />
-                <node concept="3uibUv" id="3a$gLzvH7kj" role="11_B2D">
-                  <ref role="3uigEE" to="g51k:~EditorCell" resolve="EditorCell" />
+                <node concept="3uibUv" id="6QGC01Ff9Ze" role="11_B2D">
+                  <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
                 </node>
                 <node concept="3uibUv" id="3a$gLzvH7kk" role="11_B2D">
                   <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
@@ -681,7 +681,7 @@
               <ref role="3cqZAo" node="3a$gLzvJDWZ" resolve="editorComponent" />
             </node>
             <node concept="liA8E" id="3a$gLzvJQj0" role="2OqNvi">
-              <ref role="37wK5l" to="exr9:~EditorComponent.setCollapseState(jetbrains.mps.nodeEditor.cells.EditorCell,java.lang.Boolean):void" resolve="setCollapseState" />
+              <ref role="37wK5l" to="exr9:~EditorComponent.setCollapseState(jetbrains.mps.openapi.editor.cells.EditorCell,java.lang.Boolean):void" resolve="setCollapseState" />
               <node concept="Xjq3P" id="3a$gLzvJQv$" role="37wK5m" />
               <node concept="3K4zz7" id="3a$gLzvLPjV" role="37wK5m">
                 <node concept="3clFbT" id="3a$gLzvLPy$" role="3K4E3e">
@@ -760,7 +760,7 @@
                 <node concept="3clFbS" id="4Q9g1gQGRTV" role="1bW5cS">
                   <node concept="3clFbF" id="4Q9g1gQGSlE" role="3cqZAp">
                     <node concept="1rXfSq" id="4Q9g1gQGT2z" role="3clFbG">
-                      <ref role="37wK5l" to="g51k:~EditorCell_Collection.removeCell(jetbrains.mps.nodeEditor.cells.EditorCell):void" resolve="removeCell" />
+                      <ref role="37wK5l" to="g51k:~EditorCell_Collection.removeCell(jetbrains.mps.openapi.editor.cells.EditorCell):void" resolve="removeCell" />
                       <node concept="37vLTw" id="4Q9g1gQGTkU" role="37wK5m">
                         <ref role="3cqZAo" node="4Q9g1gQGRTW" resolve="it" />
                       </node>
@@ -1523,7 +1523,7 @@
             </node>
           </node>
           <node concept="1rXfSq" id="JAaUnmU8Sx" role="3clFbw">
-            <ref role="37wK5l" to="g51k:~EditorCell_Collection.isFolded():boolean" resolve="isFolded" />
+            <ref role="37wK5l" to="g51k:~EditorCell_Collection.isCollapsed():boolean" resolve="isCollapsed" />
           </node>
         </node>
       </node>
@@ -1885,7 +1885,7 @@
                 <node concept="3clFbS" id="JAaUnmVkf3" role="1bW5cS">
                   <node concept="3clFbF" id="JAaUnmVkZf" role="3cqZAp">
                     <node concept="1rXfSq" id="JAaUnmVkZe" role="3clFbG">
-                      <ref role="37wK5l" to="g51k:~EditorCell_Collection.removeCell(jetbrains.mps.nodeEditor.cells.EditorCell):void" resolve="removeCell" />
+                      <ref role="37wK5l" to="g51k:~EditorCell_Collection.removeCell(jetbrains.mps.openapi.editor.cells.EditorCell):void" resolve="removeCell" />
                       <node concept="37vLTw" id="JAaUnmVlfY" role="37wK5m">
                         <ref role="3cqZAo" node="JAaUnmVkf4" resolve="it" />
                       </node>
@@ -2075,7 +2075,7 @@
             <node concept="3clFbS" id="JAaUnmYBfr" role="3eOfB_">
               <node concept="3clFbF" id="JAaUnmYDOw" role="3cqZAp">
                 <node concept="1rXfSq" id="JAaUnmYDOv" role="3clFbG">
-                  <ref role="37wK5l" to="g51k:~EditorCell_Collection.removeCell(jetbrains.mps.nodeEditor.cells.EditorCell):void" resolve="removeCell" />
+                  <ref role="37wK5l" to="g51k:~EditorCell_Collection.removeCell(jetbrains.mps.openapi.editor.cells.EditorCell):void" resolve="removeCell" />
                   <node concept="37vLTw" id="JAaUnmYEe3" role="37wK5m">
                     <ref role="3cqZAo" node="JAaUnmXeBT" resolve="myFoldButton" />
                   </node>
@@ -2944,7 +2944,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="JAaUnmUE3M" role="2OqNvi">
-                  <ref role="37wK5l" to="g51k:~EditorCell_Collection.isFolded():boolean" resolve="isFolded" />
+                  <ref role="37wK5l" to="g51k:~EditorCell_Collection.isCollapsed():boolean" resolve="isCollapsed" />
                 </node>
               </node>
             </node>
