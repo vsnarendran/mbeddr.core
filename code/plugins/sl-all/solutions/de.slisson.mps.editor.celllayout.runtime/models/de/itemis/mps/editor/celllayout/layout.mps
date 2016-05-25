@@ -2,21 +2,21 @@
 <model ref="r:12584d60-2d80-4ca9-9c6e-b79d499da0cf(de.itemis.mps.editor.celllayout.layout)">
   <persistence version="9" />
   <languages>
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
-    <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
+    <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="rtot" ref="r:6107a535-c9ce-47d9-a4cd-4df6fd2db517(de.itemis.mps.editor.celllayout.boxmodel)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="qxi4" ref="r:45c19b6d-dd9a-4f15-973f-0267c5e76303(de.itemis.mps.editor.celllayout.runtime)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="qxi4" ref="r:45c19b6d-dd9a-4f15-973f-0267c5e76303(de.itemis.mps.editor.celllayout.runtime)" />
   </imports>
   <registry>
     <language id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods">
@@ -1861,32 +1861,28 @@
           <property role="TyiWK" value="true" />
           <property role="TyiWL" value="false" />
           <node concept="3clFbS" id="9vHlV2xwOe" role="3clFbx">
-            <node concept="YS8fn" id="9vHlV2xywp" role="3cqZAp">
-              <node concept="2ShNRf" id="9vHlV2xywS" role="YScLw">
-                <node concept="1pGfFk" id="9vHlV2xyHe" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="3cpWs3" id="9vHlV2xzg_" role="37wK5m">
-                    <node concept="2OqwBi" id="9vHlV2xzjg" role="3uHU7w">
-                      <node concept="37vLTw" id="9vHlV2xzhs" role="2Oq$k0">
-                        <ref role="3cqZAo" node="40e1npHuVWs" resolve="grid" />
-                      </node>
-                      <node concept="liA8E" id="9vHlV2xzv4" role="2OqNvi">
-                        <ref role="37wK5l" node="40e1npHtOFY" resolve="getSize" />
-                      </node>
+            <node concept="34ab3g" id="1S$2iq4KcjM" role="3cqZAp">
+              <property role="35gtTG" value="debug" />
+              <node concept="3cpWs3" id="1S$2iq4KclL" role="34bqiv">
+                <node concept="2OqwBi" id="1S$2iq4KclM" role="3uHU7w">
+                  <node concept="37vLTw" id="1S$2iq4KclN" role="2Oq$k0">
+                    <ref role="3cqZAo" node="40e1npHuVWs" resolve="grid" />
+                  </node>
+                  <node concept="liA8E" id="1S$2iq4KclO" role="2OqNvi">
+                    <ref role="37wK5l" node="40e1npHtOFY" resolve="getSize" />
+                  </node>
+                </node>
+                <node concept="3cpWs3" id="1S$2iq4KclP" role="3uHU7B">
+                  <node concept="3cpWs3" id="1S$2iq4KclQ" role="3uHU7B">
+                    <node concept="Xl_RD" id="1S$2iq4KclR" role="3uHU7B">
+                      <property role="Xl_RC" value="Failed to set the grid size to " />
                     </node>
-                    <node concept="3cpWs3" id="9vHlV2xz3j" role="3uHU7B">
-                      <node concept="3cpWs3" id="9vHlV2xyVE" role="3uHU7B">
-                        <node concept="Xl_RD" id="9vHlV2xyHU" role="3uHU7B">
-                          <property role="Xl_RC" value="Failed to set the grid size to " />
-                        </node>
-                        <node concept="37vLTw" id="9vHlV2xyX6" role="3uHU7w">
-                          <ref role="3cqZAo" node="40e1npHrxVL" resolve="sizeConstraint" />
-                        </node>
-                      </node>
-                      <node concept="Xl_RD" id="9vHlV2xz3z" role="3uHU7w">
-                        <property role="Xl_RC" value=". Size is " />
-                      </node>
+                    <node concept="37vLTw" id="1S$2iq4KclS" role="3uHU7w">
+                      <ref role="3cqZAo" node="40e1npHrxVL" resolve="sizeConstraint" />
                     </node>
+                  </node>
+                  <node concept="Xl_RD" id="1S$2iq4KclT" role="3uHU7w">
+                    <property role="Xl_RC" value=". Size is " />
                   </node>
                 </node>
               </node>
