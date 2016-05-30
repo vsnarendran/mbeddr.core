@@ -19,6 +19,7 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="63c6c042-d558-4559-a9a2-93791d48eb74(com.mbeddr.mpsutil.extensionclass.annotation)" version="0" />
+    <module reference="b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)" version="0" />
   </dependencyVersions>
 </solution>
 

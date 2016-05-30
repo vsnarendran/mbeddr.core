@@ -5,16 +5,16 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
   </languages>
   <imports>
-    <import index="cu2c" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="xxzh" ref="r:ab7d9cc4-9512-416e-a488-21399f0158de(com.mbeddr.mpsutil.proxynode.runtime)" />
-    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -190,7 +190,7 @@
     <node concept="2XrIbr" id="7XevvQHyEUJ" role="1qtyYc">
       <property role="TrG5h" value="getPlusSNode" />
       <node concept="3uibUv" id="7XevvQHyEUK" role="3clF45">
-        <ref role="3uigEE" to="cu2c:~SNode" resolve="SNode" />
+        <ref role="3uigEE" to="w1kc:~SNode" resolve="SNode" />
       </node>
       <node concept="3clFbS" id="7XevvQHyEUL" role="3clF47">
         <node concept="3clFbF" id="7XevvQHyEUM" role="3cqZAp">
@@ -202,7 +202,7 @@
                 </node>
               </node>
               <node concept="3uibUv" id="7XevvQHyEUR" role="10QFUM">
-                <ref role="3uigEE" to="cu2c:~SNode" resolve="SNode" />
+                <ref role="3uigEE" to="w1kc:~SNode" resolve="SNode" />
               </node>
             </node>
           </node>
@@ -212,7 +212,7 @@
     <node concept="2XrIbr" id="7XevvQHyEUS" role="1qtyYc">
       <property role="TrG5h" value="getSwitchSNode" />
       <node concept="3uibUv" id="7XevvQHyEUT" role="3clF45">
-        <ref role="3uigEE" to="cu2c:~SNode" resolve="SNode" />
+        <ref role="3uigEE" to="w1kc:~SNode" resolve="SNode" />
       </node>
       <node concept="3clFbS" id="7XevvQHyEUU" role="3clF47">
         <node concept="3clFbF" id="7XevvQHyEUV" role="3cqZAp">
@@ -224,7 +224,7 @@
                 </node>
               </node>
               <node concept="3uibUv" id="7XevvQHyEV0" role="10QFUM">
-                <ref role="3uigEE" to="cu2c:~SNode" resolve="SNode" />
+                <ref role="3uigEE" to="w1kc:~SNode" resolve="SNode" />
               </node>
             </node>
           </node>
@@ -234,7 +234,7 @@
     <node concept="2XrIbr" id="7XevvQHyEV1" role="1qtyYc">
       <property role="TrG5h" value="get2ndSwitchSNode" />
       <node concept="3uibUv" id="7XevvQHyEV2" role="3clF45">
-        <ref role="3uigEE" to="cu2c:~SNode" resolve="SNode" />
+        <ref role="3uigEE" to="w1kc:~SNode" resolve="SNode" />
       </node>
       <node concept="3clFbS" id="7XevvQHyEV3" role="3clF47">
         <node concept="3clFbF" id="7XevvQHyEV4" role="3cqZAp">
@@ -246,7 +246,7 @@
                 </node>
               </node>
               <node concept="3uibUv" id="7XevvQHyEV9" role="10QFUM">
-                <ref role="3uigEE" to="cu2c:~SNode" resolve="SNode" />
+                <ref role="3uigEE" to="w1kc:~SNode" resolve="SNode" />
               </node>
             </node>
           </node>
@@ -399,7 +399,7 @@
               </node>
             </node>
             <node concept="liA8E" id="7XevvQHyEWb" role="2OqNvi">
-              <ref role="37wK5l" to="cu2c:~SNode.getFirstChild():org.jetbrains.mps.openapi.model.SNode" resolve="getFirstChild" />
+              <ref role="37wK5l" to="w1kc:~SNode.getFirstChild():org.jetbrains.mps.openapi.model.SNode" resolve="getFirstChild" />
             </node>
           </node>
           <node concept="2OqwBi" id="7XevvQHyEWc" role="3tpDZA">
@@ -445,7 +445,7 @@
               </node>
             </node>
             <node concept="liA8E" id="7XevvQHyEWv" role="2OqNvi">
-              <ref role="37wK5l" to="cu2c:~SNode.getLastChild():org.jetbrains.mps.openapi.model.SNode" resolve="getLastChild" />
+              <ref role="37wK5l" to="w1kc:~SNode.getLastChild():org.jetbrains.mps.openapi.model.SNode" resolve="getLastChild" />
             </node>
           </node>
           <node concept="2OqwBi" id="7XevvQHyEWw" role="3tpDZA">
@@ -491,7 +491,7 @@
               </node>
             </node>
             <node concept="liA8E" id="7XevvQHyEWN" role="2OqNvi">
-              <ref role="37wK5l" to="cu2c:~SNode.getChildren():java.util.List" resolve="getChildren" />
+              <ref role="37wK5l" to="w1kc:~SNode.getChildren():java.util.List" resolve="getChildren" />
             </node>
           </node>
           <node concept="2OqwBi" id="7XevvQHyEWO" role="3tpDZA">
@@ -537,7 +537,7 @@
               </node>
             </node>
             <node concept="liA8E" id="7XevvQHyEX7" role="2OqNvi">
-              <ref role="37wK5l" to="cu2c:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
+              <ref role="37wK5l" to="w1kc:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
               <node concept="Xl_RD" id="7XevvQHyEX8" role="37wK5m">
                 <property role="Xl_RC" value="case" />
               </node>
@@ -605,7 +605,7 @@
               </node>
             </node>
             <node concept="liA8E" id="7XevvQHyEX_" role="2OqNvi">
-              <ref role="37wK5l" to="cu2c:~SNode.addChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode):void" resolve="addChild" />
+              <ref role="37wK5l" to="w1kc:~SNode.addChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode):void" resolve="addChild" />
               <node concept="Xl_RD" id="7XevvQHyEXA" role="37wK5m">
                 <property role="Xl_RC" value="case" />
               </node>
@@ -636,7 +636,7 @@
                 </node>
                 <node concept="_YKpA" id="7XevvQHyEXM" role="10QFUM">
                   <node concept="3uibUv" id="7XevvQHyEXN" role="_ZDj9">
-                    <ref role="3uigEE" to="cu2c:~SNode" resolve="SNode" />
+                    <ref role="3uigEE" to="w1kc:~SNode" resolve="SNode" />
                   </node>
                 </node>
               </node>
@@ -717,7 +717,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="7XevvQHyEYo" role="2OqNvi">
-                    <ref role="37wK5l" to="cu2c:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
+                    <ref role="37wK5l" to="w1kc:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
                     <node concept="Xl_RD" id="7XevvQHyEYp" role="37wK5m">
                       <property role="Xl_RC" value="case" />
                     </node>
@@ -725,7 +725,7 @@
                 </node>
                 <node concept="_YKpA" id="7XevvQHyEYq" role="10QFUM">
                   <node concept="3uibUv" id="7XevvQHyEYr" role="_ZDj9">
-                    <ref role="3uigEE" to="cu2c:~SNode" resolve="SNode" />
+                    <ref role="3uigEE" to="w1kc:~SNode" resolve="SNode" />
                   </node>
                 </node>
               </node>
@@ -783,7 +783,7 @@
               </node>
             </node>
             <node concept="liA8E" id="7XevvQHyEYP" role="2OqNvi">
-              <ref role="37wK5l" to="cu2c:~SNode.insertChildBefore(java.lang.String,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):void" resolve="insertChildBefore" />
+              <ref role="37wK5l" to="w1kc:~SNode.insertChildBefore(java.lang.String,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode):void" resolve="insertChildBefore" />
               <node concept="Xl_RD" id="7XevvQHyEYQ" role="37wK5m">
                 <property role="Xl_RC" value="case" />
               </node>
@@ -799,14 +799,14 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="7XevvQHyEYX" role="2OqNvi">
-                    <ref role="37wK5l" to="cu2c:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
+                    <ref role="37wK5l" to="w1kc:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
                     <node concept="Xl_RD" id="7XevvQHyEYY" role="37wK5m">
                       <property role="Xl_RC" value="case" />
                     </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="7XevvQHyEYZ" role="2OqNvi">
-                  <ref role="37wK5l" to="k7g3:~List.get(int):java.lang.Object" resolve="get" />
+                  <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
                   <node concept="3cmrfG" id="7XevvQHyEZ0" role="37wK5m">
                     <property role="3cmrfH" value="2" />
                   </node>
@@ -833,7 +833,7 @@
               </node>
             </node>
             <node concept="liA8E" id="7XevvQHyEZ9" role="2OqNvi">
-              <ref role="37wK5l" to="k7g3:~List.get(int):java.lang.Object" resolve="get" />
+              <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
               <node concept="3cmrfG" id="7XevvQHyEZa" role="37wK5m">
                 <property role="3cmrfH" value="2" />
               </node>
@@ -900,14 +900,14 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="7XevvQHyEZC" role="2OqNvi">
-                    <ref role="37wK5l" to="cu2c:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
+                    <ref role="37wK5l" to="w1kc:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
                     <node concept="Xl_RD" id="7XevvQHyEZD" role="37wK5m">
                       <property role="Xl_RC" value="case" />
                     </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="7XevvQHyEZE" role="2OqNvi">
-                  <ref role="37wK5l" to="k7g3:~List.get(int):java.lang.Object" resolve="get" />
+                  <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
                   <node concept="3cmrfG" id="7XevvQHyEZF" role="37wK5m">
                     <property role="3cmrfH" value="2" />
                   </node>
@@ -933,14 +933,14 @@
                 </node>
               </node>
               <node concept="liA8E" id="7XevvQHyEZP" role="2OqNvi">
-                <ref role="37wK5l" to="cu2c:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
+                <ref role="37wK5l" to="w1kc:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
                 <node concept="Xl_RD" id="7XevvQHyEZQ" role="37wK5m">
                   <property role="Xl_RC" value="case" />
                 </node>
               </node>
             </node>
             <node concept="liA8E" id="7XevvQHyEZR" role="2OqNvi">
-              <ref role="37wK5l" to="k7g3:~List.get(int):java.lang.Object" resolve="get" />
+              <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
               <node concept="3cmrfG" id="7XevvQHyEZS" role="37wK5m">
                 <property role="3cmrfH" value="2" />
               </node>
@@ -977,7 +977,7 @@
           <node concept="3cpWsn" id="7XevvQHyF06" role="3cpWs9">
             <property role="TrG5h" value="removedChild" />
             <node concept="3uibUv" id="7XevvQHyF07" role="1tU5fm">
-              <ref role="3uigEE" to="cu2c:~SNode" resolve="SNode" />
+              <ref role="3uigEE" to="w1kc:~SNode" resolve="SNode" />
             </node>
             <node concept="2OqwBi" id="7XevvQHyF08" role="33vP2m">
               <node concept="2OqwBi" id="7XevvQHyF09" role="2Oq$k0">
@@ -988,14 +988,14 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="7XevvQHyF0d" role="2OqNvi">
-                  <ref role="37wK5l" to="cu2c:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
+                  <ref role="37wK5l" to="w1kc:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
                   <node concept="Xl_RD" id="7XevvQHyF0e" role="37wK5m">
                     <property role="Xl_RC" value="case" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="7XevvQHyF0f" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~List.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="7XevvQHyF0g" role="37wK5m">
                   <property role="3cmrfH" value="1" />
                 </node>
@@ -1012,7 +1012,7 @@
               </node>
             </node>
             <node concept="liA8E" id="7XevvQHyF0m" role="2OqNvi">
-              <ref role="37wK5l" to="cu2c:~SNode.removeChild(org.jetbrains.mps.openapi.model.SNode):void" resolve="removeChild" />
+              <ref role="37wK5l" to="w1kc:~SNode.removeChild(org.jetbrains.mps.openapi.model.SNode):void" resolve="removeChild" />
               <node concept="37vLTw" id="7XevvQHyF0n" role="37wK5m">
                 <ref role="3cqZAo" node="7XevvQHyF06" resolve="removedChild" />
               </node>
@@ -1075,7 +1075,7 @@
           <node concept="3cpWsn" id="7XevvQHyF0K" role="3cpWs9">
             <property role="TrG5h" value="removedChild" />
             <node concept="3uibUv" id="7XevvQHyF0L" role="1tU5fm">
-              <ref role="3uigEE" to="cu2c:~SNode" resolve="SNode" />
+              <ref role="3uigEE" to="w1kc:~SNode" resolve="SNode" />
             </node>
             <node concept="2OqwBi" id="7XevvQHyF0M" role="33vP2m">
               <node concept="2OqwBi" id="7XevvQHyF0N" role="2Oq$k0">
@@ -1090,7 +1090,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="7XevvQHyF0R" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~List.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="7XevvQHyF0S" role="37wK5m">
                   <property role="3cmrfH" value="1" />
                 </node>
@@ -1124,7 +1124,7 @@
               </node>
             </node>
             <node concept="liA8E" id="7XevvQHyF15" role="2OqNvi">
-              <ref role="37wK5l" to="cu2c:~SNode.getChildren():java.util.List" resolve="getChildren" />
+              <ref role="37wK5l" to="w1kc:~SNode.getChildren():java.util.List" resolve="getChildren" />
             </node>
           </node>
           <node concept="3clFbS" id="7XevvQHyF16" role="2LFqv$">
@@ -1150,7 +1150,7 @@
           <node concept="3cpWsn" id="7XevvQHyF1f" role="3cpWs9">
             <property role="TrG5h" value="caseChild" />
             <node concept="3uibUv" id="7XevvQHyF1g" role="1tU5fm">
-              <ref role="3uigEE" to="cu2c:~SNode" resolve="SNode" />
+              <ref role="3uigEE" to="w1kc:~SNode" resolve="SNode" />
             </node>
             <node concept="2OqwBi" id="7XevvQHyF1h" role="33vP2m">
               <node concept="2OqwBi" id="7XevvQHyF1i" role="2Oq$k0">
@@ -1161,14 +1161,14 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="7XevvQHyF1m" role="2OqNvi">
-                  <ref role="37wK5l" to="cu2c:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
+                  <ref role="37wK5l" to="w1kc:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
                   <node concept="Xl_RD" id="7XevvQHyF1n" role="37wK5m">
                     <property role="Xl_RC" value="case" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="7XevvQHyF1o" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~List.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="7XevvQHyF1p" role="37wK5m">
                   <property role="3cmrfH" value="1" />
                 </node>
@@ -1203,7 +1203,7 @@
               </node>
             </node>
             <node concept="liA8E" id="7XevvQHyF1B" role="2OqNvi">
-              <ref role="37wK5l" to="cu2c:~SNode.addChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode):void" resolve="addChild" />
+              <ref role="37wK5l" to="w1kc:~SNode.addChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode):void" resolve="addChild" />
               <node concept="Xl_RD" id="7XevvQHyF1C" role="37wK5m">
                 <property role="Xl_RC" value="case" />
               </node>
@@ -1226,7 +1226,7 @@
               <ref role="3cqZAo" node="7XevvQHyF1f" resolve="caseChild" />
             </node>
             <node concept="liA8E" id="7XevvQHyF1L" role="2OqNvi">
-              <ref role="37wK5l" to="cu2c:~SNode.getParent():jetbrains.mps.smodel.SNode" resolve="getParent" />
+              <ref role="37wK5l" to="w1kc:~SNode.getParent():jetbrains.mps.smodel.SNode" resolve="getParent" />
             </node>
           </node>
         </node>
@@ -1242,7 +1242,7 @@
               <ref role="3cqZAo" node="7XevvQHyF1s" resolve="proxyCaseChild" />
             </node>
             <node concept="liA8E" id="7XevvQHyF1S" role="2OqNvi">
-              <ref role="37wK5l" to="cu2c:~SNode.getParent():jetbrains.mps.smodel.SNode" resolve="getParent" />
+              <ref role="37wK5l" to="w1kc:~SNode.getParent():jetbrains.mps.smodel.SNode" resolve="getParent" />
             </node>
           </node>
         </node>
@@ -1256,7 +1256,7 @@
           <node concept="3cpWsn" id="7XevvQHyF1X" role="3cpWs9">
             <property role="TrG5h" value="caseChild" />
             <node concept="3uibUv" id="7XevvQHyF1Y" role="1tU5fm">
-              <ref role="3uigEE" to="cu2c:~SNode" resolve="SNode" />
+              <ref role="3uigEE" to="w1kc:~SNode" resolve="SNode" />
             </node>
             <node concept="2OqwBi" id="7XevvQHyF1Z" role="33vP2m">
               <node concept="2OqwBi" id="7XevvQHyF20" role="2Oq$k0">
@@ -1267,14 +1267,14 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="7XevvQHyF24" role="2OqNvi">
-                  <ref role="37wK5l" to="cu2c:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
+                  <ref role="37wK5l" to="w1kc:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
                   <node concept="Xl_RD" id="7XevvQHyF25" role="37wK5m">
                     <property role="Xl_RC" value="case" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="7XevvQHyF26" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~List.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="7XevvQHyF27" role="37wK5m">
                   <property role="3cmrfH" value="1" />
                 </node>
@@ -1309,7 +1309,7 @@
               </node>
             </node>
             <node concept="liA8E" id="7XevvQHyF2l" role="2OqNvi">
-              <ref role="37wK5l" to="cu2c:~SNode.addChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode):void" resolve="addChild" />
+              <ref role="37wK5l" to="w1kc:~SNode.addChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode):void" resolve="addChild" />
               <node concept="Xl_RD" id="7XevvQHyF2m" role="37wK5m">
                 <property role="Xl_RC" value="case" />
               </node>
@@ -1332,7 +1332,7 @@
               <ref role="3cqZAo" node="7XevvQHyF1X" resolve="caseChild" />
             </node>
             <node concept="liA8E" id="7XevvQHyF2v" role="2OqNvi">
-              <ref role="37wK5l" to="cu2c:~SNode.getParent():jetbrains.mps.smodel.SNode" resolve="getParent" />
+              <ref role="37wK5l" to="w1kc:~SNode.getParent():jetbrains.mps.smodel.SNode" resolve="getParent" />
             </node>
           </node>
         </node>
@@ -1348,7 +1348,7 @@
               <ref role="3cqZAo" node="7XevvQHyF2a" resolve="proxyCaseChild" />
             </node>
             <node concept="liA8E" id="7XevvQHyF2A" role="2OqNvi">
-              <ref role="37wK5l" to="cu2c:~SNode.getParent():jetbrains.mps.smodel.SNode" resolve="getParent" />
+              <ref role="37wK5l" to="w1kc:~SNode.getParent():jetbrains.mps.smodel.SNode" resolve="getParent" />
             </node>
           </node>
         </node>
@@ -1362,14 +1362,14 @@
                 </node>
               </node>
               <node concept="liA8E" id="7XevvQHyF2H" role="2OqNvi">
-                <ref role="37wK5l" to="cu2c:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
+                <ref role="37wK5l" to="w1kc:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
                 <node concept="Xl_RD" id="7XevvQHyF2I" role="37wK5m">
                   <property role="Xl_RC" value="case" />
                 </node>
               </node>
             </node>
             <node concept="liA8E" id="7XevvQHyF2J" role="2OqNvi">
-              <ref role="37wK5l" to="k7g3:~List.contains(java.lang.Object):boolean" resolve="contains" />
+              <ref role="37wK5l" to="33ny:~List.contains(java.lang.Object):boolean" resolve="contains" />
               <node concept="37vLTw" id="7XevvQHyF2K" role="37wK5m">
                 <ref role="3cqZAo" node="7XevvQHyF1X" resolve="caseChild" />
               </node>
@@ -1386,14 +1386,14 @@
                 </node>
               </node>
               <node concept="liA8E" id="7XevvQHyF2R" role="2OqNvi">
-                <ref role="37wK5l" to="cu2c:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
+                <ref role="37wK5l" to="w1kc:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
                 <node concept="Xl_RD" id="7XevvQHyF2S" role="37wK5m">
                   <property role="Xl_RC" value="case" />
                 </node>
               </node>
             </node>
             <node concept="liA8E" id="7XevvQHyF2T" role="2OqNvi">
-              <ref role="37wK5l" to="k7g3:~List.contains(java.lang.Object):boolean" resolve="contains" />
+              <ref role="37wK5l" to="33ny:~List.contains(java.lang.Object):boolean" resolve="contains" />
               <node concept="37vLTw" id="7XevvQHyF2U" role="37wK5m">
                 <ref role="3cqZAo" node="7XevvQHyF2a" resolve="proxyCaseChild" />
               </node>
@@ -1413,14 +1413,14 @@
                 </node>
               </node>
               <node concept="liA8E" id="7XevvQHyF32" role="2OqNvi">
-                <ref role="37wK5l" to="cu2c:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
+                <ref role="37wK5l" to="w1kc:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
                 <node concept="Xl_RD" id="7XevvQHyF33" role="37wK5m">
                   <property role="Xl_RC" value="case" />
                 </node>
               </node>
             </node>
             <node concept="liA8E" id="7XevvQHyF34" role="2OqNvi">
-              <ref role="37wK5l" to="k7g3:~List.size():int" resolve="size" />
+              <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
             </node>
           </node>
         </node>
@@ -1434,7 +1434,7 @@
           <node concept="3cpWsn" id="7XevvQHyF39" role="3cpWs9">
             <property role="TrG5h" value="caseChild" />
             <node concept="3uibUv" id="7XevvQHyF3a" role="1tU5fm">
-              <ref role="3uigEE" to="cu2c:~SNode" resolve="SNode" />
+              <ref role="3uigEE" to="w1kc:~SNode" resolve="SNode" />
             </node>
             <node concept="2OqwBi" id="7XevvQHyF3b" role="33vP2m">
               <node concept="2OqwBi" id="7XevvQHyF3c" role="2Oq$k0">
@@ -1445,14 +1445,14 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="7XevvQHyF3g" role="2OqNvi">
-                  <ref role="37wK5l" to="cu2c:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
+                  <ref role="37wK5l" to="w1kc:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
                   <node concept="Xl_RD" id="7XevvQHyF3h" role="37wK5m">
                     <property role="Xl_RC" value="case" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="7XevvQHyF3i" role="2OqNvi">
-                <ref role="37wK5l" to="k7g3:~List.get(int):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
                 <node concept="3cmrfG" id="7XevvQHyF3j" role="37wK5m">
                   <property role="3cmrfH" value="1" />
                 </node>
@@ -1503,7 +1503,7 @@
               </node>
             </node>
             <node concept="liA8E" id="7XevvQHyF3B" role="2OqNvi">
-              <ref role="37wK5l" to="cu2c:~SNode.addChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode):void" resolve="addChild" />
+              <ref role="37wK5l" to="w1kc:~SNode.addChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode):void" resolve="addChild" />
               <node concept="Xl_RD" id="7XevvQHyF3C" role="37wK5m">
                 <property role="Xl_RC" value="case" />
               </node>
@@ -1522,7 +1522,7 @@
               </node>
             </node>
             <node concept="liA8E" id="7XevvQHyF3J" role="2OqNvi">
-              <ref role="37wK5l" to="cu2c:~SNode.addChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode):void" resolve="addChild" />
+              <ref role="37wK5l" to="w1kc:~SNode.addChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode):void" resolve="addChild" />
               <node concept="Xl_RD" id="7XevvQHyF3K" role="37wK5m">
                 <property role="Xl_RC" value="case" />
               </node>
@@ -1545,7 +1545,7 @@
               <ref role="3cqZAo" node="7XevvQHyF39" resolve="caseChild" />
             </node>
             <node concept="liA8E" id="7XevvQHyF3T" role="2OqNvi">
-              <ref role="37wK5l" to="cu2c:~SNode.getParent():jetbrains.mps.smodel.SNode" resolve="getParent" />
+              <ref role="37wK5l" to="w1kc:~SNode.getParent():jetbrains.mps.smodel.SNode" resolve="getParent" />
             </node>
           </node>
         </node>
@@ -1561,7 +1561,7 @@
               <ref role="3cqZAo" node="7XevvQHyF3m" resolve="proxyCaseChild1" />
             </node>
             <node concept="liA8E" id="7XevvQHyF40" role="2OqNvi">
-              <ref role="37wK5l" to="cu2c:~SNode.getParent():jetbrains.mps.smodel.SNode" resolve="getParent" />
+              <ref role="37wK5l" to="w1kc:~SNode.getParent():jetbrains.mps.smodel.SNode" resolve="getParent" />
             </node>
           </node>
         </node>
@@ -1575,14 +1575,14 @@
                 </node>
               </node>
               <node concept="liA8E" id="7XevvQHyF47" role="2OqNvi">
-                <ref role="37wK5l" to="cu2c:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
+                <ref role="37wK5l" to="w1kc:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
                 <node concept="Xl_RD" id="7XevvQHyF48" role="37wK5m">
                   <property role="Xl_RC" value="case" />
                 </node>
               </node>
             </node>
             <node concept="liA8E" id="7XevvQHyF49" role="2OqNvi">
-              <ref role="37wK5l" to="k7g3:~List.contains(java.lang.Object):boolean" resolve="contains" />
+              <ref role="37wK5l" to="33ny:~List.contains(java.lang.Object):boolean" resolve="contains" />
               <node concept="37vLTw" id="7XevvQHyF4a" role="37wK5m">
                 <ref role="3cqZAo" node="7XevvQHyF39" resolve="caseChild" />
               </node>
@@ -1599,14 +1599,14 @@
                 </node>
               </node>
               <node concept="liA8E" id="7XevvQHyF4h" role="2OqNvi">
-                <ref role="37wK5l" to="cu2c:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
+                <ref role="37wK5l" to="w1kc:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
                 <node concept="Xl_RD" id="7XevvQHyF4i" role="37wK5m">
                   <property role="Xl_RC" value="case" />
                 </node>
               </node>
             </node>
             <node concept="liA8E" id="7XevvQHyF4j" role="2OqNvi">
-              <ref role="37wK5l" to="k7g3:~List.contains(java.lang.Object):boolean" resolve="contains" />
+              <ref role="37wK5l" to="33ny:~List.contains(java.lang.Object):boolean" resolve="contains" />
               <node concept="37vLTw" id="7XevvQHyF4k" role="37wK5m">
                 <ref role="3cqZAo" node="7XevvQHyF3m" resolve="proxyCaseChild1" />
               </node>
@@ -1623,14 +1623,14 @@
                 </node>
               </node>
               <node concept="liA8E" id="7XevvQHyF4r" role="2OqNvi">
-                <ref role="37wK5l" to="cu2c:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
+                <ref role="37wK5l" to="w1kc:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
                 <node concept="Xl_RD" id="7XevvQHyF4s" role="37wK5m">
                   <property role="Xl_RC" value="case" />
                 </node>
               </node>
             </node>
             <node concept="liA8E" id="7XevvQHyF4t" role="2OqNvi">
-              <ref role="37wK5l" to="k7g3:~List.contains(java.lang.Object):boolean" resolve="contains" />
+              <ref role="37wK5l" to="33ny:~List.contains(java.lang.Object):boolean" resolve="contains" />
               <node concept="37vLTw" id="7XevvQHyF4u" role="37wK5m">
                 <ref role="3cqZAo" node="7XevvQHyF3s" resolve="proxyCaseChild2" />
               </node>
@@ -1650,14 +1650,14 @@
                 </node>
               </node>
               <node concept="liA8E" id="7XevvQHyF4A" role="2OqNvi">
-                <ref role="37wK5l" to="cu2c:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
+                <ref role="37wK5l" to="w1kc:~SNode.getChildren(java.lang.String):java.util.List" resolve="getChildren" />
                 <node concept="Xl_RD" id="7XevvQHyF4B" role="37wK5m">
                   <property role="Xl_RC" value="case" />
                 </node>
               </node>
             </node>
             <node concept="liA8E" id="7XevvQHyF4C" role="2OqNvi">
-              <ref role="37wK5l" to="k7g3:~List.size():int" resolve="size" />
+              <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
             </node>
           </node>
         </node>

@@ -2,7 +2,7 @@
 <model ref="r:f2c573c3-76f5-4a99-8196-934e4ee20689(com.mbeddr.mpsutil.custommodelroot.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -14,6 +14,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -46,6 +47,7 @@
   </registry>
   <node concept="1TIwiD" id="2Q4aqY93zMt">
     <property role="TrG5h" value="CustomModel" />
+    <property role="1pbfSe" value="1231919540" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2Q4aqY93zMu" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -93,6 +95,7 @@
   <node concept="1TIwiD" id="2Q4aqY93zM$">
     <property role="TrG5h" value="CustomModelRoot" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="1231919533" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2Q4aqY93zM_" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -173,6 +176,7 @@
   <node concept="1TIwiD" id="2Q4aqY93QYL">
     <property role="TrG5h" value="CustomModelRootProperty" />
     <property role="34LRSv" value="property" />
+    <property role="1pbfSe" value="1231840928" />
     <ref role="1TJDcQ" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
     <node concept="1TJgyi" id="2Q4aqY93UGI" role="1TKVEl">
       <property role="TrG5h" value="defaultValue" />
@@ -191,120 +195,142 @@
   <node concept="1TIwiD" id="2Q4aqY97dXd">
     <property role="TrG5h" value="ConceptFunction_ModelRoot_GetPresentation" />
     <property role="3GE5qa" value="modelRootFunctions" />
+    <property role="1pbfSe" value="1230960388" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="2Q4aqY97uKt">
     <property role="TrG5h" value="ConceptFunction_ModelRootEntry_GetDetailsText" />
     <property role="3GE5qa" value="modelRootFunctions" />
+    <property role="1pbfSe" value="1230891572" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="2Q4aqY97uVy">
     <property role="TrG5h" value="ConceptFunction_ModelRootEntry_GetEditor" />
     <property role="3GE5qa" value="modelRootFunctions" />
+    <property role="1pbfSe" value="1230890863" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="2Q4aqY97wTO">
     <property role="TrG5h" value="ConceptFunctionParameter_CustomModelRootEntry" />
     <property role="3GE5qa" value="modelRootFunctions" />
     <property role="34LRSv" value="modelRootEntry" />
+    <property role="1pbfSe" value="1230882781" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="2Q4aqY97H9O">
     <property role="TrG5h" value="ConceptFunction_ModelRootEntry_IsValid" />
     <property role="3GE5qa" value="modelRootFunctions" />
+    <property role="1pbfSe" value="1230832605" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="2Q4aqY97JbK">
     <property role="TrG5h" value="ConceptFunctionParameter_CustomModelRoot" />
     <property role="3GE5qa" value="modelRootFunctions" />
     <property role="34LRSv" value="modelRoot" />
+    <property role="1pbfSe" value="1230824289" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="2Q4aqY97JwA">
     <property role="TrG5h" value="ConceptFunctionParameter_PropertiesMap" />
     <property role="3GE5qa" value="modelRootFunctions" />
     <property role="34LRSv" value="properties" />
+    <property role="1pbfSe" value="1230822955" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="2Q4aqY97K1g">
     <property role="TrG5h" value="ConceptFunctionParameter_Context" />
     <property role="3GE5qa" value="modelRootFunctions" />
     <property role="34LRSv" value="context" />
+    <property role="1pbfSe" value="1230820865" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="2Q4aqY97K4j">
     <property role="TrG5h" value="ConceptFunction_ModelRoot_InitContext" />
     <property role="3GE5qa" value="modelRootFunctions" />
+    <property role="1pbfSe" value="1230820670" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="2Q4aqY97McN">
     <property role="TrG5h" value="ConceptFunction_ModelRoot_DisposeContext" />
     <property role="3GE5qa" value="modelRootFunctions" />
+    <property role="1pbfSe" value="1230811934" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="2Q4aqY97Q$t">
     <property role="TrG5h" value="ConceptFunction_Model_Load" />
     <property role="3GE5qa" value="modelFunctions" />
+    <property role="1pbfSe" value="1230794036" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="2Q4aqY97Soz">
     <property role="3GE5qa" value="modelFunctions" />
     <property role="TrG5h" value="ConceptFunctionParameter_CustomModel" />
     <property role="34LRSv" value="model" />
+    <property role="1pbfSe" value="1230786606" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="2Q4aqY97Tds">
     <property role="3GE5qa" value="modelFunctions" />
     <property role="TrG5h" value="ConceptFunction_Model_Unload" />
+    <property role="1pbfSe" value="1230783221" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="2Q4aqY97X95">
     <property role="3GE5qa" value="modelFunctions" />
     <property role="TrG5h" value="ConceptFunctionParameter_OldModel" />
     <property role="34LRSv" value="oldModel" />
+    <property role="1pbfSe" value="1230767116" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="2Q4aqY97XS8">
     <property role="3GE5qa" value="modelFunctions" />
     <property role="TrG5h" value="ConceptFunction_Model_Reload" />
+    <property role="1pbfSe" value="1230764105" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="2Q4aqY980BI">
     <property role="3GE5qa" value="modelFunctions" />
     <property role="TrG5h" value="ConceptFunction_ModelRoot_GetId" />
+    <property role="1pbfSe" value="1230752867" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="2Q4aqY984IG">
     <property role="3GE5qa" value="modelFunctions" />
     <property role="TrG5h" value="ConceptFunction_DataSource_GetLocation" />
+    <property role="1pbfSe" value="1230736037" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="2Q4aqY985Oj">
     <property role="3GE5qa" value="modelFunctions" />
     <property role="TrG5h" value="ConceptFunctionParameter_CustomDataSource" />
     <property role="34LRSv" value="dataSource" />
+    <property role="1pbfSe" value="1230731582" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
   <node concept="1TIwiD" id="2Q4aqY987El">
     <property role="3GE5qa" value="modelFunctions" />
     <property role="TrG5h" value="ConceptFunction_DataSource_GetTimestamp" />
+    <property role="1pbfSe" value="1230724028" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="2Q4aqY989QB">
     <property role="3GE5qa" value="modelFunctions" />
     <property role="TrG5h" value="ConceptFunction_DataSource_Refresh" />
+    <property role="1pbfSe" value="1230715050" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="2Q4aqY9kV9m">
     <property role="3GE5qa" value="expressions" />
     <property role="TrG5h" value="SModelCreator" />
     <property role="34LRSv" value="SModel" />
+    <property role="1pbfSe" value="1227367419" />
     <ref role="1TJDcQ" to="tpee:gEShaYr" resolve="AbstractCreator" />
   </node>
   <node concept="1TIwiD" id="2Q4aqY9l1lr">
     <property role="3GE5qa" value="expressions" />
     <property role="TrG5h" value="SNodeIdCreator" />
     <property role="34LRSv" value="SNodeId" />
+    <property role="1pbfSe" value="1227342070" />
     <ref role="1TJDcQ" to="tpee:gEShaYr" resolve="AbstractCreator" />
     <node concept="1TJgyj" id="2Q4aqY9l2E7" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -316,6 +342,7 @@
   <node concept="1TIwiD" id="R4TGjWcK$N">
     <property role="3GE5qa" value="nodeBuilder" />
     <property role="TrG5h" value="NodeBuilderNodeWithId" />
+    <property role="1pbfSe" value="167243767" />
     <ref role="1TJDcQ" to="tp3r:4IP40Bi2$Ew" resolve="NodeBuilderNode" />
     <node concept="1TJgyj" id="R4TGjWdTxf" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -327,17 +354,20 @@
   <node concept="1TIwiD" id="R4TGjWjGIc">
     <property role="3GE5qa" value="nodeBuilder" />
     <property role="TrG5h" value="NodeBuilderInitLinkWithId" />
+    <property role="1pbfSe" value="169062992" />
     <ref role="1TJDcQ" to="tp3r:4IP40Bi38Sq" resolve="NodeBuilderInitLink" />
   </node>
   <node concept="1TIwiD" id="R4TGjWpjZe">
     <property role="3GE5qa" value="nodeBuilder" />
     <property role="TrG5h" value="NodeBuilderWIthId" />
     <property role="34LRSv" value="&lt;&lt;node builder with id&gt;&gt;" />
+    <property role="1pbfSe" value="170534546" />
     <ref role="1TJDcQ" to="tp3r:4IP40Bi2$Et" resolve="NodeBuilder" />
   </node>
   <node concept="1TIwiD" id="R4TGjWFXKD">
     <property role="3GE5qa" value="nodeBuilder" />
     <property role="TrG5h" value="NodeIdExpression" />
+    <property role="1pbfSe" value="175424237" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="R4TGjWG7Ga" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -354,6 +384,7 @@
   <node concept="1TIwiD" id="R4TGjWKqwV">
     <property role="3GE5qa" value="nodeBuilder" />
     <property role="TrG5h" value="NodeBuilderInitId" />
+    <property role="1pbfSe" value="176590591" />
     <ref role="1TJDcQ" to="tp3r:4IP40Bi2Kc_" resolve="NodeBuilderInitProperty" />
     <node concept="1TJgyi" id="R4TGjWRO6i" role="1TKVEl">
       <property role="TrG5h" value="dummyIdProperty" />
@@ -363,6 +394,7 @@
   <node concept="1TIwiD" id="7l8$zaDG_kK">
     <property role="3GE5qa" value="expressions" />
     <property role="TrG5h" value="CustomModelRootPropertyReference" />
+    <property role="1pbfSe" value="519759714" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="7l8$zaDG_l$" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -373,6 +405,7 @@
   </node>
   <node concept="1TIwiD" id="7l8$zaDRY_g">
     <property role="TrG5h" value="CustomModelRootPluginDependency" />
+    <property role="1pbfSe" value="522746754" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7l8$zaDRYB1" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
