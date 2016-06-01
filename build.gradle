@@ -26,12 +26,6 @@ configurations {
 task wrapper(type: Wrapper) {
   gradleVersion = '2.5'
 }
-//task load_slAllScript() {
-//    ant.importBuild( new File(slAll_buildFileLocation + "/" + "build.xml")) { antTargetName ->
-//        println "target:"+ antTargetName
-//        'slAll_' + antTargetName
-//    }
-//}
 
 // script locations
 def scriptsBasePath = projectDir.absolutePath + "/scripts/"
@@ -121,7 +115,7 @@ tasks.create("build_mbeddr", Exec) {
   workingDir projectDir
   def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', mbeddr_script]
   commandLine('ant', *args, *languages_targets)
-//  dependsOn build_platform
+  dependsOn build_platform
 }
 
 tasks.create("build_tutorial_languages", Exec) {
@@ -171,13 +165,6 @@ repositories {
     url "$buildDir/repo"
   }
 }
-//task load_allScripts(dependsOn: doTestRetrieve) {
-//    println("mps location: " + "$projectDir" + "/MPS/"+mbeddrMpsDir+"/")
-//	ant.echo("path: "+allScripts_buildFileLocation + "/" + "build.xml")
-//	ant.importBuild( new File(allScripts_buildFileLocation + "/" + "build.xml") ) { antTargetName ->
-//		'allScripts_' + antTargetName
-//	}
-//}
 
 dependencies {
   mps 'com.jetbrains:mps:3.3.4'
