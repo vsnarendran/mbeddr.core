@@ -6348,6 +6348,44 @@
                         </node>
                       </node>
                     </node>
+                    <node concept="3SKdUt" id="3XRSeSCF$sz" role="3cqZAp">
+                      <node concept="3SKdUq" id="3XRSeSCF$s$" role="3SKWNk">
+                        <property role="3SKdUp" value="if we have a init expression of type string literal" />
+                      </node>
+                    </node>
+                    <node concept="3clFbJ" id="3XRSeSCEd9t" role="3cqZAp">
+                      <node concept="3clFbS" id="3XRSeSCEd9v" role="3clFbx">
+                        <node concept="3N13vt" id="3XRSeSCEdme" role="3cqZAp" />
+                      </node>
+                      <node concept="1Wc70l" id="3XRSeSCEdew" role="3clFbw">
+                        <node concept="2OqwBi" id="3XRSeSCEdex" role="3uHU7w">
+                          <node concept="2OqwBi" id="3XRSeSCEdey" role="2Oq$k0">
+                            <node concept="37vLTw" id="3XRSeSCEdez" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5qJgyBheZgd" resolve="init" />
+                            </node>
+                            <node concept="2qgKlT" id="3XRSeSCEde$" role="2OqNvi">
+                              <ref role="37wK5l" to="ywuz:5O5ERJtHyWT" resolve="getInitExpression" />
+                            </node>
+                          </node>
+                          <node concept="1mIQ4w" id="3XRSeSCEde_" role="2OqNvi">
+                            <node concept="chp4Y" id="3XRSeSCEdis" role="cj9EA">
+                              <ref role="cht4Q" to="yq40:5jmmCdx$f5R" resolve="StringLiteral" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="2OqwBi" id="3XRSeSCEdeB" role="3uHU7B">
+                          <node concept="2OqwBi" id="3XRSeSCEdeC" role="2Oq$k0">
+                            <node concept="37vLTw" id="3XRSeSCEdeD" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5qJgyBheZgd" resolve="init" />
+                            </node>
+                            <node concept="2qgKlT" id="3XRSeSCEdeE" role="2OqNvi">
+                              <ref role="37wK5l" to="ywuz:5O5ERJtHyWT" resolve="getInitExpression" />
+                            </node>
+                          </node>
+                          <node concept="3x8VRR" id="3XRSeSCEdeF" role="2OqNvi" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                   <node concept="2OqwBi" id="5qJgyBheJpf" role="3clFbw">
                     <node concept="2OqwBi" id="5qJgyBheGDr" role="2Oq$k0">
