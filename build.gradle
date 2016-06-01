@@ -37,6 +37,20 @@ def mbeddr_script = new File(scriptsBasePath + "/com.mbeddr.build/" + "build.xml
 def tutorial_languages_script = new File(scriptsBasePath + "/com.mbeddr.tutorial/" + "build-languages.xml")
 def tutorial_solutions_script = new File(scriptsBasePath + "/com.mbeddr.tutorial/" + "build-solutions.xml")
 def test_mbeddr_tutorial_script = new File(scriptsBasePath + "/com.mbeddr.tutorial/" + "build-tests.xml	")
+def test_mbeddr_analysis_ts_script = new File(scriptsBasePath + "/com.mbeddr.analysis/" + "build-ts-tests.xml")
+def test_mbeddr_analysis_ex_script = new File(scriptsBasePath + "/com.mbeddr.analysis/" + "build-ex-tests.xml")
+def test_mbeddr_performance_script = new File(scriptsBasePath + "/com.mbeddr.core/" + "build-performance-tests.xml")
+def test_mbeddr_platform_script = new File(scriptsBasePath + "/com.mbeddr.platform/" + "build-ts-tests.xml")
+def test_mbeddr_debugger_script = new File(scriptsBasePath + "/com.mbeddr.debugger/" + "build-tests.xml")
+def test_mbeddr_core_ex_script = new File(scriptsBasePath + "/com.mbeddr.core/" + "build-ex-tests.xml")
+def test_mbeddr_core_ts_script = new File(scriptsBasePath + "/com.mbeddr.core/" + "build-ts-tests.xml")
+def test_mbeddr_cc_ts_script = new File(scriptsBasePath + "/com.mbeddr.cc/" + "build-ts-tests.xml")
+def test_mbeddr_cc_ex_script = new File(scriptsBasePath + "/com.mbeddr.cc/" + "build-ex-tests.xml")
+def test_mbeddr_ext_ts_script = new File(scriptsBasePath + "/com.mbeddr.ext/" + "build-ts-tests.xml")
+def test_mbeddr_ext_ex_script = new File(scriptsBasePath + "/com.mbeddr.ext/" + "build-ex-tests.xml")
+
+
+
 def tutorial_test_script = new File(scriptsBasePath + "/com.mbeddr.tutorial/" + "build-tests.xml")
 
 // path variables
@@ -132,23 +146,92 @@ tasks.create("build_tutorial_solutions", Exec) {
 
 task build_tutorial(dependsOn: build_tutorial_solutions) { }
 
-tasks.create("test_mbeddr_tutorial", Exec) {
+task test_mbeddr_tutorial(type: Exec) {
   workingDir projectDir
   def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', test_mbeddr_tutorial_script]
   commandLine('ant', *args, *languages_targets)
   dependsOn build_tutorial
 }
 
-
-
-
-
-tasks.create("test_tutorial", Exec) {
+task test_tutorial(type: Exec) {
   workingDir projectDir
   def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', tutorial_test_script]
   commandLine('ant', *args, *test_targets)
   dependsOn build_tutorial_solutions
 }
+
+task test_mbeddr_analysis_ex(type: Exec) {
+  workingDir projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', test_mbeddr_analysis_ex_script]
+  commandLine('ant', *args, *test_targets)
+  dependsOn build_tutorial_solutions
+}
+
+task test_mbeddr_analysis_ts(type: Exec) {
+  workingDir projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', test_mbeddr_analysis_ts_script]
+  commandLine('ant', *args, *test_targets)
+}
+
+task test_mbeddr_analysis(dependsOn: [test_mbeddr_analysis_ts, test_mbeddr_analysis_ex]) { }
+
+task test_mbeddr_performance(type: Exec) {
+  workingDir projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', test_mbeddr_performance_script]
+  commandLine('ant', *args, *test_targets)
+}
+
+task test_mbeddr_platform(type: Exec) {
+  workingDir projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', test_mbeddr_platform_script]
+  commandLine('ant', *args, *test_targets)
+}
+
+task test_mbeddr_debugger(type: Exec) {
+  workingDir projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', test_mbeddr_debugger_script]
+  commandLine('ant', *args, *test_targets)
+}
+
+task test_mbeddr_core_ex(type: Exec) {
+  workingDir projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', test_mbeddr_core_ex_script]
+  commandLine('ant', *args, *test_targets)
+}
+task test_mbeddr_core_ts(type: Exec) {
+  workingDir projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', test_mbeddr_core_ts_script]
+  commandLine('ant', *args, *test_targets)
+}
+task test_mbeddr_core(dependsOn: [test_mbeddr_core_ex, test_mbeddr_core_ts]) {}
+
+task test_mbeddr_cc_ex(type: Exec) {
+  workingDir projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', test_mbeddr_cc_ex_script]
+  commandLine('ant', *args, *test_targets)
+}
+task test_mbeddr_cc_ts(type: Exec) {
+  workingDir projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', test_mbeddr_cc_ts_script]
+  commandLine('ant', *args, *test_targets)
+}
+task test_mbeddr_cc(dependsOn: [test_mbeddr_cc_ex, test_mbeddr_cc_ts]) {}
+
+task test_mbeddr_ext_ex(type: Exec) {
+  workingDir projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', test_mbeddr_ext_ex_script]
+  commandLine('ant', *args, *test_targets)
+}
+task test_mbeddr_ext_ts(type: Exec) {
+  workingDir projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', test_mbeddr_ext_ts_script]
+  commandLine('ant', *args, *test_targets)
+}
+task test_mbeddr_ext(dependsOn: [test_mbeddr_ext_ex, test_mbeddr_ext_ts]) {}
+
+task test_mbeddr_windows(dependsOn: [test_mbeddr_ext, test_mbeddr_cc, test_mbeddr_core, test_mbeddr_debugger, test_mbeddr_platform, test_mbeddr_performance, test_tutorial]) {}
+
+
 
 task doTestRetrieve(type: Copy) {
   from configurations.mps
