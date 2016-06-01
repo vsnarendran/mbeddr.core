@@ -295,7 +295,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -4035,45 +4035,80 @@
             <node concept="10Nm6u" id="3D3g9moMQVj" role="33vP2m" />
           </node>
         </node>
+        <node concept="3cpWs8" id="4TA4VzJnmzq" role="3cqZAp">
+          <node concept="3cpWsn" id="4TA4VzJnmzr" role="3cpWs9">
+            <property role="TrG5h" value="repo" />
+            <node concept="3uibUv" id="4TA4VzJnmzp" role="1tU5fm">
+              <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+            </node>
+            <node concept="2YIFZM" id="4TA4VzJnmzs" role="33vP2m">
+              <ref role="37wK5l" to="alof:~ProjectHelper.getProjectRepository(com.intellij.openapi.project.Project):org.jetbrains.mps.openapi.module.SRepository" resolve="getProjectRepository" />
+              <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
+              <node concept="37vLTw" id="4TA4VzJnmzt" role="37wK5m">
+                <ref role="3cqZAo" node="3D3g9moMQV3" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4TA4VzJnryG" role="3cqZAp">
+          <node concept="3cpWsn" id="4TA4VzJnryH" role="3cpWs9">
+            <property role="TrG5h" value="resolvedNodeToHighlight" />
+            <node concept="3uibUv" id="4TA4VzJnry$" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+            </node>
+            <node concept="2OqwBi" id="4TA4VzJnryI" role="33vP2m">
+              <node concept="3cpWs2" id="4TA4VzJnryJ" role="2Oq$k0">
+                <ref role="3cqZAo" node="3D3g9moMQTS" resolve="nodeToHighlight" />
+              </node>
+              <node concept="liA8E" id="4TA4VzJnryK" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
+                <node concept="37vLTw" id="4TA4VzJnryL" role="37wK5m">
+                  <ref role="3cqZAo" node="4TA4VzJnmzr" resolve="repo" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="3D3g9moMQSo" role="3cqZAp">
           <node concept="3cpWsn" id="3D3g9moMQSp" role="3cpWs9">
             <property role="TrG5h" value="nodeTrace" />
             <property role="3TUv4t" value="true" />
+            <node concept="3K4zz7" id="4TA4VzJnxgF" role="33vP2m">
+              <node concept="10Nm6u" id="4TA4VzJnxwW" role="3K4E3e" />
+              <node concept="3clFbC" id="4TA4VzJnwMr" role="3K4Cdx">
+                <node concept="10Nm6u" id="4TA4VzJnwXf" role="3uHU7w" />
+                <node concept="37vLTw" id="4TA4VzJnws$" role="3uHU7B">
+                  <ref role="3cqZAo" node="4TA4VzJnryH" resolve="resolvedNodeToHighlight" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="3D3g9moMQSr" role="3K4GZi">
+                <node concept="2OqwBi" id="3D3g9moMQSs" role="2Oq$k0">
+                  <node concept="2YIFZM" id="3D3g9moMQSt" role="2Oq$k0">
+                    <ref role="1Pybhc" to="fwk:~TraceInfoCache" resolve="TraceInfoCache" />
+                    <ref role="37wK5l" to="fwk:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
+                  </node>
+                  <node concept="liA8E" id="3D3g9moMQSu" role="2OqNvi">
+                    <ref role="37wK5l" to="lvdd:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
+                    <node concept="2OqwBi" id="4TA4VzJntty" role="37wK5m">
+                      <node concept="37vLTw" id="4TA4VzJnt3p" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4TA4VzJnryH" resolve="resolvedNodeToHighlight" />
+                      </node>
+                      <node concept="liA8E" id="4TA4VzJnu2n" role="2OqNvi">
+                        <ref role="37wK5l" to="mhbf:~SNode.getModel():org.jetbrains.mps.openapi.model.SModel" resolve="getModel" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="3D3g9moMQSy" role="2OqNvi">
+                  <ref role="37wK5l" to="fwk:~DebugInfo.getPositionForNode(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.textgen.trace.TraceablePositionInfo" resolve="getPositionForNode" />
+                  <node concept="37vLTw" id="4TA4VzJnryM" role="37wK5m">
+                    <ref role="3cqZAo" node="4TA4VzJnryH" resolve="resolvedNodeToHighlight" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3uibUv" id="4YtriilITuS" role="1tU5fm">
               <ref role="3uigEE" to="fwk:~TraceablePositionInfo" resolve="TraceablePositionInfo" />
-            </node>
-            <node concept="2OqwBi" id="3D3g9moMQSr" role="33vP2m">
-              <node concept="2OqwBi" id="3D3g9moMQSs" role="2Oq$k0">
-                <node concept="2YIFZM" id="3D3g9moMQSt" role="2Oq$k0">
-                  <ref role="1Pybhc" to="fwk:~TraceInfoCache" resolve="TraceInfoCache" />
-                  <ref role="37wK5l" to="fwk:~TraceInfoCache.getInstance():jetbrains.mps.textgen.trace.TraceInfoCache" resolve="getInstance" />
-                </node>
-                <node concept="liA8E" id="3D3g9moMQSu" role="2OqNvi">
-                  <ref role="37wK5l" to="lvdd:~BaseModelCache.get(org.jetbrains.mps.openapi.model.SModel):java.lang.Object" resolve="get" />
-                  <node concept="2YIFZM" id="5HxjapwecYb" role="37wK5m">
-                    <ref role="37wK5l" to="unno:4g$x8cSGKDM" resolve="getModelFromNodeReference" />
-                    <ref role="1Pybhc" to="unno:1NYD3hytmTa" resolve="SNodeOperations" />
-                    <node concept="3cpWs2" id="5HxjapwecYc" role="37wK5m">
-                      <ref role="3cqZAo" node="3D3g9moMQTS" resolve="nodeToHighlight" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="liA8E" id="3D3g9moMQSy" role="2OqNvi">
-                <ref role="37wK5l" to="fwk:~DebugInfo.getPositionForNode(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.textgen.trace.TraceablePositionInfo" resolve="getPositionForNode" />
-                <node concept="2OqwBi" id="3D3g9moMQSz" role="37wK5m">
-                  <node concept="3cpWs2" id="3D3g9moMQTY" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3D3g9moMQTS" resolve="nodeToHighlight" />
-                  </node>
-                  <node concept="liA8E" id="5HxjapwecXX" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
-                    <node concept="2YIFZM" id="5HxjapwecXY" role="37wK5m">
-                      <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
-                      <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
-                    </node>
-                  </node>
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -4108,19 +4143,10 @@
                     <node concept="2OqwBi" id="3D3g9moMQSP" role="2Oq$k0">
                       <node concept="1eOMI4" id="3D3g9moMQSQ" role="2Oq$k0">
                         <node concept="10QFUN" id="3D3g9moMQSR" role="1eOMHV">
-                          <node concept="3Tqbb2" id="3D3g9moMQSS" role="10QFUM" />
-                          <node concept="2OqwBi" id="3D3g9moMQST" role="10QFUP">
-                            <node concept="3cpWs2" id="3D3g9moMQV2" role="2Oq$k0">
-                              <ref role="3cqZAo" node="3D3g9moMQTS" resolve="nodeToHighlight" />
-                            </node>
-                            <node concept="liA8E" id="5HxjapwecY7" role="2OqNvi">
-                              <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SNode" resolve="resolve" />
-                              <node concept="2YIFZM" id="5HxjapwecY8" role="37wK5m">
-                                <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
-                                <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
-                              </node>
-                            </node>
+                          <node concept="37vLTw" id="4TA4VzJnzkm" role="10QFUP">
+                            <ref role="3cqZAo" node="4TA4VzJnryH" resolve="resolvedNodeToHighlight" />
                           </node>
+                          <node concept="3Tqbb2" id="3D3g9moMQSS" role="10QFUM" />
                         </node>
                       </node>
                       <node concept="2Xjw5R" id="3D3g9moMQSW" role="2OqNvi">
@@ -10648,6 +10674,19 @@
     <node concept="2tJIrI" id="4rHwORqC3Av" role="jymVt" />
     <node concept="2YIFZL" id="4k8klQzATC9" role="jymVt">
       <property role="TrG5h" value="getModelDescriptorsFromNodeAndImports" />
+      <node concept="2AHcQZ" id="4rHwORqC3FG" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+      </node>
+      <node concept="P$JXv" id="4rHwORqC3FD" role="lGtFl">
+        <node concept="TZ5HI" id="4rHwORqC3FE" role="3nqlJM">
+          <node concept="TZ5HA" id="4rHwORqC3FF" role="3HnX3l" />
+        </node>
+        <node concept="TZ5HA" id="4rHwORqC3IL" role="TZ5H$">
+          <node concept="1dT_AC" id="4rHwORqC3IM" role="1dT_Ay">
+            <property role="1dT_AB" value="TODO: no usages found. Should we remove this method?" />
+          </node>
+        </node>
+      </node>
       <node concept="37vLTG" id="4k8klQzATDl" role="3clF46">
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="4k8klQzATDm" role="1tU5fm" />
@@ -10695,43 +10734,6 @@
                 </node>
               </node>
               <node concept="2Gpval" id="4k8klQzATCv" role="3cqZAp">
-                <node concept="2GrKxI" id="4k8klQzATCw" role="2Gsz3X">
-                  <property role="TrG5h" value="importedModel" />
-                </node>
-                <node concept="3clFbS" id="4k8klQzATCx" role="2LFqv$">
-                  <node concept="3cpWs8" id="4k8klQzATCy" role="3cqZAp">
-                    <node concept="3cpWsn" id="4k8klQzATCz" role="3cpWs9">
-                      <property role="TrG5h" value="importedModelInstance" />
-                      <node concept="3uibUv" id="4k8klQzATCG" role="1tU5fm">
-                        <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
-                      </node>
-                      <node concept="2OqwBi" id="4rHwORqC1zy" role="33vP2m">
-                        <node concept="2GrUjf" id="4rHwORqC1fo" role="2Oq$k0">
-                          <ref role="2Gs0qQ" node="4k8klQzATCw" resolve="importedModel" />
-                        </node>
-                        <node concept="liA8E" id="4rHwORqC1SA" role="2OqNvi">
-                          <ref role="37wK5l" to="mhbf:~SModelReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SModel" resolve="resolve" />
-                          <node concept="2YIFZM" id="4rHwORqC2n4" role="37wK5m">
-                            <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
-                            <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="4k8klQzATCH" role="3cqZAp">
-                    <node concept="2OqwBi" id="4k8klQzATCI" role="3clFbG">
-                      <node concept="3cpWsa" id="4k8klQzATDk" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4k8klQzATDa" resolve="modelDescriptors" />
-                      </node>
-                      <node concept="TSZUe" id="4k8klQzATCK" role="2OqNvi">
-                        <node concept="3cpWsa" id="4k8klQzATCM" role="25WWJ7">
-                          <ref role="3cqZAo" node="4k8klQzATCz" resolve="importedModelInstance" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
                 <node concept="2OqwBi" id="4rHwORqBMcY" role="2GsD0m">
                   <node concept="2ShNRf" id="4rHwORqBy7Z" role="2Oq$k0">
                     <node concept="1pGfFk" id="4rHwORqBKX1" role="2ShVmc">
@@ -10748,6 +10750,43 @@
                     <ref role="37wK5l" to="w1kc:~ModelImports.getImportedModels():java.util.Collection" resolve="getImportedModels" />
                   </node>
                 </node>
+                <node concept="2GrKxI" id="4k8klQzATCw" role="2Gsz3X">
+                  <property role="TrG5h" value="importedModel" />
+                </node>
+                <node concept="3clFbS" id="4k8klQzATCx" role="2LFqv$">
+                  <node concept="3cpWs8" id="4k8klQzATCy" role="3cqZAp">
+                    <node concept="3cpWsn" id="4k8klQzATCz" role="3cpWs9">
+                      <property role="TrG5h" value="importedModelInstance" />
+                      <node concept="2OqwBi" id="4rHwORqC1zy" role="33vP2m">
+                        <node concept="2GrUjf" id="4rHwORqC1fo" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="4k8klQzATCw" resolve="importedModel" />
+                        </node>
+                        <node concept="liA8E" id="4rHwORqC1SA" role="2OqNvi">
+                          <ref role="37wK5l" to="mhbf:~SModelReference.resolve(org.jetbrains.mps.openapi.module.SRepository):org.jetbrains.mps.openapi.model.SModel" resolve="resolve" />
+                          <node concept="2YIFZM" id="4rHwORqC2n4" role="37wK5m">
+                            <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
+                            <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3uibUv" id="4k8klQzATCG" role="1tU5fm">
+                        <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="4k8klQzATCH" role="3cqZAp">
+                    <node concept="2OqwBi" id="4k8klQzATCI" role="3clFbG">
+                      <node concept="3cpWsa" id="4k8klQzATDk" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4k8klQzATDa" resolve="modelDescriptors" />
+                      </node>
+                      <node concept="TSZUe" id="4k8klQzATCK" role="2OqNvi">
+                        <node concept="3cpWsa" id="4k8klQzATCM" role="25WWJ7">
+                          <ref role="3cqZAo" node="4k8klQzATCz" resolve="importedModelInstance" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -10757,19 +10796,6 @@
             <ref role="3cqZAo" node="4k8klQzATDa" resolve="modelDescriptors" />
           </node>
         </node>
-      </node>
-      <node concept="P$JXv" id="4rHwORqC3FD" role="lGtFl">
-        <node concept="TZ5HI" id="4rHwORqC3FE" role="3nqlJM">
-          <node concept="TZ5HA" id="4rHwORqC3FF" role="3HnX3l" />
-        </node>
-        <node concept="TZ5HA" id="4rHwORqC3IL" role="TZ5H$">
-          <node concept="1dT_AC" id="4rHwORqC3IM" role="1dT_Ay">
-            <property role="1dT_AB" value="TODO: no usages found. Should we remove this method?" />
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="4rHwORqC3FG" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
       </node>
     </node>
     <node concept="2YIFZL" id="4k8klQzAT$M" role="jymVt">
