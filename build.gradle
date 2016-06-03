@@ -166,7 +166,7 @@ task test_mbeddr_analysis_ex(type: Exec) {
   dependsOn build_tutorial_solutions
 }
 
-task test_mbeddr_analysis_ts(type: Exec) {
+task test_mbeddr_analysis_ts(type: Exec, dependsOn: copy_scripts) {
   workingDir projectDir
   def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', test_mbeddr_analysis_ts_script]
   commandLine('ant', *args, *test_targets)
@@ -174,44 +174,44 @@ task test_mbeddr_analysis_ts(type: Exec) {
 
 task test_mbeddr_analysis(dependsOn: [test_mbeddr_analysis_ts, test_mbeddr_analysis_ex]) { }
 
-task test_mbeddr_performance(type: Exec) {
+task test_mbeddr_performance(type: Exec, dependsOn: copy_scripts) {
   workingDir projectDir
   def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', test_mbeddr_performance_script]
   commandLine('ant', *args, *test_targets)
 }
 
-task test_mbeddr_platform(type: Exec) {
+task test_mbeddr_platform(type: Exec, dependsOn: copy_scripts) {
   workingDir projectDir
   def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', test_mbeddr_platform_script]
   commandLine('ant', *args, *test_targets)
 }
 
-task test_mbeddr_debugger(type: Exec) {
+task test_mbeddr_debugger(type: Exec, dependsOn: copy_scripts) {
   workingDir projectDir
   def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', test_mbeddr_debugger_script]
   commandLine('ant', *args, *test_targets)
 }
 
-task test_mbeddr_core_ex(type: Exec) {
+task test_mbeddr_core_ex(type: Exec, dependsOn: copy_scripts) {
   workingDir projectDir
   def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', test_mbeddr_core_ex_script]
   commandLine('ant', *args, *test_targets)
 }
 
-task test_mbeddr_core_ts(type: Exec) {
+task test_mbeddr_core_ts(type: Exec, dependsOn: copy_scripts) {
   workingDir projectDir
   def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', test_mbeddr_core_ts_script]
   commandLine('ant', *args, *test_targets)
 }
 task test_mbeddr_core(dependsOn: [test_mbeddr_core_ex, test_mbeddr_core_ts]) {}
 
-task test_mbeddr_cc_ex(type: Exec) {
+task test_mbeddr_cc_ex(type: Exec, dependsOn: copy_scripts) {
   workingDir projectDir
   def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', test_mbeddr_cc_ex_script]
   commandLine('ant', *args, *test_targets)
 }
 
-task test_mbeddr_cc_ts(type: Exec) {
+task test_mbeddr_cc_ts(type: Exec, dependsOn: copy_scripts) {
   workingDir projectDir
   def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', test_mbeddr_cc_ts_script]
   commandLine('ant', *args, *test_targets)
@@ -219,13 +219,13 @@ task test_mbeddr_cc_ts(type: Exec) {
 
 task test_mbeddr_cc(dependsOn: [test_mbeddr_cc_ex, test_mbeddr_cc_ts]) {}
 
-task test_mbeddr_ext_ex(type: Exec) {
+task test_mbeddr_ext_ex(type: Exec, dependsOn: copy_scripts) {
   workingDir projectDir
   def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', test_mbeddr_ext_ex_script]
   commandLine('ant', *args, *test_targets)
 }
 
-task test_mbeddr_ext_ts(type: Exec) {
+task test_mbeddr_ext_ts(type: Exec, dependsOn: copy_scripts) {
   workingDir projectDir
   def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', test_mbeddr_ext_ts_script]
   commandLine('ant', *args, *test_targets)
@@ -290,9 +290,7 @@ publishing {
       organisation 'com.mbeddr'
       module 'mbeddr'
       revision mbeddrBuild
-      artifact(mbeddrZIP) {
-
-      }
+      artifact(mbeddrZIP) {}
     }
 //        allScripts(IvyPublication) {
 //            organisation 'com.mbeddr'
