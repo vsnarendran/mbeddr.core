@@ -12649,6 +12649,29 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtD" id="5eMQ$mItZ_K" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="test.com.mbeddr.mpsutil.hyperlink" />
+        <property role="3LESm3" value="00700265-bafa-4ce4-857b-99dbc1ef8ab5" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="5eMQ$mItZSr" role="3LF7KH">
+          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+          <node concept="2Ry0Ak" id="5eMQ$mIu00j" role="iGT6I">
+            <property role="2Ry0Am" value="tests" />
+            <node concept="2Ry0Ak" id="5eMQ$mIu00o" role="2Ry0An">
+              <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.hyperlink" />
+              <node concept="2Ry0Ak" id="5eMQ$mIu00t" role="2Ry0An">
+                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.hyperlink.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1yeLz9" id="5eMQ$mIu00v" role="1TViLv">
+          <property role="TrG5h" value="test.com.mbeddr.mpsutil.hyperlink#6031122843817202654" />
+          <property role="3LESm3" value="3481ed35-4a73-43e4-b10d-4dfa1a83e861" />
+          <property role="2GAjPV" value="false" />
+        </node>
+      </node>
     </node>
     <node concept="22LTRH" id="7eF9rfAnzVt" role="1hWBAP">
       <property role="TrG5h" value="com.mbeddr.platform.tests" />
