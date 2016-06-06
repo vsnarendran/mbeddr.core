@@ -25762,10 +25762,8 @@
         <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
       </node>
       <node concept="37vLTG" id="76hx8dK7g$e" role="3clF46">
-        <property role="TrG5h" value="p0" />
-        <node concept="3uibUv" id="76hx8dK7g$f" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-        </node>
+        <property role="TrG5h" value="pattern" />
+        <node concept="17QB3L" id="4gYVSgE0EGj" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="76hx8dK7g$g" role="3clF47">
         <node concept="3clFbF" id="76hx8dK7h60" role="3cqZAp">
@@ -25776,7 +25774,7 @@
             <node concept="liA8E" id="76hx8dK7hah" role="2OqNvi">
               <ref role="37wK5l" to="f4zo:~SubstituteAction.getIconNode(java.lang.String):org.jetbrains.mps.openapi.model.SNode" resolve="getIconNode" />
               <node concept="37vLTw" id="76hx8dK7hjH" role="37wK5m">
-                <ref role="3cqZAo" node="76hx8dK7g$e" resolve="p0" />
+                <ref role="3cqZAo" node="76hx8dK7g$e" resolve="pattern" />
               </node>
             </node>
           </node>
@@ -25879,10 +25877,8 @@
         <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
       </node>
       <node concept="37vLTG" id="76hx8dK7g$I" role="3clF46">
-        <property role="TrG5h" value="p0" />
-        <node concept="3uibUv" id="76hx8dK7g$J" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-        </node>
+        <property role="TrG5h" value="pattern" />
+        <node concept="17QB3L" id="4gYVSgE0EzH" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="76hx8dK7g$K" role="3clF47">
         <node concept="3clFbF" id="76hx8dK7ilf" role="3cqZAp">
@@ -25893,7 +25889,7 @@
             <node concept="liA8E" id="76hx8dK7ipx" role="2OqNvi">
               <ref role="37wK5l" to="f4zo:~SubstituteAction.getActionType(java.lang.String):org.jetbrains.mps.openapi.model.SNode" resolve="getActionType" />
               <node concept="37vLTw" id="76hx8dK7iyX" role="37wK5m">
-                <ref role="3cqZAo" node="76hx8dK7g$I" resolve="p0" />
+                <ref role="3cqZAo" node="76hx8dK7g$I" resolve="pattern" />
               </node>
             </node>
           </node>
@@ -25910,13 +25906,11 @@
         <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
       </node>
       <node concept="37vLTG" id="76hx8dK7g$Q" role="3clF46">
-        <property role="TrG5h" value="p0" />
-        <node concept="3uibUv" id="76hx8dK7g$R" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-        </node>
+        <property role="TrG5h" value="pattern" />
+        <node concept="17QB3L" id="4gYVSgE0Er7" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="76hx8dK7g$S" role="3clF46">
-        <property role="TrG5h" value="p1" />
+        <property role="TrG5h" value="contextCell" />
         <node concept="3uibUv" id="76hx8dK7g$T" role="1tU5fm">
           <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
         </node>
@@ -25930,10 +25924,10 @@
             <node concept="liA8E" id="76hx8dK7iI1" role="2OqNvi">
               <ref role="37wK5l" to="f4zo:~SubstituteAction.getActionType(java.lang.String,jetbrains.mps.openapi.editor.cells.EditorCell):org.jetbrains.mps.openapi.model.SNode" resolve="getActionType" />
               <node concept="37vLTw" id="76hx8dK7iRx" role="37wK5m">
-                <ref role="3cqZAo" node="76hx8dK7g$Q" resolve="p0" />
+                <ref role="3cqZAo" node="76hx8dK7g$Q" resolve="pattern" />
               </node>
               <node concept="37vLTw" id="76hx8dK7iTG" role="37wK5m">
-                <ref role="3cqZAo" node="76hx8dK7g$S" resolve="p1" />
+                <ref role="3cqZAo" node="76hx8dK7g$S" resolve="contextCell" />
               </node>
             </node>
           </node>
@@ -25946,14 +25940,10 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3Tm1VV" id="76hx8dK7g$X" role="1B3o_S" />
-      <node concept="3uibUv" id="76hx8dK7g$Z" role="3clF45">
-        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-      </node>
+      <node concept="17QB3L" id="4gYVSgE0CGq" role="3clF45" />
       <node concept="37vLTG" id="76hx8dK7g_0" role="3clF46">
-        <property role="TrG5h" value="p0" />
-        <node concept="3uibUv" id="76hx8dK7g_1" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-        </node>
+        <property role="TrG5h" value="pattern" />
+        <node concept="17QB3L" id="4gYVSgE0Eim" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="76hx8dK7g_2" role="3clF47">
         <node concept="3clFbF" id="76hx8dK7j3X" role="3cqZAp">
@@ -25964,7 +25954,7 @@
             <node concept="liA8E" id="76hx8dK7j8e" role="2OqNvi">
               <ref role="37wK5l" to="f4zo:~SubstituteAction.getMatchingText(java.lang.String):java.lang.String" resolve="getMatchingText" />
               <node concept="37vLTw" id="76hx8dK7jhY" role="37wK5m">
-                <ref role="3cqZAo" node="76hx8dK7g_0" resolve="p0" />
+                <ref role="3cqZAo" node="76hx8dK7g_0" resolve="pattern" />
               </node>
             </node>
           </node>
@@ -25977,14 +25967,10 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3Tm1VV" id="76hx8dK7g_5" role="1B3o_S" />
-      <node concept="3uibUv" id="76hx8dK7g_7" role="3clF45">
-        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-      </node>
+      <node concept="17QB3L" id="4gYVSgE0Dh9" role="3clF45" />
       <node concept="37vLTG" id="76hx8dK7g_8" role="3clF46">
-        <property role="TrG5h" value="p0" />
-        <node concept="3uibUv" id="76hx8dK7g_9" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-        </node>
+        <property role="TrG5h" value="pattern" />
+        <node concept="17QB3L" id="4gYVSgE0E9F" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="76hx8dK7g_a" role="3clF47">
         <node concept="3clFbF" id="76hx8dK7jpF" role="3cqZAp">
@@ -25995,7 +25981,7 @@
             <node concept="liA8E" id="76hx8dK7jtW" role="2OqNvi">
               <ref role="37wK5l" to="f4zo:~SubstituteAction.getVisibleMatchingText(java.lang.String):java.lang.String" resolve="getVisibleMatchingText" />
               <node concept="37vLTw" id="76hx8dK7jBo" role="37wK5m">
-                <ref role="3cqZAo" node="76hx8dK7g_8" resolve="p0" />
+                <ref role="3cqZAo" node="76hx8dK7g_8" resolve="pattern" />
               </node>
             </node>
           </node>
@@ -26008,14 +25994,10 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3Tm1VV" id="76hx8dK7g_d" role="1B3o_S" />
-      <node concept="3uibUv" id="76hx8dK7g_f" role="3clF45">
-        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-      </node>
+      <node concept="17QB3L" id="4gYVSgE0DsX" role="3clF45" />
       <node concept="37vLTG" id="76hx8dK7g_g" role="3clF46">
-        <property role="TrG5h" value="p0" />
-        <node concept="3uibUv" id="76hx8dK7g_h" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-        </node>
+        <property role="TrG5h" value="pattern" />
+        <node concept="17QB3L" id="4gYVSgE0E14" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="76hx8dK7g_i" role="3clF47">
         <node concept="3clFbF" id="76hx8dK7jI8" role="3cqZAp">
@@ -26026,7 +26008,7 @@
             <node concept="liA8E" id="76hx8dK7jMp" role="2OqNvi">
               <ref role="37wK5l" to="f4zo:~SubstituteAction.getDescriptionText(java.lang.String):java.lang.String" resolve="getDescriptionText" />
               <node concept="37vLTw" id="76hx8dK7jW9" role="37wK5m">
-                <ref role="3cqZAo" node="76hx8dK7g_g" resolve="p0" />
+                <ref role="3cqZAo" node="76hx8dK7g_g" resolve="pattern" />
               </node>
             </node>
           </node>
@@ -26041,10 +26023,8 @@
       <node concept="3Tm1VV" id="76hx8dK7g_l" role="1B3o_S" />
       <node concept="10P_77" id="76hx8dK7g_n" role="3clF45" />
       <node concept="37vLTG" id="76hx8dK7g_o" role="3clF46">
-        <property role="TrG5h" value="p0" />
-        <node concept="3uibUv" id="76hx8dK7g_p" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-        </node>
+        <property role="TrG5h" value="pattern" />
+        <node concept="17QB3L" id="4gYVSgE0DSW" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="76hx8dK7g_q" role="3clF47">
         <node concept="3clFbF" id="76hx8dK7k3Q" role="3cqZAp">
@@ -26055,7 +26035,7 @@
             <node concept="liA8E" id="76hx8dK7k8c" role="2OqNvi">
               <ref role="37wK5l" to="f4zo:~SubstituteAction.canSubstituteStrictly(java.lang.String):boolean" resolve="canSubstituteStrictly" />
               <node concept="37vLTw" id="76hx8dK7khC" role="37wK5m">
-                <ref role="3cqZAo" node="76hx8dK7g_o" resolve="p0" />
+                <ref role="3cqZAo" node="76hx8dK7g_o" resolve="pattern" />
               </node>
             </node>
           </node>
@@ -26070,10 +26050,8 @@
       <node concept="3Tm1VV" id="76hx8dK7g_t" role="1B3o_S" />
       <node concept="10P_77" id="76hx8dK7g_v" role="3clF45" />
       <node concept="37vLTG" id="76hx8dK7g_w" role="3clF46">
-        <property role="TrG5h" value="p0" />
-        <node concept="3uibUv" id="76hx8dK7g_x" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-        </node>
+        <property role="TrG5h" value="pattern" />
+        <node concept="17QB3L" id="4gYVSgE0DCK" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="76hx8dK7g_y" role="3clF47">
         <node concept="3clFbF" id="76hx8dK7kpl" role="3cqZAp">
@@ -26084,7 +26062,7 @@
             <node concept="liA8E" id="76hx8dK7ktF" role="2OqNvi">
               <ref role="37wK5l" to="f4zo:~SubstituteAction.canSubstitute(java.lang.String):boolean" resolve="canSubstitute" />
               <node concept="37vLTw" id="76hx8dK7kB7" role="37wK5m">
-                <ref role="3cqZAo" node="76hx8dK7g_w" resolve="p0" />
+                <ref role="3cqZAo" node="76hx8dK7g_w" resolve="pattern" />
               </node>
             </node>
           </node>
@@ -26101,7 +26079,7 @@
         <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
       </node>
       <node concept="37vLTG" id="76hx8dK7g_C" role="3clF46">
-        <property role="TrG5h" value="p0" />
+        <property role="TrG5h" value="context" />
         <node concept="3uibUv" id="76hx8dK7g_D" role="1tU5fm">
           <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
         </node>
@@ -26110,10 +26088,8 @@
         </node>
       </node>
       <node concept="37vLTG" id="76hx8dK7g_F" role="3clF46">
-        <property role="TrG5h" value="p1" />
-        <node concept="3uibUv" id="76hx8dK7g_G" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-        </node>
+        <property role="TrG5h" value="pattern" />
+        <node concept="17QB3L" id="4gYVSgE0DKN" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="76hx8dK7g_H" role="3clF47">
         <node concept="3clFbF" id="76hx8dK7kIV" role="3cqZAp">
@@ -26124,10 +26100,10 @@
             <node concept="liA8E" id="76hx8dK7kNd" role="2OqNvi">
               <ref role="37wK5l" to="f4zo:~SubstituteAction.substitute(jetbrains.mps.openapi.editor.EditorContext,java.lang.String):org.jetbrains.mps.openapi.model.SNode" resolve="substitute" />
               <node concept="37vLTw" id="76hx8dK7kWJ" role="37wK5m">
-                <ref role="3cqZAo" node="76hx8dK7g_C" resolve="p0" />
+                <ref role="3cqZAo" node="76hx8dK7g_C" resolve="context" />
               </node>
               <node concept="37vLTw" id="76hx8dK7l6k" role="37wK5m">
-                <ref role="3cqZAo" node="76hx8dK7g_F" resolve="p1" />
+                <ref role="3cqZAo" node="76hx8dK7g_F" resolve="pattern" />
               </node>
             </node>
           </node>
