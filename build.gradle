@@ -57,9 +57,11 @@ subprojects {
     repositories {
         maven {
             //url "$buildDir/repo"
-            credentials {
-                username nexusUsername
-                password nexusPassword
+            if(hasProperty(nexusUsername)) {
+                credentials {
+                    username nexusUsername
+                    password nexusPassword
+                }
             }
             url 'https://projects.itemis.de/nexus/content/repositories/mps_mbeddr_r'
         }
@@ -131,9 +133,11 @@ project(':build:com.jetbrains.mps') {
         }
         repositories {
             maven {
-                credentials {
-                username nexusUsername
-                password nexusPassword
+                if(hasProperty(nexusUsername)) {
+                    credentials {
+                        username nexusUsername
+                        password nexusPassword
+                    }
                 }
                 url 'https://projects.itemis.de/nexus/content/repositories/mps_mbeddr_r'
             }
@@ -240,9 +244,11 @@ project(':build:com.mbeddr.allInOne') {
         }
         repositories {
             maven {
-                credentials {
-                    username nexusUsername
-                    password nexusPassword
+                if(hasProperty(nexusUsername)) {
+                    credentials {
+                        username nexusUsername
+                        password nexusPassword
+                    }
                 }
                 url 'https://projects.itemis.de/nexus/content/repositories/mps_mbeddr_r'
             }
