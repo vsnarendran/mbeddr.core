@@ -57,7 +57,7 @@ subprojects {
     repositories {
         maven {
             //url "$buildDir/repo"
-            if(hasProperty(nexusUsername)) {
+            if(hasProperty('nexusUsername')) {
                 credentials {
                     username nexusUsername
                     password nexusPassword
@@ -133,7 +133,7 @@ project(':build:com.jetbrains.mps') {
         }
         repositories {
             maven {
-                if(hasProperty(nexusUsername)) {
+                if(hasProperty('nexusUsername')) {
                     credentials {
                         username nexusUsername
                         password nexusPassword
@@ -244,7 +244,7 @@ project(':build:com.mbeddr.allInOne') {
         }
         repositories {
             maven {
-                if(hasProperty(nexusUsername)) {
+                if(hasProperty('nexusUsername')) {
                     credentials {
                         username nexusUsername
                         password nexusPassword
