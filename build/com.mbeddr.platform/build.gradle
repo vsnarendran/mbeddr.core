@@ -1,0 +1,12 @@
+def script_build_mbeddrPlatformDistribution = new File(scriptsBasePath + "/com.mbeddr.platform/" + "build-distribution.xml")
+
+task build_platform_distribution(type: Exec, dependsOn: 'resolve_mps') {
+  workingDir projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', script_build_mbeddrPlatformDistribution]
+  commandLine('ant', *args, *languages_targets)
+}
+
+task publish_platform_distribution(type: Zip, dependsOn: build_platform_distribution) {
+    from rootProject.projectDir.absolutePath + "/artifacts/com.mbeddr.platform.distribution"
+    include "*.zip"
+}

@@ -1,0 +1,70 @@
+def script_build_slAll = new File(scriptsBasePath + "/sl-all/" + "build.xml")
+def script_build_spawner = new File(scriptsBasePath + "/com.mbeddr.build/" + "spawner.xml")
+def script_build_platform = new File(scriptsBasePath + "/com.mbeddr.platform/" + "build.xml")
+def script_build_mbeddr = new File(scriptsBasePath + "/com.mbeddr.build/" + "build.xml")
+def script_build_tutorialLanguages = new File(scriptsBasePath + "/com.mbeddr.tutorial/" + "build-languages.xml")
+def script_build_tutorialSolutions = new File(scriptsBasePath + "/com.mbeddr.tutorial/" + "build-solutions.xml")
+
+task build_sl_all(type: Exec, dependsOn: 'copy_allScripts') {
+  workingDir rootProject.projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', script_build_slAll]
+  commandLine('ant', *args, *languages_targets)
+}
+
+task copy_sl_all_nativelibs(type: Copy, dependsOn: build_sl_all) {
+  from zipTree(rootProject.projectDir.absolutePath + "/artifacts/mps-sl-all/mps-sl-all.zip")
+  include "de.itemis.mps.nativelibs.loader/"
+  into "MPS/MPS-mbeddr/plugins"
+}
+
+task build_spawner(type: Exec, dependsOn: copy_sl_all_nativelibs) {
+  workingDir rootProject.projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', script_build_spawner]
+  commandLine('ant', *args, *languages_targets)
+}
+
+task copy_spawner(type: Copy, dependsOn: build_spawner) {
+  from zipTree(rootProject.projectDir.absolutePath + "/artifacts/spawner/com.mbeddr.spawner.zip")
+  into "MPS/MPS-mbeddr/plugins"
+}
+
+task build_platform(type: Exec, dependsOn: copy_spawner) {
+  workingDir rootProject.projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', script_build_platform]
+  commandLine('ant', *args, *languages_targets)
+}
+
+task build_mbeddr(type: Exec, dependsOn: build_platform) {
+  workingDir rootProject.projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', script_build_mbeddr]
+  commandLine('ant', *args, *languages_targets)
+}
+
+task build_tutorial_languages(type: Exec, dependsOn: build_mbeddr) {
+  workingDir rootProject.projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', script_build_tutorialLanguages]
+  commandLine('ant', *args, *languages_targets)
+}
+
+task build_tutorial_solutions(type: Exec, dependsOn: build_tutorial_languages) {
+  workingDir rootProject.projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', script_build_tutorialSolutions]
+  commandLine('ant', *args, *languages_targets)
+}
+
+task build_tutorial(dependsOn: build_tutorial_solutions) { }
+
+task package_tutorial(type: Zip, dependsOn: build_tutorial) {
+    from rootProject.projectDir.absolutePath + "/code/applications/tutorial"
+    destinationDir  new File(rootProject.projectDir.absolutePath + "/artifacts/" + "com.mbeddr.tutorial")
+    archiveName "com.mbeddr.tutorial.zip"
+}
+
+task publish_mbeddr(type: Zip, dependsOn: package_tutorial) {
+  from rootProject.projectDir.absolutePath + "/artifacts"
+  include "mbeddr/*.zip"
+  include "spawner/*.zip"
+  include "mps-sl-all/*.zip"
+  include "com.mbeddr.tutorial/*.zip"
+  include "com.mbeddr.platform/*.zip"
+}

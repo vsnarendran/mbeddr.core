@@ -1,0 +1,12 @@
+def script_build_mbeddrAllInOne = new File(scriptsBasePath + "/com.mbeddr.allInOne/" + "build.xml")
+
+task build_all_in_one(type: Exec, dependsOn: 'copy_allScripts') {
+  workingDir projectDir
+  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', script_build_mbeddrAllInOne]
+  commandLine('ant', *args, *languages_targets)
+}
+
+task publish_all_in_one(type: Zip, dependsOn: build_all_in_one) {
+    from rootProject.projectDir.absolutePath + "/artifacts/com.mbeddr.allInOne"
+    include "com.mbeddr.allInOne.zip"
+}
