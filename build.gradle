@@ -108,7 +108,7 @@ subprojects {
         ant.get(src: mpsBaseUrl + "MPS-" + mpsBuild + ".zip", dest: rootProject.projectDir.absolutePath + "/MPS/MPS-" + mpsBuild + ".zip", skipexisting:true)
     }
 
-    tasks.create(name: 'unzipMPS', dependsOn: downloadMPS) << {
+    tasks.create(name: 'unzipMPS', dependsOn: 'downloadMPS') << {
         ant.unzip(src: file(rootProject.projectDir.absolutePath + "/MPS/MPS-" + mpsBuild + ".zip"), dest: file(rootProject.projectDir.absolutePath +"/MPS/"))
         ant.move(file: file(rootProject.projectDir.absolutePath + "/MPS/MPS " + mpsMajor), toFile: file (rootProject.projectDir.absolutePath +"/MPS/" + mbeddrMpsDir))
     }
