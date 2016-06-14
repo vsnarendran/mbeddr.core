@@ -20,7 +20,7 @@ node ('linux') {
             sh "${gradleHome}/bin/gradle -b bootstrap.gradle publishMpsPublicationToIvyRepository"
 
         stage 'Generate Build Scripts'
-            sh "${gradleHome}/bin/gradle -b build.gradle build_all_scripts"
+            sh "${gradleHome}/bin/gradle -b build.gradle build_allScripts"
 
             //step([$class: 'ArtifactArchiver', artifacts: 'build/**/*.xml', fingerprint: true])
             //step([$class: 'ArtifactArchiver', artifacts: 'code/plugins/**/*.xml', fingerprint: true])
@@ -78,6 +78,8 @@ node ('linux') {
            step([$class: 'ArtifactArchiver', artifacts: 'artifacts/', fingerprint: true])
            step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
 
+        stage 'Cleanup'
+          deleteDir()
 }
 
 def runTest(gradleHome, gradleTask) {
