@@ -36,9 +36,7 @@ node ('linux') {
         stage name: 'Tests'
 //            stash includes: '**/*', name: 'git'
             stash includes: 'build/repo/**/*', name: 'mps'
-            stash includes: [['build/**/*.xml','code/plugins/**/*.xml']], name: 'build_scripts'
-            //stash includes: 'code/plugins/**/*.xml', name: 'build_scripts'
-            stash includes: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/*', name: 'build_scripts'
+            stash includes: 'build/**/*.xml,code/plugins/**/*.xml,code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/*', name: 'build_scripts'
             stash includes: 'artifacts/', name: 'build_mbeddr'
 
             parallel (
