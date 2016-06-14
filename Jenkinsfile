@@ -28,16 +28,16 @@ node ('linux') {
           stage 'Build Tutorials'
               sh "${gradleHome}/bin/gradle -b build.gradle build_tutorial"
 
-        //step([$class: 'ArtifactArchiver', artifacts: 'build/**/*.xml', fingerprint: true])
-        //step([$class: 'ArtifactArchiver', artifacts: 'code/plugins/**/*.xml', fingerprint: true])
-        //step([$class: 'ArtifactArchiver', artifacts: 'artifacts/', fingerprint: true])
-        //step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
+              //step([$class: 'ArtifactArchiver', artifacts: 'build/**/*.xml', fingerprint: true])
+              //step([$class: 'ArtifactArchiver', artifacts: 'code/plugins/**/*.xml', fingerprint: true])
+              //step([$class: 'ArtifactArchiver', artifacts: 'artifacts/', fingerprint: true])
+              //step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
+              stash includes: 'build/repo/**/*', name: 'mps'
+              stash includes: 'build/**/*.xml, code/plugins/**/*.xml, code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/*', name: 'build_scripts'
+              stash includes: 'artifacts/', name: 'build_mbeddr'
 
         stage name: 'Tests'
 //            stash includes: '**/*', name: 'git'
-            stash includes: 'build/repo/**/*', name: 'mps'
-            stash includes: 'build/**/*.xml,code/plugins/**/*.xml,code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/*', name: 'build_scripts'
-            stash includes: 'artifacts/', name: 'build_mbeddr'
 
             parallel (
                 "tests stream 1" : {
