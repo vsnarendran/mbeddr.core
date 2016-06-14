@@ -115,7 +115,7 @@ subprojects {
         into file(rootProject.projectDir.absolutePath + "/MPS/" + mbeddrMpsDir+ "/")
     }
 
-    tasks.create(name: 'copy_allScripts', type: Copy, dependsOn: 'unzip_ResolvedMPS') {
+    tasks.create(name: 'copy_allScripts', type: Copy, dependsOn: 'resolve_mps') {
         from rootProject.projectDir.absolutePath + "/build"
         include "*/*.xml"
         from rootProject.projectDir.absolutePath + "/code/plugins"
