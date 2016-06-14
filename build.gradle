@@ -71,6 +71,7 @@ subprojects {
     configurations {
         mps{
             description = 'mps distribution'
+
         }
         mbeddr_allScripts {
             description = 'mbeddr build scripts'
@@ -104,20 +105,17 @@ subprojects {
         }
     }
 
-    tasks.create(name: 'downloadMPS') << {
-        ant.get(src: mpsBaseUrl + "MPS-" + mpsBuild + ".zip", dest: rootProject.projectDir.absolutePath + "/MPS/MPS-" + mpsBuild + ".zip", skipexisting:true)
+    task get_mps(type: Copy)  {
+        from configurations.mps
+        into rootProject.projectDir.absolutePath + "/MPS/"
     }
 
-    tasks.create(name: 'unzipMPS', dependsOn: 'downloadMPS') << {
-        ant.unzip(src: file(rootProject.projectDir.absolutePath + "/MPS/MPS-" + mpsBuild + ".zip"), dest: file(rootProject.projectDir.absolutePath +"/MPS/"))
-        ant.move(file: file(rootProject.projectDir.absolutePath + "/MPS/MPS " + mpsMajor), toFile: file (rootProject.projectDir.absolutePath +"/MPS/" + mbeddrMpsDir))
-    }
-
-    tasks.create(name: 'resolve_mps', type: Copy, dependsOn: 'unzipMPS') << {
-        from zipTree(configurations.mps.singleFile)
+    task resolve_mps(type: Copy, dependsOn: get_mps)  {
+        from zipTree(rootProject.projectDir.absolutePath + "/MPS/" + "mps-"+mpsBuild+".zip")
         into file(rootProject.projectDir.absolutePath + "/MPS/" + mbeddrMpsDir+ "/")
     }
-    tasks.create(name: 'copy_allScripts', type: Copy, dependsOn: 'resolve_mps') {
+
+    tasks.create(name: 'copy_allScripts', type: Copy, dependsOn: 'unzip_ResolvedMPS') {
         from rootProject.projectDir.absolutePath + "/build"
         include "*/*.xml"
         from rootProject.projectDir.absolutePath + "/code/plugins"
@@ -129,9 +127,7 @@ subprojects {
 
 project(':build:com.jetbrains.mps') {
     publishing {
-        artifacts {
-            mps publishMPS
-        }
+
         publications {
             mps(MavenPublication) {
                 groupId 'com.jetbrains'
