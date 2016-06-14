@@ -151,7 +151,7 @@ project(':build:com.jetbrains.mps') {
 }
 
 project(':build:com.mbeddr.allScripts') {
-    publishing {
+    /*publishing {
         publications {
             mbeddrAllScripts(MavenPublication) {
                 groupId 'com.mbeddr'
@@ -160,7 +160,7 @@ project(':build:com.mbeddr.allScripts') {
                 artifact(publish_allScripts) {}
             }
         }
-    }
+    }*/
     dependencies {
         //compile project(path: ':build:com.jetbrains.mps', configuration: 'mps')
         mps group: 'com.jetbrains', name: 'mps', version: mpsBuild
@@ -172,7 +172,7 @@ project(':build:com.mbeddr.build') {
         //compile project(path: ':build:com.mbeddr.allScripts', configuration: 'scripts' )
         //compile project(path: ':build:com.jetbrains.mps', configuration: 'mps')
         mps group: 'com.jetbrains', name: 'mps', version: mpsBuild
-        mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
+        //mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
     }
     repositories {
         maven {
@@ -187,7 +187,7 @@ project(':build:com.mbeddr.tests') {
         //compile project(':build:com.mbeddr.allScripts')
         //compile project(':build:com.mbeddr.build')
         mps group: 'com.jetbrains', name: 'mps', version: mpsBuild
-        mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
+        //mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
         //mbeddr group: 'com.mbeddr', name: 'build', version: mbeddrBuild
     }
 }
@@ -198,7 +198,7 @@ project(':build:com.mbeddr.platform') {
         //compile project(':build:com.mbeddr.allScripts')
         //compile project(':build:com.mbeddr.build')
         mps group: 'com.jetbrains', name: 'mps', version: mpsBuild
-        mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
+        //mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
         //mbeddr group: 'com.mbeddr', name: 'build', version: mbeddrBuild
     }
     publishing {
@@ -224,7 +224,7 @@ project(':build:com.mbeddr.allInOne') {
         //compile project(':build:com.mbeddr.allScripts')
         //compile project(':build:com.mbeddr.build')
         mps group: 'com.jetbrains', name: 'mps', version: mpsBuild
-        mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
+        //mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
         //mbeddr group: 'com.mbeddr', name: 'build', version: mbeddrBuild
     }
     publishing {
@@ -257,7 +257,7 @@ project(':build:com.mbeddr.rcp') {
         //compile project(':build:com.mbeddr.build')  // dep. because of tutorial?
         //compile project(':build:com.mbeddr.allInOne')
         mps group: 'com.jetbrains', name: 'mps', version: mpsBuild
-        mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
+        //mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
         //mbeddr group: 'com.mbeddr', name: 'build', version: mbeddrBuild
         mbeddrAllInOne group: 'com.mbeddr', name: 'allInOne', version: mbeddrBuild
     }
@@ -344,7 +344,7 @@ project(':build:com.mbeddr.analyses.cbmc') {
 project(':build:com.mbeddr.tutorial') {
     dependencies {
         mps group: 'com.jetbrains', name: 'mps', version: mpsBuild
-        mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
+        //mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
         //mbeddr group: 'com.mbeddr', name: 'build', version: mbeddrBuild
     }
     publishing {

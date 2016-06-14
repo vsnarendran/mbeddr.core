@@ -16,7 +16,7 @@ task build_tutorial_solutions(type: Exec, dependsOn: build_tutorial_languages) {
 
 task build_tutorial(dependsOn: build_tutorial_solutions) { }
 
-task package_tutorial(type: Zip, dependsOn: build_tutorial) {
+task package_tutorial(type: Zip) {
     from rootProject.projectDir.absolutePath + "/code/applications/tutorial"
     destinationDir  new File(rootProject.projectDir.absolutePath + "/artifacts/" + "com.mbeddr.tutorial")
     archiveName "com.mbeddr.tutorial.zip"
@@ -24,11 +24,4 @@ task package_tutorial(type: Zip, dependsOn: build_tutorial) {
 
 task publish_mbeddrTutorial(type: Zip, dependsOn: package_tutorial) {
     from rootProject.projectDir.absolutePath + "/artifacts/" + "com.mbeddr.tutorial"
-}
-
-task zip_mbeddrTutorial(type: Zip) {
-    from rootProject.projectDir.absolutePath + "/mbeddr.core/code/applications"
-    include "tutorial"
-    exclude "tutorial/.mps/vcs.xml tutorial/.mps/libraries.xml"
-    into rootProject.projectDir.absolutePath + "/artifacts/" + "com.mbeddr.tutorial.zip"
 }
