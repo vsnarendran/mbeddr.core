@@ -14,11 +14,6 @@ node ('linux') {
             checkout scm
             //git (url: 'https://github.com/mbeddr/mbeddr.core.git/', branch: 'gradle-build')
 
-            step ([$class: 'CopyArtifact', projectName: 'Download_MPS']);
-
-        stage 'Download MPS'
-            sh "${gradleHome}/bin/gradle -b bootstrap.gradle publishMpsPublicationToIvyRepository"
-
         stage 'Generate Build Scripts'
             sh "${gradleHome}/bin/gradle -b build.gradle build_allScripts"
 
@@ -41,8 +36,8 @@ node ('linux') {
         stage name: 'Tests'
 //            stash includes: '**/*', name: 'git'
             stash includes: 'build/repo/**/*', name: 'mps'
-            stash includes: 'build/**/*.xml', name: 'build_scripts'
-            stash includes: 'code/plugins/**/*.xml', name: 'build_scripts'
+            stash includes: [['build/**/*.xml','code/plugins/**/*.xml']], name: 'build_scripts'
+            //stash includes: 'code/plugins/**/*.xml', name: 'build_scripts'
             stash includes: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/*', name: 'build_scripts'
             stash includes: 'artifacts/', name: 'build_mbeddr'
 
