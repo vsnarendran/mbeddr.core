@@ -6,7 +6,7 @@ task build_platform_distribution(type: Exec, dependsOn: 'resolve_mps') {
   commandLine('ant', *args, *languages_targets)
 }
 
-task publish_platform_distribution(type: Zip, dependsOn: build_platform_distribution) {
-    from rootProject.projectDir.absolutePath + "/artifacts/com.mbeddr.platform.distribution"
-    include "*.zip"
+task publish_mbeddrPlatform(type: Zip, dependsOn: build_platform_distribution) {
+    from rootProject.projectDir.absolutePath + "/artifacts/"
+    include "com.mbeddr.platform.distribution/*.zip"
 }

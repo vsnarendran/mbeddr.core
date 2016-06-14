@@ -71,37 +71,36 @@ subprojects {
     configurations {
         mps{
             description = 'mps distribution'
-
         }
-        mbeddr_allScripts {
+        mbeddrAllScripts {
             description = 'mbeddr build scripts'
         }
-        mbeddr {
-            description = 'mbeddr'
-        }
-        mbeddr_allInOne {
+        mbeddrAllInOne {
             description = 'mbeddr allInOne'
         }
-        platform_distribution {
+        mbeddrPlatform {
             description = 'mbeddr platform distribution'
         }
-        mbeddr_rcp {
+        mbeddrRcp {
             description = 'mbeddr rcp'
         }
-        mbeddr_jre {
+        mbeddrJre {
             description = 'jre used for rcp'
         }
-        mbeddr_dmg {
+        mbeddrDmg {
             description = 'mbeddr dmg for mac'
         }
-        cbmc_win {
+        cbmcWin {
             description = 'cbmc windows'
         }
-        cbmc_linux {
+        cbmcLinux {
             description = 'cbmc linux'
         }
-        cbmc_mac {
+        cbmcMac {
             description = 'cbmc mac'
+        }
+        mbeddrTutorial {
+            description = 'mbeddr tutorial'
         }
     }
 
@@ -154,7 +153,7 @@ project(':build:com.jetbrains.mps') {
 project(':build:com.mbeddr.allScripts') {
     publishing {
         publications {
-            allScripts(MavenPublication) {
+            mbeddrAllScripts(MavenPublication) {
                 groupId 'com.mbeddr'
                 artifactId 'allScripts'
                 version mbeddrBuild
@@ -169,21 +168,11 @@ project(':build:com.mbeddr.allScripts') {
 }
 
 project(':build:com.mbeddr.build') {
-    publishing {
-        publications {
-            mbeddr(MavenPublication) {
-                groupId 'com.mbeddr'
-                artifactId 'mbeddr'
-                version mbeddrBuild
-                artifact(publish_mbeddr) {}
-            }
-        }
-    }
     dependencies {
         //compile project(path: ':build:com.mbeddr.allScripts', configuration: 'scripts' )
         //compile project(path: ':build:com.jetbrains.mps', configuration: 'mps')
         mps group: 'com.jetbrains', name: 'mps', version: mpsBuild
-        mbeddr_allScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
+        mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
     }
     repositories {
         maven {
@@ -198,8 +187,8 @@ project(':build:com.mbeddr.tests') {
         //compile project(':build:com.mbeddr.allScripts')
         //compile project(':build:com.mbeddr.build')
         mps group: 'com.jetbrains', name: 'mps', version: mpsBuild
-        mbeddr_allScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
-        mbeddr group: 'com.mbeddr', name: 'build', version: mbeddrBuild
+        mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
+        //mbeddr group: 'com.mbeddr', name: 'build', version: mbeddrBuild
     }
 }
 
@@ -209,16 +198,16 @@ project(':build:com.mbeddr.platform') {
         //compile project(':build:com.mbeddr.allScripts')
         //compile project(':build:com.mbeddr.build')
         mps group: 'com.jetbrains', name: 'mps', version: mpsBuild
-        mbeddr_allScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
-        mbeddr group: 'com.mbeddr', name: 'build', version: mbeddrBuild
+        mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
+        //mbeddr group: 'com.mbeddr', name: 'build', version: mbeddrBuild
     }
     publishing {
         publications {
-            platform_distribution(MavenPublication) {
+            mbeddrPlatform(MavenPublication) {
                 groupId 'com.mbeddr'
                 artifactId 'platform'
                 version mbeddrBuild
-                artifact(publish_platform_distribution) {}
+                artifact(publish_mbeddrPlatform) {}
             }
         }
         repositories {
@@ -235,12 +224,12 @@ project(':build:com.mbeddr.allInOne') {
         //compile project(':build:com.mbeddr.allScripts')
         //compile project(':build:com.mbeddr.build')
         mps group: 'com.jetbrains', name: 'mps', version: mpsBuild
-        mbeddr_allScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
-        mbeddr group: 'com.mbeddr', name: 'build', version: mbeddrBuild
+        mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
+        //mbeddr group: 'com.mbeddr', name: 'build', version: mbeddrBuild
     }
     publishing {
         publications {
-            mbeddr_all_in_one(MavenPublication) {
+            mbeddrAllInOne(MavenPublication) {
                 groupId 'com.mbeddr'
                 artifactId 'allInOne'
                 version mbeddrBuild
@@ -268,19 +257,19 @@ project(':build:com.mbeddr.rcp') {
         //compile project(':build:com.mbeddr.build')  // dep. because of tutorial?
         //compile project(':build:com.mbeddr.allInOne')
         mps group: 'com.jetbrains', name: 'mps', version: mpsBuild
-        mbeddr_allScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
-        mbeddr group: 'com.mbeddr', name: 'build', version: mbeddrBuild
-        mbeddr_allInOne group: 'com.mbeddr', name: 'allInOne', version: mbeddrBuild
+        mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
+        //mbeddr group: 'com.mbeddr', name: 'build', version: mbeddrBuild
+        mbeddrAllInOne group: 'com.mbeddr', name: 'allInOne', version: mbeddrBuild
     }
     publishing {
         publications {
-            mbeddr_rcp(MavenPublication) {
+            mbeddrRcp(MavenPublication) {
                 groupId 'com.mbeddr'
                 artifactId 'rcp'
                 version mbeddrBuild
                 artifact(publish_mbeddrRCP) {}
             }
-            mbeddr_jre(MavenPublication) {
+            mbeddrJre(MavenPublication) {
                 groupId 'com.mbeddr'
                 artifactId 'jre'
                 version mbeddrBuild
@@ -303,20 +292,20 @@ project(':build:com.mbeddr.release') {
         //compile 'com.mbeddr:allInOne:0.9.1'
         //compile 'com.mbeddr:jre:0.9.1'
         //compile 'com.mbeddr:rcp:0.9.1'
-        mbeddr_jre group: 'com.mbeddr', name: 'jre', version: mbeddrBuild
-        mbeddr_rcp group: 'com.mbeddr', name: 'rcp', version: mbeddrBuild
-        mbeddr_allInOne group: 'com.mbeddr', name: 'allInOne', version: mbeddrBuild
-        cbmc_mac group: 'org.cprover', name: 'cbmc-mac', version: cbmcBuild
-        cbmc_linux group: 'org.cprover', name: 'cbmc-linux', version: cbmcBuild
-        cbmc_win group: 'org.cprover', name: 'cbmc-win', version: cbmcBuild
+        mbeddrJre group: 'com.mbeddr', name: 'jre', version: mbeddrBuild
+        mbeddrRcp group: 'com.mbeddr', name: 'rcp', version: mbeddrBuild
+        mbeddrAllInOne group: 'com.mbeddr', name: 'allInOne', version: mbeddrBuild
+        cbmcMac group: 'org.cprover', name: 'cbmc-mac', version: cbmcBuild
+        cbmcLinux group: 'org.cprover', name: 'cbmc-linux', version: cbmcBuild
+        cbmcWin group: 'org.cprover', name: 'cbmc-win', version: cbmcBuild
     }
-    publishing {
+   /* publishing {
         publications {
-            mbeddr_dmg(MavenPublication) {
+            mbeddrDmg(MavenPublication) {
                 groupId 'com.mbeddr'
                 artifactId 'dmg'
                 version mbeddrBuild
-                artifact(publish_mbeddr_dmg) {}
+                artifact(publish_mbeddrDmg) {}
             }
         }
         repositories {
@@ -324,29 +313,58 @@ project(':build:com.mbeddr.release') {
                 url "$buildDir/repo"
             }
         }
-    }
+    }*/
 }
 
 project(':build:com.mbeddr.analyses.cbmc') {
     publishing {
         publications {
-            cbmc_mac(MavenPublication) {
+            cbmcMac(MavenPublication) {
                 groupId 'org.cprover'
                 artifactId 'cbmc-mac'
                 version cbmcBuild
                 artifact(publish_cbmcMac) {}
             }
-            cbmc_linux(MavenPublication) {
+            cbmcLinux(MavenPublication) {
                 groupId 'org.cprover'
                 artifactId 'cbmc-linux'
                 version cbmcBuild
                 artifact(publish_cbmcLinux) {}
             }
-            cbmc_win(MavenPublication) {
+            cbmcWin(MavenPublication) {
                 groupId 'org.cprover'
                 artifactId 'cbmc-win'
                 version cbmcBuild
                 artifact(publish_cbmcWin) {}
+            }
+        }
+    }
+}
+
+project(':build:com.mbeddr.tutorial') {
+    dependencies {
+        mps group: 'com.jetbrains', name: 'mps', version: mpsBuild
+        mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuild
+        //mbeddr group: 'com.mbeddr', name: 'build', version: mbeddrBuild
+    }
+    publishing {
+        publications {
+            mbeddrTutorial(MavenPublication) {
+                groupId 'com.mbeddr'
+                artifactId 'tutorial'
+                version mbeddrBuild
+                artifact(publish_mbeddrTutorial) {}
+            }
+        }
+        repositories {
+            maven {
+                if(hasProperty('nexusUsername')) {
+                    credentials {
+                        username nexusUsername
+                        password nexusPassword
+                    }
+                }
+                url 'https://projects.itemis.de/nexus/content/repositories/mps_mbeddr_r'
             }
         }
     }
