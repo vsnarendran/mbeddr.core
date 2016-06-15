@@ -41,19 +41,19 @@ node ('linux') {
 
             parallel (
                 "tests stream 1" : {
-                    node name: 'linux' {
+                    node ('linux') {
                         runTest(gradleHome, "test_mbeddr_core")
                         runTest(gradleHome, "test_mbeddr_platform")
                     }
                 },
                 "tests stream 2" : {
-                    node name: 'linux' {
+                    node ('linux') {
                         runTest(gradleHome, "test_mbeddr_performance")
                         runTest(gradleHome, "test_mbeddr_analysis")
                     }
                 },
                 "tests stream 3" : {
-                    node name: 'linux' {
+                    node ('linux') {
                         runTest(gradleHome, "test_mbeddr_tutorial")
                         runTest(gradleHome, "test_mbeddr_debugger")
                         runTest(gradleHome, "test_mbeddr_cc")
