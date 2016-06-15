@@ -1,5 +1,6 @@
 
-node ('linux') {
+timestamps {
+  node ('linux') {
     def gradleHome = tool 'Gradle 2.13'
 
     env.JAVA_HOME="${tool 'JDK 8'}"
@@ -11,33 +12,23 @@ node ('linux') {
             //gitClean()
 
         stage 'Checkout'
-          timestamps {
             checkout scm
             //git (url: 'https://github.com/mbeddr/mbeddr.core.git/', branch: 'gradle-build')
-          }
 
         stage 'Generate Build Scripts'
-          timestamps {
             sh "${gradleHome}/bin/gradle -b build.gradle build_allScripts"
-          }
 
-          stage 'Build mbeddr'
-            timestamps {
-              sh "${gradleHome}/bin/gradle -b build.gradle build_mbeddr"
-            }
+        stage 'Build mbeddr'
+            sh "${gradleHome}/bin/gradle -b build.gradle build_mbeddr"
 
-          stage 'Build Tutorials'
-            timestamps {
-              sh "${gradleHome}/bin/gradle -b build.gradle build_tutorial"
-            }
+        stage 'Build Tutorials'
+            sh "${gradleHome}/bin/gradle -b build.gradle build_tutorial"
 
         stage name: 'Tests', concurrency: 1
-          timestamps {
-            // stash includes: '**/*', name: 'git'
-            stash includes: 'MPS/**/*', name: 'mps'
-            stash includes: 'build/**/*.xml,code/plugins/**/*.xml,code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/*', name: 'build_scripts'
-            stash includes: 'artifacts/', name: 'build_mbeddr'
-          }
+          // stash includes: '**/*', name: 'git'
+          stash includes: 'MPS/**/*', name: 'mps'
+          stash includes: 'build/**/*.xml,code/plugins/**/*.xml,code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/*', name: 'build_scripts'
+          stash includes: 'artifacts/', name: 'build_mbeddr'
 
           parallel (
               "tests stream 1" : {
@@ -67,20 +58,21 @@ node ('linux') {
           )
 
           stage 'Publish Artifacts'
-            timestamps {
-              //step([$class: 'ArtifactArchiver', artifacts: 'build/**/*.xml', fingerprint: true])
-              //step([$class: 'ArtifactArchiver', artifacts: 'code/plugins/**/*.xml', fingerprint: true])
-              step([$class: 'ArtifactArchiver', artifacts: 'artifacts/', fingerprint: true])
-              step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
-            }
+            //step([$class: 'ArtifactArchiver', artifacts: 'build/**/*.xml', fingerprint: true])
+            //step([$class: 'ArtifactArchiver', artifacts: 'code/plugins/**/*.xml', fingerprint: true])
+            step([$class: 'ArtifactArchiver', artifacts: 'artifacts/', fingerprint: true])
+            step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
+
+          stage 'Package RCP'
+            sh "${gradleHome}/bin/gradle -b build.gradle publish_mbeddrRCP"
 
           stage 'Cleanup'
             deleteDir()
     }
+  }
 }
 
 def runTest(gradleHome, gradleTask) {
-  timestamps {
     checkout scm
 
     unstash 'mps'
@@ -96,7 +88,6 @@ def runTest(gradleHome, gradleTask) {
     } finally {
       deleteDir()
     }
-  }
 }
 
 /**
