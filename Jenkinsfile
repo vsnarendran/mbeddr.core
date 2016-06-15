@@ -33,7 +33,7 @@ node ('linux') {
               //step([$class: 'ArtifactArchiver', artifacts: 'artifacts/', fingerprint: true])
               //step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
 
-        stage name: 'Tests'
+        stage name: 'Tests', concurrency: 1
 //            stash includes: '**/*', name: 'git'
             stash includes: 'MPS/**/*', name: 'mps'
             stash includes: 'build/**/*.xml,code/plugins/**/*.xml,code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/*', name: 'build_scripts'
@@ -41,19 +41,19 @@ node ('linux') {
 
             parallel (
                 "tests stream 1" : {
-                    node name: 'linux', concurrency: 1 {
+                    node name: 'linux' {
                         runTest(gradleHome, "test_mbeddr_core")
                         runTest(gradleHome, "test_mbeddr_platform")
                     }
                 },
                 "tests stream 2" : {
-                    node name: 'linux', concurrency: 1 {
+                    node name: 'linux' {
                         runTest(gradleHome, "test_mbeddr_performance")
                         runTest(gradleHome, "test_mbeddr_analysis")
                     }
                 },
                 "tests stream 3" : {
-                    node name: 'linux', concurrency: 1 {
+                    node name: 'linux' {
                         runTest(gradleHome, "test_mbeddr_tutorial")
                         runTest(gradleHome, "test_mbeddr_debugger")
                         runTest(gradleHome, "test_mbeddr_cc")
