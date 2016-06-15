@@ -86,7 +86,11 @@ def runTest(gradleHome, gradleTask) {
     unstash 'build_scripts'
     unstash 'build_mbeddr'
 
-    sh "${gradleHome}/bin/gradle -b build.gradle ${gradleTask} --continue"
+    try {
+      sh "${gradleHome}/bin/gradle -b build.gradle ${gradleTask} --continue"
+    } catch(err) {
+      echo "There were test failures:\n${err}"
+    }
 
     step([$class: 'JUnitResultArchiver', testResults: 'scripts/com.mbeddr.core/TEST-*.xml'])
 }
