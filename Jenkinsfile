@@ -82,7 +82,7 @@ def runTest(gradleHome, gradleTask) {
     unstash 'mps'
     unstash 'build_scripts'
     unstash 'build_mbeddr'
-    sh "${gradleHome}/bin/gradle -b build.gradle ${gradleTask}"
+    sh "${gradleHome}/bin/gradle -b build.gradle ${gradleTask} --continue"
 }
 
 /**
