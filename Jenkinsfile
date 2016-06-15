@@ -1,5 +1,6 @@
 
-node ('linux') {
+timestamps {
+  node ('linux') {
     def gradleHome = tool 'Gradle 2.13'
 
     env.JAVA_HOME="${tool 'JDK 8'}"
@@ -73,6 +74,7 @@ node ('linux') {
 
         stage 'Cleanup'
           deleteDir()
+    }
 }
 
 def runTest(gradleHome, gradleTask) {
