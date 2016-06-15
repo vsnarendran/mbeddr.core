@@ -57,20 +57,22 @@ timestamps {
                     node ('linux') {
                         runTest(gradleHome, "test_mbeddr_tutorial")
                         runTest(gradleHome, "test_mbeddr_debugger")
+                    }
+                }
+                "tests stream 4" : {
+                    node ('linux') {
                         runTest(gradleHome, "test_mbeddr_cc")
                         runTest(gradleHome, "test_mbeddr_ext")
                     }
                 }
             )
 
-            step([$class: 'JUnitResultArchiver', testResults: 'scripts/com.mbeddr.core/TEST-*.xml'])
+            stage 'Publish Artifacts'
+               //step([$class: 'ArtifactArchiver', artifacts: 'build/**/*.xml', fingerprint: true])
+               //step([$class: 'ArtifactArchiver', artifacts: 'code/plugins/**/*.xml', fingerprint: true])
+               step([$class: 'ArtifactArchiver', artifacts: 'artifacts/', fingerprint: true])
+               step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
         }
-
-        stage 'Publish Artifacts'
-           //step([$class: 'ArtifactArchiver', artifacts: 'build/**/*.xml', fingerprint: true])
-           //step([$class: 'ArtifactArchiver', artifacts: 'code/plugins/**/*.xml', fingerprint: true])
-           step([$class: 'ArtifactArchiver', artifacts: 'artifacts/', fingerprint: true])
-           step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
 
         stage 'Cleanup'
           deleteDir()
@@ -79,10 +81,14 @@ timestamps {
 
 def runTest(gradleHome, gradleTask) {
     checkout scm
+
     unstash 'mps'
     unstash 'build_scripts'
     unstash 'build_mbeddr'
+
     sh "${gradleHome}/bin/gradle -b build.gradle ${gradleTask} --continue"
+
+    step([$class: 'JUnitResultArchiver', testResults: 'scripts/com.mbeddr.core/TEST-*.xml'])
 }
 
 /**
