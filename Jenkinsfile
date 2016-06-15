@@ -58,7 +58,7 @@ timestamps {
                         runTest(gradleHome, "test_mbeddr_tutorial")
                         runTest(gradleHome, "test_mbeddr_debugger")
                     }
-                }
+                },
                 "tests stream 4" : {
                     node ('linux') {
                         runTest(gradleHome, "test_mbeddr_cc")
