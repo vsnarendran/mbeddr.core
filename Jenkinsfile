@@ -73,10 +73,10 @@ node ('linux') {
               step([$class: 'ArtifactArchiver', artifacts: 'artifacts/', fingerprint: true])
               step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
             }
-    }
 
-    stage 'Cleanup'
-      deleteDir()
+          stage 'Cleanup'
+            deleteDir()
+    }
 }
 
 def runTest(gradleHome, gradleTask) {
@@ -93,6 +93,8 @@ def runTest(gradleHome, gradleTask) {
       step([$class: 'JUnitResultArchiver', testResults: 'scripts/com.mbeddr.core/TEST-*.xml'])
     } catch(err) {
       echo "There were test failures:\n${err}"
+    } finally {
+      deleteDir()
     }
   }
 }
