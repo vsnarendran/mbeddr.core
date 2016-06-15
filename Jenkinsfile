@@ -88,11 +88,11 @@ def runTest(gradleHome, gradleTask) {
 
     try {
       sh "${gradleHome}/bin/gradle -b build.gradle ${gradleTask} --continue"
+
+      step([$class: 'JUnitResultArchiver', testResults: 'scripts/com.mbeddr.core/TEST-*.xml'])
     } catch(err) {
       echo "There were test failures:\n${err}"
     }
-
-    step([$class: 'JUnitResultArchiver', testResults: 'scripts/com.mbeddr.core/TEST-*.xml'])
 }
 
 /**
