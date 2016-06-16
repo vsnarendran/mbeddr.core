@@ -28,7 +28,7 @@ timestamps {
           // stash includes: '**/*', name: 'git'
           stash includes: 'MPS/**/*', name: 'mps'
           stash includes: 'build/**/*.xml,code/plugins/**/*.xml,code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/*', name: 'build_scripts'
-          stash includes: 'artifacts/', name: 'build_mbeddr'
+          stash includes: 'artifacts/**/*', name: 'build_mbeddr'
 
           parallel (
               "tests stream 1" : {
