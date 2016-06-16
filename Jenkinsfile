@@ -24,7 +24,7 @@ timestamps {
         stage 'Build Tutorial'
             sh "${gradleHome}/bin/gradle -b build.gradle build_tutorial"
 
-        stage name: 'Tests', concurrency: 1
+        stage name: 'Run Tests', concurrency: 2
           // stash includes: '**/*', name: 'git'
           stash includes: 'MPS/**/*', name: 'mps'
           stash includes: 'build/**/*.xml,code/plugins/**/*.xml,code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/*', name: 'build_scripts'
