@@ -19,7 +19,7 @@ timestamps {
             sh "${gradleHome}/bin/gradle -b build.gradle build_allScripts"
 
         stage 'Build mbeddr'
-            sh "${gradleHome}/bin/gradle -b build.gradle build_mbeddr publish_mbeddrTutorial"
+            sh "${gradleHome}/bin/gradle -b build.gradle build_mbeddr publish_mbeddrTutorial publish_all_in_one publish_mbeddrPlatform"
 
         stage 'Build Tutorials'
             sh "${gradleHome}/bin/gradle -b build.gradle build_tutorial"
