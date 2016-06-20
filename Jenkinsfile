@@ -21,7 +21,7 @@ timestamps {
         stage 'Build mbeddr'
             sh "${gradleHome}/bin/gradle -b build.gradle build_mbeddr"
 
-        stage 'Build Tutorials'
+        stage 'Build Tutorial'
             sh "${gradleHome}/bin/gradle -b build.gradle build_tutorial"
 
         stage name: 'Tests', concurrency: 1
