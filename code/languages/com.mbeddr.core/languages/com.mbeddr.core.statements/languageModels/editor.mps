@@ -397,6 +397,9 @@
     <property role="3GE5qa" value="localvar" />
     <ref role="1XX52x" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
     <node concept="3EZMnI" id="3CmSUB7FprG" role="2wV5jI">
+      <node concept="PMmxH" id="xAR9nWv$Ex" role="3EZMnx">
+        <ref role="PMmxG" node="xAR9nWuwd2" resolve="IHasPrefixesComponent" />
+      </node>
       <node concept="1kHk_G" id="6ASs6LmXVey" role="3EZMnx">
         <ref role="1NtTu8" to="c4fa:3_fgNoLA7XY" resolve="static" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
@@ -1080,7 +1083,7 @@
   </node>
   <node concept="24kQdi" id="3kEjc_WJ62Q">
     <property role="3GE5qa" value="arbitraryText" />
-    <ref role="1XX52x" to="c4fa:3kEjc_WJ4o9" resolve="AbritraryTextItem" />
+    <ref role="1XX52x" to="c4fa:3kEjc_WJ4o9" resolve="ArbitraryTextItem" />
     <node concept="3F0A7n" id="3kEjc_WJ62S" role="2wV5jI">
       <property role="1O74Pk" value="true" />
       <ref role="1NtTu8" to="c4fa:3kEjc_WJ4oa" resolve="text" />

@@ -1000,6 +1000,9 @@
     <property role="3GE5qa" value="functions" />
     <ref role="1XX52x" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
     <node concept="3EZMnI" id="6Q7bJ$$my3s" role="2wV5jI">
+      <node concept="PMmxH" id="1OErd9ImObW" role="3EZMnx">
+        <ref role="PMmxG" to="j4gk:xAR9nWuwd2" resolve="IHasPrefixesComponent" />
+      </node>
       <node concept="PMmxH" id="52l0VUuNEPS" role="3EZMnx">
         <ref role="PMmxG" to="j4gk:52l0VUuN8lr" resolve="IStoreInRegisterComponent" />
       </node>
@@ -5309,7 +5312,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="76hx8dKhyE4">
-    <ref role="1XX52x" to="x27k:76hx8dKhwZW" resolve="AbritraryTextContent" />
+    <ref role="1XX52x" to="x27k:76hx8dKhwZW" resolve="ArbitraryTextContent" />
     <node concept="3EZMnI" id="3kEjc_WJ2qE" role="2wV5jI">
       <node concept="3F0ifn" id="3kEjc_WJ2qH" role="3EZMnx">
         <property role="3F0ifm" value="[|" />

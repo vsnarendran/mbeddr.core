@@ -290,6 +290,9 @@
     <node concept="PrWs8" id="52l0VUuNEu7" role="PzmwI">
       <ref role="PrY4T" to="c4fa:52l0VUuN5O_" resolve="ICanBeStoredInRegister" />
     </node>
+    <node concept="PrWs8" id="1OErd9ImNLe" role="PzmwI">
+      <ref role="PrY4T" to="c4fa:xAR9nWuwcY" resolve="IHasPrefixes" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7LOsK3rQkU_">
     <property role="TrG5h" value="ReturnStatement" />
