@@ -19,7 +19,7 @@ timestamps {
             sh "${gradleHome}/bin/gradle -b build.gradle build_allScripts"
 
         stage 'Build mbeddr'
-            sh "${gradleHome}/bin/gradle -b build.gradle build_mbeddr publish_mbeddrTutorial publish_all_in_one publish_mbeddrPlatform"
+            sh "${gradleHome}/bin/gradle -b build.gradle build_mbeddr"
 
         stage 'Build Tutorials'
             sh "${gradleHome}/bin/gradle -b build.gradle build_tutorial"
@@ -63,8 +63,8 @@ timestamps {
             step([$class: 'ArtifactArchiver', artifacts: 'artifacts/', fingerprint: true])
             step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
 
-          stage 'Package RCP'
-            sh "${gradleHome}/bin/gradle -b build.gradle publish_mbeddrRCP"
+          stage 'Package'
+            sh "${gradleHome}/bin/gradle -b build.gradle publish_mbeddrPlatform publish_mbeddrTutorial publish_all_in_one publish_mbeddrRCP"
 
           stage 'Cleanup'
             deleteDir()
