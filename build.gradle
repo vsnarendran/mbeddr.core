@@ -103,7 +103,11 @@ subprojects {
             description = 'mbeddr tutorial'
         }
     }
-
+	
+	task wrapper(type: Wrapper) {
+	    gradleVersion = '2.12'
+	}
+	
     task get_mps(type: Copy)  {
         from configurations.mps
         into rootProject.projectDir.absolutePath + "/MPS/"
