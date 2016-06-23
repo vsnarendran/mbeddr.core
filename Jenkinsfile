@@ -54,47 +54,53 @@ def runTests(nodeLabel) {
   parallel (
       "tests stream 1" : {
           node (nodeLabel) {
-              runTest(gradleHome, "test_mbeddr_core")
-              runTest(gradleHome, "test_mbeddr_platform")
+              runTest("test_mbeddr_core")
+              runTest("test_mbeddr_platform")
           }
       },
       "tests stream 2" : {
           node (nodeLabel) {
-              runTest(gradleHome, "test_mbeddr_performance")
-              runTest(gradleHome, "test_mbeddr_analysis")
+              runTest("test_mbeddr_performance")
+              runTest("test_mbeddr_analysis")
           }
       },
       "tests stream 3" : {
           node (nodeLabel) {
-              runTest(gradleHome, "test_mbeddr_tutorial")
-              runTest(gradleHome, "test_mbeddr_debugger")
+              runTest("test_mbeddr_tutorial")
+              runTest("test_mbeddr_debugger")
           }
       },
       "tests stream 4" : {
           node (nodeLabel) {
-              runTest(gradleHome, "test_mbeddr_cc")
-              runTest(gradleHome, "test_mbeddr_ext")
+              runTest("test_mbeddr_cc")
+              runTest("test_mbeddr_ext")
           }
       }
   )
 }
 
-def runTest(gradleHome, gradleTask) {
-    checkout scm
+def runTest(gradleTask) {
+  def gradleHome = tool 'Gradle 2.13'
 
-    unstash 'mps'
-    unstash 'build_scripts'
-    unstash 'build_mbeddr'
+  checkout scm
 
-    try {
+  unstash 'mps'
+  unstash 'build_scripts'
+  unstash 'build_mbeddr'
+
+  try {
+    if(isUnix()) {
       sh "${gradleHome}/bin/gradle -b build.gradle ${gradleTask} --continue"
-
-      step([$class: 'JUnitResultArchiver', testResults: 'scripts/com.mbeddr.core/TEST-*.xml'])
-    } catch(err) {
-      echo "There were test failures:\n${err}"
-    } finally {
-      deleteDir()
+    } else {
+      bat "${gradleHome}/bin/gradle.bat -b build.gradle ${gradleTask} --continue"
     }
+
+    step([$class: 'JUnitResultArchiver', testResults: 'scripts/com.mbeddr.core/TEST-*.xml'])
+  } catch(err) {
+    echo "### There were test failures:\n${err}"
+  } finally {
+    deleteDir()
+  }
 }
 
 /**
