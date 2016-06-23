@@ -30,10 +30,10 @@ timestamps {
           stash includes: 'build/**/*.xml,code/plugins/**/*.xml,code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/*', name: 'build_scripts'
           stash includes: 'artifacts/**/*', name: 'build_mbeddr'
 
-          parallel {
+          parallel (
             "linux": { runTests('linux')},
             "windows": { runTests('windows')}
-          }
+          )
 
           stage 'Publish Artifacts'
             //step([$class: 'ArtifactArchiver', artifacts: 'build/**/*.xml', fingerprint: true])
