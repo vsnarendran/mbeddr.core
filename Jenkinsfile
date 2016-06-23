@@ -31,8 +31,8 @@ timestamps {
           stash includes: 'artifacts/**/*', name: 'build_mbeddr'
 
           parallel {
-            runTests('linux'),
-            runTests('windows')
+            "linux": { runTests('linux')},
+            "windows": { runTests('windows')}
           }
 
           stage 'Publish Artifacts'
