@@ -30,32 +30,10 @@ timestamps {
           stash includes: 'build/**/*.xml,code/plugins/**/*.xml,code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/*', name: 'build_scripts'
           stash includes: 'artifacts/**/*', name: 'build_mbeddr'
 
-          parallel (
-              "tests stream 1" : {
-                  node ('linux') {
-                      runTest(gradleHome, "test_mbeddr_core")
-                      runTest(gradleHome, "test_mbeddr_platform")
-                  }
-              },
-              "tests stream 2" : {
-                  node ('linux') {
-                      runTest(gradleHome, "test_mbeddr_performance")
-                      runTest(gradleHome, "test_mbeddr_analysis")
-                  }
-              },
-              "tests stream 3" : {
-                  node ('linux') {
-                      runTest(gradleHome, "test_mbeddr_tutorial")
-                      runTest(gradleHome, "test_mbeddr_debugger")
-                  }
-              },
-              "tests stream 4" : {
-                  node ('linux') {
-                      runTest(gradleHome, "test_mbeddr_cc")
-                      runTest(gradleHome, "test_mbeddr_ext")
-                  }
-              }
-          )
+          parallel {
+            runTests('linux'),
+            runTests('windows')
+          }
 
           stage 'Publish Artifacts'
             //step([$class: 'ArtifactArchiver', artifacts: 'build/**/*.xml', fingerprint: true])
@@ -70,6 +48,35 @@ timestamps {
             deleteDir()
     }
   }
+}
+
+def runTests(nodeLabel) {
+  parallel (
+      "tests stream 1" : {
+          node (nodeLabel) {
+              runTest(gradleHome, "test_mbeddr_core")
+              runTest(gradleHome, "test_mbeddr_platform")
+          }
+      },
+      "tests stream 2" : {
+          node (nodeLabel) {
+              runTest(gradleHome, "test_mbeddr_performance")
+              runTest(gradleHome, "test_mbeddr_analysis")
+          }
+      },
+      "tests stream 3" : {
+          node (nodeLabel) {
+              runTest(gradleHome, "test_mbeddr_tutorial")
+              runTest(gradleHome, "test_mbeddr_debugger")
+          }
+      },
+      "tests stream 4" : {
+          node (nodeLabel) {
+              runTest(gradleHome, "test_mbeddr_cc")
+              runTest(gradleHome, "test_mbeddr_ext")
+          }
+      }
+  )
 }
 
 def runTest(gradleHome, gradleTask) {
