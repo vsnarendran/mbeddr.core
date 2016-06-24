@@ -3,7 +3,7 @@ timestamps {
   node ('linux') {
     def gradleHome = tool 'Gradle 2.13'
 
-    env.JAVA_HOME="${tool 'JDK 8'}"
+    env.JAVA_HOME="${tool 'JDK 7'}"
     env.ANT_HOME="${tool 'Ant 1.9'}"
     env.PATH="${env.JAVA_HOME}/bin:${env.ANT_HOME}/bin:${env.PATH}"
 
@@ -52,25 +52,25 @@ timestamps {
 
 def runTests(nodeLabel) {
   parallel (
-      "tests stream 1" : {
+      "tests ${nodeLabel} 1" : {
           node (nodeLabel) {
               runTest("test_mbeddr_core")
               runTest("test_mbeddr_platform")
           }
       },
-      "tests stream 2" : {
+      "tests ${nodeLabel} 2" : {
           node (nodeLabel) {
               runTest("test_mbeddr_performance")
               runTest("test_mbeddr_analysis")
           }
       },
-      "tests stream 3" : {
+      "tests ${nodeLabel} 3" : {
           node (nodeLabel) {
               runTest("test_mbeddr_tutorial")
               runTest("test_mbeddr_debugger")
           }
       },
-      "tests stream 4" : {
+      "tests ${nodeLabel} 4" : {
           node (nodeLabel) {
               runTest("test_mbeddr_cc")
               runTest("test_mbeddr_ext")
