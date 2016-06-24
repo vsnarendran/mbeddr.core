@@ -82,6 +82,10 @@ def runTest(gradleTask) {
   def gradleHome = tool 'Gradle 2.13'
   def GIT_REFERENCE_REPOS_BASE=env.GIT_REFERENCE_REPOS_BASE
 
+  def GIT_REFERENCE_REPOS_BASE=env.GIT_REFERENCE_REPOS_BASE
+
+  echo "Git reference repo: ${GIT_REFERENCE_REPOS_BASE} ${env.GIT_REFERENCE_REPOS_BASE}"
+  
   checkout scm
 
   unstash 'mps'
