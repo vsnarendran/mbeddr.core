@@ -11,6 +11,10 @@ timestamps {
             //gitClean()
 
         stage 'Checkout'
+            def GIT_REFERENCE_REPOS_BASE=env.GIT_REFERENCE_REPOS_BASE
+
+            echo "Git reference repo: ${GIT_REFERENCE_REPOS_BASE} ${env.GIT_REFERENCE_REPOS_BASE}"
+
             checkout scm
             //git (url: 'https://github.com/mbeddr/mbeddr.core.git/', branch: 'gradle-build')
 
