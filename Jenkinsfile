@@ -1,4 +1,3 @@
-
 timestamps {
   node ('linux') {
     def gradleHome = tool 'Gradle 2.13'
@@ -81,6 +80,7 @@ def runTests(nodeLabel) {
 
 def runTest(gradleTask) {
   def gradleHome = tool 'Gradle 2.13'
+  def GIT_REFERENCE_REPOS_BASE=env.GIT_REFERENCE_REPOS_BASE
 
   checkout scm
 
@@ -98,8 +98,6 @@ def runTest(gradleTask) {
     step([$class: 'JUnitResultArchiver', testResults: 'scripts/com.mbeddr.core/TEST-*.xml'])
   } catch(err) {
     echo "### There were test failures:\n${err}"
-  } finally {
-    deleteDir()
   }
 }
 
