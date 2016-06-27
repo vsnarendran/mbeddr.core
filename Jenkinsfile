@@ -14,13 +14,13 @@ timestamps {
         checkoutGit()
 
     stage 'Generate Build Scripts'
-        sh "gradle ${gradleOpts} -b build.gradle build_allScripts"
+        sh "gradlew ${gradleOpts} -b build.gradle build_allScripts"
 
     stage 'Build mbeddr'
-        sh "gradle ${gradleOpts} -b build.gradle build_mbeddr"
+        sh "gradlew ${gradleOpts} -b build.gradle build_mbeddr"
 
     stage 'Build Tutorial'
-        sh "gradle ${gradleOpts} -b build.gradle build_tutorial"
+        sh "gradlew ${gradleOpts} -b build.gradle build_tutorial"
 
     stage name: 'Run Tests', concurrency: 2
       stash includes: 'MPS/**/*', name: 'mps'
@@ -39,7 +39,7 @@ timestamps {
         step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
 
       stage 'Package'
-        sh "gradle ${gradleOpts} -b build.gradle publish_mbeddrPlatform publish_mbeddrTutorial publish_all_in_one publish_mbeddrRCP"
+        sh "gradlew ${gradleOpts} -b build.gradle publish_mbeddrPlatform publish_mbeddrTutorial publish_all_in_one publish_mbeddrRCP"
 
       stage 'Cleanup'
         deleteDir()
