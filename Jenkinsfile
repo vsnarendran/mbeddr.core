@@ -1,48 +1,50 @@
 timestamps {
   node ('linux') {
-    def gradleOpts ='--no-daemon --info'
+    dir('git') {
+      def gradleOpts ='--no-daemon --info'
 
-    env.JAVA_HOME="${tool 'JDK 7'}"
-    env.ANT_HOME="${tool 'Ant 1.9'}"
-    env.PATH="${env.JAVA_HOME}/bin:${env.ANT_HOME}/bin:${env.PATH}"
+      env.JAVA_HOME="${tool 'JDK 7'}"
+      env.ANT_HOME="${tool 'Ant 1.9'}"
+      env.PATH="${env.JAVA_HOME}/bin:${env.ANT_HOME}/bin:${env.PATH}"
 
-    //stage 'Clean'
-        //gitClean()
+      //stage 'Clean'
+          //gitClean()
 
-    stage 'Checkout'
-        //checkout scm
-        checkoutGit()
+      stage 'Checkout'
+          //checkout scm
+          checkoutGit()
 
-    stage 'Generate Build Scripts'
-        sh "gradlew ${gradleOpts} -b build.gradle build_allScripts"
+      stage 'Generate Build Scripts'
+          sh "./gradlew ${gradleOpts} -b build.gradle build_allScripts"
 
-    stage 'Build mbeddr'
-        sh "gradlew ${gradleOpts} -b build.gradle build_mbeddr"
+      stage 'Build mbeddr'
+          sh "./gradlew ${gradleOpts} -b build.gradle build_mbeddr"
 
-    stage 'Build Tutorial'
-        sh "gradlew ${gradleOpts} -b build.gradle build_tutorial"
+      stage 'Build Tutorial'
+          sh "./gradlew ${gradleOpts} -b build.gradle build_tutorial"
 
-    stage name: 'Run Tests', concurrency: 2
-      stash includes: 'MPS/**/*', name: 'mps'
-      stash includes: 'build/**/*.xml,code/plugins/**/*.xml,code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/*', name: 'build_scripts'
-      stash includes: 'artifacts/**/*', name: 'build_mbeddr'
+      stage name: 'Run Tests', concurrency: 2
+        stash includes: 'MPS/**/*', name: 'mps'
+        stash includes: 'build/**/*.xml,code/plugins/**/*.xml,code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/*', name: 'build_scripts'
+        stash includes: 'artifacts/**/*', name: 'build_mbeddr'
 
-      parallel (
-        "linux": { runTests('linux')},
-        "windows": { runTests('windows')}
-      )
+        parallel (
+          "linux": { runTests('linux')},
+          "windows": { runTests('windows')}
+        )
 
-      stage 'Publish Artifacts'
-        //step([$class: 'ArtifactArchiver', artifacts: 'build/**/*.xml', fingerprint: true])
-        //step([$class: 'ArtifactArchiver', artifacts: 'code/plugins/**/*.xml', fingerprint: true])
-        step([$class: 'ArtifactArchiver', artifacts: 'artifacts/', fingerprint: true])
-        step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
+        stage 'Publish Artifacts'
+          //step([$class: 'ArtifactArchiver', artifacts: 'build/**/*.xml', fingerprint: true])
+          //step([$class: 'ArtifactArchiver', artifacts: 'code/plugins/**/*.xml', fingerprint: true])
+          step([$class: 'ArtifactArchiver', artifacts: 'artifacts/', fingerprint: true])
+          step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
 
-      stage 'Package'
-        sh "gradlew ${gradleOpts} -b build.gradle publish_mbeddrPlatform publish_mbeddrTutorial publish_all_in_one publish_mbeddrRCP"
+        stage 'Package'
+          sh "./gradlew ${gradleOpts} -b build.gradle publish_mbeddrPlatform publish_mbeddrTutorial publish_all_in_one publish_mbeddrRCP"
 
-      stage 'Cleanup'
-        deleteDir()
+        stage 'Cleanup'
+          deleteDir()
+    }
   }
 }
 
@@ -76,25 +78,27 @@ def runTests(nodeLabel) {
 }
 
 def runTest(gradleTask) {
-  def gradleOpts ='--no-daemon --info --continue'
+  dir('git') {
+    def gradleOpts ='--no-daemon --info --continue'
 
-  //checkout scm
-  checkoutGit()
+    //checkout scm
+    checkoutGit()
 
-  unstash 'mps'
-  unstash 'build_scripts'
-  unstash 'build_mbeddr'
+    unstash 'mps'
+    unstash 'build_scripts'
+    unstash 'build_mbeddr'
 
-  try {
-    if(isUnix()) {
-      sh "gradlew ${gradleOpts} -b build.gradle ${gradleTask}"
-    } else {
-      bat "gradlew.bat ${gradleOpts} -b build.gradle ${gradleTask}"
+    try {
+      if(isUnix()) {
+        sh "./gradlew ${gradleOpts} -b build.gradle ${gradleTask}"
+      } else {
+        bat ".\gradlew.bat ${gradleOpts} -b build.gradle ${gradleTask}"
+      }
+
+      step([$class: 'JUnitResultArchiver', testResults: 'scripts/com.mbeddr.core/TEST-*.xml'])
+    } catch(err) {
+      echo "### There were test failures:\n${err}"
     }
-
-    step([$class: 'JUnitResultArchiver', testResults: 'scripts/com.mbeddr.core/TEST-*.xml'])
-  } catch(err) {
-    echo "### There were test failures:\n${err}"
   }
 }
 
@@ -108,19 +112,11 @@ def checkoutGit() {
         $class: 'GitSCM',
         branches: scm.branches,
         doGenerateSubmoduleConfigurations: scm.doGenerateSubmoduleConfigurations,
-        extensions: scm.extensions + [[$class: 'CloneOption', noTags: false, reference: '', shallow: false]],
+        extensions: scm.extensions + [[$class: 'CloneOption', noTags: false, reference: reference, shallow: false]],
         submoduleCfg: [],
         userRemoteConfigs: scm.userRemoteConfigs
       ])
 
-}
-
-@NonCPS
-def getJobDir(jobName) {
-  Jenkins.instance.getAllItems()
-         .grep { it.name ==~ ~"${jobRegexp}"  }
-         .collect { [ name : it.name.toString(),
-                      fullName : it.fullName.toString() ] }
 }
 
 
