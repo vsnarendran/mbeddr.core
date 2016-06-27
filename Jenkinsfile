@@ -10,7 +10,8 @@ timestamps {
         //gitClean()
 
     stage 'Checkout'
-        checkout scm
+        //checkout scm
+        checkoutGit()
 
     stage 'Generate Build Scripts'
         sh "gradle ${gradleOpts} -b build.gradle build_allScripts"
@@ -75,9 +76,10 @@ def runTests(nodeLabel) {
 }
 
 def runTest(gradleTask) {
-  def gradleOpts ='--no-daemon --info'
+  def gradleOpts ='--no-daemon --info --continue'
 
-  checkout scm
+  //checkout scm
+  checkoutGit()
 
   unstash 'mps'
   unstash 'build_scripts'
@@ -85,9 +87,9 @@ def runTest(gradleTask) {
 
   try {
     if(isUnix()) {
-      sh "gradlew ${gradleOpts} -b build.gradle ${gradleTask} --continue"
+      sh "gradlew ${gradleOpts} -b build.gradle ${gradleTask}"
     } else {
-      bat "gradlew.bat ${gradleOpts} -b build.gradle ${gradleTask} --continue"
+      bat "gradlew.bat ${gradleOpts} -b build.gradle ${gradleTask}"
     }
 
     step([$class: 'JUnitResultArchiver', testResults: 'scripts/com.mbeddr.core/TEST-*.xml'])
@@ -95,6 +97,32 @@ def runTest(gradleTask) {
     echo "### There were test failures:\n${err}"
   }
 }
+
+@NonCPS
+def checkoutGit() {
+  def reference = "${env.BSHARE}/gitcaches/reference/mbeddr.core/"
+
+  echo "Reference path: ${reference}"
+
+  checkout([
+        $class: 'GitSCM',
+        branches: scm.branches,
+        doGenerateSubmoduleConfigurations: scm.doGenerateSubmoduleConfigurations,
+        extensions: scm.extensions + [[$class: 'CloneOption', noTags: false, reference: '', shallow: false]],
+        submoduleCfg: [],
+        userRemoteConfigs: scm.userRemoteConfigs
+      ])
+
+}
+
+@NonCPS
+def getJobDir(jobName) {
+  Jenkins.instance.getAllItems()
+         .grep { it.name ==~ ~"${jobRegexp}"  }
+         .collect { [ name : it.name.toString(),
+                      fullName : it.fullName.toString() ] }
+}
+
 
 /**
  * Clean a Git project workspace.
