@@ -92,7 +92,7 @@ def runTest(gradleTask) {
       if(isUnix()) {
         sh "./gradlew ${gradleOpts} -b build.gradle ${gradleTask}"
       } else {
-        bat ".\gradlew.bat ${gradleOpts} -b build.gradle ${gradleTask}"
+        bat ".\\gradlew.bat ${gradleOpts} -b build.gradle ${gradleTask}"
       }
 
       step([$class: 'JUnitResultArchiver', testResults: 'scripts/com.mbeddr.core/TEST-*.xml'])
