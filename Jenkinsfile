@@ -1,6 +1,6 @@
 timestamps {
   node ('linux') {
-    def gradleHome = tool 'Gradle 2.13'
+    def gradleOpts ='--no-daemon --info'
 
     env.JAVA_HOME="${tool 'JDK 7'}"
     env.ANT_HOME="${tool 'Ant 1.9'}"
@@ -19,13 +19,13 @@ timestamps {
             //git (url: 'https://github.com/mbeddr/mbeddr.core.git/', branch: 'gradle-build')
 
         stage 'Generate Build Scripts'
-            sh "${gradleHome}/bin/gradle -b build.gradle build_allScripts"
+            sh "gradle ${gradleOpts} -b build.gradle build_allScripts"
 
         stage 'Build mbeddr'
-            sh "${gradleHome}/bin/gradle -b build.gradle build_mbeddr"
+            sh "gradle ${gradleOpts} -b build.gradle build_mbeddr"
 
         stage 'Build Tutorial'
-            sh "${gradleHome}/bin/gradle -b build.gradle build_tutorial"
+            sh "gradle ${gradleOpts} -b build.gradle build_tutorial"
 
         stage name: 'Run Tests', concurrency: 2
           // stash includes: '**/*', name: 'git'
@@ -38,14 +38,14 @@ timestamps {
             "windows": { runTests('windows')}
           )
 
-          stage 'Publish Artifacts'
+          stage 'Publish Artifacts'
             //step([$class: 'ArtifactArchiver', artifacts: 'build/**/*.xml', fingerprint: true])
             //step([$class: 'ArtifactArchiver', artifacts: 'code/plugins/**/*.xml', fingerprint: true])
             step([$class: 'ArtifactArchiver', artifacts: 'artifacts/', fingerprint: true])
             step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
 
           stage 'Package'
-            sh "${gradleHome}/bin/gradle -b build.gradle publish_mbeddrPlatform publish_mbeddrTutorial publish_all_in_one publish_mbeddrRCP"
+            sh "gradle ${gradleOpts} -b build.gradle publish_mbeddrPlatform publish_mbeddrTutorial publish_all_in_one publish_mbeddrRCP"
 
           stage 'Cleanup'
             deleteDir()
@@ -70,7 +70,7 @@ def runTests(nodeLabel) {
       "tests ${nodeLabel} 3" : {
           node (nodeLabel) {
               runTest("test_mbeddr_tutorial")
-              runTest("test_mbeddr_debugger")
+              runTest("test_mbeddr_debugger")
           }
       },
       "tests ${nodeLabel} 4" : {
@@ -83,10 +83,7 @@ def runTests(nodeLabel) {
 }
 
 def runTest(gradleTask) {
-  def gradleHome = tool 'Gradle 2.13'
-  def GIT_REFERENCE_REPOS_BASE=env.GIT_REFERENCE_REPOS_BASE
-
-  echo "Git reference repo: ${GIT_REFERENCE_REPOS_BASE} ${env.GIT_REFERENCE_REPOS_BASE}"
+  def gradleOpts ='--no-daemon --info'
 
   checkout scm
 
@@ -96,9 +93,9 @@ def runTest(gradleTask) {
 
   try {
     if(isUnix()) {
-      sh "${gradleHome}/bin/gradle -b build.gradle ${gradleTask} --continue"
+      sh "gradlew ${gradleOpts} -b build.gradle ${gradleTask} --continue"
     } else {
-      bat "${gradleHome}/bin/gradle.bat -b build.gradle ${gradleTask} --continue"
+      bat "gradlew.bat ${gradleOpts} -b build.gradle ${gradleTask} --continue"
     }
 
     step([$class: 'JUnitResultArchiver', testResults: 'scripts/com.mbeddr.core/TEST-*.xml'])
