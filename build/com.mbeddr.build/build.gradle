@@ -5,8 +5,8 @@ def script_build_mbeddr = new File(scriptsBasePath + "/com.mbeddr.build/" + "bui
 
 task build_sl_all(type: Exec, dependsOn: 'copy_allScripts') {
   workingDir rootProject.projectDir
-  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', script_build_slAll]
-  commandLine('ant', *args, *languages_targets)
+  def args = buildProcSpawnArgList([*dependsOnMbeddr_scriptArgs, *(antScriptLocation(script_build_slAll)), *languages_targets])
+  commandLine (args)
 }
 
 task copy_sl_all_nativelibs(type: Copy, dependsOn: build_sl_all) {
@@ -17,8 +17,8 @@ task copy_sl_all_nativelibs(type: Copy, dependsOn: build_sl_all) {
 
 task build_spawner(type: Exec, dependsOn: copy_sl_all_nativelibs) {
   workingDir rootProject.projectDir
-  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', script_build_spawner]
-  commandLine('ant', *args, *languages_targets)
+  def args = buildProcSpawnArgList([*dependsOnMbeddr_scriptArgs, *(antScriptLocation(script_build_spawner)), *languages_targets])
+  commandLine (args)
 }
 
 task copy_spawner(type: Copy, dependsOn: build_spawner) {
@@ -28,12 +28,12 @@ task copy_spawner(type: Copy, dependsOn: build_spawner) {
 
 task build_platform(type: Exec, dependsOn: copy_spawner) {
   workingDir rootProject.projectDir
-  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', script_build_platform]
-  commandLine('ant', *args, *languages_targets)
+  def args = buildProcSpawnArgList([*dependsOnMbeddr_scriptArgs, *(antScriptLocation(script_build_platform)), *languages_targets])
+  commandLine (args)
 }
 
 task build_mbeddr(type: Exec, dependsOn: build_platform) {
   workingDir rootProject.projectDir
-  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', script_build_mbeddr]
-  commandLine('ant', *args, *languages_targets)
+  def args = buildProcSpawnArgList([*dependsOnMbeddr_scriptArgs, *(antScriptLocation(script_build_mbeddr)), *languages_targets])
+  commandLine (args)
 }

@@ -2,8 +2,8 @@ def script_build_mbeddrDMG = new File(rootProject.projectDir.absolutePath + "/bu
 
 task package_dmg(type: Exec) {
     workingDir rootProject.projectDir.absolutePath + "/buildUtil"
-    def args = ['-f', script_build_mbeddrDMG]
-    commandLine('ant', *args, 'macbuild')
+    def args = buildProcSpawnArgList(['ant', '-f', script_build_mbeddrDMG, 'macbuild'])
+    commandLine (args)
 }
 
 task publish_mbeddr_dmg(type: Zip, dependsOn: package_dmg) {

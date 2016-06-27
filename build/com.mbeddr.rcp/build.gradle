@@ -5,14 +5,14 @@ def script_build_mbeddrJRE = new File(rootProject.projectDir.absolutePath + "/bu
 
 task build_mbeddrRCP(type: Exec, dependsOn: 'resolve_mps') {
   workingDir rootProject.projectDir
-  def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', script_build_mbeddrRCPMPS]
-  commandLine('ant', *args, *languages_targets)
+  def args = buildProcSpawnArgList([*dependsOnMbeddr_scriptArgs, *(antScriptLocation(script_build_mbeddrRCPMPS)), *languages_targets])
+  commandLine (args)
 }
 
 task build_mbeddrRCPDistributuion(type: Exec, dependsOn: build_mbeddrRCP) {
     workingDir rootProject.projectDir
-    def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', script_build_mbeddrRCPDistribution]
-    commandLine('ant', *args, *rcp_targets)
+    def args = buildProcSpawnArgList([*dependsOnMbeddr_scriptArgs, *(antScriptLocation(script_build_mbeddrRCPDistribution)), *languages_targets])
+    commandLine (args)
 }
 
 task publish_mbeddrRCP(type: Zip, dependsOn: build_mbeddrRCPDistributuion) {
