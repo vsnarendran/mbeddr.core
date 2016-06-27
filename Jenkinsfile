@@ -6,50 +6,48 @@ timestamps {
     env.ANT_HOME="${tool 'Ant 1.9'}"
     env.PATH="${env.JAVA_HOME}/bin:${env.ANT_HOME}/bin:${env.PATH}"
 
-    dir('mbeddr.core') {
-        //stage 'Clean'
-            //gitClean()
+      //stage 'Clean'
+          //gitClean()
 
-        stage 'Checkout'
-            def GIT_REFERENCE_REPOS_BASE=env.GIT_REFERENCE_REPOS_BASE
+      stage 'Checkout'
+          def GIT_REFERENCE_REPOS_BASE=env.GIT_REFERENCE_REPOS_BASE
 
-            echo "Git reference repo: ${GIT_REFERENCE_REPOS_BASE} ${env.GIT_REFERENCE_REPOS_BASE}"
+          echo "Git reference repo: ${GIT_REFERENCE_REPOS_BASE} ${env.GIT_REFERENCE_REPOS_BASE}"
 
-            checkout scm
-            //git (url: 'https://github.com/mbeddr/mbeddr.core.git/', branch: 'gradle-build')
+          checkout scm
+          //git (url: 'https://github.com/mbeddr/mbeddr.core.git/', branch: 'gradle-build')
 
-        stage 'Generate Build Scripts'
-            sh "gradle ${gradleOpts} -b build.gradle build_allScripts"
+      stage 'Generate Build Scripts'
+          sh "gradle ${gradleOpts} -b build.gradle build_allScripts"
 
-        stage 'Build mbeddr'
-            sh "gradle ${gradleOpts} -b build.gradle build_mbeddr"
+      stage 'Build mbeddr'
+          sh "gradle ${gradleOpts} -b build.gradle build_mbeddr"
 
-        stage 'Build Tutorial'
-            sh "gradle ${gradleOpts} -b build.gradle build_tutorial"
+      stage 'Build Tutorial'
+          sh "gradle ${gradleOpts} -b build.gradle build_tutorial"
 
-        stage name: 'Run Tests', concurrency: 2
-          // stash includes: '**/*', name: 'git'
-          stash includes: 'MPS/**/*', name: 'mps'
-          stash includes: 'build/**/*.xml,code/plugins/**/*.xml,code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/*', name: 'build_scripts'
-          stash includes: 'artifacts/**/*', name: 'build_mbeddr'
+      stage name: 'Run Tests', concurrency: 2
+        // stash includes: '**/*', name: 'git'
+        stash includes: 'MPS/**/*', name: 'mps'
+        stash includes: 'build/**/*.xml,code/plugins/**/*.xml,code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/*', name: 'build_scripts'
+        stash includes: 'artifacts/**/*', name: 'build_mbeddr'
 
-          parallel (
-            "linux": { runTests('linux')},
-            "windows": { runTests('windows')}
-          )
+        parallel (
+          "linux": { runTests('linux')},
+          "windows": { runTests('windows')}
+        )
 
-          stage 'Publish Artifacts'
-            //step([$class: 'ArtifactArchiver', artifacts: 'build/**/*.xml', fingerprint: true])
-            //step([$class: 'ArtifactArchiver', artifacts: 'code/plugins/**/*.xml', fingerprint: true])
-            step([$class: 'ArtifactArchiver', artifacts: 'artifacts/', fingerprint: true])
-            step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
+        stage 'Publish Artifacts'
+          //step([$class: 'ArtifactArchiver', artifacts: 'build/**/*.xml', fingerprint: true])
+          //step([$class: 'ArtifactArchiver', artifacts: 'code/plugins/**/*.xml', fingerprint: true])
+          step([$class: 'ArtifactArchiver', artifacts: 'artifacts/', fingerprint: true])
+          step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
 
-          stage 'Package'
-            sh "gradle ${gradleOpts} -b build.gradle publish_mbeddrPlatform publish_mbeddrTutorial publish_all_in_one publish_mbeddrRCP"
+        stage 'Package'
+          sh "gradle ${gradleOpts} -b build.gradle publish_mbeddrPlatform publish_mbeddrTutorial publish_all_in_one publish_mbeddrRCP"
 
-          stage 'Cleanup'
-            deleteDir()
-    }
+        stage 'Cleanup'
+          deleteDir()
   }
 }
 
