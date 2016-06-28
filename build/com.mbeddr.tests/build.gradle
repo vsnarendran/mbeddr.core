@@ -11,13 +11,13 @@ def script_test_mbeddrCcEx = new File(scriptsBasePath + "/com.mbeddr.cc/" + "bui
 def script_test_mbeddrExtTs = new File(scriptsBasePath + "/com.mbeddr.ext/" + "build-ts-tests.xml")
 def script_test_mbeddrExtEx = new File(scriptsBasePath + "/com.mbeddr.ext/" + "build-ex-tests.xml")
 
-task test_mbeddr_tutorial(type: Exec) {
+task test_mbeddr_tutorial(type: Exec, dependsOn: 'copy_allScripts') {
   workingDir rootProject.projectDir
   def args = buildProcSpawnArgList([*dependsOnMbeddr_scriptArgs, *(antScriptLocation(script_test_mbeddrTutorial)), *test_targets])
   commandLine (args)
 }
 
-task test_mbeddr_analysis_ex(type: Exec) {
+task test_mbeddr_analysis_ex(type: Exec, dependsOn: 'copy_allScripts') {
   workingDir rootProject.projectDir
   def args = buildProcSpawnArgList([*dependsOnMbeddr_scriptArgs, *(antScriptLocation(script_test_mbeddrAnalysisEx)), *test_targets])
   commandLine (args)
