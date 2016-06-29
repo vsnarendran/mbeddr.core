@@ -7,7 +7,7 @@ Iterable<String> buildProcSpawnArgList(Iterable<String> args) {
     newArguments.addAll(args.toList())
     if(Os.isFamily(Os.FAMILY_WINDOWS)) {
         // we append the 'cmd /c' command in front
-        newArguments.add(0,'cmd')
+        newArguments.add(0,'cmd.exe')
         newArguments.add(1,'/c')
     }
     return newArguments
@@ -125,11 +125,11 @@ subprojects {
             description = 'mbeddr tutorial'
         }
     }
-	
+
 	task wrapper(type: Wrapper) {
 	    gradleVersion = '2.12'
 	}
-	
+
     task get_mps(type: Copy)  {
         from configurations.mps
         into rootProject.projectDir.absolutePath + "/MPS/"
