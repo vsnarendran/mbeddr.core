@@ -22,16 +22,16 @@ task build_cbmcLinux(type: Exec) {
 }
 
 task publish_cbmcWin(type: Zip, dependsOn: build_cbmcWin) {
-    from cbmcHome.absolutePath
+    from cbmcHome
     include "cbmc-win.zip"
 }
 
 task publish_cbmcMac(type: Zip, dependsOn: build_cbmcMac) {
-    from cbmcHome.absolutePath
+    from cbmcHome
     include "cbmc-mac.zip"
 }
 
 task publish_cbmcLinux(type: Zip, dependsOn: build_cbmcLinux) {
-    from cbmcHome.absolutePath
+    from cbmcHome
     include "cbmc-linux.tar.gz"
 }
