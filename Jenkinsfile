@@ -7,12 +7,12 @@ timestamps {
       env.ANT_HOME="${tool 'Ant 1.9'}"
       env.PATH="${env.JAVA_HOME}/bin:${env.ANT_HOME}/bin:${env.PATH}"
 
-      //stage 'Clean'
-          //gitClean()
+      stage 'Clean'
+          gitClean()
 
       stage 'Checkout'
           //checkout scm
-          checkoutGit()
+          gitCheckout()
 
       stage 'Generate Build Scripts'
           sh "./gradlew ${gradleOpts} -b build.gradle build_allScripts"
@@ -25,7 +25,7 @@ timestamps {
 
       stage name: 'Run Tests', concurrency: 2
         stash includes: 'MPS/**/*', name: 'mps'
-        stash includes: 'build/**/*.xml,code/plugins/**/*.xml,code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/*', name: 'build_scripts'
+        stash includes: 'build/**/*.xml,code/plugins/**/*.xml,code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/*,scripts/**/*.xml', name: 'build_scripts'
         stash includes: 'artifacts/**/*', name: 'build_mbeddr'
 
         parallel (
@@ -82,7 +82,8 @@ def runTest(gradleTask) {
     def gradleOpts ='--no-daemon --info --continue'
 
     //checkout scm
-    checkoutGit()
+    gitClean()
+    gitCheckout()
 
     unstash 'mps'
     unstash 'build_scripts'
@@ -95,7 +96,7 @@ def runTest(gradleTask) {
         bat ".\\gradlew.bat ${gradleOpts} -b build.gradle ${gradleTask}"
       }
 
-      step([$class: 'JUnitResultArchiver', testResults: 'scripts/com.mbeddr.core/TEST-*.xml'])
+      step([$class: 'JUnitResultArchiver', testResults: 'scripts/**/TEST-*.xml'])
     } catch(err) {
       echo "### There were test failures:\n${err}"
     }
@@ -103,7 +104,7 @@ def runTest(gradleTask) {
 }
 
 @NonCPS
-def checkoutGit() {
+def gitCheckout() {
   def reference = "${env.BSHARE}/gitcaches/reference/mbeddr.core/"
 
   echo "Reference path: ${reference}"
