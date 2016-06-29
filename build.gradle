@@ -4,12 +4,12 @@ import org.apache.tools.ant.taskdefs.condition.Os
 // constructs the argument list that is used for spawning processes on linux/mac and windows
 Iterable<String> buildProcSpawnArgList(Iterable<String> args) {
     List<String> newArguments = new ArrayList<String>()
-    newArguments.addAll(args.toList())
     if(Os.isFamily(Os.FAMILY_WINDOWS)) {
         // we append the 'cmd /c' command in front
         newArguments.add(0,'cmd.exe')
         newArguments.add(1,'/c')
     }
+    newArguments.addAll(args.toList())
     return newArguments
 }
 
