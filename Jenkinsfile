@@ -54,11 +54,12 @@ def runTests(nodeLabel) {
           node (nodeLabel) {
               runTest("test_mbeddr_core")
               runTest("test_mbeddr_platform")
+              runTest("test_mbeddr_performance")
           }
       },
       "tests ${nodeLabel} 2" : {
           node (nodeLabel) {
-              runTest("test_mbeddr_performance")
+              initCbmc()
               runTest("test_mbeddr_analysis")
           }
       },
@@ -66,12 +67,8 @@ def runTests(nodeLabel) {
           node (nodeLabel) {
               runTest("test_mbeddr_tutorial")
               runTest("test_mbeddr_debugger")
-          }
-      },
-      "tests ${nodeLabel} 4" : {
-          node (nodeLabel) {
-              runTest("test_mbeddr_cc")
               runTest("test_mbeddr_ext")
+              runTest("test_mbeddr_cc")
           }
       }
   )
@@ -101,6 +98,17 @@ def runTest(gradleTask) {
       echo "### There were test failures:\n${err}"
     }
   }
+}
+
+def initCbmc() {
+    def curDir = pwd()
+    step ([$class: 'CopyArtifact', projectName: 'Build_CBMC']);
+    if(isUnix()) {
+      sh "mkdir ${curDir}/cbmc && cd cbmc/ && tar xvzf ../cbmc-linux.tar.gz"
+    } else {
+      bat "mkdir ${curDir}/cbmc && cd cbmc/ && unzip ../cbmc-win.zip"
+    }
+    env.PATH="${curDir}/cbmc:${env.PATH}"
 }
 
 @NonCPS
