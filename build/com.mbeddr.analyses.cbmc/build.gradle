@@ -6,8 +6,9 @@ def cbmcHome = rootProject.projectDir.absolutePath + "/../cbmc/src"
 
 task build_cbmcWin(type: Exec) {
   workingDir cbmcHome
-  def args = ['start', script_build_cbmcWin]
-  commandLine(args)
+  //def args = buildProcSpawnArgList(['start', script_build_cbmcWin])
+  //commandLine(args)
+  commandLine(script_build_cbmcWin)
 }
 
 task build_cbmcMac(type: Exec) {
