@@ -78,7 +78,7 @@ def runTest(gradleTask, environment) {
     def curDir = pwd()
 
     environment += ["PATH+CBMC_PATH=${curDir}/cbmc"]
-    withEnv(enviroment) {
+    withEnv(environment) {
       //checkout scm
       gitCheckout()
 
