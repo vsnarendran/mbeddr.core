@@ -102,12 +102,14 @@ def runTest(gradleTask, environment) {
 }
 
 def initCbmc() {
-  def curDir = pwd()
-  step ([$class: 'CopyArtifact', projectName: 'Build_CBMC']);
-  if(isUnix()) {
-    sh "rm -rf ${curDir}/cbmc && mkdir -p ${curDir}/cbmc && cd cbmc/ && tar xvzf ${curDir}/cbmc-linux.tar.gz"
-  } else {
-    bat "del /S /F /Q ${curDir}\\cbmc && mkdir ${curDir}\\cbmc && cd cbmc && unzip ${curDir}\\cbmc-win.zip"
+  dir('git') {
+    def curDir = pwd()
+    step ([$class: 'CopyArtifact', projectName: 'Build_CBMC']);
+    if(isUnix()) {
+      sh "rm -rf ${curDir}/cbmc && mkdir -p ${curDir}/cbmc && cd cbmc/ && tar xvzf ${curDir}/cbmc-linux.tar.gz"
+    } else {
+      bat "del /S /F /Q ${curDir}\\cbmc && mkdir ${curDir}\\cbmc && cd cbmc && unzip ${curDir}\\cbmc-win.zip"
+    }
   }
 }
 
