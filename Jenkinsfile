@@ -3,7 +3,12 @@ timestamps {
     dir('git') {
       def gradleOpts ='--no-daemon --info'
 
-      withEnv(["PATH+JAVA_HOME=${tool 'JDK 8'}/bin", "PATH+ANT_HOME=${tool 'Ant 1.9'}/bin"]) {
+      def javaHome = tool(name: 'JDK 8')
+      def antHome = tool(name: 'Ant 1.9')
+
+      def customEnv = ["PATH+JDK=${javaHome}/bin", "PATH+ANT_HOME=${antHome}/bin", "JAVA_HOME=${javaHome}"]
+
+      withEnv(customEnv) {
         stage 'Checkout'
             //checkout scm
             gitCheckout()
@@ -23,8 +28,8 @@ timestamps {
           stash includes: 'artifacts/**/*', name: 'build_mbeddr'
 
           parallel (
-            "linux": { runTests('linux')},
-            "windows": { runTests('windows')}
+            "linux": { runTests('linux', customEnv)},
+            "windows": { runTests('windows', customEnv)}
           )
 
         stage 'Publish Artifacts'
@@ -41,38 +46,39 @@ timestamps {
   }
 }
 
-def runTests(nodeLabel) {
+def runTests(nodeLabel, environment) {
   parallel (
       "tests ${nodeLabel} 1" : {
           node (nodeLabel) {
-              runTest("test_mbeddr_core")
-              runTest("test_mbeddr_platform")
-              runTest("test_mbeddr_performance")
+              runTest("test_mbeddr_core", environment)
+              runTest("test_mbeddr_platform", environment)
+              runTest("test_mbeddr_performance", environment)
           }
       },
       "tests ${nodeLabel} 2" : {
           node (nodeLabel) {
               initCbmc()
-              runTest("test_mbeddr_analysis")
+              runTest("test_mbeddr_analysis", environment)
           }
       },
       "tests ${nodeLabel} 3" : {
           node (nodeLabel) {
-              runTest("test_mbeddr_tutorial")
-              runTest("test_mbeddr_debugger")
-              runTest("test_mbeddr_ext")
-              runTest("test_mbeddr_cc")
+              runTest("test_mbeddr_tutorial", environment)
+              runTest("test_mbeddr_debugger", environment)
+              runTest("test_mbeddr_ext", environment)
+              runTest("test_mbeddr_cc", environment)
           }
       }
   )
 }
 
-def runTest(gradleTask) {
+def runTest(gradleTask, environment) {
   dir('git') {
     def gradleOpts ='--no-daemon --info --continue --stacktrace'
     def curDir = pwd()
 
-    withEnv(["PATH+CBMC_PATH=${curDir}/cbmc", "PATH+JAVA_HOME=${tool 'JDK 8'}/bin", "PATH+ANT_HOME=${tool 'Ant 1.9'}/bin"]) {
+    environment += ["PATH+CBMC_PATH=${curDir}/cbmc"]
+    withEnv(enviroment) {
       //checkout scm
       gitCheckout()
 
