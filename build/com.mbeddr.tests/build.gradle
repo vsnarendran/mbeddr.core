@@ -17,10 +17,14 @@ task test_mbeddr_tutorial(type: Exec, dependsOn: 'copy_allScripts') {
   commandLine (args)
 }
 
-task test_mbeddr_analysis_ex(type: Exec, dependsOn: 'copy_allScripts') {
+task build_mbeddr_analysis_ex(type: Exec, dependsOn: 'copy_allScripts') {
   workingDir rootProject.projectDir
-  def args = buildProcSpawnArgList([*dependsOnMbeddr_scriptArgs, *(antScriptLocation(script_test_mbeddrAnalysisEx)), *test_targets])
+  def args = buildProcSpawnArgList([*dependsOnMbeddr_scriptArgs, *(antScriptLocation(script_test_mbeddrAnalysisEx)), *languages_targets])
   commandLine (args)
+}
+
+task test_mbeddr_analysis_ex << {
+  ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.analyses")
 }
 
 task test_mbeddr_analysis_ts(type: Exec, dependsOn: 'copy_allScripts') {
@@ -29,7 +33,7 @@ task test_mbeddr_analysis_ts(type: Exec, dependsOn: 'copy_allScripts') {
   commandLine (args)
 }
 
-task test_mbeddr_analysis(dependsOn: [test_mbeddr_analysis_ts, test_mbeddr_analysis_ex]) { }
+task test_mbeddr_analysis(dependsOn: [test_mbeddr_analysis_ts, build_mbeddr_analysis_ex, test_mbeddr_analysis_ex]) { }
 
 task test_mbeddr_performance(type: Exec, dependsOn: 'copy_allScripts') {
   workingDir rootProject.projectDir
@@ -49,9 +53,9 @@ task test_mbeddr_debugger(type: Exec, dependsOn: 'copy_allScripts') {
   commandLine (args)
 }
 
-task test_mbeddr_core_ex(type: Exec, dependsOn: 'copy_allScripts') {
+task build_mbeddr_core_ex(type: Exec, dependsOn: 'copy_allScripts') {
     workingDir rootProject.projectDir
-    def args = buildProcSpawnArgList([*dependsOnMbeddr_scriptArgs, *(antScriptLocation(script_test_mbeddrCoreEx)), *test_targets])
+    def args = buildProcSpawnArgList([*dependsOnMbeddr_scriptArgs, *(antScriptLocation(script_test_mbeddrCoreEx)), *languages_targets])
     commandLine(args)
 }
 
@@ -61,11 +65,25 @@ task test_mbeddr_core_ts(type: Exec, dependsOn: 'copy_allScripts') {
   commandLine (args)
 }
 
-task test_mbeddr_core(dependsOn: [test_mbeddr_core_ex, test_mbeddr_core_ts]) {}
+task test_mbeddr_core_ex_library << {
+  ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.core/tests/aLibrary/source_gen/aLibrary/lib")
+}
 
-task test_mbeddr_cc_ex(type: Exec, dependsOn: 'copy_allScripts') {
+task test_mbeddr_core_ex << {
+  ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.core")
+}
+
+task test_mbeddr_core(dependsOn: [build_mbeddr_core_ex, test_mbeddr_core_ex_library, test_mbeddr_core_ex, test_mbeddr_core_ts]) {
+
+}
+
+task test_mbeddr_cc_ex << {
+  ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.cc")
+}
+
+task build_mbeddr_cc_ex(type: Exec, dependsOn: 'copy_allScripts') {
   workingDir rootProject.projectDir
-  def args = buildProcSpawnArgList([*dependsOnMbeddr_scriptArgs, *(antScriptLocation(script_test_mbeddrCcEx)), *test_targets])
+  def args = buildProcSpawnArgList([*dependsOnMbeddr_scriptArgs, *(antScriptLocation(script_test_mbeddrCcEx)), *languages_targets])
   commandLine (args)
 }
 
@@ -75,12 +93,16 @@ task test_mbeddr_cc_ts(type: Exec, dependsOn: 'copy_allScripts') {
   commandLine (args)
 }
 
-task test_mbeddr_cc(dependsOn: [test_mbeddr_cc_ex, test_mbeddr_cc_ts]) {}
+task test_mbeddr_cc(dependsOn: [build_mbeddr_cc_ex, test_mbeddr_cc_ex, test_mbeddr_cc_ts]) {}
 
-task test_mbeddr_ext_ex(type: Exec, dependsOn: 'copy_allScripts') {
+task build_mbeddr_ext_ex(type: Exec, dependsOn: 'copy_allScripts') {
   workingDir rootProject.projectDir
-  def args = buildProcSpawnArgList([*dependsOnMbeddr_scriptArgs, *(antScriptLocation(script_test_mbeddrExtEx)), *test_targets])
+  def args = buildProcSpawnArgList([*dependsOnMbeddr_scriptArgs, *(antScriptLocation(script_test_mbeddrExtEx)), *languages_targets])
   commandLine (args)
+}
+
+task test_mbeddr_ext_ex << {
+  ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.ext")
 }
 
 task test_mbeddr_ext_ts(type: Exec, dependsOn: 'copy_allScripts') {
@@ -89,6 +111,7 @@ task test_mbeddr_ext_ts(type: Exec, dependsOn: 'copy_allScripts') {
   commandLine (args)
 }
 
-task test_mbeddr_ext(dependsOn: [test_mbeddr_ext_ex, test_mbeddr_ext_ts]) {}
+task test_mbeddr_ext(dependsOn: [build_mbeddr_ext_ex, test_mbeddr_ext_ex, test_mbeddr_ext_ts]) {}
 
 task test_mbeddr(dependsOn: [test_mbeddr_debugger, test_mbeddr_platform, test_mbeddr_core, test_mbeddr_performance, test_mbeddr_tutorial, test_mbeddr_cc, test_mbeddr_ext]) {}
+

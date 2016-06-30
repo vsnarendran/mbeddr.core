@@ -75,6 +75,11 @@ subprojects {
     // repository urls
     ext.mps_repository = 'https://projects.itemis.de/nexus/content/repositories/mps_mbeddr_r'
 
+    ant.taskdef(name: "makeTests",
+            classname: "com.mbeddr.tools.ant.MakeTestsTask",
+            classpath: file(rootProject.projectDir.absolutePath + "/tools/ant/tasks/TeamcityMakeTests.jar")
+    )
+
     // repository
     repositories {
         maven {
