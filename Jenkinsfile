@@ -2,43 +2,42 @@ timestamps {
   node ('linux') {
     dir('git') {
       def gradleOpts ='--no-daemon --info'
+      def curDir = pwd()
 
-      env.JAVA_HOME="${tool 'JDK 7'}"
-      env.ANT_HOME="${tool 'Ant 1.9'}"
-      env.PATH="${env.JAVA_HOME}/bin:${env.ANT_HOME}/bin:${env.PATH}"
+      withEnv(["PATH+CBMC_PATH=${curDir}/cbmc", "PATH+JAVA_HOME=${tool 'JDK 8'}/bin", "PATH+ANT_HOME=${tool 'Ant 1.9'}/bin"]) {
+        stage 'Checkout'
+            //checkout scm
+            gitCheckout()
 
-      stage 'Checkout'
-          //checkout scm
-          gitCheckout()
+        stage 'Generate Build Scripts'
+            sh "./gradlew ${gradleOpts} -b build.gradle build_allScripts"
 
-      stage 'Generate Build Scripts'
-          sh "./gradlew ${gradleOpts} -b build.gradle build_allScripts"
+        stage 'Build mbeddr'
+            sh "./gradlew ${gradleOpts} -b build.gradle build_mbeddr"
 
-      stage 'Build mbeddr'
-          sh "./gradlew ${gradleOpts} -b build.gradle build_mbeddr"
+        stage 'Build Tutorial'
+            sh "./gradlew ${gradleOpts} -b build.gradle build_tutorial"
 
-      stage 'Build Tutorial'
-          sh "./gradlew ${gradleOpts} -b build.gradle build_tutorial"
+        stage name: 'Run Tests', concurrency: 2
+          stash includes: 'MPS/**/*', name: 'mps'
+          stash includes: 'build/**/*.xml,code/plugins/**/*.xml,code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/*,scripts/**/*.xml', name: 'build_scripts'
+          stash includes: 'artifacts/**/*', name: 'build_mbeddr'
 
-      stage name: 'Run Tests', concurrency: 2
-        stash includes: 'MPS/**/*', name: 'mps'
-        stash includes: 'build/**/*.xml,code/plugins/**/*.xml,code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/*,scripts/**/*.xml', name: 'build_scripts'
-        stash includes: 'artifacts/**/*', name: 'build_mbeddr'
+          parallel (
+            "linux": { runTests('linux')},
+            "windows": { runTests('windows')}
+          )
 
-        parallel (
-          "linux": { runTests('linux')},
-          "windows": { runTests('windows')}
-        )
+        stage 'Publish Artifacts'
+          step([$class: 'ArtifactArchiver', artifacts: 'artifacts/', fingerprint: true])
+          step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
 
-      stage 'Publish Artifacts'
-        step([$class: 'ArtifactArchiver', artifacts: 'artifacts/', fingerprint: true])
-        step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
+        stage 'Package'
+          sh "./gradlew ${gradleOpts} -b build.gradle publish_mbeddrPlatform publish_mbeddrTutorial publish_all_in_one publish_mbeddrRCP"
 
-      stage 'Package'
-        sh "./gradlew ${gradleOpts} -b build.gradle publish_mbeddrPlatform publish_mbeddrTutorial publish_all_in_one publish_mbeddrRCP"
-
-      stage 'Cleanup'
-        deleteDir()
+        stage 'Cleanup'
+          deleteDir()
+      }
     }
   }
 }
@@ -70,8 +69,6 @@ def runTests(nodeLabel) {
 }
 
 def runTest(gradleTask) {
-  echo "Current dir:" + pwd()
-
   dir('git') {
     def gradleOpts ='--no-daemon --info --continue --stacktrace'
 
@@ -97,14 +94,12 @@ def runTest(gradleTask) {
 }
 
 def initCbmc() {
-    def curDir = pwd()
     step ([$class: 'CopyArtifact', projectName: 'Build_CBMC']);
     if(isUnix()) {
       sh "rm -rf ${curDir}/cbmc && mkdir -p ${curDir}/cbmc && cd cbmc/ && tar xvzf ${curDir}/cbmc-linux.tar.gz"
     } else {
       bat "del /S /F /Q ${curDir}/cbmc && mkdir ${curDir}/cbmc && cd cbmc/ && unzip ${curDir}/cbmc-win.zip"
     }
-    env.PATH="${curDir}/cbmc:${env.PATH}"
 }
 
 @NonCPS
