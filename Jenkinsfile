@@ -7,9 +7,6 @@ timestamps {
       env.ANT_HOME="${tool 'Ant 1.9'}"
       env.PATH="${env.JAVA_HOME}/bin:${env.ANT_HOME}/bin:${env.PATH}"
 
-      stage 'Clean'
-          gitClean()
-
       stage 'Checkout'
           //checkout scm
           gitCheckout()
@@ -33,17 +30,15 @@ timestamps {
           "windows": { runTests('windows')}
         )
 
-        stage 'Publish Artifacts'
-          //step([$class: 'ArtifactArchiver', artifacts: 'build/**/*.xml', fingerprint: true])
-          //step([$class: 'ArtifactArchiver', artifacts: 'code/plugins/**/*.xml', fingerprint: true])
-          step([$class: 'ArtifactArchiver', artifacts: 'artifacts/', fingerprint: true])
-          step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
+      stage 'Publish Artifacts'
+        step([$class: 'ArtifactArchiver', artifacts: 'artifacts/', fingerprint: true])
+        step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
 
-        stage 'Package'
-          sh "./gradlew ${gradleOpts} -b build.gradle publish_mbeddrPlatform publish_mbeddrTutorial publish_all_in_one publish_mbeddrRCP"
+      stage 'Package'
+        sh "./gradlew ${gradleOpts} -b build.gradle publish_mbeddrPlatform publish_mbeddrTutorial publish_all_in_one publish_mbeddrRCP"
 
-        stage 'Cleanup'
-          deleteDir()
+      stage 'Cleanup'
+        deleteDir()
     }
   }
 }
@@ -75,8 +70,10 @@ def runTests(nodeLabel) {
 }
 
 def runTest(gradleTask) {
+  echo "Current dir:" + pwd()
+
   dir('git') {
-    def gradleOpts ='--no-daemon --info --continue'
+    def gradleOpts ='--no-daemon --info --continue --stacktrace'
 
     //checkout scm
     gitClean()
@@ -104,56 +101,33 @@ def initCbmc() {
     def curDir = pwd()
     step ([$class: 'CopyArtifact', projectName: 'Build_CBMC']);
     if(isUnix()) {
-      sh "mkdir ${curDir}/cbmc && cd cbmc/ && tar xvzf ../cbmc-linux.tar.gz"
+      sh "mkdir ${curDir}/cbmc && cd cbmc/ && tar xvzf ${curDir}/cbmc-linux.tar.gz"
     } else {
-      bat "mkdir ${curDir}/cbmc && cd cbmc/ && unzip ../cbmc-win.zip"
+      bat "mkdir ${curDir}/cbmc && cd cbmc/ && unzip ${curDir}/cbmc-win.zip"
     }
     env.PATH="${curDir}/cbmc:${env.PATH}"
 }
 
 @NonCPS
 def gitCheckout() {
-  def reference = "${env.BSHARE}/gitcaches/reference/mbeddr.core/"
+  // Use a local reference git repo to speed up the checkout from GitHub
+  def reference = env.BSHARE
 
-  echo "Reference path: ${reference}"
+  if(isUnix()) {
+      reference += "/gitcaches/reference/mbeddr.core/"
+  } else {
+      reference += "\\gitcaches\\reference\\mbeddr.core\\"
+  }
 
   checkout([
         $class: 'GitSCM',
         branches: scm.branches,
         doGenerateSubmoduleConfigurations: scm.doGenerateSubmoduleConfigurations,
-        extensions: scm.extensions + [[$class: 'CloneOption', noTags: false, reference: reference, shallow: false]],
+        extensions: scm.extensions + [
+                [$class: 'CloneOption', noTags: false, reference: reference, shallow: false],
+                [$class: 'CleanBeforeCheckout']],
         submoduleCfg: [],
         userRemoteConfigs: scm.userRemoteConfigs
       ])
 
-}
-
-
-/**
- * Clean a Git project workspace.
- * Uses 'git clean' if there is a repository found.
- * Uses Pipeline 'deleteDir()' function if no .git directory is found.
- */
-def gitClean() {
-    timeout(time: 60, unit: 'SECONDS') {
-        if (fileExists('.git')) {
-            echo 'Found Git repository: using Git to clean the tree.'
-            // The sequence of reset --hard and clean -fdx first
-            // in the root and then using submodule foreach
-            // is based on how the Jenkins Git SCM clean before checkout
-            // feature works.
-            sh 'git reset --hard'
-            // Note: -e is necessary to exclude the temp directory
-            // .jenkins-XXXXX in the workspace where Pipeline puts the
-            // batch file for the 'bat' command.
-            sh 'git clean -ffdx -e ".jenkins-*/"'
-            sh 'git submodule foreach --recursive git reset --hard'
-            sh 'git submodule foreach --recursive git clean -ffdx'
-        }
-        else
-        {
-            echo 'No Git repository found: using deleteDir() to wipe clean'
-            deleteDir()
-        }
-    }
 }
