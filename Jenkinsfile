@@ -100,9 +100,9 @@ def initCbmc() {
     def curDir = pwd()
     step ([$class: 'CopyArtifact', projectName: 'Build_CBMC']);
     if(isUnix()) {
-      sh "mkdir ${curDir}/cbmc && cd cbmc/ && tar xvzf ${curDir}/cbmc-linux.tar.gz"
+      sh "rm -rf ${curDir}/cbmc && mkdir -p ${curDir}/cbmc && cd cbmc/ && tar xvzf ${curDir}/cbmc-linux.tar.gz"
     } else {
-      bat "mkdir ${curDir}/cbmc && cd cbmc/ && unzip ${curDir}/cbmc-win.zip"
+      bat "del /S /F /Q ${curDir}/cbmc && mkdir ${curDir}/cbmc && cd cbmc/ && unzip ${curDir}/cbmc-win.zip"
     }
     env.PATH="${curDir}/cbmc:${env.PATH}"
 }
