@@ -2,9 +2,8 @@ timestamps {
   node ('linux') {
     dir('git') {
       def gradleOpts ='--no-daemon --info'
-      def curDir = pwd()
 
-      withEnv(["PATH+CBMC_PATH=${curDir}/cbmc", "PATH+JAVA_HOME=${tool 'JDK 8'}/bin", "PATH+ANT_HOME=${tool 'Ant 1.9'}/bin"]) {
+      withEnv(["PATH+JAVA_HOME=${tool 'JDK 8'}/bin", "PATH+ANT_HOME=${tool 'Ant 1.9'}/bin"]) {
         stage 'Checkout'
             //checkout scm
             gitCheckout()
@@ -71,24 +70,27 @@ def runTests(nodeLabel) {
 def runTest(gradleTask) {
   dir('git') {
     def gradleOpts ='--no-daemon --info --continue --stacktrace'
+    def curDir = pwd()
 
-    //checkout scm
-    gitCheckout()
+    withEnv(["PATH+CBMC_PATH=${curDir}/cbmc", "PATH+JAVA_HOME=${tool 'JDK 8'}/bin", "PATH+ANT_HOME=${tool 'Ant 1.9'}/bin"]) {
+      //checkout scm
+      gitCheckout()
 
-    unstash 'mps'
-    unstash 'build_scripts'
-    unstash 'build_mbeddr'
+      unstash 'mps'
+      unstash 'build_scripts'
+      unstash 'build_mbeddr'
 
-    try {
-      if(isUnix()) {
-        sh "./gradlew ${gradleOpts} -b build.gradle ${gradleTask}"
-      } else {
-        bat ".\\gradlew.bat ${gradleOpts} -b build.gradle ${gradleTask}"
+      try {
+        if(isUnix()) {
+          sh "./gradlew ${gradleOpts} -b build.gradle ${gradleTask}"
+        } else {
+          bat ".\\gradlew.bat ${gradleOpts} -b build.gradle ${gradleTask}"
+        }
+
+        step([$class: 'JUnitResultArchiver', testResults: 'scripts/**/TEST-*.xml'])
+      } catch(err) {
+        echo "### There were test failures:\n${err}"
       }
-
-      step([$class: 'JUnitResultArchiver', testResults: 'scripts/**/TEST-*.xml'])
-    } catch(err) {
-      echo "### There were test failures:\n${err}"
     }
   }
 }
