@@ -76,7 +76,6 @@ def runTest(gradleTask) {
     def gradleOpts ='--no-daemon --info --continue --stacktrace'
 
     //checkout scm
-    gitClean()
     gitCheckout()
 
     unstash 'mps'
