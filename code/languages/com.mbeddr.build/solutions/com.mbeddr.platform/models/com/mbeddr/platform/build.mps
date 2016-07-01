@@ -6111,15 +6111,14 @@
             <ref role="3bR37D" node="3cilTAC1ls6" resolve="com.mbeddr.mpsutil.review.runtime" />
           </node>
         </node>
-        <node concept="1SiIV0" id="3cilTAC4B_E" role="3bR37C">
-          <node concept="3bR9La" id="3cilTAC4B_F" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="1qdZ14g6roG" resolve="com.mbeddr.mpsutil.review" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="3cilTAC4B_G" role="3bR37C">
           <node concept="1Busua" id="3cilTAC4B_H" role="1SiIV1">
             <ref role="1Busuk" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6yNiuNd6McE" role="3bR37C">
+          <node concept="1Busua" id="6yNiuNd6McF" role="1SiIV1">
+            <ref role="1Busuk" node="1qdZ14g6roG" resolve="com.mbeddr.mpsutil.review" />
           </node>
         </node>
       </node>
