@@ -2813,6 +2813,11 @@
             <ref role="1Busuk" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
+        <node concept="1yeLz9" id="1w4cQ8FniBm" role="1TViLv">
+          <property role="TrG5h" value="com.mbeddr.mpsutil.suppresswarning#7544455082179031145" />
+          <property role="3LESm3" value="0ccab79f-c5ca-4fa2-b836-adba6fc95b07" />
+          <property role="2GAjPV" value="false" />
+        </node>
       </node>
       <node concept="1E1JtD" id="4Wyno57pMbA" role="2G$12L">
         <property role="BnDLt" value="true" />
