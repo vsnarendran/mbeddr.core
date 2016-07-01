@@ -131,11 +131,10 @@ def gitCheckout() {
   if(isUnix()) {
       reference += "/gitcaches/reference/mbeddr.core/"
   } else {
-      bat "set"
       reference = pwd() + "\\..\\..\\mbeddr_Reference_Repo\\mbeddr.core\\"
       //reference += "\\gitcaches\\reference\\mbeddr.core\\"
   }
-
+  echo "Reference-Path: ${reference}"
   checkout([
         $class: 'GitSCM',
         branches: scm.branches,
