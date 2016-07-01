@@ -90,7 +90,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -1837,6 +1837,21 @@
     <node concept="M6xJ_" id="6Kj2zNC68yj" role="lGtFl">
       <property role="Hh88m" value="suppressWarning" />
       <node concept="trNpa" id="6Kj2zNC68yl" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4RQWbIVNPB2">
+    <property role="1pbfSe" value="163990141" />
+    <property role="TrG5h" value="IgnoreInMbeddrGeneration" />
+    <property role="34LRSv" value="ignoreInMbeddrGeneration" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="4RQWbIVNPB3" role="lGtFl">
+      <property role="Hh88m" value="ignoreInMbeddrGeneration" />
+      <node concept="tn0Fv" id="20YMTvH2bJf" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+      <node concept="trNpa" id="20YMTvH2bJh" role="EQaZv">
         <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
       </node>
     </node>

@@ -516,6 +516,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -4170,7 +4171,31 @@
                   <ref role="2RRcyH" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
                 </node>
               </node>
-              <node concept="1uHKPH" id="77nuVWJ1vca" role="2OqNvi" />
+              <node concept="1z4cxt" id="7WI$Uidd$Bj" role="2OqNvi">
+                <node concept="1bVj0M" id="7WI$Uidd$Bl" role="23t8la">
+                  <node concept="3clFbS" id="7WI$Uidd$Bm" role="1bW5cS">
+                    <node concept="3clFbF" id="7WI$Uidd_6_" role="3cqZAp">
+                      <node concept="2OqwBi" id="7WI$Uidd_Vl" role="3clFbG">
+                        <node concept="2OqwBi" id="7WI$Uidd_hd" role="2Oq$k0">
+                          <node concept="37vLTw" id="7WI$Uidd_6$" role="2Oq$k0">
+                            <ref role="3cqZAo" node="7WI$Uidd$Bn" resolve="it" />
+                          </node>
+                          <node concept="3CFZ6_" id="7WI$Uidd_vT" role="2OqNvi">
+                            <node concept="3CFYIy" id="7WI$Uidd_M1" role="3CFYIz">
+                              <ref role="3CFYIx" to="vs0r:4RQWbIVNPB2" resolve="IgnoreInMbeddrGeneration" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3w_OXm" id="7WI$UiddAbV" role="2OqNvi" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="7WI$Uidd$Bn" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="7WI$Uidd$Bo" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="3Tqbb2" id="77nuVWJ1B7l" role="1tU5fm">
               <ref role="ehGHo" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
