@@ -46,29 +46,28 @@ def runTests(nodeLabel) {
   parallel (
       "tests ${nodeLabel} 1" : {
           node (nodeLabel) {
-              runTest("test_mbeddr_core")
-              runTest("test_mbeddr_platform")
-              runTest("test_mbeddr_performance")
+              runTest("test_mbeddr_core", false)
+              runTest("test_mbeddr_platform", false)
+              runTest("test_mbeddr_performance", false)
           }
       },
       "tests ${nodeLabel} 2" : {
           node (nodeLabel) {
-              initCbmc()
-              runTest("test_mbeddr_analysis")
+              runTest("test_mbeddr_analysis", true)
           }
       },
       "tests ${nodeLabel} 3" : {
           node (nodeLabel) {
-              runTest("test_mbeddr_tutorial")
-              runTest("test_mbeddr_debugger")
-              runTest("test_mbeddr_ext")
-              runTest("test_mbeddr_cc")
+              runTest("test_mbeddr_tutorial", false)
+              runTest("test_mbeddr_debugger", false)
+              runTest("test_mbeddr_ext", false)
+              runTest("test_mbeddr_cc", false)
           }
       }
   )
 }
 
-def runTest(gradleTask) {
+def runTest(gradleTask, boolean withCbmc) {
   dir('git') {
     def gradleOpts ='--no-daemon --info --continue --stacktrace'
     def curDir = pwd()
@@ -83,6 +82,10 @@ def runTest(gradleTask) {
       unstash 'mps'
       unstash 'build_scripts'
       unstash 'build_mbeddr'
+
+      if(withCbmc) {
+        initCbmc()
+      }
 
       try {
         if(isUnix()) {
@@ -100,14 +103,14 @@ def runTest(gradleTask) {
 }
 
 def initCbmc() {
-  dir('git') {
-    def curDir = pwd()
-    step ([$class: 'CopyArtifact', projectName: 'Build_CBMC']);
-    if(isUnix()) {
-      sh "rm -rf ${curDir}/cbmc && mkdir -p ${curDir}/cbmc && cd cbmc/ && tar xvzf ${curDir}/cbmc-linux.tar.gz"
-    } else {
-      bat "del /S /F /Q ${curDir}\\cbmc && mkdir ${curDir}\\cbmc && cd cbmc && unzip ${curDir}\\cbmc-win.zip"
-    }
+  def curDir = pwd()
+  echo "CurrDir: $curDir"
+  
+  step ([$class: 'CopyArtifact', projectName: 'Build_CBMC']);
+  if(isUnix()) {
+    sh "rm -rf ${curDir}/cbmc && mkdir -p ${curDir}/cbmc && cd cbmc/ && tar xvzf ${curDir}/cbmc-linux.tar.gz"
+  } else {
+    bat "del /S /F /Q ${curDir}\\cbmc && mkdir ${curDir}\\cbmc && cd cbmc && unzip ${curDir}\\cbmc-win.zip"
   }
 }
 
