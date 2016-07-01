@@ -105,7 +105,7 @@ def runTest(gradleTask, boolean withCbmc) {
 def initCbmc() {
   def curDir = pwd()
   echo "CurrDir: $curDir"
-  
+
   step ([$class: 'CopyArtifact', projectName: 'Build_CBMC']);
   if(isUnix()) {
     sh "rm -rf ${curDir}/cbmc && mkdir -p ${curDir}/cbmc && cd cbmc/ && tar xvzf ${curDir}/cbmc-linux.tar.gz"
@@ -131,7 +131,9 @@ def gitCheckout() {
   if(isUnix()) {
       reference += "/gitcaches/reference/mbeddr.core/"
   } else {
-      reference += "\\gitcaches\\reference\\mbeddr.core\\"
+      bat "set"
+      reference = pwd() + "\\..\\..\\mbeddr_Reference_Repo\\mbeddr.core\\"
+      //reference += "\\gitcaches\\reference\\mbeddr.core\\"
   }
 
   checkout([
