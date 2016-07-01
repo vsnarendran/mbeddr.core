@@ -155,11 +155,20 @@
         <property id="8903209210859212281" name="lineAtBottom" index="1tGk1y" />
         <child id="5785245534399940635" name="rows" index="C6TCM" />
       </concept>
+      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
+        <reference id="6657644269295214800" name="config" index="G9hjw" />
+      </concept>
       <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
         <reference id="2286331641395252233" name="node" index="2NCMaa" />
       </concept>
       <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
         <child id="2286331641395252236" name="elements" index="2NCMaf" />
+      </concept>
+      <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
+        <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
+      </concept>
+      <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
+        <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
       </concept>
       <concept id="5185579450379471855" name="com.mbeddr.doc.structure.TableCell" flags="ng" index="1xAuFA">
         <property id="5785245534399625710" name="isheader" index="C1aJ7" />
@@ -274,6 +283,7 @@
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="2642765975824060179" name="com.mbeddr.core.base.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
@@ -2422,12 +2432,20 @@
   </node>
   <node concept="3fbPIq" id="2U5fsQel_1m">
     <property role="TrG5h" value="DummyReq" />
+    <ref role="G9hjw" node="1w4cQ8FmgnQ" resolve="DefaultDocConfig" />
     <node concept="OjmMv" id="2U5fsQel_1n" role="tLAhV">
       <node concept="19SGf9" id="2U5fsQel_1o" role="OjmMu">
         <node concept="19SUe$" id="2U5fsQel_1p" role="19SJt6" />
       </node>
     </node>
     <node concept="2RsZnQ" id="2U5fsQel_1q" role="2RsZnW" />
+  </node>
+  <node concept="2SbYGP" id="1w4cQ8FmgnQ">
+    <property role="TrG5h" value="DefaultDocConfig" />
+    <node concept="2SbYGw" id="1w4cQ8FmgnR" role="Cbewh">
+      <property role="TrG5h" value="temp" />
+      <node concept="9PVaO" id="1w4cQ8FmgnS" role="9PVG_" />
+    </node>
   </node>
 </model>
 
