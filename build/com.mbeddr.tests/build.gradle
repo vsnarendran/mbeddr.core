@@ -65,15 +65,15 @@ task test_mbeddr_core_ts(type: Exec, dependsOn: 'copy_allScripts') {
   commandLine (args)
 }
 
-task test_mbeddr_core_ex_library << {
+task test_mbeddr_core_ex_library(dependsOn: build_mbeddr_core_ex) {
   ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.core/tests/aLibrary/source_gen/aLibrary/lib")
 }
 
-task test_mbeddr_core_ex << {
+task test_mbeddr_core_ex(dependsOn: test_mbeddr_core_ex_library) {
   ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.core")
 }
 
-task test_mbeddr_core(dependsOn: [build_mbeddr_core_ex, test_mbeddr_core_ex_library, test_mbeddr_core_ex, test_mbeddr_core_ts]) {
+task test_mbeddr_core(dependsOn: [test_mbeddr_core_ex, test_mbeddr_core_ts]) {
 
 }
 
