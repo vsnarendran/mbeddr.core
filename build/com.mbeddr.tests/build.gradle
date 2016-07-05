@@ -68,7 +68,7 @@ task build_mbeddr_core_ex_library(type: Exec, dependsOn: 'copy_allScripts') {
 
 task test_mbeddr_core_ts(type: Exec, dependsOn: 'copy_allScripts') {
   workingDir rootProject.projectDir
-  def args = buildProcSpawnArgList(['--verbose', *dependsOnMbeddr_scriptArgs, *(antScriptLocation(script_test_mbeddrCoreTs)), *test_targets])
+  def args = buildProcSpawnArgList([*dependsOnMbeddr_scriptArgs, *(antScriptLocation(script_test_mbeddrCoreTs)), *test_targets])
   commandLine (args)
 }
 

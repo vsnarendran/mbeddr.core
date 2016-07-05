@@ -62,7 +62,7 @@ subprojects {
     ext.artifacts_root = '-Dartifacts.root=' + rootProject.projectDir.absolutePath + "/artifacts"
     ext.mbeddr_home = '-Dmbeddr.github.core.home=' + rootProject.projectDir.absolutePath
     ext.slall_home = '-Dsl-all.home=' + rootProject.projectDir.absolutePath + '/code/plugins/sl-all'
-    ext.dependsOnMPS_scriptArgs = ['ant', mps_home, build_dir, artifacts_root]
+    ext.dependsOnMPS_scriptArgs = ['ant', '--verbose', mps_home, build_dir, artifacts_root]
     ext.dependsOnMbeddr_scriptArgs = [*dependsOnMPS_scriptArgs, mbeddr_home, slall_home]
 
     // path locations
