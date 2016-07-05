@@ -53,6 +53,7 @@ subprojects {
     ext.script_targets = ['clean', 'generate', 'assemble']
     ext.test_targets = ['clean', 'generate', 'assemble', 'check']
     ext.languages_targets = ['clean', 'generate', 'assemble']
+    ext.ex_tests_targets = ['clean', 'generate']	
     ext.rcp_targets = ['clean', 'build']
 
     // path variables
