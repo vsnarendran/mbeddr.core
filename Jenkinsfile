@@ -142,6 +142,7 @@ def gitCheckout() {
         extensions: scm.extensions + [
                 [$class: 'CloneOption', noTags: false, reference: reference, shallow: false],
                 [$class: 'CleanBeforeCheckout']],
+        gitTool: 'jgit',
         submoduleCfg: [],
         userRemoteConfigs: scm.userRemoteConfigs
       ])
