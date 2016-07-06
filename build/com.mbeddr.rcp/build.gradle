@@ -11,7 +11,7 @@ task build_mbeddrRCP(type: Exec, dependsOn: 'resolve_mps') {
 
 task build_mbeddrRCPDistributuion(type: Exec, dependsOn: build_mbeddrRCP) {
     workingDir rootProject.projectDir
-    def args = buildProcSpawnArgList([*dependsOnMbeddr_scriptArgs, *(antScriptLocation(script_build_mbeddrRCPDistribution)), *languages_targets])
+    def args = buildProcSpawnArgList([*dependsOnMbeddr_scriptArgs, *(antScriptLocation(script_build_mbeddrRCPDistribution)), *assemble_targets])
     commandLine (args)
 }
 

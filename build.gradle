@@ -51,6 +51,7 @@ subprojects {
     ext.BuildPlugin_Task = "assemble"
     ext.RunTests_Task = "check"
     ext.script_targets = ['clean', 'generate', 'assemble']
+    ext.assemble_targets = ['clean', 'assemble']	
     ext.test_targets = ['clean', 'generate', 'assemble', 'check']
     ext.languages_targets = ['clean', 'generate', 'assemble']
     ext.ex_tests_targets = ['clean', 'generate']	
