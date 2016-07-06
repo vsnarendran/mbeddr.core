@@ -41,18 +41,10 @@ timestamps {
 }
 
 def runTests(nodeLabel) {
-  def ws_path = pwd() + "/"
-
-  if(!isUnix()) {
-    sh 'set'
-    ws_path = "C:\\ws\\"
-    echo "WS-Path: ${ws_path}"
-  }
-
   parallel (
       "tests ${nodeLabel} 1" : {
           node (nodeLabel) {
-            ws(ws_path + "m1") {
+            ws(getWorkspacePath + "m1") {
               runTest("test_mbeddr_core", false)
               runTest("test_mbeddr_platform", false)
               runTest("test_mbeddr_performance", false)
@@ -61,14 +53,14 @@ def runTests(nodeLabel) {
       },
       "tests ${nodeLabel} 2" : {
           node (nodeLabel) {
-            ws(ws_path + "m2") {
+            ws(getWorkspacePath + "m2") {
               runTest("test_mbeddr_analysis", true)
             }
           }
       },
       "tests ${nodeLabel} 3" : {
           node (nodeLabel) {
-            ws(ws_path + "m3") {
+            ws(getWorkspacePath + "m3") {
               runTest("test_mbeddr_tutorial", false)
               runTest("test_mbeddr_debugger", false)
               runTest("test_mbeddr_ext", false)
@@ -77,6 +69,16 @@ def runTests(nodeLabel) {
           }
       }
   )
+}
+
+def getWorkspacePath() {
+  def ws_path = pwd() + "/"
+
+  if(!isUnix()) {
+    sh 'set'
+    ws_path = "C:\\ws\\"
+  }
+  echo "WS-Path: ${ws_path}"
 }
 
 def runTest(gradleTask, boolean withCbmc) {
