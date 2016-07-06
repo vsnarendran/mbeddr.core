@@ -23,8 +23,8 @@ timestamps {
         stash includes: 'artifacts/**/*', name: 'build_mbeddr'
 
         parallel (
-          "linux": { runTests('linux')},
-          "windows": { runTests('windows')}
+          //"windows": { runTests('windows')},
+          "linux": { runTests('linux')}
         )
 
       stage 'Publish Artifacts'
@@ -44,28 +44,22 @@ def runTests(nodeLabel) {
   parallel (
       "tests ${nodeLabel} 1" : {
           node (nodeLabel) {
-            ws(getWorkspacePath + "m1") {
               runTest("test_mbeddr_core", false)
               runTest("test_mbeddr_platform", false)
               runTest("test_mbeddr_performance", false)
-            }
           }
       },
       "tests ${nodeLabel} 2" : {
           node (nodeLabel) {
-            ws(getWorkspacePath + "m2") {
               runTest("test_mbeddr_analysis", true)
-            }
           }
       },
       "tests ${nodeLabel} 3" : {
           node (nodeLabel) {
-            ws(getWorkspacePath + "m3") {
               runTest("test_mbeddr_tutorial", false)
               runTest("test_mbeddr_debugger", false)
               runTest("test_mbeddr_ext", false)
               runTest("test_mbeddr_cc", false)
-            }
           }
       }
   )
@@ -79,6 +73,7 @@ def getWorkspacePath() {
     ws_path = "C:\\ws\\"
   }
   echo "WS-Path: ${ws_path}"
+  return ws_path
 }
 
 def runTest(gradleTask, boolean withCbmc) {
