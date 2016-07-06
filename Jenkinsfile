@@ -45,14 +45,14 @@ def runTests(nodeLabel) {
 
   if(!isUnix()) {
     sh 'set'
-    ws_path = ${env.BASE} + "\\mws\\"
+    ws_path = "C:\\ws\\"
     echo "WS-Path: ${ws_path}"
   }
 
   parallel (
       "tests ${nodeLabel} 1" : {
           node (nodeLabel) {
-            ws(ws_path + "1") {
+            ws(ws_path + "m1") {
               runTest("test_mbeddr_core", false)
               runTest("test_mbeddr_platform", false)
               runTest("test_mbeddr_performance", false)
@@ -61,14 +61,14 @@ def runTests(nodeLabel) {
       },
       "tests ${nodeLabel} 2" : {
           node (nodeLabel) {
-            ws(ws_path + "2") {
+            ws(ws_path + "m2") {
               runTest("test_mbeddr_analysis", true)
             }
           }
       },
       "tests ${nodeLabel} 3" : {
           node (nodeLabel) {
-            ws(ws_path + "2") {
+            ws(ws_path + "m3") {
               runTest("test_mbeddr_tutorial", false)
               runTest("test_mbeddr_debugger", false)
               runTest("test_mbeddr_ext", false)
@@ -141,7 +141,7 @@ def gitCheckout() {
   if(isUnix()) {
       reference += "/gitcaches/reference/mbeddr.core/"
   } else {
-      reference = pwd() + "\\..\\..\\mbeddr_Reference_Repo\\mbeddr.core\\"
+      reference = "${BASE}\\workspace\\mbeddr_Reference_Repo\\mbeddr.core\\"
       //reference += "\\gitcaches\\reference\\mbeddr.core\\"
   }
   echo "Reference-Path: ${reference}"
