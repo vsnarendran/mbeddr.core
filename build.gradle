@@ -58,21 +58,21 @@ subprojects {
     ext.rcp_targets = ['clean', 'build']
 
     // path variables
-    ext.mps_home = '-Dmps.home=' + rootProject.projectDir.absolutePath + "/MPS/" + mbeddrMpsDir + "/"
-    ext.build_dir = '-Dbuild.dir=' + rootProject.projectDir.absolutePath
-    ext.artifacts_root = '-Dartifacts.root=' + rootProject.projectDir.absolutePath + "/artifacts"
-    ext.mbeddr_home = '-Dmbeddr.github.core.home=' + rootProject.projectDir.absolutePath
-    ext.slall_home = '-Dsl-all.home=' + rootProject.projectDir.absolutePath + '/code/plugins/sl-all'
+    ext.mps_home = '-Dmps.home=' + file(rootProject.projectDir.absolutePath + "/MPS/" + mbeddrMpsDir + "/").getAbsolutePath()
+    ext.build_dir = '-Dbuild.dir=' + file(rootProject.projectDir.absolutePath).getAbsolutePath()
+    ext.artifacts_root = '-Dartifacts.root=' + file(rootProject.projectDir.absolutePath + "/artifacts").getAbsolutePath()
+    ext.mbeddr_home = '-Dmbeddr.github.core.home=' + file(rootProject.projectDir.absolutePath).getAbsolutePath()
+    ext.slall_home = '-Dsl-all.home=' + file(rootProject.projectDir.absolutePath + '/code/plugins/sl-all').getAbsolutePath()
     ext.dependsOnMPS_scriptArgs = ['ant', '-verbose', mps_home, build_dir, artifacts_root]
     ext.dependsOnMbeddr_scriptArgs = [*dependsOnMPS_scriptArgs, mbeddr_home, slall_home]
 
     // path locations
-    ext.mbeddrScripts_basePath = ant.properties['mbeddr.github.core.home'] + "/build"
-    ext.allScripts_buildFileLocation = mbeddrScripts_basePath + "/" + "com.mbeddr.allScripts"
-    ext.slAll_buildFileLocation = ant.properties['mbeddr.github.core.home'] + "/scripts" + "/" + "sl-all"
+    ext.mbeddrScripts_basePath = file(ant.properties['mbeddr.github.core.home'] + "/build").getAbsolutePath()
+    ext.allScripts_buildFileLocation = file(mbeddrScripts_basePath + "/" + "com.mbeddr.allScripts").getAbsolutePath()
+    ext.slAll_buildFileLocation = file(ant.properties['mbeddr.github.core.home'] + "/scripts" + "/" + "sl-all").getAbsolutePath()
 
     // ant script locations
-    ext.scriptsBasePath = rootProject.projectDir.absolutePath + "/scripts/"
+    ext.scriptsBasePath = file(rootProject.projectDir.absolutePath + "/scripts/").getAbsolutePath()
 
     // repository urls
     ext.mps_repository = 'https://projects.itemis.de/nexus/content/repositories/mps_mbeddr_r'
