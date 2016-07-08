@@ -671,6 +671,7 @@
       </concept>
       <concept id="7780999115923947731" name="com.mbeddr.ext.compositecomponents.structure.CompositeComponentInstanceConfig" flags="ng" index="5JiAF" />
       <concept id="7780999115923829680" name="com.mbeddr.ext.compositecomponents.structure.CompositeComponent" flags="ng" index="5JLF8" />
+      <concept id="7540109328385923714" name="com.mbeddr.ext.compositecomponents.structure.CompositeComponentsConfigItem" flags="ng" index="1eFCfY" />
     </language>
     <language id="c788b046-2019-4656-8b60-8bb9bbb177b5" name="com.mbeddr.mpsutil.review">
       <concept id="1159656764133538905" name="com.mbeddr.mpsutil.review.structure.ReviewReplyNote" flags="ng" index="3vAh7R">
@@ -1183,6 +1184,7 @@
     <node concept="12mU2y" id="1U5CTQBq1ht" role="2Q9xDr">
       <node concept="3GpDuo" id="1U5CTQBq1hu" role="3GpDut" />
     </node>
+    <node concept="1eFCfY" id="2rIOLw8jVac" role="2Q9xDr" />
     <node concept="2eOfOl" id="7VsgA5L655s" role="2ePNbc">
       <property role="iO3LB" value="true" />
       <property role="TrG5h" value="MbeddrTutorialDefaultExt" />

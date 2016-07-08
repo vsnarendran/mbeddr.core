@@ -28,6 +28,7 @@
         <child id="4577779292081946445" name="refs" index="Fanle" />
         <child id="4577779292081946444" name="tracekind" index="Fanlf" />
       </concept>
+      <concept id="8626086128969157722" name="com.mbeddr.cc.trace.structure.TracingConfigItem" flags="ng" index="3C_SZV" />
       <concept id="439567521322928994" name="com.mbeddr.cc.trace.structure.TraceAnnotation" flags="ng" index="3HmicQ" />
       <concept id="439567521322929003" name="com.mbeddr.cc.trace.structure.ImplementsTraceKind" flags="ng" index="3HmicZ" />
     </language>
@@ -454,6 +455,10 @@
       <concept id="4491876417845484922" name="com.mbeddr.ext.components.structure.ClientServerInterface" flags="ng" index="2EX0iR" />
       <concept id="4491876417845474761" name="com.mbeddr.ext.components.structure.Component" flags="ng" index="2EX6K4">
         <child id="6041318036221669720" name="contents" index="2RW2fA" />
+      </concept>
+      <concept id="2103658896110121035" name="com.mbeddr.ext.components.structure.ComponentsGenStrategy" flags="ng" index="3i2$bl" />
+      <concept id="2103658896110121032" name="com.mbeddr.ext.components.structure.ComponentsConfigItem" flags="ng" index="3i2$bm">
+        <child id="2103658896110238743" name="genStrategy" index="3i30U9" />
       </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
@@ -1043,6 +1048,10 @@
     <node concept="2eh4Hv" id="7FOMyx2$xyK" role="2Q9xDr" />
     <node concept="12mU2y" id="1U5CTQBq1hr" role="2Q9xDr">
       <node concept="3GpDuo" id="1U5CTQBq1hs" role="3GpDut" />
+    </node>
+    <node concept="3C_SZV" id="2rIOLw8jGle" role="2Q9xDr" />
+    <node concept="3i2$bm" id="2rIOLw8jHad" role="2Q9xDr">
+      <node concept="3i2$bl" id="2rIOLw8jHaf" role="3i30U9" />
     </node>
   </node>
   <node concept="N3F5e" id="zSFqGmbqdm">
