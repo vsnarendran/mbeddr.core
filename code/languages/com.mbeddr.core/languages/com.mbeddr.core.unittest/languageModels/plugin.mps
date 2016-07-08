@@ -263,7 +263,7 @@
     <property role="TrG5h" value="IsolationHelper" />
     <node concept="2tJIrI" id="77nuVWJ0D7Y" role="jymVt" />
     <node concept="2YIFZL" id="77nuVWJ0D9N" role="jymVt">
-      <property role="TrG5h" value="isIsloationApplicable" />
+      <property role="TrG5h" value="isIsolationApplicable" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="77nuVWJ0D8u" role="3clF47">

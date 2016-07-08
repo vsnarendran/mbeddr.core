@@ -4354,7 +4354,7 @@
             <property role="TrG5h" value="isNotIsolated" />
             <node concept="3fqX7Q" id="77nuVWJ1Fcw" role="33vP2m">
               <node concept="2YIFZM" id="77nuVWJ1Fcy" role="3fr31v">
-                <ref role="37wK5l" to="4rjt:77nuVWJ0D9N" resolve="isIsloationApplicable" />
+                <ref role="37wK5l" to="4rjt:77nuVWJ0D9N" resolve="isIsolationApplicable" />
                 <ref role="1Pybhc" to="4rjt:77nuVWJ0D7o" resolve="IsolationHelper" />
                 <node concept="37vLTw" id="77nuVWJ1Fcz" role="37wK5m">
                   <ref role="3cqZAo" node="ILZbnBTjGx" resolve="bc" />
@@ -5587,10 +5587,10 @@
                   <node concept="3clFbH" id="ILZbnBSD7A" role="3cqZAp" />
                   <node concept="3cpWs8" id="77nuVWJ0EfJ" role="3cqZAp">
                     <node concept="3cpWsn" id="77nuVWJ0EfK" role="3cpWs9">
-                      <property role="TrG5h" value="isloationApplicable" />
+                      <property role="TrG5h" value="isolationApplicable" />
                       <node concept="10P_77" id="77nuVWJ0EfE" role="1tU5fm" />
                       <node concept="2YIFZM" id="77nuVWJ0EfL" role="33vP2m">
-                        <ref role="37wK5l" to="4rjt:77nuVWJ0D9N" resolve="isIsloationApplicable" />
+                        <ref role="37wK5l" to="4rjt:77nuVWJ0D9N" resolve="isIsolationApplicable" />
                         <ref role="1Pybhc" to="4rjt:77nuVWJ0D7o" resolve="IsolationHelper" />
                         <node concept="2OqwBi" id="77nuVWJ0EfM" role="37wK5m">
                           <node concept="37vLTw" id="77nuVWJ0EfN" role="2Oq$k0">
@@ -5670,7 +5670,7 @@
                       </node>
                     </node>
                     <node concept="37vLTw" id="77nuVWJ0Rsn" role="3clFbw">
-                      <ref role="3cqZAo" node="77nuVWJ0EfK" resolve="isloationApplicable" />
+                      <ref role="3cqZAo" node="77nuVWJ0EfK" resolve="isolationApplicable" />
                     </node>
                     <node concept="3clFbS" id="44MAav70LJ" role="3clFbx">
                       <node concept="3clFbF" id="77nuVWJ0VNp" role="3cqZAp">
@@ -5813,7 +5813,7 @@
                   </node>
                   <node concept="3clFbJ" id="44MAav7d$w" role="3cqZAp">
                     <node concept="37vLTw" id="77nuVWJ1aFo" role="3clFbw">
-                      <ref role="3cqZAo" node="77nuVWJ0EfK" resolve="isloationApplicable" />
+                      <ref role="3cqZAo" node="77nuVWJ0EfK" resolve="isolationApplicable" />
                     </node>
                     <node concept="3clFbS" id="44MAav7d$y" role="3clFbx">
                       <node concept="3clFbF" id="5PZNJkfFZqK" role="3cqZAp">
