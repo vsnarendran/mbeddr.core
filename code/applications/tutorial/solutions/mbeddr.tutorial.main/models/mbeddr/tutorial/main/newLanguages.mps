@@ -16,6 +16,7 @@
     <use id="8cb5ab9f-a2c3-418b-a67c-c5690ef7361b" name="mbeddr.tutorial.layers" version="-1" />
     <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="1" />
     <use id="0d04a6cc-773e-4069-b9b0-11884b2ff1c8" name="com.mbeddr.ext.units" version="-1" />
+    <use id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
   </languages>
@@ -172,6 +173,12 @@
       <concept id="279446265608463015" name="com.mbeddr.core.pointers.structure.DerefExpr" flags="ng" index="3wxyx2" />
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42">
         <child id="1452920870317474611" name="sizeExpr" index="1YbSNA" />
+      </concept>
+    </language>
+    <language id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw">
+      <concept id="2103658896110278831" name="com.mbeddr.ext.components.gen_nomw.structure.NoMwComponentsGenStrategy" flags="ng" index="3i3YCL">
+        <property id="1553713790141527405" name="wireStatically" index="35zhco" />
+        <property id="4768833643347725006" name="generateContracts" index="3Ewwow" />
       </concept>
     </language>
     <language id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning">
@@ -456,7 +463,6 @@
       <concept id="4491876417845474761" name="com.mbeddr.ext.components.structure.Component" flags="ng" index="2EX6K4">
         <child id="6041318036221669720" name="contents" index="2RW2fA" />
       </concept>
-      <concept id="2103658896110121035" name="com.mbeddr.ext.components.structure.ComponentsGenStrategy" flags="ng" index="3i2$bl" />
       <concept id="2103658896110121032" name="com.mbeddr.ext.components.structure.ComponentsConfigItem" flags="ng" index="3i2$bm">
         <child id="2103658896110238743" name="genStrategy" index="3i30U9" />
       </concept>
@@ -1051,7 +1057,10 @@
     </node>
     <node concept="3C_SZV" id="2rIOLw8jGle" role="2Q9xDr" />
     <node concept="3i2$bm" id="2rIOLw8jHad" role="2Q9xDr">
-      <node concept="3i2$bl" id="2rIOLw8jHaf" role="3i30U9" />
+      <node concept="3i3YCL" id="1w5Xuj1RNCV" role="3i30U9">
+        <property role="3Ewwow" value="true" />
+        <property role="35zhco" value="false" />
+      </node>
     </node>
   </node>
   <node concept="N3F5e" id="zSFqGmbqdm">
