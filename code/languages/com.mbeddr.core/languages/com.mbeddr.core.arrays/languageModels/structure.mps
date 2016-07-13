@@ -261,5 +261,33 @@
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6eO71TqDBrQ">
+    <property role="1pbfSe" value="1101360364" />
+    <property role="3GE5qa" value="arrays" />
+    <property role="TrG5h" value="RuntimeArrayType" />
+    <ref role="1TJDcQ" node="4VhroexOKM1" resolve="ArrayType" />
+    <node concept="PrWs8" id="6eO71TqH3xT" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+    <node concept="PrWs8" id="6eO71TqH2zY" role="PzmwI">
+      <ref role="PrY4T" node="6eO71TqGWp9" resolve="IRuntimeType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6eO71TqDBrT">
+    <property role="1pbfSe" value="1101360361" />
+    <property role="3GE5qa" value="pointers" />
+    <property role="TrG5h" value="RuntimePointerType" />
+    <ref role="1TJDcQ" node="fwMInzpHoK" resolve="PointerType" />
+    <node concept="PrWs8" id="6eO71TqDBrU" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+    <node concept="PrWs8" id="6eO71TqH3vW" role="PzmwI">
+      <ref role="PrY4T" node="6eO71TqGWp9" resolve="IRuntimeType" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6eO71TqGWp9">
+    <property role="1pbfSe" value="1100488089" />
+    <property role="TrG5h" value="IRuntimeType" />
+  </node>
 </model>
 

@@ -55,6 +55,9 @@
         <reference id="1177333551023" name="concept" index="uz4UX" />
         <child id="1177333559040" name="part" index="uz6Si" />
       </concept>
+      <concept id="1177409831820" name="jetbrains.mps.lang.actions.structure.RemovePart" flags="ng" index="z64au">
+        <reference id="1177409838946" name="conceptToRemove" index="z65TK" />
+      </concept>
       <concept id="1177497140107" name="jetbrains.mps.lang.actions.structure.ConceptFunctionParameter_sourceNode" flags="nn" index="Cj7Ep" />
       <concept id="1177498013932" name="jetbrains.mps.lang.actions.structure.SimpleSideTransformMenuPart" flags="ng" index="Cmt7Y">
         <child id="1177498166690" name="matchingText" index="Cn2iK" />
@@ -211,6 +214,18 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3UOs0u" id="6eO71TqEJHc">
+    <property role="TrG5h" value="Test" />
+    <node concept="3UNGvq" id="6eO71TqEJHd" role="3UOs0v">
+      <ref role="3UNGvu" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+      <node concept="z64au" id="6eO71TqEJHh" role="_1QTJ">
+        <ref role="z65TK" to="yq40:6eO71TqDBrQ" resolve="RuntimeArrayType" />
+      </node>
+      <node concept="z64au" id="6eO71TqEJHn" role="_1QTJ">
+        <ref role="z65TK" to="yq40:6eO71TqDBrT" resolve="RuntimePointerType" />
       </node>
     </node>
   </node>
