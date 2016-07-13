@@ -2024,6 +2024,12 @@
             <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6KI2Y3ZaSYF" role="3bR37C">
+          <node concept="3bR9La" id="6KI2Y3ZaSYG" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LgV" resolve="jetbrains.mps.make.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7uZw0yZ43L9" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -2454,9 +2460,6 @@
             <ref role="3bR37D" to="al5i:7rbvAnyGPae" resolve="com.mbeddr.mpsutil.grammarcells.runtime" />
           </node>
         </node>
-        <node concept="1E0d5M" id="2W1GNPBwWWw" role="1E1XAP">
-          <ref role="1E0d5P" node="2W1GNPBwUiB" resolve="com.mbeddr.core.expressions.runtime" />
-        </node>
         <node concept="1SiIV0" id="51BFKNOMJn9" role="3bR37C">
           <node concept="3bR9La" id="51BFKNOMJna" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -2474,6 +2477,9 @@
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="51BFKNOMHQw" resolve="com.mbeddr.core.pointers.runtime" />
           </node>
+        </node>
+        <node concept="1E0d5M" id="2W1GNPBwWWw" role="1E1XAP">
+          <ref role="1E0d5P" node="2W1GNPBwUiB" resolve="com.mbeddr.core.expressions.runtime" />
         </node>
         <node concept="1E0d5M" id="51BFKNOMJnf" role="1E1XAP">
           <ref role="1E0d5P" node="51BFKNOMHQw" resolve="com.mbeddr.core.pointers.runtime" />
