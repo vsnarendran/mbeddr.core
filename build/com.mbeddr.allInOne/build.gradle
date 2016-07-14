@@ -7,6 +7,6 @@ task build_all_in_one(type: Exec, dependsOn: 'copy_allScripts') {
 }
 
 task publish_all_in_one(type: Zip, dependsOn: build_all_in_one) {
-    from rootProject.projectDir.absolutePath + "/artifacts/com.mbeddr.allInOne"
-    include "com.mbeddr.allInOne.zip"
+    from rootProject.projectDir.absolutePath + "/artifacts/"
+    include "com.mbeddr.allInOne/com.mbeddr.allInOne.zip"
 }
