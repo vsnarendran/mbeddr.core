@@ -269,8 +269,8 @@
     <node concept="PrWs8" id="6eO71TqH3xT" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
-    <node concept="PrWs8" id="6eO71TqH2zY" role="PzmwI">
-      <ref role="PrY4T" node="6eO71TqGWp9" resolve="IRuntimeType" />
+    <node concept="PrWs8" id="2386qPhR1uv" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:6AaN29SvfIb" resolve="ITypePrettyPrinter" />
     </node>
   </node>
   <node concept="1TIwiD" id="6eO71TqDBrT">
@@ -281,13 +281,9 @@
     <node concept="PrWs8" id="6eO71TqDBrU" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
-    <node concept="PrWs8" id="6eO71TqH3vW" role="PzmwI">
-      <ref role="PrY4T" node="6eO71TqGWp9" resolve="IRuntimeType" />
+    <node concept="PrWs8" id="2386qPhR1ur" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:6AaN29SvfIb" resolve="ITypePrettyPrinter" />
     </node>
-  </node>
-  <node concept="PlHQZ" id="6eO71TqGWp9">
-    <property role="1pbfSe" value="1100488089" />
-    <property role="TrG5h" value="IRuntimeType" />
   </node>
 </model>
 

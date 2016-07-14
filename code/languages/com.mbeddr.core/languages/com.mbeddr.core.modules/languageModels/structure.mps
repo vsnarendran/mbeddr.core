@@ -1550,5 +1550,17 @@
       </node>
     </node>
   </node>
+  <node concept="1TIwiD" id="yPdKxF$uZR">
+    <property role="1pbfSe" value="1950820095" />
+    <property role="3GE5qa" value="functionrefs" />
+    <property role="TrG5h" value="RuntimeFunctionRefType" />
+    <ref role="1TJDcQ" node="7qHzltJ03ir" resolve="FunctionRefType" />
+    <node concept="PrWs8" id="6eO71TqDBrU" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+    <node concept="PrWs8" id="2386qPhR1ur" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:6AaN29SvfIb" resolve="ITypePrettyPrinter" />
+    </node>
+  </node>
 </model>
 

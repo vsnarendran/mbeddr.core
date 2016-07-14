@@ -20,7 +20,6 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="1s42" ref="r:d482a2e6-b3ef-4c45-883b-cf624a56b653(com.mbeddr.core.pointers.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor">
@@ -1360,27 +1359,54 @@
       <property role="2BUmq6" value="Show Array Type on left Side" />
     </node>
   </node>
-  <node concept="24kQdi" id="6eO71TqGWpR">
-    <ref role="1XX52x" to="yq40:6eO71TqGWp9" resolve="IRuntimeType" />
-    <node concept="1HlG4h" id="6eO71TqGWpT" role="2wV5jI">
-      <node concept="1HfYo3" id="6eO71TqGWpV" role="1HlULh">
-        <node concept="3TQlhw" id="6eO71TqGWpX" role="1Hhtcw">
-          <node concept="3clFbS" id="6eO71TqGWpZ" role="2VODD2">
-            <node concept="3cpWs6" id="6eO71TqGWrd" role="3cqZAp">
-              <node concept="2OqwBi" id="6eO71TqGWu8" role="3cqZAk">
-                <node concept="pncrf" id="6eO71TqGWrZ" role="2Oq$k0" />
-                <node concept="2qgKlT" id="6eO71TqGWxW" role="2OqNvi">
-                  <ref role="37wK5l" to="1s42:6eO71TqGWpd" resolve="renderReadable" />
+  <node concept="24kQdi" id="2386qPhR6e4">
+    <property role="3GE5qa" value="arrays" />
+    <ref role="1XX52x" to="yq40:6eO71TqDBrQ" resolve="RuntimeArrayType" />
+    <node concept="1HlG4h" id="2386qPhR6e6" role="2wV5jI">
+      <node concept="VPxyj" id="2386qPhR6MB" role="3F10Kt">
+        <property role="VOm3f" value="false" />
+      </node>
+      <node concept="VPM3Z" id="2386qPhR6W$" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="1HfYo3" id="2386qPhR6e8" role="1HlULh">
+        <node concept="3TQlhw" id="2386qPhR6ea" role="1Hhtcw">
+          <node concept="3clFbS" id="2386qPhR6ec" role="2VODD2">
+            <node concept="3cpWs6" id="2386qPhR6g1" role="3cqZAp">
+              <node concept="2OqwBi" id="2386qPhR6oV" role="3cqZAk">
+                <node concept="pncrf" id="2386qPhR6gO" role="2Oq$k0" />
+                <node concept="2qgKlT" id="2386qPhR6F6" role="2OqNvi">
+                  <ref role="37wK5l" to="ywuz:2386qPhR1k9" resolve="renderReadable" />
                 </node>
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="VPxyj" id="6eO71TqGWAt" role="3F10Kt">
+    </node>
+  </node>
+  <node concept="24kQdi" id="2386qPhRjLt">
+    <property role="3GE5qa" value="pointers" />
+    <ref role="1XX52x" to="yq40:6eO71TqDBrT" resolve="RuntimePointerType" />
+    <node concept="1HlG4h" id="2386qPhRjLv" role="2wV5jI">
+      <node concept="1HfYo3" id="2386qPhRjLx" role="1HlULh">
+        <node concept="3TQlhw" id="2386qPhRjLz" role="1Hhtcw">
+          <node concept="3clFbS" id="2386qPhRjL_" role="2VODD2">
+            <node concept="3cpWs6" id="2386qPhRjQo" role="3cqZAp">
+              <node concept="2OqwBi" id="2386qPhRjYV" role="3cqZAk">
+                <node concept="pncrf" id="2386qPhRjRa" role="2Oq$k0" />
+                <node concept="2qgKlT" id="2386qPhRkwh" role="2OqNvi">
+                  <ref role="37wK5l" to="ywuz:2386qPhR1k9" resolve="renderReadable" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="VPxyj" id="2386qPhRjOr" role="3F10Kt">
         <property role="VOm3f" value="false" />
       </node>
-      <node concept="VPM3Z" id="6eO71TqGWG9" role="3F10Kt">
+      <node concept="VPM3Z" id="2386qPhRjQf" role="3F10Kt">
         <property role="VOm3f" value="true" />
       </node>
     </node>

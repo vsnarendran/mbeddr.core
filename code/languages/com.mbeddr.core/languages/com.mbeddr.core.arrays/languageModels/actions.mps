@@ -218,7 +218,7 @@
     </node>
   </node>
   <node concept="3UOs0u" id="6eO71TqEJHc">
-    <property role="TrG5h" value="Test" />
+    <property role="TrG5h" value="RuntimeType_Remove" />
     <node concept="3UNGvq" id="6eO71TqEJHd" role="3UOs0v">
       <ref role="3UNGvu" to="mj1l:7FQByU3CrCQ" resolve="Type" />
       <node concept="z64au" id="6eO71TqEJHh" role="_1QTJ">
