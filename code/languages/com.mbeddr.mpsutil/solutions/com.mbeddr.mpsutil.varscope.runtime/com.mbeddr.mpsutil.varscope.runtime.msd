@@ -9,7 +9,7 @@
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
-    <dependency reexport="false">3819ba36-98f4-49ac-b779-34f3a458c09b(com.mbeddr.mpsutil.varscope)</dependency>
+    <dependency reexport="false">623e7be3-c7fe-49f6-b88d-b2b19e3a1227(com.mbeddr.mpsutil.varscope)</dependency>
   </dependencies>
   <languageVersions>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="4" />
@@ -25,7 +25,7 @@
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
-    <module reference="3819ba36-98f4-49ac-b779-34f3a458c09b(com.mbeddr.mpsutil.varscope)" version="0" />
+    <module reference="623e7be3-c7fe-49f6-b88d-b2b19e3a1227(com.mbeddr.mpsutil.varscope)" version="0" />
     <module reference="8e4567d9-0513-47fd-bfe7-fa3b33fe03ab(com.mbeddr.mpsutil.varscope.runtime)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />

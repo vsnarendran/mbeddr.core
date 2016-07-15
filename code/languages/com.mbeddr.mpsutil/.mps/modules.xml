@@ -28,6 +28,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.datepicker.sandbox/com.mbeddr.mpsutil.datepicker.sandbox.mpl" folder="staging.datePicker" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.datepicker/com.mbeddr.mpsutil.datepicker.mpl" folder="staging.datePicker" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.dependenciesdiagram/com.mbeddr.mpsutil.dependenciesdiagram.mpl" folder="rest.dependenciesdiagram" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.dependencyVisualizer/com.mbeddr.mpsutil.dependencyVisualizer.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editingGuide.execution.lang/com.mbeddr.mpsutil.editingGuide.execution.lang.mpl" folder="staging.editingGuide" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editingGuide/com.mbeddr.mpsutil.editingGuide.mpl" folder="staging.editingGuide" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editor.querylist.demolang/com.mbeddr.mpsutil.editor.querylist.demolang.mpl" folder="staging.querylist" />
@@ -43,6 +44,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.grammarcells.runtimelang/com.mbeddr.mpsutil.grammarcells.runtimelang.mpl" folder="staging.grammarCells" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.grammarcells.sandboxlang/com.mbeddr.mpsutil.grammarcells.sandboxlang.mpl" folder="staging.grammarCells" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.grammarcells/com.mbeddr.mpsutil.grammarcells.mpl" folder="staging.grammarCells" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.graphLayout/com.mbeddr.mpsutil.graphLayout.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.httpsupport/com.mbeddr.mpsutil.httpsupport.mpl" folder="staging.httpSupport" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.hyperlink/com.mbeddr.mpsutil.hyperlink.mpl" folder="staging" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.iconchar/com.mbeddr.mpsutil.iconchar.mpl" folder="stable.iconchar" />
@@ -122,6 +124,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.datepicker.runtime/com.mbeddr.mpsutil.datepicker.runtime.msd" folder="staging.datePicker" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.datepicker.sandbox.demo/com.mbeddr.mpsutil.datepicker.sandbox.demo.msd" folder="staging.datePicker" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.dependenciesdiagram.sandbox/com.mbeddr.mpsutil.dependenciesdiagram.sandbox.msd" folder="rest.dependenciesdiagram" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.dependencyVisualizer.runtime/com.mbeddr.mpsutil.dependencyVisualizer.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.diagramLayout.runtime/com.mbeddr.mpsutil.diagramLayout.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editingGuide.execution/com.mbeddr.mpsutil.editingGuide.execution.msd" folder="staging.editingGuide" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editingGuide.plugin/com.mbeddr.mpsutil.editingGuide.plugin.msd" folder="staging.editingGuide" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.editingGuide.runtime/com.mbeddr.mpsutil.editingGuide.runtime.msd" folder="staging.editingGuide" />
