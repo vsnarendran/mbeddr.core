@@ -52,6 +52,14 @@
     <property role="1pbfSe" value="805243779" />
     <property role="TrG5h" value="DiagramNode" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2DVWQBTS3hj" role="1TKVEl">
+      <property role="TrG5h" value="minWidth" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="2DVWQBTS3sn" role="1TKVEl">
+      <property role="TrG5h" value="minHeight" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
     <node concept="PrWs8" id="7jWvwQV0CPR" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>

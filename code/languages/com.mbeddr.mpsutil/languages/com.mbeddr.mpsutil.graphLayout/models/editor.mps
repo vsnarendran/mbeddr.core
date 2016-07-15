@@ -96,8 +96,23 @@
   </registry>
   <node concept="24kQdi" id="7jWvwQV0CQD">
     <ref role="1XX52x" to="nsqx:7jWvwQV0CPQ" resolve="DiagramNode" />
-    <node concept="3F0A7n" id="7jWvwQV0CQF" role="2wV5jI">
-      <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+    <node concept="3EZMnI" id="2DVWQBTS3Bs" role="2wV5jI">
+      <node concept="2iRfu4" id="2DVWQBTS3Bt" role="2iSdaV" />
+      <node concept="3F0A7n" id="7jWvwQV0CQF" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="2DVWQBTS3B_" role="3EZMnx">
+        <property role="3F0ifm" value="minWidth:" />
+      </node>
+      <node concept="3F0A7n" id="2DVWQBTS3BM" role="3EZMnx">
+        <ref role="1NtTu8" to="nsqx:2DVWQBTS3hj" resolve="minWidth" />
+      </node>
+      <node concept="3F0ifn" id="2DVWQBTS3Ce" role="3EZMnx">
+        <property role="3F0ifm" value="minHeight:" />
+      </node>
+      <node concept="3F0A7n" id="2DVWQBTS3C2" role="3EZMnx">
+        <ref role="1NtTu8" to="nsqx:2DVWQBTS3sn" resolve="minHeight" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="7jWvwQV0CRE">
