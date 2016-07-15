@@ -12,8 +12,10 @@
       </concept>
     </language>
     <language id="5862288d-b2cf-4268-b409-143fa09be4d5" name="com.mbeddr.mpsutil.graphLayout">
+      <concept id="8429751199967910924" name="com.mbeddr.mpsutil.graphLayout.structure.SameHeightAs" flags="ng" index="3fZI81" />
       <concept id="8429751199967910921" name="com.mbeddr.mpsutil.graphLayout.structure.Above" flags="ng" index="3fZI84" />
       <concept id="8429751199967910920" name="com.mbeddr.mpsutil.graphLayout.structure.RightOf" flags="ng" index="3fZI85" />
+      <concept id="8429751199967910923" name="com.mbeddr.mpsutil.graphLayout.structure.SameWidthAs" flags="ng" index="3fZI86" />
       <concept id="8429751199967910922" name="com.mbeddr.mpsutil.graphLayout.structure.Below" flags="ng" index="3fZI87" />
       <concept id="8429751199967910969" name="com.mbeddr.mpsutil.graphLayout.structure.BottomAlignedWith" flags="ng" index="3fZI8O" />
       <concept id="8429751199967910966" name="com.mbeddr.mpsutil.graphLayout.structure.LeftAlignedWith" flags="ng" index="3fZI8V" />
@@ -409,6 +411,68 @@
     </node>
     <node concept="3fZJdV" id="2DVWQBTVPW1" role="3fZI9_">
       <property role="TrG5h" value="bb" />
+    </node>
+  </node>
+  <node concept="3fZI9D" id="2DVWQBU4DYM">
+    <property role="TrG5h" value="SameHeight" />
+    <node concept="3fZJdV" id="2DVWQBU4E9C" role="3fZI9_">
+      <property role="TrG5h" value="a" />
+      <property role="3jAWhY" value="70" />
+    </node>
+    <node concept="3fZJdV" id="2DVWQBU4E9E" role="3fZI9_">
+      <property role="TrG5h" value="b" />
+      <property role="3jAWhY" value="50" />
+    </node>
+    <node concept="3fZJdV" id="2DVWQBU4E9H" role="3fZI9_">
+      <property role="TrG5h" value="c" />
+      <property role="3jAWhY" value="20" />
+    </node>
+    <node concept="3fZJeT" id="2DVWQBU4E9Y" role="3fZI9A">
+      <ref role="3fZIoz" node="2DVWQBU4E9C" resolve="a" />
+      <ref role="3fZIoX" node="2DVWQBU4E9E" resolve="b" />
+    </node>
+    <node concept="3fZJeT" id="2DVWQBU4Ea8" role="3fZI9A">
+      <ref role="3fZIoz" node="2DVWQBU4E9E" resolve="b" />
+      <ref role="3fZIoX" node="2DVWQBU4E9H" resolve="c" />
+    </node>
+    <node concept="3fZI81" id="2DVWQBU4E9L" role="3fZI9A">
+      <ref role="3fZIoz" node="2DVWQBU4E9E" resolve="b" />
+      <ref role="3fZIoX" node="2DVWQBU4E9H" resolve="c" />
+    </node>
+    <node concept="3fZI81" id="2DVWQBU4E9Q" role="3fZI9A">
+      <ref role="3fZIoz" node="2DVWQBU4E9C" resolve="a" />
+      <ref role="3fZIoX" node="2DVWQBU4E9H" resolve="c" />
+    </node>
+  </node>
+  <node concept="3fZI9D" id="2DVWQBU5az$">
+    <property role="TrG5h" value="SameWidth" />
+    <node concept="3fZJdV" id="2DVWQBU5az_" role="3fZI9_">
+      <property role="TrG5h" value="a" />
+      <property role="3jAWsU" value="233" />
+    </node>
+    <node concept="3fZJdV" id="2DVWQBU5azB" role="3fZI9_">
+      <property role="TrG5h" value="b" />
+      <property role="3jAWsU" value="55" />
+    </node>
+    <node concept="3fZJdV" id="2DVWQBU5azE" role="3fZI9_">
+      <property role="TrG5h" value="c" />
+      <property role="3jAWsU" value="4" />
+    </node>
+    <node concept="3fZI84" id="2DVWQBU5azI" role="3fZI9A">
+      <ref role="3fZIoz" node="2DVWQBU5az_" resolve="a" />
+      <ref role="3fZIoX" node="2DVWQBU5azB" resolve="b" />
+    </node>
+    <node concept="3fZI84" id="2DVWQBU5azN" role="3fZI9A">
+      <ref role="3fZIoz" node="2DVWQBU5azB" resolve="b" />
+      <ref role="3fZIoX" node="2DVWQBU5azE" resolve="c" />
+    </node>
+    <node concept="3fZI86" id="2DVWQBU5azV" role="3fZI9A">
+      <ref role="3fZIoz" node="2DVWQBU5az_" resolve="a" />
+      <ref role="3fZIoX" node="2DVWQBU5azB" resolve="b" />
+    </node>
+    <node concept="3fZI86" id="2DVWQBU5a$5" role="3fZI9A">
+      <ref role="3fZIoz" node="2DVWQBU5azB" resolve="b" />
+      <ref role="3fZIoX" node="2DVWQBU5azE" resolve="c" />
     </node>
   </node>
 </model>

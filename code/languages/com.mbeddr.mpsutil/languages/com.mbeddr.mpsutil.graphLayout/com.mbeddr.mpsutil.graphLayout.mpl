@@ -52,6 +52,7 @@
   <dependencies>
     <dependency reexport="false">5862288d-b2cf-4268-b409-143fa09be4d5(com.mbeddr.mpsutil.graphLayout)</dependency>
     <dependency reexport="false">126390f5-ecf9-4f86-8598-d60d4b0095a9(com.mbeddr.mpsutil.diagramLayout.runtime)</dependency>
+    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
