@@ -2,7 +2,7 @@
 <model ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
   </languages>
   <imports>
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
@@ -19,6 +19,9 @@
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
         <property id="1225118933224" name="comment" index="YLQ7P" />
       </concept>
+      <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
+        <reference id="6054523464627965081" name="concept" index="trN6q" />
+      </concept>
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
@@ -29,6 +32,10 @@
         <property id="1192116978809" name="javaIdentifier" index="2fHolG" />
         <property id="1083923523172" name="externalValue" index="1uS6qo" />
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
+      </concept>
+      <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
+        <property id="7588428831955550663" name="role" index="Hh88m" />
+        <child id="7588428831947959310" name="attributed" index="EQaZv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -319,7 +326,7 @@
   <node concept="1TIwiD" id="5E1$geGaBk_">
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="CPROVERbitvector" />
-    <property role="34LRSv" value="bitvector" />
+    <property role="34LRSv" value="__CPROVER_bitvector" />
     <property role="1pbfSe" value="111937064" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCS" resolve="PrimitiveType" />
     <node concept="1TJgyi" id="5E1$geGaBru" role="1TKVEl">
@@ -347,9 +354,15 @@
   <node concept="1TIwiD" id="4DO4XHFb3hL">
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="CPROVERfloatbv" />
-    <property role="34LRSv" value="floatbv" />
+    <property role="34LRSv" value="__CPROVER_floatbv" />
     <property role="1pbfSe" value="1247786932" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCS" resolve="PrimitiveType" />
+    <node concept="PrWs8" id="5KHBa6kTOBN" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:4ZVDCZCaQ86" resolve="INumber" />
+    </node>
+    <node concept="PrWs8" id="5KHBa6kUyfu" role="PzmwI">
+      <ref role="PrY4T" node="5KHBa6kUy5h" resolve="ICProverMacro" />
+    </node>
     <node concept="1TJgyi" id="4DO4XHFbeDO" role="1TKVEl">
       <property role="TrG5h" value="totalSize" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
@@ -368,6 +381,12 @@
       <property role="20kJfa" value="externalFiles" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="vs0r:5lKnBeAtNw8" resolve="AbstractPicker" />
+    </node>
+    <node concept="1TJgyj" id="1$MI$rgzQuS" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="singleLoopsUnwindings" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1$MI$rgzQnB" resolve="SingleLoopUnwinding" />
     </node>
     <node concept="1TJgyi" id="7ehmsbAE0gk" role="1TKVEl">
       <property role="TrG5h" value="hasLocalCbmcSettings" />
@@ -429,7 +448,7 @@
   <node concept="1TIwiD" id="6KXBYUqABWL">
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="CPROVERbool" />
-    <property role="34LRSv" value="bool" />
+    <property role="34LRSv" value="__CPROVER_bool" />
     <property role="1pbfSe" value="114827039" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCS" resolve="PrimitiveType" />
   </node>
@@ -437,12 +456,15 @@
     <property role="3GE5qa" value="configuration.cbmc" />
     <property role="TrG5h" value="CBMCAnalysisConfiguration" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="Analysis Configuration" />
+    <property role="34LRSv" value="Analyses Configuration" />
     <property role="1pbfSe" value="525590458" />
     <property role="R4oN_" value="an analysis configuration contains multiple analyses" />
     <ref role="1TJDcQ" to="q46j:5BkFC2ygHaJ" resolve="AnalysisConfiguration" />
     <node concept="PrWs8" id="1Qze4b32ew5" role="PzmwI">
       <ref role="PrY4T" node="7ehmsbAuQbH" resolve="ICbmcSettings" />
+    </node>
+    <node concept="PrWs8" id="24_rWT3orhX" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />
     </node>
   </node>
   <node concept="1TIwiD" id="jmYEA6_9mJ">
@@ -485,6 +507,9 @@
     <ref role="1TJDcQ" to="mj1l:6AJWN7GdLOh" resolve="UnaryLogicalExpression" />
     <node concept="asaX9" id="6UAHnEzVDUq" role="lGtFl">
       <property role="YLQ7P" value="The concept was moved to language &quot;com.mbeddr.core.util&quot;" />
+    </node>
+    <node concept="PrWs8" id="3yZx_D4LvvZ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="1TIwiD" id="73FH1Bco8fg">
@@ -605,6 +630,83 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1Qze4b32ew4" resolve="CBMCAnalysisConfiguration" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1$MI$rgzQnB">
+    <property role="1pbfSe" value="373153747" />
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <property role="TrG5h" value="SingleLoopUnwinding" />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <property role="34LRSv" value="loop id : unwinding" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1$MI$rgzQnE" role="1TKVEl">
+      <property role="TrG5h" value="unwinding" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="1$MI$rgzQnG" role="1TKVEl">
+      <property role="TrG5h" value="loopID" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1$MI$rgLfu$">
+    <property role="1pbfSe" value="369643030" />
+    <property role="3GE5qa" value="configuration.cbmc" />
+    <property role="TrG5h" value="LoopIdAnnotation" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyi" id="1$MI$rgLfuX" role="1TKVEl">
+      <property role="TrG5h" value="id" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="M6xJ_" id="1$MI$rgLfu_" role="lGtFl">
+      <property role="Hh88m" value="loopId" />
+      <node concept="trNpa" id="1$MI$rgLfuB" role="EQaZv">
+        <ref role="trN6q" to="c4fa:7HkFchP0Cf3" resolve="ILoopStatement" />
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5KHBa6kV7VF">
+    <property role="1pbfSe" value="249947252" />
+    <property role="3GE5qa" value="cbmc_macros.predicates" />
+    <property role="TrG5h" value="CPROVERMacroUnaryExpressionBase" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="mj1l:2APHWiztz8M" resolve="UnaryExpression" />
+    <node concept="PrWs8" id="5KHBa6kV7Wy" role="PzmwI">
+      <ref role="PrY4T" node="5KHBa6kUy5h" resolve="ICProverMacro" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5KHBa6kWksC">
+    <property role="1pbfSe" value="249633847" />
+    <property role="3GE5qa" value="cbmc_macros.predicates" />
+    <property role="TrG5h" value="CPROVERisnand" />
+    <property role="34LRSv" value="__CPROVER_isnand" />
+    <ref role="1TJDcQ" node="5KHBa6kV7VF" resolve="CPROVERMacroUnaryExpressionBase" />
+  </node>
+  <node concept="1TIwiD" id="5KHBa6kWksB">
+    <property role="1pbfSe" value="249633848" />
+    <property role="3GE5qa" value="cbmc_macros.predicates" />
+    <property role="TrG5h" value="CPROVERisinfd" />
+    <property role="34LRSv" value="__CPROVER_isinfd" />
+    <ref role="1TJDcQ" node="5KHBa6kV7VF" resolve="CPROVERMacroUnaryExpressionBase" />
+  </node>
+  <node concept="1TIwiD" id="5KHBa6kV8n8">
+    <property role="1pbfSe" value="249945495" />
+    <property role="3GE5qa" value="cbmc_macros.predicates" />
+    <property role="TrG5h" value="CPROVERisnanf" />
+    <property role="34LRSv" value="__CPROVER_isnanf" />
+    <ref role="1TJDcQ" node="5KHBa6kV7VF" resolve="CPROVERMacroUnaryExpressionBase" />
+  </node>
+  <node concept="PlHQZ" id="5KHBa6kUy5h">
+    <property role="1pbfSe" value="250102286" />
+    <property role="3GE5qa" value="cbmc_macros" />
+    <property role="TrG5h" value="ICProverMacro" />
+  </node>
+  <node concept="1TIwiD" id="5KHBa6kTRsl">
+    <property role="1pbfSe" value="250276938" />
+    <property role="3GE5qa" value="cbmc_macros.predicates" />
+    <property role="TrG5h" value="CPROVERisinff" />
+    <property role="34LRSv" value="__CPROVER_isinff" />
+    <ref role="1TJDcQ" node="5KHBa6kV7VF" resolve="CPROVERMacroUnaryExpressionBase" />
   </node>
 </model>
 

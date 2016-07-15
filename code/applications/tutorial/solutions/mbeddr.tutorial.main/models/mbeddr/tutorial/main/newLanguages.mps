@@ -14,7 +14,7 @@
     <use id="53bab999-e9c3-428a-80be-fef5bed08f55" name="com.mbeddr.cc.trace" version="-1" />
     <use id="4930e34b-b776-4ccb-b2ff-c6f31789e126" name="mbeddr.tutorial.extreqref" version="-1" />
     <use id="8cb5ab9f-a2c3-418b-a67c-c5690ef7361b" name="mbeddr.tutorial.layers" version="-1" />
-    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="-1" />
+    <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="1" />
     <use id="0d04a6cc-773e-4069-b9b0-11884b2ff1c8" name="com.mbeddr.ext.units" version="-1" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
@@ -146,6 +146,7 @@
         <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
+        <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
       </concept>
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
@@ -170,6 +171,12 @@
       <concept id="279446265608463015" name="com.mbeddr.core.pointers.structure.DerefExpr" flags="ng" index="3wxyx2" />
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42">
         <child id="1452920870317474611" name="sizeExpr" index="1YbSNA" />
+      </concept>
+    </language>
+    <language id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning">
+      <concept id="9116320848000879251" name="com.mbeddr.mpsutil.suppresswarning.structure.SuppressAllWarnings" flags="ng" index="2P5Msh" />
+      <concept id="9116320848000879253" name="com.mbeddr.mpsutil.suppresswarning.structure.SuppressWarnings" flags="ng" index="2P5Msn">
+        <child id="9116320848000879254" name="kinds" index="2P5Msk" />
       </concept>
     </language>
     <language id="32128dbe-9db6-4d05-9eaa-43601c29f276" name="mbeddr.tutorial.foreach">
@@ -982,6 +989,7 @@
       <property role="1FkSt$" value="-g" />
       <property role="3r8Kxs" value="make" />
       <property role="3r8Kw1" value="gdb" />
+      <property role="3I8uaA" value="" />
     </node>
     <node concept="2Q9Fgs" id="7VsgA5L655q" role="2Q9xDr">
       <node concept="2Q9FjX" id="7VsgA5L655r" role="2Q9FjI" />
@@ -2174,6 +2182,7 @@
       <property role="TrG5h" value="empty_1391066882061_4" />
     </node>
     <node concept="3GEVxB" id="7HJwNEvraht" role="2OODSX">
+      <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" node="7HJwNEvpaA7" resolve="TasksTypes" />
     </node>
   </node>
@@ -2556,6 +2565,7 @@
       </node>
     </node>
     <node concept="3GEVxB" id="5rgUaxOsOl1" role="2OODSX">
+      <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" node="5rgUaxOsJom" resolve="DatabaseStuff" />
     </node>
   </node>
@@ -2586,6 +2596,9 @@
     </node>
     <node concept="3GEVxB" id="5rgUaxOsTH7" role="2OODSX">
       <ref role="3GEb4d" node="5rgUaxOsJom" resolve="DatabaseStuff" />
+      <node concept="2P5Msn" id="23vSRR_3OoP" role="lGtFl">
+        <node concept="2P5Msh" id="23vSRR_3OoQ" role="2P5Msk" />
+      </node>
     </node>
   </node>
   <node concept="N3F5e" id="5rgUaxOsWic">
@@ -2619,9 +2632,11 @@
       <ref role="3GEb4d" node="5rgUaxOsOks" resolve="Catalog" />
     </node>
     <node concept="3GEVxB" id="5rgUaxOt6tx" role="2OODSX">
+      <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" node="5rgUaxOsJom" resolve="DatabaseStuff" />
     </node>
     <node concept="3GEVxB" id="5rgUaxOt9_H" role="2OODSX">
+      <property role="3GEa6x" value="true" />
       <ref role="3GEb4d" node="5rgUaxOsOk7" resolve="PricingEngine" />
     </node>
   </node>

@@ -25,6 +25,7 @@
     <import index="h6rl" ref="r:da3aff05-5683-498a-bdd1-76e003dcb6ee(com.mbeddr.analyses.cpa.rt.runner)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="o3dx" ref="r:02ae7fb5-0c7f-4d27-9726-95dddb49a66a(com.mbeddr.analyses.cpa.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -126,6 +127,12 @@
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -405,6 +412,42 @@
                 </node>
               </node>
               <node concept="3clFbH" id="3OLe0nF80FF" role="3cqZAp" />
+              <node concept="3SKdUt" id="2nZgViVrzZE" role="3cqZAp">
+                <node concept="3SKdUq" id="2nZgViVrzZG" role="3SKWNk">
+                  <property role="3SKdUp" value="compute and export info about the analysis coverage" />
+                </node>
+              </node>
+              <node concept="3clFbF" id="2nZgViVrvU6" role="3cqZAp">
+                <node concept="37vLTI" id="2nZgViVrvU7" role="3clFbG">
+                  <node concept="Xl_RD" id="2nZgViVrvU8" role="37vLTx">
+                    <property role="Xl_RC" value="true" />
+                  </node>
+                  <node concept="3EllGN" id="2nZgViVrvU9" role="37vLTJ">
+                    <node concept="Xl_RD" id="2nZgViVrvUa" role="3ElVtu">
+                      <property role="Xl_RC" value="coverage.enabled" />
+                    </node>
+                    <node concept="37vLTw" id="2nZgViVrvUb" role="3ElQJh">
+                      <ref role="3cqZAo" node="3OLe0nF7fL9" resolve="options" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2nZgViVr_r6" role="3cqZAp">
+                <node concept="37vLTI" id="2nZgViVr_r7" role="3clFbG">
+                  <node concept="Xl_RD" id="2nZgViVr_r8" role="37vLTx">
+                    <property role="Xl_RC" value="coverage.info" />
+                  </node>
+                  <node concept="3EllGN" id="2nZgViVr_r9" role="37vLTJ">
+                    <node concept="Xl_RD" id="2nZgViVr_ra" role="3ElVtu">
+                      <property role="Xl_RC" value="coverage.file" />
+                    </node>
+                    <node concept="37vLTw" id="2nZgViVr_rb" role="3ElQJh">
+                      <ref role="3cqZAo" node="3OLe0nF7fL9" resolve="options" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="2nZgViVrBXe" role="3cqZAp" />
               <node concept="3clFbF" id="3OLe0nF80FG" role="3cqZAp">
                 <node concept="37vLTI" id="3OLe0nF80FH" role="3clFbG">
                   <node concept="Xl_RD" id="3OLe0nF80FI" role="37vLTx">
@@ -727,6 +770,12 @@
           <ref role="3uigEE" to="xygl:~ProgressIndicator" resolve="ProgressIndicator" />
         </node>
       </node>
+      <node concept="37vLTG" id="5KHBa6kYrU1" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="5KHBa6kYs49" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="3cqZAl" id="3OLe0nF7aWT" role="3clF45" />
       <node concept="3Tm1VV" id="3OLe0nF7aWU" role="1B3o_S" />
       <node concept="3clFbS" id="3OLe0nF7aWV" role="3clF47">
@@ -740,6 +789,9 @@
           </node>
           <node concept="37vLTw" id="3OLe0nF7cun" role="37wK5m">
             <ref role="3cqZAo" node="5uqRFp940GO" resolve="pi" />
+          </node>
+          <node concept="37vLTw" id="5KHBa6kYCrq" role="37wK5m">
+            <ref role="3cqZAo" node="5KHBa6kYrU1" resolve="repo" />
           </node>
         </node>
         <node concept="3clFbF" id="3OLe0nF7ibo" role="3cqZAp">
