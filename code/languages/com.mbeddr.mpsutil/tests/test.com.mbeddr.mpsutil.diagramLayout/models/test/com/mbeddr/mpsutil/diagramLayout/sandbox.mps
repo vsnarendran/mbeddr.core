@@ -20,6 +20,10 @@
       <concept id="6678841121206146061" name="com.mbeddr.mpsutil.graphLayout.structure.BottomAlignedGrowWith" flags="ng" index="10sTqg" />
       <concept id="6678841121206146063" name="com.mbeddr.mpsutil.graphLayout.structure.LeftAlignedGrowWith" flags="ng" index="10sTqi" />
       <concept id="6678841121206146062" name="com.mbeddr.mpsutil.graphLayout.structure.RightAlignedGrowWith" flags="ng" index="10sTqj" />
+      <concept id="6678841121206146052" name="com.mbeddr.mpsutil.graphLayout.structure.TopAlignedGrowWithPercentageOfHeightOf" flags="ng" index="10sTqp" />
+      <concept id="6678841121206146055" name="com.mbeddr.mpsutil.graphLayout.structure.RightAlignedGrowWithPercentageOfWidthOf" flags="ng" index="10sTqq" />
+      <concept id="6678841121206146054" name="com.mbeddr.mpsutil.graphLayout.structure.LeftAlignedGrowWithPercentageOfWidthOf" flags="ng" index="10sTqr" />
+      <concept id="6678841121206146051" name="com.mbeddr.mpsutil.graphLayout.structure.BottomAlignedGrowWithPercentageOfHeightOf" flags="ng" index="10sTqu" />
       <concept id="6678841121206456033" name="com.mbeddr.mpsutil.graphLayout.structure.IPercentageDiagramLayoutConstraint" flags="ng" index="10u4LW">
         <property id="6678841121206456036" name="percentage" index="10u4LT" />
       </concept>
@@ -1039,6 +1043,186 @@
     <node concept="3fZI8O" id="5MK0DOsM47i" role="3fZI9A">
       <ref role="3fZIoz" node="5MK0DOsM46Q" resolve="d" />
       <ref role="3fZIoX" node="5MK0DOsM46M" resolve="c" />
+    </node>
+  </node>
+  <node concept="3fZI9D" id="5MK0DOsMtlO">
+    <property role="TrG5h" value="RightAlignedGrowWithPercentage" />
+    <property role="3GE5qa" value="borderAlignGrowWithPercentage" />
+    <node concept="3fZJdV" id="5MK0DOsMtlP" role="3fZI9_">
+      <property role="TrG5h" value="a" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsMtlR" role="3fZI9_">
+      <property role="TrG5h" value="b" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsMtlU" role="3fZI9_">
+      <property role="TrG5h" value="c" />
+      <property role="3jAWsU" value="200" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsMtlY" role="3fZI9_">
+      <property role="TrG5h" value="d" />
+      <property role="3jAWsU" value="70" />
+    </node>
+    <node concept="3fZI84" id="5MK0DOsMtm3" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsMtlP" resolve="a" />
+      <ref role="3fZIoX" node="5MK0DOsMtlR" resolve="b" />
+    </node>
+    <node concept="3fZI84" id="5MK0DOsMtm8" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsMtlR" resolve="b" />
+      <ref role="3fZIoX" node="5MK0DOsMtlU" resolve="c" />
+    </node>
+    <node concept="3fZI87" id="5MK0DOsMtmg" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsMtlY" resolve="d" />
+      <ref role="3fZIoX" node="5MK0DOsMtlU" resolve="c" />
+    </node>
+    <node concept="10sTqq" id="5MK0DOsMtmq" role="3fZI9A">
+      <property role="10u4LT" value="50" />
+      <ref role="3fZIoz" node="5MK0DOsMtlP" resolve="a" />
+      <ref role="3fZIoX" node="5MK0DOsMtlU" resolve="c" />
+    </node>
+    <node concept="10sTqq" id="5MK0DOsMtmA" role="3fZI9A">
+      <property role="10u4LT" value="75" />
+      <ref role="3fZIoz" node="5MK0DOsMtlR" resolve="b" />
+      <ref role="3fZIoX" node="5MK0DOsMtlU" resolve="c" />
+    </node>
+    <node concept="10sTqq" id="5MK0DOsMtmO" role="3fZI9A">
+      <property role="10u4LT" value="25" />
+      <ref role="3fZIoz" node="5MK0DOsMtlY" resolve="d" />
+      <ref role="3fZIoX" node="5MK0DOsMtlU" resolve="c" />
+    </node>
+  </node>
+  <node concept="3fZI9D" id="5MK0DOsMBpa">
+    <property role="3GE5qa" value="borderAlignGrowWithPercentage" />
+    <property role="TrG5h" value="LeftAlignedGrowWithPercentage" />
+    <node concept="3fZJdV" id="5MK0DOsMBpb" role="3fZI9_">
+      <property role="TrG5h" value="a" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsMBpd" role="3fZI9_">
+      <property role="TrG5h" value="b" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsMBpg" role="3fZI9_">
+      <property role="TrG5h" value="c" />
+      <property role="3jAWsU" value="200" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsMBpk" role="3fZI9_">
+      <property role="TrG5h" value="d" />
+      <property role="3jAWsU" value="70" />
+    </node>
+    <node concept="3fZI84" id="5MK0DOsMBpp" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsMBpb" resolve="a" />
+      <ref role="3fZIoX" node="5MK0DOsMBpd" resolve="b" />
+    </node>
+    <node concept="3fZI84" id="5MK0DOsMBpu" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsMBpd" resolve="b" />
+      <ref role="3fZIoX" node="5MK0DOsMBpg" resolve="c" />
+    </node>
+    <node concept="3fZI87" id="5MK0DOsMBpA" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsMBpk" resolve="d" />
+      <ref role="3fZIoX" node="5MK0DOsMBpg" resolve="c" />
+    </node>
+    <node concept="10sTqr" id="5MK0DOsMBpK" role="3fZI9A">
+      <property role="10u4LT" value="50" />
+      <ref role="3fZIoz" node="5MK0DOsMBpb" resolve="a" />
+      <ref role="3fZIoX" node="5MK0DOsMBpg" resolve="c" />
+    </node>
+    <node concept="10sTqr" id="5MK0DOsMBpW" role="3fZI9A">
+      <property role="10u4LT" value="25" />
+      <ref role="3fZIoz" node="5MK0DOsMBpd" resolve="b" />
+      <ref role="3fZIoX" node="5MK0DOsMBpg" resolve="c" />
+    </node>
+    <node concept="10sTqr" id="5MK0DOsMBqa" role="3fZI9A">
+      <property role="10u4LT" value="75" />
+      <ref role="3fZIoz" node="5MK0DOsMBpk" resolve="d" />
+      <ref role="3fZIoX" node="5MK0DOsMBpg" resolve="c" />
+    </node>
+  </node>
+  <node concept="3fZI9D" id="5MK0DOsMBqi">
+    <property role="3GE5qa" value="borderAlignGrowWithPercentage" />
+    <property role="TrG5h" value="BottomAlignedGrowWithPercentage" />
+    <node concept="3fZJdV" id="5MK0DOsMBqj" role="3fZI9_">
+      <property role="TrG5h" value="a" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsMBql" role="3fZI9_">
+      <property role="TrG5h" value="b" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsMBqo" role="3fZI9_">
+      <property role="TrG5h" value="c" />
+      <property role="3jAWhY" value="200" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsMBqs" role="3fZI9_">
+      <property role="TrG5h" value="d" />
+      <property role="3jAWhY" value="70" />
+    </node>
+    <node concept="3fZJeT" id="5MK0DOsMBqx" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsMBqj" resolve="a" />
+      <ref role="3fZIoX" node="5MK0DOsMBql" resolve="b" />
+    </node>
+    <node concept="3fZJeT" id="5MK0DOsMBqA" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsMBql" resolve="b" />
+      <ref role="3fZIoX" node="5MK0DOsMBqo" resolve="c" />
+    </node>
+    <node concept="3fZI85" id="5MK0DOsMBqI" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsMBqs" resolve="d" />
+      <ref role="3fZIoX" node="5MK0DOsMBqo" resolve="c" />
+    </node>
+    <node concept="10sTqu" id="5MK0DOsMBqS" role="3fZI9A">
+      <property role="10u4LT" value="50" />
+      <ref role="3fZIoz" node="5MK0DOsMBqj" resolve="a" />
+      <ref role="3fZIoX" node="5MK0DOsMBqo" resolve="c" />
+    </node>
+    <node concept="10sTqu" id="5MK0DOsMBr4" role="3fZI9A">
+      <property role="10u4LT" value="75" />
+      <ref role="3fZIoz" node="5MK0DOsMBql" resolve="b" />
+      <ref role="3fZIoX" node="5MK0DOsMBqo" resolve="c" />
+    </node>
+    <node concept="10sTqu" id="5MK0DOsMBri" role="3fZI9A">
+      <property role="10u4LT" value="25" />
+      <ref role="3fZIoz" node="5MK0DOsMBqs" resolve="d" />
+      <ref role="3fZIoX" node="5MK0DOsMBqo" resolve="c" />
+    </node>
+  </node>
+  <node concept="3fZI9D" id="5MK0DOsMBrq">
+    <property role="3GE5qa" value="borderAlignGrowWithPercentage" />
+    <property role="TrG5h" value="TopAlignedGrowWithPercentage" />
+    <node concept="3fZJdV" id="5MK0DOsMBrr" role="3fZI9_">
+      <property role="TrG5h" value="a" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsMBrt" role="3fZI9_">
+      <property role="TrG5h" value="b" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsMBrw" role="3fZI9_">
+      <property role="TrG5h" value="c" />
+      <property role="3jAWhY" value="200" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsMBr$" role="3fZI9_">
+      <property role="TrG5h" value="d" />
+      <property role="3jAWhY" value="70" />
+    </node>
+    <node concept="3fZJeT" id="5MK0DOsMBrD" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsMBrr" resolve="a" />
+      <ref role="3fZIoX" node="5MK0DOsMBrt" resolve="b" />
+    </node>
+    <node concept="3fZJeT" id="5MK0DOsMBrI" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsMBrt" resolve="b" />
+      <ref role="3fZIoX" node="5MK0DOsMBrw" resolve="c" />
+    </node>
+    <node concept="3fZI85" id="5MK0DOsMBrQ" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsMBr$" resolve="d" />
+      <ref role="3fZIoX" node="5MK0DOsMBrw" resolve="c" />
+    </node>
+    <node concept="10sTqp" id="5MK0DOsMBs0" role="3fZI9A">
+      <property role="10u4LT" value="50" />
+      <ref role="3fZIoz" node="5MK0DOsMBrr" resolve="a" />
+      <ref role="3fZIoX" node="5MK0DOsMBrw" resolve="c" />
+    </node>
+    <node concept="10sTqp" id="5MK0DOsMBsc" role="3fZI9A">
+      <property role="10u4LT" value="25" />
+      <ref role="3fZIoz" node="5MK0DOsMBrt" resolve="b" />
+      <ref role="3fZIoX" node="5MK0DOsMBrw" resolve="c" />
+    </node>
+    <node concept="10sTqp" id="5MK0DOsMBsq" role="3fZI9A">
+      <property role="10u4LT" value="75" />
+      <ref role="3fZIoz" node="5MK0DOsMBr$" resolve="d" />
+      <ref role="3fZIoX" node="5MK0DOsMBrw" resolve="c" />
     </node>
   </node>
 </model>
