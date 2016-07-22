@@ -310,5 +310,89 @@
     <property role="TrG5h" value="VerticalCenterOf" />
     <ref role="1TJDcQ" node="5MK0DOsKzWC" resolve="ACenterOfDiagramLayoutConstraint" />
   </node>
+  <node concept="1TIwiD" id="5MK0DOsKTg2">
+    <property role="1pbfSe" value="2037618335" />
+    <property role="3GE5qa" value="sizeAndPosition.borderAlignGrow.percentage.height" />
+    <property role="TrG5h" value="APercentageOfHeightAlignmentGrowDiagramLayoutConstraint" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="5MK0DOsKTg8" resolve="APercentageAlignmentGrowDiagramLayoutConstraint" />
+  </node>
+  <node concept="1TIwiD" id="5MK0DOsKTg3">
+    <property role="1pbfSe" value="2037618336" />
+    <property role="3GE5qa" value="sizeAndPosition.borderAlignGrow.percentage.height" />
+    <property role="TrG5h" value="BottomAlignedGrowWithPercentageOfHeightOf" />
+    <ref role="1TJDcQ" node="5MK0DOsKTg2" resolve="APercentageOfHeightAlignmentGrowDiagramLayoutConstraint" />
+  </node>
+  <node concept="1TIwiD" id="5MK0DOsKTg4">
+    <property role="1pbfSe" value="2037618337" />
+    <property role="3GE5qa" value="sizeAndPosition.borderAlignGrow.percentage.height" />
+    <property role="TrG5h" value="TopAlignedGrowWithPercentageOfHeightOf" />
+    <ref role="1TJDcQ" node="5MK0DOsKTg2" resolve="APercentageOfHeightAlignmentGrowDiagramLayoutConstraint" />
+  </node>
+  <node concept="1TIwiD" id="5MK0DOsKTg5">
+    <property role="1pbfSe" value="2037618338" />
+    <property role="3GE5qa" value="sizeAndPosition.borderAlignGrow.percentage.width" />
+    <property role="TrG5h" value="APercentageOfWidthAlignmentGrowDiagramLayoutConstraint" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="5MK0DOsKTg8" resolve="APercentageAlignmentGrowDiagramLayoutConstraint" />
+  </node>
+  <node concept="1TIwiD" id="5MK0DOsKTg6">
+    <property role="1pbfSe" value="2037618339" />
+    <property role="3GE5qa" value="sizeAndPosition.borderAlignGrow.percentage.width" />
+    <property role="TrG5h" value="LeftAlignedGrowWithPercentageOfWidthOf" />
+    <ref role="1TJDcQ" node="5MK0DOsKTg5" resolve="APercentageOfWidthAlignmentGrowDiagramLayoutConstraint" />
+  </node>
+  <node concept="1TIwiD" id="5MK0DOsKTg7">
+    <property role="1pbfSe" value="2037618340" />
+    <property role="3GE5qa" value="sizeAndPosition.borderAlignGrow.percentage.width" />
+    <property role="TrG5h" value="RightAlignedGrowWithPercentageOfWidthOf" />
+    <ref role="1TJDcQ" node="5MK0DOsKTg5" resolve="APercentageOfWidthAlignmentGrowDiagramLayoutConstraint" />
+  </node>
+  <node concept="1TIwiD" id="5MK0DOsKTg8">
+    <property role="1pbfSe" value="2037618341" />
+    <property role="3GE5qa" value="sizeAndPosition.borderAlignGrow.percentage" />
+    <property role="TrG5h" value="APercentageAlignmentGrowDiagramLayoutConstraint" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="7jWvwQV0DLe" resolve="ASizeAndPositionDiagramLayoutConstraint" />
+    <node concept="1TJgyi" id="5MK0DOsKTg9" role="1TKVEl">
+      <property role="TrG5h" value="percentage" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5MK0DOsKTgb">
+    <property role="1pbfSe" value="2037618344" />
+    <property role="3GE5qa" value="sizeAndPosition.borderAlignGrow" />
+    <property role="TrG5h" value="ABorderAlignmentGrowDiagramLayoutConstraint" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="7jWvwQV0DLe" resolve="ASizeAndPositionDiagramLayoutConstraint" />
+  </node>
+  <node concept="1TIwiD" id="5MK0DOsKTgd">
+    <property role="1pbfSe" value="2037618346" />
+    <property role="TrG5h" value="BottomAlignedGrowWith" />
+    <property role="3GE5qa" value="sizeAndPosition.borderAlignGrow" />
+    <ref role="1TJDcQ" node="5MK0DOsKTgb" resolve="ABorderAlignmentGrowDiagramLayoutConstraint" />
+  </node>
+  <node concept="1TIwiD" id="5MK0DOsKTge">
+    <property role="1pbfSe" value="2037618347" />
+    <property role="TrG5h" value="RightAlignedGrowWith" />
+    <property role="3GE5qa" value="sizeAndPosition.borderAlignGrow" />
+    <ref role="1TJDcQ" node="5MK0DOsKTgb" resolve="ABorderAlignmentGrowDiagramLayoutConstraint" />
+  </node>
+  <node concept="1TIwiD" id="5MK0DOsKTgf">
+    <property role="1pbfSe" value="2037618348" />
+    <property role="TrG5h" value="LeftAlignedGrowWith" />
+    <property role="3GE5qa" value="sizeAndPosition.borderAlignGrow" />
+    <ref role="1TJDcQ" node="5MK0DOsKTgb" resolve="ABorderAlignmentGrowDiagramLayoutConstraint" />
+  </node>
+  <node concept="1TIwiD" id="5MK0DOsKTgg">
+    <property role="1pbfSe" value="2037618349" />
+    <property role="TrG5h" value="TopAlignedGrowWith" />
+    <property role="3GE5qa" value="sizeAndPosition.borderAlignGrow" />
+    <ref role="1TJDcQ" node="5MK0DOsKTgb" resolve="ABorderAlignmentGrowDiagramLayoutConstraint" />
+  </node>
 </model>
 
