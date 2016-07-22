@@ -15,6 +15,8 @@
       </concept>
     </language>
     <language id="5862288d-b2cf-4268-b409-143fa09be4d5" name="com.mbeddr.mpsutil.graphLayout">
+      <concept id="6678841121206058793" name="com.mbeddr.mpsutil.graphLayout.structure.HorizontalCenterOf" flags="ng" index="10szQO" />
+      <concept id="6678841121206058794" name="com.mbeddr.mpsutil.graphLayout.structure.VerticalCenterOf" flags="ng" index="10szQR" />
       <concept id="8429751199967910924" name="com.mbeddr.mpsutil.graphLayout.structure.SameHeightAs" flags="ng" index="3fZI81" />
       <concept id="8429751199967910921" name="com.mbeddr.mpsutil.graphLayout.structure.Above" flags="ng" index="3fZI84" />
       <concept id="8429751199967910920" name="com.mbeddr.mpsutil.graphLayout.structure.RightOf" flags="ng" index="3fZI85" />
@@ -34,7 +36,7 @@
       </concept>
       <concept id="8429751199967911009" name="com.mbeddr.mpsutil.graphLayout.structure.RightAlignedWithPercentageOfWidthOf" flags="ng" index="3fZI9G" />
       <concept id="8429751199967911011" name="com.mbeddr.mpsutil.graphLayout.structure.BottomAlignedWithPercentageOfHeightOf" flags="ng" index="3fZI9I" />
-      <concept id="8429751199967911010" name="com.mbeddr.mpsutil.graphLayout.structure.TopAlignedWidthPercentageOfHeightOf" flags="ng" index="3fZI9J" />
+      <concept id="8429751199967911010" name="com.mbeddr.mpsutil.graphLayout.structure.TopAlignedWithPercentageOfHeightOf" flags="ng" index="3fZI9J" />
       <concept id="8429751199967907190" name="com.mbeddr.mpsutil.graphLayout.structure.DiagramNode" flags="ng" index="3fZJdV">
         <property id="3061308008217720599" name="minHeight" index="3jAWhY" />
         <property id="3061308008217719891" name="minWidth" index="3jAWsU" />
@@ -767,6 +769,102 @@
       <property role="3fZI9e" value="75" />
       <ref role="3fZIoz" node="5MK0DOsKq3Z" resolve="c" />
       <ref role="3fZIoX" node="5MK0DOsKq3W" resolve="b" />
+    </node>
+  </node>
+  <node concept="3fZI9D" id="5MK0DOsKEpE">
+    <property role="TrG5h" value="HorizontalCenter" />
+    <property role="3GE5qa" value="center" />
+    <node concept="3fZI84" id="5MK0DOsKEpX" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsKEpF" resolve="a" />
+      <ref role="3fZIoX" node="5MK0DOsKEpH" resolve="b" />
+    </node>
+    <node concept="3fZI84" id="5MK0DOsKEq3" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsKEpH" resolve="b" />
+      <ref role="3fZIoX" node="5MK0DOsKEpK" resolve="c" />
+    </node>
+    <node concept="10szQO" id="5MK0DOsKEqb" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsKEpF" resolve="a" />
+      <ref role="3fZIoX" node="5MK0DOsKEpH" resolve="b" />
+    </node>
+    <node concept="10szQO" id="5MK0DOsKEql" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsKEpK" resolve="c" />
+      <ref role="3fZIoX" node="5MK0DOsKEpH" resolve="b" />
+    </node>
+    <node concept="3fZI84" id="5MK0DOsKICf" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsKIBw" resolve="d" />
+      <ref role="3fZIoX" node="5MK0DOsKEpF" resolve="a" />
+    </node>
+    <node concept="10szQO" id="5MK0DOsKIBL" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsKIBw" resolve="d" />
+      <ref role="3fZIoX" node="5MK0DOsKEpK" resolve="c" />
+    </node>
+    <node concept="3fZI87" id="5MK0DOsKICx" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsKIB_" resolve="e" />
+      <ref role="3fZIoX" node="5MK0DOsKEpK" resolve="c" />
+    </node>
+    <node concept="10szQO" id="5MK0DOsKIBZ" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsKIB_" resolve="e" />
+      <ref role="3fZIoX" node="5MK0DOsKEpK" resolve="c" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsKEpF" role="3fZI9_">
+      <property role="TrG5h" value="a" />
+      <property role="3jAWsU" value="70" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsKEpH" role="3fZI9_">
+      <property role="TrG5h" value="b" />
+      <property role="3jAWsU" value="100" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsKEpK" role="3fZI9_">
+      <property role="TrG5h" value="c" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsKIBw" role="3fZI9_">
+      <property role="TrG5h" value="d" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsKIB_" role="3fZI9_">
+      <property role="TrG5h" value="e" />
+    </node>
+  </node>
+  <node concept="3fZI9D" id="5MK0DOsKP6s">
+    <property role="3GE5qa" value="center" />
+    <property role="TrG5h" value="VerticalCenter" />
+    <node concept="3fZJdV" id="5MK0DOsKP6t" role="3fZI9_">
+      <property role="TrG5h" value="a" />
+      <property role="3jAWhY" value="30" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsKP6v" role="3fZI9_">
+      <property role="TrG5h" value="b" />
+      <property role="3jAWhY" value="200" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsKP6y" role="3fZI9_">
+      <property role="TrG5h" value="c" />
+      <property role="3jAWhY" value="100" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsKP6A" role="3fZI9_">
+      <property role="TrG5h" value="d" />
+    </node>
+    <node concept="3fZJeT" id="5MK0DOsKP6F" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsKP6t" resolve="a" />
+      <ref role="3fZIoX" node="5MK0DOsKP6v" resolve="b" />
+    </node>
+    <node concept="3fZJeT" id="5MK0DOsKP6K" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsKP6v" resolve="b" />
+      <ref role="3fZIoX" node="5MK0DOsKP6y" resolve="c" />
+    </node>
+    <node concept="3fZI85" id="5MK0DOsKP6S" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsKP6A" resolve="d" />
+      <ref role="3fZIoX" node="5MK0DOsKP6y" resolve="c" />
+    </node>
+    <node concept="10szQR" id="5MK0DOsKP72" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsKP6t" resolve="a" />
+      <ref role="3fZIoX" node="5MK0DOsKP6v" resolve="b" />
+    </node>
+    <node concept="10szQR" id="5MK0DOsKP7e" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsKP6y" resolve="c" />
+      <ref role="3fZIoX" node="5MK0DOsKP6v" resolve="b" />
+    </node>
+    <node concept="10szQR" id="5MK0DOsKP7s" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsKP6A" resolve="d" />
+      <ref role="3fZIoX" node="5MK0DOsKP6v" resolve="b" />
     </node>
   </node>
 </model>

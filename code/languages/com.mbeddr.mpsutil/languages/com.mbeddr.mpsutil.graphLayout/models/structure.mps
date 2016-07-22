@@ -290,5 +290,25 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5MK0DOsKzWC">
+    <property role="1pbfSe" value="2037531077" />
+    <property role="3GE5qa" value="position.centerOf" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="TrG5h" value="ACenterOfDiagramLayoutConstraint" />
+    <ref role="1TJDcQ" node="7jWvwQV0CQJ" resolve="ADiagramLayoutConstraint" />
+  </node>
+  <node concept="1TIwiD" id="5MK0DOsKzWD">
+    <property role="1pbfSe" value="2037531078" />
+    <property role="3GE5qa" value="position.centerOf" />
+    <property role="TrG5h" value="HorizontalCenterOf" />
+    <ref role="1TJDcQ" node="5MK0DOsKzWC" resolve="ACenterOfDiagramLayoutConstraint" />
+  </node>
+  <node concept="1TIwiD" id="5MK0DOsKzWE">
+    <property role="1pbfSe" value="2037531079" />
+    <property role="3GE5qa" value="position.centerOf" />
+    <property role="TrG5h" value="VerticalCenterOf" />
+    <ref role="1TJDcQ" node="5MK0DOsKzWC" resolve="ACenterOfDiagramLayoutConstraint" />
+  </node>
 </model>
 
