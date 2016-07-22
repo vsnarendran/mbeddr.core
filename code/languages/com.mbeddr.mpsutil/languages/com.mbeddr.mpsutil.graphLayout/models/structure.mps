@@ -93,24 +93,24 @@
   <node concept="1TIwiD" id="7jWvwQV0CQO">
     <property role="1pbfSe" value="805243841" />
     <property role="TrG5h" value="LeftOf" />
-    <property role="3GE5qa" value="position" />
+    <property role="3GE5qa" value="position.nextTo" />
     <ref role="1TJDcQ" node="7jWvwQV0DL6" resolve="APositionDiagramLayoutConstraint" />
   </node>
   <node concept="1TIwiD" id="7jWvwQV0DK8">
     <property role="1pbfSe" value="805247509" />
-    <property role="3GE5qa" value="position" />
+    <property role="3GE5qa" value="position.nextTo" />
     <property role="TrG5h" value="RightOf" />
     <ref role="1TJDcQ" node="7jWvwQV0DL6" resolve="APositionDiagramLayoutConstraint" />
   </node>
   <node concept="1TIwiD" id="7jWvwQV0DK9">
     <property role="1pbfSe" value="805247510" />
-    <property role="3GE5qa" value="position" />
+    <property role="3GE5qa" value="position.nextTo" />
     <property role="TrG5h" value="Above" />
     <ref role="1TJDcQ" node="7jWvwQV0DL6" resolve="APositionDiagramLayoutConstraint" />
   </node>
   <node concept="1TIwiD" id="7jWvwQV0DKa">
     <property role="1pbfSe" value="805247511" />
-    <property role="3GE5qa" value="position" />
+    <property role="3GE5qa" value="position.nextTo" />
     <property role="TrG5h" value="Below" />
     <ref role="1TJDcQ" node="7jWvwQV0DL6" resolve="APositionDiagramLayoutConstraint" />
   </node>
@@ -145,25 +145,25 @@
   <node concept="1TIwiD" id="7jWvwQV0DKB">
     <property role="1pbfSe" value="805247540" />
     <property role="TrG5h" value="TopAlignedWith" />
-    <property role="3GE5qa" value="sizeAndPosition.border" />
+    <property role="3GE5qa" value="position.borderAlign" />
     <ref role="1TJDcQ" node="7jWvwQV0DLt" resolve="ABorderAlignmentDiagramLayoutConstraint" />
   </node>
   <node concept="1TIwiD" id="7jWvwQV0DKQ">
     <property role="1pbfSe" value="805247555" />
     <property role="TrG5h" value="LeftAlignedWith" />
-    <property role="3GE5qa" value="sizeAndPosition.border" />
+    <property role="3GE5qa" value="position.borderAlign" />
     <ref role="1TJDcQ" node="7jWvwQV0DLt" resolve="ABorderAlignmentDiagramLayoutConstraint" />
   </node>
   <node concept="1TIwiD" id="7jWvwQV0DKT">
     <property role="1pbfSe" value="805247558" />
     <property role="TrG5h" value="BottomAlignedWith" />
-    <property role="3GE5qa" value="sizeAndPosition.border" />
+    <property role="3GE5qa" value="position.borderAlign" />
     <ref role="1TJDcQ" node="7jWvwQV0DLt" resolve="ABorderAlignmentDiagramLayoutConstraint" />
   </node>
   <node concept="1TIwiD" id="7jWvwQV0DKW">
     <property role="1pbfSe" value="805247561" />
     <property role="TrG5h" value="RightAlignedWith" />
-    <property role="3GE5qa" value="sizeAndPosition.border" />
+    <property role="3GE5qa" value="position.borderAlign" />
     <ref role="1TJDcQ" node="7jWvwQV0DLt" resolve="ABorderAlignmentDiagramLayoutConstraint" />
   </node>
   <node concept="1TIwiD" id="7jWvwQV0DL2">
@@ -180,7 +180,7 @@
   </node>
   <node concept="1TIwiD" id="7jWvwQV0DL6">
     <property role="1pbfSe" value="805247571" />
-    <property role="3GE5qa" value="position" />
+    <property role="3GE5qa" value="position.nextTo" />
     <property role="TrG5h" value="APositionDiagramLayoutConstraint" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
@@ -216,11 +216,14 @@
   </node>
   <node concept="1TIwiD" id="7jWvwQV0DLt">
     <property role="1pbfSe" value="805247594" />
-    <property role="3GE5qa" value="sizeAndPosition.border" />
+    <property role="3GE5qa" value="position.borderAlign" />
     <property role="TrG5h" value="ABorderAlignmentDiagramLayoutConstraint" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="7jWvwQV0DLe" resolve="ASizeAndPositionDiagramLayoutConstraint" />
+    <ref role="1TJDcQ" node="7jWvwQV0CQJ" resolve="ADiagramLayoutConstraint" />
+    <node concept="PrWs8" id="5MK0DOsJPLG" role="PzmwI">
+      <ref role="PrY4T" node="7jWvwQV0DKd" resolve="IPositionDiagramLayoutConstraint" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7jWvwQV0DLu">
     <property role="1pbfSe" value="805247595" />
