@@ -24,10 +24,17 @@
       <concept id="8429751199967910972" name="com.mbeddr.mpsutil.graphLayout.structure.RightAlignedWith" flags="ng" index="3fZI8L" />
       <concept id="8429751199967910969" name="com.mbeddr.mpsutil.graphLayout.structure.BottomAlignedWith" flags="ng" index="3fZI8O" />
       <concept id="8429751199967910966" name="com.mbeddr.mpsutil.graphLayout.structure.LeftAlignedWith" flags="ng" index="3fZI8V" />
+      <concept id="8429751199967910978" name="com.mbeddr.mpsutil.graphLayout.structure.APercentageAlignmentDiagramLayoutConstraint" flags="ng" index="3fZI9f">
+        <property id="8429751199967910979" name="percentage" index="3fZI9e" />
+      </concept>
+      <concept id="8429751199967911006" name="com.mbeddr.mpsutil.graphLayout.structure.LeftAlignedWithPercentageOfWidthOf" flags="ng" index="3fZI9j" />
       <concept id="8429751199967911012" name="com.mbeddr.mpsutil.graphLayout.structure.DiagramLayout" flags="ng" index="3fZI9D">
         <child id="8429751199967911016" name="nodes" index="3fZI9_" />
         <child id="8429751199967911019" name="constraints" index="3fZI9A" />
       </concept>
+      <concept id="8429751199967911009" name="com.mbeddr.mpsutil.graphLayout.structure.RightAlignedWithPercentageOfWidthOf" flags="ng" index="3fZI9G" />
+      <concept id="8429751199967911011" name="com.mbeddr.mpsutil.graphLayout.structure.BottomAlignedWithPercentageOfHeightOf" flags="ng" index="3fZI9I" />
+      <concept id="8429751199967911010" name="com.mbeddr.mpsutil.graphLayout.structure.TopAlignedWidthPercentageOfHeightOf" flags="ng" index="3fZI9J" />
       <concept id="8429751199967907190" name="com.mbeddr.mpsutil.graphLayout.structure.DiagramNode" flags="ng" index="3fZJdV">
         <property id="3061308008217720599" name="minHeight" index="3jAWhY" />
         <property id="3061308008217719891" name="minWidth" index="3jAWsU" />
@@ -631,6 +638,135 @@
     <node concept="3fZI8O" id="5MK0DOsJZbu" role="3fZI9A">
       <ref role="3fZIoz" node="5MK0DOsJZb0" resolve="b" />
       <ref role="3fZIoX" node="5MK0DOsJZb3" resolve="c" />
+    </node>
+  </node>
+  <node concept="3fZI9D" id="5MK0DOsK3AJ">
+    <property role="3GE5qa" value="borderAlignPercentage" />
+    <property role="TrG5h" value="RightAlignedWithPercentage" />
+    <node concept="3fZJdV" id="5MK0DOsK3AK" role="3fZI9_">
+      <property role="TrG5h" value="a" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsK3AM" role="3fZI9_">
+      <property role="TrG5h" value="b" />
+      <property role="3jAWsU" value="200" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsK3AP" role="3fZI9_">
+      <property role="TrG5h" value="c" />
+    </node>
+    <node concept="3fZI84" id="5MK0DOsK3AT" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsK3AK" resolve="a" />
+      <ref role="3fZIoX" node="5MK0DOsK3AM" resolve="b" />
+    </node>
+    <node concept="3fZI84" id="5MK0DOsK3AY" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsK3AM" resolve="b" />
+      <ref role="3fZIoX" node="5MK0DOsK3AP" resolve="c" />
+    </node>
+    <node concept="3fZI9G" id="5MK0DOsK3B6" role="3fZI9A">
+      <property role="3fZI9e" value="50" />
+      <ref role="3fZIoz" node="5MK0DOsK3AK" resolve="a" />
+      <ref role="3fZIoX" node="5MK0DOsK3AM" resolve="b" />
+    </node>
+    <node concept="3fZI9G" id="5MK0DOsK8mn" role="3fZI9A">
+      <property role="3fZI9e" value="75" />
+      <ref role="3fZIoX" node="5MK0DOsK3AM" resolve="b" />
+      <ref role="3fZIoz" node="5MK0DOsK3AP" resolve="c" />
+    </node>
+  </node>
+  <node concept="3fZI9D" id="5MK0DOsKk2W">
+    <property role="3GE5qa" value="borderAlignPercentage" />
+    <property role="TrG5h" value="LeftAlignedWithPercentage" />
+    <node concept="3fZI84" id="5MK0DOsKk38" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsKk2X" resolve="a" />
+      <ref role="3fZIoX" node="5MK0DOsKk2Z" resolve="b" />
+    </node>
+    <node concept="3fZI84" id="5MK0DOsKk3e" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsKk2Z" resolve="b" />
+      <ref role="3fZIoX" node="5MK0DOsKk32" resolve="c" />
+    </node>
+    <node concept="3fZI9j" id="5MK0DOsKk3m" role="3fZI9A">
+      <property role="3fZI9e" value="50" />
+      <ref role="3fZIoz" node="5MK0DOsKk2X" resolve="a" />
+      <ref role="3fZIoX" node="5MK0DOsKk2Z" resolve="b" />
+    </node>
+    <node concept="3fZI9j" id="5MK0DOsKk3w" role="3fZI9A">
+      <property role="3fZI9e" value="25" />
+      <ref role="3fZIoz" node="5MK0DOsKk32" resolve="c" />
+      <ref role="3fZIoX" node="5MK0DOsKk2Z" resolve="b" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsKk2X" role="3fZI9_">
+      <property role="TrG5h" value="a" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsKk2Z" role="3fZI9_">
+      <property role="TrG5h" value="b" />
+      <property role="3jAWsU" value="100" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsKk32" role="3fZI9_">
+      <property role="TrG5h" value="c" />
+    </node>
+  </node>
+  <node concept="3fZI9D" id="5MK0DOsKq3i">
+    <property role="3GE5qa" value="borderAlignPercentage" />
+    <property role="TrG5h" value="TopAlignedWithPercentage" />
+    <node concept="3fZJdV" id="5MK0DOsKq3j" role="3fZI9_">
+      <property role="TrG5h" value="a" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsKq3l" role="3fZI9_">
+      <property role="TrG5h" value="b" />
+      <property role="3jAWhY" value="100" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsKq3o" role="3fZI9_">
+      <property role="TrG5h" value="c" />
+      <property role="3jAWhY" value="50" />
+    </node>
+    <node concept="3fZJeT" id="5MK0DOsKq3s" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsKq3j" resolve="a" />
+      <ref role="3fZIoX" node="5MK0DOsKq3l" resolve="b" />
+    </node>
+    <node concept="3fZJeT" id="5MK0DOsKq3x" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsKq3l" resolve="b" />
+      <ref role="3fZIoX" node="5MK0DOsKq3o" resolve="c" />
+    </node>
+    <node concept="3fZI9J" id="5MK0DOsKq3D" role="3fZI9A">
+      <property role="3fZI9e" value="50" />
+      <ref role="3fZIoz" node="5MK0DOsKq3j" resolve="a" />
+      <ref role="3fZIoX" node="5MK0DOsKq3l" resolve="b" />
+    </node>
+    <node concept="3fZI9J" id="5MK0DOsKq3N" role="3fZI9A">
+      <property role="3fZI9e" value="25" />
+      <ref role="3fZIoz" node="5MK0DOsKq3o" resolve="c" />
+      <ref role="3fZIoX" node="5MK0DOsKq3l" resolve="b" />
+    </node>
+  </node>
+  <node concept="3fZI9D" id="5MK0DOsKq3T">
+    <property role="3GE5qa" value="borderAlignPercentage" />
+    <property role="TrG5h" value="BottomAlignedWithPercentage" />
+    <node concept="3fZJdV" id="5MK0DOsKq3U" role="3fZI9_">
+      <property role="TrG5h" value="a" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsKq3W" role="3fZI9_">
+      <property role="TrG5h" value="b" />
+      <property role="3jAWhY" value="100" />
+    </node>
+    <node concept="3fZJdV" id="5MK0DOsKq3Z" role="3fZI9_">
+      <property role="TrG5h" value="c" />
+    </node>
+    <node concept="3fZJeT" id="5MK0DOsKq43" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsKq3U" resolve="a" />
+      <ref role="3fZIoX" node="5MK0DOsKq3W" resolve="b" />
+    </node>
+    <node concept="3fZJeT" id="5MK0DOsKq48" role="3fZI9A">
+      <ref role="3fZIoz" node="5MK0DOsKq3W" resolve="b" />
+      <ref role="3fZIoX" node="5MK0DOsKq3Z" resolve="c" />
+    </node>
+    <node concept="3fZI9I" id="5MK0DOsKq4g" role="3fZI9A">
+      <property role="3fZI9e" value="50" />
+      <ref role="3fZIoz" node="5MK0DOsKq3U" resolve="a" />
+      <ref role="3fZIoX" node="5MK0DOsKq3W" resolve="b" />
+    </node>
+    <node concept="3fZI9I" id="5MK0DOsKq4q" role="3fZI9A">
+      <property role="3fZI9e" value="75" />
+      <ref role="3fZIoz" node="5MK0DOsKq3Z" resolve="c" />
+      <ref role="3fZIoX" node="5MK0DOsKq3W" resolve="b" />
     </node>
   </node>
 </model>

@@ -168,14 +168,17 @@
   </node>
   <node concept="1TIwiD" id="7jWvwQV0DL2">
     <property role="1pbfSe" value="805247567" />
-    <property role="3GE5qa" value="sizeAndPosition.percentage" />
+    <property role="3GE5qa" value="position.borderAlign.percentage" />
     <property role="TrG5h" value="APercentageAlignmentDiagramLayoutConstraint" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="7jWvwQV0DLe" resolve="ASizeAndPositionDiagramLayoutConstraint" />
+    <ref role="1TJDcQ" node="7jWvwQV0CQJ" resolve="ADiagramLayoutConstraint" />
     <node concept="1TJgyi" id="7jWvwQV0DL3" role="1TKVEl">
       <property role="TrG5h" value="percentage" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="PrWs8" id="5MK0DOsK3_l" role="PzmwI">
+      <ref role="PrY4T" node="7jWvwQV0DKh" resolve="ISizeDiagramLayoutConstraint" />
     </node>
   </node>
   <node concept="1TIwiD" id="7jWvwQV0DL6">
@@ -227,13 +230,13 @@
   </node>
   <node concept="1TIwiD" id="7jWvwQV0DLu">
     <property role="1pbfSe" value="805247595" />
-    <property role="3GE5qa" value="sizeAndPosition.percentage.width" />
-    <property role="TrG5h" value="LeftAligendWithPercentageOfWidthOf" />
+    <property role="3GE5qa" value="position.borderAlign.percentage.width" />
+    <property role="TrG5h" value="LeftAlignedWithPercentageOfWidthOf" />
     <ref role="1TJDcQ" node="7jWvwQV0DLv" resolve="APercentageOfWidthAlignmentDiagramLayoutConstraint" />
   </node>
   <node concept="1TIwiD" id="7jWvwQV0DLv">
     <property role="1pbfSe" value="805247596" />
-    <property role="3GE5qa" value="sizeAndPosition.percentage.width" />
+    <property role="3GE5qa" value="position.borderAlign.percentage.width" />
     <property role="TrG5h" value="APercentageOfWidthAlignmentDiagramLayoutConstraint" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
@@ -241,7 +244,7 @@
   </node>
   <node concept="1TIwiD" id="7jWvwQV0DLw">
     <property role="1pbfSe" value="805247597" />
-    <property role="3GE5qa" value="sizeAndPosition.percentage.height" />
+    <property role="3GE5qa" value="position.borderAlign.percentage.height" />
     <property role="TrG5h" value="APercentageOfHeightAlignmentDiagramLayoutConstraint" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
@@ -249,20 +252,20 @@
   </node>
   <node concept="1TIwiD" id="7jWvwQV0DLx">
     <property role="1pbfSe" value="805247598" />
-    <property role="3GE5qa" value="sizeAndPosition.percentage.width" />
-    <property role="TrG5h" value="RightAligendWithPercentageOfWidthOf" />
+    <property role="3GE5qa" value="position.borderAlign.percentage.width" />
+    <property role="TrG5h" value="RightAlignedWithPercentageOfWidthOf" />
     <ref role="1TJDcQ" node="7jWvwQV0DLv" resolve="APercentageOfWidthAlignmentDiagramLayoutConstraint" />
   </node>
   <node concept="1TIwiD" id="7jWvwQV0DLy">
     <property role="1pbfSe" value="805247599" />
-    <property role="3GE5qa" value="sizeAndPosition.percentage.height" />
-    <property role="TrG5h" value="TopAlignedWidthPercentageOfHeightOf" />
+    <property role="3GE5qa" value="position.borderAlign.percentage.height" />
+    <property role="TrG5h" value="TopAlignedWithPercentageOfHeightOf" />
     <ref role="1TJDcQ" node="7jWvwQV0DLw" resolve="APercentageOfHeightAlignmentDiagramLayoutConstraint" />
   </node>
   <node concept="1TIwiD" id="7jWvwQV0DLz">
     <property role="1pbfSe" value="805247600" />
-    <property role="3GE5qa" value="sizeAndPosition.percentage.height" />
-    <property role="TrG5h" value="BottomAlignedWidthPercentageOfHeightOf" />
+    <property role="3GE5qa" value="position.borderAlign.percentage.height" />
+    <property role="TrG5h" value="BottomAlignedWithPercentageOfHeightOf" />
     <ref role="1TJDcQ" node="7jWvwQV0DLw" resolve="APercentageOfHeightAlignmentDiagramLayoutConstraint" />
   </node>
   <node concept="1TIwiD" id="7jWvwQV0DL$">

@@ -93,6 +93,11 @@
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="24kQdi" id="7jWvwQV0CQD">
     <ref role="1XX52x" to="nsqx:7jWvwQV0CPQ" resolve="DiagramNode" />
@@ -199,6 +204,50 @@
         </node>
       </node>
       <node concept="2iRkQZ" id="7jWvwQV0DM_" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5MK0DOsK3BV">
+    <property role="3GE5qa" value="position.borderAlign.percentage" />
+    <ref role="1XX52x" to="nsqx:7jWvwQV0DL2" resolve="APercentageAlignmentDiagramLayoutConstraint" />
+    <node concept="3EZMnI" id="5MK0DOsK3C7" role="2wV5jI">
+      <node concept="1iCGBv" id="5MK0DOsK3C8" role="3EZMnx">
+        <ref role="1NtTu8" to="nsqx:7jWvwQV0DwI" />
+        <node concept="1sVBvm" id="5MK0DOsK3C9" role="1sWHZn">
+          <node concept="3SHvHV" id="5MK0DOsK3Ca" role="2wV5jI" />
+        </node>
+      </node>
+      <node concept="1HlG4h" id="5MK0DOsK3Cb" role="3EZMnx">
+        <node concept="1HfYo3" id="5MK0DOsK3Cc" role="1HlULh">
+          <node concept="3TQlhw" id="5MK0DOsK3Cd" role="1Hhtcw">
+            <node concept="3clFbS" id="5MK0DOsK3Ce" role="2VODD2">
+              <node concept="3clFbF" id="5MK0DOsK3Cf" role="3cqZAp">
+                <node concept="2OqwBi" id="5MK0DOsK3Cg" role="3clFbG">
+                  <node concept="2OqwBi" id="5MK0DOsK3Ch" role="2Oq$k0">
+                    <node concept="pncrf" id="5MK0DOsK3Ci" role="2Oq$k0" />
+                    <node concept="2yIwOk" id="5MK0DOsK3Cj" role="2OqNvi" />
+                  </node>
+                  <node concept="liA8E" id="5MK0DOsK3Ck" role="2OqNvi">
+                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0A7n" id="5MK0DOsK3I8" role="3EZMnx">
+        <ref role="1NtTu8" to="nsqx:7jWvwQV0DL3" resolve="percentage" />
+      </node>
+      <node concept="3F0ifn" id="5MK0DOsK3NG" role="3EZMnx">
+        <property role="3F0ifm" value="of" />
+      </node>
+      <node concept="1iCGBv" id="5MK0DOsK3Cl" role="3EZMnx">
+        <ref role="1NtTu8" to="nsqx:7jWvwQV0DwK" />
+        <node concept="1sVBvm" id="5MK0DOsK3Cm" role="1sWHZn">
+          <node concept="3SHvHV" id="5MK0DOsK3Cn" role="2wV5jI" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="5MK0DOsK3Co" role="2iSdaV" />
     </node>
   </node>
 </model>
