@@ -20,6 +20,9 @@
       <concept id="6678841121206146061" name="com.mbeddr.mpsutil.graphLayout.structure.BottomAlignedGrowWith" flags="ng" index="10sTqg" />
       <concept id="6678841121206146063" name="com.mbeddr.mpsutil.graphLayout.structure.LeftAlignedGrowWith" flags="ng" index="10sTqi" />
       <concept id="6678841121206146062" name="com.mbeddr.mpsutil.graphLayout.structure.RightAlignedGrowWith" flags="ng" index="10sTqj" />
+      <concept id="6678841121206456033" name="com.mbeddr.mpsutil.graphLayout.structure.IPercentageDiagramLayoutConstraint" flags="ng" index="10u4LW">
+        <property id="6678841121206456036" name="percentage" index="10u4LT" />
+      </concept>
       <concept id="8429751199967910924" name="com.mbeddr.mpsutil.graphLayout.structure.SameHeightAs" flags="ng" index="3fZI81" />
       <concept id="8429751199967910921" name="com.mbeddr.mpsutil.graphLayout.structure.Above" flags="ng" index="3fZI84" />
       <concept id="8429751199967910920" name="com.mbeddr.mpsutil.graphLayout.structure.RightOf" flags="ng" index="3fZI85" />
@@ -29,9 +32,6 @@
       <concept id="8429751199967910972" name="com.mbeddr.mpsutil.graphLayout.structure.RightAlignedWith" flags="ng" index="3fZI8L" />
       <concept id="8429751199967910969" name="com.mbeddr.mpsutil.graphLayout.structure.BottomAlignedWith" flags="ng" index="3fZI8O" />
       <concept id="8429751199967910966" name="com.mbeddr.mpsutil.graphLayout.structure.LeftAlignedWith" flags="ng" index="3fZI8V" />
-      <concept id="8429751199967910978" name="com.mbeddr.mpsutil.graphLayout.structure.APercentageAlignmentDiagramLayoutConstraint" flags="ng" index="3fZI9f">
-        <property id="8429751199967910979" name="percentage" index="3fZI9e" />
-      </concept>
       <concept id="8429751199967911006" name="com.mbeddr.mpsutil.graphLayout.structure.LeftAlignedWithPercentageOfWidthOf" flags="ng" index="3fZI9j" />
       <concept id="8429751199967911012" name="com.mbeddr.mpsutil.graphLayout.structure.DiagramLayout" flags="ng" index="3fZI9D">
         <child id="8429751199967911016" name="nodes" index="3fZI9_" />
@@ -667,12 +667,12 @@
       <ref role="3fZIoX" node="5MK0DOsK3AP" resolve="c" />
     </node>
     <node concept="3fZI9G" id="5MK0DOsK3B6" role="3fZI9A">
-      <property role="3fZI9e" value="50" />
+      <property role="10u4LT" value="50" />
       <ref role="3fZIoz" node="5MK0DOsK3AK" resolve="a" />
       <ref role="3fZIoX" node="5MK0DOsK3AM" resolve="b" />
     </node>
     <node concept="3fZI9G" id="5MK0DOsK8mn" role="3fZI9A">
-      <property role="3fZI9e" value="75" />
+      <property role="10u4LT" value="75" />
       <ref role="3fZIoX" node="5MK0DOsK3AM" resolve="b" />
       <ref role="3fZIoz" node="5MK0DOsK3AP" resolve="c" />
     </node>
@@ -689,12 +689,12 @@
       <ref role="3fZIoX" node="5MK0DOsKk32" resolve="c" />
     </node>
     <node concept="3fZI9j" id="5MK0DOsKk3m" role="3fZI9A">
-      <property role="3fZI9e" value="50" />
+      <property role="10u4LT" value="50" />
       <ref role="3fZIoz" node="5MK0DOsKk2X" resolve="a" />
       <ref role="3fZIoX" node="5MK0DOsKk2Z" resolve="b" />
     </node>
     <node concept="3fZI9j" id="5MK0DOsKk3w" role="3fZI9A">
-      <property role="3fZI9e" value="25" />
+      <property role="10u4LT" value="25" />
       <ref role="3fZIoz" node="5MK0DOsKk32" resolve="c" />
       <ref role="3fZIoX" node="5MK0DOsKk2Z" resolve="b" />
     </node>
@@ -732,12 +732,12 @@
       <ref role="3fZIoX" node="5MK0DOsKq3o" resolve="c" />
     </node>
     <node concept="3fZI9J" id="5MK0DOsKq3D" role="3fZI9A">
-      <property role="3fZI9e" value="50" />
+      <property role="10u4LT" value="50" />
       <ref role="3fZIoz" node="5MK0DOsKq3j" resolve="a" />
       <ref role="3fZIoX" node="5MK0DOsKq3l" resolve="b" />
     </node>
     <node concept="3fZI9J" id="5MK0DOsKq3N" role="3fZI9A">
-      <property role="3fZI9e" value="25" />
+      <property role="10u4LT" value="25" />
       <ref role="3fZIoz" node="5MK0DOsKq3o" resolve="c" />
       <ref role="3fZIoX" node="5MK0DOsKq3l" resolve="b" />
     </node>
@@ -764,12 +764,12 @@
       <ref role="3fZIoX" node="5MK0DOsKq3Z" resolve="c" />
     </node>
     <node concept="3fZI9I" id="5MK0DOsKq4g" role="3fZI9A">
-      <property role="3fZI9e" value="50" />
+      <property role="10u4LT" value="50" />
       <ref role="3fZIoz" node="5MK0DOsKq3U" resolve="a" />
       <ref role="3fZIoX" node="5MK0DOsKq3W" resolve="b" />
     </node>
     <node concept="3fZI9I" id="5MK0DOsKq4q" role="3fZI9A">
-      <property role="3fZI9e" value="75" />
+      <property role="10u4LT" value="75" />
       <ref role="3fZIoz" node="5MK0DOsKq3Z" resolve="c" />
       <ref role="3fZIoX" node="5MK0DOsKq3W" resolve="b" />
     </node>

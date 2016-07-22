@@ -173,12 +173,11 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="7jWvwQV0CQJ" resolve="ADiagramLayoutConstraint" />
-    <node concept="1TJgyi" id="7jWvwQV0DL3" role="1TKVEl">
-      <property role="TrG5h" value="percentage" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
     <node concept="PrWs8" id="5MK0DOsK3_l" role="PzmwI">
       <ref role="PrY4T" node="7jWvwQV0DKh" resolve="ISizeDiagramLayoutConstraint" />
+    </node>
+    <node concept="PrWs8" id="5MK0DOsM55N" role="PzmwI">
+      <ref role="PrY4T" node="5MK0DOsM4Vx" resolve="IPercentageDiagramLayoutConstraint" />
     </node>
   </node>
   <node concept="1TIwiD" id="7jWvwQV0DL6">
@@ -357,9 +356,8 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="7jWvwQV0DLe" resolve="ASizeAndPositionDiagramLayoutConstraint" />
-    <node concept="1TJgyi" id="5MK0DOsKTg9" role="1TKVEl">
-      <property role="TrG5h" value="percentage" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="PrWs8" id="5MK0DOsM55R" role="PzmwI">
+      <ref role="PrY4T" node="5MK0DOsM4Vx" resolve="IPercentageDiagramLayoutConstraint" />
     </node>
   </node>
   <node concept="1TIwiD" id="5MK0DOsKTgb">
@@ -393,6 +391,17 @@
     <property role="TrG5h" value="TopAlignedGrowWith" />
     <property role="3GE5qa" value="sizeAndPosition.borderAlignGrow" />
     <ref role="1TJDcQ" node="5MK0DOsKTgb" resolve="ABorderAlignmentGrowDiagramLayoutConstraint" />
+  </node>
+  <node concept="PlHQZ" id="5MK0DOsM4Vx">
+    <property role="1pbfSe" value="2037928318" />
+    <property role="TrG5h" value="IPercentageDiagramLayoutConstraint" />
+    <node concept="1TJgyi" id="5MK0DOsM4V$" role="1TKVEl">
+      <property role="TrG5h" value="percentage" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="PrWs8" id="5MK0DOsM4Vy" role="PrDN$">
+      <ref role="PrY4T" node="7jWvwQV0CQI" resolve="IDiagramLayoutConstraint" />
+    </node>
   </node>
 </model>
 

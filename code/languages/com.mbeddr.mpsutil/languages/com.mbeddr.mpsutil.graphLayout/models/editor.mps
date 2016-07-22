@@ -236,7 +236,7 @@
         </node>
       </node>
       <node concept="3F0A7n" id="5MK0DOsK3I8" role="3EZMnx">
-        <ref role="1NtTu8" to="nsqx:7jWvwQV0DL3" resolve="percentage" />
+        <ref role="1NtTu8" to="nsqx:5MK0DOsM4V$" resolve="percentage" />
       </node>
       <node concept="3F0ifn" id="5MK0DOsK3NG" role="3EZMnx">
         <property role="3F0ifm" value="of" />
@@ -248,6 +248,50 @@
         </node>
       </node>
       <node concept="2iRfu4" id="5MK0DOsK3Co" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5MK0DOsM9DR">
+    <property role="3GE5qa" value="sizeAndPosition.borderAlignGrow.percentage" />
+    <ref role="1XX52x" to="nsqx:5MK0DOsKTg8" resolve="APercentageAlignmentGrowDiagramLayoutConstraint" />
+    <node concept="3EZMnI" id="5MK0DOsM9DT" role="2wV5jI">
+      <node concept="1iCGBv" id="5MK0DOsM9DU" role="3EZMnx">
+        <ref role="1NtTu8" to="nsqx:7jWvwQV0DwI" />
+        <node concept="1sVBvm" id="5MK0DOsM9DV" role="1sWHZn">
+          <node concept="3SHvHV" id="5MK0DOsM9DW" role="2wV5jI" />
+        </node>
+      </node>
+      <node concept="1HlG4h" id="5MK0DOsM9DX" role="3EZMnx">
+        <node concept="1HfYo3" id="5MK0DOsM9DY" role="1HlULh">
+          <node concept="3TQlhw" id="5MK0DOsM9DZ" role="1Hhtcw">
+            <node concept="3clFbS" id="5MK0DOsM9E0" role="2VODD2">
+              <node concept="3clFbF" id="5MK0DOsM9E1" role="3cqZAp">
+                <node concept="2OqwBi" id="5MK0DOsM9E2" role="3clFbG">
+                  <node concept="2OqwBi" id="5MK0DOsM9E3" role="2Oq$k0">
+                    <node concept="pncrf" id="5MK0DOsM9E4" role="2Oq$k0" />
+                    <node concept="2yIwOk" id="5MK0DOsM9E5" role="2OqNvi" />
+                  </node>
+                  <node concept="liA8E" id="5MK0DOsM9E6" role="2OqNvi">
+                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0A7n" id="5MK0DOsM9E7" role="3EZMnx">
+        <ref role="1NtTu8" to="nsqx:5MK0DOsM4V$" resolve="percentage" />
+      </node>
+      <node concept="3F0ifn" id="5MK0DOsM9E8" role="3EZMnx">
+        <property role="3F0ifm" value="of" />
+      </node>
+      <node concept="1iCGBv" id="5MK0DOsM9E9" role="3EZMnx">
+        <ref role="1NtTu8" to="nsqx:7jWvwQV0DwK" />
+        <node concept="1sVBvm" id="5MK0DOsM9Ea" role="1sWHZn">
+          <node concept="3SHvHV" id="5MK0DOsM9Eb" role="2wV5jI" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="5MK0DOsM9Ec" role="2iSdaV" />
     </node>
   </node>
 </model>
