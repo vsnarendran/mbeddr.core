@@ -29,7 +29,6 @@
     <module reference="7ac0dfb8-7d5f-4573-ab80-81af2106ce03(com.mbeddr.build)" version="0" />
     <module reference="3ae9cfda-f938-4524-b4ca-fbcba3b0525b(com.mbeddr.platform)" version="0" />
     <module reference="cc5adb6e-49d5-4827-a35d-c1c78988d292(com.mbeddr.unlesss.build)" version="0" />
-    <module reference="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.slisson.mps.all.build)" version="0" />
     <module reference="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" version="0" />
   </dependencyVersions>
 </solution>
