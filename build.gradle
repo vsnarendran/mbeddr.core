@@ -245,7 +245,13 @@ project(':build:com.mbeddr.platform') {
         }
         repositories {
             maven {
-                url "$buildDir/repo"
+                if(hasProperty('nexusUsername')) {
+                    credentials {
+                        username nexusUsername
+                        password nexusPassword
+                    }
+                }
+                url 'https://projects.itemis.de/nexus/content/repositories/mps_mbeddr_r'
             }
         }
     }
