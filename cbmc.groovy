@@ -1,5 +1,5 @@
 
-def buildCBMC(string basePath) {
+def buildCBMC(String basePath) {
   timestamps {
 
     def gradleOpts ='--no-daemon --info --stacktrace'
@@ -71,7 +71,7 @@ def buildCBMC(string basePath) {
 }
 
 @NonCPS
-def checkoutMbeddr(string basePath) {
+def checkoutMbeddr(String basePath) {
 	// Use a local reference git repo to speed up the checkout from GitHub
 	def reference = env.BSHARE
   
