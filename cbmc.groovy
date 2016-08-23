@@ -1,5 +1,5 @@
 
-def buildCBMC(String basePath) {
+def buildCBMC() {
   timestamps {
 
     def gradleOpts ='--no-daemon --info --stacktrace'
@@ -9,7 +9,7 @@ def buildCBMC(String basePath) {
             "CBMC linux" : {
                 node ('linux') {
                     checkoutCBMC()
-                    checkoutMbeddr(basePath)
+                    checkoutMbeddr()
                     
                     withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
                         usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']])
@@ -29,7 +29,7 @@ def buildCBMC(String basePath) {
             "CBMC windows" : {
                 node ('windows') {
                     checkoutCBMC()
-                    checkoutMbeddr(basePath)
+                    checkoutMbeddr()
 					
                     withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
                         usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']])
@@ -49,7 +49,7 @@ def buildCBMC(String basePath) {
             "CBMC mac" : {
                 node ('mac') {
                     checkoutCBMC()
-                    checkoutMbeddr(basePath)
+                    checkoutMbeddr()
 					
                     withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
                         usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']])
@@ -71,14 +71,14 @@ def buildCBMC(String basePath) {
 }
 
 @NonCPS
-def checkoutMbeddr(String basePath) {
+def checkoutMbeddr() {
 	// Use a local reference git repo to speed up the checkout from GitHub
 	def reference = env.BSHARE
   
 	if(isUnix()) {
 		reference += "/gitcaches/reference/mbeddr.core/"
 	} else {
-		reference = basePath+"\\workspace\\mbeddr_Reference_Repo\\mbeddr.core\\"
+		reference = "${env.BASE}\\workspace\\mbeddr_Reference_Repo\\mbeddr.core\\"
 	}
 	
 	echo "Reference-Path: ${reference}"
