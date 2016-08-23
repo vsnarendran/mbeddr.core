@@ -6,6 +6,7 @@ File cbmcSrcHome = file(rootProject.projectDir.absolutePath + "/../cbmc/src")
 File cbmcHome = file(rootProject.projectDir.absolutePath + "/../cbmc/")
 
 task build_cbmcWin(type: Exec) {
+  workingDir cbmcSrcHome
   commandLine(script_build_cbmcWin)
 }
 
