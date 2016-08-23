@@ -9,6 +9,7 @@ node {
 
 	def isNightlyJob = ~/.*NIGHTLY.*/
 	def isCbmcJob = ~/.*CBMC.*/
+	def basePath = "${BASE}"
 	
 	switch(jobName.toUpperCase()) {
 	  case isCbmcJob :
@@ -21,7 +22,7 @@ node {
 				if(cbmcLib == null) {
 					echo "Unable to load file 'cbmc.groovy'!"
 				} else {
-					cbmcLib.buildCBMC("${BASE}")
+					cbmcLib.buildCBMC(basePath)
 				}
 			}
             node ('mac') {
@@ -31,7 +32,7 @@ node {
 				if(cbmcLib == null) {
 					echo "Unable to load file 'cbmc.groovy'!"
 				} else {
-					cbmcLib.buildCBMC("${BASE}")
+					cbmcLib.buildCBMC(basePath)
 				}
 			}
             node ('windows') {
@@ -41,7 +42,7 @@ node {
 				if(cbmcLib == null) {
 					echo "Unable to load file 'cbmc.groovy'!"
 				} else {
-					cbmcLib.buildCBMC("${BASE}")
+					cbmcLib.buildCBMC(basePath)
 				}
 			}
 		break;
