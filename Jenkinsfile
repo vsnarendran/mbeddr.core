@@ -21,7 +21,7 @@ node {
 				if(cbmcLib == null) {
 					echo "Unable to load file 'cbmc.groovy'!"
 				} else {
-					cbmcLib.buildCBMC()
+					cbmcLib.buildCBMC("${BASE}")
 				}
 			}
             node ('mac') {
@@ -31,7 +31,7 @@ node {
 				if(cbmcLib == null) {
 					echo "Unable to load file 'cbmc.groovy'!"
 				} else {
-					cbmcLib.buildCBMC()
+					cbmcLib.buildCBMC("${BASE}")
 				}
 			}
             node ('windows') {
@@ -41,7 +41,7 @@ node {
 				if(cbmcLib == null) {
 					echo "Unable to load file 'cbmc.groovy'!"
 				} else {
-					cbmcLib.buildCBMC()
+					cbmcLib.buildCBMC("${BASE}")
 				}
 			}
 		break;

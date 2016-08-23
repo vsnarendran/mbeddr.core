@@ -1,5 +1,5 @@
 
-def buildCBMC() {
+def buildCBMC(string basePath) {
   timestamps {
 
     def gradleOpts ='--no-daemon --info --stacktrace'
@@ -78,7 +78,7 @@ def checkoutMbeddr() {
 	if(isUnix()) {
 		reference += "/gitcaches/reference/mbeddr.core/"
 	} else {
-		reference = "${BASE}\\workspace\\mbeddr_Reference_Repo\\mbeddr.core\\"
+		reference = basePath+"\\workspace\\mbeddr_Reference_Repo\\mbeddr.core\\"
 	}
 	
 	echo "Reference-Path: ${reference}"
