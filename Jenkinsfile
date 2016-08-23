@@ -9,7 +9,7 @@ node {
 
 	def isNightlyJob = ~/.*NIGHTLY.*/
 	def isCbmcJob = ~/.*CBMC.*/
-	def basePath = "${BASE}"
+	def basePath = "${env.BASE}"
 	
 	switch(jobName.toUpperCase()) {
 	  case isCbmcJob :
@@ -87,7 +87,7 @@ def checkoutMbeddr() {
 	if(isUnix()) {
 		reference += "/gitcaches/reference/mbeddr.core/"
 	} else {
-		reference = "${BASE}\\workspace\\mbeddr_Reference_Repo\\mbeddr.core\\"
+		reference = "${env.BASE}\\workspace\\mbeddr_Reference_Repo\\mbeddr.core\\"
 	}
 	
 	echo "Reference-Path: ${reference}"
