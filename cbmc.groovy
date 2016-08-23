@@ -9,7 +9,7 @@ def buildCBMC(string basePath) {
             "CBMC linux" : {
                 node ('linux') {
                     checkoutCBMC()
-                    checkoutMbeddr()
+                    checkoutMbeddr(basePath)
                     
                     withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
                         usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']])
@@ -29,7 +29,7 @@ def buildCBMC(string basePath) {
             "CBMC windows" : {
                 node ('windows') {
                     checkoutCBMC()
-                    checkoutMbeddr()
+                    checkoutMbeddr(basePath)
 					
                     withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
                         usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']])
@@ -49,7 +49,7 @@ def buildCBMC(string basePath) {
             "CBMC mac" : {
                 node ('mac') {
                     checkoutCBMC()
-                    checkoutMbeddr()
+                    checkoutMbeddr(basePath)
 					
                     withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
                         usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']])
@@ -71,7 +71,7 @@ def buildCBMC(string basePath) {
 }
 
 @NonCPS
-def checkoutMbeddr() {
+def checkoutMbeddr(string basePath) {
 	// Use a local reference git repo to speed up the checkout from GitHub
 	def reference = env.BSHARE
   
