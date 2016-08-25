@@ -9,72 +9,102 @@ node {
 
 	def isNightlyJob = ~/.*NIGHTLY.*/
 	def isCbmcJob = ~/.*CBMC.*/
-	
+	def isMpsJob = ~/.*MPS.*/
+
 	switch(jobName.toUpperCase()) {
+		case isMpsJob :
+	    echo "Running 'MPS' target..."
+
+			stage 'Checkout'
+				node ('linux') {
+					checkoutMbeddr()
+
+					def mpsLib = load 'mps.groovy'
+					if(mpsLib == null) {
+						echo "Unable to load file 'mps.groovy'!"
+					} else {
+						mpsLib.buildMps()
+					}
+
+					deleteDir()
+				}
+			break;
+
 	  case isCbmcJob :
 	    echo "Running 'CBMC' target..."
-		stage 'Checkout'
-			node ('linux') {
-				checkoutMbeddr()
-				
-				def cbmcLib = load 'cbmc.groovy'
-				if(cbmcLib == null) {
-					echo "Unable to load file 'cbmc.groovy'!"
-				} else {
-					cbmcLib.buildCBMC()
-				}
-			}
-            node ('mac') {
-				checkoutMbeddr()
+			stage 'Checkout'
+				node ('linux') {
+					checkoutMbeddr()
 
-				def cbmcLib = load 'cbmc.groovy'
-				if(cbmcLib == null) {
-					echo "Unable to load file 'cbmc.groovy'!"
-				} else {
-					cbmcLib.buildCBMC()
-				}
-			}
-            node ('windows') {
-				checkoutMbeddr()
+					def cbmcLib = load 'cbmc.groovy'
+					if(cbmcLib == null) {
+						echo "Unable to load file 'cbmc.groovy'!"
+					} else {
+						cbmcLib.buildCBMC()
+					}
 
-				def cbmcLib = load 'cbmc.groovy'
-				if(cbmcLib == null) {
-					echo "Unable to load file 'cbmc.groovy'!"
-				} else {
-					cbmcLib.buildCBMC()
+					deleteDir()
 				}
-			}
-		break;
+        node ('mac') {
+					checkoutMbeddr()
+
+					def cbmcLib = load 'cbmc.groovy'
+					if(cbmcLib == null) {
+						echo "Unable to load file 'cbmc.groovy'!"
+					} else {
+						cbmcLib.buildCBMC()
+					}
+
+					deleteDir()
+				}
+        node ('windows') {
+					checkoutMbeddr()
+
+					def cbmcLib = load 'cbmc.groovy'
+					if(cbmcLib == null) {
+						echo "Unable to load file 'cbmc.groovy'!"
+					} else {
+						cbmcLib.buildCBMC()
+					}
+
+					deleteDir()
+				}
+			break;
+
 	  case isNightlyJob:
 	    echo "Running 'Nightly' target..."
-		stage 'Checkout'
-			node ('linux') {
-				checkoutMbeddr()
-				
-				def nightlyLib = load 'nightly.groovy'
-				if(nightlyLib == null) {
-					echo "Unable to load file 'nightly.groovy'!"
-				} else {
-					nightlyLib.buildNightly()
-				}
-			}
+			stage 'Checkout'
+				node ('linux') {
+					checkoutMbeddr()
 
-		break;
+					def nightlyLib = load 'nightly.groovy'
+					if(nightlyLib == null) {
+						echo "Unable to load file 'nightly.groovy'!"
+					} else {
+						nightlyLib.buildNightly()
+					}
+
+					deleteDir()
+				}
+			break;
+
 	  default:
 	    echo "Running 'Default (mbeddr)' target..."
         stage 'Checkout'
-			node ('linux') {
-				checkoutMbeddr()
-			  
-				def mbeddrLib = load 'mbeddr.groovy'
-				if(mbeddrLib == null) {
-					echo "Unable to load file 'mbeddr.groovy'!"
-				} else {
-					mbeddrLib.buildMbeddr()
-				}
-			}
+				node ('linux') {
+					checkoutMbeddr()
 
-		break;
+					def mbeddrLib = load 'mbeddr.groovy'
+					if(mbeddrLib == null) {
+						echo "Unable to load file 'mbeddr.groovy'!"
+					} else {
+						mbeddrLib.buildMbeddr()
+					}
+
+					deleteDir()
+				}
+			break;
+
 	}
 }
 
@@ -82,15 +112,15 @@ node {
 def checkoutMbeddr() {
 	// Use a local reference git repo to speed up the checkout from GitHub
 	def reference = env.BSHARE
-  
+
 	if(isUnix()) {
 		reference += "/gitcaches/reference/mbeddr.core/"
 	} else {
 		reference = "${env.BASE}\\workspace\\mbeddr_Reference_Repo\\mbeddr.core\\"
 	}
-	
+
 	echo "Reference-Path: ${reference}"
-	
+
 	checkout([
 		  $class: 'GitSCM',
 		  branches: scm.branches,
@@ -103,4 +133,3 @@ def checkoutMbeddr() {
 		  userRemoteConfigs: scm.userRemoteConfigs
 		])
   }
-  
