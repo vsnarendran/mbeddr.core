@@ -6,13 +6,10 @@ def buildMps() {
 		def customEnv = setupEnvironment()
 
 		withEnv(customEnv) {
-			dir('mbeddr.core') {
-				stage 'Download MPS'
-					sh "./gradlew ${gradleOpts} -b build.gradle getMPS"
-				stage 'Publish MPS'
-					sh "./gradlew ${gradleOpts} -b build.gradle publishMpsPublicationToMavenRepository"
-			}
-			
+			stage 'Download MPS'
+				sh "./gradlew ${gradleOpts} -b build.gradle getMPS"
+			stage 'Publish MPS'
+				sh "./gradlew ${gradleOpts} -b build.gradle publishMpsPublicationToMavenRepository"
 		}
 	}
 }
