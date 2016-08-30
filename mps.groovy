@@ -8,7 +8,6 @@ def buildMps() {
 		withEnv(customEnv) {
 			stage 'Download MPS'
 				sh "./gradlew ${gradleOpts} -b build.gradle getMPS"
-			stage 'Publish MPS'
 				sh "./gradlew ${gradleOpts} -b build.gradle publishMpsPublicationToMavenRepository"
 		}
 	}
