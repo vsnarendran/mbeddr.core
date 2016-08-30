@@ -1,4 +1,5 @@
-evaluate(new File("util.groovy"))
+import util
+
 def buildNightly() {
 	echo "Running 'Nightly' build..."
 	timestamps {
@@ -7,6 +8,8 @@ def buildNightly() {
 		withEnv(customEnv) {
 			stage 'Build RCP'
 				sh "./gradlew ${gradleOpts} -b build.gradle build_mbeddrRCPDistributuion"
+			BuildDMG
+			 installer windows
 		}
 	}
 }
