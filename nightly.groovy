@@ -1,4 +1,4 @@
-import static BuildUtils
+import static BuildUtils.setupEnvironment
 	
 def buildNightly() {
 	echo "Running 'Nightly' build..."
