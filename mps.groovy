@@ -8,7 +8,11 @@ def buildMps() {
 		withEnv(customEnv) {
 			stage 'Download MPS'
 				sh "./gradlew ${gradleOpts} -b build.gradle getMPS"
-				sh "./gradlew ${gradleOpts} -b build.gradle publishMpsPublicationToMavenRepository"
+                withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
+                    usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']])
+                {
+					sh "./gradlew ${gradleOpts} -b build.gradle publishMpsPublicationToMavenRepository"
+				}
 		}
 	}
 }
