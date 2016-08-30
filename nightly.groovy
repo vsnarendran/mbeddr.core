@@ -1,10 +1,10 @@
-import static BuildUtils.setupEnvironment
-	
+import BuildUtils
+
 def buildNightly() {
-	echo "Running 'Nightly' build..."
+	println "Running 'Nightly' build..."
 	timestamps {
 		def gradleOpts ='--no-daemon --info'
-		def customEnv = setupEnvironment()
+		def customEnv = BuildUtils.setupEnvironment()
 		withEnv(customEnv) {
 			stage 'Build RCP'
 				sh "./gradlew ${gradleOpts} -b build.gradle build_mbeddrRCPDistributuion"
