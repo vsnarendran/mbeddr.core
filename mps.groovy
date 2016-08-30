@@ -18,3 +18,5 @@ def setupEnvironment() {
 	def customEnv = ["PATH+JDK=${javaHome}/bin", "PATH+ANT_HOME=${antHome}/bin", "JAVA_HOME=${javaHome}"]
 	return customEnv
 }
+
+return this;
