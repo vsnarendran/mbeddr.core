@@ -7,8 +7,6 @@ node {
 	echo "Number: " + buildNumber
 	echo "Branch: " + branchName
 	
-	mbeddr-Nightly
-	
 	def isNightlyJob = ~/^MBEDDR-NIGHTLY\/.*/
 	def isCbmcJob = ~/^CBMC\/.*/
 	def isMpsJob = ~/^MPS\/.*/
