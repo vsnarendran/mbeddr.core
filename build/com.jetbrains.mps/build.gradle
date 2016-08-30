@@ -26,7 +26,7 @@ task unzipMPS(dependsOn: downloadMPS) << {
 
 task getMPS(dependsOn: unzipMPS) << { }
 
-task publishMPS(type: Zip) << {
+task publishMPS(type: Zip) {
     from file(rootProject.projectDir.absolutePath + "/MPS/" + mbeddrMpsDir )
 }
 
