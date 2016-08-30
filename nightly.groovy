@@ -1,5 +1,5 @@
-import util
-
+import static BuildUtils
+	
 def buildNightly() {
 	echo "Running 'Nightly' build..."
 	timestamps {
