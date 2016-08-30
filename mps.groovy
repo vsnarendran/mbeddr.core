@@ -6,7 +6,7 @@ def buildMps() {
 		withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
 						  usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']]) {
 			sh "./gradlew ${gradleOpts} -b build.gradle getMPS"
-			sh "./gradlew ${gradleOpts} -b build.gradle publishMpsPublicationToMavenRepository"
+			sh "./gradlew ${gradleOpts} -PnexusUsername=${env.nexusUsername} -PnexusPassword=${env.nexusPassword} -b build.gradle publishMpsPublicationToMavenRepository"
 		}
 	}
 }
