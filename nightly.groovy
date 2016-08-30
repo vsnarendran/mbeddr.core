@@ -6,8 +6,6 @@ def buildNightly() {
 		withEnv(customEnv) {
 			stage 'Build RCP'
 				sh "./gradlew ${gradleOpts} -b build.gradle build_mbeddrRCPDistributuion"
-			BuildDMG
-			 installer windows
 		}
 	}
 }
