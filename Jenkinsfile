@@ -6,11 +6,14 @@ node {
 	echo "Job: " + jobName
 	echo "Number: " + buildNumber
 	echo "Branch: " + branchName
-
-	def isNightlyJob = ~/.*NIGHTLY.*/
-	def isCbmcJob = ~/.*CBMC.*/
-	def isMpsJob = ~/.*MPS.*/
-
+	
+	mbeddr-Nightly
+	
+	def isNightlyJob = ~/^MBEDDR-NIGHTLY\/.*/
+	def isCbmcJob = ~/^CBMC\/.*/
+	def isMpsJob = ~/^MPS\/.*/
+	def isMbeddrJob = ~/^MBEDDR.CORE\/.*/
+	
 	switch(jobName.toUpperCase()) {
 		case isMpsJob :
 	    echo "Running 'MPS' target..."
@@ -88,7 +91,7 @@ node {
 				}
 			break;
 
-	  default:
+	  case isMbeddrJob:
 	    echo "Running 'Default (mbeddr)' target..."
         stage 'Checkout'
 				node ('linux') {
