@@ -1,7 +1,7 @@
 #!groovy
 def buildMbeddr() {
   timestamps {
-	  gitClean()
+      sh 'git status'
 
 	if(fileExists("MPS")) {
 		println "MPS exists"
