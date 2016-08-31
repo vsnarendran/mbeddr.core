@@ -3,7 +3,7 @@ def buildMbeddr() {
   timestamps {
 	  gitClean()
 
-	if(file("MPS").exists()) {
+	if(fileExists("MPS")) {
 		println "MPS exists"
         try {
             file("MPS").deleteDir()
