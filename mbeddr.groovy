@@ -3,7 +3,6 @@ def buildMbeddr() {
   timestamps {
 	  gitClean()
 
-      println "currently in: " + System.getProperty("user.dir")
 	if(new File("MPS").exists()) {
 		println "MPS exists"
         try {
