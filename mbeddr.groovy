@@ -2,6 +2,20 @@
 def buildMbeddr() {
   timestamps {
 	  gitClean()
+
+      println "currently in: " + System.getProperty("user.dir")
+	if(new File("MPS").exists()) {
+		println "MPS exists"
+        try {
+            new File("MPS").delete()
+        } catch(Exception e) {
+            e.printStackTrace()
+        }
+
+	} else {
+		println "MPS does not exist"
+	}
+	  
 	  def gradleOpts ='--no-daemon --info'
 	  def customEnv = setupEnvironment()
 	  withEnv(customEnv) {
