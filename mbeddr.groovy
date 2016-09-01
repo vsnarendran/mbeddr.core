@@ -19,7 +19,7 @@ def buildMbeddr() {
 	  def customEnv = setupEnvironment()
 	  withEnv(customEnv) {
 	    stage 'Generate Build Scripts'
-	        sh "./gradlew ${gradleOpts}  -b build.gradle build_allScripts --stacktrace --debug"
+	        sh "gradle ${gradleOpts}  -b build.gradle build_allScripts --stacktrace --debug"
 
 		stage 'Build mbeddr'
 	        sh "./gradlew ${gradleOpts} -b build.gradle build_mbeddr"
@@ -162,7 +162,8 @@ def checkoutMbeddr() {
 def setupEnvironment() {
 	def javaHome = tool(name: 'JDK 8')
 	def antHome = tool(name: 'Ant 1.9')
-	def customEnv = ["PATH+JDK=${javaHome}/bin", "PATH+ANT_HOME=${antHome}/bin", "ANT_HOME=${antHome}", "JAVA_HOME=${javaHome}"]
+    def gradleHome = tool 'Gradle 2.13'
+	def customEnv = ["PATH+JDK=${javaHome}/bin", "PATH+GRADLE_HOME=${gradleHome}/bin", "PATH+ANT_HOME=${antHome}/bin", "ANT_HOME=${antHome}", "JAVA_HOME=${javaHome}"]
 	return customEnv
 }
 
