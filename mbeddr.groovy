@@ -19,7 +19,7 @@ def buildMbeddr() {
 	  def customEnv = setupEnvironment()
 	  withEnv(customEnv) {
 	    stage 'Generate Build Scripts'
-	        sh "./gradlew ${gradleOpts} -b build.gradle build_allScripts"
+	        sh "./gradlew ${gradleOpts}  -b build.gradle build_allScripts --stacktrace --debug"
 
 		stage 'Build mbeddr'
 	        sh "./gradlew ${gradleOpts} -b build.gradle build_mbeddr"
