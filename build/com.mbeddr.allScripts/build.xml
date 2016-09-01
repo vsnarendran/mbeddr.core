@@ -31,6 +31,7 @@
   </path>
   
   <target name="assemble" depends="classes, declare-mps-tasks">
+    <echo message="artifacts.mps: ${artifacts.mps}" />
     <mkdir dir="${build.layout}" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.zip/mbeddr.allScripts" />
