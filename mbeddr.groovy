@@ -25,7 +25,7 @@ def buildMbeddr() {
       env.PATH="${env.JAVA_HOME}/bin:${env.ANT_HOME}/bin:${env.PATH}"
 
 	    stage 'Generate Build Scripts'
-	        sh "${gradleHome}/bin/gradle ${gradleOpts}  -b build.gradle build_allScripts --stacktrace --debug"
+	        sh "${gradleHome}/bin/gradle -b build.gradle build_allScripts --stacktrace --debug"
 
 		stage 'Build mbeddr'
 	        sh "./gradlew ${gradleOpts} -b build.gradle build_mbeddr"
@@ -55,7 +55,7 @@ def buildMbeddr() {
         	}
 	    stage 'Cleanup'
 	      deleteDir()
-	  
+
   }
 }
 
