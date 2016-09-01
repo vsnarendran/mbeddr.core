@@ -163,7 +163,7 @@ def setupEnvironment() {
 	def javaHome = tool(name: 'JDK 8')
 	def antHome = tool(name: 'Ant 1.9')
     def gradleHome = tool 'Gradle 2.13'
-	def customEnv = ["PATH+JDK=${javaHome}/bin", "PATH+GRADLE_HOME=${gradleHome}/bin", "PATH+ANT_HOME=${antHome}/bin", "ANT_HOME=${antHome}", "JAVA_HOME=${javaHome}"]
+	def customEnv = ["PATH+JDK=${javaHome}/bin", "PATH+ANT_HOME=${antHome}/bin", "ANT_HOME=${antHome}", "PATH+GRADLE_HOME=${gradleHome}/bin", "JAVA_HOME=${javaHome}"]
 	return customEnv
 }
 
