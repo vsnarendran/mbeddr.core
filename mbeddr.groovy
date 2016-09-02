@@ -2,7 +2,7 @@
 def buildMbeddr() {
   def branchName = env.BRANCH_NAME
 
-  branchName.replaceAll("/", "_"))replaceAll("/", "__")
+  branchName.replaceAll("/", "__")
 
   ws (branchName) {
     timestamps {
