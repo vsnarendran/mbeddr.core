@@ -1,61 +1,66 @@
 #!groovy
 def buildMbeddr() {
-  timestamps {
-      sh 'git status'
+  def branchName = env.BRANCH_NAME
 
-	if(fileExists("MPS")) {
-		println "MPS exists"
-        try {
-            file("MPS").deleteDir()
-        } catch(Exception e) {
-            e.printStackTrace()
-        }
+  branchName.replaceAll("/", "_"))replaceAll("/", "__")
 
-	} else {
-		println "MPS does not exist"
-	}
-	  
-	  def gradleOpts ='--no-daemon --info'
-	  def customEnv = setupEnvironment()
+  ws (branchName) {
+    timestamps {
+        sh 'git status'
+
+  	if(fileExists("MPS")) {
+  		println "MPS exists"
+          try {
+              file("MPS").deleteDir()
+          } catch(Exception e) {
+              e.printStackTrace()
+          }
+
+  	} else {
+  		println "MPS does not exist"
+  	}
+
+  	  def gradleOpts ='--no-daemon --info'
+  	  def customEnv = setupEnvironment()
 
 
-      def gradleHome = tool 'Gradle 2.13'
-      env.JAVA_HOME="${tool 'JDK 8'}"
-      env.ANT_HOME="${tool 'Ant 1.9'}"
-      env.PATH="${env.JAVA_HOME}/bin:${env.ANT_HOME}/bin:${env.PATH}"
+        def gradleHome = tool 'Gradle 2.13'
+        env.JAVA_HOME="${tool 'JDK 8'}"
+        env.ANT_HOME="${tool 'Ant 1.9'}"
+        env.PATH="${env.JAVA_HOME}/bin:${env.ANT_HOME}/bin:${env.PATH}"
 
-	    stage 'Generate Build Scripts'
-	        sh "${gradleHome}/bin/gradle -b build.gradle build_allScripts --stacktrace --debug"
+  	    stage 'Generate Build Scripts'
+  	        sh "${gradleHome}/bin/gradle -b build.gradle build_allScripts --stacktrace --debug"
 
-		stage 'Build mbeddr'
-	        sh "./gradlew ${gradleOpts} -b build.gradle build_mbeddr"
+  		stage 'Build mbeddr'
+  	        sh "./gradlew ${gradleOpts} -b build.gradle build_mbeddr"
 
-	    stage 'Build Tutorial'
-	        sh "./gradlew ${gradleOpts} -b build.gradle build_tutorial"
+  	    stage 'Build Tutorial'
+  	        sh "./gradlew ${gradleOpts} -b build.gradle build_tutorial"
 
-	    stage name: 'Run Tests', concurrency: 2
-	      stash includes: 'MPS/**/*', name: 'mps'
-	      stash includes: 'build/**/*.xml,code/plugins/**/*.xml,code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/*,scripts/**/*.xml', name: 'build_scripts'
-	      stash includes: 'artifacts/**/*', name: 'build_mbeddr'
+  	    stage name: 'Run Tests', concurrency: 2
+  	      stash includes: 'MPS/**/*', name: 'mps'
+  	      stash includes: 'build/**/*.xml,code/plugins/**/*.xml,code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/*,scripts/**/*.xml', name: 'build_scripts'
+  	      stash includes: 'artifacts/**/*', name: 'build_mbeddr'
 
-	      parallel (
-	        //"windows": { runTests('windows')},
-	        "linux": { runTests('linux')}
-	      )
+  	      parallel (
+  	        //"windows": { runTests('windows')},
+  	        "linux": { runTests('linux')}
+  	      )
 
-	    stage 'Publish Artifacts'
-	      step([$class: 'ArtifactArchiver', artifacts: 'artifacts/', fingerprint: true])
-	      step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
+  	    stage 'Publish Artifacts'
+  	      step([$class: 'ArtifactArchiver', artifacts: 'artifacts/', fingerprint: true])
+  	      step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
 
-	    stage 'Package'
-        	withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
-                                usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']])
-			{
-            	sh "./gradlew ${gradleOpts} -PnexusUsername=${env.nexusUsername} -PnexusPassword=${env.nexusPassword} -PmbeddrBuild=${env.BRANCH_NAME} -b build.gradle publishMbeddrPlatformPublicationToMavenRepository publishMbeddrTutorialPublicationToMavenRepository publishMbeddrAllInOnePublicationToMavenRepository"
-        	}
-	    stage 'Cleanup'
-	      deleteDir()
-
+  	    stage 'Package'
+          	withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
+                                  usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']])
+  			{
+              	sh "./gradlew ${gradleOpts} -PnexusUsername=${env.nexusUsername} -PnexusPassword=${env.nexusPassword} -PmbeddrBuild=${env.BRANCH_NAME} -b build.gradle publishMbeddrPlatformPublicationToMavenRepository publishMbeddrTutorialPublicationToMavenRepository publishMbeddrAllInOnePublicationToMavenRepository"
+          	}
+  	    stage 'Cleanup'
+  	      deleteDir()
+    }
   }
 }
 
@@ -129,7 +134,7 @@ def runTest(gradleTask, boolean withCbmc) {
 }
 
 
-  
+
 def initCbmc() {
   def curDir = pwd()
   echo "CurrDir: $curDir"
@@ -145,7 +150,7 @@ def initCbmc() {
 def checkoutMbeddr() {
 	// Use a local reference git repo to speed up the checkout from GitHub
 	def reference = env.BSHARE
-  
+
 	if(isUnix()) {
 		reference += "/gitcaches/reference/mbeddr.core/"
 	} else {
