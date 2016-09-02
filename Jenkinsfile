@@ -6,12 +6,12 @@ node {
 	echo "Job: " + jobName
 	echo "Number: " + buildNumber
 	echo "Branch: " + branchName
-	
+
 	def isNightlyJob = ~/^MBEDDR-NIGHTLY\/.*/
 	def isCbmcJob = ~/^CBMC\/.*/
 	def isMpsJob = ~/^MPS\/.*/
 	def isMbeddrJob = ~/^MBEDDR.CORE\/.*/
-	
+
 	switch(jobName.toUpperCase()) {
 		case isMpsJob :
 	    echo "Running 'MPS' target..."
@@ -93,16 +93,20 @@ node {
 	    echo "Running 'Default (mbeddr)' target..."
         stage 'Checkout'
 				node ('linux') {
-					checkoutMbeddr()
 
-					def mbeddrLib = load 'mbeddr.groovy'
-					if(mbeddrLib == null) {
-						echo "Unable to load file 'mbeddr.groovy'!"
-					} else {
-						mbeddrLib.buildMbeddr()
+					// WORKAROUND to remove '%2F' from path names
+					ws(jobName.replaceAll("%2F", "_")) {
+						checkoutMbeddr()
+
+						def mbeddrLib = load 'mbeddr.groovy'
+						if(mbeddrLib == null) {
+							echo "Unable to load file 'mbeddr.groovy'!"
+						} else {
+							mbeddrLib.buildMbeddr()
+						}
+
+						deleteDir()
 					}
-
-					deleteDir()
 				}
 			break;
 
