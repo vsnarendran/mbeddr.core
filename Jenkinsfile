@@ -7,6 +7,8 @@ node {
 	echo "Number: " + buildNumber
 	echo "Branch: " + branchName
 
+	def wsHome = "workspace/"
+
 	def isNightlyJob = ~/^MBEDDR-NIGHTLY\/.*/
 	def isCbmcJob = ~/^CBMC\/.*/
 	def isMpsJob = ~/^MPS\/.*/
@@ -15,18 +17,22 @@ node {
 	switch(jobName.toUpperCase()) {
 		case isMpsJob :
 	    echo "Running 'MPS' target..."
+
 			stage 'Checkout'
 				node ('linux') {
-					checkoutMbeddr()
+					// WORKAROUND to remove '%2F' from path names
+					ws(wsHome + jobName.replaceAll("%2F", "_")) {
+						checkoutMbeddr()
 
-					def mpsLib = load 'mps.groovy'
-					if(mpsLib == null) {
-						echo "Unable to load file 'mps.groovy'!"
-					} else {
-						mpsLib.buildMps()
+						def mpsLib = load 'mps.groovy'
+						if(mpsLib == null) {
+							echo "Unable to load file 'mps.groovy'!"
+						} else {
+							mpsLib.buildMps()
+						}
+
+						deleteDir()
 					}
-
-					deleteDir()
 				}
 			break;
 
@@ -34,62 +40,71 @@ node {
 	    echo "Running 'CBMC' target..."
 			stage 'Checkout'
 				node ('linux') {
-					checkoutMbeddr()
+					// WORKAROUND to remove '%2F' from path names
+					ws(wsHome + jobName.replaceAll("%2F", "_")) {
+						checkoutMbeddr()
 
-					def cbmcLib = load 'cbmc.groovy'
-					if(cbmcLib == null) {
-						echo "Unable to load file 'cbmc.groovy'!"
-					} else {
-						cbmcLib.buildCBMC()
+						def cbmcLib = load 'cbmc.groovy'
+						if(cbmcLib == null) {
+							echo "Unable to load file 'cbmc.groovy'!"
+						} else {
+							cbmcLib.buildCBMC()
+						}
+
+						deleteDir()
 					}
-
-					deleteDir()
 				}
         node ('mac') {
-					checkoutMbeddr()
+					// WORKAROUND to remove '%2F' from path names
+					ws(wsHome + jobName.replaceAll("%2F", "_")) {
+						checkoutMbeddr()
 
-					def cbmcLib = load 'cbmc.groovy'
-					if(cbmcLib == null) {
-						echo "Unable to load file 'cbmc.groovy'!"
-					} else {
-						cbmcLib.buildCBMC()
+						def cbmcLib = load 'cbmc.groovy'
+						if(cbmcLib == null) {
+							echo "Unable to load file 'cbmc.groovy'!"
+						} else {
+							cbmcLib.buildCBMC()
+						}
+
+						deleteDir()
 					}
-
-					deleteDir()
 				}
         node ('windows') {
-					checkoutMbeddr()
+					// WORKAROUND to remove '%2F' from path names
+					ws(wsHome + jobName.replaceAll("%2F", "_")) {
+						checkoutMbeddr()
 
-					def cbmcLib = load 'cbmc.groovy'
-					if(cbmcLib == null) {
-						echo "Unable to load file 'cbmc.groovy'!"
-					} else {
-						cbmcLib.buildCBMC()
+						def cbmcLib = load 'cbmc.groovy'
+						if(cbmcLib == null) {
+							echo "Unable to load file 'cbmc.groovy'!"
+						} else {
+							cbmcLib.buildCBMC()
+						}
+
+						deleteDir()
 					}
-
-					deleteDir()
 				}
 			break;
 
 	  case isNightlyJob:
 	    echo "Running 'Nightly' target..."
-		stage 'Checkout'
-			    node ('linux') {
-			        // WORKAROUND to remove '%2F' from path names
-			        ws(jobName.replaceAll("%2F", "_")) {
-			            checkoutMbeddr()
+			stage 'Checkout'
+				node ('linux') {
+					// WORKAROUND to remove '%2F' from path names
+					ws(wsHome + jobName.replaceAll("%2F", "_")) {
+						checkoutMbeddr()
 
-                        def nightlyLib = load 'nightly.groovy'
-                        if(nightlyLib == null) {
-                            echo "Unable to load file 'nightly.groovy'!"
-                        } else {
-                            nightlyLib.buildNightly()
-                        }
+						def nightlyLib = load 'nightly.groovy'
+						if(nightlyLib == null) {
+							echo "Unable to load file 'nightly.groovy'!"
+						} else {
+							nightlyLib.buildNightly()
+						}
 
-                        deleteDir()
-			        }
-			    }
-		    break;
+						deleteDir()
+					}
+				}
+			break;
 
 	  case isMbeddrJob:
 	    echo "Running 'Default (mbeddr)' target..."
@@ -97,7 +112,7 @@ node {
 				node ('linux') {
 
 					// WORKAROUND to remove '%2F' from path names
-					ws(jobName.replaceAll("%2F", "_")) {
+					ws(wsHome + jobName.replaceAll("%2F", "_")) {
 						checkoutMbeddr()
 
 						def mbeddrLib = load 'mbeddr.groovy'
