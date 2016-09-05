@@ -15,7 +15,6 @@ node {
 	switch(jobName.toUpperCase()) {
 		case isMpsJob :
 	    echo "Running 'MPS' target..."
-
 			stage 'Checkout'
 				node ('linux') {
 					checkoutMbeddr()

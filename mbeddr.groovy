@@ -1,30 +1,12 @@
 #!groovy
 def buildMbeddr() {
   timestamps {
-    sh 'git status'
-
-  	if(fileExists("MPS")) {
-  		println "MPS exists"
-          try {
-              file("MPS").deleteDir()
-          } catch(Exception e) {
-              e.printStackTrace()
-          }
-
-  	} else {
-  		println "MPS does not exist"
-  	}
-
 	  def gradleOpts ='--no-daemon --info'
 	  def customEnv = setupEnvironment()
 
-      def gradleHome = tool 'Gradle 2.13'
-      env.JAVA_HOME="${tool 'JDK 8'}"
-      env.ANT_HOME="${tool 'Ant 1.9'}"
-      env.PATH="${env.JAVA_HOME}/bin:${env.ANT_HOME}/bin:${env.PATH}"
-
+      withEnv(customEnv) {
 	    stage 'Generate Build Scripts'
-	        sh "${gradleHome}/bin/gradle -b build.gradle build_allScripts --stacktrace --debug"
+	        sh "./gradlew ${gradleOpts} -b build.gradle build_allScripts --stacktrace --debug"
 
   		stage 'Build mbeddr'
   	        sh "./gradlew ${gradleOpts} -b build.gradle build_mbeddr"
@@ -54,6 +36,7 @@ def buildMbeddr() {
         	}
 	    stage 'Cleanup'
 	      deleteDir()
+      }
   }
 }
 
