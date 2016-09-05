@@ -94,12 +94,7 @@ node {
 					ws(wsHome + jobName.replaceAll("%2F", "_")) {
 						checkoutMbeddr()
 
-						def currDir = pwd()
-						echo "Current dir: ${currDir}"
-
-						sh "ls -la"
-
-						def nightlyLib = load 'nightlybuild.groovy'
+						def nightlyLib = load 'nightly.groovy'
 						if(nightlyLib == null) {
 							echo "Unable to load file 'nightly.groovy'!"
 						} else {
