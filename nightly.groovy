@@ -1,6 +1,5 @@
 #!groovy
 def buildNightly() {
-	echo "Running 'Nightly' build..."
 	timestamps {
 		def gradleOpts ='--no-daemon --info'
 		def customEnv = setupEnvironment()

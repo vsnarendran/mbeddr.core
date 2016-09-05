@@ -73,20 +73,23 @@ node {
 
 	  case isNightlyJob:
 	    echo "Running 'Nightly' target..."
-			stage 'Checkout'
-				node ('linux') {
-					checkoutMbeddr()
+		stage 'Checkout'
+			    node ('linux') {
+			        // WORKAROUND to remove '%2F' from path names
+			        ws(jobName.replaceAll("%2F", "_")) {
+			            checkoutMbeddr()
 
-					def nightlyLib = load 'nightly.groovy'
-					if(nightlyLib == null) {
-						echo "Unable to load file 'nightly.groovy'!"
-					} else {
-						nightlyLib.buildNightly()
-					}
+                        def nightlyLib = load 'nightly.groovy'
+                        if(nightlyLib == null) {
+                            echo "Unable to load file 'nightly.groovy'!"
+                        } else {
+                            nightlyLib.buildNightly()
+                        }
 
-					deleteDir()
-				}
-			break;
+                        deleteDir()
+			        }
+			    }
+		    break;
 
 	  case isMbeddrJob:
 	    echo "Running 'Default (mbeddr)' target..."
