@@ -32,7 +32,7 @@ def buildMbeddr() {
         	withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
                                 usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']])
 			{
-            	sh "./gradlew ${gradleOpts} -PnexusUsername=${env.nexusUsername} -PnexusPassword=${env.nexusPassword} -PmbeddrBuild=${env.BRANCH_NAME} -b build.gradle publishMbeddrPlatformPublicationToMavenRepository publishMbeddrTutorialPublicationToMavenRepository publishMbeddrAllInOnePublicationToMavenRepository"
+            	sh "./gradlew ${gradleOpts} -PnexusUsername=${env.nexusUsername} -PnexusPassword=${env.nexusPassword} -PmbeddrBuild=${env.BRANCH_NAME} -b build.gradle publishMbeddrPlatformPublicationToMavenRepository publishMbeddrTutorialPublicationToMavenRepository publishMbeddrAllInOnePublicationToMavenRepository publishMbeddrAllScriptsPublicationToMavenRepository"
         	}
 	    stage 'Cleanup'
 	      deleteDir()
