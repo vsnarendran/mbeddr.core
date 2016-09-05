@@ -99,7 +99,7 @@ node {
 
 						sh "ls -la"
 
-						def nightlyLib = load 'nightly.groovy'
+						def nightlyLib = load 'nightlybuild.groovy'
 						if(nightlyLib == null) {
 							echo "Unable to load file 'nightly.groovy'!"
 						} else {
