@@ -8,7 +8,14 @@ def buildNightly() {
 			stage 'Generate Build Scripts'
 				sh "./gradlew ${gradleOpts} -b build.gradle build_allScripts --stacktrace --debug"
 			stage 'Build RCP'
-				sh "./gradlew ${gradleOpts} -b build.gradle build_mbeddrRCPDistributuion"
+				sh "./gradlew ${gradleOpts} -b build.gradle build_mbeddrRCPDistributuion --stacktrace --debug"
+			withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
+							  usernameVariable: 'jb.server.user', passwordVariable: 'jb.server.password']]) {
+				sh "./gradlew ${gradleOpts} -PserverUser=${env.jb.server.user} -PserverPassword=${env.jb.server.password} -b build.gradle  download_JRE --stacktrace --debug"
+			}
+
+			
+
 		}
 	}
 }
