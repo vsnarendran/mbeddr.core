@@ -57,7 +57,6 @@ def runTests(nodeLabel) {
       "tests ${nodeLabel} 3" : {
           node (nodeLabel) {
               runTest("test_mbeddr_tutorial", false)
-              runTest("test_mbeddr_debugger", false)
               runTest("test_mbeddr_ext", false)
               runTest("test_mbeddr_cc", false)
           }
