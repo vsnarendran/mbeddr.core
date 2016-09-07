@@ -1,6 +1,5 @@
 import org.apache.tools.ant.taskdefs.condition.Os
 
-
 // constructs the argument list that is used for spawning processes on linux/mac and windows
 Iterable<String> buildProcSpawnArgList(Iterable<String> args) {
     List<String> newArguments = new ArrayList<String>()
@@ -17,6 +16,10 @@ Iterable<String> antScriptLocation(Object antScriptLocation) {
     return ['-f', antScriptLocation]
 }
 
+configurations.all {
+    resolutionStrategy.cacheDynamicVersionsFor 1, 'seconds'
+    resolutionStrategy.cacheChangingModulesFor 1, 'seconds'
+}
 
 subprojects {
     // required plugins
@@ -51,9 +54,9 @@ subprojects {
 	} else {
         def gitBranch = null
         if (System.properties['os.name'].toLowerCase().contains('windows')) {
-            gitBranch ='cmd /c git rev-parse --abbrev-ref HEAD'.execute().in.text.trim().toString()
+            gitBranch ='cmd /c git rev-parse --abbrev-ref HEAD'.execute().in.text.trim().toString().replace("/","-")
         } else {
-            gitBranch ='git rev-parse --abbrev-ref HEAD'.execute().in.text.trim().toString()
+            gitBranch ='git rev-parse --abbrev-ref HEAD'.execute().in.text.trim().toString().replace("/","-")
         }
         ext.mbeddrBuild = gitBranch + "-SNAPSHOT"
 	}
@@ -129,6 +132,16 @@ subprojects {
         }
         mbeddrAllScripts {
             description = 'mbeddr build scripts'
+            resolutionStrategy {
+                componentSelection {
+                    // Accept the highest version matching the requested version that isn't '1.5'
+                    all { ComponentSelection selection ->
+                        if ((selection.candidate.group == 'com.mbeddr' && selection.candidate.module == 'allScripts') && selection.candidate.version != '1.0-master-SNAPSHOT') {
+                            selection.reject("version 1.5 is broken for 'com.mbeddr:allScripts'")
+                        }
+                    }
+                }
+            }
         }
         mbeddrAllInOne {
             description = 'mbeddr allInOne'
@@ -168,12 +181,17 @@ subprojects {
         into rootProject.projectDir.absolutePath + "/MPS/"
     }
 
+    task get_allScripts(type: Copy)  {
+        from configurations.mbeddrAllScripts
+        into rootProject.projectDir.absolutePath + "/scripts/"
+    }
+
     task resolve_mps(type: Copy, dependsOn: get_mps)  {
         from zipTree(rootProject.projectDir.absolutePath + "/MPS/" + "mps-"+mpsBuild+".zip")
         into file(rootProject.projectDir.absolutePath + "/MPS/" + mbeddrMpsDir+ "/")
     }
 
-    tasks.create(name: 'copy_allScripts', type: Copy, dependsOn: 'resolve_mps') {
+    tasks.create(name: 'copy_allScripts', type: Copy, dependsOn: ['resolve_mps', 'get_allScripts']) {
         from rootProject.projectDir.absolutePath + "/build"
         include "*/*.xml"
         from rootProject.projectDir.absolutePath + "/code/plugins"
@@ -209,7 +227,7 @@ project(':build:com.jetbrains.mps') {
                         password project.getProperty('nexusPassword')
                     }
                 }
-                url project.releaseRepository
+                url project.snapshotRepository
             }
         }
     }
@@ -245,7 +263,28 @@ project(':build:com.mbeddr.allScripts') {
 project(':build:com.mbeddr.build') {
     dependencies {
         mps group: 'com.jetbrains', name: 'mps', version: mpsBuild
+        //mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: 'latest.snapshot'
+        mbeddrAllScripts "com.mbeddr:allScripts:1.+"
+        //, version: '1.0-feature-cbmcJenkins-SNAPSHOT'
+        /*components {
+            withModule('com.mbeddr:allScripts') { ComponentMetadataDetails details ->
+                details.changing = true
+                println "next: " + details.getId() + ":" + details.getStatusScheme()
+                if(details.getId().toString() == "com.mbeddr:allScripts:1.0-master-SNAPSHOT") {
+                    //details.statusScheme = ['snapshot']
+                    details.statusScheme = ['integration', 'milestone', 'release', 'snapshot']
+                    println "match: " + details.getId() + ":" + details.getStatusScheme()
+                } else {
+
+                    println "no match: " + details.getId() + ":" + details.getStatusScheme()
+                }
+            }
+
+        }*/
     }
+    println "after dep"
+    //configurations.mbeddrAllScripts.each { println it.name }
+    println "after info"
 }
 
 project(':build:com.mbeddr.tests') {
@@ -425,7 +464,7 @@ project(':build:com.mbeddr.analyses.cbmc') {
                         password project.getProperty('nexusPassword')
                     }
                 }
-                url project.releaseRepository
+                url project.snapshotRepository
             }
         }
     }

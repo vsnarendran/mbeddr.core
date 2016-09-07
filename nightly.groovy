@@ -14,7 +14,7 @@ def buildNightly() {
 				sh "./gradlew ${gradleOpts} -PserverUser=${env.jb.server.user} -PserverPassword=${env.jb.server.password} -b build.gradle  download_JRE --stacktrace --debug"
 			}
 
-			
+
 
 		}
 	}
