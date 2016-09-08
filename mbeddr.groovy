@@ -44,21 +44,21 @@ def runTests(nodeLabel) {
   parallel (
       "tests ${nodeLabel} 1" : {
           node (nodeLabel) {
-              runTest("test_mbeddr_core", false)
-              runTest("test_mbeddr_platform", false)
-              runTest("test_mbeddr_performance", false)
+              runTest("test_mbeddr_core")
+              runTest("test_mbeddr_platform")
+              runTest("test_mbeddr_performance")
           }
       },
       "tests ${nodeLabel} 2" : {
           node (nodeLabel) {
-              runTest("test_mbeddr_analysis", true)
+              runTest("test_mbeddr_analysis")
           }
       },
       "tests ${nodeLabel} 3" : {
           node (nodeLabel) {
-              runTest("test_mbeddr_tutorial", false)
-              runTest("test_mbeddr_ext", false)
-              runTest("test_mbeddr_cc", false)
+              runTest("test_mbeddr_tutorial")
+              runTest("test_mbeddr_ext")
+              runTest("test_mbeddr_cc")
           }
       }
   )
@@ -75,7 +75,7 @@ def getWorkspacePath() {
   return ws_path
 }
 
-def runTest(gradleTask, boolean withCbmc) {
+def runTest(gradleTask) {
   def gradleOpts ='--no-daemon --info --continue --stacktrace'
   def curDir = pwd()
 
@@ -89,10 +89,6 @@ def runTest(gradleTask, boolean withCbmc) {
     unstash 'mps'
     unstash 'build_scripts'
     unstash 'build_mbeddr'
-
-    if(withCbmc) {
-      initCbmc()
-    }
 
     try {
       if(isUnix()) {
@@ -109,17 +105,35 @@ def runTest(gradleTask, boolean withCbmc) {
 }
 
 
+// resolve CBMC version from Nexus?
+// ->
 
 def initCbmc() {
   def curDir = pwd()
   echo "CurrDir: $curDir"
 
-  step ([$class: 'CopyArtifact', projectName: 'Build_CBMC']);
+
+    stage 'Resolve CBMC'
+    withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
+                      usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']])
+            {
+                if(isUnix()) {
+                    sh "./gradlew ${gradleOpts} -PnexusUsername=${env.nexusUsername} -PnexusPassword=${env.nexusPassword} -b build.gradle unzip_cbmcLinux"
+                    //sh "rm -rf ${curDir}/cbmc && mkdir -p ${curDir}/cbmc && cd cbmc/ && tar xvzf ${curDir}/cbmc-linux.tar.gz"
+                    sh "tar xvzf ${curDir}/cbmc-linux.tar.gz"
+                } else {
+                    sh "./gradlew ${gradleOpts} -PnexusUsername=${env.nexusUsername} -PnexusPassword=${env.nexusPassword} -b build.gradle unzip_cbmcWin"
+                    //bat "del /S /F /Q ${curDir}\\cbmc && mkdir ${curDir}\\cbmc && cd cbmc && unzip ${curDir}\\cbmc-win.zip"
+                    bat "unzip ${curDir}\\cbmc-win.zip"
+                }
+            }
+
+  /*step ([$class: 'CopyArtifact', projectName: 'Build_CBMC']);
   if(isUnix()) {
     sh "rm -rf ${curDir}/cbmc && mkdir -p ${curDir}/cbmc && cd cbmc/ && tar xvzf ${curDir}/cbmc-linux.tar.gz"
   } else {
     bat "del /S /F /Q ${curDir}\\cbmc && mkdir ${curDir}\\cbmc && cd cbmc && unzip ${curDir}\\cbmc-win.zip"
-  }
+  }*/
 }
 
 def checkoutMbeddr() {

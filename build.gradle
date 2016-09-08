@@ -65,7 +65,12 @@ subprojects {
     // cbmc properties
     ext.cbmcMajor = "0.9"
     ext.cbmcMinor = "1"
-    ext.cbmcBuild = mbeddrMajor + "." + mbeddrMinor + "-SNAPSHOT"
+    ext.cbmc_groupId = "org.cprover"
+    ext.cbmc_artifactId_mac = "cbmc-mac"
+    ext.cbmc_artifactId_linux = "cbmc-linux"
+    ext.cbmc_artifactId_win = "cbmc-win"
+    ext.cbmc_version = mbeddrMajor + "." + mbeddrMinor + "-SNAPSHOT"
+    ext.cbmc_resolveDir = "/cbmc/"
 
     // download jre credentials
     ext.serverUser = project.hasProperty('serverUser') ? project.getProperty('serverUser') : '<user>'
@@ -293,6 +298,10 @@ project(':build:com.mbeddr.tests') {
         //compile project(':build:com.mbeddr.allScripts')
         //compile project(':build:com.mbeddr.build')
         mps group: 'com.jetbrains', name: 'mps', version: mpsBuild
+        cbmcLinux group: cbmc_groupId, name: cbmc_artifactId_linux, version: cbmc_version
+        cbmcMac group: cbmc_groupId, name: cbmc_artifactId_mac, version: cbmc_version
+        cbmcWin group: cbmc_groupId, name: cbmc_artifactId_win, version: cbmc_version
+
         //mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuildNumber
         //mbeddr group: 'com.mbeddr', name: 'build', version: mbeddrBuildNumber
     }
@@ -413,9 +422,9 @@ project(':build:com.mbeddr.release') {
         mbeddrJre group: 'com.mbeddr', name: 'jre', version: mbeddrBuildNumber
         mbeddrRcp group: 'com.mbeddr', name: 'rcp', version: mbeddrBuildNumber
         mbeddrAllInOne group: 'com.mbeddr', name: 'allInOne', version: mbeddrBuildNumber
-        cbmcMac group: 'org.cprover', name: 'cbmc-mac', version: cbmcBuild
-        cbmcLinux group: 'org.cprover', name: 'cbmc-linux', version: cbmcBuild
-        cbmcWin group: 'org.cprover', name: 'cbmc-win', version: cbmcBuild
+        cbmcMac group: cbmc_groupId, name: cbmc_artifactId_mac, version: cbmc_version
+        cbmcLinux group: cbmc_groupId, name: cbmc_artifactId_linux, version: cbmc_version
+        cbmcWin group: cbmc_groupId, name: cbmc_artifactId_win, version: cbmc_version
     }
    /* publishing {
         publications {
@@ -438,21 +447,21 @@ project(':build:com.mbeddr.analyses.cbmc') {
     publishing {
         publications {
             cbmcMac(MavenPublication) {
-                groupId 'org.cprover'
-                artifactId 'cbmc-mac'
-                version cbmcBuild
+                groupId cbmc_groupId
+                artifactId cbmc_artifactId_mac
+                version cbmc_version
                 artifact(publish_cbmcMac) {}
             }
             cbmcLinux(MavenPublication) {
-                groupId 'org.cprover'
-                artifactId 'cbmc-linux'
-                version cbmcBuild
+                groupId cbmc_groupId
+                artifactId cbmc_artifactId_linux
+                version cbmc_version
                 artifact(publish_cbmcLinux) {}
             }
             cbmcWin(MavenPublication) {
-                groupId 'org.cprover'
-                artifactId 'cbmc-win'
-                version cbmcBuild
+                groupId cbmc_groupId
+                artifactId cbmc_artifactId_win
+                version cbmc_version
                 artifact(publish_cbmcWin) {}
             }
         }
