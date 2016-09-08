@@ -65,7 +65,7 @@ subprojects {
     // cbmc properties
     ext.cbmcMajor = "0.9"
     ext.cbmcMinor = "1"
-    ext.cbmcBuild = mbeddrMajor + "." + mbeddrMinor
+    ext.cbmcBuild = mbeddrMajor + "." + mbeddrMinor + "-SNAPSHOT"
 
     // download jre credentials
     ext.serverUser = project.hasProperty('serverUser') ? project.getProperty('serverUser') : '<user>'
