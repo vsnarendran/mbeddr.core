@@ -30,6 +30,9 @@ subprojects {
 	ext.mpsMajor = "3.3"
     ext.mpsMinor = "5"
     ext.mpsBuild = mpsMajor + "." + mpsMinor
+
+
+
     ext.mbeddrMpsDir = "MPS-mbeddr-" + mpsBuild
     ext.mpsBaseUrl = "http://download.jetbrains.com/mps/33/"
 

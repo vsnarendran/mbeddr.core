@@ -13,6 +13,11 @@ def script_test_mbeddrCcTs = new File(scriptsBasePath + "/com.mbeddr.cc/" + "bui
 def script_test_mbeddrCcEx = new File(scriptsBasePath + "/com.mbeddr.cc/" + "build-ex-tests.xml")
 def script_test_mbeddrExtTs = new File(scriptsBasePath + "/com.mbeddr.ext/" + "build-ts-tests.xml")
 def script_test_mbeddrExtEx = new File(scriptsBasePath + "/com.mbeddr.ext/" + "build-ex-tests.xml")
+def cbmc_linux_tar = "cbmc-linux.tar.gz"
+def cbmc_mac_zip = "cbmc-mac.zip"
+def cbmc_win_zip = "cbmc-win.zip"
+
+
 
 task test_mbeddr_tutorial(type: Exec, dependsOn: 'copy_allScripts') {
   workingDir rootProject.projectDir
@@ -30,12 +35,12 @@ task test_mbeddr_analysis_ex << {
   ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.analyses")
 }
 
-if(Os.isFamily(Os.FAMILY_UNIX)) {
-  test_mbeddr_analysis_ex.dependsOn 'unzip_cbmcLinux'
+if(Os.isFamily(Os.FAMILY_UNIX) && Os.isFamily(Os.FAMILY_MAC)) {
+  test_mbeddr_analysis_ex.dependsOn 'unzip_cbmcLinuxTar'
 } else if(Os.isFamily(Os.FAMILY_WINDOWS)) {
-  test_mbeddr_analysis_ex.dependsOn 'unzip_cbmcWin'
+  test_mbeddr_analysis_ex.dependsOn 'unzip_cbmcWinZip'
 } else {
-  test_mbeddr_analysis_ex.dependsOn 'unzip_cbmcMac'
+  test_mbeddr_analysis_ex.dependsOn 'unzip_cbmcMacZip'
 }
 
 task test_mbeddr_analysis_ts(type: Exec, dependsOn: 'copy_allScripts') {
@@ -137,9 +142,34 @@ task test_mbeddr_ext(dependsOn: [build_mbeddr_ext_ex, test_mbeddr_ext_ex, test_m
 
 task test_mbeddr(dependsOn: [test_mbeddr_debugger, test_mbeddr_platform, test_mbeddr_core, test_mbeddr_performance, test_mbeddr_tutorial, test_mbeddr_cc, test_mbeddr_ext]) {}
 
+task resolve_cbmcLinux(type: Copy)  {
+  from configurations.cbmcLinux
+  into rootProject.projectDir.absolutePath + cbmc_resolveDir
+}
+
+task unzip_cbmcLinuxArtifact(type: Copy, dependsOn: resolve_cbmcLinux)  {
+  from zipTree(rootProject.projectDir.absolutePath + cbmc_resolveDir + cbmc_artifactId_linux+"-"+cbmc_version+".zip")
+  into file(rootProject.projectDir.absolutePath + cbmc_resolveDir)
+}
+
+task unzip_cbmcLinuxTar(type: Copy, dependsOn: unzip_cbmcLinuxArtifact)  {
+  from tarTree(rootProject.projectDir.absolutePath + cbmc_resolveDir + cbmc_linux_tar)
+  into file(rootProject.projectDir.absolutePath + cbmc_resolveDir)
+}
+
 task resolve_cbmcMac(type: Copy)  {
   from configurations.cbmcMac
   into rootProject.projectDir.absolutePath + cbmc_resolveDir
+}
+
+task unzip_cbmcMacArtifact(type: Copy, dependsOn: resolve_cbmcMac)  {
+  from zipTree(rootProject.projectDir.absolutePath + cbmc_resolveDir + cbmc_artifactId_mac+"-"+cbmc_version+".zip")
+  into file(rootProject.projectDir.absolutePath + cbmc_resolveDir)
+}
+
+task unzip_cbmcMacZip(type: Copy, dependsOn: unzip_cbmcMacArtifact)  {
+  from zipTree(rootProject.projectDir.absolutePath + cbmc_resolveDir + cbmc_mac_zip)
+  into file(rootProject.projectDir.absolutePath + cbmc_resolveDir)
 }
 
 task resolve_cbmcWin(type: Copy)  {
@@ -147,17 +177,12 @@ task resolve_cbmcWin(type: Copy)  {
   into rootProject.projectDir.absolutePath + cbmc_resolveDir
 }
 
-task resolve_cbmcLinux(type: Copy)  {
-  from configurations.cbmcLinux
-  into rootProject.projectDir.absolutePath + cbmc_resolveDir
-}
-
-task unzip_cbmcLinux(type: Copy, dependsOn: resolve_cbmcLinux)  {
-  from zipTree(rootProject.projectDir.absolutePath + cbmc_resolveDir + cbmc_artifactId_linux+"-"+cbmc_version+".zip")
+task unzip_cbmcWinArtifact(type: Copy, dependsOn: resolve_cbmcWin)  {
+  from zipTree(rootProject.projectDir.absolutePath + cbmc_resolveDir + cbmc_artifactId_win+"-"+cbmc_version+".zip")
   into file(rootProject.projectDir.absolutePath + cbmc_resolveDir)
 }
 
-task unzip_cbmcWin(type: Copy, dependsOn: resolve_cbmcWin)  {
-  from zipTree(rootProject.projectDir.absolutePath + cbmc_resolveDir + cbmc_artifactId_win+"-"+cbmc_version+".zip")
+task unzip_cbmcWinZip(type: Copy, dependsOn: unzip_cbmcWinArtifact)  {
+  from zipTree(rootProject.projectDir.absolutePath + cbmc_resolveDir + cbmc_win_zip)
   into file(rootProject.projectDir.absolutePath + cbmc_resolveDir)
 }
