@@ -61,7 +61,7 @@ subprojects {
         } else {
             gitBranch ='git rev-parse --abbrev-ref HEAD'.execute().in.text.trim().toString().replace("/","-")
         }
-        ext.mbeddrBuild = gitBranch + "-SNAPSHOT"
+        ext.mbeddrBuild = "HEAD" + "-SNAPSHOT"
 	}
     ext.mbeddrBuildNumber = mbeddrMajor + "." + mbeddrMinor + "-" + mbeddrBuild
 
@@ -200,17 +200,24 @@ subprojects {
     }
 
     tasks.create(name: 'copy_allScripts', type: Copy, dependsOn: ['resolve_mps', 'get_allScripts']) {
-        from rootProject.projectDir.absolutePath + "/build"
-        include "*/*.xml"
-        from rootProject.projectDir.absolutePath + "/code/plugins"
-        include "*/*.xml"
-        into rootProject.projectDir.absolutePath + "/scripts/"
 
-        println "dir: "+ file(rootProject.projectDir.absolutePath + "/scripts/").absolutePath
-        println "files: " + file(rootProject.projectDir.absolutePath + "/scripts/").listFiles().length
-        file(rootProject.projectDir.absolutePath + "/scripts/").listFiles().each {
-            println it.getName()
-        }
+
+        from zipTree(rootProject.projectDir.absolutePath + "/scripts/" + "allScripts" + "-"+mbeddrBuildNumber+".zip")
+        into file(rootProject.projectDir.absolutePath + "/scripts/" )
+
+
+
+//        from rootProject.projectDir.absolutePath + "/build"
+//        include "**/*//*.xml"
+//        from rootProject.projectDir.absolutePath + "/code/plugins"
+//        include "**/*//*.xml"
+//        into rootProject.projectDir.absolutePath + "/scripts/"
+//
+//        println "dir: "+ file(rootProject.projectDir.absolutePath + "/scripts/").absolutePath
+//        println "files: " + file(rootProject.projectDir.absolutePath + "/scripts/").listFiles().length
+//        file(rootProject.projectDir.absolutePath + "/scripts/").listFiles().each {
+//            println it.getName()
+//        }
 
     }
 
@@ -279,7 +286,7 @@ project(':build:com.mbeddr.build') {
     dependencies {
         mps group: 'com.jetbrains', name: 'mps', version: mpsBuild
         //mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: 'latest.snapshot'
-        mbeddrAllScripts "com.mbeddr:allScripts:1.+"
+        //mbeddrAllScripts "com.mbeddr:allScripts:1.+"
         //, version: '1.0-feature-cbmcJenkins-SNAPSHOT'
         /*components {
             withModule('com.mbeddr:allScripts') { ComponentMetadataDetails details ->
