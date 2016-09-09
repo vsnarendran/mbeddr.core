@@ -101,7 +101,7 @@ def checkoutMbeddr() {
 
 def checkoutCBMC() {
 	checkout([$class: 'GitSCM',
-		branches: [[name: '163e999b07b7f0e007333396f0ffd6665a3d3949']],
+		branches: [[name: '4ea8da79dd4beed5d487a804e6c543b05f7d030d']],
 		doGenerateSubmoduleConfigurations: false,
 		extensions: [
 				[$class: 'RelativeTargetDirectory', relativeTargetDir: 'cbmc'],
