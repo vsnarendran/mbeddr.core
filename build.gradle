@@ -205,6 +205,12 @@ subprojects {
         from rootProject.projectDir.absolutePath + "/code/plugins"
         include "*/*.xml"
         into rootProject.projectDir.absolutePath + "/scripts/"
+
+        println "dir: "+ file(rootProject.projectDir.absolutePath + "/scripts/").absolutePath
+        file(rootProject.projectDir.absolutePath + "/scripts/").listFiles().each {
+            println it.getName()
+        }
+
     }
 
     def getVersionName = { ->
