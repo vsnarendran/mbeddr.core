@@ -61,7 +61,7 @@ subprojects {
         } else {
             gitBranch ='git rev-parse --abbrev-ref HEAD'.execute().in.text.trim().toString().replace("/","-")
         }
-        ext.mbeddrBuild = gitBranch + "-SNAPSHOT"
+        ext.mbeddrBuild = "HEAD" + "-SNAPSHOT"
 	}
     ext.mbeddrBuildNumber = mbeddrMajor + "." + mbeddrMinor + "-" + mbeddrBuild
 
@@ -205,7 +205,12 @@ subprojects {
         from {
             configurations.mbeddrTutorial.collect { zipTree(it) }
         }
-        into rootProject.projectDir.absolutePath + "/artifacts/"
+        into rootProject.projectDir.absolutePath + "/artifacts"
+    }
+
+    task unzipTutorial(type: Copy, dependsOn: resolveTutorial)  {
+        from zipTree(rootProject.projectDir.absolutePath + "/artifacts/" + "com.mbeddr.tutorial.zip")
+        into file(rootProject.projectDir.absolutePath + "/artifacts/" + "com.mbeddr.tutorial")
     }
 
     task resolve_mps(type: Copy, dependsOn: get_mps)  {
