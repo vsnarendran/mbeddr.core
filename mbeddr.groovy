@@ -150,7 +150,8 @@ def checkoutMbeddr() {
 		  branches: scm.branches,
 		  doGenerateSubmoduleConfigurations: scm.doGenerateSubmoduleConfigurations,
 		  extensions: scm.extensions + [
-				  [$class: 'CloneOption', noTags: false, reference: reference, shallow: false],
+				  [$class: 'CloneOption', noTags: false, reference: reference, shallow: false, timeout: 20],
+          [$class: 'CheckoutOption', timeout: 20],
 				  [$class: 'CleanBeforeCheckout']
 				  ],
 		  gitTool: 'Local_Git',
@@ -159,10 +160,10 @@ def checkoutMbeddr() {
 		])
 }
 
-def setupEnvironment() {
+  def setupEnvironment() {
 	def javaHome = tool(name: 'JDK 8')
 	def antHome = tool(name: 'Ant 1.9')
-    def gradleHome = tool 'Gradle 2.13'
+  def gradleHome = tool 'Gradle 2.13'
 	def customEnv = ["PATH+JDK=${javaHome}/bin", "PATH+ANT_HOME=${antHome}/bin", "ANT_HOME=${antHome}", "PATH+GRADLE_HOME=${gradleHome}/bin", "JAVA_HOME=${javaHome}"]
 	return customEnv
 }

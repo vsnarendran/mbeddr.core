@@ -10,7 +10,7 @@ def buildCBMC() {
                 node ('linux') {
                     checkoutCBMC()
                     checkoutMbeddr()
-                    
+
                     withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
                         usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']])
                     {
@@ -30,7 +30,7 @@ def buildCBMC() {
                 node ('windows') {
                     checkoutCBMC()
                     checkoutMbeddr()
-					
+
                     withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
                         usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']])
                     {
@@ -50,7 +50,7 @@ def buildCBMC() {
                 node ('mac') {
                     checkoutCBMC()
                     checkoutMbeddr()
-					
+
                     withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
                         usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']])
                     {
@@ -74,21 +74,22 @@ def buildCBMC() {
 def checkoutMbeddr() {
 	// Use a local reference git repo to speed up the checkout from GitHub
 	def reference = env.BSHARE
-  
+
 	if(isUnix()) {
 		reference += "/gitcaches/reference/mbeddr.core/"
 	} else {
 		reference = "${env.BASE}\\workspace\\mbeddr_Reference_Repo\\mbeddr.core\\"
 	}
-	
+
 	echo "Reference-Path: ${reference}"
-	
+
 	checkout([
 		  $class: 'GitSCM',
 		  branches: scm.branches,
 		  doGenerateSubmoduleConfigurations: scm.doGenerateSubmoduleConfigurations,
 		  extensions: scm.extensions + [
-				[$class: 'CloneOption', noTags: false, reference: reference, shallow: false],
+        [$class: 'CloneOption', noTags: false, reference: reference, shallow: false, timeout: 20],
+        [$class: 'CheckoutOption', timeout: 20],
 				[$class: 'RelativeTargetDirectory', relativeTargetDir: 'mbeddr.core'],
 				[$class: 'CleanBeforeCheckout']
 		  ],
@@ -97,7 +98,7 @@ def checkoutMbeddr() {
 		  userRemoteConfigs: scm.userRemoteConfigs
 		])
 }
-  
+
 def checkoutCBMC() {
 	checkout([$class: 'GitSCM',
 		branches: [[name: '163e999b07b7f0e007333396f0ffd6665a3d3949']],

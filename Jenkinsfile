@@ -148,7 +148,8 @@ def checkoutMbeddr() {
 		  branches: scm.branches,
 		  doGenerateSubmoduleConfigurations: scm.doGenerateSubmoduleConfigurations,
 		  extensions: scm.extensions + [
-				  [$class: 'CloneOption', noTags: false, reference: reference, shallow: false],
+					[$class: 'CloneOption', noTags: false, reference: reference, shallow: false, timeout: 20],
+          [$class: 'CheckoutOption', timeout: 20],
 				  [$class: 'CleanBeforeCheckout']],
 		  gitTool: 'Local_Git',
 		  submoduleCfg: [],
