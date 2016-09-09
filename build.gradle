@@ -194,6 +194,13 @@ subprojects {
         into rootProject.projectDir.absolutePath + "/scripts/"
     }
 
+    task resolveAllInOne(type: Copy)  {
+        from {
+            configurations.mbeddrAllInOne.collect { zipTree(it) }
+        }
+        into rootProject.projectDir.absolutePath + "/artifacts/"
+    }
+
     task resolve_mps(type: Copy, dependsOn: get_mps)  {
         from zipTree(rootProject.projectDir.absolutePath + "/MPS/" + "mps-"+mpsBuild+".zip")
         into file(rootProject.projectDir.absolutePath + "/MPS/" + mbeddrMpsDir+ "/")
