@@ -201,6 +201,13 @@ subprojects {
         into rootProject.projectDir.absolutePath + "/artifacts/"
     }
 
+    task resolveTutorial(type: Copy)  {
+        from {
+            configurations.mbeddrTutorial.collect { zipTree(it) }
+        }
+        into rootProject.projectDir.absolutePath + "/artifacts/"
+    }
+
     task resolve_mps(type: Copy, dependsOn: get_mps)  {
         from zipTree(rootProject.projectDir.absolutePath + "/MPS/" + "mps-"+mpsBuild+".zip")
         into file(rootProject.projectDir.absolutePath + "/MPS/" + mbeddrMpsDir+ "/")
@@ -388,7 +395,7 @@ project(':build:com.mbeddr.rcp') {
         //compile project(':build:com.mbeddr.allInOne')
         mps group: 'com.jetbrains', name: 'mps', version: mpsBuild
         mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuildNumber
-        //mbeddr group: 'com.mbeddr', name: 'build', version: mbeddrBuildNumber
+        mbeddrTutorial group: 'com.mbeddr', name: 'tutorial', version: mbeddrBuildNumber
         mbeddrAllInOne group: 'com.mbeddr', name: 'allInOne', version: mbeddrBuildNumber
     }
     publishing {
