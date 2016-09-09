@@ -140,7 +140,7 @@ subprojects {
         }
         mbeddrAllScripts {
             description = 'mbeddr build scripts'
-            resolutionStrategy {
+            /*resolutionStrategy {
                 componentSelection {
                     // Accept the highest version matching the requested version that isn't '1.5'
                     all { ComponentSelection selection ->
@@ -149,7 +149,7 @@ subprojects {
                         }
                     }
                 }
-            }
+            }*/
         }
         mbeddrAllInOne {
             description = 'mbeddr allInOne'
