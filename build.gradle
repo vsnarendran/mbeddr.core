@@ -207,6 +207,7 @@ subprojects {
         into rootProject.projectDir.absolutePath + "/scripts/"
 
         println "dir: "+ file(rootProject.projectDir.absolutePath + "/scripts/").absolutePath
+        println "files: " + file(rootProject.projectDir.absolutePath + "/scripts/").listFiles().length
         file(rootProject.projectDir.absolutePath + "/scripts/").listFiles().each {
             println it.getName()
         }
