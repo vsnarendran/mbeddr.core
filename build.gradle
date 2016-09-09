@@ -61,7 +61,7 @@ subprojects {
         } else {
             gitBranch ='git rev-parse --abbrev-ref HEAD'.execute().in.text.trim().toString().replace("/","-")
         }
-        ext.mbeddrBuild = "HEAD" + "-SNAPSHOT"
+        ext.mbeddrBuild = gitBranch + "-SNAPSHOT"
 	}
     ext.mbeddrBuildNumber = mbeddrMajor + "." + mbeddrMinor + "-" + mbeddrBuild
 
@@ -199,26 +199,11 @@ subprojects {
         into file(rootProject.projectDir.absolutePath + "/MPS/" + mbeddrMpsDir+ "/")
     }
 
-    tasks.create(name: 'copy_allScripts', type: Copy, dependsOn: ['resolve_mps', 'get_allScripts']) {
-
-
-        from zipTree(rootProject.projectDir.absolutePath + "/scripts/" + "allScripts" + "-"+mbeddrBuildNumber+".zip")
-        into file(rootProject.projectDir.absolutePath + "/scripts/" )
-
-
-
-//        from rootProject.projectDir.absolutePath + "/build"
-//        include "**/*//*.xml"
-//        from rootProject.projectDir.absolutePath + "/code/plugins"
-//        include "**/*//*.xml"
-//        into rootProject.projectDir.absolutePath + "/scripts/"
-//
-//        println "dir: "+ file(rootProject.projectDir.absolutePath + "/scripts/").absolutePath
-//        println "files: " + file(rootProject.projectDir.absolutePath + "/scripts/").listFiles().length
-//        file(rootProject.projectDir.absolutePath + "/scripts/").listFiles().each {
-//            println it.getName()
-//        }
-
+    tasks.create(name: 'copy_allScripts', type: Copy, dependsOn: ['resolve_mps']) {
+        from {
+            configurations.mbeddrAllScripts.collect { zipTree(it) }
+        }
+        into rootProject.projectDir.absolutePath + "/scripts/"
     }
 
     def getVersionName = { ->
