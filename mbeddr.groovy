@@ -27,12 +27,12 @@ def buildMbeddr() {
 
       echo "doNotPublish: ${doNotPublish}:${env.DO_NOT_PUBLISH}"
       if(doNotPublish==null) {
-  	    stage 'Publish Artifacts'
+  	    stage 'PackageArtifacts'
   	      step([$class: 'ArtifactArchiver', artifacts: 'artifacts/', fingerprint: true])
   	      step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
       }
 
-	    stage 'Package'
+	    stage 'Publish'
         	withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
                                 usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']])
 			{
