@@ -3,7 +3,7 @@ def script_build_mbeddrRCPDistribution = new File(scriptsBasePath + "/com.mbeddr
 def script_build_mbeddrJRE = new File(rootProject.projectDir.absolutePath + "/buildUtil/" + "build.xml")
 
 
-task build_mbeddrRCP(type: Exec, dependsOn: ['resolve_mps', 'resolveAllScripts', 'resolveAllInOne', 'unzipTutorial', 'build_allScripts']) {
+task build_mbeddrRCP(type: Exec, dependsOn: ['resolve_mps', 'resolveAllScripts', 'resolveAllInOne', 'unzipTutorial']) {
   workingDir rootProject.projectDir
   def args = buildProcSpawnArgList([*dependsOnMbeddr_scriptArgs, *(antScriptLocation(script_build_mbeddrRCPMPS)), *languages_targets])
   commandLine (args)
