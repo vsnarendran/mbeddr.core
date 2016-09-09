@@ -25,19 +25,21 @@ def buildMbeddr() {
 	        "linux": { runTests('linux')}
 	      )
 
-      echo "doNotPublish: ${doNotPublish}:${env.DO_NOT_PUBLISH}"
-      if(doNotPublish==null) {
-  	    stage 'PackageArtifacts'
-  	      step([$class: 'ArtifactArchiver', artifacts: 'artifacts/', fingerprint: true])
-  	      step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
+	    stage 'PackageArtifacts'
+	      step([$class: 'ArtifactArchiver', artifacts: 'artifacts/', fingerprint: true])
+	      step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
+
+      if((doNotPublish != null) && (!doNotPublish.isEmpty())) {
+        echo "Skipping stage 'Publish' because property 'DO_NOT_PUBLISH' is set."
+      } else {
+  	    stage 'Publish'
+          	withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
+                                  usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']])
+  			    {
+              	sh "./gradlew ${gradleOpts} -PnexusUsername=${env.nexusUsername} -PnexusPassword=${env.nexusPassword} -b build.gradle publishMbeddrPlatformPublicationToMavenRepository publishMbeddrTutorialPublicationToMavenRepository publishMbeddrAllInOnePublicationToMavenRepository publishMbeddrAllScriptsPublicationToMavenRepository"
+          	}
       }
 
-	    stage 'Publish'
-        	withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
-                                usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']])
-			{
-            	sh "./gradlew ${gradleOpts} -PnexusUsername=${env.nexusUsername} -PnexusPassword=${env.nexusPassword} -b build.gradle publishMbeddrPlatformPublicationToMavenRepository publishMbeddrTutorialPublicationToMavenRepository publishMbeddrAllInOnePublicationToMavenRepository publishMbeddrAllScriptsPublicationToMavenRepository"
-        	}
 	    stage 'Cleanup'
 	      deleteDir()
       }
