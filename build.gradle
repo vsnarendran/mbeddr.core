@@ -218,10 +218,18 @@ subprojects {
         into file(rootProject.projectDir.absolutePath + "/MPS/" + mbeddrMpsDir+ "/")
     }
 
-    tasks.create(name: 'copy_allScripts', type: Copy, dependsOn: ['resolve_mps']) {
+    tasks.create(name: 'resolveAllScripts', type: Copy, dependsOn: ['resolve_mps']) {
         from {
             configurations.mbeddrAllScripts.collect { zipTree(it) }
         }
+        into rootProject.projectDir.absolutePath + "/scripts/"
+    }
+
+    tasks.create(name: 'copy_allScripts', type: Copy, dependsOn: ['resolve_mps', 'get_allScripts']) {
+        from rootProject.projectDir.absolutePath + "/build"
+        include "*/*.xml"
+        from rootProject.projectDir.absolutePath + "/code/plugins"
+        include "*/*.xml"
         into rootProject.projectDir.absolutePath + "/scripts/"
     }
 
@@ -289,7 +297,7 @@ project(':build:com.mbeddr.allScripts') {
 project(':build:com.mbeddr.build') {
     dependencies {
         mps group: 'com.jetbrains', name: 'mps', version: mpsBuild
-        //mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: 'latest.snapshot'
+        mbeddrAllScripts group: 'com.mbeddr', name: 'allScripts', version: mbeddrBuildNumber
         //mbeddrAllScripts "com.mbeddr:allScripts:1.+"
         //, version: '1.0-feature-cbmcJenkins-SNAPSHOT'
         /*components {
