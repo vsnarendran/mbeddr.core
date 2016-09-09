@@ -5,8 +5,6 @@ def buildNightly() {
 		def customEnv = setupEnvironment()
 		withEnv(customEnv) {
 			// for now we generate them, later we resolve them from the nexus
-			stage 'Generate Build Scripts'
-				sh "./gradlew ${gradleOpts} -b build.gradle build_allScripts --stacktrace --debug"
 			stage 'Build RCP'
 				sh "./gradlew ${gradleOpts} -b build.gradle build_mbeddrRCPDistributuion --stacktrace --debug"
 			withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
