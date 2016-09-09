@@ -3,6 +3,7 @@ def buildMbeddr() {
   timestamps {
 	  def gradleOpts ='--no-daemon --info'
 	  def customEnv = setupEnvironment()
+    def doNotPublish = env.DO_NOT_PUBLISH
 
       withEnv(customEnv) {
 	    stage 'Generate Build Scripts'
@@ -24,9 +25,12 @@ def buildMbeddr() {
 	        "linux": { runTests('linux')}
 	      )
 
-	    stage 'Publish Artifacts'
-	      step([$class: 'ArtifactArchiver', artifacts: 'artifacts/', fingerprint: true])
-	      step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
+      echo "doNotPublish: ${doNotPublish}:${env.DO_NOT_PUBLISH}"
+      if(doNotPublish==null) {
+  	    stage 'Publish Artifacts'
+  	      step([$class: 'ArtifactArchiver', artifacts: 'artifacts/', fingerprint: true])
+  	      step([$class: 'ArtifactArchiver', artifacts: 'code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/source_gen/com/mbeddr/rcp/config/', fingerprint: true])
+      }
 
 	    stage 'Package'
         	withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
