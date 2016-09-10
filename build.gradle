@@ -466,6 +466,12 @@ project(':build:com.mbeddr.release') {
         }
         repositories {
             maven {
+                if(project.hasProperty('nexusUsername')) {
+                    credentials {
+                        username project.getProperty('nexusUsername')
+                        password project.getProperty('nexusPassword')
+                    }
+                }
                 url repository
             }
         }
