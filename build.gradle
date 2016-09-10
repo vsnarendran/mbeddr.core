@@ -455,13 +455,13 @@ project(':build:com.mbeddr.release') {
         cbmcLinux group: cbmc_groupId, name: cbmc_artifactId_linux, version: cbmc_version
         cbmcWin group: cbmc_groupId, name: cbmc_artifactId_win, version: cbmc_version
     }
-   /* publishing {
+    publishing {
         publications {
             mbeddrDmg(MavenPublication) {
                 groupId 'com.mbeddr'
                 artifactId 'dmg'
                 version mbeddrBuildNumber
-                artifact(publish_mbeddrDmg) {}
+                artifact(publish_mbeddr_dmg) {}
             }
         }
         repositories {
@@ -469,7 +469,7 @@ project(':build:com.mbeddr.release') {
                 url repository
             }
         }
-    }*/
+    }
 }
 
 project(':build:com.mbeddr.analyses.cbmc') {

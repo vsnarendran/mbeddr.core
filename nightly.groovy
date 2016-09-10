@@ -11,6 +11,7 @@ def buildNightly() {
 			withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci-jb',
 							  usernameVariable: 'jbServerUser', passwordVariable: 'jbServerPassword']]) {
 				sh "./gradlew ${gradleOpts} -PserverUser=${env.jbServerUser} -PserverPassword=${env.jbServerPassword} -b build.gradle  download_JRE --stacktrace --debug"
+				sh "./gradlew ${gradleOpts} -PserverUser=${env.jbServerUser} -PserverPassword=${env.jbServerPassword} -b build.gradle  publishMbeddrDmgPublicationToMavenRepository --stacktrace --debug"
 			}
 
 
