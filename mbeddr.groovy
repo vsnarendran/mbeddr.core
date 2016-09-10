@@ -102,8 +102,7 @@ def runTest(gradleTask) {
       } else {
         bat ".\\gradlew.bat ${gradleOpts} -b build.gradle ${gradleTask}"
       }
-
-      step([$class: 'JUnitResultArchiver', testResults: 'scripts/**/TEST-*.xml'])
+      step([$class: 'JUnitResultArchiver', testResults: '*/**/TEST-*.xml'])
     } catch(err) {
       echo "### There were test failures:\n${err}"
     }
