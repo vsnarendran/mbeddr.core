@@ -89,7 +89,7 @@ node {
 	  case isNightlyJob:
 	    echo "Running 'Nightly' target..."
 			stage 'Checkout'
-				node ('linux') {
+				node ('mac') {
 					// WORKAROUND to remove '%2F' from path names
 					ws(wsHome + jobName.replaceAll("%2F", "_")) {
 						checkoutMbeddr()
