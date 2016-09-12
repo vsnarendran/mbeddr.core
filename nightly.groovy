@@ -21,6 +21,22 @@ def buildNightly() {
 				sh "./gradlew ${gradleOpts} -PnexusUsername=${env.nexusUsername} -PnexusPassword=${env.nexusPassword} -b build.gradle  publishMbeddrDmgPublicationToMavenRepository --stacktrace --debug"
 			}
 
+			node('windows') {
+				stage 'Build RCP'
+					sh "./gradlew ${gradleOpts} -b build.gradle build_allScripts --stacktrace --debug"
+					sh "./gradlew ${gradleOpts} -b build.gradle build_mbeddrRCPDistributuion --stacktrace --debug"
+					withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci-jb',
+								  usernameVariable: 'jbServerUser', passwordVariable: 'jbServerPassword']]) {
+						sh "./gradlew ${gradleOpts} -PserverUser=${env.jbServerUser} -PserverPassword=${env.jbServerPassword} -b build.gradle  download_JRE --stacktrace --debug"
+					}
+				withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
+								  usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']]) {
+					sh "./gradlew ${gradleOpts} -PnexusUsername=${env.nexusUsername} -PnexusPassword=${env.nexusPassword} -b build.gradle  build_installer --stacktrace --debug"
+					sh "./gradlew ${gradleOpts} -PnexusUsername=${env.nexusUsername} -PnexusPassword=${env.nexusPassword} -b build.gradle  publishMbeddrInstallerPublicationToMavenRepository --stacktrace --debug"
+				}
+
+			}
+
 		}
 	}
 }

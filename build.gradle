@@ -178,6 +178,9 @@ subprojects {
         mbeddrTutorial {
             description = 'mbeddr tutorial'
         }
+        mbeddrInstaller {
+            description = 'mbeddr windows installer'
+        }
     }
 
 	task wrapper(type: Wrapper) {
@@ -462,6 +465,12 @@ project(':build:com.mbeddr.release') {
                 artifactId 'dmg'
                 version mbeddrBuildNumber
                 artifact(publish_mbeddr_dmg) {}
+            }
+            mbeddrInstaller(MavenPublication) {
+                groupId 'com.mbeddr'
+                artifactId 'installer'
+                version mbeddrBuildNumber
+                artifact(publish_installer) {}
             }
         }
         repositories {
