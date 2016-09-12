@@ -98,11 +98,26 @@ node {
 						if(nightlyLib == null) {
 							echo "Unable to load file 'nightly.groovy'!"
 						} else {
-							nightlyLib.buildNightly()
+							nightlyLib.buildDMG()
 						}
 
 						deleteDir()
 					}
+				}
+				node ('windows') {
+				    // WORKAROUND to remove '%2F' from path names
+                    ws(wsHome + jobName.replaceAll("%2F", "_")) {
+                        checkoutMbeddr()
+
+                    	def nightlyLib = load 'nightly.groovy'
+                    	if(nightlyLib == null) {
+                    		echo "Unable to load file 'nightly.groovy'!"
+                    	} else {
+                    		nightlyLib.buildInstaller()
+                    	}
+
+                    	deleteDir()
+                    }
 				}
 			break;
 
