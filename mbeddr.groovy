@@ -82,30 +82,42 @@ def getWorkspacePath() {
 }
 
 def runTest(gradleTask) {
-  def gradleOpts ='--no-daemon --info --continue --stacktrace'
-  def curDir = pwd()
+    def gradleOpts ='--no-daemon --info --continue --stacktrace'
+    def curDir = pwd()
 
-  // The tests need an own environment since they can run on different nodes/OS with diffenrent tool paths
-  def customEnv = setupEnvironment()
-  customEnv += ["PATH+CBMC_PATH=${curDir}/cbmc"]
-  withEnv(customEnv) {
-    //checkout scm
-    checkoutMbeddr()
-
-    unstash 'mps'
-    unstash 'build_scripts'
-    unstash 'build_mbeddr'
-
-    try {
-      if(isUnix()) {
-        sh "./gradlew ${gradleOpts} -b build.gradle ${gradleTask}"
-      } else {
-        bat ".\\gradlew.bat ${gradleOpts} -b build.gradle ${gradleTask}"
-      }
-      step([$class: 'JUnitResultArchiver', testResults: '*/**/TEST-*.xml'])
-    } catch(err) {
-      echo "### There were test failures:\n${err}"
+    // The tests need an own environment since they can run on different nodes/OS with diffenrent tool paths
+    def customEnv = setupEnvironment()
+    customEnv += ["PATH+CBMC_PATH=${curDir}/cbmc"]
+    withEnv(customEnv) {
+        //checkout scm
+        checkoutMbeddr()
+        try {
+            if(isUnix()) {
+                sh "./gradlew ${gradleOpts} -b build.gradle resolve_cbmc"
+            } else {
+                bat ".\\gradlew.bat ${gradleOpts} -b build.gradle resolve_cbmc"
+            }
+        } catch(err) {
+            echo "### There were test failures:\n${err}"
+        }
     }
+
+    withEnv(customEnv) {
+        //checkout scm
+        unstash 'mps'
+        unstash 'build_scripts'
+        unstash 'build_mbeddr'
+
+        try {
+          if(isUnix()) {
+            sh "./gradlew ${gradleOpts} -b build.gradle ${gradleTask}"
+          } else {
+            bat ".\\gradlew.bat ${gradleOpts} -b build.gradle ${gradleTask}"
+          }
+          step([$class: 'JUnitResultArchiver', testResults: '*/**/TEST-*.xml'])
+        } catch(err) {
+          echo "### There were test failures:\n${err}"
+        }
   }
 }
 
