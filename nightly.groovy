@@ -1,42 +1,45 @@
 def buildNightly() {
 	echo "Running 'Nightly' build..."
 	timestamps {
-		def gradleOpts ='--no-daemon --info'
+		def gradleOpts = '--no-daemon --info'
 		def customEnv = setupEnvironment()
 		withEnv(customEnv) {
 			// for now we generate them, later we resolve them from the nexus
 			stage 'Build RCP'
-				sh "./gradlew ${gradleOpts} -b build.gradle build_allScripts --stacktrace --debug"
-				sh "./gradlew ${gradleOpts} -b build.gradle build_mbeddrRCPDistributuion --stacktrace --debug"
+			sh "./gradlew ${gradleOpts} -b build.gradle build_allScripts --stacktrace --debug"
+			sh "./gradlew ${gradleOpts} -b build.gradle build_mbeddrRCPDistributuion --stacktrace --debug"
 
 
 
-			withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci-jb',
+			withCredentials([[$class          : 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci-jb',
 							  usernameVariable: 'jbServerUser', passwordVariable: 'jbServerPassword']]) {
 				sh "./gradlew ${gradleOpts} -PserverUser=${env.jbServerUser} -PserverPassword=${env.jbServerPassword} -b build.gradle  download_JRE --stacktrace --debug"
 			}
 
-			withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
+			withCredentials([[$class          : 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
 							  usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']]) {
 				sh "./gradlew ${gradleOpts} -PnexusUsername=${env.nexusUsername} -PnexusPassword=${env.nexusPassword} -b build.gradle  publishMbeddrDmgPublicationToMavenRepository --stacktrace --debug"
 			}
-
-			node('windows') {
+		}
+	}
+	timestamps {
+		node('windows') {
+			def gradleOpts ='--no-daemon --info'
+			def customEnv = setupEnvironment()
+			withEnv(customEnv) {
 				stage 'Build RCP'
-					bat ".\\gradlew.bat  ${gradleOpts} -b build.gradle build_allScripts --stacktrace --debug"
-					bat ".\\gradlew.bat  ${gradleOpts} -b build.gradle build_mbeddrRCPDistributuion --stacktrace --debug"
-					withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci-jb',
+				bat ".\\gradlew.bat  ${gradleOpts} -b build.gradle build_allScripts --stacktrace --debug"
+				bat ".\\gradlew.bat  ${gradleOpts} -b build.gradle build_mbeddrRCPDistributuion --stacktrace --debug"
+				withCredentials([[$class          : 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci-jb',
 								  usernameVariable: 'jbServerUser', passwordVariable: 'jbServerPassword']]) {
-						bat ".\\gradlew.bat  ${gradleOpts} -PserverUser=${env.jbServerUser} -PserverPassword=${env.jbServerPassword} -b build.gradle  download_JRE --stacktrace --debug"
-					}
-				withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
+					bat ".\\gradlew.bat  ${gradleOpts} -PserverUser=${env.jbServerUser} -PserverPassword=${env.jbServerPassword} -b build.gradle  download_JRE --stacktrace --debug"
+				}
+				withCredentials([[$class          : 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
 								  usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']]) {
 					bat ".\\gradlew.bat ${gradleOpts} -PnexusUsername=${env.nexusUsername} -PnexusPassword=${env.nexusPassword} -b build.gradle  build_installer --stacktrace --debug"
 					bat ".\\gradlew.bat ${gradleOpts} -PnexusUsername=${env.nexusUsername} -PnexusPassword=${env.nexusPassword} -b build.gradle  publishMbeddrInstallerPublicationToMavenRepository --stacktrace --debug"
 				}
-
 			}
-
 		}
 	}
 }
