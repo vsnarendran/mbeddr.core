@@ -21,7 +21,7 @@ def buildDMG() {
 			}
 
 			stash includes: 'buildutil/**/*', name: 'jre'
-			stash includes: '/artifacts/mpsDistribution/**/*', name: 'rcp'
+			stash includes: 'artifacts/mpsDistribution/**/*', name: 'rcp'
 		}
 	}
 }
