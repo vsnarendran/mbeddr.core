@@ -50,21 +50,21 @@ def runTests(nodeLabel) {
   parallel (
       "tests ${nodeLabel} 1" : {
           node (nodeLabel) {
-              runTest("test_mbeddr_core")
-              runTest("test_mbeddr_platform")
-              runTest("test_mbeddr_performance")
+            runTest("test_mbeddr_core")
+            runTest("test_mbeddr_ext")
           }
       },
       "tests ${nodeLabel} 2" : {
           node (nodeLabel) {
-              runTest("test_mbeddr_analysis")
+            runTest("test_mbeddr_analysis")
+            runTest("test_mbeddr_tutorial")
           }
       },
       "tests ${nodeLabel} 3" : {
           node (nodeLabel) {
-              runTest("test_mbeddr_tutorial")
-              runTest("test_mbeddr_ext")
-              runTest("test_mbeddr_cc")
+            runTest("test_mbeddr_platform")
+            runTest("test_mbeddr_performance")
+            runTest("test_mbeddr_cc")
           }
       }
   )
