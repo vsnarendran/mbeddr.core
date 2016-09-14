@@ -39,9 +39,7 @@ task copy_cbmc(type: Copy) {
 }
 
 task unzip_nsis(type: Copy) {
-    from(zipTree(rootProject.projectDir.absolutePath + "/NSIS/")) {
-        include 'NSIS.zip'
-    }
+    from(zipTree(rootProject.projectDir.absolutePath + "/NSIS/NSIS.zip")) { }
     into rootProject.projectDir.absolutePath + "/NSIS/"
 }
 
