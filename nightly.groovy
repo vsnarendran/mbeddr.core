@@ -20,6 +20,10 @@ def buildDMG() {
 				sh "./gradlew ${gradleOpts} -PnexusUsername=${env.nexusUsername} -PnexusPassword=${env.nexusPassword} -b build.gradle  publishMbeddrDmgPublicationToMavenRepository --stacktrace --debug"
 			}
 
+			def curDir = pwd()
+			echo "dir: " + curDir
+
+
 			stash includes: 'buildutil/**/*', name: 'jre'
 			stash includes: 'artifacts/mpsDistribution/**/*', name: 'rcp'
 		}
