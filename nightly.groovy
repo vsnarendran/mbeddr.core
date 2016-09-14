@@ -24,7 +24,7 @@ def buildDMG() {
 			echo "dir: " + curDir
 
 
-			stash includes: 'buildutil/**/*', name: 'jre'
+			stash includes: 'buildUtil/**/*', name: 'jre'
 			stash includes: 'artifacts/mpsDistribution/**/*', name: 'rcp'
 		}
 	}
