@@ -38,7 +38,14 @@ task copy_cbmc(type: Copy) {
     // cbmc-win.zip!**=>%teamcity.build.checkoutDir%/files/3rd-party/cbmc
 }
 
-task build_installer(type: Exec, dependsOn: ['copy_jdk', 'copy_rcp']) {
+task unzip_nsis(type: Copy) {
+    from(zipTree(rootProject.projectDir.absolutePath + "/NSIS/")) {
+        include 'NSIS.zip'
+    }
+    into rootProject.projectDir.absolutePath + "/NSIS/"
+}
+
+task build_installer(type: Exec, dependsOn: ['copy_jdk', 'copy_rcp', 'unzip_nsis']) {
     workingDir rootProject.projectDir.absolutePath
     def args = buildProcSpawnArgList([script_build_installer])
     commandLine (args)
