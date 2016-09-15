@@ -19,23 +19,29 @@ task publish_mbeddr_dmg(type: Zip, dependsOn: package_dmg) {
 }
 
 task copy_jdk(type: Copy) {
-    from rootProject.projectDir.absolutePath + "/buildUtil"
-    include "jdk.zip"
-    include "jdk..tar.gz"
+    from {
+        zipTree(rootProject.projectDir.absolutePath + "/buildUtil/" + "jdk.zip")
+    }
     into rootProject.projectDir.absolutePath + "/files/mbeddr/"
 }
 
 task copy_rcp(type: Copy) {
-    from rootProject.projectDir.absolutePath + "/artifacts/mpsDistribution"
-    include "*.zip"
-    into rootProject.projectDir.absolutePath + "/files/mbeddr/"
+    from {
+        zipTree(rootProject.projectDir.absolutePath + "/artifacts/mpsDistribution/" + "mbeddr-win.zip")
+    }
+    into rootProject.projectDir.absolutePath + "/files/"
 }
 
-task copy_cbmc(type: Copy) {
-    from rootProject.projectDir.absolutePath + "/artifacts/mpsDistribution"
-    include "*.zip"
-    into rootProject.projectDir.absolutePath + "/files/mbeddr/"
-    // cbmc-win.zip!**=>%teamcity.build.checkoutDir%/files/3rd-party/cbmc
+task resolve_cbmcWinForInstaller(type: Copy)  {
+    from {
+        configurations.cbmcWin.collect { zipTree(it) }
+    }
+    into rootProject.projectDir.absolutePath + "/artifacts/cbmc"
+}
+
+task unzip_cbmcWinZipForInstaller(type: Copy, dependsOn: resolve_cbmcWinForInstaller)  {
+    from zipTree(rootProject.projectDir.absolutePath + "/artifacts/cbmc"+ "cbmc-win.zip")
+    into file(rootProject.projectDir.absolutePath + "/files/3rd-party/cbmc")
 }
 
 task unzip_nsis(type: Copy) {
@@ -43,9 +49,9 @@ task unzip_nsis(type: Copy) {
     into rootProject.projectDir.absolutePath + "/NSIS/"
 }
 
-task build_installer(type: Exec, dependsOn: ['copy_jdk', 'copy_rcp', 'unzip_nsis']) {
+task build_installer(type: Exec, dependsOn: ['copy_jdk', 'copy_rcp', 'unzip_nsis', 'unzip_cbmcWinZipForInstaller']) {
     workingDir rootProject.projectDir.absolutePath
-    commandLine ['cmd', '/C', 'start', 'bat', 'NSIS/makensis.exe', 'mbeddr.nsi']
+    commandLine 'cmd', '/C', 'start', 'bat', 'NSIS\\NSIS\\makensis.exe', 'mbeddr.nsi'
 }
 
 task publish_installer(type: Zip, dependsOn: build_installer) {
