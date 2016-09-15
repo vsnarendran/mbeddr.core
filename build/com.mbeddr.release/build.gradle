@@ -51,7 +51,7 @@ task unzip_nsis(type: Copy) {
 
 task build_installer(type: Exec, dependsOn: ['copy_jdk', 'copy_rcp', 'unzip_nsis', 'unzip_cbmcWinZipForInstaller']) {
     workingDir rootProject.projectDir.absolutePath
-    commandLine 'cmd', '/C', 'start', 'bat', 'NSIS\\NSIS\\makensis.exe', 'mbeddr.nsi'
+    commandLine 'cmd', '/C', 'start', 'NSIS\\NSIS\\makensis.exe', 'mbeddr.nsi'
 }
 
 task publish_installer(type: Zip, dependsOn: build_installer) {
