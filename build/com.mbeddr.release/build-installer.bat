@@ -1,1 +1,1 @@
-NSIS/NSIS/makensis.exe mbeddr.nsi
+NSIS\makensis.exe mbeddr.nsi
