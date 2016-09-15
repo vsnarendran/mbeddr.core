@@ -40,7 +40,7 @@ task resolve_cbmcWinForInstaller(type: Copy)  {
 }
 
 task unzip_cbmcWinZipForInstaller(type: Copy, dependsOn: resolve_cbmcWinForInstaller)  {
-    from zipTree(rootProject.projectDir.absolutePath + "/artifacts/cbmc"+ "cbmc-win.zip")
+    from zipTree(rootProject.projectDir.absolutePath + "/artifacts/cbmc/"+ "cbmc-win.zip")
     into file(rootProject.projectDir.absolutePath + "/files/3rd-party/cbmc")
 }
 
