@@ -45,8 +45,7 @@ task unzip_nsis(type: Copy) {
 
 task build_installer(type: Exec, dependsOn: ['copy_jdk', 'copy_rcp', 'unzip_nsis']) {
     workingDir rootProject.projectDir.absolutePath
-    def args = buildProcSpawnArgList([script_build_installer])
-    commandLine (args)
+    commandLine ['cmd', '/C', 'start', 'bat', 'NSIS/makensis.exe', 'mbeddr.nsi']
 }
 
 task publish_installer(type: Zip, dependsOn: build_installer) {
