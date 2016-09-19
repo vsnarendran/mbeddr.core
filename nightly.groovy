@@ -43,6 +43,7 @@ def buildInstaller() {
 
 			withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'mbeddr-ci',
 							  usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']]) {
+				bat "dir"
 				// we copy the graphviz installation from the agent and package that into the installer
 				bat  "xcopy %GRAPHVIZ_HOME%\\* build\\com.mbeddr.release\\files\\3rd-party\\graphviz\\graphviz-2.38 /s /i"
 				bat ".\\gradlew.bat ${gradleOpts} -PnexusUsername=${env.nexusUsername} -PnexusPassword=${env.nexusPassword} -b build.gradle  build_installer --stacktrace --debug"
