@@ -22,14 +22,14 @@ task copy_jdk(type: Copy) {
     from {
         zipTree(rootProject.projectDir.absolutePath + "/buildUtil/" + "jdk.zip")
     }
-    into rootProject.projectDir.absolutePath + "/files/mbeddr/"
+    into rootProject.projectDir.absolutePath + "/build/com.mbeddr.release/files/mbeddr/"
 }
 
 task copy_rcp(type: Copy) {
     from {
         zipTree(rootProject.projectDir.absolutePath + "/artifacts/mpsDistribution/" + "mbeddr-win.zip")
     }
-    into rootProject.projectDir.absolutePath + "/files/"
+    into rootProject.projectDir.absolutePath + "/build/com.mbeddr.release/files/mbeddr/"
 }
 
 task resolve_cbmcWinForInstaller(type: Copy)  {
@@ -41,20 +41,20 @@ task resolve_cbmcWinForInstaller(type: Copy)  {
 
 task unzip_cbmcWinZipForInstaller(type: Copy, dependsOn: resolve_cbmcWinForInstaller)  {
     from zipTree(rootProject.projectDir.absolutePath + "/artifacts/cbmc/"+ "cbmc-win.zip")
-    into file(rootProject.projectDir.absolutePath + "/files/3rd-party/cbmc")
+    into file(rootProject.projectDir.absolutePath + "/build/com.mbeddr.release/files/3rd-party/cbmc")
 }
 
 task unzip_nsis(type: Copy) {
     from(zipTree(rootProject.projectDir.absolutePath + "/NSIS/NSIS.zip")) { }
-    into rootProject.projectDir.absolutePath + "/NSIS/"
+    into rootProject.projectDir.absolutePath + "/build/com.mbeddr.release/NSIS/"
 }
 
 task build_installer(type: Exec, dependsOn: ['copy_jdk', 'copy_rcp', 'unzip_nsis', 'unzip_cbmcWinZipForInstaller']) {
-    workingDir rootProject.projectDir.absolutePath
+    workingDir rootProject.projectDir.absolutePath + "/build/com.mbeddr.release"
     commandLine 'cmd', '/C', 'start', 'NSIS\\NSIS\\makensis.exe', 'mbeddr.nsi'
 }
 
 task publish_installer(type: Zip, dependsOn: build_installer) {
-    from rootProject.projectDir.absolutePath
+    from rootProject.projectDir.absolutePath + "/build/com.mbeddr.release/"
     include "*.exe"
 }
