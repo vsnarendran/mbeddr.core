@@ -48,6 +48,7 @@ def buildInstaller() {
 				bat ".\\gradlew.bat ${gradleOpts} -PnexusUsername=${env.nexusUsername} -PnexusPassword=${env.nexusPassword} -b build.gradle  build_installer --stacktrace --debug"
 				// logging to stdout what is in the main directory
 				bat "dir"
+				bat "dir build\\com.mbeddr.release"
 				bat ".\\gradlew.bat ${gradleOpts} -PnexusUsername=${env.nexusUsername} -PnexusPassword=${env.nexusPassword} -b build.gradle  publishMbeddrInstallerPublicationToMavenRepository --stacktrace --debug"
 			}
 		}
