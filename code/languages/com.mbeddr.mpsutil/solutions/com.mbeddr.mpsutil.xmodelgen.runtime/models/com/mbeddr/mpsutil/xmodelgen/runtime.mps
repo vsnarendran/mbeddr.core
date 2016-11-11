@@ -3788,6 +3788,20 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="ZEdTfbGscs" role="3cqZAp">
+          <node concept="2OqwBi" id="ZEdTfbGslY" role="3clFbG">
+            <node concept="2YIFZM" id="ZEdTfbGsdy" role="2Oq$k0">
+              <ref role="37wK5l" to="w1kc:~ModuleRepositoryFacade.getInstance():jetbrains.mps.smodel.ModuleRepositoryFacade" resolve="getInstance" />
+              <ref role="1Pybhc" to="w1kc:~ModuleRepositoryFacade" resolve="ModuleRepositoryFacade" />
+            </node>
+            <node concept="liA8E" id="ZEdTfbGs_X" role="2OqNvi">
+              <ref role="37wK5l" to="w1kc:~ModuleRepositoryFacade.unregisterModules(jetbrains.mps.smodel.MPSModuleOwner):void" resolve="unregisterModules" />
+              <node concept="37vLTw" id="ZEdTfbGsIx" role="37wK5m">
+                <ref role="3cqZAo" node="Uu7NyQ$0x4" resolve="myModulesOwner" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="Uu7NyQ$5yS" role="jymVt" />
