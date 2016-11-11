@@ -271,6 +271,7 @@
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
+      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
@@ -564,8 +565,19 @@
               </node>
             </node>
           </node>
-          <node concept="37vLTw" id="Uu7NyQX9CI" role="3clFbw">
-            <ref role="3cqZAo" node="Uu7NyQX7N4" resolve="update" />
+          <node concept="22lmx$" id="7IURPNMJu5H" role="3clFbw">
+            <node concept="2OqwBi" id="7IURPNMJw0p" role="3uHU7w">
+              <node concept="2OqwBi" id="7IURPNMJuEY" role="2Oq$k0">
+                <node concept="37vLTw" id="7IURPNMJurv" role="2Oq$k0">
+                  <ref role="3cqZAo" node="Uu7NyQX3X7" resolve="targetModel" />
+                </node>
+                <node concept="2RRcyG" id="7IURPNMJuOe" role="2OqNvi" />
+              </node>
+              <node concept="1v1jN8" id="7IURPNMJxvm" role="2OqNvi" />
+            </node>
+            <node concept="37vLTw" id="Uu7NyQX9CI" role="3uHU7B">
+              <ref role="3cqZAo" node="Uu7NyQX7N4" resolve="update" />
+            </node>
           </node>
         </node>
         <node concept="3clFbH" id="Uu7NyQX3Xf" role="3cqZAp" />
@@ -2426,23 +2438,61 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="YS87L2TCBZ" role="3cqZAp">
-          <node concept="2OqwBi" id="YS87L2TDcy" role="3clFbG">
-            <node concept="2YIFZM" id="YS87L2TCKM" role="2Oq$k0">
+        <node concept="3cpWs8" id="7IURPNMK14y" role="3cqZAp">
+          <node concept="3cpWsn" id="7IURPNMK14z" role="3cpWs9">
+            <property role="TrG5h" value="modelToGenerateInternal" />
+            <node concept="3uibUv" id="7IURPNMK14v" role="1tU5fm">
+              <ref role="3uigEE" to="w1kc:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2YIFZM" id="7IURPNMK14$" role="33vP2m">
               <ref role="37wK5l" node="YS87L2T$YQ" resolve="toSModelInternal" />
               <ref role="1Pybhc" node="7$rw71zcVom" resolve="ProxyLanguages" />
-              <node concept="37vLTw" id="YS87L2TCZE" role="37wK5m">
+              <node concept="37vLTw" id="7IURPNMK14_" role="37wK5m">
                 <ref role="3cqZAo" node="Uu7NyQZEqO" resolve="modelToGenerate" />
               </node>
             </node>
-            <node concept="liA8E" id="YS87L2TDtp" role="2OqNvi">
-              <ref role="37wK5l" to="w1kc:~SModel.addDevKit(org.jetbrains.mps.openapi.module.SModuleReference):void" resolve="addDevKit" />
-              <node concept="2OqwBi" id="YS87L2TE3_" role="37wK5m">
-                <node concept="37vLTw" id="YS87L2TD$G" role="2Oq$k0">
-                  <ref role="3cqZAo" node="Uu7NyQZF$L" resolve="devkit" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7IURPNMKGJ7" role="3cqZAp">
+          <node concept="3clFbS" id="7IURPNMKGJ9" role="3clFbx">
+            <node concept="3clFbF" id="YS87L2TCBZ" role="3cqZAp">
+              <node concept="2OqwBi" id="YS87L2TDcy" role="3clFbG">
+                <node concept="37vLTw" id="7IURPNMK14A" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7IURPNMK14z" resolve="modelToGenerateInternal" />
                 </node>
-                <node concept="liA8E" id="YS87L2TEN$" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleReference():org.jetbrains.mps.openapi.module.SModuleReference" resolve="getModuleReference" />
+                <node concept="liA8E" id="YS87L2TDtp" role="2OqNvi">
+                  <ref role="37wK5l" to="w1kc:~SModel.addDevKit(org.jetbrains.mps.openapi.module.SModuleReference):void" resolve="addDevKit" />
+                  <node concept="2OqwBi" id="YS87L2TE3_" role="37wK5m">
+                    <node concept="37vLTw" id="YS87L2TD$G" role="2Oq$k0">
+                      <ref role="3cqZAo" node="Uu7NyQZF$L" resolve="devkit" />
+                    </node>
+                    <node concept="liA8E" id="YS87L2TEN$" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleReference():org.jetbrains.mps.openapi.module.SModuleReference" resolve="getModuleReference" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="7IURPNMKK0l" role="3clFbw">
+            <node concept="2OqwBi" id="7IURPNMKK0n" role="3fr31v">
+              <node concept="2OqwBi" id="7IURPNMKK0o" role="2Oq$k0">
+                <node concept="37vLTw" id="7IURPNMKK0p" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7IURPNMK14z" resolve="modelToGenerateInternal" />
+                </node>
+                <node concept="liA8E" id="7IURPNMKK0q" role="2OqNvi">
+                  <ref role="37wK5l" to="w1kc:~SModel.importedDevkits():java.util.List" resolve="importedDevkits" />
+                </node>
+              </node>
+              <node concept="liA8E" id="7IURPNMKK0r" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~List.contains(java.lang.Object):boolean" resolve="contains" />
+                <node concept="2OqwBi" id="7IURPNMKK0s" role="37wK5m">
+                  <node concept="37vLTw" id="7IURPNMKK0t" role="2Oq$k0">
+                    <ref role="3cqZAo" node="Uu7NyQZF$L" resolve="devkit" />
+                  </node>
+                  <node concept="liA8E" id="7IURPNMKK0u" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleReference():org.jetbrains.mps.openapi.module.SModuleReference" resolve="getModuleReference" />
+                  </node>
                 </node>
               </node>
             </node>
