@@ -146,10 +146,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1226359078165" name="jetbrains.mps.lang.smodel.structure.LinkRefExpression" flags="nn" index="28GBK8">
-        <reference id="1226359078166" name="conceptDeclaration" index="28GBKb" />
-        <reference id="1226359192215" name="linkDeclaration" index="28H3Ia" />
-      </concept>
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -169,6 +165,10 @@
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
+        <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
+        <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
+      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -269,7 +269,6 @@
         <node concept="3clFbH" id="5IpIYYkrQvz" role="3cqZAp" />
         <node concept="3clFbJ" id="5IpIYYksg5r" role="3cqZAp">
           <node concept="3clFbS" id="5IpIYYksg5u" role="3clFbx">
-            <node concept="3clFbH" id="5IpIYYkuiSf" role="3cqZAp" />
             <node concept="3cpWs6" id="5IpIYYku1tC" role="3cqZAp">
               <node concept="2ShNRf" id="5IpIYYku1tE" role="3cqZAk">
                 <node concept="YeOm9" id="5IpIYYku1tF" role="2ShVmc">
@@ -341,9 +340,9 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="28GBK8" id="5IpIYYku1tT" role="37wK5m">
-                      <ref role="28GBKb" to="3ior:4RPz6WoY4Cj" resolve="BuildProject" />
-                      <ref role="28H3Ia" to="3ior:4RPz6WoY4Cy" resolve="macros" />
+                    <node concept="359W_D" id="3TDeApb91s7" role="37wK5m">
+                      <ref role="359W_E" to="3ior:4RPz6WoY4Cj" resolve="BuildProject" />
+                      <ref role="359W_F" to="3ior:4RPz6WoY4Cy" resolve="macros" />
                     </node>
                   </node>
                 </node>

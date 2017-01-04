@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:e2229c32-318c-4bf1-bf36-b0001487f520(com.mbeddr.mpsutil.lantest.assertions.sandbox.smodel_assertions)">
+<model ref="r:e2229c32-318c-4bf1-bf36-b0001487f520(com.mbeddr.mpsutil.lantest.assertions.sandbox.smodel_assertions)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="ccdc24b1-37a8-44ac-8a87-b53bd9c96407" name="com.mbeddr.mpsutil.lantest.assertions" version="0" />
