@@ -9778,7 +9778,7 @@
         <property role="TrG5h" value="com.mbeddr.core.base.pluginSolution" />
         <property role="2GAjPV" value="false" />
         <node concept="398BVA" id="$bJ0jguQd$" role="3LF7KH">
-          <ref role="398BVh" node="$bJ0jguQbM" resolve="mbeddr.core" />
+          <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
           <node concept="2Ry0Ak" id="$bJ0jguQd_" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
             <node concept="2Ry0Ak" id="$bJ0jguQdA" role="2Ry0An">
@@ -9904,7 +9904,7 @@
         <property role="TrG5h" value="com.mbeddr.core.base" />
         <property role="2GAjPV" value="false" />
         <node concept="398BVA" id="$bJ0jguQft" role="3LF7KH">
-          <ref role="398BVh" node="$bJ0jguQbM" resolve="mbeddr.core" />
+          <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
           <node concept="2Ry0Ak" id="$bJ0jguQfu" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
             <node concept="2Ry0Ak" id="$bJ0jguQfv" role="2Ry0An">

@@ -2,8 +2,12 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.core/languages/com.mbeddr.core.base/base.mpl" folder="core.base" />
+      <modulePath path="$mbeddr.github.core.home$/code/languages/com.mbeddr.core/languages/com.mbeddr.core.base/solutions/pluginSolution/pluginSolution.msd" folder="core.base" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.commenting.devkit" folder="staging.margincell_review" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.mpsutil.guides/com.mbeddr.mpsutil.guides.devkit" folder="staging.editingGuide" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.base/base.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.base/solutions/pluginSolution/pluginSolution.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.actionsfilter/com.mbeddr.mpsutil.actionsfilter.mpl" folder="staging.actionsfilter" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.bldoc/com.mbeddr.mpsutil.bldoc.mpl" folder="rest" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.blutil/blutil.mpl" folder="staging.blutil" />
