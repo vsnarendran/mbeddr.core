@@ -12854,6 +12854,30 @@
       <node concept="3Tm6S6" id="2BjZSlQCub8" role="1B3o_S" />
       <node concept="10P55v" id="2BjZSlQCuJM" role="1tU5fm" />
     </node>
+    <node concept="2tJIrI" id="1jxh3h7K$L6" role="jymVt" />
+    <node concept="312cEg" id="1jxh3h7KT1y" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="myPortWidth" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="1jxh3h7KRNt" role="1B3o_S" />
+      <node concept="10P55v" id="1jxh3h7KSZz" role="1tU5fm" />
+      <node concept="37vLTw" id="1jxh3h7KUEd" role="33vP2m">
+        <ref role="3cqZAo" node="7TThwQl_KPl" resolve="DEFAULT_PORT_WIDTH" />
+      </node>
+    </node>
+    <node concept="312cEg" id="1jxh3h7KUYb" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="myPortHeight" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="1jxh3h7KUYc" role="1B3o_S" />
+      <node concept="10P55v" id="1jxh3h7KUYd" role="1tU5fm" />
+      <node concept="37vLTw" id="1jxh3h7KWHu" role="33vP2m">
+        <ref role="3cqZAo" node="7TThwQl_N6n" resolve="DEFAULT_PORT_HEIGHT" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1jxh3h7KUGw" role="jymVt" />
     <node concept="2tJIrI" id="1FlH1cK9i10" role="jymVt" />
     <node concept="312cEg" id="6PI4N6JwWm8" role="jymVt">
       <property role="TrG5h" value="myTooltipCell" />
@@ -13596,14 +13620,90 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3FRjz$vK0i8" role="jymVt" />
+    <node concept="3clFb_" id="1jxh3h7KYEN" role="jymVt">
+      <property role="TrG5h" value="setWidth" />
+      <node concept="37vLTG" id="1jxh3h7L33A" role="3clF46">
+        <property role="TrG5h" value="width" />
+        <node concept="3uibUv" id="1jxh3h7L45r" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Double" resolve="Double" />
+        </node>
+        <node concept="2AHcQZ" id="1jxh3h7L33C" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+        </node>
+      </node>
+      <node concept="10P55v" id="1jxh3h7KYEO" role="3clF45" />
+      <node concept="3Tm1VV" id="1jxh3h7KYEP" role="1B3o_S" />
+      <node concept="3clFbS" id="1jxh3h7KYEQ" role="3clF47">
+        <node concept="3clFbF" id="1jxh3h7KYER" role="3cqZAp">
+          <node concept="37vLTI" id="1jxh3h7L6WU" role="3clFbG">
+            <node concept="3K4zz7" id="1jxh3h7L9Ec" role="37vLTx">
+              <node concept="37vLTw" id="1jxh3h7LafM" role="3K4E3e">
+                <ref role="3cqZAo" node="7TThwQl_KPl" resolve="DEFAULT_PORT_WIDTH" />
+              </node>
+              <node concept="37vLTw" id="1jxh3h7LaR8" role="3K4GZi">
+                <ref role="3cqZAo" node="1jxh3h7L33A" resolve="width" />
+              </node>
+              <node concept="3clFbC" id="1jxh3h7L8mq" role="3K4Cdx">
+                <node concept="10Nm6u" id="1jxh3h7L8Md" role="3uHU7w" />
+                <node concept="37vLTw" id="1jxh3h7L7C9" role="3uHU7B">
+                  <ref role="3cqZAo" node="1jxh3h7L33A" resolve="width" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="1jxh3h7KYES" role="37vLTJ">
+              <ref role="3cqZAo" node="1jxh3h7KT1y" resolve="myPortWidth" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1jxh3h7KYET" role="jymVt" />
+    <node concept="3clFb_" id="1jxh3h7KYEU" role="jymVt">
+      <property role="TrG5h" value="setHeight" />
+      <node concept="37vLTG" id="1jxh3h7L475" role="3clF46">
+        <property role="TrG5h" value="height" />
+        <node concept="3uibUv" id="1jxh3h7L476" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Double" resolve="Double" />
+        </node>
+        <node concept="2AHcQZ" id="1jxh3h7L477" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+        </node>
+      </node>
+      <node concept="10P55v" id="1jxh3h7KYEV" role="3clF45" />
+      <node concept="3Tm1VV" id="1jxh3h7KYEW" role="1B3o_S" />
+      <node concept="3clFbS" id="1jxh3h7KYEX" role="3clF47">
+        <node concept="3clFbF" id="1jxh3h7KYEY" role="3cqZAp">
+          <node concept="37vLTI" id="1jxh3h7LcJK" role="3clFbG">
+            <node concept="37vLTw" id="1jxh3h7KYEZ" role="37vLTJ">
+              <ref role="3cqZAo" node="1jxh3h7KUYb" resolve="myPortHeight" />
+            </node>
+            <node concept="3K4zz7" id="1jxh3h7Ld62" role="37vLTx">
+              <node concept="37vLTw" id="1jxh3h7LeGa" role="3K4E3e">
+                <ref role="3cqZAo" node="7TThwQl_N6n" resolve="DEFAULT_PORT_HEIGHT" />
+              </node>
+              <node concept="37vLTw" id="1jxh3h7Le3K" role="3K4GZi">
+                <ref role="3cqZAo" node="1jxh3h7L475" resolve="height" />
+              </node>
+              <node concept="3clFbC" id="1jxh3h7Ld64" role="3K4Cdx">
+                <node concept="10Nm6u" id="1jxh3h7Ld65" role="3uHU7w" />
+                <node concept="37vLTw" id="1jxh3h7LdLV" role="3uHU7B">
+                  <ref role="3cqZAo" node="1jxh3h7L475" resolve="height" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1jxh3h7KZNE" role="jymVt" />
     <node concept="3clFb_" id="5NCN5Pnk07K" role="jymVt">
       <property role="TrG5h" value="getWidth" />
       <node concept="10P55v" id="5NCN5Pnk0FZ" role="3clF45" />
       <node concept="3Tm1VV" id="5NCN5Pnk07N" role="1B3o_S" />
       <node concept="3clFbS" id="5NCN5Pnk07O" role="3clF47">
         <node concept="3clFbF" id="5NCN5Pnk6hL" role="3cqZAp">
-          <node concept="37vLTw" id="5NCN5Pnk6hK" role="3clFbG">
-            <ref role="3cqZAo" node="7TThwQl_KPl" resolve="DEFAULT_PORT_WIDTH" />
+          <node concept="37vLTw" id="1jxh3h7KXMM" role="3clFbG">
+            <ref role="3cqZAo" node="1jxh3h7KT1y" resolve="myPortWidth" />
           </node>
         </node>
       </node>
@@ -13615,8 +13715,8 @@
       <node concept="3Tm1VV" id="5NCN5Pnk34w" role="1B3o_S" />
       <node concept="3clFbS" id="5NCN5Pnk34x" role="3clF47">
         <node concept="3clFbF" id="5NCN5Pnk6on" role="3cqZAp">
-          <node concept="37vLTw" id="5NCN5Pnk6om" role="3clFbG">
-            <ref role="3cqZAo" node="7TThwQl_N6n" resolve="DEFAULT_PORT_HEIGHT" />
+          <node concept="37vLTw" id="1jxh3h7KYtF" role="3clFbG">
+            <ref role="3cqZAo" node="1jxh3h7KUYb" resolve="myPortHeight" />
           </node>
         </node>
       </node>

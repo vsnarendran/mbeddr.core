@@ -1018,7 +1018,7 @@
               <property role="3F0ifm" value="drop handler" />
             </node>
             <node concept="3F1sOY" id="7tKD69sB36h" role="3EZMnx">
-              <ref role="1NtTu8" to="2qld:7tKD69sB2MP" />
+              <ref role="1NtTu8" to="2qld:7tKD69sB2MP" resolve="dropHandler" />
               <node concept="VPXOz" id="7tKD69sCxep" role="3F10Kt">
                 <property role="VOm3f" value="true" />
               </node>
@@ -2592,7 +2592,7 @@
             <property role="3F0ifm" value="drop handler" />
           </node>
           <node concept="3F1sOY" id="7tKD69sBkx_" role="3EZMnx">
-            <ref role="1NtTu8" to="2qld:7tKD69sBkpf" />
+            <ref role="1NtTu8" to="2qld:7tKD69sBkpf" resolve="dropHandler" />
             <node concept="VPXOz" id="7tKD69sCxfY" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
@@ -3261,6 +3261,38 @@
               <property role="VOm3f" value="false" />
             </node>
             <node concept="2iRfu4" id="5FQFTBpWGAy" role="2iSdaV" />
+          </node>
+          <node concept="3EZMnI" id="1jxh3h7NO2$" role="3EZMnx">
+            <node concept="VPM3Z" id="1jxh3h7NO2_" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+            <node concept="3F0ifn" id="1jxh3h7NO2A" role="3EZMnx">
+              <property role="3F0ifm" value="width" />
+            </node>
+            <node concept="3F1sOY" id="1jxh3h7NO2B" role="3EZMnx">
+              <property role="1$x2rV" value="12.0" />
+              <ref role="1NtTu8" to="2qld:1jxh3h7Lf7n" resolve="width" />
+              <node concept="VPXOz" id="1jxh3h7NO2C" role="3F10Kt">
+                <property role="VOm3f" value="true" />
+              </node>
+            </node>
+            <node concept="2iRfu4" id="1jxh3h7NO2D" role="2iSdaV" />
+          </node>
+          <node concept="3EZMnI" id="1jxh3h7NO3O" role="3EZMnx">
+            <node concept="VPM3Z" id="1jxh3h7NO3P" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+            <node concept="3F0ifn" id="1jxh3h7NO3Q" role="3EZMnx">
+              <property role="3F0ifm" value="height" />
+            </node>
+            <node concept="3F1sOY" id="1jxh3h7NO3R" role="3EZMnx">
+              <property role="1$x2rV" value="12.0" />
+              <ref role="1NtTu8" to="2qld:1jxh3h7Lfh7" resolve="height" />
+              <node concept="VPXOz" id="1jxh3h7NO3S" role="3F10Kt">
+                <property role="VOm3f" value="true" />
+              </node>
+            </node>
+            <node concept="2iRfu4" id="1jxh3h7NO3T" role="2iSdaV" />
           </node>
           <node concept="3EZMnI" id="6PI4N6JqV_i" role="3EZMnx">
             <node concept="3F0ifn" id="6PI4N6JqV_j" role="3EZMnx">
@@ -4173,7 +4205,7 @@
           <property role="3F0ifm" value="drop handler" />
         </node>
         <node concept="3F1sOY" id="7tKD69sBNlM" role="3EZMnx">
-          <ref role="1NtTu8" to="2qld:7tKD69sBN6G" />
+          <ref role="1NtTu8" to="2qld:7tKD69sBN6G" resolve="dropHandler" />
           <node concept="VPXOz" id="7tKD69sCxf9" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
@@ -4736,7 +4768,7 @@
           <property role="3F0ifm" value="can drop" />
         </node>
         <node concept="3F1sOY" id="7tKD69sB2KO" role="3EZMnx">
-          <ref role="1NtTu8" to="2qld:7tKD69sB2HE" />
+          <ref role="1NtTu8" to="2qld:7tKD69sB2HE" resolve="canDrop" />
           <node concept="VPXOz" id="7tKD69sCwCO" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
@@ -4751,7 +4783,7 @@
           <property role="3F0ifm" value="drop" />
         </node>
         <node concept="3F1sOY" id="7tKD69sB2LU" role="3EZMnx">
-          <ref role="1NtTu8" to="2qld:7tKD69sB2HI" />
+          <ref role="1NtTu8" to="2qld:7tKD69sB2HI" resolve="drop" />
           <node concept="VPXOz" id="7tKD69sCwCZ" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
@@ -4770,7 +4802,7 @@
   <node concept="24kQdi" id="4rMwD1We6N4">
     <ref role="1XX52x" to="2qld:4rMwD1We6Mi" resolve="EditorContextExpression" />
     <node concept="PMmxH" id="4rMwD1We6NM" role="2wV5jI">
-      <ref role="1k5W1q" to="tpc5:2NgG6tkHXk9" resolve="KeyWord" />
+      <ref role="1k5W1q" to="tpc5:2NgG6tkHXk9" resolve="EditorKeyWord" />
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       <node concept="Vb9p2" id="4rMwD1We6NN" role="3F10Kt" />
     </node>

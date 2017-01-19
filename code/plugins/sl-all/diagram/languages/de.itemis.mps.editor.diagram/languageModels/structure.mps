@@ -1233,6 +1233,20 @@
       <property role="IQ2ns" value="6554619383005758749" />
       <ref role="20lvS9" node="6uo2fN6gOXK" resolve="IShape" />
     </node>
+    <node concept="1TJgyj" id="1jxh3h7Lf7n" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="width" />
+      <property role="20lbJX" value="0..1" />
+      <property role="IQ2ns" value="1504558741851533783" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="1jxh3h7Lfh7" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="height" />
+      <property role="20lbJX" value="0..1" />
+      <property role="IQ2ns" value="1504558741851534407" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
     <node concept="1TJgyj" id="5FQFTBpWGku" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="positionX" />
