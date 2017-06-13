@@ -8,12 +8,14 @@
       <sourceRoot location="js.jar" />
       <sourceRoot location="plantuml.jar" />
       <sourceRoot location="xalan-2.6.0.jar" />
+      <sourceRoot location="batik-all.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
     <stubModelEntry path="${module}/lib/js.jar" />
     <stubModelEntry path="${module}/lib/plantuml.jar" />
     <stubModelEntry path="${module}/lib/xalan-2.6.0.jar" />
+    <stubModelEntry path="${module}/lib/batik-all.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
