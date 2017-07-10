@@ -971,13 +971,13 @@
     </node>
     <node concept="2igEWh" id="$bJ0jguQs8" role="1hWBAP">
       <property role="2igJW4" value="true" />
-      <property role="3UIfUI" value="6096" />
-      <property role="1YnnvL" value="1024" />
+      <property role="3UIfUI" value="40096" />
+      <property role="1YnnvL" value="8024" />
     </node>
     <node concept="1wNqPr" id="2B1T7v1mQt2" role="3989C9">
       <property role="1wNuhc" value="true" />
       <property role="1wNuhe" value="true" />
-      <property role="1wNuhh" value="4" />
+      <property role="1wNuhh" value="12" />
       <property role="1wOHq$" value="true" />
       <property role="3Ej$Sc" value="true" />
     </node>

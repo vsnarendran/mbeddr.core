@@ -225,8 +225,8 @@
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.platform" />
     <node concept="2igEWh" id="$bJ0jguQs8" role="1hWBAP">
       <property role="2igJW4" value="true" />
-      <property role="3UIfUI" value="4096" />
-      <property role="1YnnvL" value="1024" />
+      <property role="3UIfUI" value="8096" />
+      <property role="1YnnvL" value="4024" />
     </node>
     <node concept="2_Ic$z" id="7OyG8hrcgea" role="3989C9">
       <property role="2_Ic$$" value="true" />
@@ -236,7 +236,7 @@
     <node concept="1wNqPr" id="3AVJcIMlF8m" role="3989C9">
       <property role="1wNuhc" value="true" />
       <property role="1wNuhe" value="true" />
-      <property role="1wNuhh" value="4" />
+      <property role="1wNuhh" value="12" />
       <property role="1wOHq$" value="true" />
       <property role="3Ej$Sc" value="true" />
     </node>
