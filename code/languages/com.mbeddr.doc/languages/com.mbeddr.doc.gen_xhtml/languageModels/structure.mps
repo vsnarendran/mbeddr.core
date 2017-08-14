@@ -215,5 +215,33 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4INiGM9d4Hj">
+    <property role="EcuMT" value="5454785816011492179" />
+    <property role="TrG5h" value="HTMLRef" />
+    <property role="34LRSv" value="HTML document reference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4INiGM9g6U6" role="1TKVEi">
+      <property role="IQ2ns" value="5454785816012287622" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="refedNode" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="2c95:6jiGbW_JBH_" resolve="IDocReferencable" />
+    </node>
+    <node concept="1TJgyi" id="4INiGM9d4Hk" role="1TKVEl">
+      <property role="IQ2nx" value="5454785816011492180" />
+      <property role="TrG5h" value="nodeID" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="4INiGM9d7ER" role="1TKVEl">
+      <property role="IQ2nx" value="5454785816011504311" />
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="4INiGM9d8TP" role="1TKVEl">
+      <property role="IQ2nx" value="5454785816011509365" />
+      <property role="TrG5h" value="class" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 
