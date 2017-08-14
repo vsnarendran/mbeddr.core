@@ -37,6 +37,7 @@
         <child id="6669194810533249758" name="codeptr" index="ZeNY6" />
       </concept>
       <concept id="6165313375056012512" name="com.mbeddr.doc.structure.DocumentInclude" flags="ng" index="$CzcT">
+        <property id="324047639344492301" name="referenceOnly" index="1P4p2h" />
         <child id="6165313375056012515" name="ref" index="$CzcU" />
       </concept>
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
@@ -293,8 +294,12 @@
             </node>
           </node>
           <node concept="19SUe$" id="1ZiHc0gKJBW" role="19SJt6">
-            <property role="19SUeA" value=". " />
+            <property role="19SUeA" value=". &#10;&#10;" />
           </node>
+          <node concept="1_0GAv" id="4INiGM9g3gc" role="19SJt6">
+            <ref role="1_0GAl" node="7rXn3flJDQM" resolve="importantTerms" />
+          </node>
+          <node concept="19SUe$" id="4INiGM9g3gd" role="19SJt6" />
         </node>
       </node>
     </node>
@@ -313,6 +318,9 @@
     <node concept="Wq1Bs" id="1ZiHc0gKI6d" role="Wq1Bf">
       <property role="Wq1Bt" value="Markus Voelter" />
       <property role="Wq1Bq" value="voelter@acm.org" />
+    </node>
+    <node concept="1_0j5j" id="4INiGM9g4rV" role="1DXQ57">
+      <ref role="1_0j5g" node="7rXn3flJCi4" resolve="Z_Glossary" />
     </node>
   </node>
   <node concept="2SbYGP" id="1ZiHc0gKI6e">
@@ -954,6 +962,7 @@
       </node>
     </node>
     <node concept="$CzcT" id="7rXn3flJD1A" role="1_0VJ0">
+      <property role="1P4p2h" value="true" />
       <node concept="1_0j5j" id="7rXn3flJD1E" role="$CzcU">
         <ref role="1_0j5g" node="7rXn3flJCi4" resolve="Z_Glossary" />
       </node>
