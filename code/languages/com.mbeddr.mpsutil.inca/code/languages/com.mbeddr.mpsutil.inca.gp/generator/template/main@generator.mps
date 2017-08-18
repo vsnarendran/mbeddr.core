@@ -393,7 +393,7 @@
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
-      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="ng" index="2V$Bhx">
+      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="nn" index="2V$Bhx">
         <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
         <property id="3542851458883439832" name="languageId" index="2V$B1T" />
       </concept>
@@ -993,7 +993,7 @@
               <ref role="37wK5l" to="33ny:~Set.add(java.lang.Object):boolean" resolve="add" />
               <node concept="355D3s" id="2cknNXbDJU4" role="37wK5m">
                 <ref role="355D3t" to="tpee:fz7wK6G" resolve="BaseMethodCall" />
-                <ref role="355D3u" to="tpck:gOOYy9I" resolve="alias" />
+                <ref role="355D3u" to="tpck:hnGE5uv" resolve="virtualPackage" />
                 <node concept="1ZhdrF" id="2cknNXbDJU5" role="lGtFl">
                   <property role="P3scX" value="7866978e-a0f0-4cc7-81bc-4d213d9375e1/2644386474302386080/2644386474302386081" />
                   <property role="2qtEX8" value="conceptDeclaration" />
@@ -4818,7 +4818,7 @@
                       <ref role="37wK5l" to="pzen:7TrMLNbStQa" resolve="ConceptFeatureKey" />
                       <node concept="355D3s" id="yM$tZcRVIO" role="37wK5m">
                         <ref role="355D3t" to="55iy:RjyNapTDgY" resolve="PathExpressionConstraint" />
-                        <ref role="355D3u" to="tpck:gOOYy9I" resolve="alias" />
+                        <ref role="355D3u" to="tpck:hnGE5uv" resolve="virtualPackage" />
                         <node concept="1ZhdrF" id="yM$tZcRXUF" role="lGtFl">
                           <property role="P3scX" value="7866978e-a0f0-4cc7-81bc-4d213d9375e1/2644386474302386080/2644386474302386081" />
                           <property role="2qtEX8" value="conceptDeclaration" />

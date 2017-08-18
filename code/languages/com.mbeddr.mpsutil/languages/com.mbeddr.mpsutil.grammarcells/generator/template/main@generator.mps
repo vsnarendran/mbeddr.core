@@ -1259,7 +1259,7 @@
                                           </node>
                                           <node concept="355D3s" id="qT5MFmnLiE" role="37wK5m">
                                             <ref role="355D3t" to="tpck:gw2VY9q" resolve="BaseConcept" />
-                                            <ref role="355D3u" to="tpck:gOOYy9I" resolve="alias" />
+                                            <ref role="355D3u" to="tpck:hnGE5uv" resolve="virtualPackage" />
                                             <node concept="1ZhdrF" id="qT5MFmnLiF" role="lGtFl">
                                               <property role="P3scX" value="7866978e-a0f0-4cc7-81bc-4d213d9375e1/2644386474302386080/2644386474302386081" />
                                               <property role="2qtEX8" value="conceptDeclaration" />
@@ -23877,7 +23877,7 @@
                     <ref role="37wK5l" to="mhbf:~SNode.getProperty(org.jetbrains.mps.openapi.language.SProperty):java.lang.String" resolve="getProperty" />
                     <node concept="355D3s" id="3KoBPk18bbU" role="37wK5m">
                       <ref role="355D3t" to="tpck:gw2VY9q" resolve="BaseConcept" />
-                      <ref role="355D3u" to="tpck:gOOYy9I" resolve="alias" />
+                      <ref role="355D3u" to="tpck:hnGE5uv" resolve="virtualPackage" />
                       <node concept="1ZhdrF" id="3KoBPk18bRa" role="lGtFl">
                         <property role="P3scX" value="7866978e-a0f0-4cc7-81bc-4d213d9375e1/2644386474302386080/2644386474302386081" />
                         <property role="2qtEX8" value="conceptDeclaration" />
