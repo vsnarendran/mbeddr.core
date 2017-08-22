@@ -45,8 +45,22 @@
       <concept id="7717755763392524107" name="com.mbeddr.core.buildconfig.structure.ModuleRef" flags="ng" index="2v9HqM">
         <reference id="7717755763392524108" name="module" index="2v9HqP" />
       </concept>
-      <concept id="8719112291175211294" name="com.mbeddr.core.buildconfig.structure.PlatformReference" flags="ng" index="2xfidK">
-        <reference id="8719112291175211414" name="template" index="2xfifS" />
+      <concept id="5323740605968447022" name="com.mbeddr.core.buildconfig.structure.DesktopPlatform" flags="ng" index="2AWWZL">
+        <property id="5323740605968447025" name="compilerOptions" index="2AWWZI" />
+        <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
+        <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
+        <property id="3963667026125442676" name="make" index="3r8Kxs" />
+      </concept>
+      <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
+        <child id="1485382076185232212" name="targets" index="3anu1O" />
+        <child id="2741479916248882970" name="postProcessors" index="1gUATJ" />
+      </concept>
+      <concept id="1485382076184236780" name="com.mbeddr.core.buildconfig.structure.Target" flags="ng" index="3abb7c" />
+      <concept id="2741479916261190736" name="com.mbeddr.core.buildconfig.structure.RunProcessProcessor" flags="ng" index="1h_xO_">
+        <property id="2741479916261190846" name="processName" index="1h_xRb" />
+      </concept>
+      <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
+        <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
@@ -286,8 +300,27 @@
   </node>
   <node concept="2v9HqL" id="7Uz1bYM5MLR">
     <property role="TrG5h" value="dummy" />
-    <node concept="2xfidK" id="1WKZBvBXE1_" role="2AWWZH">
-      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
+    <node concept="2AWWZL" id="3dZgFhDR6Ge" role="2AWWZH">
+      <property role="2AWWZJ" value="gcc" />
+      <property role="3r8Kw1" value="gdb" />
+      <property role="3r8Kxs" value="make" />
+      <property role="2AWWZI" value="-std=c99" />
+      <property role="1FkSt$" value="-g" />
+      <node concept="3abb7c" id="3dZgFhDR6Gf" role="3anu1O">
+        <property role="TrG5h" value="Win32" />
+      </node>
+      <node concept="3abb7c" id="3dZgFhDR6Gg" role="3anu1O">
+        <property role="TrG5h" value="MacOSX" />
+      </node>
+      <node concept="3abb7c" id="3dZgFhDR6Gh" role="3anu1O">
+        <property role="TrG5h" value="Linux" />
+      </node>
+      <node concept="3abb7c" id="3dZgFhDR6Gi" role="3anu1O">
+        <property role="TrG5h" value="portable" />
+      </node>
+      <node concept="1h_xO_" id="3dZgFhDR7rS" role="1gUATJ">
+        <property role="1h_xRb" value="dfdfdfdf" />
+      </node>
     </node>
     <node concept="2Q9Fgs" id="7Uz1bYM5MLT" role="2Q9xDr">
       <node concept="2Q9FjX" id="7Uz1bYM5MLU" role="2Q9FjI" />

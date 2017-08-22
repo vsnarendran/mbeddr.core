@@ -310,6 +310,9 @@
     <node concept="PrWs8" id="3s1LyzGeKd9" role="PzmwI">
       <ref role="PrY4T" to="i2y7:3s1LyzGeK9o" resolve="IMakePathProvider" />
     </node>
+    <node concept="PrWs8" id="3dZgFhDSziU" role="PzmwI">
+      <ref role="PrY4T" to="i2y7:3dZgFhDSw4V" resolve="IGeneratesToMakefile" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4BxItZJ4BoI">
     <property role="TrG5h" value="DesktopPlatform" />
