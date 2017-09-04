@@ -2639,25 +2639,6 @@
                     <property role="3SKdUp" value="todo: set flag to prevent textgen?" />
                   </node>
                 </node>
-                <node concept="3clFbF" id="3juJO4ZLgw1" role="3cqZAp">
-                  <node concept="2OqwBi" id="3juJO4ZLgvY" role="3clFbG">
-                    <node concept="10M0yZ" id="3juJO4ZLgvZ" role="2Oq$k0">
-                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                    </node>
-                    <node concept="liA8E" id="3juJO4ZLgw0" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                      <node concept="3cpWs3" id="3juJO4ZLhzR" role="37wK5m">
-                        <node concept="37vLTw" id="3juJO4ZLh_v" role="3uHU7w">
-                          <ref role="3cqZAo" node="3juJO4ZGkvG" resolve="foreignNodesForcedCopy" />
-                        </node>
-                        <node concept="Xl_RD" id="3juJO4ZLgza" role="3uHU7B">
-                          <property role="Xl_RC" value="#### x model gen + found forc copy " />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
                 <node concept="3clFbF" id="3juJO4ZGldM" role="3cqZAp">
                   <node concept="2OqwBi" id="3juJO4ZGlNt" role="3clFbG">
                     <node concept="37vLTw" id="3juJO4ZGldK" role="2Oq$k0">
@@ -2671,12 +2652,24 @@
                   </node>
                 </node>
               </node>
-              <node concept="2YIFZM" id="3juJO4ZFBHL" role="3clFbw">
-                <ref role="37wK5l" to="zgpd:3juJO4ZFikw" resolve="isXModelGen" />
-                <ref role="1Pybhc" to="zgpd:3juJO4ZFi8K" resolve="GenerationHelper" />
-                <node concept="2OqwBi" id="3juJO4ZFBQq" role="37wK5m">
-                  <node concept="1iwH7S" id="3juJO4ZFBId" role="2Oq$k0" />
-                  <node concept="1st3f0" id="3juJO4ZFC1y" role="2OqNvi" />
+              <node concept="1Wc70l" id="7LU1CQzi$El" role="3clFbw">
+                <node concept="2YIFZM" id="3juJO4ZFBHL" role="3uHU7B">
+                  <ref role="37wK5l" to="zgpd:3juJO4ZFikw" resolve="isXModelGen" />
+                  <ref role="1Pybhc" to="zgpd:3juJO4ZFi8K" resolve="GenerationHelper" />
+                  <node concept="2OqwBi" id="3juJO4ZFBQq" role="37wK5m">
+                    <node concept="1iwH7S" id="3juJO4ZFBId" role="2Oq$k0" />
+                    <node concept="1st3f0" id="3juJO4ZFC1y" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="3fqX7Q" id="7LU1CQzilKO" role="3uHU7w">
+                  <node concept="2OqwBi" id="7LU1CQzim0L" role="3fr31v">
+                    <node concept="37vLTw" id="7LU1CQzi$Q8" role="2Oq$k0">
+                      <ref role="3cqZAo" node="78Ts1skprjn" resolve="bc" />
+                    </node>
+                    <node concept="3TrcHB" id="7LU1CQzino0" role="2OqNvi">
+                      <ref role="3TsBF5" to="51wr:7LU1CQz9EWK" resolve="forceClassicalGeneration" />
+                    </node>
+                  </node>
                 </node>
               </node>
               <node concept="9aQIb" id="3juJO4ZFC2e" role="9aQIa">
@@ -3375,25 +3368,37 @@
             </node>
             <node concept="3clFbH" id="1lWQE5Ev4vm" role="3cqZAp" />
           </node>
-          <node concept="2OqwBi" id="CqDpWV40Gk" role="3clFbw">
-            <node concept="2ShNRf" id="CqDpWV3ESd" role="2Oq$k0">
-              <node concept="1pGfFk" id="CqDpWV40e3" role="2ShVmc">
-                <ref role="37wK5l" to="ap4t:~GenPlanExtractor.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository)" resolve="GenPlanExtractor" />
-                <node concept="2OqwBi" id="CqDpWV7i6w" role="37wK5m">
-                  <node concept="37vLTw" id="CqDpWV8_Hs" role="2Oq$k0">
-                    <ref role="3cqZAo" node="CqDpWV8_Hl" resolve="module" />
-                  </node>
-                  <node concept="liA8E" id="CqDpWV7iiw" role="2OqNvi">
-                    <ref role="37wK5l" to="lui2:~SModule.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+          <node concept="1Wc70l" id="7LU1CQzi_nv" role="3clFbw">
+            <node concept="2OqwBi" id="CqDpWV40Gk" role="3uHU7B">
+              <node concept="2ShNRf" id="CqDpWV3ESd" role="2Oq$k0">
+                <node concept="1pGfFk" id="CqDpWV40e3" role="2ShVmc">
+                  <ref role="37wK5l" to="ap4t:~GenPlanExtractor.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository)" resolve="GenPlanExtractor" />
+                  <node concept="2OqwBi" id="CqDpWV7i6w" role="37wK5m">
+                    <node concept="37vLTw" id="CqDpWV8_Hs" role="2Oq$k0">
+                      <ref role="3cqZAo" node="CqDpWV8_Hl" resolve="module" />
+                    </node>
+                    <node concept="liA8E" id="CqDpWV7iiw" role="2OqNvi">
+                      <ref role="37wK5l" to="lui2:~SModule.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                    </node>
                   </node>
                 </node>
               </node>
+              <node concept="liA8E" id="CqDpWV44pw" role="2OqNvi">
+                <ref role="37wK5l" to="ap4t:~GenPlanExtractor.hasPlan(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="hasPlan" />
+                <node concept="2OqwBi" id="CqDpWV44Vd" role="37wK5m">
+                  <node concept="1iwH7S" id="CqDpWV44rh" role="2Oq$k0" />
+                  <node concept="1st3f0" id="CqDpWV453d" role="2OqNvi" />
+                </node>
+              </node>
             </node>
-            <node concept="liA8E" id="CqDpWV44pw" role="2OqNvi">
-              <ref role="37wK5l" to="ap4t:~GenPlanExtractor.hasPlan(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="hasPlan" />
-              <node concept="2OqwBi" id="CqDpWV44Vd" role="37wK5m">
-                <node concept="1iwH7S" id="CqDpWV44rh" role="2Oq$k0" />
-                <node concept="1st3f0" id="CqDpWV453d" role="2OqNvi" />
+            <node concept="3fqX7Q" id="7LU1CQziBcB" role="3uHU7w">
+              <node concept="2OqwBi" id="7LU1CQziBcC" role="3fr31v">
+                <node concept="37vLTw" id="7LU1CQziBcD" role="2Oq$k0">
+                  <ref role="3cqZAo" node="78Ts1skprjn" resolve="bc" />
+                </node>
+                <node concept="3TrcHB" id="7LU1CQziBcE" role="2OqNvi">
+                  <ref role="3TsBF5" to="51wr:7LU1CQz9EWK" resolve="forceClassicalGeneration" />
+                </node>
               </node>
             </node>
           </node>

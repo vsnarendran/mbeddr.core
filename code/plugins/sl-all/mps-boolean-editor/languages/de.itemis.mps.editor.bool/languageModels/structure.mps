@@ -39,7 +39,7 @@
   </registry>
   <node concept="1TIwiD" id="4g2H4r3SHDB">
     <property role="TrG5h" value="CellModel_Checkbox" />
-    <property role="34LRSv" value="checkbox{&lt;{propertyDeclaration}&gt;}" />
+    <property role="34LRSv" value="checkbox" />
     <property role="EcuMT" value="4900677560559655527" />
     <ref role="1TJDcQ" to="tpc2:fBF0A4I" resolve="CellModel_Property" />
     <node concept="1TJgyi" id="gSMwhzt" role="1TKVEl">
@@ -65,7 +65,7 @@
   </node>
   <node concept="1TIwiD" id="6bmIkNC799Q">
     <property role="TrG5h" value="CellModel_BooleanText" />
-    <property role="34LRSv" value="bool{&lt;{propertyDeclaration}&gt;}" />
+    <property role="34LRSv" value="bool" />
     <property role="EcuMT" value="7122083600695857782" />
     <ref role="1TJDcQ" to="tpc2:fBF0A4I" resolve="CellModel_Property" />
     <node concept="1TJgyi" id="6bmIkNCb966" role="1TKVEl">

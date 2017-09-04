@@ -12,7 +12,9 @@
       </concept>
     </language>
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
-      <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL" />
+      <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
+        <property id="8969488813259140912" name="forceClassicalGeneration" index="3vnaAX" />
+      </concept>
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
@@ -80,6 +82,7 @@
     </node>
   </node>
   <node concept="2v9HqL" id="3qyGNHcV6LZ">
+    <property role="3vnaAX" value="false" />
     <node concept="2Q9Fgs" id="3qyGNHcZRMn" role="2Q9xDr">
       <node concept="2Q9FjX" id="3qyGNHcZRMo" role="2Q9FjI" />
     </node>

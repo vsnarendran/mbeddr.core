@@ -6,7 +6,6 @@
   </languages>
   <imports>
     <import index="en1q" ref="r:89cf737e-ac07-4ee7-842b-ea0fe47d54b8(com.mbeddr.xmodel.tests.components.lib)" />
-    <import index="en1q" ref="r:89cf737e-ac07-4ee7-842b-ea0fe47d54b8(com.mbeddr.xmodel.tests.components.lib)" />
   </imports>
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
@@ -26,6 +25,7 @@
         <property id="3431613015799084476" name="isTest" index="iO3LB" />
       </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
+        <property id="8969488813259140912" name="forceClassicalGeneration" index="3vnaAX" />
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
         <child id="5323740605968447026" name="target" index="2AWWZH" />
       </concept>
@@ -263,6 +263,7 @@
     </node>
   </node>
   <node concept="2v9HqL" id="ybcgwyvEEZ">
+    <property role="3vnaAX" value="false" />
     <node concept="2AWWZL" id="ybcgwyvEF0" role="2AWWZH">
       <property role="2AWWZJ" value="gcc" />
       <property role="3r8Kw1" value="gdb" />

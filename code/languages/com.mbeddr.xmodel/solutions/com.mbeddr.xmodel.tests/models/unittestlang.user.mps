@@ -21,6 +21,7 @@
         <property id="3431613015799084476" name="isTest" index="iO3LB" />
       </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
+        <property id="8969488813259140912" name="forceClassicalGeneration" index="3vnaAX" />
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
         <child id="5323740605968447026" name="target" index="2AWWZH" />
       </concept>
@@ -115,6 +116,7 @@
     </node>
   </node>
   <node concept="2v9HqL" id="2vBUIEiz2MM">
+    <property role="3vnaAX" value="false" />
     <node concept="2eOfOl" id="2vBUIEiz2U_" role="2ePNbc">
       <property role="iO3LB" value="false" />
       <property role="TrG5h" value="myExecutable" />

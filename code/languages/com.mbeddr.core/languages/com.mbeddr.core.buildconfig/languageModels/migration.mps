@@ -46,6 +46,7 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -65,6 +66,9 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
@@ -123,9 +127,15 @@
       <concept id="3751132065236767060" name="jetbrains.mps.baseLanguage.lightweightdsl.structure.MethodInstance" flags="ig" index="q3mfD">
         <reference id="19209059688387895" name="decl" index="2VtyIY" />
       </concept>
+      <concept id="6478870542308708689" name="jetbrains.mps.baseLanguage.lightweightdsl.structure.PropertyInstance" flags="ig" index="3tT0cZ">
+        <reference id="8585153554445465961" name="decl" index="25KYV2" />
+      </concept>
       <concept id="6478870542308703666" name="jetbrains.mps.baseLanguage.lightweightdsl.structure.MemberPlaceholder" flags="ng" index="3tTeZs">
         <property id="6478870542308703667" name="caption" index="3tTeZt" />
         <reference id="6478870542308703669" name="decl" index="3tTeZr" />
+      </concept>
+      <concept id="6478870542308871428" name="jetbrains.mps.baseLanguage.lightweightdsl.structure.StringPropertyInstance" flags="ig" index="3tYpXE">
+        <property id="6478870542308871429" name="value" index="3tYpXF" />
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
@@ -1930,6 +1940,112 @@
       </node>
     </node>
     <node concept="3tTeZs" id="5hM$KrZQuCS" role="jymVt">
+      <property role="3tTeZt" value="&lt;no result checking&gt;" />
+      <ref role="3tTeZr" to="slm6:1JWcQ2VeXpD" resolve="check" />
+    </node>
+  </node>
+  <node concept="3SyAh_" id="7LU1CQzdlu6">
+    <property role="qMTe8" value="4" />
+    <property role="TrG5h" value="setforceClassicalGenerationDefault" />
+    <node concept="3Tm1VV" id="7LU1CQzdlu7" role="1B3o_S" />
+    <node concept="3tTeZs" id="7LU1CQzdlu8" role="jymVt">
+      <property role="3tTeZt" value="&lt;no execute after&gt;" />
+      <ref role="3tTeZr" to="slm6:7ay_HjIMt1a" resolve="execute after" />
+    </node>
+    <node concept="3tTeZs" id="7LU1CQzdlu9" role="jymVt">
+      <property role="3tTeZt" value="&lt;no required data&gt;" />
+      <ref role="3tTeZr" to="slm6:3A3gNhf1WPI" resolve="requires data" />
+    </node>
+    <node concept="3tTeZs" id="7LU1CQzdlua" role="jymVt">
+      <property role="3tTeZt" value="&lt;no produced data&gt;" />
+      <ref role="3tTeZr" to="slm6:536fTXa4WHO" resolve="produces data" />
+    </node>
+    <node concept="2tJIrI" id="7LU1CQzdlub" role="jymVt" />
+    <node concept="3tTeZs" id="7LU1CQzdluc" role="jymVt">
+      <property role="3tTeZt" value="&lt;migration is not rerunnable&gt;" />
+      <ref role="3tTeZr" to="slm6:1JWcQ2VeWIs" resolve="isRerunnable" />
+    </node>
+    <node concept="3tYpXE" id="7LU1CQzdmqH" role="jymVt">
+      <property role="TrG5h" value="description" />
+      <property role="3tYpXF" value="Set default value for forceClassicalGeneration" />
+      <ref role="25KYV2" to="slm6:1_lSsE3RFpE" resolve="description" />
+      <node concept="3Tm1VV" id="7LU1CQzdmqJ" role="1B3o_S" />
+      <node concept="17QB3L" id="7LU1CQzdmqK" role="1tU5fm" />
+    </node>
+    <node concept="q3mfD" id="7LU1CQzdlue" role="jymVt">
+      <property role="TrG5h" value="execute" />
+      <ref role="2VtyIY" to="slm6:4ubqdNOF9cA" resolve="execute" />
+      <node concept="3Tm1VV" id="7LU1CQzdlug" role="1B3o_S" />
+      <node concept="3clFbS" id="7LU1CQzdlui" role="3clF47">
+        <node concept="1DcWWT" id="7LU1CQzdnc1" role="3cqZAp">
+          <node concept="3cpWsn" id="7LU1CQzdnc2" role="1Duv9x">
+            <property role="TrG5h" value="mdl" />
+            <node concept="H_c77" id="7LU1CQzdnnz" role="1tU5fm" />
+          </node>
+          <node concept="2OqwBi" id="7LU1CQzdnQL" role="1DdaDG">
+            <node concept="37vLTw" id="7LU1CQzdnJ_" role="2Oq$k0">
+              <ref role="3cqZAo" node="7LU1CQzdluk" resolve="m" />
+            </node>
+            <node concept="liA8E" id="7LU1CQzdock" role="2OqNvi">
+              <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="7LU1CQzdnc4" role="2LFqv$">
+            <node concept="3clFbF" id="7LU1CQzdoii" role="3cqZAp">
+              <node concept="2OqwBi" id="7LU1CQzdpsQ" role="3clFbG">
+                <node concept="2OqwBi" id="7LU1CQzdop9" role="2Oq$k0">
+                  <node concept="37vLTw" id="7LU1CQzdoih" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7LU1CQzdnc2" resolve="mdl" />
+                  </node>
+                  <node concept="2SmgA7" id="7LU1CQzdoAE" role="2OqNvi">
+                    <node concept="chp4Y" id="7LU1CQzdqyW" role="1dBWTz">
+                      <ref role="cht4Q" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2es0OD" id="7LU1CQzdwvk" role="2OqNvi">
+                  <node concept="1bVj0M" id="7LU1CQzdwvm" role="23t8la">
+                    <node concept="3clFbS" id="7LU1CQzdwvn" role="1bW5cS">
+                      <node concept="3clFbF" id="7LU1CQzdwA_" role="3cqZAp">
+                        <node concept="37vLTI" id="7LU1CQzdy4e" role="3clFbG">
+                          <node concept="3clFbT" id="7LU1CQzdygR" role="37vLTx">
+                            <property role="3clFbU" value="false" />
+                          </node>
+                          <node concept="2OqwBi" id="7LU1CQzdwMq" role="37vLTJ">
+                            <node concept="37vLTw" id="7LU1CQzdwA$" role="2Oq$k0">
+                              <ref role="3cqZAo" node="7LU1CQzdwvo" resolve="it" />
+                            </node>
+                            <node concept="3TrcHB" id="7LU1CQzdx5G" role="2OqNvi">
+                              <ref role="3TsBF5" to="51wr:7LU1CQz9EWK" resolve="forceClassicalGeneration" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="7LU1CQzdwvo" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="7LU1CQzdwvp" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="ffn8J" id="7LU1CQzdluk" role="3clF46">
+        <property role="TrG5h" value="m" />
+        <ref role="ffrpq" to="slm6:7fCCGqboj9J" resolve="m" />
+        <node concept="3uibUv" id="7LU1CQzdluj" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+        </node>
+      </node>
+      <node concept="q3mfm" id="7LU1CQzdlul" role="3clF45">
+        <ref role="q3mfh" to="slm6:4F5w8gPXEEe" />
+        <ref role="1QQUv3" node="7LU1CQzdlue" resolve="execute" />
+      </node>
+    </node>
+    <node concept="3tTeZs" id="7LU1CQzdlum" role="jymVt">
       <property role="3tTeZt" value="&lt;no result checking&gt;" />
       <ref role="3tTeZr" to="slm6:1JWcQ2VeXpD" resolve="check" />
     </node>
